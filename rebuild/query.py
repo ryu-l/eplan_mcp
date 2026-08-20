@@ -28,7 +28,8 @@ def main():
 
     qvec = model.encode([query], normalize_embeddings=True).tolist()
     where = {"category": category} if category else None
-    res = col.query(query_embeddings=qvec, n_results=top_k, where=where)
+    # fetch more then re-rank by exact cosine distance (HNSW recall)
+    res = col.query(query_embeddings=qvec, n_results=max(top_k * 8, 40), where=where)
 
     for i in range(len(res["ids"][0])):
         meta = res["metadatas"][0][i]

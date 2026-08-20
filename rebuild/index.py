@@ -42,6 +42,13 @@ def chunk_markdown(text, title):
         body = re.sub(r"\n{3,}", "\n\n", body)
         if not body:
             return
+        # Drop navigation boilerplate: "Reference" sections are pure markdown
+        # link lists (Members/Namespace pages) with no real content.
+        if path and path[-1].strip().lower() == "reference":
+            return
+        url_chars = len("".join(re.findall(r"\]\([^)]*\)", body)))
+        if url_chars > 0.6 * len(body):
+            return
         words = body.split()
         if len(words) <= MAX_CHUNK_WORDS:
             if len(words) >= MIN_CHUNK_WORDS:

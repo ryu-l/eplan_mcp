@@ -61,9 +61,13 @@ TOOLS = [
 
 
 def search(query, top_k=5, category=None):
+    top_k = min(top_k, 20)
+    # HNSW recall at this index size is imperfect: fetch several times the
+    # requested k, then re-rank by exact cosine distance and keep top_k.
+    fetch_k = max(top_k * 8, 40)
     qvec = MODEL.encode([query], normalize_embeddings=True).tolist()
     where = {"category": category} if category else None
-    res = COL.query(query_embeddings=qvec, n_results=min(top_k, 20), where=where)
+    res = COL.query(query_embeddings=qvec, n_results=fetch_k, where=where)
     out = []
     for i in range(len(res["ids"][0])):
         meta = res["metadatas"][0][i]
@@ -77,7 +81,8 @@ def search(query, top_k=5, category=None):
             "content": res["documents"][0][i],
             "header_path": meta.get("header_path", ""),
         })
-    return out
+    out.sort(key=lambda x: -x["score"])
+    return out[:top_k]
 
 
 def stats():
