@@ -1,0 +1,50 @@
+# ARTICLE_HINGEPOSITION Property
+
+ARTICLE\_HINGEPOSITION Property
+
+Door: Hinge # 22193.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue ARTICLE_HINGEPOSITION {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ ARTICLE_HINGEPOSITION {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.Int64.
+
+Remarks
+
+Indicates whether the hinge of the door is attached on the left or the right.
+
+See Also
+
+#### Reference
+
+[ArticlePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList.html)
+  
+[ArticlePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_HINGEPOSITION.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

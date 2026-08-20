@@ -1,0 +1,48 @@
+# MDPermissionException Constructor(String)
+
+MDPermissionException Constructor(String)
+
+Internal constructor with description.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public MDPermissionException( 
+   string txt
+)
+```
+```
+
+```
+```
+public:
+MDPermissionException( 
+   String^ txt
+)
+```
+```
+
+#### Parameters
+
+*txt*
+:   Detail description of exception
+
+See Also
+
+#### Reference
+
+[MDPermissionException Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPermissionException.html)
+  
+[MDPermissionException Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPermissionException_members.html)
+  
+[Overload List](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPermissionException~_ctor.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

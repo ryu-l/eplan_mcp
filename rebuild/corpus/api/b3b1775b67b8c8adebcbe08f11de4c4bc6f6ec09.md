@@ -1,0 +1,29 @@
+# FUNC_SYMB_NAME Property (Placement3DPropertyList)
+
+FUNC\_SYMB\_NAME Property (Placement3DPropertyList)
+
+Symbol name # 20112.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_SYMB\_NAME](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_SYMB_NAME().html) | Symbol name # 20112. |
+
+Remarks
+
+This property is read-only..
+
+See Also
+
+#### Reference
+
+[Placement3DPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList.html)
+  
+[Placement3DPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

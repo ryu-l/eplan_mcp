@@ -1,0 +1,52 @@
+# PROPUSER_LAST_USEREMAIL Property
+
+PROPUSER\_LAST\_USEREMAIL Property
+
+Last editor: E-mail # 3013.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public MDPropertyValue PROPUSER_LAST_USEREMAIL {get; set;}
+```
+```
+
+```
+```
+public:
+property MDPropertyValue^ PROPUSER_LAST_USEREMAIL {
+   MDPropertyValue^ get();
+   void set (    MDPropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+This property is read-only..
+
+The e-mail address associated with the user code.
+
+See Also
+
+#### Reference
+
+[MDSymbolLibraryPropertyList Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibraryPropertyList.html)
+  
+[MDSymbolLibraryPropertyList Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibraryPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibraryPropertyList~PROPUSER_LAST_USEREMAIL.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

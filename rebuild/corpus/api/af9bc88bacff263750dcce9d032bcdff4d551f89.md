@@ -1,0 +1,39 @@
+# Top Property
+
+Top Property
+
+Top
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public double Top {get;}
+```
+```
+
+```
+```
+public:
+property double Top {
+   double get();
+}
+```
+```
+
+See Also
+
+#### Reference
+
+[Transformation.DrawingLimits Class](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Transformation+DrawingLimits.html)
+  
+[Transformation.DrawingLimits Members](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Transformation+DrawingLimits_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

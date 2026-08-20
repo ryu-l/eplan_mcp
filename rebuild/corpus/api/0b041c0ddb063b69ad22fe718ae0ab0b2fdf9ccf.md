@@ -1,0 +1,61 @@
+# InstallationSpacesToJT(IEnumerable<InstallationSpace>,String) Method
+
+InstallationSpacesToJT(IEnumerable<InstallationSpace>,String) Method
+
+Exports given installation spaces into files in JT format.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public bool InstallationSpacesToJT( 
+   IEnumerable<InstallationSpace> listInstallationSpaces,
+   string strTargetDirectory
+)
+```
+```
+
+```
+```
+public:
+bool InstallationSpacesToJT( 
+   IEnumerable<InstallationSpace^>^ listInstallationSpaces,
+   String^ strTargetDirectory
+)
+```
+```
+
+#### Parameters
+
+*listInstallationSpaces*
+:   Collection of installation spaces which will be exported. Can not be `null` or empty.
+
+*strTargetDirectory*
+:   Directory to which files will be written. If the folder does not exist, it will be created. If the user does not have the necessary rights to access the file system, an exception will be thrown. Can not be `null` or empty.
+
+Exceptions
+
+| Exception | Description |
+| --- | --- |
+| [System.ArgumentNullException](#) | Thrown when necessary argument is `null`. |
+| [System.ArgumentException](#) | Thrown in case of invalid arguments. |
+| [System.ApplicationException](#) | The internal interface used for export could not be created. |
+
+See Also
+
+#### Reference
+
+[Export3D Class](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export3D.html)
+  
+[Export3D Members](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export3D_members.html)
+  
+[Overload List](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export3D~InstallationSpacesToJT.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

@@ -1,0 +1,31 @@
+# SYMBLIB_ERRORSYMBOLED Property (MDSymbolLibraryPropertyList)
+
+SYMBLIB\_ERRORSYMBOLED Property (MDSymbolLibraryPropertyList)
+
+Error (symbol editor) # 15201.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [SYMBLIB\_ERRORSYMBOLED](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibraryPropertyList~SYMBLIB_ERRORSYMBOLED(Int32).html) | Error (symbol editor) # 15201. |
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 1024.
+
+Shows whether a problem occurred during the symbol libraries data transfer that can be solved in the symbol editor. Max. of 1,024 are recorded.
+
+See Also
+
+#### Reference
+
+[MDSymbolLibraryPropertyList Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibraryPropertyList.html)
+  
+[MDSymbolLibraryPropertyList Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibraryPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

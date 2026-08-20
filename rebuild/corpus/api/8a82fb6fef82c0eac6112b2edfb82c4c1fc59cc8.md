@@ -1,0 +1,29 @@
+# FUNC_PLCDEVICENUMBER_1 Property (Placement3DPropertyList)
+
+FUNC\_PLCDEVICENUMBER\_1 Property (Placement3DPropertyList)
+
+PLC subdevice 1: Position (slot / module) # 20533.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_PLCDEVICENUMBER\_1](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_PLCDEVICENUMBER_1().html) | PLC subdevice 1: Position (slot / module) # 20533. |
+
+Remarks
+
+In this property you specify in which slot / at which position on the PLC card this PLC subdevice is located. PLC devices exist that consist of several integrated modules and that have several start addresses. Such a device can consist, for example, of an internal CPU module, an internal input-output module as well as internal counter module - however with only one part number. Such integrated modules within a PLC device can be displayed in Eplan with PLC subdevices. To this purpose up to twelve PLC subdevices are available.
+
+See Also
+
+#### Reference
+
+[Placement3DPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList.html)
+  
+[Placement3DPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

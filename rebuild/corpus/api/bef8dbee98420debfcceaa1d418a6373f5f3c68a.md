@@ -1,0 +1,50 @@
+# CONNECTION_SLEEVECROSSSECTION_SOURCE Property
+
+CONNECTION\_SLEEVECROSSSECTION\_SOURCE Property
+
+Source: Sleeve cross-section # 31053.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue CONNECTION_SLEEVECROSSSECTION_SOURCE {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ CONNECTION_SLEEVECROSSSECTION_SOURCE {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+If the connection is closed with a conductor sleeve, specify the cross-section of the sleeve here. This property is required for the transfer to packaging machines.
+
+See Also
+
+#### Reference
+
+[ConnectionDefinitionPointPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPointPropertyList.html)
+  
+[ConnectionDefinitionPointPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPointPropertyList_members.html)
+  
+[Overload List](topic1810.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

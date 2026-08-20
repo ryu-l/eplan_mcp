@@ -1,0 +1,29 @@
+# ARTICLE_PRODUCTSUBGROUP Property (MergedArticleReferencePropertyList)
+
+ARTICLE\_PRODUCTSUBGROUP Property (MergedArticleReferencePropertyList)
+
+Product subgroup # 22028.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [ARTICLE\_PRODUCTSUBGROUP](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList~ARTICLE_PRODUCTSUBGROUP().html) | Product subgroup # 22028. |
+
+Remarks
+
+Outputs the product subgroup entered in parts management on the "Properties" tab > hierarchy level "General" > "Product grouping" property. The parts are sorted according to their product groups (including superseding and subgroups) and displayed in tree format in parts management.
+
+See Also
+
+#### Reference
+
+[MergedArticleReferencePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList.html)
+  
+[MergedArticleReferencePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

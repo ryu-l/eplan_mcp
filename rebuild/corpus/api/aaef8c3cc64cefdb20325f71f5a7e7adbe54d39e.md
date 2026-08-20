@@ -1,0 +1,50 @@
+# ARTICLE_MASS_MOMENT_OF_INERTIA_OF_THE_LOAD Property
+
+ARTICLE\_MASS\_MOMENT\_OF\_INERTIA\_OF\_THE\_LOAD Property
+
+Mass moment of inertia of the load # 26443.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public MDPropertyValue ARTICLE_MASS_MOMENT_OF_INERTIA_OF_THE_LOAD {get; set;}
+```
+```
+
+```
+```
+public:
+property MDPropertyValue^ ARTICLE_MASS_MOMENT_OF_INERTIA_OF_THE_LOAD {
+   MDPropertyValue^ get();
+   void set (    MDPropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Describes the resistance of a load to changes in its rotation around an axis. This is a measure of how difficult it is to change the rotational speed of the load and depends on the mass distribution of the load relative to the axis of rotation. Example: In the case of a rotating flywheel in a machine, the mass moment of inertia indicates the torque required to change the rotational speed of the flywheel.
+
+See Also
+
+#### Reference
+
+[MDPartsDatabaseItemPropertyList Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList.html)
+  
+[MDPartsDatabaseItemPropertyList Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList_members.html)
+  
+[Overload List](topic2465.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

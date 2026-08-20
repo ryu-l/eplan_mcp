@@ -1,0 +1,276 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>IsMainTerminal Property</title>
+    <meta name="Title" content=""/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n21548","initialNodeContainer":"c386","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Terminal~IsMainTerminal"/>
+    <meta name="Description" content="Determines whether terminal is main." />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Terminal_properties"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.DataModel.EObjects.Terminal.IsMainTerminal"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects_namespace.html">Eplan.EplApi.DataModel.EObjects Namespace</a>
+ / <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Terminal.html">Terminal Class</a>
+ / IsMainTerminal Property</div></div>
+
+    
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <a class="i-page-link" href="#ExampleBookmark">Example</a><!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">IsMainTerminal Property</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">Determines whether terminal is main.</div>
+            
+            
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre><span style="color: #0000FF; ">public</span> <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> IsMainTerminal {<span style="color: #0000FF; ">get</span>; <span style="color: #0000FF; ">set</span>;}</pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre><span style="color: #0000FF; ">public</span>:
+property <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> IsMainTerminal {
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <span style="color: #0000FF; ">get</span>();
+   <span style="color: #0000FF; ">void</span> <span style="color: #0000FF; ">set</span> (    <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="valuePopupLink" data-popup-contentsource="#valuePopupContent" data-popup-showevent="click mouseenter"></a>value</i>);
+}</pre></pre>
+            </div>
+        
+
+            </div>
+        
+            
+            
+            </div>
+            
+            
+            
+            <div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content">This property returns true if this terminal is a main terminal. The terminal is then similar to a main function. For example, for a main terminal the function templates are displayed in the terminal strip navigator, and a device selection can be performed. A terminal strip can contain as many main terminals as you want. See also chapter 'Defining Multi-level Terminals' of EPLAN Help for more information concerning multi-level terminals.</div>
+            <a name="exampleBookmark"></a>
+            <div class="i-section-heading" id="i-example-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Example</span></div><div id="i-example-section-content" class="i-section-content">In order to create a multi-level terminal, please use the following code:
+             
+<div class="i-tab-container">
+    <ul>
+        <li class="i-filtered-content-cs">
+			<a href="#i-tab-content-d3b5867c-8ee1-4b0e-a96a-4cf20b4fa2d8">C#</a>
+		</li>
+
+    </ul>
+	<div id="i-tab-content-d3b5867c-8ee1-4b0e-a96a-4cf20b4fa2d8" class="i-code i-filtered-content-cs">
+		<pre>
+<span style="color: #008000; ">//preparing terminal symbol
+</span><span style="color: #0000FF; ">string</span> strSymbolLibName = <span style="color: #800000; ">&quot;IEC_symbol&quot;</span>;
+<span style="color: #0000FF; ">string</span> strSymbolName = <span style="color: #800000; ">&quot;X2_B&quot;</span>;
+<span style="color: #0000FF; ">int</span> nVariant = 1;
+Symbol oSymbol = <span style="color: #0000FF; ">new</span> Symbol(<span style="color: #0000FF; ">new</span> SymbolLibrary(m_oTestProject, strSymbolLibName), strSymbolName);
+SymbolVariant oSymbolVariant = <span style="color: #0000FF; ">new</span> SymbolVariant();
+oSymbolVariant.Initialize(oSymbol, nVariant);
+
+<span style="color: #0000FF; ">int</span> iDevicePos = 1; <span style="color: #008000; ">// be sure this ID is unique in terminal strip
+</span><span style="color: #0000FF; ">int</span> iSortPos = 1;
+
+Terminal term1 = <span style="color: #0000FF; ">new</span> Terminal();
+term1.Create(oPage, oSymbolVariant);
+term1.NameParts = plName;
+term1.Properties.FUNC_TERMINALDEVICEPOSITION = iDevicePos;
+term1.Properties.FUNC_TERMINALSORTCODE = iSortPos;
+term1.Properties.FUNC_TERMINALLEVEL = 3;
+term1.IsMainTerminal = <span style="color: #0000FF; ">true</span>;
+++iSortPos;
+
+Terminal term2 = <span style="color: #0000FF; ">new</span> Terminal();
+term2.Create(oPage, oSymbolVariant);
+term2.NameParts = plName;
+term2.Properties.FUNC_TERMINALDEVICEPOSITION = iDevicePos;
+term2.Properties.FUNC_TERMINALSORTCODE = iSortPos;
+term2.Properties.FUNC_TERMINALLEVEL = 2;
+term2.IsMainTerminal = <span style="color: #0000FF; ">false</span>;
+++iSortPos;
+
+Terminal term3 = <span style="color: #0000FF; ">new</span> Terminal();
+term3.Create(oPage, oSymbolVariant);
+term3.NameParts = plName;
+term3.Properties.FUNC_TERMINALDEVICEPOSITION = iDevicePos;
+term3.Properties.FUNC_TERMINALSORTCODE = iSortPos;
+term3.Properties.FUNC_TERMINALLEVEL = 1;
+term3.IsMainTerminal = <span style="color: #0000FF; ">false</span>;
+++iSortPos;
+
+++iDevicePos;  <span style="color: #008000; ">// new device will be created
+</span>
+Terminal term4 = <span style="color: #0000FF; ">new</span> Terminal();
+term4.Create(oPage, oSymbolVariant);
+term4.NameParts = plName;
+term4.Properties.FUNC_TERMINALDEVICEPOSITION = iDevicePos;
+term4.Properties.FUNC_TERMINALSORTCODE = iSortPos;
+term4.Properties.FUNC_TERMINALLEVEL = 3;
+term4.IsMainTerminal = <span style="color: #0000FF; ">true</span>;
+++iSortPos;
+
+Terminal term5 = <span style="color: #0000FF; ">new</span> Terminal();
+term5.Create(oPage, oSymbolVariant);
+term5.NameParts = plName;
+term5.Properties.FUNC_TERMINALDEVICEPOSITION = iDevicePos;
+term5.Properties.FUNC_TERMINALSORTCODE = iSortPos;
+term5.Properties.FUNC_TERMINALLEVEL = 2;
+term5.IsMainTerminal = <span style="color: #0000FF; ">false</span>;
+++iSortPos;
+
+Terminal term6 = <span style="color: #0000FF; ">new</span> Terminal();
+term6.Create(oPage, oSymbolVariant);
+term6.NameParts = plName;
+term6.Properties.FUNC_TERMINALDEVICEPOSITION = iDevicePos;
+term6.Properties.FUNC_TERMINALSORTCODE = iSortPos;
+term6.Properties.FUNC_TERMINALLEVEL = 1;
+term6.IsMainTerminal = <span style="color: #0000FF; ">false</span>;
+++iSortPos;
+
+
+</pre>
+	</div>
+	
+</div>
+</div>
+            
+            
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Terminal.html">Terminal Class</a>
+<br/><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Terminal_members.html">Terminal Members</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

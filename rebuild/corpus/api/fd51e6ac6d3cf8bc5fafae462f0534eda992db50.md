@@ -1,0 +1,40 @@
+# Level Property (MDConnectionPointPosition)
+
+Level Property (MDConnectionPointPosition)
+
+The level of the connection point
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public int Level {get; set;}
+```
+```
+
+```
+```
+public:
+property int Level {
+   int get();
+   void set (    int value);
+}
+```
+```
+
+See Also
+
+#### Reference
+
+[MDConnectionPointPosition Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDConnectionPointPosition.html)
+  
+[MDConnectionPointPosition Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDConnectionPointPosition_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

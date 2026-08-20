@@ -1,0 +1,50 @@
+# ARTICLE_MAX_POWER_CONSUMPTION Property
+
+ARTICLE\_MAX\_POWER\_CONSUMPTION Property
+
+Power consumption, max. # 26419.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue ARTICLE_MAX_POWER_CONSUMPTION {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ ARTICLE_MAX_POWER_CONSUMPTION {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Maximum quantity of electrical energy that a device or component can consume during operation. The power consumption describes the actual energy consumption.
+
+See Also
+
+#### Reference
+
+[MergedArticleReferencePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList.html)
+  
+[MergedArticleReferencePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList~ARTICLE_MAX_POWER_CONSUMPTION.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

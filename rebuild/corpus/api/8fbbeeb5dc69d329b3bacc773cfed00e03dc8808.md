@@ -1,0 +1,29 @@
+# ARTICLE_COLOUR_OF_THE_CABLE_SHEATH Property (ArticlePropertyList)
+
+ARTICLE\_COLOUR\_OF\_THE\_CABLE\_SHEATH Property (ArticlePropertyList)
+
+Cable jacket: Color # 26040.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [ARTICLE\_COLOUR\_OF\_THE\_CABLE\_SHEATH](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_COLOUR_OF_THE_CABLE_SHEATH().html) | Cable jacket: Color # 26040. |
+
+Remarks
+
+Color of the cable jacket.
+
+See Also
+
+#### Reference
+
+[ArticlePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList.html)
+  
+[ArticlePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

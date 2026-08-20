@@ -1,0 +1,37 @@
+# Remove Method (PlanningSegment)
+
+Remove Method (PlanningSegment)
+
+Removes object from PlanningSegment with all its children.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public void Remove()
+```
+```
+
+```
+```
+public:
+void Remove();
+```
+```
+
+See Also
+
+#### Reference
+
+[PlanningSegment Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegment.html)
+  
+[PlanningSegment Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegment_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

@@ -1,0 +1,31 @@
+# FUNC_ARTICLE_MAX_RATED_CURRENT Property (FunctionPropertyList)
+
+FUNC\_ARTICLE\_MAX\_RATED\_CURRENT Property (FunctionPropertyList)
+
+Nominal current, max. # 26501.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_ARTICLE\_MAX\_RATED\_CURRENT(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_ARTICLE_MAX_RATED_CURRENT(Int32).html) | Nominal current, max. # 26501. |
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 50.
+
+Maximum permissible current that an electrical device or a plant can carry continuously without overheating or damage occurring. This value is, among other things, decisive for the dimensioning of items and fuses.
+
+See Also
+
+#### Reference
+
+[FunctionPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList.html)
+  
+[FunctionPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

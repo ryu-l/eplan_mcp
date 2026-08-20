@@ -1,0 +1,50 @@
+# FRAME_CONTACTIMAGE_OFFSET Property
+
+FRAME\_CONTACTIMAGE\_OFFSET Property
+
+Contact image margin (in path) # 12060.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue FRAME_CONTACTIMAGE_OFFSET {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ FRAME_CONTACTIMAGE_OFFSET {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.Double.
+
+Remarks
+
+For automatically aligned contact images, this value specifies the distance of the contact image to the bottom of the page or the relevant "Ladder" borders (depending on the plot frame used).
+
+See Also
+
+#### Reference
+
+[PlotFramePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PlotFramePropertyList.html)
+  
+[PlotFramePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PlotFramePropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PlotFramePropertyList~FRAME_CONTACTIMAGE_OFFSET.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

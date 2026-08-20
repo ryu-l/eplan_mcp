@@ -1,0 +1,50 @@
+# FUNC_PLCGROUP_STARTADDRESS_7_INPUTS Property
+
+FUNC\_PLCGROUP\_STARTADDRESS\_7\_INPUTS Property
+
+PLC subdevice 7: Start address (inputs) # 20395.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue FUNC_PLCGROUP_STARTADDRESS_7_INPUTS {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ FUNC_PLCGROUP_STARTADDRESS_7_INPUTS {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Start address for the inputs of the PLC subdevice 7 (for PLC data exchange in AutomationML AR APC format). Can be used in the addressing format.
+
+See Also
+
+#### Reference
+
+[Placement3DPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList.html)
+  
+[Placement3DPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_PLCGROUP_STARTADDRESS_7_INPUTS.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

@@ -1,0 +1,35 @@
+# FUNC_PINANDJACK_PLUGSIDE Property (FunctionPropertyList)
+
+FUNC\_PINANDJACK\_PLUGSIDE Property (FunctionPropertyList)
+
+Plugs: Assignment to male pin / female pin end # 20052.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_PINANDJACK\_PLUGSIDE](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_PINANDJACK_PLUGSIDE().html) | Plugs: Assignment to male pin / female pin end # 20052. |
+
+Remarks
+
+In the case of the separate management of male and female pins, this specifies whether the pin is assigned to the male or female pin end of the plug.
+
+0 = Automatic (i.e. the assignment is made via the DT and the function definition)
+
+1 = Male pin end
+
+2 = Female pin end.
+
+See Also
+
+#### Reference
+
+[FunctionPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList.html)
+  
+[FunctionPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

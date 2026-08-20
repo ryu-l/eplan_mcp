@@ -1,0 +1,31 @@
+# INSTANCE_PATHID Property (GraphicalPlacementPropertyList)
+
+INSTANCE\_PATHID Property (GraphicalPlacementPropertyList)
+
+Column number # 19005.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [INSTANCE\_PATHID](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.GraphicalPlacementPropertyList~INSTANCE_PATHID().html) | Column number # 19005. |
+
+Remarks
+
+This property is read-only..
+
+Provides the column number where the placement is currently located.
+
+See Also
+
+#### Reference
+
+[GraphicalPlacementPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.GraphicalPlacementPropertyList.html)
+  
+[GraphicalPlacementPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.GraphicalPlacementPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

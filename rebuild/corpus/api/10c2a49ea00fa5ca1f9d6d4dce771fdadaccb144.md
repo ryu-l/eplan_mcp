@@ -1,0 +1,50 @@
+# DMPLAOBJECT_PLANNING_COMPLETE Property
+
+DMPLAOBJECT\_PLANNING\_COMPLETE Property
+
+Pre-planning finished # 44040.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue DMPLAOBJECT_PLANNING_COMPLETE {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ DMPLAOBJECT_PLANNING_COMPLETE {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.Boolean.
+
+Remarks
+
+Indicates that the structure segment or planning object is ready for the detailed planning.
+
+See Also
+
+#### Reference
+
+[PlanningSegmentPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList.html)
+  
+[PlanningSegmentPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList~DMPLAOBJECT_PLANNING_COMPLETE.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

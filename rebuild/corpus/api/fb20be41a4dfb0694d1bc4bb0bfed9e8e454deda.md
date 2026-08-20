@@ -1,0 +1,50 @@
+# ARTICLE_CRAFT_LUBRICATION Property
+
+ARTICLE\_CRAFT\_LUBRICATION Property
+
+Trade 'Lubrication' # 22136.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public MDPropertyValue ARTICLE_CRAFT_LUBRICATION {get; set;}
+```
+```
+
+```
+```
+public:
+property MDPropertyValue^ ARTICLE_CRAFT_LUBRICATION {
+   MDPropertyValue^ get();
+   void set (    MDPropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.Boolean.
+
+Remarks
+
+The trade determines the technology to be applied or selected.
+
+See Also
+
+#### Reference
+
+[MDPartsDatabaseItemPropertyList Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList.html)
+  
+[MDPartsDatabaseItemPropertyList Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList~ARTICLE_CRAFT_LUBRICATION.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

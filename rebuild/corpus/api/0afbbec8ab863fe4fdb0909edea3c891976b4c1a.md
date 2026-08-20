@@ -1,0 +1,31 @@
+# FUNC_IDENTDEVICETAG Property (FunctionBasePropertyList)
+
+FUNC\_IDENTDEVICETAG Property (FunctionBasePropertyList)
+
+DT (identifying) # 20005.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_IDENTDEVICETAG](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionBasePropertyList~FUNC_IDENTDEVICETAG().html) | DT (identifying) # 20005. |
+
+Remarks
+
+This property is read-only..
+
+Contains the identifying device tag of the function (without terminal / connection point designation).
+
+See Also
+
+#### Reference
+
+[FunctionBasePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionBasePropertyList.html)
+  
+[FunctionBasePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionBasePropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

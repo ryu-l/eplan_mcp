@@ -1,0 +1,49 @@
+# FUNC_DISTRIBUTOR_CONNECTED_CONNPOINTS Property (Placement3DPropertyList)
+
+FUNC\_DISTRIBUTOR\_CONNECTED\_CONNPOINTS Property (Placement3DPropertyList)
+
+Continuous connection between the connection points # 20331.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_DISTRIBUTOR\_CONNECTED\_CONNPOINTS](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_DISTRIBUTOR_CONNECTED_CONNPOINTS().html) | Continuous connection between the connection points # 20331. |
+
+Remarks
+
+Specifies at a connection splicer the connection points between which a continuous connection can run. Possible values are:
+
+0 = None
+
+1 = 1;2
+
+2 = 1;3
+
+3 = 1;4
+
+4 = 2;3
+
+5 = 2;4
+
+6 = 3;4
+
+7 = 1;2 / 3;4
+
+8 = 1;3 / 2;4
+
+9 = 1;4 / 2;3
+
+See Also
+
+#### Reference
+
+[Placement3DPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList.html)
+  
+[Placement3DPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

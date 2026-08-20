@@ -7,6 +7,7 @@ Metadata schema mirrors the live worker:
   title, category, source, source_url, header_path
 Chunk text is stored as the chroma document.
 """
+import argparse
 import json
 import os
 import re
@@ -69,6 +70,13 @@ def chunk_markdown(text, title):
 
 
 def main():
+    global FRESH
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--fresh", action="store_true",
+                        help="delete existing collection and rebuild from scratch")
+    args = parser.parse_args()
+    FRESH = args.fresh
+
     t0 = time.time()
     if not os.path.exists(MANIFEST):
         raise SystemExit(f"manifest not found: {MANIFEST}")
@@ -102,6 +110,12 @@ def main():
 
     # Embed in batches
     client = chromadb.PersistentClient(path=os.path.abspath(DB_PATH))
+    if FRESH:
+        try:
+            client.delete_collection(COLLECTION)
+            print("deleted existing collection (--fresh)", flush=True)
+        except Exception:
+            pass
     col = client.get_or_create_collection(
         COLLECTION, metadata={"hnsw:space": "cosine"}
     )

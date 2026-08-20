@@ -1,0 +1,58 @@
+# FUNC_ARTICLE_TOTAL_NUMBER_OF_BACNET_OBJECTS(Int32) Property
+
+FUNC\_ARTICLE\_TOTAL\_NUMBER\_OF\_BACNET\_OBJECTS(Int32) Property
+
+BACnet: Total number of objects # 26211.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue FUNC_ARTICLE_TOTAL_NUMBER_OF_BACNET_OBJECTS( 
+   int index
+) {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ FUNC_ARTICLE_TOTAL_NUMBER_OF_BACNET_OBJECTS {
+   PropertyValue^ get(int index);
+   void set (int index, PropertyValue^ value);
+}
+```
+```
+
+#### Parameters
+
+*index*
+
+#### Property Value
+
+Returns property value of type System.Int64.
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 50.
+
+Number of all objects or object types in the BACnet protocol.
+
+See Also
+
+#### Reference
+
+[ProjectPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList.html)
+  
+[ProjectPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~FUNC_ARTICLE_TOTAL_NUMBER_OF_BACNET_OBJECTS.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

@@ -1,0 +1,37 @@
+# MountingPointMate Constructor
+
+MountingPointMate Constructor
+
+Default constructor.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public MountingPointMate()
+```
+```
+
+```
+```
+public:
+MountingPointMate();
+```
+```
+
+See Also
+
+#### Reference
+
+[MountingPointMate Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingPointMate.html)
+  
+[MountingPointMate Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingPointMate_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

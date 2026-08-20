@@ -1,0 +1,31 @@
+# PROJ_FULL_PROJECTPATH Property
+
+PROJ\_FULL\_PROJECTPATH Property
+
+Project path (full) # 10045.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [PROJ\_FULL\_PROJECTPATH](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~PROJ_FULL_PROJECTPATH().html) | Project path (full) # 10045. |
+
+Remarks
+
+This property is read-only..
+
+Complete file path of the project file, but without the project file name.
+
+See Also
+
+#### Reference
+
+[ProjectPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList.html)
+  
+[ProjectPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

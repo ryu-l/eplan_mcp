@@ -1,0 +1,50 @@
+# PART_TERMINAL_ADDITIONALLENGTHDEFAULT Property
+
+PART\_TERMINAL\_ADDITIONALLENGTHDEFAULT Property
+
+Additional length (default) # 22942.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue PART_TERMINAL_ADDITIONALLENGTHDEFAULT {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ PART_TERMINAL_ADDITIONALLENGTHDEFAULT {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.Double.
+
+Remarks
+
+This property is used if no additional length has been entered for the individual connection point in the connection point pattern. Specifies the default value for the additional length of the connection point arrangement.
+
+See Also
+
+#### Reference
+
+[ConnectionPointsInfoPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPointsInfoPropertyList.html)
+  
+[ConnectionPointsInfoPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPointsInfoPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPointsInfoPropertyList~PART_TERMINAL_ADDITIONALLENGTHDEFAULT.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

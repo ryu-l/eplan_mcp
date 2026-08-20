@@ -1,0 +1,113 @@
+==============================================================================
+MCP 对比测试: 线上 Cloudflare  vs  本地重建库
+==============================================================================
+
+--- eplan_stats ---
+[线上] {
+  "index": "eplan-knowledge-base",
+  "model": "BAAI/bge-base-en-v1.5",
+  "dimensions": 768,
+  "vectorCount": 55000,
+  "processedUpToDatetime": "2026-03-27T17:24:29.594Z",
+  "processedUpToMutation": "e1587101-cf4e-46c2-b502-63c2ee320ad7"
+}
+[本地] {
+  "index": "eplan_docs-local",
+  "model": "BAAI/bge-base-en-v1.5",
+  "dimensions": 768,
+  "vectorCount": 66450
+}
+
+==============================================================================
+
+查询 [action]: "export project to EPJ format"
+------------------------------------------------------------------------------
+  [线上] 耗时 1048 ms, 返回 5 条:
+     0.6763  export
+     0.6592  export
+     0.6541  PXFProject(Project,String,Boolean,Boolean) Method
+     0.6487  ProjectToJT(Project,String) Method
+     0.6474  Export
+  [本地] 耗时 316 ms, 返回 5 条:
+     0.6495  PROJ_DTFORMAT_PLC_TERMINAL Property
+     0.6495  PROJ_ENCLOSURES Property
+     0.6495  PROJ_NAMEFORMAT_PLUG Property
+     0.6495  PROJ_PAGECOUNT Property
+     0.6495  PROJ_REVISION_APPROVEDBY Property
+
+查询 [api-ref]: "ReadProjectInfo method parameters"
+------------------------------------------------------------------------------
+  [线上] 耗时 946 ms, 返回 5 条:
+     0.7125  ReadProjectInfo(String,String) Method
+     0.7103  ReadProjectInfo(Project,String) Method
+     0.6986  ReadProjectInfo(String,String) Method
+     0.6975  ReadProjectInfo(Project,String) Method
+     0.6718  ReadProjectInfo Method
+  [本地] 耗时 61 ms, 返回 5 条:
+     0.7647  Action: projectmanagement
+     0.7564  ImportData(Project,String,String,String,Boolean,PlanningSegment,Boolea
+     0.7531  Eplan.EplApi.OnPostOpenProject
+     0.7502  ImportData(Project,String,String,String,Boolean,PlanningSegment,Boolea
+     0.7451  NCForRittalPerforexLC Method
+
+查询 [api-ref]: "connection definition point properties"
+------------------------------------------------------------------------------
+  [线上] 耗时 878 ms, 返回 5 条:
+     0.6907  Properties.ConnectionDefinitionPoint
+     0.6862  Properties.ConnectionDefinitionPoint
+     0.6844  Properties.ConnectionDefinitionPoint
+     0.6814  ConnectionDefPointProperties Property
+     0.6794  Properties.ConnectionDefinitionPoint
+  [本地] 耗时 63 ms, 返回 5 条:
+     0.8575  Connection Definition Points
+     0.8366  Specifying Connection Properties via Connection Definition Points
+     0.8245  Eplan Properties
+     0.8210  ConnectionDefPointProperties Property
+     0.8207  Drawing Connection Definition Points
+
+查询 [user-guide]: "how to correct project data in the project management"
+------------------------------------------------------------------------------
+  [线上] 耗时 825 ms, 返回 5 条:
+     0.6165  CorrectProjectItems(Project,String) Method
+     0.6094  CorrectProjectItems Method
+     0.6018  CorrectProjectItems(Project,String) Method
+     0.6007  ProjectManagement
+     0.5961  Properties.Project
+  [本地] 耗时 69 ms, 返回 5 条:
+     0.7429  Finding and Storing Missing Project Master Data, Updating Projects
+     0.7373  Finding and Storing Missing Project Master Data, Updating Projects
+     0.7365  Compressible Project Data
+     0.7356  P001010: Terminal strip definition missing
+     0.7337  Compressible Project Data
+
+查询 [user-guide]: "generate terminal diagrams from the schematic"
+------------------------------------------------------------------------------
+  [线上] 耗时 954 ms, 返回 5 条:
+     0.5882  Terminals(Project,TerminalsSequence,TerminalsPotential,TerminalsPotent
+     0.5879  Terminals(Project,TerminalsSequence,TerminalsPotential,TerminalsPotent
+     0.5851  CablePropertyListComplete
+     0.5757  InstallationSpacePropertyList
+     0.5748  Function3DPropertyList
+  [本地] 耗时 60 ms, 返回 5 条:
+     0.7597  Generating PLC Schematics
+     0.7455  Creating and Editing Terminal Strips
+     0.7360  Generating and Editing Terminals
+     0.7322  Defining Multi-level Terminals
+     0.7276  Generating and Editing Terminals
+
+查询 [hidden]: "hidden action redraw / gedRedraw"
+------------------------------------------------------------------------------
+  [线上] 耗时 858 ms, 返回 5 条:
+     0.6119  gedRedraw
+     0.5717  RedrawGed Method
+     0.5491  Unhide Method
+     0.5446  RedrawGed Method
+     0.5312  Unhide Method
+  [本地] 耗时 71 ms, 返回 5 条:
+     0.7886  gedRedraw
+     0.6660  Dialog "Undo in project <Project name>" / Dialog "Redo in project <Pro
+     0.6634  Controlling the Cursor with the Keyboard
+     0.6603  Dialog Settings: 3D
+     0.6596  Dialog Edit
+
+==============================================================================

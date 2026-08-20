@@ -1,0 +1,29 @@
+# DESIGNATION_SUBLOCATION3_DESCR Property (ArticleReferencePropertyList)
+
+DESIGNATION\_SUBLOCATION3\_DESCR Property (ArticleReferencePropertyList)
+
+Location designation (sub-identifier 3): Description # 1233.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [DESIGNATION\_SUBLOCATION3\_DESCR](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList~DESIGNATION_SUBLOCATION3_DESCR().html) | Location designation (sub-identifier 3): Description # 1233. |
+
+Remarks
+
+This property is read-only..
+
+See Also
+
+#### Reference
+
+[ArticleReferencePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList.html)
+  
+[ArticleReferencePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

@@ -1,0 +1,270 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>DoProjectInspection(Project,Project,Boolean,String,Boolean,String,Boolean,String,Boolean,Boolean,Boolean,Boolean) Method</title>
+    <meta name="Title" content=""/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n29987","initialNodeContainer":"c591","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~DoProjectInspection(Project,Project,Boolean,String,Boolean,String,Boolean,String,Boolean,Boolean,Boolean,Boolean)"/>
+    <meta name="Description" content="Compares two projects and writes the results as project messages into the message management. This method corresponds to the following functionality of EPLAN Electric P8: Project / Management, Extras / Verify Project" />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~DoProjectInspection"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.HEServices.ProjectManagement.DoProjectInspection(Eplan.EplApi.DataModel.Project,Eplan.EplApi.DataModel.Project,System.Boolean,System.String,System.Boolean,System.String,System.Boolean,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices_namespace.html">Eplan.EplApi.HEServices Namespace</a>
+ / <a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement.html">ProjectManagement Class</a>
+ / <a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~DoProjectInspection.html">DoProjectInspection Method</a>
+ / DoProjectInspection(Project,Project,Boolean,String,Boolean,String,Boolean,String,Boolean,Boolean,Boolean,Boolean) Method</div></div>
+
+    
+    
+<div id="oProjectPopupContent" class="i-popup-content">
+First project to be compared.
+</div>
+<div id="oRefProjectPopupContent" class="i-popup-content">
+Second project to be compared.
+</div>
+<div id="bCompareSettingsPopupContent" class="i-popup-content">
+If true, comparison of project settings is done.
+</div>
+<div id="sSettingsSchemePopupContent" class="i-popup-content">
+Name of settings comparison scheme. If <code originaltag="c">null</code> or <code originaltag="c">empty</code> string is passed then last used scheme will be used. This parameter is used only if <code originaltag="c">bCompareSettings</code> is <code originaltag="c">true</code>. If the scheme is not supported, information is passed as a system message.
+</div>
+<div id="bComparePropertiesPopupContent" class="i-popup-content">
+If true, comparison of project properties is done.
+</div>
+<div id="sPropertiesSchemePopupContent" class="i-popup-content">
+Name of properties comparison scheme. If <code originaltag="c">null</code> or <code originaltag="c">empty</code> string is passed then last used scheme will be used. This parameter is used only if <code originaltag="c">bCompareProperties</code> is <code originaltag="c">true</code>. If the scheme is not supported, information is passed as a system message.
+</div>
+<div id="bDoVerificationPopupContent" class="i-popup-content">
+If true, projects verification is also done.
+</div>
+<div id="sVerificationSchemePopupContent" class="i-popup-content">
+Name of verification scheme. If <code originaltag="c">null</code> or <code originaltag="c">empty</code> string is passed then last used scheme will be used. This parameter is used only if <code originaltag="c">bDoVerification</code> is <code originaltag="c">true</code>. If the scheme is not supported, information is passed as a system message.
+</div>
+<div id="bComparePrjStructurePopupContent" class="i-popup-content">
+If true, comparison of project structure is done.
+</div>
+<div id="bCompareLayersPopupContent" class="i-popup-content">
+If true, comparison of layersSecond is done.
+</div>
+<div id="bReportNewLayersPopupContent" class="i-popup-content">
+If true, new layers are reported. Used only if parameter <code originaltag="c">bCompareLayers</code> is <code originaltag="c">true</code>.
+</div>
+<div id="bStopOnFirstDifferencePopupContent" class="i-popup-content">
+If true, the comparisons/verifications will stop on first difference/error.
+</div>
+
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">DoProjectInspection(Project,Project,Boolean,String,Boolean,String,Boolean,String,Boolean,Boolean,Boolean,Boolean) Method</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">Compares two projects and writes the results as project messages into the message management. This method corresponds to the following functionality of EPLAN Electric P8: Project / Management, Extras / Verify Project</div>
+            
+            
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre><span style="color: #0000FF; ">public</span> <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> DoProjectInspection( 
+   <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Project.html">Project</a> <i><a class="i-popup-link" id="oProjectPopupLink" data-popup-contentsource="#oProjectPopupContent" data-popup-showevent="click mouseenter">oProject</a></i>,
+   <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Project.html">Project</a> <i><a class="i-popup-link" id="oRefProjectPopupLink" data-popup-contentsource="#oRefProjectPopupContent" data-popup-showevent="click mouseenter">oRefProject</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bCompareSettingsPopupLink" data-popup-contentsource="#bCompareSettingsPopupContent" data-popup-showevent="click mouseenter">bCompareSettings</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">string</a> <i><a class="i-popup-link" id="sSettingsSchemePopupLink" data-popup-contentsource="#sSettingsSchemePopupContent" data-popup-showevent="click mouseenter">sSettingsScheme</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bComparePropertiesPopupLink" data-popup-contentsource="#bComparePropertiesPopupContent" data-popup-showevent="click mouseenter">bCompareProperties</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">string</a> <i><a class="i-popup-link" id="sPropertiesSchemePopupLink" data-popup-contentsource="#sPropertiesSchemePopupContent" data-popup-showevent="click mouseenter">sPropertiesScheme</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bDoVerificationPopupLink" data-popup-contentsource="#bDoVerificationPopupContent" data-popup-showevent="click mouseenter">bDoVerification</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">string</a> <i><a class="i-popup-link" id="sVerificationSchemePopupLink" data-popup-contentsource="#sVerificationSchemePopupContent" data-popup-showevent="click mouseenter">sVerificationScheme</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bComparePrjStructurePopupLink" data-popup-contentsource="#bComparePrjStructurePopupContent" data-popup-showevent="click mouseenter">bComparePrjStructure</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bCompareLayersPopupLink" data-popup-contentsource="#bCompareLayersPopupContent" data-popup-showevent="click mouseenter">bCompareLayers</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bReportNewLayersPopupLink" data-popup-contentsource="#bReportNewLayersPopupContent" data-popup-showevent="click mouseenter">bReportNewLayers</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bStopOnFirstDifferencePopupLink" data-popup-contentsource="#bStopOnFirstDifferencePopupContent" data-popup-showevent="click mouseenter">bStopOnFirstDifference</a></i>
+)</pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre><span style="color: #0000FF; ">public</span>:
+<a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> DoProjectInspection( 
+   <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Project.html">Project^</a> <i><a class="i-popup-link" id="oProjectPopupLink" data-popup-contentsource="#oProjectPopupContent" data-popup-showevent="click mouseenter">oProject</a></i>,
+   <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Project.html">Project^</a> <i><a class="i-popup-link" id="oRefProjectPopupLink" data-popup-contentsource="#oRefProjectPopupContent" data-popup-showevent="click mouseenter">oRefProject</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bCompareSettingsPopupLink" data-popup-contentsource="#bCompareSettingsPopupContent" data-popup-showevent="click mouseenter">bCompareSettings</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">String^</a> <i><a class="i-popup-link" id="sSettingsSchemePopupLink" data-popup-contentsource="#sSettingsSchemePopupContent" data-popup-showevent="click mouseenter">sSettingsScheme</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bComparePropertiesPopupLink" data-popup-contentsource="#bComparePropertiesPopupContent" data-popup-showevent="click mouseenter">bCompareProperties</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">String^</a> <i><a class="i-popup-link" id="sPropertiesSchemePopupLink" data-popup-contentsource="#sPropertiesSchemePopupContent" data-popup-showevent="click mouseenter">sPropertiesScheme</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bDoVerificationPopupLink" data-popup-contentsource="#bDoVerificationPopupContent" data-popup-showevent="click mouseenter">bDoVerification</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">String^</a> <i><a class="i-popup-link" id="sVerificationSchemePopupLink" data-popup-contentsource="#sVerificationSchemePopupContent" data-popup-showevent="click mouseenter">sVerificationScheme</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bComparePrjStructurePopupLink" data-popup-contentsource="#bComparePrjStructurePopupContent" data-popup-showevent="click mouseenter">bComparePrjStructure</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bCompareLayersPopupLink" data-popup-contentsource="#bCompareLayersPopupContent" data-popup-showevent="click mouseenter">bCompareLayers</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bReportNewLayersPopupLink" data-popup-contentsource="#bReportNewLayersPopupContent" data-popup-showevent="click mouseenter">bReportNewLayers</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bStopOnFirstDifferencePopupLink" data-popup-contentsource="#bStopOnFirstDifferencePopupContent" data-popup-showevent="click mouseenter">bStopOnFirstDifference</a></i>
+) </pre></pre>
+            </div>
+        
+
+            </div>
+        
+            <h4 class=dxh4>Parameters</h4><dl><dt><I>oProject</I></dt>
+<dd>First project to be compared.</dd><dt><I>oRefProject</I></dt>
+<dd>Second project to be compared.</dd><dt><I>bCompareSettings</I></dt>
+<dd>If true, comparison of project settings is done.</dd><dt><I>sSettingsScheme</I></dt>
+<dd>Name of settings comparison scheme. If <code originaltag="c">null</code> or <code originaltag="c">empty</code> string is passed then last used scheme will be used. This parameter is used only if <code originaltag="c">bCompareSettings</code> is <code originaltag="c">true</code>. If the scheme is not supported, information is passed as a system message.</dd><dt><I>bCompareProperties</I></dt>
+<dd>If true, comparison of project properties is done.</dd><dt><I>sPropertiesScheme</I></dt>
+<dd>Name of properties comparison scheme. If <code originaltag="c">null</code> or <code originaltag="c">empty</code> string is passed then last used scheme will be used. This parameter is used only if <code originaltag="c">bCompareProperties</code> is <code originaltag="c">true</code>. If the scheme is not supported, information is passed as a system message.</dd><dt><I>bDoVerification</I></dt>
+<dd>If true, projects verification is also done.</dd><dt><I>sVerificationScheme</I></dt>
+<dd>Name of verification scheme. If <code originaltag="c">null</code> or <code originaltag="c">empty</code> string is passed then last used scheme will be used. This parameter is used only if <code originaltag="c">bDoVerification</code> is <code originaltag="c">true</code>. If the scheme is not supported, information is passed as a system message.</dd><dt><I>bComparePrjStructure</I></dt>
+<dd>If true, comparison of project structure is done.</dd><dt><I>bCompareLayers</I></dt>
+<dd>If true, comparison of layersSecond is done.</dd><dt><I>bReportNewLayers</I></dt>
+<dd>If true, new layers are reported. Used only if parameter <code originaltag="c">bCompareLayers</code> is <code originaltag="c">true</code>.</dd><dt><I>bStopOnFirstDifference</I></dt>
+<dd>If true, the comparisons/verifications will stop on first difference/error.</dd></dl>
+            
+            <h4 class=dxh4>Return Value</h4><div class="i-returns-content">true if the inspection was succesful</div></div>
+            <div class="i-section-heading" id="i-exceptions-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Exceptions</span></div><div id="i-exceptions-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>Exception</th><th>Description</th></tr>
+<tr><td class=i-link><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemArgumentNullExceptionClassTopic','System.ArgumentNullException')">System.ArgumentNullException</a></td><td class="i-description">Thrown if oProject or oRefProject is null value.</td></tr>
+</table></div>
+            
+            
+            <div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content">Messages created by old project verifications are deleted.</div>
+            <a name="exampleBookmark"></a>
+            
+            
+            
+            
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement.html">ProjectManagement Class</a>
+<br/><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement_members.html">ProjectManagement Members</a>
+<br/><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~DoProjectInspection.html">Overload List</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

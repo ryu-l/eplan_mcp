@@ -1,0 +1,31 @@
+# FUNC_ARTICLE_NOMINAL_CURRENT Property (ProjectPropertyList)
+
+FUNC\_ARTICLE\_NOMINAL\_CURRENT Property (ProjectPropertyList)
+
+Nominal current # 26312.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_ARTICLE\_NOMINAL\_CURRENT(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~FUNC_ARTICLE_NOMINAL_CURRENT(Int32).html) | Nominal current # 26312. |
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 50.
+
+Nominal current of electrical consumers. Current that flows through an electric device when it is operated with the nominal voltage and emits its nominal power.
+
+See Also
+
+#### Reference
+
+[ProjectPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList.html)
+  
+[ProjectPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

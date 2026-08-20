@@ -1,0 +1,50 @@
+# ARTICLE_FITTING_LENGTH_OF_THE_PROTECTION_TUBE Property
+
+ARTICLE\_FITTING\_LENGTH\_OF\_THE\_PROTECTION\_TUBE Property
+
+Mounting length: Protective tube # 26277.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue ARTICLE_FITTING_LENGTH_OF_THE_PROTECTION_TUBE {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ ARTICLE_FITTING_LENGTH_OF_THE_PROTECTION_TUBE {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Mounting length of the protective tube (in mm).
+
+See Also
+
+#### Reference
+
+[MergedArticleReferencePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList.html)
+  
+[MergedArticleReferencePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList_members.html)
+  
+[Overload List](topic1885.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

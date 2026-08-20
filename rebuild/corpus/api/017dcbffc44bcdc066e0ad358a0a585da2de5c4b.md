@@ -1,0 +1,52 @@
+# SYMBVAR_SYMB_NAME Property
+
+SYMBVAR\_SYMB\_NAME Property
+
+Symbol name # 16903.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue SYMBVAR_SYMB_NAME {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ SYMBVAR_SYMB_NAME {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+This property is read-only..
+
+Identifying designation of the symbol, i.e. the identifier letter according to a standard.
+
+See Also
+
+#### Reference
+
+[SymbolVariantPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.SymbolVariantPropertyList.html)
+  
+[SymbolVariantPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.SymbolVariantPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.SymbolVariantPropertyList~SYMBVAR_SYMB_NAME.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

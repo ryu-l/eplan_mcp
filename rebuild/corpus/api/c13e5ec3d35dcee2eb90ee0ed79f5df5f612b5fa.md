@@ -1,0 +1,40 @@
+# R Property
+
+R Property
+
+Gets or sets the red channel value of color (0-255)
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public byte R {get; set;}
+```
+```
+
+```
+```
+public:
+property byte R {
+   byte get();
+   void set (    byte value);
+}
+```
+```
+
+See Also
+
+#### Reference
+
+[Color Structure](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.Color.html)
+  
+[Color Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.Color_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

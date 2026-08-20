@@ -1,0 +1,31 @@
+# FUNC_ARTICLE_EXTERNAL_DOCUMENT_17 Property (ProjectPropertyList)
+
+FUNC\_ARTICLE\_EXTERNAL\_DOCUMENT\_17 Property (ProjectPropertyList)
+
+Part: External document 17 # 20276.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_ARTICLE\_EXTERNAL\_DOCUMENT\_17(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~FUNC_ARTICLE_EXTERNAL_DOCUMENT_17(Int32).html) | Part: External document 17 # 20276. |
+
+Remarks
+
+This property is read-only. Property is indexed. Possible indexes are from 1 to 50.
+
+Outputs the "External document 17" property of the nth part using the index.
+
+See Also
+
+#### Reference
+
+[ProjectPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList.html)
+  
+[ProjectPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

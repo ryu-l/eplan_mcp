@@ -1,0 +1,50 @@
+# ARTICLE_SECONDARY_CASING_PRESSURE_STAGE Property
+
+ARTICLE\_SECONDARY\_CASING\_PRESSURE\_STAGE Property
+
+Pressure level of secondary housing # 26261.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue ARTICLE_SECONDARY_CASING_PRESSURE_STAGE {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ ARTICLE_SECONDARY_CASING_PRESSURE_STAGE {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Specification of the nominal pressure of the secondary housing of a process measuring instrument.
+
+See Also
+
+#### Reference
+
+[ArticleReferencePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList.html)
+  
+[ArticleReferencePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList~ARTICLE_SECONDARY_CASING_PRESSURE_STAGE.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

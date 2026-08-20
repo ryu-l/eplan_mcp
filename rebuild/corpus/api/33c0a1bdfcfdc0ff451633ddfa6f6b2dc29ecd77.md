@@ -1,0 +1,63 @@
+# UnGroup(Placement,Boolean,Boolean) Method
+
+UnGroup(Placement,Boolean,Boolean) Method
+
+Remove [Placement](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html) only from a group.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public void UnGroup( 
+   Placement placement,
+   bool bRemoveEmptyGroup,
+   bool bRedraw
+)
+```
+```
+
+```
+```
+public:
+void UnGroup( 
+   Placement^ placement,
+   bool bRemoveEmptyGroup,
+   bool bRedraw
+)
+```
+```
+
+#### Parameters
+
+*placement*
+
+*bRemoveEmptyGroup*
+:   If true method will remove also Group when it becomes empty.
+
+*bRedraw*
+:   If true, GED is redrawn after the ungrouping.
+
+Remarks
+
+This method doesn't make sense for class "SymbolVariant" and "DimensionGroup". It always throws [ForbiddenOperationException](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ForbiddenOperationException.html) for class "SymbolVariant" and "DimensionGroup".
+
+See Also
+
+#### Reference
+
+[Group Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Group.html)
+  
+[Group Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Group_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Group~UnGroup.html)
+  
+[Placement Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

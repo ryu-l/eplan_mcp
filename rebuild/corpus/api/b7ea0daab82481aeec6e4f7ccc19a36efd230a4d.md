@@ -1,0 +1,40 @@
+# ConnectionPointDesignation Property (MDElectricalRelayTemplatePosition)
+
+ConnectionPointDesignation Property (MDElectricalRelayTemplatePosition)
+
+The designation of the relay template
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public string ConnectionPointDesignation {get; set;}
+```
+```
+
+```
+```
+public:
+property String^ ConnectionPointDesignation {
+   String^ get();
+   void set (    String^ value);
+}
+```
+```
+
+See Also
+
+#### Reference
+
+[MDElectricalRelayTemplatePosition Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDElectricalRelayTemplatePosition.html)
+  
+[MDElectricalRelayTemplatePosition Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDElectricalRelayTemplatePosition_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

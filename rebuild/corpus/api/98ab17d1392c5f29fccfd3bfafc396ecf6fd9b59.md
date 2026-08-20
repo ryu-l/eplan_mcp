@@ -1,0 +1,31 @@
+# FUNC_ARTICLE_WEIGHT_OF_THE_INDIVIDUAL_ARTICLE_PACKAGING Property (ProjectPropertyList)
+
+FUNC\_ARTICLE\_WEIGHT\_OF\_THE\_INDIVIDUAL\_ARTICLE\_PACKAGING Property (ProjectPropertyList)
+
+Weight (individual packaging) # 26377.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_ARTICLE\_WEIGHT\_OF\_THE\_INDIVIDUAL\_ARTICLE\_PACKAGING(Int32)](topic459.html) | Weight (individual packaging) # 26377. |
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 50.
+
+Weight of the individual part packaging. Weight of the primary packaging that is directly around the individual product, without additional protective packaging.
+
+See Also
+
+#### Reference
+
+[ProjectPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList.html)
+  
+[ProjectPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

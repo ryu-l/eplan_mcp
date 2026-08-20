@@ -1,0 +1,31 @@
+# DESIGNATION_INSTALLATIONNUMBER_DESCR Property (MergedArticleReferencePropertyList)
+
+DESIGNATION\_INSTALLATIONNUMBER\_DESCR Property (MergedArticleReferencePropertyList)
+
+Higher-level function number (main identifier): Description # 1730.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [DESIGNATION\_INSTALLATIONNUMBER\_DESCR](topic360.html) | Higher-level function number (main identifier): Description # 1730. |
+
+Remarks
+
+This property is read-only..
+
+Higher-level function number description.
+
+See Also
+
+#### Reference
+
+[MergedArticleReferencePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList.html)
+  
+[MergedArticleReferencePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

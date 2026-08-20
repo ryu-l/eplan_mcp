@@ -1,0 +1,29 @@
+# ARTICLE_RATED_APPARENT_POWER Property (ArticlePropertyList)
+
+ARTICLE\_RATED\_APPARENT\_POWER Property (ArticlePropertyList)
+
+Rated apparent power # 26234.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [ARTICLE\_RATED\_APPARENT\_POWER](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_RATED_APPARENT_POWER().html) | Rated apparent power # 26234. |
+
+Remarks
+
+Power specification of the manufacturer, which results from the root mean square values of the electric current and voltage and is composed of an active power component and a reactive power component and was determined under specified conditions and rules. It identifies the power to be supplied or to be output of an electrical device.
+
+See Also
+
+#### Reference
+
+[ArticlePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList.html)
+  
+[ArticlePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

@@ -1,0 +1,61 @@
+# GetInterruptionPointsWithFilterScheme Method
+
+GetInterruptionPointsWithFilterScheme Method
+
+Returns [Eplan.EplApi.DataModel.InterruptionPoint](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.InterruptionPoint.html)s matching the given filter from the interruptionpoint navigator.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public InterruptionPoint[] GetInterruptionPointsWithFilterScheme( 
+   string strFilterScheme
+)
+```
+```
+
+```
+```
+public:
+array<InterruptionPoint^>^ GetInterruptionPointsWithFilterScheme( 
+   String^ strFilterScheme
+)
+```
+```
+
+#### Parameters
+
+*strFilterScheme*
+:   Scheme name of filter from the interruptionpoint navigator
+
+#### Return Value
+
+â¢ If scheme name is empty, the current filter scheme will be used.  
+â¢ If scheme name is NULL, the method returns elements that are visible if no filter scheme is used in a GUI navigator.
+
+Exceptions
+
+| Exception | Description |
+| --- | --- |
+| [Eplan.EplApi.Base.BaseException](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException.html) | Thrown if internally used query throws exception. |
+| [System.ArgumentException](#) | Thrown if filter scheme does not exist. |
+| [System.ArgumentNullException](#) | Thrown if strFilterScheme is set to NULL. |
+
+See Also
+
+#### Reference
+
+[DMObjectsFinder Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder.html)
+  
+[DMObjectsFinder Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder_members.html)
+  
+[InterruptionPoint Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.InterruptionPoint.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

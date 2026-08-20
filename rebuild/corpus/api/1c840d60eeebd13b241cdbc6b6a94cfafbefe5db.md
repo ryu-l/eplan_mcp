@@ -1,0 +1,55 @@
+# NameService Constructor(Page)
+
+NameService Constructor(Page)
+
+Constructor. Creates a NameService and call `set_Page` method.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public NameService( 
+   Page oPage
+)
+```
+```
+
+```
+```
+public:
+NameService( 
+   Page^ oPage
+)
+```
+```
+
+#### Parameters
+
+*oPage*
+:   Page to set.
+
+Exceptions
+
+| Exception | Description |
+| --- | --- |
+| **ArgumentException** | Invalid parameters were found. |
+| **ArgumentNullException** | Null was passed to a parameter. |
+
+See Also
+
+#### Reference
+
+[NameService Class](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService.html)
+  
+[NameService Members](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService_members.html)
+  
+[Overload List](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~_ctor.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

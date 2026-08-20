@@ -1,0 +1,33 @@
+# FUNC_CRAFTCODE Property (ConnectionPropertyList)
+
+FUNC\_CRAFTCODE Property (ConnectionPropertyList)
+
+Media code # 20316.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_CRAFTCODE](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPropertyList~FUNC_CRAFTCODE().html) | Media code # 20316. |
+
+Remarks
+
+This property is read-only..
+
+This property is used to map the designations used in the standard DIN ISO 1219-2 for fluid power in Eplan. For fluid power devices the identifier of the device is displayed here, meaning the contents of the property DT: Identifier (ID 20013). If the project setting Fluid power: Use trade identifier as identifier (media code) is activated, the trade identifier is displayed.
+
+This property is used as part of a name. In order to set it, member `NameParts` must be used on object which name will be changed. Additionally for setting this property on a Page object, a function Page::SetName() or the Page constructor can be used.
+
+See Also
+
+#### Reference
+
+[ConnectionPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPropertyList.html)
+  
+[ConnectionPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

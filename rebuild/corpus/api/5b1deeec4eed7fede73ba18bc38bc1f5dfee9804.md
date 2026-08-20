@@ -1,0 +1,31 @@
+# PAGE_MACRO_DESCRIPTION Property (MacroBoxPropertyList)
+
+PAGE\_MACRO\_DESCRIPTION Property (MacroBoxPropertyList)
+
+Macro: Description # 11014.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [PAGE\_MACRO\_DESCRIPTION(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MacroBoxPropertyList~PAGE_MACRO_DESCRIPTION(Int32).html) | Macro: Description # 11014. |
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 100.
+
+Description text for the macro.
+
+See Also
+
+#### Reference
+
+[MacroBoxPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MacroBoxPropertyList.html)
+  
+[MacroBoxPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MacroBoxPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

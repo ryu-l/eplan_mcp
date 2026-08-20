@@ -1,0 +1,29 @@
+# FUNC_PLCSAFETYLOWERBOUNDADDRESS_1 Property (FunctionPropertyList)
+
+FUNC\_PLCSAFETYLOWERBOUNDADDRESS\_1 Property (FunctionPropertyList)
+
+PLC subdevice 1: Safety address: Lower value # 20658.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_PLCSAFETYLOWERBOUNDADDRESS\_1](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_PLCSAFETYLOWERBOUNDADDRESS_1().html) | PLC subdevice 1: Safety address: Lower value # 20658. |
+
+Remarks
+
+Safety address (lower value) at PLC subdevices of safety modules. Detailed information on this is available from the PLC manufacturer. The value itself is entered during the import of PLC configuration files in the AutomationML AR APC format. The properties for the safety addresses at PLC subdevices are taken into consideration for the PLC data exchange as of the AutomationML AR APC Version 1.1.0.
+
+See Also
+
+#### Reference
+
+[FunctionPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList.html)
+  
+[FunctionPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

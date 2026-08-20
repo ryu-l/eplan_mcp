@@ -1,0 +1,31 @@
+# FUNC_ARTICLE_MODULE_PART Property (FunctionPropertyList)
+
+FUNC\_ARTICLE\_MODULE\_PART Property (FunctionPropertyList)
+
+Part is included in a module # 20906.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_ARTICLE\_MODULE\_PART(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_ARTICLE_MODULE_PART(Int32).html) | Part is included in a module # 20906. |
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 50.
+
+Specifies whether this part is part of a module. A max. of 50 definitions can be defined using the index.
+
+See Also
+
+#### Reference
+
+[FunctionPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList.html)
+  
+[FunctionPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

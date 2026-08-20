@@ -1,0 +1,46 @@
+# ARTICLE_PLCGROUP_DATALENGTH_OUTPUTS_2 Property
+
+ARTICLE\_PLCGROUP\_DATALENGTH\_OUTPUTS\_2 Property
+
+PLC subdevice 2: Data length (outputs) # 20574.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue ARTICLE_PLCGROUP_DATALENGTH_OUTPUTS_2 {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ ARTICLE_PLCGROUP_DATALENGTH_OUTPUTS_2 {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+See Also
+
+#### Reference
+
+[ArticlePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList.html)
+  
+[ArticlePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_PLCGROUP_DATALENGTH_OUTPUTS_2.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

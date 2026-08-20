@@ -1,0 +1,29 @@
+# ARTICLE_ACCESSORYID Property (MDPartsDatabaseItemPropertyList)
+
+ARTICLE\_ACCESSORYID Property (MDPartsDatabaseItemPropertyList)
+
+Accessory code # 22025.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [ARTICLE\_ACCESSORYID](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList~ARTICLE_ACCESSORYID().html) | Accessory code # 22025. |
+
+Remarks
+
+This property should no longer be used and is only available with old Eplan versions for reasons of compatibility. In older Eplan projects (created with Version 1.9 or older), this property was used to assign accessory parts to a part; parts and accessory parts with the same accessory code were grouped together.
+
+See Also
+
+#### Reference
+
+[MDPartsDatabaseItemPropertyList Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList.html)
+  
+[MDPartsDatabaseItemPropertyList Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

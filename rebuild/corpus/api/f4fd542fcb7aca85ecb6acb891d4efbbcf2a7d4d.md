@@ -1,0 +1,47 @@
+# Properties Property (PotentialDefinition)
+
+Properties Property (PotentialDefinition)
+
+.NET Property enabling access to P8 properties of the PotentialDefinition object.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public new PotentialDefinitionPropertyList Properties {get;}
+```
+```
+
+```
+```
+public:
+new property PotentialDefinitionPropertyList^ Properties {
+   PotentialDefinitionPropertyList^ get();
+}
+```
+```
+
+#### Property Value
+
+P8 properties of the PotentialDefinition.
+
+See Also
+
+#### Reference
+
+[PotentialDefinition Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition.html)
+  
+[PotentialDefinition Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition_members.html)
+  
+[PotentialDefinitionPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList.html)
+  
+[PotentialDefinition Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

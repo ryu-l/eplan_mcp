@@ -1,0 +1,31 @@
+# DESIGNATION_SUBPLACEOFINSTALLATION7 Property (MergedArticleReferencePropertyList)
+
+DESIGNATION\_SUBPLACEOFINSTALLATION7 Property (MergedArticleReferencePropertyList)
+
+Installation site (sub-identifier 7) # 1407.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [DESIGNATION\_SUBPLACEOFINSTALLATION7](topic397.html) | Installation site (sub-identifier 7) # 1407. |
+
+Remarks
+
+This property is read-only..
+
+This property is used as part of a name. In order to set it, member `NameParts` must be used on object which name will be changed. Additionally for setting this property on a Page object, a function Page::SetName() or the Page constructor can be used.
+
+See Also
+
+#### Reference
+
+[MergedArticleReferencePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList.html)
+  
+[MergedArticleReferencePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

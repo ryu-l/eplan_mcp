@@ -1,0 +1,31 @@
+# FUNC_ARTICLEREF_PARTSLISTGROUP Property (ConnectionPropertyList)
+
+FUNC\_ARTICLEREF\_PARTSLISTGROUP Property (ConnectionPropertyList)
+
+Bill of materials group # 20924.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_ARTICLEREF\_PARTSLISTGROUP(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPropertyList~FUNC_ARTICLEREF_PARTSLISTGROUP(Int32).html) | Bill of materials group # 20924. |
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 50.
+
+You can use this property to group the parts data of components, serial machines, etc. and to make these groups visible in the bill of materials navigator. The property can be used for filtering in the bill of materials and 3D mounting layout navigator and is available in the reports for the bill of materials and for editing in tables.
+
+See Also
+
+#### Reference
+
+[ConnectionPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPropertyList.html)
+  
+[ConnectionPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

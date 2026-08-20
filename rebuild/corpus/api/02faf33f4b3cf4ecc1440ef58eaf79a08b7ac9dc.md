@@ -1,0 +1,45 @@
+# IsPointInsideLogicalArea Method (SymbolReference)
+
+IsPointInsideLogicalArea Method (SymbolReference)
+
+Checks, if the point is inside logical area of the symbol. Returns true, if the symbol has a logical area and the point is inside. The logical area may be a rectangle or a polyline without arcs.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public virtual bool IsPointInsideLogicalArea( 
+   PointD pTest
+)
+```
+```
+
+```
+```
+public:
+virtual bool IsPointInsideLogicalArea( 
+   PointD pTest
+)
+```
+```
+
+#### Parameters
+
+*pTest*
+
+See Also
+
+#### Reference
+
+[SymbolReference Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html)
+  
+[SymbolReference Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

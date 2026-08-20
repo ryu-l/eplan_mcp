@@ -1,0 +1,52 @@
+# FUNC_TERMINALSORTCODE Property
+
+FUNC\_TERMINALSORTCODE Property
+
+Sort code (terminal / pin) # 20809.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue FUNC_TERMINALSORTCODE {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ FUNC_TERMINALSORTCODE {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Specifies the order of the pins at plugs.
+
+Specifies the order within the terminal device at terminals. If several terminals/pins have the same sort code or the sort code is empty; these are sorted in the sequence of their designation.
+
+See Also
+
+#### Reference
+
+[Placement3DPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList.html)
+  
+[Placement3DPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_TERMINALSORTCODE.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

@@ -1,0 +1,29 @@
+# DESIGNATION_SUBPLANT1_DESCR Property (PlanningSegmentPropertyList)
+
+DESIGNATION\_SUBPLANT1\_DESCR Property (PlanningSegmentPropertyList)
+
+Function designation (sub-identifier 1): Description # 1131.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [DESIGNATION\_SUBPLANT1\_DESCR](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList~DESIGNATION_SUBPLANT1_DESCR().html) | Function designation (sub-identifier 1): Description # 1131. |
+
+Remarks
+
+This property is read-only..
+
+See Also
+
+#### Reference
+
+[PlanningSegmentPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList.html)
+  
+[PlanningSegmentPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

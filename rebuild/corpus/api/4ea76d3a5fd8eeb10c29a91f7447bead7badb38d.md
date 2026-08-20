@@ -1,0 +1,52 @@
+# DESIGNATION_FULLINSTALLATIONNUMBER Property
+
+DESIGNATION\_FULLINSTALLATIONNUMBER Property
+
+Higher-level function number # 1720.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue DESIGNATION_FULLINSTALLATIONNUMBER {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ DESIGNATION_FULLINSTALLATIONNUMBER {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+This property is read-only..
+
+Full higher-level function number.
+
+See Also
+
+#### Reference
+
+[FunctionBasePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionBasePropertyList.html)
+  
+[FunctionBasePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionBasePropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionBasePropertyList~DESIGNATION_FULLINSTALLATIONNUMBER.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

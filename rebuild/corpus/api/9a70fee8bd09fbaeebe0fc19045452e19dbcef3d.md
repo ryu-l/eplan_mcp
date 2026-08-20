@@ -1,0 +1,41 @@
+# GetInternalParameter Method (EventParameterString)
+
+GetInternalParameter Method (EventParameterString)
+
+For internal use only.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public virtual AfEventParameter GetInternalParameter()
+```
+```
+
+```
+```
+public:
+virtual AfEventParameter GetInternalParameter();
+```
+```
+
+#### Return Value
+
+For internal use only.
+
+See Also
+
+#### Reference
+
+[EventParameterString Class](Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.EventParameterString.html)
+  
+[EventParameterString Members](Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.EventParameterString_members.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)
