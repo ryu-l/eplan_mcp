@@ -1,0 +1,348 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>IdentityClient</title>
+    <meta name="Title" content="IdentityClient"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n212","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="This chapter shows how to work with the  Eplan.IdentityClient.Authentification  and  Eplan.IdentityClient.Types  namespaces." />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="c6cbc34b-fd6c-40ce-a664-54efea7a7a94"/>
+    <meta name="Microsoft.Help.TocParent" content="336e53eb-a15a-49ac-8013-c36cd5cf745f"/>
+    <meta name="Microsoft.Help.TocOrder" content="16"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">Eplan API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_Other.html">API Miscellaneous</a>
+ / IdentityClient</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">IdentityClient</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>This chapter shows how to work with the &nbsp;<span class="SPAN.codetext codetext SPAN">Eplan.IdentityClient.Authentification</span>&nbsp; and &nbsp;<span class="SPAN.codetext codetext SPAN">Eplan.IdentityClient.Types</span>&nbsp; namespaces.</p>
+
+<p>&nbsp;</p>
+
+<p>First&nbsp;create an &nbsp;<span class="SPAN.codetext codetext SPAN">IEIdentityClient</span>&nbsp; object and make sure you are signed in to the Eplan Cloud:</p>
+
+<div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+    <ul>
+        <li><a href="#i-tab-content-73d631f7-ee20-4f8f-a84c-d7e24600bf17">C#</a></li>
+    </ul>
+
+    <div id="i-tab-content-73d631f7-ee20-4f8f-a84c-d7e24600bf17" class="i-filtered-content i-code">
+        <pre>
+<span style="COLOR: #008000">// Create IdentityClient instance
+</span>IEIdentityClient IdentityClient = EIdentityClient.Instance;
+
+<span style="COLOR: #008000">// Make sure you are signed in to Eplan Cloud
+</span>Task&lt;AuthenticationData&gt; signInData = IdentityClient.Signin();
+AuthenticationData signInResult = signInData.Result;
+
+<span style="COLOR: #008000">// Check if success
+</span><span style="COLOR: #0000ff">if</span> (signInResult.IsSuccess)
+    <span style="COLOR: #0000ff">new</span> Decider().Decide(EnumDecisionType.eOkDecision, <span style="COLOR: #800000">"Sign in success"</span>, <span style="COLOR: #800000">"Result"</span>, EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>Get example information&nbsp;from&nbsp;the user cloud&nbsp;profile:</p>
+
+<div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+    <ul>
+        <li><a href="#i-tab-content-d0203b96-9d8e-4e2a-b9dd-59aea8cfd6c6">C#</a></li>
+    </ul>
+
+    <div id="i-tab-content-d0203b96-9d8e-4e2a-b9dd-59aea8cfd6c6" class="i-filtered-content i-code">
+        <pre>
+<span style="COLOR: #008000">// User profile information
+</span>Task&lt;IdentityClientResponse&gt; userProfile = IdentityClient.GetUserProfile();
+IdentityClientResponse getUserProfileResult = userProfile.Result;
+
+<span style="COLOR: #008000">// Show exmaple information
+</span><span style="COLOR: #0000ff">if</span> (getUserProfileResult.IsSuccess)
+{
+    <span style="COLOR: #0000ff">string</span> message = <span style="COLOR: #800000">$"Organization Name: </span>{getUserProfileResult.OrganizationName}<span style="COLOR: #800000">,\nEmail: </span>{getUserProfileResult.Email}<span style="COLOR: #800000">"</span>;
+    <span style="COLOR: #0000ff">new</span> Decider().Decide(EnumDecisionType.eOkDecision, message, <span style="COLOR: #800000">"UserProfile success"</span>, EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
+}
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>Set the &nbsp;<strong><span class="codetext">ClientId</span></strong>&nbsp; name to work with a specific API service in the Eplan Cloud:</p>
+
+<div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+    <ul>
+        <li><a href="#i-tab-content-f1ecf4ad-a432-43fc-ab8d-eb1dd558941a">C#</a></li>
+    </ul>
+
+    <div id="i-tab-content-f1ecf4ad-a432-43fc-ab8d-eb1dd558941a" class="i-filtered-content i-code">
+        <pre>
+<span style="COLOR: #008000">// ClientId of specific Eplan Cloud API application
+</span><span style="COLOR: #0000ff">string</span> ClientId = <span style="COLOR: #800000">"Proper_Client_Id_Name"</span>;
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<div class="i-box i-box-note">
+    <p>Notice:<br />
+    <strong><span class="codetext">ClientId</span></strong>&nbsp; is <u>case-sensitive</u> and can&nbsp;be found on <a href="https://developer.eplan.com/">Eplan Cloud Developer Portal</a> inside tooltip of product tag:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</p><img title="" border="0" alt="" src="images/ClientID_ToolTip.png" />&nbsp;
+</div>
+
+<p>&nbsp;</p>
+
+<p>Use the &nbsp;<span class="SPAN.codetext codetext SPAN">GetHttpClient()</span>&nbsp; method to work with Eplan Cloud API endpoints:</p>
+
+<div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+    <ul>
+        <li><a href="#i-tab-content-afd14505-dc46-48f8-953b-1e2b9659248f">C#</a></li>
+    </ul>
+
+    <div id="i-tab-content-afd14505-dc46-48f8-953b-1e2b9659248f" class="i-filtered-content i-code">
+        <pre>
+<span style="COLOR: #008000">// Initialize httpClient object
+</span><span style="COLOR: #0000ff">var</span> url = <span style="COLOR: #800000">"https://api.eplan.com/estockservice/v2.0/"</span>;
+HttpClient httpClient = <span style="COLOR: #0000ff">null</span>;
+IdentityClientResponse httpClientRespone = IdentityClient.GetHttpClient(strClientId, url, <span style="COLOR: #0000ff">ref</span> httpClient);
+
+<span style="COLOR: #008000">// Get collections
+</span><span style="COLOR: #0000ff">if</span> (httpClientRespone.IsSuccess)
+{
+     HttpResponseMessage GetAsyncResult = httpClient.GetAsync(<span style="COLOR: #800000">"collections"</span>).Result;
+     <span style="COLOR: #0000ff">string</span> message = <span style="COLOR: #800000">$"Status: </span>{GetAsyncResult.StatusCode.ToString()}<span style="COLOR: #800000">,\nResult: </span>{GetAsyncResult.Content.ReadAsStringAsync().Result}<span style="COLOR: #800000">"</span>;
+     <span style="COLOR: #0000ff">new</span> Decider().Decide(EnumDecisionType.eOkDecision, message, <span style="COLOR: #800000">"Get result"</span>, EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
+}
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>The &nbsp;<span class="SPAN.codetext codetext SPAN">GetAccessToken()</span>&nbsp; is&nbsp;called internally by &nbsp;<span class="SPAN.codetext codetext SPAN">GetHttpClient()</span>, but it is still possible to use&nbsp;this method directly:</p>
+
+<div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+    <ul>
+        <li><a href="#i-tab-content-80a79367-c2db-45d6-b2dc-591006b0d945">C#</a></li>
+    </ul>
+
+    <div id="i-tab-content-80a79367-c2db-45d6-b2dc-591006b0d945" class="i-filtered-content i-code">
+        <pre>
+<span style="COLOR: #008000">// Get access Token
+</span>IdentityClientResponse tokenResponse = IdentityClient.GetAccessToken(strClientId);
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>Sign out and exit:</p>
+
+<div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+    <ul>
+        <li><a href="#i-tab-content-cdc2f3d1-0e26-44fb-bb9c-8d750f311826">C#</a></li>
+    </ul>
+
+    <div id="i-tab-content-cdc2f3d1-0e26-44fb-bb9c-8d750f311826" class="i-filtered-content i-code">
+        <pre>
+<span style="COLOR: #008000">// Sign out
+</span>Task&lt;IdentityClientResponse&gt; response = IdentityClient.Signout();
+IdentityClientResponse signOutResult = response.Result;
+
+<span style="COLOR: #0000ff">if</span> (signOutResult.IsSuccess)
+    <span style="COLOR: #0000ff">new</span> Decider().Decide(EnumDecisionType.eOkDecision, <span style="COLOR: #800000">"Sign out success"</span>, <span style="COLOR: #800000">"Result"</span>, EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
+
+
+<span style="COLOR: #008000">// Exit IdentityClient
+</span>IdentityClientResponse exitResponse = IdentityClient.Exit();
+
+<span style="COLOR: #0000ff">if</span> (exitResponse.IsSuccess)
+    <span style="COLOR: #0000ff">new</span> Decider().Decide(EnumDecisionType.eOkDecision, <span style="COLOR: #800000">"Exit success"</span>, <span style="COLOR: #800000">"Result"</span>, EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
+</pre>
+    </div>
+</div>
+
+<h2>Warning about deprecated endpoints</h2>
+
+<p>To receive a warning when a deprecated URL&nbsp;is addressed, the &nbsp;<span class="SPAN.codetext codetext SPAN">EplanCloudResourceDeprecationEvent</span>&nbsp; must be subscribed to. In the following example, a message box will pop up as soon as a deprecated endpoint is addressed:</p>
+
+<p>&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="images/Identity_Client/message-deprecated-endpoint.png" /></p>
+
+<p>&nbsp;</p>
+
+<p>For this purpose, an event handler is registered for the <span class="SPAN.codetext codetext SPAN">EplanCloudResourceDeprecationEvent</span>.</p>
+
+<p>&nbsp;</p>
+
+<div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+    <ul>
+        <li><a href="#i-tab-content-db83b0dd-ec9e-4fef-aef5-ec8cfc1830ef">C#</a></li>
+    </ul>
+
+    <div id="i-tab-content-db83b0dd-ec9e-4fef-aef5-ec8cfc1830ef" class="i-filtered-content i-code">
+        <pre>
+<span style="COLOR: #008000">// Create an IdentityClient instance
+</span>IEIdentityClient IdentityClient = EIdentityClient.Instance;
+
+<span style="COLOR: #008000">// Create an endpoint deprecation event handling
+</span>EventHandler&lt;EplanCloudResourceDeprecationArgs&gt; DeprecationHandler = (sender, args) =&gt;
+{
+    <span style="COLOR: #008000">// Show a message box that displays the deprecated URL as well as the deprecation timestamp and sunset timestamp
+</span>    <span style="COLOR: #0000ff">string</span> message = <span style="COLOR: #800000">$"The Eplan URL '</span>{args.Uri}<span style="COLOR: #800000">' is depreacted. Deprecation: </span>{args.Deprecation}<span style="COLOR: #800000">. Sunset: </span>{args.Sunset}<span style="COLOR: #800000">."</span>;
+    MessageBox.Show(message);
+};
+
+<span style="COLOR: #0000ff">try</span>
+{
+    <span style="COLOR: #008000">// Register an event handler for the EplanCloudResourceDeprecationEvent
+</span>    IdentityClient.EplanCloudResourceDeprecationEvent += DeprecationHandler;
+
+    <span style="COLOR: #008000">// Call an Eplan Cloud deprecated endpoint
+</span>    <span style="COLOR: #0000ff">string</span> deprecatedURL = <span style="COLOR: #800000">"yourDeprecatedEndpointURL"</span>;
+    HttpClient httpClient = <span style="COLOR: #0000ff">null</span>;
+    <span style="COLOR: #0000ff">var</span> result =
+        IdentityClient.GetHttpClient(strClientId, deprecatedURL, <span style="COLOR: #0000ff">ref</span> httpClient);
+
+    <span style="COLOR: #0000ff">if</span> (result.IsSuccess)
+    {
+        <span style="COLOR: #0000ff">var</span> response = httpClient.GetAsync(deprecatedURL).Result;
+
+        <span style="COLOR: #008000">// Handle response
+</span>        <span style="COLOR: #0000ff">if</span> (!response.IsSuccessStatusCode)
+        {
+            MessageBox.Show(<span style="COLOR: #800000">$"Eplan Cloud call failed. Error = </span>{response.ReasonPhrase}<span style="COLOR: #800000">"</span>);
+        }
+
+        <span style="COLOR: #008000">// Give the deprecation message some time to pop up
+</span>        MessageBox.Show(<span style="COLOR: #800000">"Waiting for event..."</span>);
+    }
+    <span style="COLOR: #0000ff">else</span>
+    {
+        MessageBox.Show(result.Error);
+    }
+}
+<span style="COLOR: #0000ff">catch</span> (Exception e)
+{
+    MessageBox.Show(e.Message);
+}
+<span style="COLOR: #0000ff">finally</span>
+{
+    <span style="COLOR: #008000">// Unregister the event handler for EplanCloudResourceDeprecationEvent
+</span>    IdentityClient.EplanCloudResourceDeprecationEvent -= DeprecationHandler;
+}
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

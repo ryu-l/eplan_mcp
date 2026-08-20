@@ -1,0 +1,37 @@
+# MDAccessoryListPosition Class Members
+
+MDAccessoryListPosition Class Members
+
+The following tables list the members exposed by [MDAccessoryListPosition](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDAccessoryListPosition.html).
+
+Public Properties
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Property | [AccessoryPlacement](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDAccessoryListPosition~AccessoryPlacement.html) | Returns the accessory placement name. |
+| Public Property | [PartNr](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDAccessoryListPosition~PartNr.html) | Returns the part number of the referenced part. |
+| Public Property | [Variant](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDAccessoryListPosition~Variant.html) | Returns the part number of the referenced part. |
+
+[Top](#top)
+
+Public Methods
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Method | [Dispose()](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemChildData~Dispose().html) | Destructor for deterministic finalization of MDAccessoryListPosition object. (Inherited from [Eplan.EplApi.MasterData.MDPartsDatabaseItemChildData](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemChildData.html)) |
+
+[Top](#top)
+
+See Also
+
+#### Reference
+
+[MDAccessoryListPosition Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDAccessoryListPosition.html)
+  
+[Eplan.EplApi.MasterData Namespace](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData_namespace.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

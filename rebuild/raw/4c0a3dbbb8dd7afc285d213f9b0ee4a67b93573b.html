@@ -1,0 +1,341 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>DMObjectsFinder Class</title>
+    <meta name="Title" content="DMObjectsFinder Class"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n7378","initialNodeContainer":"c72","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder"/>
+    <meta name="Description" content="This class allows you to search the Project.
+It defines a set of methods for retrieving different API objects.
+If you want the result objects to match one or more conditions, you should use filters." />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel_namespace"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.DataModel.DMObjectsFinder"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel_namespace.html">Eplan.EplApi.DataModel Namespace</a>
+ / DMObjectsFinder Class</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <a class="i-page-link" href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder_members.html">Members</a>
+                    <a class="i-page-link" href="#ExampleBookmark">Example</a><!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">DMObjectsFinder Class</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">This class allows you to search the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Project.html">Project</a>.<br />
+It defines a set of methods for retrieving different API objects.<br />
+If you want the result objects to match one or more conditions, you should use filters.</div>
+            
+            <div class="i-section-heading" id="i-inheritance-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Inheritance Hierarchy</span></div><div id="i-inheritance-section-content" class="i-section-content"><P><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemObjectClassTopic','System.Object')">System.Object</a><BR />&nbsp;&nbsp;&nbsp;<STRONG>Eplan.EplApi.DataModel.DMObjectsFinder</STRONG><BR /></P></div>			
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">class</span> DMObjectsFinder </pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">ref</span> <span style="color: #0000FF; ">class</span> DMObjectsFinder </pre></pre>
+            </div>
+        
+
+            </div>
+        </div>
+            
+            
+            
+            <div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content">List of Function3D classes with their corresponding FunctionCategories:<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Area.html">Area</a> - AreaDefinition<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.BusBar.html">BusBar</a> - CabMechBusBar<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Duct.html">Duct</a> - CabMechConduit<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingRail.html">MountingRail</a> - CabMechBodyAccessoryInside<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.BusBarSystem.html">BusBarSystem</a> - CabVirtBusbarsystem<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Cabinet.html">Cabinet</a> - CabMechCabinet<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Component.html">Component</a> - ArticlePlacement, CabMechHousing, CabMechSystemAccessory<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.CopperBundle.html">CopperBundle</a> - CabVirtCopperbundle<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Drilling.html">Drilling</a> - CabVirtNC<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.InstallationSpace.html">InstallationSpace</a> - AreaDefinition<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingPanel.html">MountingPanel</a> - CabMechHousing<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.RoutingAccessory.html">RoutingAccessory</a> - CabMechRoutingAccessory<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.RoutingSegment.html">RoutingSegment</a> - Routing<br />
+â¢ <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.RoutingSpline.html">RoutingSpline</a> - Routing<br /></div>
+            <a name="exampleBookmark"></a>
+            
+            <div class="i-section-heading" id="i-example-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Example</span></div><div id="i-example-section-content" class="i-section-content"><div class="i-description-content">The following example shows how to search a project using the DMObjectsFinder class and how to filter your search results:</div>
+<div class="i-tab-container">
+    <ul>
+        <li class="i-filtered-content-cs">
+			<a href="#i-tab-content-60545656-c89f-417e-8a01-dbc09039c518">C#</a>
+		</li>
+
+    </ul>
+	<div id="i-tab-content-60545656-c89f-417e-8a01-dbc09039c518" class="i-code i-filtered-content-cs">
+		<pre>
+Project myProject = m_oProject; <span style="color: #008000; ">// A valid project
+</span>Page myPage = myProject.Pages[0]; <span style="color: #008000; ">// A valid Page object
+</span>
+DMObjectsFinder objFinder = <span style="color: #0000FF; ">new</span> DMObjectsFinder(myProject);
+
+<span style="color: #008000; ">// Get all functions in the myProject Project
+</span>Function[] functions = objFinder.GetFunctions(<span style="color: #0000FF; ">null</span>);
+
+<span style="color: #008000; ">// Use a filter to get only functions with category 'Motor'
+</span>FunctionsFilter myFunctionsFilter = <span style="color: #0000FF; ">new</span> FunctionsFilter();
+myFunctionsFilter.FunctionCategory = Eplan.EplApi.Base.Enums.FunctionCategory.Motor;
+myFunctionsFilter.Page = myPage;
+
+<span style="color: #008000; ">// Place all functions with category 'Motor' on page myPage
+</span>functions = objFinder.GetFunctions(myFunctionsFilter);
+
+
+</pre>
+	</div>
+	
+</div>
+</div>
+            
+            
+            <a name="ConstructorsBookmark"></a>
+            <div class="i-section-heading" id="i-publicConstructors-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Constructors</span></div><div id="i-publicConstructors-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Constructor" src="template/packages/core-dotnet/images/publicConstructor.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~_ctor.html">DMObjectsFinder Constructor</A></td><td class="i-member-description">Overloaded.&nbsp; &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="FieldsBookmark"></a>
+            
+            
+            
+            <a name="PropertiesBookmark"></a>
+            
+            
+            
+            <a name="MethodsBookmark"></a>
+            <div class="i-section-heading" id="i-publicMethods-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Methods</span></div><div id="i-publicMethods-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~Dispose().html">Dispose</A></td><td class="i-member-description">Destructor &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetAll.html">GetAll&lt;T&gt;</A></td><td class="i-member-description"> &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetArticleReferences.html">GetArticleReferences</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReference.html">Eplan.EplApi.DataModel.ArticleReference</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetArticleReferencesWithCF.html">GetArticleReferencesWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReference.html">Eplan.EplApi.DataModel.ArticleReference</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetArticleReferencesWithFilterScheme.html">GetArticleReferencesWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReference.html">Eplan.EplApi.DataModel.ArticleReference</a>s matching the given filter from the bill of materials navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetBoxedDevices.html">GetBoxedDevices</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.BoxedDevice.html">Eplan.EplApi.DataModel.BoxedDevice</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetBoxedDevicesWithCF.html">GetBoxedDevicesWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.BoxedDevice.html">Eplan.EplApi.DataModel.BoxedDevice</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetCablesWithFilterScheme.html">GetCablesWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Cable.html">Eplan.EplApi.DataModel.EObjects.Cable</a>s and shieldings (<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Function.html">Eplan.EplApi.DataModel.Function</a>s with category "Shielding") matching the given filter from the cable navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetCableUnits.html">GetCableUnits</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.CableUnit.html">Eplan.EplApi.DataModel.EObjects.CableUnit</a>es matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetCableUnitsWithCF.html">GetCableUnitsWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.CableUnit.html">Eplan.EplApi.DataModel.EObjects.CableUnit</a>es matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetCableUnitsWithFilterScheme.html">GetCableUnitsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.CableUnit.html">Eplan.EplApi.DataModel.EObjects.CableUnit</a>es matching the given filter from the wire harness navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetConnections.html">GetConnections</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a>s matching the given filter.<br />
+If the filter parameter is NULL, all the project connection objects are returned.<br />
+Note: If no filter is used, the number of objects returned may be bigger than the number of connections visible in the GUI connection navigator.<br />
+The GUI connection navigator by default shows connections of the following placement types only:<br />
+â¢ Circuit<br />
+â¢ CircuitSingleLine<br />
+â¢ Overview<br />
+â¢ PairCrossReference<br />
+â¢ ProcessAndInstrumentationDiagram<br />
+â¢ PanelLayout<br /> &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetConnectionsWithCF.html">GetConnectionsWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetConnectionsWithFilterScheme.html">GetConnectionsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a>s matching the given filter from the connection navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetCustomMateEntries.html">GetCustomMateEntries</A></td><td class="i-member-description">Returns user defined <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MateEntry.html">MateEntry</a>s of all project <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3D.html">Placement3D</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetFunctions.html">GetFunctions</A></td><td class="i-member-description">Overloaded.&nbsp;Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Function.html">Eplan.EplApi.DataModel.Function</a>s matching the given filter.<br />
+If the "bWithConnectionDefinitionPoints" parameter is TRUE, also returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPoint.html">Eplan.EplApi.DataModel.ConnectionDefinitionPoint</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetFunctions3D.html">GetFunctions3D</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Function3D.html">Eplan.EplApi.DataModel.E3D.Function3D</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetFunctionsWithCF.html">GetFunctionsWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Function.html">Eplan.EplApi.DataModel.Function</a>s matching the given custom filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetFunctionsWithFilterScheme.html">GetFunctionsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Function.html">Functions</a> matching the given filter from the device navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetHarnesses.html">GetHarnesses</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Harness.html">Eplan.EplApi.DataModel.EObjects.Harness</a>es matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetHarnessesWithCF.html">GetHarnessesWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Harness.html">Eplan.EplApi.DataModel.EObjects.Harness</a>es matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetHarnessesWithFilterScheme.html">GetHarnessesWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Harness.html">Eplan.EplApi.DataModel.EObjects.Harness</a>es matching the given filter from the wire harness navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetInterruptionPoints.html">GetInterruptionPoints</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Function.html">Eplan.EplApi.DataModel.Function</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetInterruptionPointsWithCF.html">GetInterruptionPointsWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Function.html">Eplan.EplApi.DataModel.Function</a>s matching the given custom filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetInterruptionPointsWithFilterScheme.html">GetInterruptionPointsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.InterruptionPoint.html">Eplan.EplApi.DataModel.InterruptionPoint</a>s matching the given filter from the interruptionpoint navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetNetDefinitionPoints.html">GetNetDefinitionPoints</A></td><td class="i-member-description">This function takes objects of class <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.NetDefinitionPoint.html">Eplan.EplApi.DataModel.NetDefinitionPoint</a> and filters them with the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetObjectsFromNavigatorList.html">GetObjectsFromNavigatorList</A></td><td class="i-member-description">Returns all items from the list tab of a navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetOptionObjectsWithFilterScheme.html">GetOptionObjectsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Option.html">Eplan.EplApi.DataModel.Option</a>s matching the given filter from the project options navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPages.html">GetPages</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Eplan.EplApi.DataModel.Page</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPagesWithCF.html">GetPagesWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Eplan.EplApi.DataModel.Page</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPagesWithFilterScheme.html">GetPagesWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Eplan.EplApi.DataModel.Page</a>s matching the given filter from the pages navigator (user settings) or, if no filter is given, the filter created using the project settings. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlaceHolders3D.html">GetPlaceHolders3D</A></td><td class="i-member-description">Returns all <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PlaceHolder3D.html">3D placeholders</a> from the project. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlaceholdersWithFilterScheme.html">GetPlaceholdersWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.PlaceHolder.html">Eplan.EplApi.DataModel.Graphics.PlaceHolder</a>s matching the given filter from the placeholder navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlacements.html">GetPlacements</A></td><td class="i-member-description">This function takes all objects of the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Placement</a> class and all classes that inherit from Placement except <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Eplan.EplApi.DataModel.Page</a> objects and filters them with the given filter.<br />
+This method does not return embedded objects (like for example <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.Shielding.html">Eplan.EplApi.DataModel.Graphics.Shielding</a>).<br />
+This method does not return <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.PropertyPlacement.html">PropertyPlacement</a>s. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlacements3D.html">GetPlacements3D</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3D.html">Eplan.EplApi.DataModel.E3D.Placement3D</a>s matching the given filter. This method does not return <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MateEntry.html">MateEntry</a>s. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlacementsWithCF.html">GetPlacementsWithCF</A></td><td class="i-member-description">This function takes all objects of the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Placement</a> class and all classes that inherit from Placement except <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Eplan.EplApi.DataModel.Page</a> objects and filters them with the given filter.<br /> &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlanningSegments.html">GetPlanningSegments</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegment.html">PlanningSegment</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlanningSegmentsWithFilterScheme.html">GetPlanningSegmentsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegment.html">PlanningSegment</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPLCs.html">GetPLCs</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.PLC.html">Eplan.EplApi.DataModel.EObjects.PLC</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPLCsWithCF.html">GetPLCsWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.PLC.html">Eplan.EplApi.DataModel.EObjects.PLC</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPLCsWithFilterScheme.html">GetPLCsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Function.html">Eplan.EplApi.DataModel.Function</a>s matching the given filter from the PLC navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPLCTerminalsWithFilterScheme.html">GetPLCTerminalsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Terminal.html">PLC terminals</a> matching the given filter from the PLC navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlugs.html">GetPlugs</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Plug.html">Eplan.EplApi.DataModel.EObjects.Plug</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlugStrips.html">GetPlugStrips</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.PlugStrip.html">Eplan.EplApi.DataModel.EObjects.PlugStrip</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlugStripsWithCF.html">GetPlugStripsWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.PlugStrip.html">Eplan.EplApi.DataModel.EObjects.PlugStrip</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlugStripsWithFilterScheme.html">GetPlugStripsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.PlugStrip.html">Eplan.EplApi.DataModel.EObjects.PlugStrip</a>s matching the given filter from the plug navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlugsWithCF.html">GetPlugsWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Plug.html">Eplan.EplApi.DataModel.EObjects.Plug</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPlugsWithFilterScheme.html">GetPlugsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Plug.html">Eplan.EplApi.DataModel.EObjects.Plug</a>s matching the given filter from the plug navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetPotentialDefinitionsWithFilterScheme.html">GetPotentialDefinitionsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition.html">Eplan.EplApi.DataModel.PotentialDefinition</a>s matching the given filter from the potential navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetSegmentDefinitions.html">GetSegmentDefinitions</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.SegmentDefinition.html">SegmentDefinition</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetSegmentPlacements.html">GetSegmentPlacements</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegment.html">PlanningSegment</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetSegmentTemplates.html">GetSegmentTemplates</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.SegmentTemplate.html">SegmentTemplate</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetSegmentTemplatesWithFilterScheme.html">GetSegmentTemplatesWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.SegmentTemplate.html">SegmentTemplate</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetStorableObjects.html">GetStorableObjects</A></td><td class="i-member-description">Overloaded.&nbsp;This function takes all objects of the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">StorableObject</a> class and all classes that inherit from StorableObject except <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Eplan.EplApi.DataModel.Page</a> objects and filters them with the given filter.<br />
+This method does not return <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.PropertyPlacement.html">PropertyPlacement</a>s and <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.Symbol.html">Symbol</a>s. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetStorableObjectsWithCF.html">GetStorableObjectsWithCF</A></td><td class="i-member-description">This function takes all objects of the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">StorableObject</a> class and all classes that inherit from StorableObject except <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Eplan.EplApi.DataModel.Page</a> objects and filters them with the given filter.<br /> &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetSymbolsWithFilterScheme.html">GetSymbolsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.Symbol.html">Eplan.EplApi.DataModel.Symbol</a>s matching the given filter from the symbol navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetTerminals.html">GetTerminals</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Terminal.html">Terminal</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetTerminalStrips.html">GetTerminalStrips</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.TerminalStrip.html">Eplan.EplApi.DataModel.EObjects.TerminalStrip</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetTerminalStripsWithCF.html">GetTerminalStripsWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.TerminalStrip.html">Eplan.EplApi.DataModel.EObjects.TerminalStrip</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetTerminalStripsWithFilterScheme.html">GetTerminalStripsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.TerminalStrip.html">TerminalStrip</a>s matching the given filter from terminal navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetTerminalsWithCF.html">GetTerminalsWithCF</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Terminal.html">Eplan.EplApi.DataModel.EObjects.Terminal</a>s matching the given filter. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetTerminalsWithFilterScheme.html">GetTerminalsWithFilterScheme</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Terminal.html">Terminal</a>s matching the given filter from the terminal navigator. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~Initialize.html">Initialize</A></td><td class="i-member-description">Sets the project used. The same as project parameter in the constructor. Used when accessing API registered as COM. &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            
+            <a name="EventsBookmark"></a>
+            
+            
+            
+            <a name="OperatorsBookmark"></a>
+            									
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder_members.html">DMObjectsFinder Members</a>
+<br/><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel_namespace.html">Eplan.EplApi.DataModel Namespace</a>
+<br/><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionsFilter.html">FunctionsFilter Class</a>
+<br/><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PagesFilter.html">PagesFilter Class</a>
+<br/><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionsFilter.html">ConnectionsFilter Class</a>
+<br/><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementsFilter.html">PlacementsFilter Class</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

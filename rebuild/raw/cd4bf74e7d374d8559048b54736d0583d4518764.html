@@ -1,0 +1,327 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>XGedIaFormatText</title>
+    <meta name="Title" content="XGedIaFormatText"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n35986","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="Sets text format. Can be offered for configurable ribbonbar. 
+
+
+
+Parameter
+Description
+
+language
+
+Language (optional).
+ Possible values are: &quot;AllLanguagesColumn&quot;, &quot;AllLanguagesRow&quot;, &quot;OneLanguageVariable&quot;, &quot;de_DE&quot;, &quot;en_US&quot;, ...
+
+
+height
+" />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="05c2df93-7048-4b78-aca6-84d13c7e1c58"/>
+    <meta name="Microsoft.Help.TocParent" content="6205cb30-48fa-4ea2-9472-aad18afa51e6"/>
+    <meta name="Microsoft.Help.TocOrder" content="4"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">Eplan API</a>
+ / <a href="API Reference.html">API Reference</a>
+ / <a href="API Interactions.html">Interactions</a>
+ / XGedIaFormatText</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">XGedIaFormatText</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <DIV class=DescriptionContent>Sets text format. Can be offered for configurable ribbonbar. </DIV>
+<TABLE>
+<TBODY>
+<TR>
+<TH>Parameter</TH>
+<TH>Description</TH></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>language
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Language (optional).
+ Possible values are: "AllLanguagesColumn", "AllLanguagesRow", "OneLanguageVariable", "de_DE", "en_US", ...
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>height
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Text height (optional). Value in mm or In or "-16002" for "from layer".
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>color
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Text color (optional).
+ 0 = black,
+ 1 = red,
+ 2 = yellow,
+ 3 = green,
+ 4 = cyan,
+ 5 = blue,
+ 6 = magenta,
+ 7 = black,
+ 8 = white,
+ 9 = light gray,
+ 252 = dark gray,
+ 253 = gray,
+ -16002 = from layer;
+ The user can set other values in the color selection. Possible values are from 0 to 256.
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>justification
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Adjustment (optional).
+ 1 = kTopLeft,
+ 2 = kTopCenter,
+ 3 = kTopRight,
+ 4 = kMiddleLeft,
+ 5 = kMiddleCenter,
+ 6 = kMiddleRight,
+ 7 = kBottomLeft,
+ 8 = kBottomCenter,
+ 9 = kBottomRight,
+ 10 = kBaseLineLeft,
+ 11 = kBaseLineCenter,
+ 12 = kBaseLineRight,
+ 13 = kSpecialLeft (Special Attachment-Types for PathTexts in DIN- and USA-Project),
+ 14 = kSpecialCenter (Should not be used in new projects, just to be compatible to E5),
+ 15 = kSpecialRight,
+ 16 = kJicSpecialLeft (Special Attachment-Types for PathTexts in JIC-Project),
+ 17 = kJicSpecialCenter (Should not be used in new projects, just to be compatible to E5),
+ 18 = kJicSpecialRight
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>angle
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Angle to the X-axis in Â° (optional).
+ Possible values are: 0Â°, 45Â°, 90Â°, 135Â°, 180Â°, -45Â°, -90Â°, -135Â°
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>font
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Text font (optional).
+ Possible values are:
+ 0 = font 1 of company settings,
+ 1 = font 2 of company settings,
+ ...,
+ 9 = font 10 of company settings
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>visible
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Text visibility (optional).
+ Possible values are: 0 = invisible, 1 = visible, 2 = from layer
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>bold
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Text accentuation (optional). Possible values are: 0 = normal, 1 = bold
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>italic
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Text accentuation (optional). Possible values are: 0 = normal, 1 = italic
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>underline
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Text accentuation (optional). Possible values are: 0 = normal, 1 = underlined
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>showtextbox
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Defines whether to use a text box (optional).
+ Possible values are:
+ 0 = no text box
+ 1 = rectangular text box
+ 2 = elliptic text box
+ 3 = from layer
+ 4 = Oval text box
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>setframeactive
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Defines whether there should be an activate frame (optional). Possible values are:
+ 0 = should not be active,
+ 1 = should be active
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>showframe
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Defines whether to show a frame (optional). Possible values are:
+ 0 = no alignment box,
+ 1 = show alignment box
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>framewidth
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Frame width in mm or In (optional).
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>frameheight
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Frame height in mm or In (optional).
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>adjustframe
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Adjustment of frame (optional).
+ 1 = do not fit in,
+ 16 = Text: width fixed - never word-wrap,
+ 32 = Text: height fixed - never word-wrap,
+ 64 = Text: word-wrap,
+ 80 = Text: width fixed - word-wrap,
+ 128 = Text: remove line breaks,
+ 144 = Text: width fixed - never word-wrap - remove line breaks,
+ 208 = Text: width fixed - word-wrap - remove line breaks
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>sizefromsettings
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Defines whether to use the frame size from the project settings (optional).
+ Possible values are: 0 = should not be activated, 1 = should be active
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>leaderline
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Defines whether to activate a leader line (optional). Possible values are: 0 = should not be active, 1 = should be active
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>donttranslate
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Defines whether to translate automatically (optional). Possible values are: 0 = text is translated automatically, 1 = text is not translated automatically
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>linespacing
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Row spacing in number of lines (optional).
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>layer
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Layer name (optional). Example: "EPLAN501"
+</PRE></TD></TR></TBODY></TABLE>
+<DIV>
+<DIV id=remarksSectionHeading class=SectionHeading><SPAN class=SectionHeadingIcon><BR></SPAN><SPAN class=SectionHeadingText><FONT size=+1><B>Remarks</B></FONT></SPAN> </DIV>
+<DIV id=remarksSectionContent class=SectionContent><BR><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-wrap"> In properties which should not be changed, simply leave a question mark ("?").
+ 
+</PRE><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-wrap"> The settings are the same as in the characteristic text dialog.
+ 
+</PRE></DIV></DIV><A id=exampleBookmark name=exampleBookmark></A>
+<DIV id=exampleSectionHeading class=SectionHeading><SPAN class=SectionHeadingIcon><BR></SPAN><SPAN class=SectionHeadingText><FONT size=+1><B>Example</B></FONT></SPAN> </DIV>
+<DIV id=exampleSectionContent class=SectionContent><BR>
+<DIV id=TabContent class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word"><PRE style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-wrap'><BR> Changes height, angle, font and shows a frame:
+ 
+  XGedStartInteractionAction /Name:XGedIaFormatText /height:3.5 /angle:-90 /font:2 /setframeactive:1 /showframe:1 /framewidth:20 /frameheight:10 /adjustframe:208
+ 
+ Changes the layer to "EPLAN501" and sets height and color to the new layer's standard:
+ 
+  XGedStartInteractionAction /Name:XGedIaFormatText /height:-16002 /color:-16002 /layer:EPLAN501
+ 
+</PRE></DIV><BR></DIV>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+# MDNotIndexedPropertyException Class
+
+MDNotIndexedPropertyException Class
+
+Throws when user try to fetch not-indexed property using index;
+
+Inheritance Hierarchy
+
+[System.Object](#)  
+   [System.Exception](#)  
+      [System.ApplicationException](#)  
+         [Eplan.EplApi.Base.BaseException](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException.html)  
+            [Eplan.EplApi.MasterData.MasterDataException](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MasterDataException.html)  
+               **Eplan.EplApi.MasterData.MDNotIndexedPropertyException**
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public class MDNotIndexedPropertyException : MasterDataException
+```
+```
+
+```
+```
+public ref class MDNotIndexedPropertyException : public MasterDataException
+```
+```
+
+Public Constructors
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Constructor | [MDNotIndexedPropertyException Constructor](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDNotIndexedPropertyException~_ctor.html) | Overloaded. |
+
+[Top](#top)
+
+Public Fields
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Field | [Property](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDNotIndexedPropertyException~Property.html) | Property which was used with index. |
+
+[Top](#top)
+
+Public Properties
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Property | [Data](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [HelpLink](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [HResult](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [InnerException](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [Message](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [MessageLevel](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException~MessageLevel.html) | Returns the level of message as [Eplan.EplApi.Base.MessageLevel](Eplan.EplApi.Baseu~Eplan.EplApi.Base.MessageLevel.html). (Inherited from [Eplan.EplApi.Base.BaseException](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException.html)) |
+| Public Property | [NumberOfOccurrences](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException~NumberOfOccurrences.html) | Returns number of repetitions of consecutive messages with the same text (i.e. error description) which are joined into one item in the system's message tree. (Inherited from [Eplan.EplApi.Base.BaseException](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException.html)) |
+| Public Property | [Source](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [StackTrace](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [TargetSite](#) | (Inherited from [System.Exception](#)) |
+
+[Top](#top)
+
+Public Methods
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Method | [Dispose](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException~Dispose().html) | Destructor for deterministic finalization of BaseException object. (Inherited from [Eplan.EplApi.Base.BaseException](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException.html)) |
+| Public Method | [FixMessage](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException~FixMessage.html) | Method enters a message in the system-wide message tree. (Inherited from [Eplan.EplApi.Base.BaseException](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException.html)) |
+| Public Method | [GetBaseException](#) | (Inherited from [System.Exception](#)) |
+| Public Method | [GetBookmarkID](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException~GetBookmarkID.html) | Sets a label in the system error message management for getting a section of the 'message tree' (Inherited from [Eplan.EplApi.Base.BaseException](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException.html)) |
+| Public Method | [GetMessageIndex](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException~GetMessageIndex.html) | returns the identifying S- number of a system message (Inherited from [Eplan.EplApi.Base.BaseException](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException.html)) |
+| Public Method | [GetMessageText](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException~GetMessageText.html) | Returns the text of the system message without the index (Inherited from [Eplan.EplApi.Base.BaseException](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException.html)) |
+| Public Method | [GetObjectData](#) | (Inherited from [System.Exception](#)) |
+| Public Method | [GetType](#) | (Inherited from [System.Exception](#)) |
+| Public Method | [ToString](#) | (Inherited from [System.Exception](#)) |
+
+[Top](#top)
+
+See Also
+
+#### Reference
+
+[MDNotIndexedPropertyException Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDNotIndexedPropertyException_members.html)
+  
+[Eplan.EplApi.MasterData Namespace](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData_namespace.html)
+  
+[MDIndexedPropertyException Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDIndexedPropertyException.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

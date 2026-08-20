@@ -1,0 +1,317 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Progress Class</title>
+    <meta name="Title" content="Progress Class"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n1206","initialNodeContainer":"c39","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress"/>
+    <meta name="Description" content="This class enables you to access the functions of the progress bar in EPLAN." />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.Baseu~Eplan.EplApi.Base_namespace"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Progress"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.Baseu~Eplan.EplApi.Base_namespace.html">Eplan.EplApi.Base Namespace</a>
+ / Progress Class</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <a class="i-page-link" href="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress_members.html">Members</a>
+                    <a class="i-page-link" href="#ExampleBookmark">Example</a><!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Progress Class</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">This class enables you to access the functions of the progress bar in EPLAN.</div>
+            
+            <div class="i-section-heading" id="i-inheritance-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Inheritance Hierarchy</span></div><div id="i-inheritance-section-content" class="i-section-content"><P><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemObjectClassTopic','System.Object')">System.Object</a><BR />&nbsp;&nbsp;&nbsp;<STRONG>Eplan.EplApi.Base.Progress</STRONG><BR /></P></div>			
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">class</span> Progress </pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">ref</span> <span style="color: #0000FF; ">class</span> Progress </pre></pre>
+            </div>
+        
+
+            </div>
+        </div>
+            
+            
+            
+            <div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content">There are different kinds of progress bars. It can be created by functions and passed to another function as a parameter object (often in a Context). Please call Progress::EndPart(true) at the end to close the dialog. Please don't use steps (SetNeededSteps and Step methods) when a nested EPLAN progress (i.e. from API method) could be called afterwards.</div>
+            <a name="exampleBookmark"></a>
+            <div class="i-section-heading" id="i-example-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Example</span></div><div id="i-example-section-content" class="i-section-content">Example of using Progress class
+             
+<div class="i-tab-container">
+    <ul>
+        <li class="i-filtered-content-cs">
+			<a href="#i-tab-content-f498cc7d-ee54-4e21-a6b3-9148acea8c4a">C#</a>
+		</li>
+
+    </ul>
+	<div id="i-tab-content-f498cc7d-ee54-4e21-a6b3-9148acea8c4a" class="i-code i-filtered-content-cs">
+		<pre>
+<span style="color: #0000FF; ">using</span> (<span style="color: #0000FF; ">var</span> progress = <span style="color: #0000FF; ">new</span> Progress(<span style="color: #800000; ">&quot;SimpleProgress&quot;</span>))
+{
+    progress.ShowImmediately();
+
+    <span style="color: #008000; ">//part 1
+</span>   progress.BeginPart(25.0, <span style="color: #800000; ">&quot;&quot;</span>);
+   progress.SetActionText(<span style="color: #800000; ">&quot;part1&quot;</span>);
+   progress.SetNeededSteps(1);
+   progress.Step(1);
+   System.Threading.Thread.Sleep(2500);    <span style="color: #008000; ">// TODO: Some processing
+</span>   progress.EndPart(<span style="color: #0000FF; ">false</span>);
+
+   <span style="color: #008000; ">//part 2
+</span>   progress.BeginPart(30.0, <span style="color: #800000; ">&quot;&quot;</span>);
+   progress.SetNeededSteps(3);            <span style="color: #008000; ">// call SetNeededSteps with the count of steps following
+</span>   progress.SetActionText(<span style="color: #800000; ">&quot;part2 step1&quot;</span>);
+   progress.Step(1);
+   System.Threading.Thread.Sleep(1000);    <span style="color: #008000; ">// TODO: Some processing
+</span>
+   progress.SetActionText(<span style="color: #800000; ">&quot;part2 step2&quot;</span>);
+   progress.Step(1);
+   System.Threading.Thread.Sleep(1000);    <span style="color: #008000; ">// TODO: Some processing
+</span>
+   progress.SetActionText(<span style="color: #800000; ">&quot;part2 step3&quot;</span>);
+   progress.Step(1);
+   System.Threading.Thread.Sleep(1000);    <span style="color: #008000; ">// TODO: Some processing
+</span>   progress.EndPart(<span style="color: #0000FF; ">false</span>);
+
+   <span style="color: #008000; ">//part 3
+</span>   progress.BeginPart(45.0, <span style="color: #800000; ">&quot;&quot;</span>);          <span style="color: #008000; ">// Here is a sum of 100% reached!
+</span>   progress.SetActionText(<span style="color: #800000; ">&quot;part3&quot;</span>);
+   progress.SetNeededSteps(1);
+   progress.Step(1);
+   System.Threading.Thread.Sleep(4500);    <span style="color: #008000; ">// TODO: Some processing
+</span>   progress.EndPart(<span style="color: #0000FF; ">true</span>);
+}
+
+
+</pre>
+	</div>
+	
+</div>
+
+<div class="i-tab-container">
+    <ul>
+        <li class="i-filtered-content-cs">
+			<a href="#i-tab-content-334b6c87-88d3-44ab-99bf-16e32bf8f3e3">C#</a>
+		</li>
+
+    </ul>
+	<div id="i-tab-content-334b6c87-88d3-44ab-99bf-16e32bf8f3e3" class="i-code i-filtered-content-cs">
+		<pre>
+<span style="color: #0000FF; ">using</span> (<span style="color: #0000FF; ">var</span> progress = <span style="color: #0000FF; ">new</span> Progress(<span style="color: #800000; ">&quot;SimpleProgress&quot;</span>))
+{
+    progress.SetAllowCancel(<span style="color: #0000FF; ">true</span>);
+    progress.SetAskOnCancel(<span style="color: #0000FF; ">true</span>);
+    progress.SetTitle(<span style="color: #800000; ">&quot;Replace parts&quot;</span>);
+    progress.ShowImmediately();
+
+    <span style="color: #0000FF; ">var</span> finder = <span style="color: #0000FF; ">new</span> DMObjectsFinder(oProject);
+    <span style="color: #0000FF; ">var</span> articleReferences = finder.GetArticleReferences(<span style="color: #0000FF; ">null</span>);
+    <span style="color: #0000FF; ">var</span> nIteration = 0;
+    <span style="color: #0000FF; ">var</span> progressPartInPercentage = 100.0 / articleReferences.Length;
+    <span style="color: #0000FF; ">foreach</span> (<span style="color: #0000FF; ">var</span> articleReference <span style="color: #0000FF; ">in</span> articleReferences)
+    {
+        <span style="color: #008000; ">// Set new values
+</span>        progress.BeginPart(progressPartInPercentage, <span style="color: #800000; ">$&quot;Iteration : </span>{nIteration++}<span style="color: #800000; ">&quot;</span>);
+        articleReference.PartNr = <span style="color: #800000; ">&quot;New part number&quot;</span>;
+        articleReference.VariantNr = <span style="color: #800000; ">&quot;New variant&quot;</span>;
+        articleReference.StoreToObject();
+        <span style="color: #0000FF; ">new</span> DeviceService().UpdateDevice(articleReference.ParentObject);
+        progress.EndPart();
+    }
+}
+
+
+</pre>
+	</div>
+	
+</div>
+</div>
+            
+            
+            <a name="ConstructorsBookmark"></a>
+            <div class="i-section-heading" id="i-publicConstructors-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Constructors</span></div><div id="i-publicConstructors-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Constructor" src="template/packages/core-dotnet/images/publicConstructor.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~_ctor.html">Progress Constructor</A></td><td class="i-member-description">Overloaded.&nbsp; &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="FieldsBookmark"></a>
+            
+            
+            
+            <a name="PropertiesBookmark"></a>
+            
+            
+            
+            <a name="MethodsBookmark"></a>
+            <div class="i-section-heading" id="i-publicMethods-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Methods</span></div><div id="i-publicMethods-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~BeginPart.html">BeginPart</A></td><td class="i-member-description">Starts a new segment. All parallel segments should result in a sum of 100%. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~Canceled.html">Canceled</A></td><td class="i-member-description">Queries whether the operation was canceled. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~Dispose().html">Dispose</A></td><td class="i-member-description">Destructor for deterministic finalization of Progress object. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~EndPart.html">EndPart</A></td><td class="i-member-description">Overloaded.&nbsp;Ends segment and closes the window when it is not used. Don't forget to call it at the end, otherwise a progress dialog may lock P8. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~GetProgress.html">GetProgress</A></td><td class="i-member-description">For internal use only. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~SetActionText.html">SetActionText</A></td><td class="i-member-description">Sets a new action text. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~SetAllowCancel.html">SetAllowCancel</A></td><td class="i-member-description">Allows canceling. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~SetAskOnCancel.html">SetAskOnCancel</A></td><td class="i-member-description">Asks to confirm the cancel request. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~SetNeededParts.html">SetNeededParts</A></td><td class="i-member-description">Specifies how many segments are required. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~SetNeededSteps.html">SetNeededSteps</A></td><td class="i-member-description">Indicates how many steps are required to reach 100%. E.g. used for loops. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~SetOverallActionText.html">SetOverallActionText</A></td><td class="i-member-description">Sets a new action text. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~SetTitle.html">SetTitle</A></td><td class="i-member-description">Sets the title of the progress bar. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~ShowImmediately.html">ShowImmediately</A></td><td class="i-member-description">Shows the progress bar without any further delay. When ShowImmediately isnt't called the dialog appears later (with delay), it prevents the dialog to show unnecessarily (to prevent that the progress flickers up for a short running actions). &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~ShowLevel.html">ShowLevel</A></td><td class="i-member-description">Specifies the nesting level up to which a display is made. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress~Step.html">Step</A></td><td class="i-member-description">Uses a step &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            
+            <a name="EventsBookmark"></a>
+            
+            
+            
+            <a name="OperatorsBookmark"></a>
+            									
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Progress_members.html">Progress Members</a>
+<br/><a href="Eplan.EplApi.Baseu~Eplan.EplApi.Base_namespace.html">Eplan.EplApi.Base Namespace</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

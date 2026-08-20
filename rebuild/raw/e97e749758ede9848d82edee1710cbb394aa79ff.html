@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-conditions="Primary.concept" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Working with Connections|Connections|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="6:40:21 AM">
+        <meta name="BuildDate" content="Monday, October 6, 2025">
+        <meta id="productName" name="product" content="Eplan Platform">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="allLangExtended">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="The most important connection properties can be pre-set for the project, e.g. Cross-section / diameter, Color / number, Length, Type etc. These proper..."><title>Connection Properties</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZN49JJ5H1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FZN49JJ5H1', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="EPLAN_Help_k_start.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor869"></a>
+                                            <madcap:concept term="Grundlagen"></madcap:concept><a name="aanchor870"></a>
+                                            <madcap:concept term="Eplan Plattform;Eplan Electric P8"></madcap:concept><a name="kanchor835"></a>
+                                            <h2>Connection Properties</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <p>The most important connection <span class="GlossaryPopup" href="Glossary_o_eigenschaften.htm">properties</span> can be pre-set for the project, e.g. <span class="gui">Cross-section / diameter</span>, <span class="gui">Color / number</span>, <span class="gui">Length</span>, <span class="gui">Type</span> etc. These properties are then assigned by default to all <span class="GlossaryPopup" href="Glossary_o_verbindungen.htm">connections</span> and can later be changed at the connections.</p>
+                                            <p>These properties are passed on to the potential from the project and from there to the <span class="GlossaryPopup" href="Glossary_o_signale.htm">signals</span>, <span class="GlossaryPopup" href="Glossary_o_netze.htm">nets</span> and then to the connections. The data can be manually changed on every level.</p>
+                                            <p>Connection properties are inherited in the following sequence:</p>
+                                            <ul>
+                                                <li class="Listitem_Single_Line" value="1"><span class="GlossaryPopup" href="Glossary_o_anschluesse.htm">Connection points</span> (connection point type + potential type)</li>
+                                                <li class="Listitem_Single_Line" value="2">Project</li>
+                                                <li class="Listitem_Single_Line" value="3">Layer</li>
+                                                <li class="Listitem_Single_Line" value="4">Terminal targets</li>
+                                                <li class="Listitem_Single_Line" value="5">Potential</li>
+                                                <li class="Listitem_Single_Line" value="6">Piping definition</li>
+                                                <li class="Listitem_Single_Line" value="7">Signal</li>
+                                                <li class="Listitem_Single_Line" value="8">Net</li>
+                                                <li class="Listitem_Single_Line" value="9">Jumper generation</li>
+                                                <li class="Listitem_Single_Line" value="10">Shield</li>
+                                                <li class="Listitem_Single_Line" value="11">Connection definition point.</li>
+                                            </ul>
+                                            <div class="note">
+                                                <p class="Infoblock_Heading">
+                                                    <img src="../Pictures/Gui/ALL/note.png">Notes:</p>
+                                                <ul>
+                                                    <li class="Listitem_Normal" value="1">The following peculiarity applies for <span class="important">connection points</span>: If the value "Undefined" is set for a property on the source connection point (in the <span class="gui">Connection point logic</span> dialog), then the matching property of the target connection point is used.</li>
+                                                    <li class="Listitem_Normal" value="2">If only a piping name and no state is entered at a <span class="important">piping definition</span> in the P&amp;I diagram, the piping definition is sorted in between the potential and signal in the inheritance order. If a state is also specified at the piping definition, the sequence of the piping definition and signal is the same. If a connection property is set both at the piping definition and at the signal in such a case, the value of the graphically first definition point is assigned to the connection.</li>
+                                                </ul>
+                                            </div>
+                                            <p>If, for example, a property is specified in the project and a different value is specified at the signal for that property, the connection gets the value from the signal. The following table illustrates the behavior:</p>
+                                            <table>
+                                                <tr valign="middle">
+                                                    <th style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p class="Tabelle-Text" style="font-size: 80%;font-weight: bold;">Properties</p>
+                                                    </th>
+                                                    <th colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p class="Tabelle-Text" style="font-size: 80%;font-weight: bold;">Connection points</p>
+                                                    </th>
+                                                    <th colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p class="Tabelle-Text" style="font-size: 80%;font-weight: bold;">Project</p>
+                                                    </th>
+                                                    <th colspan="1" rowspan="1" style="background-color: #fef376;" bgcolor="#FEF376">
+                                                        <p class="Tabelle-Text" style="font-size: 80%;font-weight: bold;">Layer</p>
+                                                    </th>
+                                                    <th colspan="1" rowspan="1" style="background-color: #ffffa8;" bgcolor="#FFFFA8">
+                                                        <p class="Tabelle-Text" style="font-size: 80%;font-weight: bold;">Terminal targets</p>
+                                                    </th>
+                                                    <th colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p class="Tabelle-Text" style="font-size: 80%;font-weight: bold;">Potential</p>
+                                                    </th>
+                                                    <th colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p class="Tabelle-Text" style="font-size: 80%;font-weight: bold;">Signal</p>
+                                                    </th>
+                                                    <th colspan="1" rowspan="1" style="background-color: #72f0fe;" bgcolor="#72F0FE">
+                                                        <p class="Tabelle-Text" style="font-size: 80%;font-weight: bold;">Net</p>
+                                                    </th>
+                                                    <th colspan="1" rowspan="1" style="background-color: #7cccfc;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#7CCCFC">
+                                                        <p class="Tabelle-Text" style="font-size: 80%;font-weight: bold;">Jumper generation</p>
+                                                    </th>
+                                                    <th colspan="1" rowspan="1" style="background-color: #a6ceff;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#A6CEFF">
+                                                        <p class="Tabelle-Text" style="font-size: 80%;font-weight: bold;">Shield</p>
+                                                    </th>
+                                                    <th colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p class="Tabelle-Text" style="font-size: 80%;font-weight: bold;">Conn. def. point</p>
+                                                    </th>
+                                                    <th style="background-color: #ba87dc;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#BA87DC">
+                                                        <p class="Tabelle-Text" style="font-size: 80%;font-weight: bold;">Connection</p>
+                                                    </th>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Source</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td style="background-color: #ba87dc;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#BA87DC">
+                                                        <p style="font-size: 80%;">-X1:1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Target</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td style="background-color: #ba87dc;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#BA87DC">
+                                                        <p style="font-size: 80%;">-M1:U</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">DT</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #a6ceff;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#A6CEFF">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">-W1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">-W1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Connection designation</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">L1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;">L1.1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">17</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">17</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Cross-section / diameter</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">1.5</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;font-style: normal;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;font-style: normal;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;">0.75</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;">0.75</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Cross-section / diameter unit</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">mmÂ²</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;">sqmm</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;">sqmm</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Cross-section / diameter unit of the connection</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ba87dc;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#BA87DC">
+                                                        <p style="font-size: 80%;">0.75 sqmm</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Connection color / number</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">black</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #a6ceff;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#A6CEFF">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Description</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">black</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">black</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Length</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">20</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">50</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">500</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">500</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Pair index</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Shielded by</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">SH1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">SH1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Intrinsically safe</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p style="font-size: 80%;">Yes</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">Possible</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p style="font-size: 80%;">Yes</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Remark</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">Eplan</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">Eplan</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Function definition</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p style="font-size: 80%;">Wire</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #7cccfc;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#7CCCFC">
+                                                        <p style="font-size: 80%;">Jumper</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #a6ceff;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#A6CEFF">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">Undefined</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #7cccfc;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#7CCCFC">
+                                                        <p style="font-size: 80%;">Jumper</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Cable connection</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p style="font-size: 80%;">Yes</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffffa8;" bgcolor="#FFFFA8">
+                                                        <p style="font-size: 80%;">No</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">Yes</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">Yes</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Trade</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p style="font-size: 80%;"><span class="GlossaryPopup" href="Glossary_o_hydraulik.htm">Hydraulics</span></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p style="font-size: 80%;">Hydraulics</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Subtrade</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p style="font-size: 80%;">UXY</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p style="font-size: 80%;">UXY</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Pressure line / control line</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p style="font-size: 80%;">Pressure line</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p style="font-size: 80%;">Pressure line</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Name of potential</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">L1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;">L1.1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;">L1.1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Potential</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;">L1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;">L1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Potential type</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p style="font-size: 80%;">L</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fef376;" bgcolor="#FEF376">
+                                                        <p></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #a6ceff;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#A6CEFF">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fe635f;" bgcolor="#FE635F">
+                                                        <p style="font-size: 80%;">L</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Potential value</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">230</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">230</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Frequency</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">50</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">50</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Possible counter <span class="GlossaryPopup" href="Glossary_o_potenziale.htm">potentials</span></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">N, L2, L3</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;">N, L2.1, L3.1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;">N, L2.1, L3.1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Line thickness</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fef376;" bgcolor="#FEF376">
+                                                        <p style="font-size: 80%;">2</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fef376;" bgcolor="#FEF376">
+                                                        <p style="font-size: 80%;">2</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Line color</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fef376;" bgcolor="#FEF376">
+                                                        <p style="font-size: 80%;">Red</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">Blue</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">violet</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">violet</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Invisible</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">No</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">No</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Line type</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fef376;" bgcolor="#FEF376">
+                                                        <p style="font-size: 80%;">------</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fef376;" bgcolor="#FEF376">
+                                                        <p style="font-size: 80%;">------</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Pattern length</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fef376;" bgcolor="#FEF376">
+                                                        <p style="font-size: 80%;">1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">2</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;">3</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;">3</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Layer</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">Default</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fef376;" bgcolor="#FEF376">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">Default</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Type</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">H05V-K</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #fef376;" bgcolor="#FEF376">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">H05V-K</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Part</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">12345</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">12345</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;"><span class="GlossaryPopup" href="Glossary_o_verbindungsende_behandlung.htm">Wire termination processing</span> source</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">Sleeve</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">Sleeve</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Wire termination processing target</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">Sleeve</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">Sleeve</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Source: Sleeve cross-section</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">2</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">2.5</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;">1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;">1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Target: Sleeve cross-section</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">2</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">1</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;">1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;"><span class="GlossaryPopup" href="Glossary_o_absetzlaenge.htm">Stripping length</span> source</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">4</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">8</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">8</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffeaff;" bgcolor="#FFEAFF">
+                                                        <p style="font-size: 80%;font-weight: bold;">Stripping length target</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #ffa851;" bgcolor="#FFA851">
+                                                        <p style="font-size: 80%;">4</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #bbffbb;" bgcolor="#BBFFBB">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #43fcd7;" bgcolor="#43FCD7">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #72f0fe;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#72F0FE">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: Transparent;">
+                                                        <p style="font-size: 80%;"></p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">8</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1" style="background-color: #cabaeb;border-left-width: 0.1ex;border-top-width: 0.1ex;border-right-width: 0.1ex;border-bottom-width: 0.1ex;" bgcolor="#CABAEB">
+                                                        <p style="font-size: 80%;">8</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p>A connection also has the following properties:</p>
+                                            <p class="Gui_Heading">Source and target</p>
+                                            <p>A connection always has information about what it is connected to at both ends, the source and the target. The source and target are determined by the position in the schematic. <span class="GlossaryPopup" href="Glossary_o_verbindungssymbole.htm">Connection symbols</span> (e.g. angles, T nodes) are not targets. "Round drawing nodes" in <span class="GlossaryPopup" href="Glossary_o_sammelschienen.htm">busbars</span> and <span class="GlossaryPopup" href="Glossary_o_abschirmungen.htm">shields</span> are the exception. Shields are often connected on one side, in which case the shield is itself the target.</p>
+                                            <p>By using the command <span class="gui">Exchange source and target</span> you can reverse the direction of the connection at selected connections (meaning that source and target are exchanged). (Command path: Tab <span class="gui">Connections</span> &gt; Command group <span class="gui">Connections</span> &gt; <span class="gui">Source and target</span>.)</p>
+                                            <p class="Gui_Heading">Part</p>
+                                            <p>Every connection can be assigned multiple connection <span class="GlossaryPopup" href="Glossary_o_artikel.htm">parts</span>. Parts can also be assigned sources and targets (e.g., cable lug).</p>
+                                            <p class="Gui_Heading">DT</p>
+                                            <p>A connection can have a DT. This DT is required in particular for assigning <span class="GlossaryPopup" href="Glossary_o_kabelverbindungen.htm">cable connections</span> to a cable.</p>
+                                            <p class="Gui_Heading">Connection designation</p>
+                                            <p>The connection designation can be manually written to the connection (the connection definition point) or automatically assigned with the help of <span class="GlossaryPopup" href="Glossary_o_verbindungsnummerierung.htm">connection numbering</span>.</p>
+                                            <p class="Gui_Heading">Function definition</p>
+                                            <p>The function definition is either taken from the connection point type at the function connection points, or specified at the connection definition point, whereby the connection definition point overwrites the setting on the function connection points. Depending on the function definition, connections get additional special properties. The connection can, for example, be a wire connection or a jumper. If the connection is, e.g., a cable connection of a cable, special properties for cable connections are added.</p>
+                                            <p class="Gui_Heading"><a name="kanchor836"></a><a name="kanchor837"></a><a name="I_Verwaltungsart"></a>Type of administration</p>
+                                            <p>Specifies at a connection the manner in which the connection is managed in Eplan. The property can be used to sort the connections in the connection navigator. The following values are possible:</p>
+                                            <ul>
+                                                <li class="Listitem_Value_In_Gui" value="1"><span class="value_in_gui">Placed:</span> Placed connection.</li>
+                                                <li class="Listitem_Value_In_Gui" value="2"><span class="value_in_gui">Unplaced:</span> Unplaced connection.</li>
+                                                <li class="Listitem_Value_In_Gui" value="3"><span class="value_in_gui">Net-based:</span> Connection in a net that is defined at a net definition point.</li>
+                                                <li class="Listitem_Value_In_Gui" value="4"><span class="value_in_gui">Jumper (automatic):</span> Automatically generated jumper; this occurs if manual saddle jumpers are defined on terminals or <span class="GlossaryPopup" href="Glossary_o_steckerkontakte.htm">pins</span> or, when <span class="GlossaryPopup" href="Glossary_o_erstellen.htm">creating</span> the jumper, between <span class="GlossaryPopup" href="Glossary_o_teilklemmen.htm">distributed terminals</span>.</li>
+                                                <li class="Listitem_Value_In_Gui" value="5"><span class="value_in_gui">Direct (automatic):</span> Direct connection between male and <span class="GlossaryPopup" href="Glossary_o_steckerbuchsen.htm">female pins</span>; is generated by <span class="GlossaryPopup" href="Glossary_o_symbole.htm">symbols</span> with direct connection points.</li>
+                                                <li class="Listitem_Value_In_Gui" value="6"><span class="value_in_gui">Multi-line (automatic):</span> Multi-line connection that is defined on a connection definition point in the single-line display.</li>
+                                                <li class="Listitem_Value_In_Gui" value="7"><span class="value_in_gui">Unrouted:</span> Unrouted connection.</li>
+                                            </ul>
+                                            <p>You can access the connection properties either in the navigator for connections or at the connection definition point. It is not possible to access the connection properties by directly selecting the autoconnect line in the graphical editor because the connections are not immediately updated when drawing.</p>
+                                            <p>Connections across multiple pages are only compiled from the partial connections once the page is closed.<br>You can change the connection data in the connection navigator and write them back to the <span class="GlossaryPopup" href="Glossary_o_verbindungsdefinitionspunkte.htm">connection definition points</span>.</p><a name="kanchor838"></a><a name="kanchor839"></a><a name="I_MehrsprachigeAderfarben"></a>
+                                            <h3>Multilingual connection colors</h3>
+                                            <p>The <span class="gui">Connection color (multilingual)</span> property is provided for connections, connection definition points, and <span class="GlossaryPopup" href="Glossary_o_potenzialdefinitionspunkte.htm">potential definition points</span>. The connection color is saved by this property as a multilingual text. The color code is taken from the <span class="gui">Color / number</span> field in the <span class="gui">Properties &lt;...&gt;</span> dialog and assigned to a color name in the <span class="GlossaryPopup" href="Glossary_o_projekteigenschaften.htm">project properties</span> according to the assignment table. It is case-sensitive. The property is automatically updated with every change in the <span class="gui">Color / number</span> field.</p>
+                                            <div class="example">
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Example:</a></p></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Infoblock">You have opened the <span class="gui">Properties &lt;...&gt;</span> dialog for a connection definition point and selected the <span class="gui">Connection definition point</span> tab. You have entered the value <span class="codetext">BK</span> in the <span class="gui">Color / number</span> field. In the dialog <span class="gui">Settings: Connection colors</span> the <span class="codetext">Black</span> entry is assigned to the color code <span class="codetext">BK</span> (<span class="gui">File</span> &gt; <span class="gui">Settings</span> &gt; <span class="gui">Projects</span> &gt; "Project name" &gt; <span class="gui">Connections</span> &gt; <span class="gui">Connection colors</span>). The value <span class="codetext">Black</span> is then displayed in the <span class="gui">Connection color (multilingual)</span> property.</p>
+                                                        <p class="Infoblock">If, however, you enter the value <span class="codetext">bk</span> in the <span class="gui">Color / number</span> field, Eplan cannot assign it and accepts the entry unchanged. In this case, the value <span class="codetext">bk</span> is displayed in the <span class="gui">Connection color (multilingual)</span> property.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="Seealso">See also</p>
+                                            <p class="Link_Seealso"><a href="connectionbrowsergui_k_start.htm">Connections</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="connectionsettingsgui_r_projekteinstellungenelektrotechnik.htm">Tab Electrical engineering</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="connectionsettingsgui_r_projekteinstellungenhydraulik.htm">Tabs Hydraulics / Pneumatics / Cooling / Lubrication / Process engineering</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="connectionsettingsgui_d_einstellungenaderfarben.htm">Dialog Settings: Connection colors</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="connectionbrowsergui_k_einheitenverbindungen.htm">Connections: Units for Lengths and Cross-sections</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,199 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Adding ribbon commands</title>
+    <meta name="Title" content="Adding ribbon commands"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n37","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="An add-in can add one or more ribbon commands to the Extensions &amp;gt; API command gropup. Therefore the class  Eplan.EplApi.Gui.RibbonBar  provides a function  AddCommand  which should be called in the  OnRegister()  method of the add-in class: " />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="bcd4f7a1-2d4e-4539-89f1-b4846c138eea"/>
+    <meta name="Microsoft.Help.TocParent" content="162b5f69-c6d3-46c6-bb6e-1eebd5df15e6"/>
+    <meta name="Microsoft.Help.TocOrder" content="6"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">Eplan API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_Framework.html">API Framework</a>
+ / <a href="AddIns.html">Add-ins</a>
+ / Adding ribbon commands</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Adding ribbon commands</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>An add-in can add one or more ribbon commands to the <span class="SPAN.gui gui SPAN">Extensions</span> &gt; <span class="SPAN.gui gui SPAN">API</span> command gropup. Therefore the class &nbsp;<span class="SPAN.codetext codetext SPAN">Eplan.EplApi.Gui.RibbonBar</span>&nbsp; provides a function &nbsp;<span class="SPAN.codetext codetext SPAN">AddCommand</span>&nbsp; which should be&nbsp;called in the &nbsp;<span class="SPAN.codetext codetext SPAN">OnRegister()</span>&nbsp; method of the add-in class:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+<span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+/// The function is called once during registration add-in.
+/// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+/// </span><span style="COLOR: #808080">&lt;param name="bLoadOnStart"&gt;</span><span style="COLOR: #008000"> true: In the next Eplan session, add-in will be loaded during initialization</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+/// </span><span style="COLOR: #808080">&lt;returns&gt;&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span><span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">bool</span> OnRegister(<span style="COLOR: #0000ff">ref</span> System.Boolean bLoadOnStart)
+{
+   <span style="COLOR: #0000ff">var</span> ribbonBar= <span style="COLOR: #0000ff">new</span> Eplan.EplApi.Gui.RibbonBar();
+   ribbonBar.AddCommand(<span style="COLOR: #800000">"CSharpAction"</span>, <span style="COLOR: #800000">"CSharpAction"</span>);
+   <span style="COLOR: #0000ff">return</span> <span style="COLOR: #0000ff">true</span>;
+}
+
+<span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+/// The function is called during unregistration the add-in.
+/// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+/// </span><span style="COLOR: #808080">&lt;returns&gt;&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span><span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">bool</span> OnUnregister()
+{
+    <span style="COLOR: #0000ff">var</span> ribbonBar = <span style="COLOR: #0000ff">new</span> Eplan.EplApi.Gui.RibbonBar();
+    <span style="COLOR: #0000ff">return</span> ribbonBar.RemoveCommand(<span style="COLOR: #800000">"CSharpAction"</span>);
+}
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+<span style="COLOR: #008000">''' </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+''' This function is called once the Add-ins through the Framework in the registering.  
+''' </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+''' </span><span style="COLOR: #808080">&lt;param name="bLoadOnStart"&gt;</span><span style="COLOR: #008000"> True:  The Add-in is loaded in the future in system start and the function </span><span style="COLOR: #808080">&lt;seealso cref="OnInit"/&gt;</span><span style="COLOR: #008000"> is called. </span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+''' </span><span style="COLOR: #808080">&lt;returns&gt;&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span><span style="COLOR: #0000ff">Public</span> <span style="COLOR: #0000ff">Function</span> OnRegister(<span style="COLOR: #0000ff">ByRef</span> bLoadOnStart <span style="COLOR: #0000ff">As</span> System.Boolean) <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">Boolean</span> <span style="COLOR: #0000ff">Implements</span> IEplAddIn.OnRegister
+   <span style="COLOR: #0000ff">Dim</span> ribbonBar <span style="COLOR: #0000ff">As</span> Eplan.EplApi.Gui.RibbonBar= <span style="COLOR: #0000ff">New</span> Eplan.EplApi.Gui.RibbonBar
+   ribbonBar.AddCommand(<span style="COLOR: #800000">"CSharpAction"</span>, <span style="COLOR: #800000">"CSharpAction"</span>)
+   <span style="COLOR: #0000ff">Return</span> <span style="COLOR: #0000ff">True</span>
+<span style="COLOR: #0000ff">End Function</span> <span style="COLOR: #008000">'OnInitGui
+</span>
+<span style="COLOR: #008000">''' </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+''' This function will remove from called once the Add-ins through the Framework in that the system.
+''' </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+''' </span><span style="COLOR: #808080">&lt;returns&gt;&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span><span style="COLOR: #0000ff">Public</span> <span style="COLOR: #0000ff">Function</span> OnUnregister() <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">Boolean</span> <span style="COLOR: #0000ff">Implements</span> IEplAddIn.OnUnregister
+    <span style="COLOR: #0000ff">Dim</span> ribbonBar <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">New</span> RibbonBar()
+    <span style="COLOR: #0000ff">Return</span> ribbonBar.RemoveCommand(<span style="COLOR: #800000">"CSharpAction"</span>)
+<span style="COLOR: #0000ff">End Function</span>
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>The function &nbsp;<span class="SPAN.codetext codetext SPAN">AddCommand(text, command line)</span>&nbsp; adds a button (i.e ribbon command)&nbsp;with the text "CSharpAction" and assigns the action "CSharpAction" to it.&nbsp;The button is then visible in <span class="SPAN.gui gui SPAN">Extensions</span> &gt; <span class="SPAN.gui gui SPAN">API</span> command group. It is also possible to add it to a custom command group that exists in either a persistent tab or a custom tab.</p>
+
+<p>Ribbon commands&nbsp;are always&nbsp;assigned to an action. This can be either a custom action (created&nbsp;using the&nbsp;API) or&nbsp;an already existing action.</p>
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-see-also-sub-heading">Scripts</h4><div class="i-see-also-link">
+<a href="script_ribbon.html">Adding ribbon items by a script</a></div>
+
+<h4 class="i-see-also-sub-heading">API Miscellaneous</h4><div class="i-see-also-link">
+<a href="TheRibbon.html">Ribbon bar</a></div>
+
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

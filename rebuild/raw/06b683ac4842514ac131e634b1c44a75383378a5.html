@@ -1,0 +1,952 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Eplan properties</title>
+    <meta name="Title" content="Eplan properties"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n86","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="The Eplan API allows accessing object properties, i.e. characteristics that are visible in GUI in the Properties dialog. " />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="e72daeb7-757c-4b3b-a284-7acaf2def2c6"/>
+    <meta name="Microsoft.Help.TocParent" content="0d3ad3ee-158d-4f4e-ac44-69b81813a790"/>
+    <meta name="Microsoft.Help.TocOrder" content="5"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">Eplan API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_DataModel.html">API DataModel</a>
+ / Eplan properties</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Eplan properties</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>The Eplan API allows accessing object properties, i.e. characteristics&nbsp;that are visible in GUI in the <span class="SPAN.gui gui SPAN">Properties</span> dialog.&nbsp;</p>
+
+<p>This is possible through the &nbsp;<span class="SPAN.codetext codetext SPAN">Properties</span>&nbsp; property which is defined for almost all data model objects.&nbsp;</p>
+
+<p>The list of all available properties for a particular object can be found in the properties of the &nbsp;<span class="SPAN.codetext codetext SPAN">Properties</span>&nbsp; class (for example&nbsp;&nbsp;<span class="SPAN.codetext codetext SPAN">Properties::AllMDSymbolLibraryPropIDs</span>).&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Property types</h3>
+
+<p>Eplan properties are typed. The property values can have one of the following types:&nbsp;</p>
+
+<ul>
+    <li><span class="codetext">bool</span></li>
+
+    <li><span class="codetext">int</span></li>
+
+    <li><span class="codetext">double</span></li>
+
+    <li><span class="codetext">DateTime</span></li>
+
+    <li><span class="codetext">PointD</span></li>
+
+    <li><span class="codetext">MultiLangString</span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>With help of the PropertyDefinition.PropertyType, you can determine the type of a property:</p>
+
+<p>&nbsp;</p>
+
+<div class="TableDiv">
+    <table>
+        <tbody>
+            <tr>
+                <th>PropertyDefinition.PropertyType</th>
+
+                <th>Corresponding .NET Framework type</th>
+            </tr>
+
+            <tr>
+                <td><span class="codetext">Point</span></td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><span class="codetext">MultilangString</span></td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><span class="codetext">Variable</span></td>
+
+                <td><span class="codetext">System.String</span></td>
+            </tr>
+
+            <tr>
+                <td><span class="codetext">String</span></td>
+
+                <td><span class="codetext">System.String</span></td>
+            </tr>
+
+            <tr>
+                <td><span class="codetext">Time</span></td>
+
+                <td><span class="codetext">System.DateTime</span></td>
+            </tr>
+
+            <tr>
+                <td><span class="codetext">Bool</span></td>
+
+                <td><span class="codetext">System.Boolean</span></td>
+            </tr>
+
+            <tr>
+                <td><span class="codetext">Double</span></td>
+
+                <td><span class="codetext">System.Double</span></td>
+            </tr>
+
+            <tr>
+                <td height="34"><span class="codetext">Coord</span></td>
+
+                <td height="34"><span class="codetext">System.Double</span></td>
+            </tr>
+
+            <tr>
+                <td><span class="codetext">Long</span></td>
+
+                <td><span class="codetext">System.Int64</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>The following example gets the type of a page property:&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+PropertyDefinition.PropertyType oPropType = oPage.Properties[Properties.Page.DESIGNATION_PLANT].Definition.Type;
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+<span style="COLOR: #0000ff">Dim</span> oPropType <span style="COLOR: #0000ff">As</span> PropertyDefinition.PropertyType = oPage.Properties(Properties.Page.DESIGNATION_PLANT).Definition.Type
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<h3>Setting and getting a property</h3>
+
+<p>The following example shows how to set a &nbsp;<span class="SPAN.codetext codetext SPAN">bool</span>&nbsp; property:&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+oFunction.Properties[Properties.Function.FUNC_ARTICLE_SUPPRESSINPARTSLIST] = <span style="COLOR: #0000ff">true</span>;
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+oFunction.Properties(Properties.Function.FUNC_ARTICLE_SUPPRESSINPARTSLIST) = PropertyValue.op_Implicit(<span style="COLOR: #0000ff">True</span>)
+</pre>
+    </div>
+</div>
+
+<div>
+    <div>
+        <pre>
+ 
+</pre>
+    </div>
+</div>
+
+<p>The following example shows how to get a &nbsp;<span class="SPAN.codetext codetext SPAN">MultiLangString</span>&nbsp; property (project description):&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+MultiLangString mlTest = oProject.Properties[Properties.Project.PROJ_INSTALLATIONNAME];
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+<span style="COLOR: #0000ff">Dim</span> mlTest <span style="COLOR: #0000ff">As</span> MultiLangString = oProject.Properties(Properties.Project.PROJ_INSTALLATIONNAME).ToMultiLangString()
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>As an alternative syntax, you can also write:&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+MultiLangString mlTest = oProject.Properties.PROJ_INSTALLATIONNAME;
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+<span style="COLOR: #0000ff">Dim</span> mlTest <span style="COLOR: #0000ff">As</span> MultiLangString = oProject.Properties.PROJ_INSTALLATIONNAME.ToMultiLangString()
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>Finally an example that&nbsp;loops over all &nbsp;<span class="SPAN.codetext codetext SPAN">string</span>&nbsp; properties of a project:&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+ <span style="COLOR: #0000ff">string</span> strTmp = <span style="COLOR: #0000ff">string</span>.Empty;
+ PropertyValue oPropValue;
+ <span style="COLOR: #008000">// Iterate over all project properties
+</span> <span style="COLOR: #0000ff">foreach</span> (AnyPropertyId hPProp <span style="COLOR: #0000ff">in</span> Eplan.EplApi.DataModel.Properties.AllProjectPropIDs)
+ {
+     <span style="COLOR: #008000">// Check if exists
+</span>     <span style="COLOR: #0000ff">if</span> (!m_oProject.Properties[hPProp].IsEmpty)
+     {
+         <span style="COLOR: #0000ff">if</span> (m_oProject.Properties[hPProp].Definition.Type == PropertyDefinition.PropertyType.String)
+         {
+             <span style="COLOR: #008000">// Read string property
+</span>             oPropValue = m_oProject.Properties[hPProp];
+             strTmp = oPropValue.ToString();
+         }
+     }
+ }
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+<span style="COLOR: #0000ff">Dim</span> strTmp <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">String</span> = <span style="COLOR: #0000ff">String</span>.Empty
+<span style="COLOR: #0000ff">Dim</span> oPropValue <span style="COLOR: #0000ff">As</span> PropertyValue
+<span style="COLOR: #008000">' Iterate over all project properties
+</span><span style="COLOR: #0000ff">Dim</span> hPProp <span style="COLOR: #0000ff">As</span> AnyPropertyId
+<span style="COLOR: #0000ff">For</span> <span style="COLOR: #0000ff">Each</span> hPProp <span style="COLOR: #0000ff">In</span>  Eplan.EplApi.DataModel.Properties.AllProjectPropIDs
+   <span style="COLOR: #008000">' Check if exists
+</span>   <span style="COLOR: #0000ff">If</span> <span style="COLOR: #0000ff">Not</span> m_oProject.Properties(hPProp).IsEmpty <span style="COLOR: #0000ff">Then</span>
+      <span style="COLOR: #0000ff">If</span> m_oProject.Properties(hPProp).Definition.Type = PropertyDefinition.PropertyType.String <span style="COLOR: #0000ff">Then</span>
+         <span style="COLOR: #008000">' Read string property
+</span>         oPropValue = m_oProject.Properties(hPProp)
+         strTmp = oPropValue.ToString()
+      <span style="COLOR: #0000ff">End</span> <span style="COLOR: #0000ff">If</span>
+   <span style="COLOR: #0000ff">End</span> <span style="COLOR: #0000ff">If</span>
+<span style="COLOR: #0000ff">Next</span> hPProp
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<h3>Setting name properties</h3>
+
+<div>
+    In the case of the name properties, their setting must&nbsp;be done through the &nbsp;<span class="SPAN.codetext codetext SPAN">.NameParts</span>&nbsp; property, for example:
+</div>
+
+<div>
+    <div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+        <ul>
+            <li><a href="#i-tab-content-58baccd6-a013-44dc-9032-8035b8c7f76e">C#</a></li>
+        </ul>
+
+        <div id="i-tab-content-58baccd6-a013-44dc-9032-8035b8c7f76e" class="i-filtered-content i-code">
+            <pre>
+<span style="COLOR: #0000ff">var</span> functionBasePropertyList = <span style="COLOR: #0000ff">new</span> FunctionBasePropertyList();
+<span style="COLOR: #008000">// Set function name
+</span>functionBasePropertyList.DESIGNATION_LOCATION = <span style="COLOR: #800000">"A1"</span>;
+functionBasePropertyList.DESIGNATION_PLANT = <span style="COLOR: #800000">"E01"</span>;
+oNewFunction.NameParts = functionBasePropertyList;
+</pre>
+        </div>
+    </div>
+</div>
+
+<div>
+    The only difference is with &nbsp;<span class="SPAN.codetext SPAN codetext">DESIGNATION_PRODUCT</span>&nbsp; property. It needs to be set by &nbsp;<span class="SPAN.codetext codetext SPAN">FUNC_CODE</span>&nbsp; and &nbsp;<span class="SPAN.codetext codetext SPAN">FUNC_COUNTER</span>&nbsp; then it is composed from them.
+</div>
+
+<p>&nbsp;</p>
+
+<h3>Conversion property value to another types</h3>
+
+<p>It is possible to get a property&nbsp;as a value of&nbsp;the .NET Framework type or Eplan API type (for example &nbsp;<span class="SPAN.codetext codetext SPAN">Eplan.EplApi.Base.MultiLangString</span>). It can be done explicitly by the &nbsp;<span class="SPAN.codetext codetext">PropertyValue.To&lt;type&gt;()</span>, for example:</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">string</span> strStringValue = oFunction.Properties.FUNC_CODE.ToString();  
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>or implicitly:</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">int</span> nValue = oFunction.Properties.FUNC_CRAFT;
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>It is not allowed to convert&nbsp;the property value to a non-matching type, for example &nbsp;<span class="SPAN.codetext codetext SPAN">MultiLangString</span>&nbsp; to &nbsp;<span class="SPAN.codetext codetext SPAN">int</span>. In such cases,&nbsp;a runtime warning is generated&nbsp;(as an Eplan system message) or an exception is&nbsp;thrown:</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">string</span> strValue = oArticle.Properties.ARTICLE_DEPTH.ToString(); <span style="COLOR: #008000">// Will generate a system warning
+</span><span style="COLOR: #0000ff">double</span> dValue = oArticle.Properties.ARTICLE_DEPTH.ToDouble(); <span style="COLOR: #008000">// OK
+</span><span style="COLOR: #0000ff">string</span> strValue2 = oArticle.Properties.ARTICLE_DEPTH.ToDouble().ToString(<span style="COLOR: #800000">"0.00"</span>, CultureInfo.InvariantCulture); <span style="COLOR: #008000">// Also OK</span>
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>Here is a table that&nbsp;shows which conversions are allowed:</p>
+
+<p>&nbsp;</p>
+
+<div class="TableDiv">
+    <table>
+        <tbody>
+            <tr>
+                <th>
+                    <p>&nbsp;</p>
+                </th>
+
+                <th>Eplan.EplApi.Base.Point&nbsp;&nbsp;<br />
+                PropertyValue.ToPointD()</th>
+
+                <th>Eplan.EplApi.Base.MultiLangString<br />
+                PropertyValue.ToMultiLangString()</th>
+
+                <th width="285">System.String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                PropertyValue.ToString()</th>
+
+                <th>System.DateTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                PropertyValue.ToTime()</th>
+
+                <th>bool&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                PropertyValue.ToBool()</th>
+
+                <th>double&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                PropertyValue.ToDouble()</th>
+
+                <th>long&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                PropertyValue.ToInt()</th>
+            </tr>
+
+            <tr>
+                <td>PropertyType.Point</td>
+
+                <td>â</td>
+
+                <td>&nbsp;</td>
+
+                <td width="285"></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>PropertyType.MultilangString</td>
+
+                <td></td>
+
+                <td>â</td>
+
+                <td width="285">&nbsp;</td>
+
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>PropertyType.Variable</td>
+
+                <td></td>
+
+                <td></td>
+
+                <td width="285">â</td>
+
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>PropertyType.String</td>
+
+                <td></td>
+
+                <td></td>
+
+                <td width="285">â</td>
+
+                <td>&nbsp;</td>
+
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>PropertyType.Time</td>
+
+                <td></td>
+
+                <td></td>
+
+                <td width="285"></td>
+
+                <td>â</td>
+
+                <td>&nbsp;</td>
+
+                <td></td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>PropertyType.Bool</td>
+
+                <td></td>
+
+                <td></td>
+
+                <td width="285"></td>
+
+                <td></td>
+
+                <td>â</td>
+
+                <td>&nbsp;</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>PropertyType.Double</td>
+
+                <td></td>
+
+                <td></td>
+
+                <td width="285"></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td>â</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>PropertyType.Coord</td>
+
+                <td></td>
+
+                <td></td>
+
+                <td width="285"></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td>â</td>
+
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>PropertyType.Long</p>
+                </td>
+
+                <td></td>
+
+                <td></td>
+
+                <td width="285"></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td>â</td>
+
+                <td>â</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;</p>
+
+<h3>Indexed properties</h3>
+
+<p>Properties can have more than one value. In this case, we call it an "<strong>indexed property</strong>". The index is passed after the property designation. The example gets the index 1 of the function property &nbsp;<span class="SPAN.codetext codetext SPAN">FUNC_CONNECTIONDESIGNATION</span>:&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+strConnDes1 = oFunction.Properties[Properties.Function.FUNC_CONNECTIONDESIGNATION, 1].ToString();
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+strConnDes1 = oFunction.Properties(Properties.Function.FUNC_CONNECTIONDESIGNATION, 1).ToString()
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>Alternatively:&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+strConnDes1 = oFunction.Properties.FUNC_CONNECTIONDESIGNATION[1].ToString();
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+strConnDes1 = oFunction.FUNC_CONNECTIONDESIGNATION(1).ToString()
+</pre>
+    </div>
+</div>
+
+<h3>User-defined properties</h3>
+
+<p>Eplan API supports also user-defined properties that were introduced in Eplan 2.4.</p>
+
+<p>The following enhancements were added due to it:&nbsp;</p>
+
+<ul>
+    <li>Access to properties by case-sensitive &nbsp;<span class="SPAN.codetext codetext SPAN">string</span>&nbsp; identifiers:&nbsp;</li>
+</ul>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #008000">// Setting user-defined property
+</span>oProject.Properties[<span style="COLOR: #800000">"EPLAN.Project.UserSupplementaryField1"</span>] = <span style="COLOR: #800000">"test1"</span>;
+<span style="COLOR: #008000">// Getting user-defined property
+</span><span style="COLOR: #0000ff">string</span> strValue = oProject.Properties[<span style="COLOR: #800000">"EPLAN.Project.UserSupplementaryField1"</span>];
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;</p>
+
+<ul>
+    <li><span class="SPAN.codetext codetext SPAN">UserDefinedPropertyDefinition</span>&nbsp; class extending &nbsp;<span class="SPAN.codetext codetext SPAN">PropertyDefinition</span>. The class allows creating custom property definitions or accessing information from existing ones:&nbsp;&nbsp;</li>
+</ul>
+
+<div>
+    <div>
+        <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>C#</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <pre>
+<span style="COLOR: #008000">// Create a new property definition:
+</span>UserDefinedPropertyDefinition oUDPDProject = UserDefinedPropertyDefinition.Create(oCurrentProject, <span style="COLOR: #800000">"API.Property.Project"</span>, UserDefinedPropertyDefinition.Enums.ClientType.Project);
+oCurrentProject.Properties[<span style="COLOR: #800000">"API.Property.Project"</span>] = <span style="COLOR: #800000">"something"</span>;
+
+<span style="COLOR: #0000ff">var</span> oCategory = oProject.Properties[<span style="COLOR: #800000">"EPLAN.Project.UserSupplementaryField1"</span>].Category;  <span style="COLOR: #008000">// Gets the category information
+</span>MultiLangString strDisplayedName = oProject.Properties[<span style="COLOR: #800000">"EPLAN.Project.UserSupplementaryField1"</span>].DisplayedName; <span style="COLOR: #008000">// Gets the name that is displayed in the GUI properties window</span>
+</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<ul>
+    <li>Import / export property definitions (<span class="SPAN.codetext codetext SPAN">ExportPropertyDefinitions</span>, &nbsp;<span class="SPAN.codetext codetext SPAN">ImportPropertyDefinitions</span>&nbsp; from the &nbsp;<span class="SPAN.codetext codetext SPAN">PrePlanningService</span>&nbsp; class)&nbsp;</li>
+</ul>
+
+<ul>
+    <li>The new &nbsp;<span class="SPAN.codetext codetext SPAN">AnyPropertyId</span>&nbsp; constructor allowing to create an&nbsp;ID of a user-defined property:&nbsp;&nbsp;</li>
+</ul>
+
+<div>
+    <div>
+        <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>C#</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <pre>
+<span style="COLOR: #0000ff">public</span> AnyPropertyId(
+    <span style="COLOR: #0000ff">ref</span> Eplan::EplApi::DataModel::Project pProject,
+    <span style="COLOR: #0000ff">ref</span> System::String strUserDefiniedPropertyIdentName
+);
+</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<ul>
+    <li>The &nbsp;<span class="SPAN.codetext codetext SPAN">AnyPropertyId.AsString</span>&nbsp; propety to get the identifying name from &nbsp;<span class="SPAN.codetext codetext SPAN">AnyPropertyId</span>&nbsp; which represents a user-defined property.&nbsp;</li>
+</ul>
+
+<ul>
+    <li>Actions that expect&nbsp;the ID&nbsp;of a property were extended to support also identifying names. Please go to the "<a href="API Reference.html">API Reference</a>" section&nbsp;for details.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3>Accessing default user-defined properties</h3>
+
+<p>Some user-defined properties are created by default, for example "EPLAN.Project.UserSupplementaryField1".</p>
+
+<p>They have the same internal IDs as the old &nbsp;<span class="SPAN.codetext codetext SPAN">*_CUSTOM_SUPPLEMENTARYFIELD*</span>&nbsp; properties (like "PROJ_CUSTOM_SUPPLEMENTARYFIELD01", etc).&nbsp;</p>
+
+<p>The use of&nbsp;old identifiers is still possible for compatibility reasons, but they generate warnings and will be removed in the future.&nbsp;</p>
+
+<p>Therefore,&nbsp;please replace them with the new IDs to&nbsp;avoid problems in forthcoming Eplan versions:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div>
+    <div>
+        <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>C#</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <pre>
+MultiLangString oMLS = oProject.Properties.PROJ_CUSTOM_SUPPLEMENTARYFIELD01;             <span style="COLOR: #008000">// Old code, generates warning
+</span>MultiLangString oMLS = oProject.Properties[<span style="COLOR: #800000">"EPLAN.Project.UserSupplementaryField1"</span>];     <span style="COLOR: #008000">// New code
+</span>
+m_oTestProject.Properties.FUNC_ARTICLE_CUSTOM_SUPPLEMENTARYFIELD01[1] = strTestValue;     <span style="COLOR: #008000">// Old code, generates warning:
+</span>ArticleReference oArticleReference = oProject.ArticleReferences[0];                       <span style="COLOR: #008000">// New code
+</span>oArticleReference.Properties[<span style="COLOR: #800000">"EPLAN.PartRef.UserSupplementaryField1"</span>] = strTestValue;
+oArticleReference.StoreToObject();
+</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<h3>Accessing&nbsp;user-defined properties&nbsp;through ArticleReference parent object</h3>
+
+<p>In the case&nbsp;of an &nbsp;<span class="SPAN.codetext codetext SPAN">ArticleReference</span>&nbsp; object, when accessing a user-defined property&nbsp;through&nbsp;a parent &nbsp;<span class="SPAN.codetext codetext SPAN">ArticleReference</span>, it is necessary to add the &nbsp;<span class="SPAN.codetext codetext SPAN">EPLAN.ArticleRef.</span>&nbsp; prefix to its identifying name.&nbsp;In addition, an index must be provided&nbsp;to indicate the position of&nbsp;the &nbsp;<span class="SPAN.codetext codetext SPAN">ArticleReference</span>&nbsp; in the parent object.</p>
+
+<div>
+    <div>
+        <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>C#</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <pre>
+<span style="COLOR: #0000ff">var</span> propertyValue1 = oArticleReference.Properties[<span style="COLOR: #800000">"UserProperty.1"</span>].ToString();  <span style="COLOR: #008000">// Accessing user-defined property from ArticleReference
+</span><span style="COLOR: #0000ff">var</span> propertyValue2 = oArticleReference.Parent.Properties[<span style="COLOR: #800000">"EPLAN.ArticleRef.UserProperty.1"</span>][1].ToString(); <span style="COLOR: #008000">// Accessing user-defined property from a parent of the ArticleReference                                
+</span>                                
+</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

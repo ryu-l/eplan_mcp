@@ -1,0 +1,11 @@
+# P020043: New layer found: <x>, <y>
+
+### Description
+
+You have run a project comparison, checking the layers of the test project (incoming project) against those of the comparison project and differences were found.
+
+This message occurs if a new layer was created in the test project. The Name is displayed in the placeholder <x>, the Description of the newly created layer in the placeholder <y>.
+
+![](../Pictures/Gui/ALL/note.png)Note:
+
+Using a new check run (any desired scheme) this module-specific message can be deleted from the message management dialog.

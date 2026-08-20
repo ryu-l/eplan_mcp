@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-conditions="Primary.concept" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="6:40:21 AM">
+        <meta name="BuildDate" content="Monday, October 6, 2025">
+        <meta id="productName" name="product" content="Eplan Platform">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="allLangExtended">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="&#160;"><title>Check Run Messages: Connections</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZN49JJ5H1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FZN49JJ5H1', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="EPLAN_Help_k_start.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor1682"></a>
+                                            <madcap:concept term="Messages"></madcap:concept><a name="aanchor1683"></a>
+                                            <madcap:concept term="EPLAN Plattform"></madcap:concept><a name="kanchor1626"></a>
+                                            <h2>Check Run Messages: Connections</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <p class="Tabelle_Text">Message number</p>
+                                                    </th>
+                                                    <th>
+                                                        <p class="Tabelle_Text">Message text</p>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005001</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005001.htm">Potential connection point or definition point without specification of potential</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005010</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005010.htm">Connection without specification of potential</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005012</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005012.htm">Several connection definition points on one connection</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005013</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005013.htm">Targets have differing connection point types</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005014</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005014.htm">Connection and connecting point have differing connection point types</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005015</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005015.htm">Targets have differing potential types</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005016</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005016.htm">Connection and connecting point have differing potential types</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005017</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005017.htm">Target and / or source does not exist</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005018</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005018.htm">Conflict between several connection definition points on a connection</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005019</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005019.htm">Conflict between signal and potential</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005020</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005020.htm">Conflict between identical potential definitions</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005021</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005021.htm">Potential definition with incorrect potential</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005022</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005022.htm">Connection definition point is located on more than one connection</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005023</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005023.htm">Connection definition point is not located on a connection</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005024</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005024.htm">Connection definition point without properties</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005025</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005025.htm">Too many connections at a connection point</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005026</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005026.htm">Connection point is not connected</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005027</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005027.htm">Ring connection</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005028</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005028.htm">Several potential definitions on one potential</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005031</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005031.htm">A connection designation is added to the connection definition point (&lt;y&gt;) located on a section of the connection (&lt;x&gt;)</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005033</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005033.htm">Designation process of format group no. &lt;x&gt;: First assigned connection designation '&lt;y&gt;', last assigned connection designation '&lt;z&gt;' within the format group</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005034</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005034.htm">An identified connection definition point is located on multiple connections</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005035</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005035.htm">The connection definition point (&lt;x&gt;) that is located on multiple connections has been re-arranged and re-formatted</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005036</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005036.htm">The minimum number of digits for the format (&lt;x&gt;) was exceeded</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005037</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005037.htm">Conflicting intrinsic safety of connection points</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005039</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005039.htm">Representation types of targets differ</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005040</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005040.htm">Bundle connection point is not in pairs</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005042</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005042.htm">The value of the 'Color / Number' property is a color code or color name that is not contained in the project settings under 'Connection colors'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005043</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005043.htm">The cross-section / diameter is not contained in the project settings under 'Cross-sections / Diameters'!</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005044</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005044.htm">Same connection designation within different potentials or pipings</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005045</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005045.htm">Same connection designation within different signals or piping states</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005046</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005046.htm">Incomplete net</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005047</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005047.htm">Net definition point contains incomplete connections </a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005048</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005048.htm">Net contains connection symbols with the 'Specify targets' property</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005049</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005049.htm">Different net definition points within a net</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005050</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005050.htm">Duplicate ID for net-based connections within a net (&lt;x&gt;)</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005051</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005051.htm">Connector with unconnected connection point</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005052</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005052.htm">Unconnected connection point at pin</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005053</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005053.htm">Unconnected connection point at terminal</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005054</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005054.htm">Different nets with identical net name (&lt;x&gt;)</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005055</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005055.htm">Different signal definitions within one signal</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005056</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005056.htm">Conflict between net and potential or signal</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005057</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005057.htm">Net definition point with incorrect potential</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005058</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005058.htm">Net definition point with incorrect signal</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005060</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005060.htm">Connection point has a multi-line connection in both single-line and multi-line display</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005061</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005061.htm">More than one multi-line connection definition at a single-line connection</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005062</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005062.htm">Multi-line connection definition does not match source / target</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005063</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005063.htm">Connection point is not contained in the multi-line connection definition</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005064</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005064.htm">Invalid connection (source / target connection point does not exist)</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005065</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005065.htm">Connections have conflicting data at the '&lt;x&gt;' property</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005066</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005066.htm">Connection (multi-line) does not have a counterpiece (3D mounting layout)</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005067</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005067.htm">Connection (3D mounting layout) does not have a multi-line counterpiece</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005068</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005068.htm">Connection (3D mounting layout) with connection point that is not defined in the connection point pattern</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005069</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005069.htm">Same connection designation within different nets</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005070</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005070.htm">Different connection designations within a potential</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005071</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005071.htm">Different connection designations within a signal</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005072</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005072.htm">Different connection designations within a net</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005073</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005073.htm">Different connection point cross-section / diameter of targets</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005074</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005074.htm">Different connection point cross-section / diameter of connection and connecting point</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005075</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005075.htm">Differing substances within a piping</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005076</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005076.htm">Differing property '&lt;x&gt;' within a piping</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005077</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005077.htm">Piping connection or definition point without specification of the substance</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005078</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005078.htm">Connection with specification of substance without piping definition</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005079</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005079.htm">Differing states within a piping</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005080</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005080.htm">Connection (topology) does not have a multi-line / single-line counterpiece</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005081</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005081.htm">Unrealistic continuous connection at the connection splicer</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005082</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005082.htm">Cable connection without color / number</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005083</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005083.htm">Conduit connection without color / number</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005084</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005084.htm">The substance '&lt;x&gt;' property of the connection contradicts the piping definition</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005085</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005085.htm">Connection is marked for deletion</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005086</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005086.htm">Different connection dimension '&lt;x&gt;' / '&lt;y&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005087</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005087.htm">Direct connection: Different connection dimension '&lt;x&gt;' / '&lt;y&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005088</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005088.htm">Individual connection with DT</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005089</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005089.htm">Connection definition point lies on a bundle</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005090</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005090.htm">The pipe class '&lt;x&gt;' property of the connection contradicts the piping definition</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005091</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005091.htm">Connection and function have differing pipe classes</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005092</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005092.htm">The part '&lt;x&gt;' entered at the connection is not contained in the pipe class '&lt;y&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005093</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005093.htm">The connection diameter '&lt;x&gt;' does not lie within the permissible range of the terminal part</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P005094</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_005094.htm">For cable connection '&lt;x&gt;' the connected pin '&lt;y&gt;' of the prefabricated cable is not specified as the conductor start or conductor end</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p class="Seealso">See also</p>
+                                            <p class="Link_Seealso"><a href="messages_o_start.htm">Check Run Messages: Overview</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

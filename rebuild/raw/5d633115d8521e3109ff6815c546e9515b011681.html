@@ -1,0 +1,171 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>API Pre-planning</title>
+    <meta name="Title" content="API Pre-planning"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n140","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="The Eplan API now provides full access to pre-planning data. The following extensions were created for this purpose:
+
+- Project-related classes from  Eplan.EplApi.DataModel.Planning  namespace
+
+- The PrePlanningMacro  class and  Insert::PrePlanni" />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="1dd713d5-7ba7-46c3-851a-0addcac0ac47"/>
+    <meta name="Microsoft.Help.TocParent" content="0d3ad3ee-158d-4f4e-ac44-69b81813a790"/>
+    <meta name="Microsoft.Help.TocOrder" content="10"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">Eplan API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_DataModel.html">API DataModel</a>
+ / API Pre-planning</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">API Pre-planning</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p class="Element10">The Eplan API now&nbsp;provides full access to&nbsp;pre-planning&nbsp;data. The following extensions were created for this purpose:</p>
+
+<p class="Element10">-&nbsp;Project-related&nbsp;classes from &nbsp;<span class="SPAN.codetext ent10 codetext SPAN">Eplan.EplApi.DataModel.Planning</span>&nbsp; namespace</p>
+
+<p class="Element10">- The <span class="SPAN.codetext ent10 codetext SPAN">PrePlanningMacro</span>&nbsp; class and &nbsp;<span class="SPAN.codetext ent10 codetext SPAN">Insert::PrePlanning</span>&nbsp; for the macro access</p>
+
+<p class="Element10">-&nbsp;<span class="SPAN.codetext ent10 codetext SPAN">PrePlanningService</span>&nbsp; for more complex operations</p>
+
+<p class="Element10">- New enum values</p>
+
+<h3 class="Element10">&nbsp;Eplan.EplApi.DataModel.Planning namespace</h3>
+
+<p class="Element10">Pre-Planning related objects are stored in the &nbsp;<span class="SPAN.codetext ent10 codetext SPAN">Eplan.EplApi.DataModel.Planning</span>&nbsp; namespace. Here is an UML class diagram&nbsp;that shows their inheritance hierarchy:</p>
+
+<p class="Element10">&nbsp;</p><a title="Click to enlarge" href="graphs/preplanning.JPG" target="_blank"><img src="graphs/preplanning.JPG" width="100%" /></a>
+
+<p class="Element10">&nbsp;</p>
+
+<div id="areafixed" class="Element710">
+    <h3>&nbsp;Migration of PPE API to Preplanning</h3>
+
+    <p class="Element10">Since Eplan 2.4, there is a new product for the pre-planning and basic engineering of plant and machinery:&nbsp;</p>
+
+    <p class="Element10">&nbsp;</p>
+
+    <div class="Element15">
+        <strong>&nbsp;&nbsp; Eplan Preplanning Professional</strong>
+    </div>
+
+    <p class="Element10">&nbsp;</p>
+
+    <p class="Element10">The product was developed on the basis of the Eplan Platform and in parallel to the Eplan PPE solution. Now it is the replacement of the Eplan PPE.&nbsp;</p>
+
+    <p class="Element10">Because of this, Eplan PPE is no longer supported nor described in API Help since version 2.7. So please migrate your applications using PPE API to Preplanning API.&nbsp;</p>
+
+    <p class="Element10">As a replacement, use classes from Eplan.EplApi.DataModel.Planning namespace and PrePlanningService.&nbsp;</p>
+
+    <p class="Element10">Please note also, there will be no further development of the Eplan PPE system.</p>
+</div>
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-see-also-sub-heading">Reference</h4><div class="i-see-also-link">
+<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning_namespace.html">Eplan.EplApi.DataModel.Planning Namespace</a></div>
+
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+# Black Boxes: Nesting Basics
+
+![](../Pictures/Gui/ALL/note.png)Note:
+
+Since a device tag (DT) only consists of two levels, only two levels of nesting can be analyzed to where they can be fully used by all of the program functions.
+
+The front DT always stands alone when nested, all others are stored in the second part of the DT, where the remaining DTs are keyed from right to left so that the numeric portion and the identifier of the last DT remain identifiable.
+
+Only that which lies inside the box and which has been explicitly entered into the DT is nested.
+
+![](../Pictures/Gui/ALL/example.png)[![Closed](../../Skins/Default/Stylesheets/Images/transparent.gif)Example:](javascript:void(0);)
+
+If a lamp -U1-H2:5/6 is moved into the box -U1, the lamp -U1-U1-H2:5/6 is created.  
+If the box -U1 is downsized so that -H2:5/6 lies outside, the DT at the lamp is unchanged. Internally, it is changed from -U1-H2:5/6 to -H2:5/6.
+
+The decision, as to whether a component is within the box or not, is based on the insertion point. Several boxes can be nested within each other, and the insertion point is also the deciding factor here.
+
+![](../Pictures/Gui/ALL/example.png)[![Closed](../../Skins/Default/Stylesheets/Images/transparent.gif)Example:](javascript:void(0);)
+
+![](../Pictures/Visualisation/ALL/geraetekasten_schachteln_av.png)
+
+It is always nested in the box whose insertion point is nearest and in which the component is located. In this way, the lamp -H4 (illustrated above) has a full name of -U4-H4. The fact that the lamp is also contained by -U3 is not taken into account, since the insertion point of -U3 is not located in -U4. However, this arrangement creates a message in the message management, since an unambiguous allocation can't actually take place here.
+
+In contrast to this, the lamp -H1 has the full name -U1-U2-H1. This is correct and unambiguous, because the insertion point of -U2 is inside -U1.
+
+The remaining DTs are:
+
+- -U1-H6
+- -U3-H7
+- -U4-H5.
+
+A box within a box is also nested. The box -U2 therefore has the full name -U1-U2.
+
+All components / functions can be nested by acquisition of the device tag, and nearly all of the components / functions can be nested using boxes. The exceptions are:
+
+- Interruption points
+- Potential connection points
+- Structure boxes.
+
+### Settings
+
+Disabling nesting (using File > Information > Command group Project properties > Structure > Button [Other], Tab [Inheritance](prjmanagementgui_r_vererbung.htm#Schachteln)) only affects components whose own DT information is located within a box. A lamp without a DT therefore always remains allocated to the box as long as it remains within the box. The setting can't therefore affect the components outside of the box.
+
+After nesting, Eplan recalculates all of the DTs of the functions located within the boxes.
+
+![](../Pictures/Gui/ALL/warning.png)Warning:
+
+To change these settings you must edit the project alone, as this setting can't be changed in multi-user operation.
+
+See also
+
+[Black Boxes: Fields of Application](blackbox_k_einsatzmoeglichkeiten.htm)

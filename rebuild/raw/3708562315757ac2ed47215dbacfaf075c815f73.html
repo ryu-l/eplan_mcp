@@ -1,0 +1,342 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>API Reports Modification Interface</title>
+    <meta name="Title" content="API Reports Modification Interface"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n190","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="The API Reports Modification Interface makes it possible to take influence on the result of report generation via an API action. " />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="04d2d875-676d-46be-a8ab-1937347ccc8f"/>
+    <meta name="Microsoft.Help.TocParent" content="336e53eb-a15a-49ac-8013-c36cd5cf745f"/>
+    <meta name="Microsoft.Help.TocOrder" content="5"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">Eplan API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_Other.html">API Miscellaneous</a>
+ / API Reports Modification Interface</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">API Reports Modification Interface</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>The API Reports Modification Interface makes it possible to take influence on the result of report generation via an API action.&nbsp;</p>
+
+<p>In this way, it is possible to filter or change the order of objects for a report.&nbsp;</p>
+
+<div class="i-box i-box-caution">
+    Warning: When a report action is used, please don't set a filter or sort settings because it can be inconsistent with the action!
+</div>
+
+<p>The following steps need to be done to in order to use the interface:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>a) Create a report processing action</h3>
+
+<p>Each&nbsp;report template now contains a property that allows you to set&nbsp;an action name:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="images/report_action_field.jpg" />&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>If an action with this name is registered in Eplan, it is called on several occasions during report generation.&nbsp;</p>
+
+<p>During these steps, you can influence the texts that appear in the report as well as the objects that&nbsp;are reported and the order in which they appear.&nbsp;</p>
+
+<p>The steps are distinguished by the &nbsp;<span class="SPAN.codetext codetext SPAN">mode</span>&nbsp; parameter of the called action.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>The action from the template is called with the following parameters:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><em>Step 1.</em>&nbsp;</p>
+
+<p>Parameters:&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">project</span>&nbsp; â Input parameter; value:&nbsp;ID of a project&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">mode</span>&nbsp; â Input parameter; value: "Start"&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">objects</span>&nbsp; â Input parameter; value: IDs of objects that will be updated (only if you UPDATE a report)&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Prepare project data for this report if necessary, fill caches etc.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><em>Step 2.</em>&nbsp;</p>
+
+<p>Parameters:&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">project</span>&nbsp; â Input parameter; value:&nbsp;ID of a project&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">mode</span>&nbsp; â Input parameter;&nbsp;value: "ModifyObjectList"&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">objects</span>&nbsp; â Input / output&nbsp;parameter;&nbsp;value: IDs of objects that will be evaluated separated with semicolon</p>
+
+<p>&nbsp;</p>
+
+<p>This list can be modified (but not the objects themselves!). You can add or remove object IDs from the list or change their order in the list.</p>
+
+<p>The &nbsp;<span class="SPAN.codetext codetext SPAN">objects</span>&nbsp; parameter&nbsp;can be set only in "ModifyObjectList" mode!&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><em>Step 3.</em>&nbsp;</p>
+
+<p>Parameters:&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">project</span>&nbsp; â Input parameter; value:&nbsp;ID of a project&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">mode</span>&nbsp; â Input parameter; value: "ModifyPages"&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">pages</span>&nbsp; â Input parameter; value: IDs of created pages separated&nbsp;by semicolon</p>
+
+<p>&nbsp;</p>
+
+<p>The created pages and their properties can be modified.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><em>Step 4</em>.&nbsp;</p>
+
+<p>Parameters:&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">project</span>&nbsp; â Input parameter; value: ID of a project&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">mode</span>&nbsp; â Input parameter; value: "Finish"&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Clean up caches or undo changes made in step 1.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>b) Prepare a form to be processed</h3>
+
+<p>It is recommended to use a custom form that will be processed by the action described above.&nbsp;</p>
+
+<p>This will ensure that reports can be created either in the "standard" way or in the new one.&nbsp;</p>
+
+<p>The easiest way is to use a copy of an existing form.&nbsp;Such a form should be set in the <span class="SPAN.gui gui SPAN">Form</span> field of the project template:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="images/report_form_field.jpg" />&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>The form can have a custom actions assigned to the placeholder text. This can be set in the <span class="SPAN.gui gui SPAN">Form</span> editor:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="images/placeholdertext_action.jpg" />&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Now it is necessary to create the text processing action (see below).</p>
+
+<p>&nbsp;</p>
+
+<h3>c) Create a placeholder text processing action</h3>
+
+<p>&nbsp;</p>
+
+<p>This action&nbsp;is called when the placeholder text is evaluated during the report generation. The action is called with the following parameters:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">objects</span>&nbsp; â Input parameter; value: main object for the line (can be more than one).&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">ActionCallingContext.SetStrings()</span>&nbsp; â Output parameter; call &nbsp;<span class="SPAN.codetext codetext SPAN">SetStrings()</span>&nbsp; of the calling context to set the result text. More than one result text will generate new lines.&nbsp;</p>
+
+<p><span class="SPAN.codetext codetext SPAN">color</span>&nbsp; â Input / output&nbsp;parameter; value: "ColorId". Set&nbsp;this parameter to change the color of the placeholder text. It works with one result text only.&nbsp;<br />
+Possible values are from 0 to 256. Please use "-16002" as "From layer" value.&nbsp;</p>
+
+<p>Predefined values for line color index are:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>0 = black&nbsp;</p>
+
+<p>1 = red&nbsp;</p>
+
+<p>2 = yellow&nbsp;</p>
+
+<p>3 = green&nbsp;</p>
+
+<p>4 = cyan&nbsp;</p>
+
+<p>5 = blue&nbsp;</p>
+
+<p>6 = magenta&nbsp;</p>
+
+<p>7 = white&nbsp;</p>
+
+<p>...&nbsp;</p>
+
+<p>252 = dark gray&nbsp;</p>
+
+<p>253 = gray&nbsp;</p>
+
+<p>...&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>d) Make sure that the new form is included in the project master data pool</h3>
+
+<p>&nbsp;</p>
+
+<p>This can be done using the &nbsp;<span class="SPAN.codetext codetext SPAN">Eplan::EplApi::HEServices::Masterdata</span>&nbsp; class.</p>
+
+<p>&nbsp;</p>
+
+<p>The following&nbsp;example&nbsp;shows how to&nbsp;create an embedded report with report a processing action:&nbsp;</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #008000">// Copy a form with placeholder text processing action to the master data directory
+</span>File.Copy(<span style="COLOR: #800000">"c:\\temp\\PlugDiagramReportActionFormular.f22"</span>, <span style="COLOR: #0000ff">new</span> ProjectManager().Paths.Forms + <span style="COLOR: #800000">"\\PlugDiagramReportActionFormular.f22"</span>, <span style="COLOR: #0000ff">true</span>);
+<span style="COLOR: #008000">//... and add it to project master data
+</span>StringCollection oProjectNewEntries = <span style="COLOR: #0000ff">new</span> StringCollection();
+oProjectNewEntries.Add(<span style="COLOR: #800000">@"PlugDiagramReportActionFormular.f22"</span>);
+System.Collections.Hashtable oResult = <span style="COLOR: #0000ff">new</span> Masterdata().AddToProjectEx(m_oReportActionProject, oProjectNewEntries);
+<span style="COLOR: #008000">// Prepare the ReportBlock object
+</span>ReportBlock oReportBlock = <span style="COLOR: #0000ff">new</span> ReportBlock();
+oReportBlock.Create(m_oReportActionProject);
+<span style="COLOR: #008000">// Set a form with a placeholder text processing action
+</span>oReportBlock.FormName = <span style="COLOR: #800000">"PlugDiagramReportActionFormular"</span>;
+oReportBlock.Type = DocumentTypeManager.DocumentType.PlugDiagram;
+<span style="COLOR: #008000">// Set the report processing action
+</span>oReportBlock.Action = <span style="COLOR: #800000">"PlugDiagramReportAction"</span>;
+<span style="COLOR: #008000">// Generate the embedded report
+</span>ReportBlockReference oReportBlockReference = <span style="COLOR: #0000ff">new</span> Reports().CreateEmbeddedReport(oReportBlock, oPage, <span style="COLOR: #0000ff">new</span> PointD(10.0, 300.0));
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

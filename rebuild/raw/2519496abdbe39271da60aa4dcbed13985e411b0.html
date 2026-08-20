@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Using Graphical Editing|Path Function Texts|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="6:40:21 AM">
+        <meta name="BuildDate" content="Monday, October 6, 2025">
+        <meta id="productName" name="product" content="Eplan Platform">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="allLangExtended">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="The path function text is only evaluated on logic pages (such as schematic pages with multi-line or single-line representation, overview pages, etc.)...."><title>Reporting of Path Function Texts</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZN49JJ5H1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FZN49JJ5H1', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="EPLAN_Help_k_start.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor67"></a>
+                                            <madcap:concept term="Grundlagen"></madcap:concept><a name="aanchor68"></a>
+                                            <madcap:concept term="Eplan Plattform"></madcap:concept><a name="kanchor77"></a>
+                                            <h2>Reporting of Path Function Texts</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <p>The path function text is only evaluated on <span class="GlossaryPopup" href="Glossary_o_logikseiten.htm">logic pages</span> (such as schematic pages with multi-line or single-line representation, overview pages, etc.). On all other types of page, <span class="GlossaryPopup" href="Glossary_o_pfad_funktionstexte.htm">path function texts</span> are treated like graphical texts.</p>
+                                            <p>There is a peculiarity on the PLC overview pages for <span class="GlossaryPopup" href="Glossary_o_sps_anschluesse.htm">PLC connection points</span> and channel <span class="GlossaryPopup" href="Glossary_o_symbole.htm">symbols</span>. If no own function text is entered at these <span class="GlossaryPopup" href="Glossary_o_funktionen.htm">functions</span>, the <span class="gui">Function text (automatic)</span> property does not show the path function text but rather the automatic function text of the corresponding PLC connection point on the multi-line schematic page. This function text can then be determined from a path function text. For channel symbols, the function text transfer occurs through the insertion point of the symbol and not via the position of the I/O connection point.</p>
+                                            <h3>Evaluation for general functions</h3>
+                                            <p>Eplan looks for the schematic path where the <span class="GlossaryPopup" href="Glossary_o_schaltzeichen.htm">component</span> is located â depending on the setting for the <span class="gui">Reporting direction</span> property of the plot frame being used â from top to bottom or from left to right. The path function text farthest to the top or left is found. The path function text is determined for each function regardless of whether it is a main function or auxiliary function.</p>
+                                            <p>In connection lists, the function text of the component the connection is connected to is always displayed. In <span class="GlossaryPopup" href="Glossary_o_betriebsmittelkennzeichen.htm">device tag</span> lists and <span class="GlossaryPopup" href="Glossary_o_stuecklisten.htm">bills of materials</span>, only the main function is printed and thus only its function text is used.</p>
+                                            <p>When searching from top to bottom, the path function text closest to the top is found.</p>
+                                            <!--<p>
+                <img src="../Pictures/Visualisation/Lang/gededitgui_pathtextcomponent_lv.png"></p>-->
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 25%;">
+                                                    <col style="width: 25%;">
+                                                    <col style="width: 25%;">
+                                                    <col style="width: 25%;">
+                                                </colgroup>
+                                                <tr>
+                                                    <td class="image_with_text" style="width: 25%;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" width="25%">
+                                                        <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextcomponent_down.png">
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;text-align: left;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" align="left" width="25%"><span style="font-weight: bold;color: #008000;">H3 path text 1</span>
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" width="25%">
+                                                        <p></p>
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" width="25%">
+                                                        <p></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="image_with_text" style="width: 25%;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" width="25%"><span style="color: #FF0000;"><b style="font-weight: bold;">Search direction 1</b></span>
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;text-align: left;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" align="left" width="25%"><span style="color: #008000;">H3 path text 2</span>
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" width="25%">
+                                                        <p></p>
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" width="25%">
+                                                        <p></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="image_with_text" style="width: 25%;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" width="25%">
+                                                        <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextcomponent_H2.png">
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;text-align: left;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" align="left" width="25%">
+                                                        <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextcomponent_H3.png">
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;text-align: left;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" align="left" width="25%">
+                                                        <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextcomponent_H4.png">
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;text-align: left;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" align="left" width="25%">
+                                                        <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextcomponent_Hx.png">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="image_with_text" style="width: 25%;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" width="25%">
+                                                        <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextcomponent_down.png">
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;text-align: left;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" align="left" width="25%"><span style="color: #008000;">H3 path text 3</span>
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;text-align: left;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" align="left" width="25%"><span style="font-weight: bold;color: #008000;">H4 path text 1</span>
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;text-align: left;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" align="left" width="25%"><span style="font-weight: bold;color: #008000;">H4 path text 3</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="image_with_text" style="width: 25%;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" width="25%"><span style="color: #FF0000;"><b style="font-weight: bold;">Search direction 2</b></span>
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;text-align: left;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" align="left" width="25%"><span style="color: #008000;">H3 path text 4</span>
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;text-align: left;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" align="left" width="25%"><span style="color: #008000;">H4 path text 2</span>
+                                                    </td>
+                                                    <td class="image_with_text" style="width: 25%;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;" width="25%">
+                                                        <p></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p>When searching from left to right, the path function text farthest to the left is found and used.</p>
+                                            <!--<p>
+                <img src="../Pictures/Visualisation/Lang/gededitgui_pathtextcomponent_jic_lv.png"></p>-->
+                                            <table>
+                                                <tr>
+                                                    <td class="image_with_text" style="vertical-align: middle;"><b style="font-weight: bold;">Search direction 1</b>
+                                                    </td>
+                                                    <td class="image_with_text">
+                                                        <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextcomponent_jic_lv.png">
+                                                    </td>
+                                                    <td class="image_with_text" style="vertical-align: middle;"><b style="font-weight: bold;">Search direction 2</b>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p>You can extend the search for a path function text to the entire schematic path by using the project setting <span class="gui">Extend path function text on the schematic path</span> (command path: <span class="gui">File</span> &gt; <span class="gui">Settings</span> &gt; <span class="gui">Projects</span> &gt; "Project name" &gt; <span class="gui">Graphical editing</span> &gt; <span class="gui">General</span>) .</p>
+                                            <h4>Cables and shields</h4>
+                                            <p>For <span class="GlossaryPopup" href="Glossary_o_kabel.htm">cables</span> and <span class="GlossaryPopup" href="Glossary_o_abschirmungen.htm">shields</span>, the path function text is determined from the graphically first associated connection definition point. Only if there is no connection definition point, is the path function text determined starting from the insertion point of the cable definition line or the shield.</p>
+                                            <h3>Evaluation for terminals and pins</h3>
+                                            <p>Depending on the reporting direction of the plot frame used, the search is performed from top to bottom or from left to right.</p>
+                                            <p>For a reporting direction "Vertical", search starts with the terminal and is carried out upwards in the same schematic path. The schematic path search then continues downwards, starting from the terminal. If no path function text is found there, the <span class="GlossaryPopup" href="Glossary_o_schaltplanpfade.htm">schematic paths</span> to the left of the terminal are then searched completely from bottom to top.</p>
+                                            <!--<p>
+                <img src="../Pictures/Visualisation/Lang/gededitgui_pathtextterminal_lv.png"></p>
+            -->
+                                            <table>
+                                                <tr>
+                                                    <td class="image_with_text"><b style="font-weight: bold;">Search direction</b>
+                                                    </td>
+                                                    <td class="image_with_text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="image_with_text">
+                                                        <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextterminal_lv1.png">
+                                                    </td>
+                                                    <td class="image_with_text">
+                                                        <p></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div class="example">
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><a name="I_Beispiel"></a> <img src="../Pictures/Gui/ALL/example.png"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Example:</a></p></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Infoblock">
+                                                            <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextterminal_av.png">
+                                                        </p>
+                                                        <p class="Infoblock">For the terminal <span class="codetext">X2:1</span> the search upwards from the terminal found no path function text in the same schematic path. After this, the path is searched downwards from the terminal and the <span class="codetext">ABC (1)</span> path function text is found.</p>
+                                                        <p class="Infoblock">For the terminals <span class="codetext">X2:2</span> and <span class="codetext">X2:3</span> no path function text was found when searched in the same path both upwards and downwards. After this, the paths to the left of the terminals are searched upwards and in the path of terminal <span class="codetext">X2:1</span> the <span class="codetext">DEF (2+3)</span> path function text is found.</p>
+                                                        <p class="Infoblock">For the terminal <span class="codetext">X3:4</span> the search upwards from the terminal already found the <span class="codetext">GHI (4)</span> path function text. For the terminals <span class="codetext">X3:5</span>, <span class="codetext">X3:6</span>, and <span class="codetext">X4:7</span>, the <span class="codetext">JKL (5+6+7)</span> path function text is only found when searching the paths lying to the left of the terminals.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>For a reporting direction "Horizontal", search starts with the terminal and is carried out to the left in the same schematic path. The path is then searched to the right, starting from the terminal. If no path function text is found there, the paths above the terminal are then searched completely from right to left.</p>
+                                            <table>
+                                                <tr>
+                                                    <td class="image_with_text"><b style="font-weight: bold;">Search direction</b>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="image_with_text">
+                                                        <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextterminal_jic_lv.png">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div class="note">
+                                                <p class="Infoblock_Heading">
+                                                    <img src="../Pictures/Gui/ALL/note.png">Note:</p>
+                                                <p class="Infoblock">The report described here for terminals and <span class="GlossaryPopup" href="Glossary_o_steckerkontakte.htm">pins</span> functions in the same way as for shields, cables and <span class="GlossaryPopup" href="Glossary_o_pakete.htm">conduits</span>.</p>
+                                            </div>
+                                            <h4>Multi-level terminals</h4>
+                                            <p>For multi-level terminals, the path function text is evaluated for each terminal level, that is, the function text can be different for each level.</p>
+                                            <p>Connection lists always use the function text of the level which was found as a target, while bills of material always use the function text from level 0.</p>
+                                            <h3>Evaluation for PLC connection points and device connection points</h3>
+                                            <p>First, starting from the PLC connection point, the search proceeds opposite to the connection point direction. If no path function text is found there, then the search proceeds in the connection point direction.</p>
+                                            <!--<p>
+                <img src="../Pictures/Visualisation/Lang/gededitgui_pathtextplc_lv.png"></p>
+            -->
+                                            <table>
+                                                <tr>
+                                                    <td class="image_with_text" style="vertical-align: middle;">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="image_with_text">Connection point left<br>Search direction 2</td>
+                                                                <td class="image_with_text">
+                                                                    <p></p>
+                                                                </td>
+                                                                <td class="image_with_text">Connection point left<br>Search direction 1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="image_with_text" colspan="3" style="text-align: center;" align="center">
+                                                                    <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextplc_lv1.png">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="image_with_text">Connection point right<br>Search direction 1</td>
+                                                                <td class="image_with_text">
+                                                                    <p></p>
+                                                                </td>
+                                                                <td class="image_with_text">Connection point right<br>Search direction 2</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class="image_with_text">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="image_with_text">Connection point bottom<br>Search direction 1</td>
+                                                                <td class="image_with_text">
+                                                                    <p></p>
+                                                                </td>
+                                                                <td class="image_with_text">Connection point top<br>Search direction 2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="image_with_text" colspan="3" style="vertical-align: middle;">
+                                                                    <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextplc_lv2.png">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="image_with_text">Connection point bottom<br>Search direction 2</td>
+                                                                <td class="image_with_text">
+                                                                    <p></p>
+                                                                </td>
+                                                                <td class="image_with_text">Connection point top<br>Search direction 1</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p><a name="kanchor78"></a>The search order for PLC <span class="GlossaryPopup" href="Glossary_o_anschluesse.htm">connection points</span> and <span class="GlossaryPopup" href="Glossary_o_geraeteanschluesse.htm">device connection points</span> can be reversed using the project setting <span class="gui">Reverse search direction for PLC connection points</span> (command path: <span class="gui">File</span> &gt; <span class="gui">Settings</span> &gt; <span class="gui">Projects</span> &gt; "Project name" &gt; <span class="gui">Graphical editing</span> &gt; <span class="gui">General</span>).</p>
+                                            <!--<p>
+                <img src="../Pictures/Visualisation/Lang/gededitgui_pathtextplc_inverted_lv.png"></p>-->
+                                            <table>
+                                                <tr>
+                                                    <td class="image_with_text" style="vertical-align: middle;">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="image_with_text">Connection point left<br>Search direction 1</td>
+                                                                <td class="image_with_text">
+                                                                    <p></p>
+                                                                </td>
+                                                                <td class="image_with_text">Connection point left<br>Search direction 2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="image_with_text" colspan="3" style="text-align: center;" align="center">
+                                                                    <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextplc_lv1.png">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="image_with_text">Connection point right<br>Search direction 2</td>
+                                                                <td class="image_with_text">
+                                                                    <p></p>
+                                                                </td>
+                                                                <td class="image_with_text">Connection point right<br>Search direction 1</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class="image_with_text">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="image_with_text">Connection point bottom<br>Search direction 2</td>
+                                                                <td class="image_with_text">
+                                                                    <p></p>
+                                                                </td>
+                                                                <td class="image_with_text">Connection point top<br>Search direction 1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="image_with_text" colspan="3" style="vertical-align: middle;">
+                                                                    <img src="../Pictures/Visualisation/ALL/gededitgui_pathtextplc_lv2.png">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="image_with_text">Connection point bottom<br>Search direction 1</td>
+                                                                <td class="image_with_text">
+                                                                    <p></p>
+                                                                </td>
+                                                                <td class="image_with_text">Connection point top<br>Search direction 2</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p>If no path function text is found at a PLC connection point, then the <span class="gui">Function text (automatic)</span> of the connected sensor or actuator is displayed.</p>
+                                            <p>Via the project setting <span class="gui">Extended adoption of path function text</span> (command path: <span class="gui">File</span> &gt; <span class="gui">Settings</span> &gt; <span class="gui">Projects</span> &gt; "Project name" &gt; <span class="gui">Devices</span> &gt; <span class="gui">PLC</span>) you can extend the search for a path function text to the entire schematic path: If none of the above cases apply, then a search is carried out for a path function text in the existing schematic paths (in a similar manner to terminals). Depending on the connection point direction, a found function text is adopted from the left or from above.</p>
+                                            <p>The following table clarifies the "preferred" adoption in the standard search sequence (with the deactivated project setting <span class="gui">Reverse search direction for PLC connection points</span>). The schematic paths are first searched against the connection point direction and then towards the connection point direction.</p>
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <p class="Tabelle_Text">Connection point direction</p>
+                                                    </th>
+                                                    <th>
+                                                        <p class="Tabelle_Text">Adoption of the function text from</p>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">
+                                                            <img src="../Pictures/Gui/ALL/plcconnectionpoint_up_as.png"> (above)</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text">left (search direction first downwards, and then upwards)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">
+                                                            <img src="../Pictures/Gui/ALL/plcconnectionpoint_down_as.png"> (below)</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text">left (search direction first upwards, and then downwards)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="1" rowspan="1">
+                                                        <p class="Tabelle_Text">
+                                                            <img src="../Pictures/Gui/ALL/plcconnectionpoint_left_as.png"> (left)</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1">
+                                                        <p class="Tabelle_Text">above (search direction first to the right, and then to the left)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="1" rowspan="1">
+                                                        <p class="Tabelle_Text">
+                                                            <img src="../Pictures/Gui/ALL/plcconnectionpoint_right_as.png"> (right)</p>
+                                                    </td>
+                                                    <td colspan="1" rowspan="1">
+                                                        <p class="Tabelle_Text">above (search direction first to the left, and then to the right)</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <h3>Evaluation for channel symbols</h3>
+                                            <p>Besides PLC connection points, Eplan also supports PLC channel symbols. These are symbols which include multiple PLC connection points. Since the connection point direction (and thus the search direction for the path function text) is normally the same for all channel symbols, it is always oriented to the first connection point.</p>
+                                            <div class="note">
+                                                <p class="Infoblock_Heading">
+                                                    <img src="../Pictures/Gui/ALL/note.png">Note:</p>
+                                                <p class="Infoblock">Terminal strip and <span class="GlossaryPopup" href="Glossary_o_steckerdefinitionen.htm">plug definitions</span>, and also <span class="GlossaryPopup" href="Glossary_o_potenzialanschluesse.htm">potential connection points</span>, do not evaluate the path function text. Only manually entered function text is used.</p>
+                                            </div>
+                                            <p class="Seealso">See also</p>
+                                            <p class="Link_Seealso"><a href="gededitgui_k_pfadtextstart.htm">Path Function Texts</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="gededitgui_k_pfadtextprinzip.htm">Path Function Texts: Principle</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="gededitgui_h_pfadtexteinfuegen.htm">Inserting and Editing Path Function Texts</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

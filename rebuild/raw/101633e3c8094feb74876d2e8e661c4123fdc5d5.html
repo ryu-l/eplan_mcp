@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-conditions="Primary.concept" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="6:40:21 AM">
+        <meta name="BuildDate" content="Monday, October 6, 2025">
+        <meta id="productName" name="product" content="Eplan Platform">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="allLangExtended">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="&#160;"><title>Check Run Messages: PLC / bus</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZN49JJ5H1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FZN49JJ5H1', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="EPLAN_Help_k_start.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor4179"></a>
+                                            <madcap:concept term="Messages"></madcap:concept><a name="aanchor4180"></a>
+                                            <madcap:concept term="EPLAN Plattform"></madcap:concept><a name="kanchor4063"></a>
+                                            <h2>Check Run Messages: PLC / bus</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <p class="Tabelle_Text">Message number</p>
+                                                    </th>
+                                                    <th>
+                                                        <p class="Tabelle_Text">Message text</p>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004003</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004003.htm">The property '&lt;y&gt;' which belongs to the specified configuration value '&lt;x&gt;' does not have a number</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004004</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004004.htm">Missing bus port on overview</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004005</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004005.htm">Missing PLC connection point on overview</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004006</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004006.htm">PLC box without conn. point</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004007</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004007.htm">Rack '&lt;x&gt;' is mounted on itself</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004009</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004009.htm">Slot (module) '&lt;x&gt;' of a rack '&lt;y&gt;' assigned several times</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004010</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004010.htm">Rack '&lt;x&gt;' is unknown</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004013</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004013.htm">Rack '&lt;x&gt;': Ring connection</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004016</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004016.htm">Rack '&lt;x&gt;' is not unique</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004018</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004018.htm">No actuator at output</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004019</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004019.htm">No sensor at input</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004020</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004020.htm">More than one I/O connection point with the same representation type at a channel</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004021</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004021.htm">Address has been assigned more than once within a CPU</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004022</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004022.htm">Connection point description assigned more than once at a channel (address) of a PLC card</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004023</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004023.htm">Address is missing</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004024</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004024.htm">Connection point description is missing</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004025</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004025.htm">Slot / module is missing</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004027</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004027.htm">Missing or incorrect channel designation</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004028</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004028.htm">Conflict between PLC input / output and related supply connection point within the defined channel</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004029</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004029.htm">Object marked for deletion</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004030</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004030.htm">Missing symbolic address (automatic)</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004031</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004031.htm">Symbolic address has been assigned more than once within a CPU</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004035</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004035.htm">Bus ID '&lt;x&gt;' within a logical network '&lt;y&gt;' assigned several times (bus port in the bus system: &lt;z&gt;')</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004036</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004036.htm">Unknown logical network '&lt;x&gt;' (bus port in the bus system: &lt;y&gt;')</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004037</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004037.htm">Missing bus ID (bus port '&lt;x&gt;' in the bus system: '&lt;y&gt;')</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004038</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004038.htm">A data transfer rate is defined for the bus slave '&lt;x&gt;' at the bus port in the bus system '&lt;y&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004039</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004039.htm">Connection between different bus systems ('&lt;x&gt;', '&lt;y&gt;')</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004040</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004040.htm">Contradictory specifications at the associated bus port were found for the bus port at '&lt;x&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004045</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004045.htm">Communication unit at the PLC box: '&lt;x&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004046</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004046.htm">A conflict occurred during the adoption of the PLC data for '&lt;x&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004050</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004050.htm">Connection from '&lt;x&gt;' to '&lt;y&gt;' missing</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004051</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004051.htm">Connection missing! &lt;x&gt; is not connected to the physical network '&lt;y&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004052</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004052.htm">Connection to the wrong physical network! '&lt;x&gt;' has to be connected to the physical network '&lt;y&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004053</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004053.htm">Too many differences were found between the network structure in the import file and in the project! Please check all network structures</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004054</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004054.htm">Connection only in project! The connection to '&lt;x&gt;' only exists in the project</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004055</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004055.htm">More than one rack was found during importing. Ensure that you use the right hardware for connecting</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004056</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004056.htm">Part not found: PLC type designation '&lt;x&gt;' or device description file '&lt;y&gt;' / Index '&lt;z&gt;'! Import of '&lt;u&gt;' may be faulty</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004057</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004057.htm">Several parts with the same or suitable device identification '&lt;x&gt;' found. A different part possibly has to be assigned to the function '&lt;y&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004058</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004058.htm">Accessory part '&lt;x&gt;' at function '&lt;y&gt;' is only available in the project</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004071</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004071.htm">Bus interface '&lt;x&gt;': 'Bus interface: Main bus port' property activated more than once or not activated </a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004072</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004072.htm">Bus ID '&lt;x&gt;' of a physical network '&lt;y&gt;' assigned several times </a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004073</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004073.htm">'Function text (automatic)' has been assigned more than once (in the language '&lt;x&gt;') within a CPU</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004080</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004080.htm">Missing configuration project</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004081</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004081.htm">Missing station ID</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004082</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004082.htm">Configuration project '&lt;x&gt;' does not contain a CPU</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004083</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004083.htm">The CPU class '&lt;x&gt;' entered at the PLC box does not exist in the project</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004084</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004084.htm">The MasterSystemID is faulty</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004085</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004085.htm">Missing data type</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004086</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004086.htm">Missing PLC type designation or device description file</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004087</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004087.htm">Missing start address</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004088</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004088.htm">The PLC card name '&lt;x&gt;' is already being used at a rack or a CPU</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004089</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004089.htm">PLC card name '&lt;x&gt;' assigned several times within a rack</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004090</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004090.htm">PLC station type in the project and at the part differ</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004091</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004091.htm">Missing plug designation</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004092</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004092.htm">Missing bus interface name</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004093</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004093.htm">The PLC connection point references an invalid subdevice with the property 'PLC subdevice: Index'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004094</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004094.htm">CPU name '&lt;x&gt;' assigned several times</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004095</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004095.htm">Missing safety address</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004096</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004096.htm">Multiple assignment of safety address: Target '&lt;x&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004097</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004097.htm">More than one I/O connection point at a channel within a type of signal in a subdevice</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004098</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004098.htm">Wrong DT format</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004099</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004099.htm">PLC card with the device identification '&lt;x&gt;' is not placed on a head station</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004100</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004100.htm">The CPU is not assigned to a slot / module and / or a rack</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004101</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004101.htm">The rack '&lt;x&gt;' is not connected by a bus extension cable with all other racks of the station '&lt;y&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004102</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004102.htm">The bus port in the station '&lt;x&gt;' is connected by a bus extension cable with the bus port in the station '&lt;y&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004103</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004103.htm">Bus slave and bus master differ in the property 'Physical network: Name'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004104</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004104.htm">Bus ports of the physical network '&lt;x&gt;' are not connected to each other</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004106</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004106.htm">PLC address '&lt;x&gt;' is not located in the address range of the respective PLC card</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004107</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004107.htm">Address range of the PLC card '&lt;x&gt;' overlaps with the address range of the PLC card '&lt;y&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004108</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004108.htm">The user-defined property '&lt;x&gt;' at the PLC card with the device identification '&lt;y&gt;' is unknown</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004109</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004109.htm">Difference between single-line and multi-line network structures</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004110</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004110.htm">Physical network without name</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004111</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004111.htm">Connection between bus ports with different property 'Physical network: Name' ('&lt;x&gt;', '&lt;y&gt;')</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004112</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004112.htm">Incorrect data type '&lt;x&gt;' or incorrect data length of the channel</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004113</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004113.htm">Symbolic address (automatic) contains a blank, a tabulator or a line break</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004114</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004114.htm">PLC address '&lt;x&gt;' is not located in the address range of the subdevice '&lt;y&gt;' belonging to the PLC card</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004115</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004115.htm">Address range of the subdevice '&lt;x&gt;' overlaps with the address range of the subdevice '&lt;y&gt;' of the PLC card '&lt;z&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004116</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004116.htm">Address range of the subdevice '&lt;x&gt;' is located partially or completely outside the address range of the PLC card '&lt;y&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004117</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004117.htm">Incorrect DT during AutomationML AR APC import</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004118</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004118.htm">Missing CPU name at a PLC card in the configuration project '&lt;x&gt;' with multiple CPUs</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004119</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004119.htm">Multiple assignment of safety address: Source '&lt;x&gt;'</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004120</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004120.htm">'Symbolic address: UDT (data type)' is empty even though 'Symbolic address: UDT (name)' exists</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004121</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004121.htm">'Symbolic address: UDT (data type)' is not unique</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004122</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004122.htm">The logical network '&lt;x&gt;' is connected via different bus systems</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004200</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004200.htm">Siemens: Incorrect PLC card assignment: &lt;x&gt;</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004201</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004201.htm">Siemens: Incorrect PLC station type assignment: &lt;x&gt;</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004202</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004202.htm">Siemens: Incorrect bus port: &lt;x&gt;</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="Tabelle_Text">P004203</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="Tabelle_Text"><a href="messages_p_004203.htm">Siemens: PLC card with the PLC station type '&lt;x&gt;' is not a valid rack</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p class="Seealso">See also</p>
+                                            <p class="Link_Seealso"><a href="messages_o_start.htm">Check Run Messages: Overview</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

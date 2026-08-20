@@ -1,0 +1,49 @@
+# DeclareEventHandler Class Members
+
+DeclareEventHandler Class Members
+
+The following tables list the members exposed by [DeclareEventHandler](Eplan.EplApi.AFu~Eplan.EplApi.Scripting.DeclareEventHandler.html).
+
+Public Constructors
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Constructor | [DeclareEventHandler Constructor](Eplan.EplApi.AFu~Eplan.EplApi.Scripting.DeclareEventHandler~_ctor.html) | This function of the script is registered as an event handler in the system. |
+
+[Top](#top)
+
+Public Properties
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Property | [Name](Eplan.EplApi.AFu~Eplan.EplApi.Scripting.DeclareEventHandler~Name.html) |  |
+| Public Property | [TypeId](#) | (Inherited from [System.Attribute](#)) |
+
+[Top](#top)
+
+Public Methods
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Method | [Equals](#) | (Inherited from [System.Attribute](#)) |
+| Public Method | [GetHashCode](#) | (Inherited from [System.Attribute](#)) |
+| Public Method | [IsDefaultAttribute](#) | (Inherited from [System.Attribute](#)) |
+| Public Method | [Match](#) | (Inherited from [System.Attribute](#)) |
+
+[Top](#top)
+
+See Also
+
+#### Reference
+
+[DeclareEventHandler Class](Eplan.EplApi.AFu~Eplan.EplApi.Scripting.DeclareEventHandler.html)
+  
+[Eplan.EplApi.Scripting Namespace](Eplan.EplApi.AFu~Eplan.EplApi.Scripting_namespace.html)
+  
+[Event handling in scripts](Script_EventHandling.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

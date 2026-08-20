@@ -1,0 +1,435 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Eplan API offline applications</title>
+    <meta name="Title" content="Eplan API offline applications"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n51","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="The easiest way to use Eplan API objects in your program is to directly use the functionally of the API DLLs in your code. It is even easier, if your program is a .NET application: You just reference the managed Eplan API assemblies in your project. " />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="f337a7f3-6c20-4ae0-9293-7643484b546c"/>
+    <meta name="Microsoft.Help.TocParent" content="b30d8f94-3d53-4159-acde-312399e2fc2e"/>
+    <meta name="Microsoft.Help.TocOrder" content="1"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">Eplan API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_Framework.html">API Framework</a>
+ / <a href="EplanInOtherApplications.html">Using Eplan in other applications</a>
+ / Eplan API offline applications</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Eplan API offline applications</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>The easiest way to use Eplan API objects in your program is to directly use the functionally of the API DLLs in your code. It is even easier, if your program is a .NET application: You just reference the managed Eplan API assemblies in your project. This type of application, we call an "<strong>offline application</strong>".&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="images/EplApi_AssemlyReference.jpg" />&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Then&nbsp;â in the appropriate place (e.g. in the main form)&nbsp;â you create an instance of the &nbsp;<span class="SPAN.codetext codetext SPAN">Eplan.EplApi.System.EplApplication</span>&nbsp; class&nbsp;and initialize it:&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+<span style="COLOR: #0000ff">private</span> Eplan.EplApi.System.EplApplication m_oEplApp;
+<span style="COLOR: #0000ff">public</span> MainForm()
+{
+   <span style="COLOR: #008000">//
+   // Required for Windows Form Designer support
+   //
+</span>   InitializeComponent();
+   m_oEplApp = <span style="COLOR: #0000ff">new</span> Eplan.EplApi.System.EplApplication();
+   System.String strAppModifier=<span style="COLOR: #800000">""</span>;
+   m_oEplApp.Init(strAppModifier);
+}
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+<span style="COLOR: #0000ff">Private</span> m_oEplApp <span style="COLOR: #0000ff">As</span> Eplan.EplApi.System.EplApplication
+<span style="COLOR: #0000ff">Public</span> <span style="COLOR: #0000ff">Sub</span> <span style="COLOR: #0000ff">New</span>()
+   <span style="COLOR: #008000">'
+</span>   <span style="COLOR: #008000">' Required for Windows Form Designer support
+</span>   <span style="COLOR: #008000">'
+</span>   InitializeComponent()
+   m_oEplApp = <span style="COLOR: #0000ff">New</span> Eplan.EplApi.System.EplApplication()
+   <span style="COLOR: #0000ff">Dim</span> strAppModifier <span style="COLOR: #0000ff">As</span> System.String = <span style="COLOR: #800000">""</span>
+   m_oEplApp.Init(strAppModifier)
+<span style="COLOR: #0000ff">End Sub</span> <span style="COLOR: #008000">'New MainForm</span>
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>The string parameter &nbsp;<span class="SPAN.codetext codetext SPAN">strAppModifier</span>&nbsp; determines, which configuration file is used and thus which modules will be loaded. If you pass an empty string like in the above example, the &nbsp;<span class="SPAN.codetext codetext SPAN">eplset.xml</span>&nbsp; of the standard version of the current user will be loaded.&nbsp;</p>
+
+<p>After executing the &nbsp;<span class="SPAN.codetext codetext SPAN">Init()</span>&nbsp; function, all functions / objects of the Eplan API are available, with the exception of&nbsp;those that&nbsp;expose GUI functionality such as modal dialogs, docked dialogs or MDI windows. The API classes and methods,&nbsp;etc. are then used in the same way as if programming a normal Eplan add-in. A few selected modal dialogs of Eplan are provided by special methods of classes in &nbsp;<span class="SPAN.codetext codetext SPAN">Eplan.EplApi.System.EplApplication</span>.&nbsp;</p>
+
+<p>When you no longer need the Eplan API in your program, you should call the &nbsp;<span class="SPAN.codetext codetext SPAN">Exit()</span>&nbsp; function of your &nbsp;<span class="SPAN.codetext codetext SPAN">EplApplication</span>&nbsp; object to unload the API.&nbsp;</p>
+
+<h3>Usage with&nbsp;Windows Forms</h3>
+
+<p>In case of an offline application using Windows Forms, it is possible that the application changes its size after &nbsp;<span class="SPAN.codetext codetext SPAN">EplApplication::Init</span>. It happens if the font size in OS is set to other than 100%,&nbsp;which happens quite often in case of large monitors. Because of this, please&nbsp;set DPI awarness in &nbsp;<span class="SPAN.codetext codetext SPAN">.config</span>&nbsp; file of the application, in order to avoid rescaling:</p>
+
+<div class="i-filtered-content-XML" data-title="XML" data-itemid="XML">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th></th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">System.Windows.Forms.ApplicationConfigurationSection</span><span style="COLOR: #0000ff">&gt;</span>
+     <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">add</span> <span style="COLOR: #ff0000">key</span><span style="COLOR: #0000ff">="DpiAwareness"</span> <span style="COLOR: #ff0000">value</span><span style="COLOR: #0000ff">="PerMonitorV2"</span> <span style="COLOR: #0000ff">/&gt;</span>
+<span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">System.Windows.Forms.ApplicationConfigurationSection</span><span style="COLOR: #0000ff">&gt;</span>
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p><!-- Windows 10 compatibility -->Also, please assure your &nbsp;<span class="SPAN.codetext codetext SPAN">.manifest</span>&nbsp; file is Windows 10 compatible:</p>
+
+<div class="i-filtered-content-XML" data-title="XML" data-itemid="XML">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th></th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">compatibility</span> <span style="COLOR: #ff0000">xmlns</span><span style="COLOR: #0000ff">="urn:schemas-microsoft-com:compatibility.v1"</span><span style="COLOR: #0000ff">&gt;</span>
+  <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">application</span><span style="COLOR: #0000ff">&gt;</span>
+    <span style="COLOR: #008000">&lt;!-- Windows 10 compatibility --&gt;</span>
+    <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">supportedOS</span> <span style="COLOR: #ff0000">Id</span><span style="COLOR: #0000ff">="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"</span> <span style="COLOR: #0000ff">/&gt;</span>
+  <span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">application</span><span style="COLOR: #0000ff">&gt;</span>
+<span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">compatibility</span><span style="COLOR: #0000ff">&gt;</span>
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3>How to make sure, that the API assemblies are directly loaded from the Eplan platform&nbsp;BIN folder?</h3>
+
+<p>As briefly mentioned in the topic "<a href="EplanApiDotNet.html">Eplan .NET API</a>", a path must be set to the &nbsp;<span class="SPAN.codetext codetext SPAN">&lt;Eplan main path&gt;\Platform\&lt;version&gt;\BIN</span>&nbsp; folder. More precisely, you need to make sure to load the Eplan API assemblies from exactly this folder. The reason for this is, that the API assemblies have statically linked unmanaged dependencies, which need to be loaded directly from the current directory.&nbsp;</p>
+
+<p>This is also the reason why it generally does not work to register the Eplan API DLLs in &nbsp;<span class="SPAN.codetext codetext SPAN">GAC</span>. The directory from which the references of your Visual Studio project are added has no influence on where the DLLs are actually loaded from.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>You can make sure, the API assemblies are loaded from the correct &nbsp;<span class="SPAN.codetext codetext SPAN">BIN</span>&nbsp; directory by different means:</p>
+
+<ol>
+    <li value="1">This is the easiest way: You can just copy the executable of your offline application to the &nbsp;<span class="SPAN.codetext codetext SPAN">&lt;Eplan main path&gt;\Platform\&lt;version&gt;\BIN</span>&nbsp; folder.</li>
+
+    <li>Use Eplan API offline wizard. Then your assemblies will be bound to the correct Eplan variant by means of the &nbsp;<span class="SPAN.codetext codetext SPAN">Eplan.EplApi.Starter</span>&nbsp; library:</li>
+</ol>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #008000">// Use the finder to find the correct Eplan version if not yet known
+</span>EplanFinder oEplanFinder = <span style="COLOR: #0000ff">new</span> EplanFinder();
+String strBinPath = oEplanFinder.SelectEplanVersion(<span style="COLOR: #0000ff">true</span>);
+
+<span style="COLOR: #008000">// Check if the user has selected any Eplan variant (Electric P8, etc.)
+</span><span style="COLOR: #0000ff">if</span> (String.IsNullOrEmpty(strBinPath))
+    <span style="COLOR: #0000ff">return</span>;
+
+<span style="COLOR: #008000">// Use the AssemblyResolver to let the program know where all Eplan variants can be found.
+</span>AssemblyResolver oResolver = <span style="COLOR: #0000ff">new</span> AssemblyResolver();
+oResolver.SetEplanBinPath(strBinPath);
+
+<span style="COLOR: #008000">// Now pin to Eplan. This way all referenced Eplan assemblies are loaded from the platform BIN path.
+</span>oResolver.PinToEplan();
+
+<span style="COLOR: #008000">// Use a separate class to initialize EplApplication. Pass the path to the Eplan product variant BIN directory in order to set the EplApplication.EplanBinFolder property
+</span>Form1 oForm = <span style="COLOR: #0000ff">new</span> Form1();
+oForm.EplanBinFolder = oResolver.GetEplanBinPath();
+Application.Run(oForm);
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div style="MARGIN-LEFT: 2em">
+    <p>&nbsp;</p>
+
+    <p>3. Publish the codebases of all needed API assemblies in the application &nbsp;<span class="SPAN.codetext codetext SPAN">config</span>&nbsp; file. (An XML file, which is named like your executable with an additional extension &nbsp;<span class="SPAN.codetext codetext SPAN">.config</span>, e.g. "MyApplication.exe.config"). The following code shows an example for the contents of such a config file.</p>
+
+    <p>&nbsp;</p>
+</div>
+
+<div class="i-filtered-content-XML" data-title="XML" data-itemid="XML">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>XML</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml version="1.0"</span><span style="COLOR: #0000ff">?&gt;</span>
+<span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">configuration</span><span style="COLOR: #0000ff">&gt;</span>
+  <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">runtime</span><span style="COLOR: #0000ff">&gt;</span>
+    <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">assemblyBinding</span> <span style="COLOR: #ff0000">xmlns</span><span style="COLOR: #0000ff">="urn:schemas-microsoft-com:asm.v1"</span><span style="COLOR: #0000ff">&gt;</span>
+      <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">dependentAssembly</span><span style="COLOR: #0000ff">&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">assemblyIdentity</span> <span style="COLOR: #ff0000">name</span><span style="COLOR: #0000ff">="Eplan.EplApi.Systemu"</span> <span style="COLOR: #ff0000">publicKeyToken</span><span style="COLOR: #0000ff">="57aaa27e22f7b107"</span> <span style="COLOR: #0000ff">/&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">publisherPolicy</span> <span style="COLOR: #ff0000">apply</span><span style="COLOR: #0000ff">="yes"</span> <span style="COLOR: #0000ff">/&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">codeBase</span> <span style="COLOR: #ff0000">version</span><span style="COLOR: #0000ff">="1.0.0.0"</span> <span style="COLOR: #ff0000">href</span><span style="COLOR: #0000ff">="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.Systemu.dll"</span> <span style="COLOR: #0000ff">/&gt;</span>
+      <span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">dependentAssembly</span><span style="COLOR: #0000ff">&gt;</span>
+      <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">dependentAssembly</span><span style="COLOR: #0000ff">&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">assemblyIdentity</span> <span style="COLOR: #ff0000">name</span><span style="COLOR: #0000ff">="Eplan.EplApi.AFu"</span> <span style="COLOR: #ff0000">publicKeyToken</span><span style="COLOR: #0000ff">="57aaa27e22f7b107"</span> <span style="COLOR: #0000ff">/&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">publisherPolicy</span> <span style="COLOR: #ff0000">apply</span><span style="COLOR: #0000ff">="yes"</span> <span style="COLOR: #0000ff">/&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">codeBase</span> <span style="COLOR: #ff0000">version</span><span style="COLOR: #0000ff">="1.0.0.0"</span> <span style="COLOR: #ff0000">href</span><span style="COLOR: #0000ff">="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.AFu.dll"</span> <span style="COLOR: #0000ff">/&gt;</span>
+      <span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">dependentAssembly</span><span style="COLOR: #0000ff">&gt;</span>
+      <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">dependentAssembly</span><span style="COLOR: #0000ff">&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">assemblyIdentity</span> <span style="COLOR: #ff0000">name</span><span style="COLOR: #0000ff">="Eplan.EplApi.Baseu"</span> <span style="COLOR: #ff0000">publicKeyToken</span><span style="COLOR: #0000ff">="57aaa27e22f7b107"</span> <span style="COLOR: #0000ff">/&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">publisherPolicy</span> <span style="COLOR: #ff0000">apply</span><span style="COLOR: #0000ff">="yes"</span> <span style="COLOR: #0000ff">/&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">codeBase</span> <span style="COLOR: #ff0000">version</span><span style="COLOR: #0000ff">="1.0.0.0"</span> <span style="COLOR: #ff0000">href</span><span style="COLOR: #0000ff">="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.Baseu.dll"</span> <span style="COLOR: #0000ff">/&gt;</span>
+      <span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">dependentAssembly</span><span style="COLOR: #0000ff">&gt;</span>
+      <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">dependentAssembly</span><span style="COLOR: #0000ff">&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">assemblyIdentity</span> <span style="COLOR: #ff0000">name</span><span style="COLOR: #0000ff">="Eplan.EplApi.DataModelu"</span> <span style="COLOR: #ff0000">publicKeyToken</span><span style="COLOR: #0000ff">="57aaa27e22f7b107"</span> <span style="COLOR: #0000ff">/&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">publisherPolicy</span> <span style="COLOR: #ff0000">apply</span><span style="COLOR: #0000ff">="yes"</span> <span style="COLOR: #0000ff">/&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">codeBase</span> <span style="COLOR: #ff0000">version</span><span style="COLOR: #0000ff">="1.0.0.0"</span> <span style="COLOR: #ff0000">href</span><span style="COLOR: #0000ff">="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.DataModelu.dll"</span> <span style="COLOR: #0000ff">/&gt;</span>
+      <span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">dependentAssembly</span><span style="COLOR: #0000ff">&gt;</span>
+      <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">dependentAssembly</span><span style="COLOR: #0000ff">&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">assemblyIdentity</span> <span style="COLOR: #ff0000">name</span><span style="COLOR: #0000ff">="Eplan.EplApi.HEServicesu"</span> <span style="COLOR: #ff0000">publicKeyToken</span><span style="COLOR: #0000ff">="57aaa27e22f7b107"</span> <span style="COLOR: #0000ff">/&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">publisherPolicy</span> <span style="COLOR: #ff0000">apply</span><span style="COLOR: #0000ff">="yes"</span> <span style="COLOR: #0000ff">/&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">codeBase</span> <span style="COLOR: #ff0000">version</span><span style="COLOR: #0000ff">="1.0.0.0"</span> <span style="COLOR: #ff0000">href</span><span style="COLOR: #0000ff">="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.HEServicesu.dll"</span> <span style="COLOR: #0000ff">/&gt;</span>
+      <span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">dependentAssembly</span><span style="COLOR: #0000ff">&gt;</span>
+      <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">dependentAssembly</span><span style="COLOR: #0000ff">&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">assemblyIdentity</span> <span style="COLOR: #ff0000">name</span><span style="COLOR: #0000ff">="Eplan.EplApi.EServicesu"</span> <span style="COLOR: #ff0000">publicKeyToken</span><span style="COLOR: #0000ff">="57aaa27e22f7b107"</span> <span style="COLOR: #0000ff">/&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">publisherPolicy</span> <span style="COLOR: #ff0000">apply</span><span style="COLOR: #0000ff">="yes"</span> <span style="COLOR: #0000ff">/&gt;</span>
+        <span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">codeBase</span> <span style="COLOR: #ff0000">version</span><span style="COLOR: #0000ff">="1.0.0.0"</span> <span style="COLOR: #ff0000">href</span><span style="COLOR: #0000ff">="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.EServicesu.dll"</span> <span style="COLOR: #0000ff">/&gt;</span>
+      <span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">dependentAssembly</span><span style="COLOR: #0000ff">&gt;</span>
+    <span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">assemblyBinding</span><span style="COLOR: #0000ff">&gt;</span>
+  <span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">runtime</span><span style="COLOR: #0000ff">&gt;</span>
+<span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">configuration</span><span style="COLOR: #0000ff">&gt;</span>
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;</p>
+
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <p>4. Last but not least, you can implement an &nbsp;<span class="SPAN.codetext codetext SPAN">AssemblyResolve</span>&nbsp; event handler in your offline application, where you explicitly load the assemblies you are looking for. You will also need to set the current directory of the application to the respective &nbsp;<span class="SPAN.codetext codetext SPAN">BIN</span>&nbsp; directory. The following code shows an example for this:</p>
+</blockquote>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+        [STAThread]
+        <span style="COLOR: #0000ff">static</span> <span style="COLOR: #0000ff">void</span> Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(<span style="COLOR: #0000ff">false</span>);
+            Environment.CurrentDirectory = <span style="COLOR: #800000">@"C:\program files\EPLAN\platform\x.x.x\BIN\"</span>; <span style="COLOR: #008000">// x.x.x = your desired Eplan version
+</span>            AppDomain appDomain = AppDomain.CurrentDomain;
+            appDomain.AssemblyResolve += <span style="COLOR: #0000ff">new</span> ResolveEventHandler(MyResolveEventHandler);
+
+            Application.Run(<span style="COLOR: #0000ff">new</span> Form1());
+        }
+        <span style="COLOR: #0000ff">static</span> Assembly MyResolveEventHandler(<span style="COLOR: #0000ff">object</span> sender, ResolveEventArgs args)
+        {
+            Console.WriteLine(<span style="COLOR: #800000">"Resolving..."</span>);
+            <span style="COLOR: #0000ff">string</span> sAssemblyName = args.Name.Split(<span style="COLOR: #800000">','</span>)[0];
+            Assembly ass = Assembly.LoadFile(<span style="COLOR: #800000">@"C:\program files\EPLAN\platform\x.x.x\BIN\"</span> + sAssemblyName + <span style="COLOR: #800000">".dll"</span>);
+            <span style="COLOR: #0000ff">return</span> ass ;
+        }
+    }
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;</p>
+
+<p>In Visual Studio Tools for Office (<strong>VSTO</strong>) projects, the assembly resolver or the application &nbsp;<span class="SPAN.codetext codetext SPAN">config</span>&nbsp; file is not working. Office still tries to copy the Eplan API assemblies to a temporary folder before loading. VSTO applications will only work, if you set the codebases of the API assemblies in the &nbsp;<span class="SPAN.codetext codetext SPAN">machine.config</span>&nbsp; file, which is usually located in the &nbsp;<span class="SPAN.codetext codetext SPAN">C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\CONFIG</span>&nbsp; directory.</p><a name="52656D61726B73"></a>
+
+<h3>Remarks</h3>
+
+<div>
+    <div>
+        <p>If you want to use any object from the namespaces beginning with &nbsp;<span class="SPAN.codetext codetext SPAN">Eplan.EplApi.DataModel</span>, you need to open a LockingStep, before you e.g. open an Eplan project.&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>Make sure to call &nbsp;<span class="SPAN.codetext codetext SPAN">Exit()</span>&nbsp; only one time in your application. It is currently not possible to use &nbsp;<span class="SPAN.codetext codetext SPAN">Init("")</span>&nbsp; after &nbsp;<span class="SPAN.codetext codetext SPAN">Exit()</span>, while the application is still running.</p>
+
+        <p>The &nbsp;<span class="SPAN.codetext codetext SPAN">EplApplication</span>&nbsp; instance should be explicitly de-initialized by the main thread.&nbsp;If the &nbsp;<span class="SPAN.codetext codetext SPAN">&lt;c&gt;Exit&lt;/c&gt;</span>&nbsp; method is called by the&nbsp;garbage collector thread or after leaving the main function of the application, it will cause the application to crash.</p>
+    </div>
+</div><a name="47726F7570"></a>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

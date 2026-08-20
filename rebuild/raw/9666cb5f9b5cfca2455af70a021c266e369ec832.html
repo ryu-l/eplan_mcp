@@ -1,0 +1,762 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Command line parameters </title>
+    <meta name="Title" content="Command line parameters "/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n210","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="Here is a full list of parameters of the  EPLAN.exe  application.
+By default, it is installed in the  C:\Program Files\EPLAN\Platform\&amp;lt;version&amp;gt;\Bin  directory." />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="416ec7b1-1704-4c16-a4c5-0d6b2dfd180f"/>
+    <meta name="Microsoft.Help.TocParent" content="336e53eb-a15a-49ac-8013-c36cd5cf745f"/>
+    <meta name="Microsoft.Help.TocOrder" content="15"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">Eplan API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_Other.html">API Miscellaneous</a>
+ / Command line parameters </div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Command line parameters </div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>Here is a full list of parameters of the &nbsp;<span class="SPAN.codetext codetext SPAN">EPLAN.exe</span>&nbsp; application.<br />
+By default, it is installed in the &nbsp;<span class="SPAN.codetext codetext SPAN">C:\Program Files\EPLAN\Platform\&lt;version&gt;\Bin</span>&nbsp; directory.</p>
+
+<p>&nbsp;</p>
+
+<div id="mainbody" class="mainbody">
+    <br />
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Parameter</th>
+
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+Auto
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Eplan is shut down after executing the command line; it has no effects on showing dialogs or the mainframe. 
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+Quiet
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Determines if dialogs are shown while a command line is executed:
+ â¢ 0: all dialogs will be shown
+ â¢ 1: no dialog will be shown (default)
+ â¢ 2: only some special dialogs will be shown, e.g. progress bars
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+NoLicenseDialog
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Turn off calling license dialog. 
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+NoUserRightsDialog
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Turn off calling user rights dialog. If user rights check fails, Eplan application will terminate. This dialog will be shown per default if it is needed. 
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+Frame
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Determines how the Eplan mainframe should be shown: 
+ â¢ 0: Hides this window and passes activation to another window.
+ â¢ 1: Activates and displays the window. If the window is minimized or maximized, Windows restores it to its original size and position.
+ â¢ 2: Activates the window and displays it as an icon.
+ â¢ 3: Activates the window and displays it as a maximized window.
+ â¢ 4: Displays the window as an icon. The window that is currently active remains active.
+ â¢ 5: Activates the window and displays it in its current size and position.
+ â¢ 6: Minimizes the window and activates the top-level window in the system's list.
+ â¢ 7: Displays the window as an icon. The window that is currently active remains active.
+ â¢ 8: Displays the window in its current state. The window that is currently active remains active.
+ â¢ 9: Activates and displays the window. If the window is minimized or maximized, Windows restores it to its original size and position. 
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+Setup
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Determines if default settings should be used:
+ â¢ 0: USER, STATION, COMPANY settings are restored to their installation default (on file level) and databases are backed (default)
+ â¢ 8: the actual adjusted settings will be used (on file level) ONLY FOR INTERNAL USE!
+ â¢ category (USER or STATION or COMPANY) is denoted: settings of that category are restored to their installation default (on file level) and the database is backed
+ â¢ path: all settings below this location will be deleted and then reloaded from the reference database, but only when more than the category is denoted
+ â¢ nobackup: same as setup:0, but no backup of the databases.
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+SetupRestore
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Determines if settings should be restored from last database backup (default: 0): 
+ â¢ 0: USER, STATION, COMPANY settings are restored from their last backup (on file level)
+ â¢ category (USER or STATION or COMPANY) is denoted: settings of that category are restored from their last backup (on file level)
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+User
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Eplan login user. Settings will be used from this user.
+ As value for this parameter please enter the user name.
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+Password
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Eplan login password used for user rights.
+ As value for this parameter please enter the user password.
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+Station
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Settings will be used from another station.
+ As value for this parameter please enter the station name
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+Company
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Settings will be used from another company.
+ As value for this parameter please enter the company name.
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+NoLoadWorkspace
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+No workspace is loaded or restored. 
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+NoSplash
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+No splash screen is shown on system start. 
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+NoRemoting
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+No Eplan Remoting functionalities are available. 
+ For more information, please refer to the "Eplan Remoting" chapter. 
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+EplanServerPort
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Set the gRPC server to a specific port number. The port should be in the range: 49152 - 65535. 
+ If not set explicitly, the port number is set automatically (taking the first available port from the specified range). It is recommended to set the port manually. 
+ For more information, please refer to the "Eplan Remoting" chapter. 
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+Language
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Eplan will be started with chosen GUI language. The language predefined in the settings of Eplan will not be changed.
+ As value for this parameter please enter the chosen language (e.g. "de_DE" or "en_US").
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+PathsScheme
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Sets scheme of directories' paths, e.g. "/PathsScheme:PredefinedPathScheme". If a chosen scheme does not exist, the default scheme is used. 
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+autoRegAddon
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+New installed add-ons will be registered at startup.
+ Possible values: "true" or "false"
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+License
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Name of the file containing the license to use or to borrow ("*.lis")
+ As value for this parameter please enter the filename  of the "*.lis" file.
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+ReturnLicense
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Return the borrowed license. The parameter is the name of the file containing the borrowed license. This same file used by "/license"
+ As value for this parameter please enter the filename  of the "*.lis" file.
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+RequestOfflineLicense
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Create the request file to borrow license offline ("*.egr"). The parameter is the name of the file containing the license to borrow ("*.lis")
+ As value for this parameter please enter the filename  of the "*.lis" file.
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+OfflineLicense
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Use the file containing the borrowed license which is converted from a confirmation file. The parameter is the name of the file containing the license to borrow ("*.lis")
+ As value for this parameter please enter the filename  of the "*.lis" file.
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+SystemConfiguration
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Set system configuration scheme.
+ As value for this parameter please enter the scheme name of system configuration.
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+Variant
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Product name. It is used to call an Eplan platform-based product:
+ â¢ "Electric P8" 
+ â¢ Fluid
+ â¢ FluidMan
+ â¢ ProPanel
+ â¢ PPE
+ â¢ View
+ â¢ CPM
+ â¢ FHC
+ â¢ Education
+ â¢ Trial
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+VariantSharedEplDir
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Product name directory. This is an alternative way of setting product name to "Variant" parameter, for example "C:\\Program Files\\EPLAN\\Preplanning\\&lt;version&gt;"
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+AttachDebugger
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Attach debugger to execution of Eplan.
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+WebService
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Starts a webservice on the specific URL.
+ As value for this parameter please enter the URL for the service
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+RestartOnCrash
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Restart Eplan after a crash occurred.
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+UseLastOpenedProjects
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Determines if last opened projects should be opened on start:
+ â¢ 0: No projects will be opened.
+ â¢ 1: Last used projects will be opened.
+ â¢ 2: Last used projects will be opened if no action is passed. Otherwise (i.e. with action parameter), no projects are opened (default).
+</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ParameterCell">
+                    <pre style='FONT-FAMILY: "Courier New", monospace'>
+&lt;action name&gt;
+</pre>
+                </td>
+
+                <td class="DescriptionCell">
+                    <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+Action that should be executed, all following parameters (starting with "/" or "â") are passed to the action as parameters. 
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <div id="remarksSectionHeading" class="SectionHeading">
+            <span class="SectionHeadingIcon"><br /></span><span class="SectionHeadingText"><font size="+1"><b>Remarks</b></font></span>
+        </div>
+
+        <div id="remarksSectionContent" class="SectionContent">
+            <br />
+            <pre style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">
+ By default, when starting P8 from command line with an action, no previously opened projects are opened at the beginning of the session.
+ If your installation path is different from the default ("C:\Program Files\EPLAN\Platform\&lt;version&gt;\Bin"), you must modify the code samples below accordingly.
+ "&lt;version&gt;" must be replaced with the correct Eplan version, e.g. "2026.0.3" for version 2026.
+ 
+</pre>
+        </div>
+    </div><a id="exampleBookmark" name="exampleBookmark"></a>
+
+    <div id="exampleSectionHeading" class="SectionHeading">
+        <span class="SectionHeadingIcon"><br /></span><span class="SectionHeadingText"><font size="+1"><b>Example</b></font></span>
+    </div>
+
+    <div id="exampleSectionContent" class="SectionContent">
+        <br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+    
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /variant:"Electric P8"
+ 
+  
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+    
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" action /Param1:wert1 /Param2:wert2 /Param3
+ 
+  
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+    
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /Setup:SS_USER_WORKSPACE_NAMED_PATH
+ 
+  
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+    
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /User:UserXYZ
+ 
+  
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+    
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /NoLoadWorkspace action /Param1:wert1
+ 
+  
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+    
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /Language:en_us
+ 
+  
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+    
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /Auto /Quiet /Frame:2 AnotherAction /ActionPar
+ 
+  
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+ If the license dialog is needed, the flag "NoLicenseDialog" disables calling it.
+ 
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /NoLicenseDialog action /Param1:wert1 /Param2:wert2
+ 
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+ If no user rights dialog is needed, the flag "NoUserRightsDialog" disables calling it. If user rights check fails, Eplan application will terminate.
+ 
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /NoUserRightsDialog action /Param1:wert1 /Param2:wert2
+ 
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+ Use or borrow a License defined in "myLicense.lis". In "myLicense.lis" you can define a product variant and License modules to use or to borrow for a period of time.
+ 
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /License:"D:\\myLicense.lis"
+ 
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+ Return a license
+ 
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /ReturnLicense:"D:\\myLicense.lis"
+ 
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+ Request a license file
+ 
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /RequestOfflineLicense:"D:\\myLicense.lis"
+ 
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+ Use a license offline
+ 
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /OfflineLicense:"D:\\myLicense.lis"
+ 
+</pre>
+        </div><br />
+
+        <div id="TabContent" class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word">
+            <pre style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-line'>
+ Use 49200 as port number for the gRPC server (API Remoting)
+ 
+ "C:\\Program Files\\EPLAN\\Platform\\&lt;version&gt;\\Bin\\EPLAN.exe" /EplanServerPort:49200
+ 
+</pre>
+        </div><br />
+    </div>
+</div>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

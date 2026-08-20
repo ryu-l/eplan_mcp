@@ -1,0 +1,231 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>RegisterCustomPropertyEditorAction</title>
+    <meta name="Title" content="RegisterCustomPropertyEditorAction"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n35832","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content=" Registers/Unregisters a custom editor dialog for a property ID
+ or identifying name of a user-defined property.
+ 
+
+
+
+
+Parameter
+Description
+
+PropertyId
+
+Property ID
+
+
+PropertyIndex
+
+Property index
+
+
+PropertyIdentName
+
+Identifyi" />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="db3a8e9a-abff-4891-8b5a-d6190722e0c1"/>
+    <meta name="Microsoft.Help.TocParent" content="4ea5bd74-ff1d-459a-ae2c-f0d2ed3aba56"/>
+    <meta name="Microsoft.Help.TocOrder" content="40"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">Eplan API</a>
+ / <a href="API Reference.html">API Reference</a>
+ / <a href="API Actions.html">Actions</a>
+ / RegisterCustomPropertyEditorAction</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">RegisterCustomPropertyEditorAction</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <DIV class=DescriptionContent><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line"> Registers/Unregisters a custom editor dialog for a property ID
+ or identifying name of a user-defined property.
+ 
+</PRE></DIV><BR>
+<TABLE class=FilteredItemListTable>
+<TBODY>
+<TR>
+<TH>Parameter</TH>
+<TH>Description</TH></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>PropertyId
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Property ID
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>PropertyIndex
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Property index
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>PropertyIdentName
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Identifying name of the user-defined property
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>Action
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">This action will be called for editing the specified property.
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>Editable
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">"true" (1): edit inside of the hotspot cell allowed.
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>Register
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line"> "true" (1): register this action.
+ "false" (0): unregister this action.
+</PRE></TD></TR></TBODY></TABLE>
+<DIV>
+<DIV id=remarksSectionHeading class=SectionHeading><SPAN class=SectionHeadingIcon><BR></SPAN><SPAN class=SectionHeadingText><FONT size=+1><B>Remarks</B></FONT></SPAN> </DIV>
+<DIV id=remarksSectionContent class=SectionContent><BR><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-wrap"> You can replace the behavior from all properties in a property grid.
+ If you edit a property in a property grid, you get a hotspot button instead of the default control type.
+ If you click on the hotspot button, the given action will be started and you can modify the displayed value in a separate dialog with the given calling context.
+ 
+</PRE><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-wrap"> Calling context of the registered Action are:
+ * Parameters *
+ 
+ PropertyId:           Property ID
+ PropertyIndex:        Property Index
+ PropertyIdentName:    Identifying name of user-defined property
+ DbObjectId:           Object ID from the first data model
+ Value:                Displayed string or multilanguage string
+ 
+
+ * Return values *
+ 
+ DialogModalResult:   1 for OK
+ DialogModified:      1 (True) for modified
+ Value:               new display value or new multilanguage string
+ 
+</PRE></DIV></DIV><A id=exampleBookmark name=exampleBookmark></A>
+<DIV id=exampleSectionHeading class=SectionHeading><SPAN class=SectionHeadingIcon><BR></SPAN><SPAN class=SectionHeadingText><FONT size=+1><B>Example</B></FONT></SPAN> </DIV>
+<DIV id=exampleSectionContent class=SectionContent><BR>
+<DIV id=TabContent class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word"><PRE style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-wrap'><BR>       RegisterCustomPropertyEditorAction /Register:True /Action:WPF_Demo_Custom_Editor /PropertyId:40001 /PropertyIndex:0 /Editable:False
+       RegisterCustomPropertyEditorAction /Register:True /Action:WPF_Demo_Custom_Editor /PropertyId:40002 /PropertyIndex:0 /Editable:True
+ 
+       RegisterCustomPropertyEditorAction /Register:1 /Action:WPF_Demo_Custom_Editor /PropertyId:20901 /PropertyIndex:1 /Editable:0
+       RegisterCustomPropertyEditorAction /Register:1 /Action:WPF_Demo_Custom_Editor /PropertyId:20901 /PropertyIndex:2 /Editable:1
+ 
+       RegisterCustomPropertyEditorAction /Register:1 /Action:WPF_Demo_Custom_Editor /PropertyIdentName:EPLAN.Page.UserSupplementaryField1 /Editable:0
+       RegisterCustomPropertyEditorAction /Register:1 /Action:WPF_Demo_Custom_Editor /PropertyIdentName:EPLAN.Page.UserSupplementaryField2 /Editable:1
+ 
+       RegisterCustomPropertyEditorAction /Register:False /Action:WPF_Demo_Custom_Editor /PropertyId:40001 /PropertyIndex:0
+       RegisterCustomPropertyEditorAction /Register:0 /Action:WPF_Demo_Custom_Editor /PropertyId:40002 /PropertyIndex:0
+ 
+       RegisterCustomPropertyEditorAction /Register:False /Action:WPF_Demo_Custom_Editor /PropertyId:20901 /PropertyIndex:1
+       RegisterCustomPropertyEditorAction /Register:0 /Action:WPF_Demo_Custom_Editor /PropertyId:20901 /PropertyIndex:2
+ 
+       RegisterCustomPropertyEditorAction /Register:False /Action:WPF_Demo_Custom_Editor /PropertyIdentName:EPLAN.Page.UserSupplementaryField1
+       RegisterCustomPropertyEditorAction /Register:0 /Action:WPF_Demo_Custom_Editor /PropertyIdentName:EPLAN.Page.UserSupplementaryField2
+ 
+</PRE></DIV></DIV>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

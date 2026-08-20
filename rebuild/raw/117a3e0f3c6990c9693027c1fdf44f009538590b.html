@@ -1,0 +1,269 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>backup</title>
+    <meta name="Title" content="backup"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n35754","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="Action class for backup functions. Backs up a project and master data (forms, symbols, ...) to disk
+
+
+
+
+Parameter
+Description
+
+TYPE
+
+Type of task to be performed.
+â¢ &quot;PROJECT&quot;: Backing up the entire project. 
+â¢ &quot;MASTERDATA&quot;: Backing up the" />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="44212966-b147-441d-ba1b-b1e3c66ad976"/>
+    <meta name="Microsoft.Help.TocParent" content="4ea5bd74-ff1d-459a-ae2c-f0d2ed3aba56"/>
+    <meta name="Microsoft.Help.TocOrder" content="1"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">Eplan API</a>
+ / <a href="API Reference.html">API Reference</a>
+ / <a href="API Actions.html">Actions</a>
+ / backup</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">backup</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <DIV class=DescriptionContent><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Action class for backup functions. Backs up a project and master data (forms, symbols, ...) to disk
+</PRE></DIV><BR>
+<TABLE>
+<TBODY>
+<TR>
+<TH>Parameter</TH>
+<TH>Description</TH></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>TYPE
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Type of task to be performed.
+â¢ "PROJECT": Backing up the entire project. 
+â¢ "MASTERDATA": Backing up the master data.
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>PROJECTNAME
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Project name with full path (optional). 
+If not entered, the selected project is used when the action is called from GUI (like from a script or ribbon bar). 
+If called from the windows command line, the PROJECTNAME must be set or the ProjectAction must be used first (see also "ProjectAction"), otherwise an exception is thrown (see also "System.ArgumentException").
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>ARCHIVENAME
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Archive name.
+Name of the file where the backed up data is to be saved (without path information).
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>DESTINATIONPATH
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Target directory
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>COMMENT
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Remark on backup (optional).
+The remark is written as a string to the corresponding property of the backed up project.
+Default = corresponding property is not set.
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>AUTOCOPYREFDATA
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Specifies whether external files that are referenced by the project 
+are copied to the project's directory (the "\DOC" and "\Images" subdirectories) before the backup.
+(optional, 0 = No, 1 = Yes).
+Default = 0
+Valid only if TYPE parameter equals "PROJECT".
+Images and documents included in project are always backup-ed.
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>INCLEXTDOCS
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Specifies whether documents are to be included in the backup (optional, 0 = No, 1= Yes).
+Default = 0
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>INCLIMAGES
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Specifies whether image files are to be included in the backup (optional, 0 = No, 1=Yes).
+Default = 0
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>BACKUPMETHOD
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line"> Type of backup. 
+â¢ "BACKUP": Project is backed up 
+â¢ "SOURCEOUT": Project is filed off 
+â¢ "ARCHIVE": Project is archived.
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>MDTYPE
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Type of master data to be backed up.
+â¢ "SYMBOLS",
+â¢ "MACROS",
+â¢ "FORMS",
+â¢ "ARTICLES",
+â¢ "LANGUAGES",
+â¢ "STANDARDSHEET",
+â¢ "STATIONDATA"
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>SOURCEPATH
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Source directory, only applies to backup of master data.
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell><PRE style='FONT-FAMILY: "Courier New", monospace'>FILENAME
+</PRE></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-line">Name of the file to be backed up.
+â¢ The file name can be entered with or without the complete path.
+â¢ The file extension must be specified.
+â¢ A file extension with a wildcard is also possible (for example: /FILENAME:*.fn1, /FILENAME:*.*, /FILENAME:*sh)
+This only applies to the backup of master data.
+</PRE></TD></TR></TBODY></TABLE>
+<DIV>
+<DIV id=remarksSectionHeading class=SectionHeading><SPAN class=SectionHeadingIcon><BR></SPAN><SPAN class=SectionHeadingText><FONT size=+1><B>Remarks</B></FONT></SPAN> </DIV>
+<DIV id=remarksSectionContent class=SectionContent><BR><PRE style="FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: pre-wrap">Archive names of the form &lt;some name&gt;.nnn (n = a digit 0 - 9) are forbidden, because an archive name of this form (with a three-digit-extension) is automatically created when the backup file is split into several parts. 
+When an error occurs during a data backup operation, a "BaseException" is thrown.
+</PRE></DIV></DIV><A id=exampleBookmark name=exampleBookmark></A>
+<DIV id=exampleSectionHeading class=SectionHeading><SPAN class=SectionHeadingIcon><BR></SPAN><SPAN class=SectionHeadingText><FONT size=+1><B>Example</B></FONT></SPAN> </DIV>
+<DIV id=exampleSectionContent class=SectionContent><BR>
+<DIV id=TabContent class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word"><PRE style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-wrap'><BR>Backup project:
+
+backup /TYPE:PROJECT /DESTINATIONPATH:U:\temp /ARCHIVENAME:EPLAN_Sample_Project.zw1 /AUTOCOPYREFDATA:0
+
+backup /TYPE:PROJECT /DESTINATIONPATH:U:\temp /ARCHIVENAME:EPLAN_Sample_Project.zw1 /COMMENT:Hello /AUTOCOPYREFDATA:1 /INCLIMAGES:0 /INCLEXTDOCS:1
+
+backup /TYPE:PROJECT /PROJECTNAME:C:\Projects\EPLAN\EPLAN_Sample_Project.elk /DESTINATIONPATH:U:\temp /ARCHIVENAME:EPLAN_Sample_Project.zw1 /COMMENT:Hello /BACKUPMETHOD:BACKUP 
+</PRE></DIV><BR>
+<DIV id=TabContent class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word"><PRE style='FONT-FAMILY: "Courier New", monospace; WHITE-SPACE: pre-wrap'><BR>Backup master data:
+
+Backup plot frame with full path:
+
+backup /TYPE:MASTERDATA /FILENAME:C:\PlotFrames\EPLAN\ESS_A3DP.fn1 /SOURCEPATH:C:\PlotFrames\EPLAN /DESTINATIONPATH:U:\temp /ARCHIVENAME:my_MasterData /COMMENT:"Hello world" /MDTYPE:STANDARDSHEET
+
+Backup plot frame without full path:
+
+backup /TYPE:MASTERDATA /FILENAME:ESS_A3DP.fn1 /SOURCEPATH:C:\PlotFrames\EPLAN /DESTINATIONPATH:U:\temp /ARCHIVENAME:my_MasterData /COMMENT:"Hello world" /MDTYPE:STANDARDSHEET
+
+Backup all plot frames (*.fn1):
+
+backup /TYPE:MASTERDATA /FILENAME:*.fn1 /SOURCEPATH:C:\PlotFrames\EPLAN /DESTINATIONPATH:U:\temp /ARCHIVENAME:my_MasterData /COMMENT:"Hello world" /MDTYPE:STANDARDSHEET
+
+Backup all files (*.*) in specified source directory:
+
+backup /TYPE:MASTERDATA /FILENAME:*.* /SOURCEPATH:C:\PlotFrames\EPLAN /DESTINATIONPATH:U:\temp /ARCHIVENAME:my_MasterData /COMMENT:"Hello world" /MDTYPE:STANDARDSHEET
+
+Backup all files (*.*) in specified source directory whose file extensions include 'sh':
+
+backup /TYPE:MASTERDATA /FILENAME:*sh /SOURCEPATH:C:\PlotFrames\EPLAN /DESTINATIONPATH:U:\temp /ARCHIVENAME:my_MasterData /COMMENT:"Hello world" /MDTYPE:STANDARDSHEET
+</PRE></DIV></DIV>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

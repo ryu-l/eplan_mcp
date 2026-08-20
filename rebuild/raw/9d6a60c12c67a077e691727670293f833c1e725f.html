@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-conditions="Primary.concept" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Editing PLC Information|PLC|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="6:40:21 AM">
+        <meta name="BuildDate" content="Monday, October 6, 2025">
+        <meta id="productName" name="product" content="Eplan Platform">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="allLangExtended">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="The configuration data of the PLC controllers of bus systems can be exchanged with different PLC configuration programs. The PLC data exchange is base..."><title>Data Exchange of PLC Configuration Files</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZN49JJ5H1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FZN49JJ5H1', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="EPLAN_Help_k_start.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor305"></a>
+                                            <madcap:concept term="Grundlagen"></madcap:concept><a name="aanchor306"></a>
+                                            <madcap:concept term="Eplan Plattform;Eplan Electric P8"></madcap:concept>
+                                            <h2>Data Exchange of PLC Configuration Files</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <p><a name="kanchor314"></a><a name="kanchor315"></a>The configuration data of the PLC controllers of bus systems can be exchanged with different <span class="GlossaryPopup" href="Glossary_o_sps_konfigurationsprogramme.htm">PLC configuration programs</span>. The PLC <span class="GlossaryPopup" href="Glossary_o_datenaustausch.htm">data exchange</span> is based on an exchange file (PLC configuration file) that one processing program writes and another processing program reads. This file can be exchanged simply between the Eplan designer and the PLC programmer.</p>
+                                            <p>PLC configuration programs and Eplan view the configuration data differently. While the electrotechnical hardware details are represented in Eplan, PLC configuration programs have a logical view for the purpose of the PLC programming. For instance, there are <span class="GlossaryPopup" href="Glossary_o_sps_anschluesse.htm">PLC connection points</span> in Eplan that are dedicated to the power supply. These <span class="GlossaryPopup" href="Glossary_o_anschluesse.htm">connection points</span> are not required in the PLC configuration program. On the other hand, there is interface information, such as router information, in the PLC configuration programs that is not needed in Eplan. Data that an editing program does not find in the exchange file because the other editing program does not know them, are supplemented during importing.</p>
+                                            <p>Eplan treats the <a href="plcgui_k_spsanschluesse.htm#I_Netzwerkanschluesse">Ethernet-based bus systems</a> equivalently during exporting / importing, because they have the same hardware <span class="GlossaryPopup" href="Glossary_o_topologie.htm">topology</span>.</p>
+                                            <p>In addition to PLC <span class="GlossaryPopup" href="Glossary_o_betriebsmittel.htm">devices</span>, bus-capable devices are also exchanged during the PLC data exchange. The specification of the configuration project is required for the PLC data exchange.</p>
+                                            <h3>Scope of interface</h3>
+                                            <p>In principle the following configuration data is exchanged:</p>
+                                            <ul>
+                                                <li class="Listitem_Normal" value="1">Hardware data of the used devices<br><span class="GlossaryPopup" href="Glossary_o_baugruppentraeger.htm">Rack</span> structure with part information.</li>
+                                                <li class="Listitem_Normal" value="2">Symbol table (also called assignment list, table of variables or similar)<br>Assignment of the symbolic address to a hardware address.</li>
+                                                <li class="Listitem_Normal" value="3"><span class="GlossaryPopup" href="Glossary_o_netzwerkstrukturen.htm">Network structures</span><br>The logical view (association of the devices to networks) is always replaced. The export / import of the exact cabling depends on the bus system and the exchange format used.</li>
+                                            </ul>
+                                            <p>Through the different views of the programs and the current developments on the hardware and software sector, the data exchange cannot always cover all the requirements. The applies for example to passive <span class="GlossaryPopup" href="Glossary_o_bauteile.htm">items</span> in the bus <span class="GlossaryPopup" href="Glossary_o_buendel.htm">bundle</span> and used field bus systems.</p><a name="I_Geraeteidentifizierung"></a>
+                                            <h3>Device identification</h3>
+                                            <p>Identification of the devices both in Eplan and in the PLC configuration program is effected either by means of the PLC type designation or by specifying a device description file. The <a href="plcgui_k_importbuskonfig.htm#I_Artikelzuordnung">part allocation</a> during the import of PLC configuration files is also carried out on the basis of these <span class="GlossaryPopup" href="Glossary_o_eigenschaften.htm">properties</span>.</p>
+                                            <p>Every PLC card can only have <span class="important">one</span> device identification. A combination of several <span class="GlossaryPopup" href="Glossary_o_artikel.htm">parts</span> by entering several PLC type <span class="GlossaryPopup" href="Glossary_o_bezeichnungen.htm">designations</span>, device description files or indexes is not supported.</p>
+                                            <p class="Bridgehead">PLC type designation</p>
+                                            <p>The PLC type designation often corresponds to the order number in the hardware catalog of the respective PLC configuration program. The upper- / lower-case letters as well as the position of blanks has to be taken into consideration. For certain <a href="plcgui_k_importbuskonfig.htm#I_Artikelzuordnung">Import formats</a> several parts with the same PLC type designation can be differentiated by means of the <span class="gui">Object description</span> property.</p>
+                                            <p class="Bridgehead"><a name="I_GSDDatei"></a>Device description file</p>
+                                            <p>The specification of a device description file can be necessary, among other things, if you use devices from different manufacturers within a bus system, for example a Beckhoff device that is coupled with a SIEMENS control unit.<br>A device description file contains device information that is not contained in the default hardware catalog of a manufacturer. You obtain device description files (for example GSD files) from the manufacturers of the used components. These files have to be integrated into the default hardware catalog of the PLC configuration program.</p>
+                                            <p>A description file is specified at the PLC card in the <span class="gui">Device description: File name</span> property. The file name is entered with the file name extension, but without file path. In addition to the <span class="gui">Device description: File name</span> property, the <span class="gui">Object description</span> property or - during a PLC data exchange in the AutomationML AR APC format - the <span class="gui">Device description: Index in file</span> property has to be specified as well. On the basis of these properties a device is selected within the file during the import of PLC configuration files.</p>
+                                            <p>In the <span class="gui">Device description: File name</span> property not only the GSD file name but also other entries, for example device IDs of CC-Link <span class="GlossaryPopup" href="Glossary_o_module.htm">modules</span>, can be stored. To this purpose you enter a prefix followed by a <span class="important">colon</span> before the actual device <span class="GlossaryPopup" href="Glossary_o_id.htm">ID</span>, for example <span class="codetext">CSP+:AJ65VBTCE2-8T</span>. This entry is then exported unchanged. This value also has to be contained in the parts management for the import. Otherwise the device cannot be found during importing.</p>
+                                            <p>If the entry does not contain a prefix (meaning no colon) or the prefix "GSD:", for example <span class="codetext">GSD:SIEM8139.GSD</span>, the entry is interpreted as a device description file. In this case the device description file name is exported together with the index (if it exists).</p>
+                                            <div class="note">
+                                                <p class="Infoblock_Heading">
+                                                    <img src="../Pictures/Gui/ALL/note.png">Note:</p>
+                                                <p class="Infoblock">If a device description file name is specified, the <span class="gui">PLC type designation</span> property is <span class="important">not</span> exported during the PLC data exchange. <br>During PLC data exchange in AutomationML AR APC format the <span class="gui">Device description: File name</span> property is, however, only exported if <span class="important">no</span> PLC type designation is specified.</p>
+                                            </div>
+                                            <h3>Recommendations for the project planning</h3>
+                                            <p>Begin with the rack layout on a single-line schematic page. Use single-line <span class="GlossaryPopup" href="Glossary_o_sps_kaesten.htm">PLC boxes</span> as <span class="GlossaryPopup" href="Glossary_o_hauptfunktionen.htm">main functions</span>.</p>
+                                            <ul>
+                                                <li class="Listitem_Single_Line" value="1">The hardware data of the used devices is planned through the rack layout. All the main <span class="GlossaryPopup" href="Glossary_o_funktionen.htm">functions</span> exist in the single-line representation. When this representation is copied, the parts entered there are copied as well.</li>
+                                                <li class="Listitem_Single_Line" value="2">Individual functions (I/O connection points, power supply, <span class="GlossaryPopup" href="Glossary_o_sps_busanschluesse.htm">bus ports</span>, etc.) can be placed via drag &amp; drop from the PLC navigator.</li>
+                                                <li class="Listitem_Normal" value="3">The rack layout can be exchanged with PLC configuration programs.</li>
+                                            </ul>
+                                            <p>Connect the single-line bus ports of the modules via <span class="GlossaryPopup" href="Glossary_o_autoconnecting.htm">autoconnecting</span>.</p>
+                                            <ul>
+                                                <li class="Listitem_Single_Line" value="1">The network structure can be documented clearly by connecting the single-line bus ports.</li>
+                                                <li class="Listitem_Normal" value="2">The network structure can be exchanged with PLC configuration programs.</li>
+                                            </ul>
+                                            <p>Place the I/O connection points with the associated sensors / actuators on multi-line schematic pages. Use bitwise representation (meaning one macro per channel) with functional grouping of the devices. Represent one I/O connection point with the associated sensor / actuator and, if applicable, main circuit per page.</p>
+                                            <ul>
+                                                <li class="Listitem_Single_Line" value="1">Once <span class="GlossaryPopup" href="Glossary_o_makros.htm">macros</span> have been created they can be used repeatedly for similar machine functions.</li>
+                                                <li class="Listitem_Single_Line" value="2">I/O connection points or <span class="GlossaryPopup" href="Glossary_o_kanaele.htm">channels</span> can be placed via drag &amp; drop from the PLC navigator or assigned.</li>
+                                                <li class="Listitem_Normal" value="3">You can check the assignment in the PLC navigator or on an overview page.</li>
+                                            </ul>
+                                            <p class="Bridgehead">Device sets (<notrans_i>"Bundles"</notrans_i>)</p>
+                                            <p>Device sets (so called <notrans_i>"<span class="GlossaryPopup" href="Glossary_o_straenge.htm">Bundles</span>"</notrans_i>, meaning bundles that consist of different devices) are not supported by all PLC configuration programs (for example <notrans_i>SIEMENS STEP 7 TIA Portal</notrans_i>). In this case the device set for the PLC data exchange must be broken up by configuring the devices contained in the device set individually with the associated device identification.</p>
+                                            <p class="Seealso">See also</p>
+                                            <p class="Link_Seealso"><a href="plcgui_k_prinzip.htm">Structure of PLCs</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="plcgui_k_exportbuskonfig.htm">Exporting PLC Configuration Files</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="plcgui_k_importbuskonfig.htm">Importing PLC Configuration Files</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+# PlcDcExchangerSiemensTIA19AML
+
+PlcDcExchangerSiemensTIA19AML
+
+```
+Imports or exports PLC data in the system database from or to "Siemens TIA V19" using AutomationML files. The supported file extension is "*.aml".
+```
+
+  
+
+**Remarks**
+
+```
+Visible name = "Siemens SIMATIC STEP 7 TIA Portal 19"
+```
+
+```
+Required for methods ExportData(), ImportData()
+```
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

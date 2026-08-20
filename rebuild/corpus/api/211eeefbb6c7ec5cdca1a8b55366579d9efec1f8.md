@@ -1,0 +1,47 @@
+# InvalidPageNameException_EmptyName Class Members
+
+InvalidPageNameException\_EmptyName Class Members
+
+The following tables list the members exposed by [InvalidPageNameException\_EmptyName](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.InvalidPageNameException_EmptyName.html).
+
+Public Properties
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Property | [Data](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [HelpLink](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [HResult](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [InnerException](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [Message](#) | (Inherited from [System.ArgumentException](#)) |
+| Public Property | [Name](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.InvalidPageNameException~Name.html) | Returns the invalid name. (Inherited from [Eplan.EplApi.DataModel.InvalidPageNameException](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.InvalidPageNameException.html)) |
+| Public Property | [ParamName](#) | (Inherited from [System.ArgumentException](#)) |
+| Public Property | [Source](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [StackTrace](#) | (Inherited from [System.Exception](#)) |
+| Public Property | [TargetSite](#) | (Inherited from [System.Exception](#)) |
+
+[Top](#top)
+
+Public Methods
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Method | [GetBaseException](#) | (Inherited from [System.Exception](#)) |
+| Public Method | [GetObjectData](#) | (Inherited from [System.ArgumentException](#)) |
+| Public Method | [GetType](#) | (Inherited from [System.Exception](#)) |
+| Public Method | [ToString](#) | (Inherited from [System.Exception](#)) |
+
+[Top](#top)
+
+See Also
+
+#### Reference
+
+[InvalidPageNameException\_EmptyName Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.InvalidPageNameException_EmptyName.html)
+  
+[Eplan.EplApi.DataModel Namespace](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel_namespace.html)
+
+---
+
+Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.
+
+[Use the Eplan Global Support Portal for feedback and support](https://www.eplan.de/services/eplan-global-support/)

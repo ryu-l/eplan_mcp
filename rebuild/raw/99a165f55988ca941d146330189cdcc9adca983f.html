@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Using Functions and Devices|Part / Device Selection|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="6:40:21 AM">
+        <meta name="BuildDate" content="Monday, October 6, 2025">
+        <meta id="productName" name="product" content="Eplan Platform">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="allLangExtended">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Device selection can be performed for the entire project or a selection of devices. Device selection can be called up from different places:"><title>Device Selection: Procedure</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZN49JJ5H1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FZN49JJ5H1', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="EPLAN_Help_k_start.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor1286"></a>
+                                            <madcap:concept term="Grundlagen"></madcap:concept><a name="aanchor1287"></a>
+                                            <madcap:concept term="Eplan Plattform;Eplan Electric P8"></madcap:concept><a name="kanchor1270"></a>
+                                            <h2>Device Selection: Procedure</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <p>Device selection can be performed for the entire project or a selection of <span class="GlossaryPopup" href="Glossary_o_betriebsmittel.htm">devices</span>. Device selection can be called up from different places:</p>
+                                            <ul>
+                                                <li class="Listitem_Single_Line" value="1">From the <span class="gui">Properties &lt;...&gt;</span> dialog</li>
+                                                <li class="Listitem_Single_Line" value="2">From the graphical editor</li>
+                                                <li class="Listitem_Single_Line" value="3">From the Device navigator</li>
+                                                <li class="Listitem_Single_Line" value="4">From the Bill of materials navigator.</li>
+                                            </ul>
+                                            <p>Depending on where the device selection was called up, the following different selection sets are available:</p>
+                                            <ul>
+                                                <li class="Listitem_Single_Line" value="1">The current <span class="important">project</span></li>
+                                                <li class="Listitem_Single_Line" value="2">Marked <span class="important">pages</span></li>
+                                                <li class="Listitem_Single_Line" value="3">Highlighted <span class="important">elements</span> in the graphical editor, in the device navigator or in the bill of materials navigator.</li>
+                                            </ul>
+                                            <p>When you select a device, the program first checks if the <span class="GlossaryPopup" href="Glossary_o_artikel.htm">parts</span> manager contains the same <span class="GlossaryPopup" href="Glossary_o_funktionen.htm">functions</span> as the device. If not, the program checks whether there are general functions (e.g. turnkeys, general). If so, the device is offered. On the other hand, for a device with general functions, all devices are offered that have a functional template from the same group.</p>
+                                            <p>You can select a device based on the type number, order number, or part number. For each part selected, (electrical) characteristics, <span class="GlossaryPopup" href="Glossary_o_funktionsgruppen.htm">function groups</span>, part group, protection variant, assembly, and product subgroup are taken from the part definition in the schematic. Possible accessory components of a part are displayed with it.</p>
+                                            <p>Furthermore, there is a tabular preview of the defined <span class="GlossaryPopup" href="Glossary_o_funktionsschablonen.htm">function templates</span>. The necessary function templates (that is, those defined for the device via its functions) and those determined in the device definition are displayed.</p>
+                                            <p>Depending on the <span class="GlossaryPopup" href="Glossary_o_einstellungen.htm">settings</span> for device selection, it is checked whether existing function data (e.g. the <span class="GlossaryPopup" href="Glossary_o_anschlussbezeichnungen.htm">connection point designations</span>) are changed by a device selection. An icon shows whether the device's <span class="GlossaryPopup" href="Glossary_o_funktionsdefinitionen.htm">function definitions</span> correspond to those of a device definition.</p>
+                                            <div class="note">
+                                                <p class="Infoblock_Heading">
+                                                    <img src="../Pictures/Gui/ALL/note.png">Notes:</p>
+                                                <ul>
+                                                    <li class="Listitem_Normal" value="1">For devices with function definitions from the "Graphic" group, the device selection returns all the parts that have function templates with the "Graphic" function definition. In addition, all parts without function templates and accessory parts are displayed. In this way, parts from the "Mechanics" generic product group, for example, can be selected.</li>
+                                                    <li class="Listitem_Normal" value="2">The <span class="gui">Connection point designation</span> has to be activated in the settings of the device selection in order for existing <span class="GlossaryPopup" href="Glossary_o_anschluesse.htm">connection points</span> to be taken into consideration when <span class="GlossaryPopup" href="Glossary_o_zubehoer.htm">accessories</span> are added through device selection.</li>
+                                                    <li class="Listitem_Normal" value="3">If accessory lists are used when adding accessories via device selection, you can also insert the accessory lists completely. To this purpose the <span class="gui">Insert complete accessory list</span> property has to be activated in the parts management for the respective accessory list.</li>
+                                                </ul>
+                                            </div>
+                                            <h3>Device selection for special functions</h3>
+                                            <p>Functions that are only needed to define a device are handled separately in the device selection. This includes <span class="GlossaryPopup" href="Glossary_o_geraetekaesten.htm">black boxes</span>, <span class="GlossaryPopup" href="Glossary_o_sps_kaesten.htm">PLC boxes</span>, <span class="GlossaryPopup" href="Glossary_o_klemmenleistendefinitionen.htm">terminal strip definitions</span>, <span class="GlossaryPopup" href="Glossary_o_steckerdefinitionen.htm">plug definitions</span>, <span class="GlossaryPopup" href="Glossary_o_kabeldefinitionen.htm">cable definitions</span> and <span class="GlossaryPopup" href="Glossary_o_abschirmungen.htm">shields</span>.</p>
+                                            <p>If the device selection is carried out for a device that consists <span class="important">only</span> of such functions and is otherwise empty. the device selection will display all parts that have at least the function templates for this function.</p>
+                                            <div class="example">
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png"> <a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Example:</a></p></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Infoblock">If you carry out a device selection for an <span class="important">empty</span> PLC box, for example, only parts that have a function template with the function definition "PLC box" (and any number of function templates for the <span class="GlossaryPopup" href="Glossary_o_sps_anschluesse.htm">PLC connection points</span>) will be displayed.</p>
+                                                        <p class="Infoblock">On the other hand, no parts that only have function templates for the PLC connection points, and none for the PLC box will be displayed.</p>
+                                                    </div>
+                                                </div>
+                                            </div><a name="kanchor1271"></a><a name="I_Mehrfachauswahl"></a>
+                                            <h3>Multiple selection (block editing)</h3>
+                                            <p>For multiple selection of elements, the behavior of the device or part selection changes according to whether they are started from the <span class="gui">Properties &lt;...&gt;</span> dialog or from the navigator:</p>
+                                            <ul>
+                                                <li class="Listitem_Normal" value="1">If you select a device or a part from the <span class="gui">Properties &lt;...&gt;</span> dialog, the selected part data are "copied" to all selected components (i.e. the selected part is assigned to all marked elements). However, only the first <span class="GlossaryPopup" href="Glossary_o_schaltzeichen.htm">component</span> is used as a selection criterion. If the part selected does not fit the other elements, then the appropriate messages are displayed after a test run.</li>
+                                                <li class="Listitem_Normal" value="2">For device selection or part selection from the bill of materials navigator, the selection dialog is called up for each selected element in succession.</li>
+                                            </ul>
+                                            <p>The device selection is performed once for each main function selected.</p><a name="kanchor1272"></a><a name="I_ZuordnungArtikelBetriebsmittel"></a>
+                                            <h3>Assignment of parts to devices</h3>
+                                            <p>Devices can be represented by one or more components:</p>
+                                            <ul>
+                                                <li class="Listitem_Single_Line" value="1">Single symbol, e.g. motor</li>
+                                                <li class="Listitem_Single_Line" value="2">Distributed device (multiple <span class="GlossaryPopup" href="Glossary_o_symbole.htm">symbols</span>, same DT), e.g. contactor, premade cable</li>
+                                                <li class="Listitem_Single_Line" value="3">Module (multiple symbols, different device tags), for example star-delta starter circuit as a 19" / MCC insert.</li>
+                                            </ul>
+                                            <p>Different parts can be assigned to these devices:</p>
+                                            <ul>
+                                                <li class="Listitem_Single_Line" value="1">Single parts</li>
+                                                <li class="Listitem_Single_Line" value="2">Assembly</li>
+                                                <li class="Listitem_Single_Line" value="3">Hierarchically organized assembly</li>
+                                                <li class="Listitem_Single_Line" value="4">Module.</li>
+                                            </ul>
+                                            <p>Any combination of device and parts is possible. Module information is stored in the main function.</p>
+                                            <div class="example">
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Example:</a></p></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Infoblock">The following table shows examples for the assignment of parts to devices:</p>
+                                                        <table>
+                                                            <tr>
+                                                                <th>Example</th>
+                                                                <th colspan="1" rowspan="1">
+                                                                    <p>Device</p>
+                                                                </th>
+                                                                <th>
+                                                                    <p>Part</p>
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <p>A part is assigned to one device.</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>Motor</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>DC motor 4711</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <p>Multiple parts are assigned to one device.</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>Fuse</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>Fuse insert 4712 + base 4713 + gauge ring 4714</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <p>Multiple parts are assigned to a distributed device.</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>Contactor (main function = contactor coil)</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>Contactor coil 4715 + contactor contact 4716 + quenching circuit 4717</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>Multiple parts are assigned to one device via an assembly.</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>Fuse</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>Assembly B001 (fuse insert 4712 + base 4713 + gauge ring 4714)</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>Multiple parts are assigned to one device via a hierarchical assembly.</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>Fuse</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>Assembly B001 (fuse insert 4712 + assembly B002 (base 4713 + gauge ring 4714))</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>Multiple devices are assigned to one module.</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>U1-K1 + U1-K2 + U1-K3</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>Star-delta starter circuit 4718</p>
+                                                                    <p>U1 contains the module part. U1-K1 etc. each contain the individual parts preselected in the module for this device. The individual parts carry information about which module they are from.</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div><a name="kanchor1273"></a><a name="I_ZuordnungModule"></a>
+                                            <h3>Assignment of modules</h3>
+                                            <p><span class="GlossaryPopup" href="Glossary_o_module.htm">Modules</span> can also be assigned using the device selection - in addition to individual parts or <span class="GlossaryPopup" href="Glossary_o_baugruppen.htm">assemblies</span>.</p>
+                                            <p>If a module is assigned to a "normal" main function, then the part number of the module is stored there.</p>
+                                            <p>If a module is assigned to a black box, however, then Eplan looks at all the main and <span class="GlossaryPopup" href="Glossary_o_nebenfunktionen.htm">auxiliary functions</span> contained in the marked black box and in all black boxes cross-referenced with it, and assigns the parts of the module to the appropriate <span class="GlossaryPopup" href="Glossary_o_hauptfunktionen.htm">main functions</span>. The data from the function templates is also transferred to the functions contained in the black box.</p>
+                                            <p>If an assembly is assigned to the black box instead of a module, then the parts of the assembly are stored in the black box and are not distributed among the functions it contains.</p>
+                                            <p class="Seealso">See also</p>
+                                            <p class="Link_Seealso"><a href="partselectiongui_k_start.htm">Part / Device Selection</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="partselectiongui_h_geraeteauswahl.htm">Selecting Devices</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,577 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Ribbon bar</title>
+    <meta name="Title" content="Ribbon bar"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n198","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="Since version 2022, the Eplan GUI items are accessible through a ribbon. In the API this control is represented by the following classes:" />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="787b8c4d-3f28-4a6f-8f33-10a5f50f9729"/>
+    <meta name="Microsoft.Help.TocParent" content="336e53eb-a15a-49ac-8013-c36cd5cf745f"/>
+    <meta name="Microsoft.Help.TocOrder" content="9"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">Eplan API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_Other.html">API Miscellaneous</a>
+ / Ribbon bar</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Ribbon bar</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>Since version 2022, the Eplan GUI items are accessible&nbsp;through a ribbon. In the API this control is represented by the following classes:</p>
+
+<ul>
+    <li><span class="codetext">Eplan.EplApi.Gui.RibbonBar</span></li>
+
+    <li><span class="codetext">Eplan.EplApi.Gui.RibbonTab</span></li>
+
+    <li><span class="codetext">Eplan.EplApi.Gui.RibbonCommandGroup</span></li>
+
+    <li><span class="codetext">Eplan.EplApi.Gui.RibbonCommand</span></li>
+</ul>
+
+<p>The ribbon is divided into tabs&nbsp;<span class="important">and these tabs into c</span><span class="important">ommand groups</span> and commands.</p>
+
+<p>All&nbsp;ribbon related classes are stored in the &nbsp;<span class="SPAN.codetext codetext SPAN">Eplan.EplApi.Gui</span>&nbsp; namespace. They correspond to the types of ribbon items from the GUI:</p>
+
+<p><img border="0" alt="" src="images/userinterface_ribbon_structure_ls_en_US_new.png" /></p>
+
+<p>Here is an example of listing ribbon items (tabs, command groups and commands):</p>
+
+<div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+    <ul>
+        <li><a href="#i-tab-content-74492d8f-02b0-48c0-af25-5841351da44c">C#</a></li>
+    </ul>
+
+    <div id="i-tab-content-74492d8f-02b0-48c0-af25-5841351da44c" class="i-filtered-content i-code">
+        <pre>
+RibbonBar ribbonBar = <span style="COLOR: #0000ff">new</span> RibbonBar();
+<span style="COLOR: #0000ff">foreach</span> (RibbonTab tab <span style="COLOR: #0000ff">in</span> ribbonBar.Tabs)
+{
+    Debug.WriteLine(<span style="COLOR: #800000">$"\tTab Name:</span>{tab.Name}<span style="COLOR: #800000">------------"</span>);
+    <span style="COLOR: #0000ff">foreach</span> (<span style="COLOR: #0000ff">var</span> commandGroup <span style="COLOR: #0000ff">in</span> tab.CommandGroups)
+    {
+        Debug.WriteLine(<span style="COLOR: #800000">$"\t\tCommand group:</span>{commandGroup.Name}<span style="COLOR: #800000">------"</span>);
+        <span style="COLOR: #0000ff">foreach</span> (<span style="COLOR: #0000ff">var</span> command <span style="COLOR: #0000ff">in</span> commandGroup.Commands)
+        {
+            RibbonCommand ribbonCommand = command.Value;
+            <span style="COLOR: #0000ff">uint</span> commandId          = ribbonCommand.ID;
+            <span style="COLOR: #0000ff">string</span> strText          = ribbonCommand.Text;
+            <span style="COLOR: #0000ff">string</span> strDescription   = ribbonCommand.Description;
+            <span style="COLOR: #0000ff">string</span> strTooltipText   = ribbonCommand.TooltipText;
+            <span style="COLOR: #0000ff">string</span> strActionCommandLine = ribbonCommand.ActionCommandLine;
+            Debug.WriteLine(<span style="COLOR: #800000">$"\t\t\tCommand Id:</span>{commandId}<span style="COLOR: #800000">---.Text:</span>{strText}<span style="COLOR: #800000">---.ActionCommandLine:</span>{strActionCommandLine}<span style="COLOR: #800000">---.TooltipText:</span>{strTooltipText}<span style="COLOR: #800000">---.Description:</span>{strDescription}<span style="COLOR: #800000">"</span>);
+        }
+        Debug.WriteLine(<span style="COLOR: #800000">$"\t\t-----------------------"</span>);
+    }
+    Debug.WriteLine(<span style="COLOR: #800000">$"\t-----------------------------"</span>);
+}
+</pre>
+    </div>
+</div>
+
+<p>Please keep it in mind that some tabs are context sensitive, i.e they are open only when the&nbsp;editor is visible.</p>
+
+<p>The old menu and toolbars are no longer accessible. The equivalent of the old menu point / toolbar button is now the ribbon command:</p>
+
+<p><img border="0" alt="" src="images/RibbonCommand.jpg" /></p>
+
+<p>In the API, commands can be created in following places:</p>
+
+<ul>
+    <li><span class="SPAN.gui gui SPAN">Extensions</span> &gt; <span class="SPAN.gui gui SPAN">API</span> command group</li>
+
+    <li>A custom command group that is placed in a persistient tab&nbsp;or a custom tab</li>
+</ul>
+
+<h3>Menu and toolbar migration</h3>
+
+<p>The classes corresponding to the old GUI items i.e. &nbsp;<span class="SPAN.codetext codetext SPAN">Toolbar</span>&nbsp; and &nbsp;<span class="SPAN.codetext codetext SPAN">Menu</span>&nbsp; are currently deprecated, so it is highly recommended to migrate relevant code.</p>
+
+<p>The following table shows how to create new ribbon items and provides&nbsp;example code:</p>
+
+<p>&nbsp;</p>
+
+<div class="TableDiv">
+    <table>
+        <tbody>
+            <tr>
+                <th>Old GUI item</th>
+
+                <th>Old API method</th>
+
+                <th>New GUI equivalent</th>
+
+                <th>New API method</th>
+
+                <th>Example old code</th>
+
+                <th>Example new code</th>
+            </tr>
+
+            <tr>
+                <td>Main menu</td>
+
+                <td>Menu.AddMainMenu</td>
+
+                <td>RibbonTab</td>
+
+                <td>RibbonBar.AddTab</td>
+
+                <td>menu.AddMainMenu("API Tests A-N", Menu.MainMenuName.eMainMenuHelp,"AddingMessageAction", "AddingMessageAction", "First menu element", 1);</td>
+
+                <td>var ribbonTab = ribbonBar.AddTab("API Tests A-N");</td>
+            </tr>
+
+            <tr>
+                <td>Popup menu</td>
+
+                <td>Menu.AddPopupMenuItem</td>
+
+                <td>RibbonCommandGroup</td>
+
+                <td>RibbonTab.AddCommandGroup</td>
+
+                <td>menu.AddPopupMenuItem("ActionExample - test2","ActionExample - test2 submenupoint1", "ActionExample", "status text", mainID, 0, false, false);</td>
+
+                <td>var commandGroup = ribbonTab.AddCommandGroup("ActionExample - test2");</td>
+            </tr>
+
+            <tr>
+                <td>Toolbar</td>
+
+                <td>toolbar.CreateCustomToolbar</td>
+
+                <td>RibbonCommandGroup</td>
+
+                <td>RibbonTab.AddCommandGroup</td>
+
+                <td>toolbar.CreateCustomToolbar("SelectionSet", Toolbar.ToolBarDockPos.eToolbarLeft, 4, 1, true);</td>
+
+                <td>var commandGroup = ribbonTab.AddCommandGroup("SelectionSet");</td>
+            </tr>
+
+            <tr>
+                <td>Menu item</td>
+
+                <td>menu.AddMenuItem(</td>
+
+                <td>RibbonCommand</td>
+
+                <td>RibbonBar.AddCommand , RibbonCommandGroup.AddCommand</td>
+
+                <td>
+                    <p>menu.AddMenuItem("UndoAction", "UndoAction");</p>
+
+                    <p>menu.AddMenuItem("SelectionRecursive", "SelectionRecursiveAction", "", selectionSetID, 1,false, false);</p>
+                </td>
+
+                <td>
+                    <p>ribbonBar.AddCommand("UndoAction", "UndoAction");</p>
+
+                    <p>commandGroup.AddCommand("SelectionRecursive", "SelectionRecursiveAction");</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Toolbar button</td>
+
+                <td>toolbar.AddButton(</td>
+
+                <td>RibbonCommand</td>
+
+                <td>RibbonCommandGroup.AddCommand(â¦,index)</td>
+
+                <td>toolbar.AddButton("SelectionSet", Int32.MaxValue, "SelectionOneItemAction","C:\\myicons\\0.ico", "SelectionOneItemAction");</td>
+
+                <td>commandGroup.AddCommand("SelectionOneItemAction", "SelectionOneItemAction", 0);</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>Here is also a list of other old methods and their new counterparts:</p>
+
+<div class="TableDiv">
+    <table>
+        <tbody>
+            <tr>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Old method</th>
+
+                <th>New method</th>
+            </tr>
+
+            <tr>
+                <td>Toolbar.ExistsToolbar</td>
+
+                <td>RibbonBar.Tabs.Any(by LINQ)<br />
+                RibbonBar.GetTab<br />
+                RibbonBar.GetDefaultTab</td>
+            </tr>
+
+            <tr>
+                <td>Toolbar.GetButtonAction</td>
+
+                <td>RibbonCommand.ActionCommandLine</td>
+            </tr>
+
+            <tr>
+                <td>Toolbar.GetButtonToolTip</td>
+
+                <td>RibbonCommand.TooltipText</td>
+            </tr>
+
+            <tr>
+                <td>Toolbar.GetCountOfButtons</td>
+
+                <td>RibbonCommandGroup.Commands.Count</td>
+            </tr>
+
+            <tr>
+                <td>Toolbar.GetPersistentButtonId<br />
+                Menu.GetCustomMenuId<br />
+                GetPersistentMenuId</td>
+
+                <td>RibbonCommand.ID</td>
+            </tr>
+
+            <tr>
+                <td>Toolbar.RemoveButton</td>
+
+                <td>RibbonCommand.Remove</td>
+            </tr>
+
+            <tr>
+                <td>Toolbar.RemoveCustomToolbar</td>
+
+                <td>RibbonCommandGroup.Remove</td>
+            </tr>
+
+            <tr>
+                <td>Menu.IsActionChecked</td>
+
+                <td>RibbonCommand.IsChecked</td>
+            </tr>
+
+            <tr>
+                <td>Menu.IsActionEnabled</td>
+
+                <td>RibbonCommand.IsEnabled</td>
+            </tr>
+
+            <tr>
+                <td>Menu.RemoveMenuItem</td>
+
+                <td>RibbonTab.Remove<br />
+                RibbonCommandGroup.Remove<br />
+                RibbonCommand.Remove</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>The &nbsp;<span class="SPAN.codetext codetext SPAN">ContextMenu</span>&nbsp; class is not affected by this change, i.e everything should work as before version 2022.</p>
+
+<p>For more information, please refer to chapter "The New&nbsp;Ribbon" of the Eplan Help.</p>
+
+<p>&nbsp;</p>
+
+<h3>RibbonIcons</h3>
+
+<p>Ribbon command actions can now be created with &nbsp;<span class="SPAN.codetext codetext SPAN">.svg</span>&nbsp; icons. There is a list of standard&nbsp; <span class="SPAN.codetext codetext SPAN">CommandIcons</span>, accessible by name or index number.<br />
+Furthermore, below examples present also how to use custom icons, which can be added by specifying path to &nbsp;<span class="SPAN.codetext codetext SPAN">.svg</span>&nbsp; file or providing icon content in string format.</p>
+
+<p>&nbsp;</p>
+
+<p>Adding standard icons</p>
+
+<div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+    <ul>
+        <li><a href="#i-tab-content-cec93184-ea30-47c2-ac33-c5285a44f218">C#</a></li>
+    </ul>
+
+    <div id="i-tab-content-cec93184-ea30-47c2-ac33-c5285a44f218" class="i-filtered-content i-code">
+        <pre>
+<span style="COLOR: #0000ff">var</span> ribbonBar = <span style="COLOR: #0000ff">new</span> RibbonBar();
+<span style="COLOR: #0000ff">var</span> tab = ribbonBar.AddTab(<span style="COLOR: #800000">"RibbonIcons"</span>);
+
+
+<span style="COLOR: #008000">// Adding standard icons to a command action using enum names
+</span><span style="COLOR: #0000ff">var</span> commandGroup = tab.AddCommandGroup(<span style="COLOR: #800000">"enum names"</span>);
+commandGroup.AddCommand(<span style="COLOR: #800000">"Button1"</span>, <span style="COLOR: #800000">"action1"</span>, <span style="COLOR: #0000ff">new</span> RibbonIcon(CommandIcon.Generator));
+commandGroup.AddCommand(<span style="COLOR: #800000">"Button2"</span>, <span style="COLOR: #800000">"action2"</span>, <span style="COLOR: #0000ff">new</span> RibbonIcon(CommandIcon.Amplifier));
+commandGroup.AddCommand(<span style="COLOR: #800000">"Button3"</span>, <span style="COLOR: #800000">"action3"</span>, <span style="COLOR: #0000ff">new</span> RibbonIcon(CommandIcon.Octagon_3));
+
+
+<span style="COLOR: #008000">// Adding standard icons to a command action using index numbers
+</span>commandGroup = tab.AddCommandGroup(<span style="COLOR: #800000">"index numbers"</span>);
+commandGroup.AddCommand(<span style="COLOR: #800000">"Button4"</span>, <span style="COLOR: #800000">"action4"</span>, <span style="COLOR: #0000ff">new</span> RibbonIcon(75));
+commandGroup.AddCommand(<span style="COLOR: #800000">"Button5"</span>, <span style="COLOR: #800000">"action5"</span>, <span style="COLOR: #0000ff">new</span> RibbonIcon(123));
+commandGroup.AddCommand(<span style="COLOR: #800000">"Button6"</span>, <span style="COLOR: #800000">"action6"</span>, <span style="COLOR: #0000ff">new</span> RibbonIcon(181));
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>Adding custom icons</p>
+
+<div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+    <ul>
+        <li><a href="#i-tab-content-0f0cab35-2405-4a54-9920-0c88e2db8fad">C#</a></li>
+    </ul>
+
+    <div id="i-tab-content-0f0cab35-2405-4a54-9920-0c88e2db8fad" class="i-filtered-content i-code">
+        <pre>
+<span style="COLOR: #008000">// Adding new custom icons to a command action using the path to the file
+</span>commandGroup = tab.AddCommandGroup(<span style="COLOR: #800000">"custom icons path to file"</span>);
+commandGroup.AddCommand(<span style="COLOR: #800000">"Button7"</span>, <span style="COLOR: #800000">"action7"</span>, <span style="COLOR: #0000ff">new</span> RibbonIcon(<span style="COLOR: #800000">"D:\\Icon2.svg"</span>));
+commandGroup.AddCommand(<span style="COLOR: #800000">"Button8"</span>, <span style="COLOR: #800000">"action8"</span>, <span style="COLOR: #0000ff">new</span> RibbonIcon(<span style="COLOR: #800000">"D:\\Icon3.svg"</span>));
+
+<span style="COLOR: #008000">// Adding new custom icons to a RibbonBar using the path to the file
+</span>RibbonIcon ribbonIcon = ribbonBar.AddIcon(<span style="COLOR: #800000">"D:\\CarIco.svg"</span>);
+commandGroup = tab.AddCommandGroup(<span style="COLOR: #800000">"AddIcon using path"</span>);
+commandGroup.AddCommand(<span style="COLOR: #800000">"Button10"</span>, <span style="COLOR: #800000">"action10"</span>, ribbonIcon);
+
+<span style="COLOR: #008000">// Adding new custom icons to a RibbonBar using the string source
+</span><span style="COLOR: #0000ff">var</span> svgContent = <span style="COLOR: #800000">"&lt;svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\"&gt;"</span> +
+ <span style="COLOR: #800000">"&lt;title&gt;Clock_1&lt;/title&gt;"</span> +
+ <span style="COLOR: #800000">"&lt;g id=\"GUIicons\"&gt;"</span> +
+ <span style="COLOR: #800000">"&lt;g id=\"Clock\"&gt;"</span> +
+ <span style="COLOR: #800000">"&lt;g&gt;"</span> +
+   <span style="COLOR: #800000">"&lt;circle cx=\"8\" cy=\"8\" r=\"7.5\" style=\"fill: #fff\"/&gt;"</span> +
+   <span style="COLOR: #800000">"&lt;path d=\"M8,1A7,7,0,1,1,1,8,7,7,0,0,1,8,1M8,0a8,8,0,1,0,8,8A8,8,0,0,0,8,0Z\" style=\"fill: #4a7db1\"/&gt;"</span> +
+ <span style="COLOR: #800000">"&lt;g&gt;"</span> +
+   <span style="COLOR: #800000">"&lt;path d=\"M12,8.5H8v-1h4ZM7.5,4V7h1V4Z\" style=\"fill:#9e0b0f\"/&gt;"</span> +
+ <span style="COLOR: #800000">"&lt;g&gt;"</span> +
+   <span style="COLOR: #800000">"&lt;rect x=\"13.5\" y=\"7\" width=\"1\" height=\"2\"transform=\"translate(22 -6) rotate(90)\" style=\"fill: #505050\"/&gt;"</span> +
+   <span style="COLOR: #800000">"&lt;rect x=\"7.5\" y=\"13\" width=\"1\" height=\"2\"transform=\"translate(16 28) rotate(-180)\" style=\"fill: #505050\"/&gt;"</span> +
+   <span style="COLOR: #800000">"&lt;rect x=\"1.5\" y=\"7\" width=\"1\" height=\"2\"transform=\"translate(-6 10) rotate(-90)\" style=\"fill: #505050\"/&gt;"</span> +
+   <span style="COLOR: #800000">"&lt;rect x=\"7.5\" y=\"1\" width=\"1\" height=\"2\"style=\"fill: #505050\"/&gt;"</span> +
+ <span style="COLOR: #800000">"&lt;/g&gt;"</span> +
+   <span style="COLOR: #800000">"&lt;circle cx=\"8\" cy=\"8\" r=\"1\" style=\"fill:#4a7db1;stroke: #9e0b0f;stroke-miterlimit: 10;stroke-width: 0.5px\"/&gt;"</span> +
+ <span style="COLOR: #800000">"&lt;/g&gt;"</span> +
+ <span style="COLOR: #800000">"&lt;/g&gt;"</span> +
+ <span style="COLOR: #800000">"&lt;/svg&gt;"</span>;
+
+commandGroup = tab.AddCommandGroup(<span style="COLOR: #800000">"AddIcon using source"</span>);
+ribbonIcon = ribbonBar.AddIcon(svgContent);
+commandGroup.AddCommand(<span style="COLOR: #800000">"Button13"</span>, <span style="COLOR: #800000">"action13"</span>, ribbonIcon);
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>The above examples result in&nbsp;this RibbonBar:</p>
+
+<p><img border="0" alt="" src="images/RibbonIcons.jpg" width="80%" /></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>RibbonCommandInfo</strong></p>
+
+<p>Ribbon command actions can now be created using a &nbsp;<span class="SPAN.codetext codetext SPAN">RibbonCommandInfo</span>&nbsp; object. This object contains all required and optional properties.</p>
+
+<p>The optional properties are &nbsp;<span class="SPAN.codetext codetext SPAN">Description</span>, &nbsp;<span class="SPAN.codetext codetext SPAN">Tooltip</span>, &nbsp;<span class="SPAN.codetext codetext SPAN">Icon</span>, &nbsp;<span class="SPAN.codetext codetext SPAN">IndexButtonPosition</span>, &nbsp;<span class="SPAN.codetext codetext SPAN">MultiLangButtonText</span>, &nbsp;<span class="SPAN.codetext codetext SPAN">MultiLangDescription</span>&nbsp; and &nbsp;<span class="SPAN.codetext codetext SPAN">MultiLangTooltip</span>.</p>
+
+<p>The multilanguage properties are used over the non-multilanguage properties if they are not empty.</p>
+
+<p>The IndexButtonPosition is used to specify&nbsp;the position in a &nbsp;<span class="SPAN.codetext codetext SPAN">RibbonCommandGroup</span>.</p>
+
+<div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+    <ul>
+        <li><a href="#i-tab-content-60f5968e-6bcd-4e02-bfc7-4070c0419994">C#</a></li>
+    </ul>
+
+    <div id="i-tab-content-60f5968e-6bcd-4e02-bfc7-4070c0419994" class="i-filtered-content i-code">
+        <pre>
+<span style="COLOR: #008000">// Adding new commands using the RibbonCommandInfo
+</span>commandGroup = tab.AddCommandGroup(<span style="COLOR: #800000">"commands with RibbonCommandInfo"</span>);
+RibbonCommandInfo ribbonCommandInfo = <span style="COLOR: #0000ff">new</span> RibbonCommandInfo(<span style="COLOR: #800000">"buttonText"</span>, <span style="COLOR: #800000">"actionCommandLine"</span>);
+commandGroup.AddCommand(ribbonCommandInfo);
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Add existing Eplan actions to a custom CommandGroup</strong></p>
+
+<p>It is possible to add existing Eplan ribbon command actions to a custom &nbsp;<span class="SPAN.codetext codetext SPAN">CommandGroup</span>&nbsp; via their&nbsp;&nbsp;<span class="SPAN.codetext codetext SPAN">Command.ID</span>.</p>
+
+<p>The corresponding internal icon&nbsp;is&nbsp;automatically added to the action.</p>
+
+<div class="i-filtered-content-CS i-tab-container i-tab-container-widget" data-title="C#" data-itemid="CS">
+    <ul>
+        <li><a href="#i-tab-content-20ce2f55-4a94-4096-9e64-17f7e566c1ca">C#</a></li>
+    </ul>
+
+    <div id="i-tab-content-20ce2f55-4a94-4096-9e64-17f7e566c1ca" class="i-filtered-content i-code">
+        <pre>
+<span style="COLOR: #008000">// Adding an existing Eplan command action by its ID
+</span><span style="COLOR: #0000ff">const</span> <span style="COLOR: #0000ff">int</span> commandId = 35089;
+<span style="COLOR: #0000ff">var</span> tab = ribbonBar.AddTab(<span style="COLOR: #800000">"CustomTab"</span>);
+<span style="COLOR: #0000ff">var</span> commandGroup = tab.AddCommandGroup(<span style="COLOR: #800000">"Group1"</span>);
+<span style="COLOR: #0000ff">var</span> commandAction = commandGroup.AddCommandWithId(commandId);
+</pre>
+    </div>
+</div>
+
+<p>To find the&nbsp;correct&nbsp;&nbsp;<span class="SPAN.codetext codetext SPAN">Command.ID</span>&nbsp; value for the command, you can check the description log in the <span class="SPAN.gui gui SPAN">Eplan Diagnostics dialog</span>&nbsp;after calling&nbsp;this action from the ribbon (to show the <span class="SPAN.gui gui SPAN">Diagnostics Dialog</span> press <span class="SPAN.gui gui SPAN">[Ctrl]</span> + <span class="SPAN.gui gui SPAN">[VK_OEM_5]</span>.&nbsp;<span class="SPAN.gui gui SPAN">[VK_OEM_5]</span> corresponds to the <span class="SPAN.gui gui SPAN">[^]</span> key on a German keyboard or to the <span class="SPAN.gui gui SPAN">[\]</span> on a United States 101 keyboard.):</p>
+
+<p><img border="0" alt="" src="images/MenuID_DiagnosticTool.PNG" /></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>SVG Icons limitations</strong></p>
+
+<p>Our UI&nbsp;libraries provide &nbsp;<span class="SPAN.codetext codetext SPAN">SVG</span>&nbsp; support with the following limitations:</p>
+
+<p>&nbsp;&nbsp; â¢ Scripts, interactions and external objects are not implemented for security reasons.</p>
+
+<p>&nbsp;&nbsp; â¢ Animations, videos, sounds and internal images are not implemented.</p>
+
+<p>&nbsp;&nbsp; â¢ Since &nbsp;<span class="SPAN.codetext codetext SPAN">SVG</span>&nbsp; icons should be small and fast to render, we disabled the following &nbsp;<span class="SPAN.codetext codetext SPAN">SVG</span>&nbsp; elements that&nbsp;can significantly affect drawing performance:<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; <span class="SPAN.codetext codetext SPAN">&lt;pattern&gt;</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp; <span class="SPAN.codetext codetext SPAN">&lt;color-profile&gt;</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; <span class="SPAN.codetext codetext SPAN">&lt;hkern&gt;</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; <span class="SPAN.codetext codetext SPAN">&lt;hatch&gt;</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; <span class="SPAN.codetext codetext SPAN">&lt;hatchpath&gt;</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; all effects, blend mode and filters</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; compressed &nbsp;<span class="SPAN.codetext codetext SPAN">SVG</span>&nbsp; files (<span class="SPAN.codetext codetext SPAN">SVGz</span>)</p>
+
+<p>It is strongly recommended to use&nbsp;only simplified ("optimized")&nbsp; <span class="SPAN.codetext codetext SPAN">SVG</span>: All elements such as text or shapes should be converted to paths and all paths should be combined.<br />
+The simplified &nbsp;<span class="SPAN.codetext codetext SPAN">SVG</span>&nbsp; is small and fast-drawing. In addition, it will be very difficult to&nbsp;"reverse engineer" your media in this case.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-see-also-sub-heading">Scripts</h4><div class="i-see-also-link">
+<a href="script_ribbon.html">Adding ribbon items by a script</a></div>
+
+<h4 class="i-see-also-sub-heading">Addins </h4><div class="i-see-also-link">
+<a href="AddingRibbonCommand.html">Adding ribbon commands</a></div>
+
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

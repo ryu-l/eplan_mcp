@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Managing Project Data|Layer Management|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="6:40:21 AM">
+        <meta name="BuildDate" content="Monday, October 6, 2025">
+        <meta id="productName" name="product" content="Eplan Platform">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="allLangExtended">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="All elements are allocated to different layers in Eplan. This affects simple graphical elements as well as symbol graphics, autoconnecting lines, prop..."><title>Layers: Principle</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZN49JJ5H1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FZN49JJ5H1', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="EPLAN_Help_k_start.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor4055"></a>
+                                            <madcap:concept term="Grundlagen"></madcap:concept><a name="aanchor4056"></a>
+                                            <madcap:concept term="Eplan Plattform;Eplan Electric P8;Eplan Fluid"></madcap:concept><a name="kanchor3949"></a>
+                                            <h2>Layers: Principle</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <p>All elements are allocated to different <span class="GlossaryPopup" href="Glossary_o_ebenen.htm">layers</span> in Eplan. This affects simple graphical elements as well as symbol graphics, <span class="GlossaryPopup" href="Glossary_o_autoconnecting.htm">autoconnecting</span> <span class="GlossaryPopup" href="Glossary_o_leitungen.htm">lines</span>, property placements, special text and other text elements. In the layer management, <span class="GlossaryPopup" href="Glossary_o_einstellungen.htm">settings</span> can be made for each layer defining whether it is to be displayed and/or printed, whether the text on this layer should be surrounded by a border, and whether the elements assigned to this layer can be edited.</p>
+                                            <p>In Eplan, there are two ways of hiding particular elements from being displayed on the screen or from being printed: By identifying a layer or by identifying an element as visible or invisible. The <span class="gui">Invisible</span> drop-down list provides the <img src="../Pictures/Gui/ALL/all_colorfromlayer_as.png"> (From layer), "Yes" and "No" options for the element concerned. Note that if an element is identified as visible or invisible, this will overwrite the setting for the layer!</p>
+                                            <p>The appropriate settings allow you to make the invisible elements visible or printable again (<span class="gui">File &gt; Settings &gt; User &gt; Graphical editing &gt; 2D</span>). To make it possible to recognize which visible elements are actually "invisible", a special color setting is available for invisible elements.</p><a name="kanchor3950"></a><a name="I_EbenenNamen"></a>
+                                            <h3>Layer names and descriptions</h3>
+                                            <p>Layers have a layer name and a layer description. The layer name must be unique, as it identifies a layer in Eplan. The names and descriptions of the standard Eplan layers cannot be changed.</p>
+                                            <p>The tree view is created from the layer description. Points within the layer description are treated as substructures and create a sub-level in the tree. The uppermost nodes in the tree structure have standard names: "Graphic", "Symbol graphic", "Property placement", "Special texts" and "3D graphic".</p>
+                                            <div class="example">
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><a name="I_Beispiel1"></a> <img src="../Pictures/Gui/ALL/example.png"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Example:</a></p></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Infoblock">You create a layer for your own graphics with the name <span class="codetext">Layer 1</span> and the description <span class="codetext">MyLayers.MyGraphic</span>. In the tree below the pre-defined nodes, the new node <span class="codetext">MyLayers</span> is shown. Below it are the nodes <span class="codetext">MyGraphic</span> with the new layer <span class="codetext">Layer 1</span>.</p>
+                                                    </div>
+                                                </div>
+                                            </div><a name="I_EbenenVerwaltung"></a>
+                                            <h3>Layer management</h3>
+                                            <p>Layers are managed on a project basis, i.e. the <span class="GlossaryPopup" href="Glossary_o_eigenschaften.htm">properties</span> of a layer are taken from the current project. If several graphical <span class="GlossaryPopup" href="Glossary_o_editoren.htm">editors</span> are open, this can mean that (e.g.) Layer 1 is visible in graphical editor 1 (Project 1), and invisible in graphical editor 2 (Project 2) .</p>
+                                            <p>Appropriate layers are predefined in Eplan for graphical elements, symbol graphics, text, etc. Each individual element (e.g. a particular piece of text) can be allocated to a particular layer on the project pages using the properties dialog. The display and printing of all layers is freely configurable.</p>
+                                            <p>Layers are identified internally via their <span class="GlossaryPopup" href="Glossary_o_id.htm">ID</span> number. With the standard layers, the ID number is part of the layer name. Thus the layer <span class="codetext">EPLAN100 Graphic.General</span> will have the ID number <span class="codetext">100</span>. <span class="GlossaryPopup" href="Glossary_o_benutzerdefiniert.htm">User-defined</span> layers have ID numbers from 1000 upwards. The ID number of a user-defined layer can be determined by exporting the layer configuration and searching the configuration file for the value of the entry "A1426" for the layer concerned, e.g. <span class="codetext">A1426="1000"</span>.</p><a name="kanchor3951"></a><a name="I_EbenenDXF"></a>
+                                            <h3>DXF / DWG export and import</h3>
+                                            <p>For <span class="GlossaryPopup" href="Glossary_o_dxf_dwg_export.htm">DXF / DWG export</span> of pages, only the names of the layers are exported and not the layer descriptions.</p>
+                                            <p>If during <span class="GlossaryPopup" href="Glossary_o_dxf.htm">DXF</span> / <span class="GlossaryPopup" href="Glossary_o_dwg.htm">DWG</span> import the layers in the DXF / DWG files are recognized as Eplan standard layers, then these standard layers are allocated to the imported layers and thus Eplan's own description text is restored. If a layer is not recognized on import, then the layer is newly generated in the layer management for the specific project.</p>
+                                            <p>The <span class="gui">Layers</span> tab in the DXF / DWG settings is available for supporting layer comparisons when exporting and importing (<span class="gui">File &gt; Settings &gt; User &gt; Interfaces &gt; DXF / DWG export and import</span>). Here you can allocate the standard Eplan layers as well as the user-defined project layers according to the appropriate CAD names. In this way, when exporting, you can (e.g.) replace the names of the Eplan standard layers in the DXF / DWG files with the layer names used in AutoCAD.</p><a name="I_EbenenSchaltzeichen"></a>
+                                            <h3>Treatment of components</h3>
+                                            <p>A <span class="GlossaryPopup" href="Glossary_o_schaltzeichen.htm">component</span> usually consists of a symbol (composed of graphical elements) and a set of property placements (text elements) that label the symbol. Since the components references in the schematic do not have their own layer, it cannot be hidden or revealed as a whole.</p>
+                                            <p>The individual graphical elements composing a symbol are located on one layer as a standard. This is the<span class="codetext"> EPLAN300</span> layer for general symbol graphics. It is however possible that the graphical elements can be spread over different layers. In this way you can use different colors, line types, and line thicknesses in a single symbol. The individual elements can be changed, hidden and revealed over the entire project using the layer management.</p>
+                                            <p>For a few special elements (such as <span class="GlossaryPopup" href="Glossary_o_geraetekaesten.htm">black boxes</span>, <span class="GlossaryPopup" href="Glossary_o_strukturkaesten.htm">structure boxes</span>, <span class="GlossaryPopup" href="Glossary_o_abschirmungen.htm">shields</span>, <span class="GlossaryPopup" href="Glossary_o_kabeldefinitionslinien.htm">cable definition lines</span>, cross-section definitions, etc.), only a graphical element is used instead of a symbol. Each graphical element can be revealed or hidden using the appropriate layer (e.g. <span class="codetext">EPLAN305; Symbol graphic.Black boxes</span>) in the layer management. Additionally, text elements such as function or special text can be revealed or hidden via the layer management.</p>
+                                            <p class="Seealso">See also</p>
+                                            <p class="Link_Seealso"><a href="layermanager_k_start.htm">Layer Management</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="layermanager_h_ebenenbearbeiten.htm">Working with Layers</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

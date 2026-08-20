@@ -1,0 +1,283 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>RoutedConnection Class</title>
+    <meta name="Title" content="RoutedConnection Class"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n27088","initialNodeContainer":"c72","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.RoutedConnection"/>
+    <meta name="Description" content="Class represents connection between topology devices or functions." />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology_namespace"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.DataModel.Topology.RoutedConnection"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology_namespace.html">Eplan.EplApi.DataModel.Topology Namespace</a>
+ / RoutedConnection Class</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <a class="i-page-link" href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.RoutedConnection_members.html">Members</a>
+                    <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">RoutedConnection Class</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">Class represents connection between topology devices or functions.</div>
+            
+            <div class="i-section-heading" id="i-inheritance-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Inheritance Hierarchy</span></div><div id="i-inheritance-section-content" class="i-section-content"><P><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemObjectClassTopic','System.Object')">System.Object</a><BR />&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<STRONG>Eplan.EplApi.DataModel.Topology.RoutedConnection</STRONG><BR /></P></div>			
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">class</span> RoutedConnection : <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a>, <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.IArticleUser.html">Eplan.EplApi.DataModel.IArticleUser</a>, <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.IWriteProtection.html">Eplan.EplApi.DataModel.IWriteProtection</a>  </pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">ref</span> <span style="color: #0000FF; ">class</span> RoutedConnection : <span style="color: #0000FF; ">public</span> <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a>, <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.IArticleUser.html">Eplan.EplApi.DataModel.IArticleUser</a>, <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.IWriteProtection.html">Eplan.EplApi.DataModel.IWriteProtection</a>  </pre></pre>
+            </div>
+        
+
+            </div>
+        </div>
+            
+            
+            
+            
+            <a name="exampleBookmark"></a>
+            
+            
+            
+            
+            <a name="ConstructorsBookmark"></a>
+            <div class="i-section-heading" id="i-publicConstructors-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Constructors</span></div><div id="i-publicConstructors-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Constructor" src="template/packages/core-dotnet/images/publicConstructor.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.RoutedConnection~_ctor().html">RoutedConnection Constructor</A></td><td class="i-member-description">Default constructor. &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="FieldsBookmark"></a>
+            
+            
+            
+            <a name="PropertiesBookmark"></a>
+            <div class="i-section-heading" id="i-publicProperties-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Properties</span></div><div id="i-publicProperties-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ArticleReferences.html">ArticleReferences</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReference.html">Eplan.EplApi.DataModel.ArticleReference</a>s that are referenced by Connection. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~Articles.html">Articles</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Article.html">Eplan.EplApi.DataModel.Article</a>s that are referenced by Connection, and only those that are stored in project database. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~CableDefinitionLine.html">CableDefinitionLine</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Cable.html">Eplan.EplApi.DataModel.EObjects.Cable</a> from a <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPoint.html">Eplan.EplApi.DataModel.ConnectionDefinitionPoint</a> assigned to this Connection. If there are more then one <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPoint.html">Eplan.EplApi.DataModel.ConnectionDefinitionPoint</a> assigned to this Connection, an exception is thrown. Such situation has to be handled by calling <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ConnectionDefPoints.html">Eplan.EplApi.DataModel.Connection.ConnectionDefPoints</a> and analyze of the result. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~CableNameParts.html">CableNameParts</A></td><td class="i-member-description">Gets/Sets a cable's name to the connection. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~CanHaveArticleData.html">CanHaveArticleData</A></td><td class="i-member-description">Check if the Connection can have <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Article.html">Eplan.EplApi.DataModel.Article</a>s. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~Connection3D.html">Connection3D</A></td><td class="i-member-description">Returns the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Connection3D.html">Eplan.EplApi.DataModel.E3D.Connection3D</a> which is a 3d representation of this connection. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ConnectionDefPointProperties.html">ConnectionDefPointProperties</A></td><td class="i-member-description">Allows to access properties of a <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPoint.html">Eplan.EplApi.DataModel.ConnectionDefinitionPoint</a> assigned to this Connection. If there are more then one <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPoint.html">Eplan.EplApi.DataModel.ConnectionDefinitionPoint</a> assigned to this Connection, an exception is thrown. Such situation has to be handled by calling <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ConnectionDefPoints.html">Eplan.EplApi.DataModel.Connection.ConnectionDefPoints</a> and analyze of the result. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ConnectionDefPoints.html">ConnectionDefPoints</A></td><td class="i-member-description">Returns the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPoint.html">Eplan.EplApi.DataModel.ConnectionDefinitionPoint</a> related to this connection. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~CrossReferencedObjectsAll.html">CrossReferencedObjectsAll</A></td><td class="i-member-description">Returns an array of objects cross-referenced with this object (i.e. having the same name - in case of functions - or otherwise associated) (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~DatabaseIdentifier.html">DatabaseIdentifier</A></td><td class="i-member-description">Returns the project as number. The number is unique for all open projects in one session. The number changes when the project is closed and opened again. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.RoutedConnection~EndConnectionPointPosition.html">EndConnectionPointPosition</A></td><td class="i-member-description"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPointPosition.html">Eplan.EplApi.DataModel.ConnectionPointPosition</a> by which this connection is connected to <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~EndSymbolReference.html">Eplan.EplApi.DataModel.Connection.EndSymbolReference</a>. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~EndIndex.html">EndIndex</A></td><td class="i-member-description">Index of the end function's connection point (0,1,2,...) that the connection is connected to. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~EndPin.html">EndPin</A></td><td class="i-member-description">Returns the end <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Pin.html">Eplan.EplApi.DataModel.Pin</a> of this connection, if such exists (i.e. if the connection is connected on the target side). Otherwise, NULL is returned. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~EndSymbolConnPoint.html">EndSymbolConnPoint</A></td><td class="i-member-description">Returns the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PinBase.html">Eplan.EplApi.DataModel.PinBase</a> which this connection is connected to on the target side. If this connection is not connected on the target side, NULL is returned. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~EndSymbolReference.html">EndSymbolReference</A></td><td class="i-member-description">Returns the second of two <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a>s connected by this connection. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~EndTargetNumber.html">EndTargetNumber</A></td><td class="i-member-description">Target number of end function (1,2,3...) (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~FunctionDefinition.html">FunctionDefinition</A></td><td class="i-member-description">Returns the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionDefinition.html">Eplan.EplApi.DataModel.FunctionDefinition</a> of the Connection. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~IsCoveredTemplate.html">IsCoveredTemplate</A></td><td class="i-member-description">Returns true if this is a Connection object that covers a wire's template in the cable where it belongs. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~IsFixedDevice.html">IsFixedDevice</A></td><td class="i-member-description">Checks if device to which connection is assign is fixed or not. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~IsLocked.html">IsLocked</A></td><td class="i-member-description"><p>Determines if the the StorableObject is locked.</p>
+
+<p>The StorableObject is locked when it was explicitly or implicitly locked.</p> (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~IsPlaced.html">IsPlaced</A></td><td class="i-member-description">Returns true if the placement is placed (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~IsReadOnly.html">IsReadOnly</A></td><td class="i-member-description">Determines if StorableObject is read-only (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~IsRemovable.html">IsRemovable</A></td><td class="i-member-description">Returns true if the Connection can be removed (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~IsTemplate.html">IsTemplate</A></td><td class="i-member-description">Returns true if this is a transient Connection object representing a cable wire's template. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~IsTransient.html">IsTransient</A></td><td class="i-member-description"><p>Determines if the the StorableObject is transient.</p>
+
+<p>The StorableObject is transient when it was created by default constructor and:</p>
+
+<p>it is a <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Eplan.EplApi.DataModel.Page</a> and it was not assigned a <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Project.html">Eplan.EplApi.DataModel.Project</a>,</p>
+
+<p>it is a <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Eplan.EplApi.DataModel.Placement</a> or any class derived from it and was not assigned a <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Eplan.EplApi.DataModel.Page</a>.</p> (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~IsValid.html">IsValid</A></td><td class="i-member-description">Determines if StorableObject is correct database object and is not deleted. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~KindOfWire.html">KindOfWire</A></td><td class="i-member-description">Returns kind of wire. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~ObjectIdentifier.html">ObjectIdentifier</A></td><td class="i-member-description">Returns the object identifier as number. The number is unique for all objects of this type. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~Page.html">Page</A></td><td class="i-member-description">Returns the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Eplan.EplApi.DataModel.Page</a> where the connection is placed on. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.RoutedConnection~PathSegments.html">PathSegments</A></td><td class="i-member-description">Array of <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.Segment.html">Segment</a> by which this connection is passing through. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~PotentialDefinitions.html">PotentialDefinitions</A></td><td class="i-member-description">Returns the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition.html">Eplan.EplApi.DataModel.PotentialDefinition</a> related to this connection. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~Project.html">Project</A></td><td class="i-member-description">Returns the project to which the StorableObject belongs. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.RoutedConnection~Properties.html">Properties</A></td><td class="i-member-description">.NET Property enabling access to P8 properties of the RoutedConnection object. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~RepresentationType.html">RepresentationType</A></td><td class="i-member-description">Gets/Sets connection's representation type. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.RoutedConnection~RouteHints.html">RouteHints</A></td><td class="i-member-description">Array of <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.Segment.html">Segment</a> by which this connection will be routed by routing algorithms. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~Shieldings.html">Shieldings</A></td><td class="i-member-description">Returns the Shielding objects the connection is composed of. It does not return Shielding objects the connection is shielded by. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.RoutedConnection~StartConnectionPointPosition.html">StartConnectionPointPosition</A></td><td class="i-member-description"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPointPosition.html">Eplan.EplApi.DataModel.ConnectionPointPosition</a> by which this connection is connected to <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~StartSymbolReference.html">Eplan.EplApi.DataModel.Connection.StartSymbolReference</a>. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~StartIndex.html">StartIndex</A></td><td class="i-member-description">Index of the start function's connection point (0,1,2,...) that the connection is connected to. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~StartPin.html">StartPin</A></td><td class="i-member-description">Returns the start <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Pin.html">Eplan.EplApi.DataModel.Pin</a> of this connection, if such exists (i.e. if the connection is connected on the source side). Otherwise, NULL is returned. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~StartSymbolConnPoint.html">StartSymbolConnPoint</A></td><td class="i-member-description">Returns the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PinBase.html">Eplan.EplApi.DataModel.PinBase</a> which this connection is connected to on the source side. If this connection is not connected on the source side, NULL is returned. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~StartSymbolReference.html">StartSymbolReference</A></td><td class="i-member-description">Returns the first of two <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a>s connected by this connection. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~StartTargetNumber.html">StartTargetNumber</A></td><td class="i-member-description">Target number of start function (1,2,3...) (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~SubConnections.html">SubConnections</A></td><td class="i-member-description">If connection contains interruption points, this method returns an array of partial connections which current connection consists of For a "net connection" this method will return an empty array. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~SymbolReferences.html">SymbolReferences</A></td><td class="i-member-description">This method returns an array of SymbolReferences objects that belong to a connection . This may for example be T-pieces or corners. Also beginning and end are returned. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~TypeIdentifier.html">TypeIdentifier</A></td><td class="i-member-description">Returns the type of the object as number. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~WriteProtected.html">WriteProtected</A></td><td class="i-member-description">Check if object is currently write protected or sets Manual write protection (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="MethodsBookmark"></a>
+            <div class="i-section-heading" id="i-publicMethods-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Methods</span></div><div id="i-publicMethods-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~AddArticleReference.html">AddArticleReference</A></td><td class="i-member-description">Overloaded.&nbsp;Adds a new <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReference.html">Eplan.EplApi.DataModel.ArticleReference</a> to the Connection. Returns the added <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReference.html">Eplan.EplApi.DataModel.ArticleReference</a>. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~Assign.html">Assign</A></td><td class="i-member-description">Assigns this connection to another, which means that values of this connection's properties are copied to the target connection and the source connection itself is removed from the project. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.RoutedConnection~ClearRoutingPath.html">ClearRoutingPath</A></td><td class="i-member-description">Clears all segments from routing path. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~Dispose().html">Dispose()</A></td><td class="i-member-description">Destructor for deterministic finalization of RoutedConnection object. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~Equals.html">Equals</A></td><td class="i-member-description">Operator of comparison implementation. Checks if two StorableObjects refer to the same object in the project. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~GetHashCode.html">GetHashCode</A></td><td class="i-member-description">Serves as the default hash function. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~GetTypeName.html">GetTypeName</A></td><td class="i-member-description">Returns object type name. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~GetWriteProtectionFlagSet.html">GetWriteProtectionFlagSet</A></td><td class="i-member-description">Checks if a specific write protection kind was set. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~LockObject().html">LockObject</A></td><td class="i-member-description">Tries to lock current object in database for exclusive access. Throws <a href="Eplan.EplApi.Baseu~Eplan.EplApi.Base.LockingException.html">Eplan.EplApi.Base.LockingException</a> on failure. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~MakePersistent.html">MakePersistent</A></td><td class="i-member-description">Allows to create non-placed connection from a connection template. In effect connection template becomes covered template. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~PauseWriteProtection.html">PauseWriteProtection</A></td><td class="i-member-description">Temporarily disables write protection. Note that current write protection flags are not cleared. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~PlaceAsConnectionDefinitionPoint.html">PlaceAsConnectionDefinitionPoint</A></td><td class="i-member-description">Places this connection as a connection def. point on the given schematic page and in the given location. If this is an uncovered connection template and the location points to a connection line on schematic page, the template automatically becomes covered (i.e. connection is created in the project) Note: When uncovered connection template becomes covered, connections on the page are updated which may affect performance. If this method needs to be called repeatedly, use the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DisableConnectionUpdateStep.html">Eplan.EplApi.DataModel.DisableConnectionUpdateStep</a> object to make the performance better. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~Remove.html">Remove</A></td><td class="i-member-description">Removes the connection from the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Project.html">Eplan.EplApi.DataModel.Project</a>. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~RemoveArticleReference.html">RemoveArticleReference</A></td><td class="i-member-description">Removes the ArticleReference from the Connecttion (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection.html">Eplan.EplApi.DataModel.Connection</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~SmartLock.html">SmartLock</A></td><td class="i-member-description">Tries to lock current object. If object is <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Eplan.EplApi.DataModel.Placement</a> - it's page will be locked as well; <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3D.html">Eplan.EplApi.DataModel.E3D.Placement3D</a> locks it's installation space; <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Function.html">Eplan.EplApi.DataModel.Function</a> locks all it's connections and connection definition points; <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Eplan.EplApi.DataModel.Page</a> locks all placements from this page. Throws <a href="Eplan.EplApi.Baseu~Eplan.EplApi.Base.LockingException.html">Eplan.EplApi.Base.LockingException</a> on failure. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~ToStringIdentifier.html">ToStringIdentifier</A></td><td class="i-member-description">Returns this object as string identifier. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            
+            <a name="EventsBookmark"></a>
+            
+            
+            
+            <a name="OperatorsBookmark"></a>
+            									
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.RoutedConnection_members.html">RoutedConnection Members</a>
+<br/><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology_namespace.html">Eplan.EplApi.DataModel.Topology Namespace</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

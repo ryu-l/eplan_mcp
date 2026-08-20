@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-conditions="Primary.concept" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Editing PLC Information|PLC Schematic Generation|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="6:40:21 AM">
+        <meta name="BuildDate" content="Monday, October 6, 2025">
+        <meta id="productName" name="product" content="Eplan Platform">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="allLangExtended">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="When generating a PLC schematic, schematic pages with different views can be selectively generated:"><title>PLC Schematic Generation: Principle</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZN49JJ5H1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FZN49JJ5H1', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="EPLAN_Help_k_start.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor4013"></a>
+                                            <madcap:concept term="Grundlagen"></madcap:concept><a name="aanchor4014"></a>
+                                            <madcap:concept term="Eplan Plattform;Eplan Electric P8"></madcap:concept><a name="kanchor3903"></a>
+                                            <h2>PLC Schematic Generation: Principle</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <p>When generating a PLC schematic, schematic pages with different views can be selectively generated:</p>
+                                            <ul>
+                                                <li class="Listitem_Normal" value="1">Single-line Representation</li>
+                                                <li class="Listitem_Normal" value="2">Multi-line representation</li>
+                                                <li class="Listitem_Normal" value="3">Overview of the inputs and outputs (macro variant A)</li>
+                                                <li class="Listitem_Normal" value="4">Overview of the <span class="GlossaryPopup" href="Glossary_o_baugruppentraeger.htm">rack</span> layout (macro variant E).</li>
+                                            </ul>
+                                            <p>The page names of the generated pages are automatically calculated based on the start page, but can also be manually changed.</p>
+                                            <p>Eplan generates a PLC schematic by automatically <span class="GlossaryPopup" href="Glossary_o_auflegen.htm">placing</span> <span class="GlossaryPopup" href="Glossary_o_makros.htm">macros</span> and using <span class="GlossaryPopup" href="Glossary_o_nicht_platziertefunktionen.htm">unplaced functions</span> from the project. These macros must be assigned to the PLC <span class="GlossaryPopup" href="Glossary_o_betriebsmittel.htm">devices</span>, which largely occurs automatically.</p><a name="kanchor3904"></a><a name="I_ZuordnungMakros"></a>
+                                            <h3>Assignment of macros</h3>
+                                            <p>The assignment of macros to the PLC devices is effected in the dialog <span class="gui">Generate PLC schematic</span> which you open via the command <span class="gui">Generate schematic</span>. (To this purpose you first have to <a href="userinterface_h_menuebandanpassen.htm">Customize the ribbon</a> and then assign the desired command to a user-defined command group.) The <span class="gui">Macro file</span> table column provided this for the assignment. Once PLC devices have been read into the <span class="gui">Generate PLC schematic</span> dialog, the macro file from the <span class="GlossaryPopup" href="Glossary_o_hauptartikel.htm">main part</span> (the first part that is not an accessory) is automatically entered at the PLC box.</p>
+                                            <p>The macro file can also be manually selected or swapped. Macros can be selected via the file selection dialog or dragged into a table cell from the Windows Explorer via Drag &amp; Drop.</p>
+                                            <p>When assigning a PLC macro, a check is made to see if all necessary macro <span class="GlossaryPopup" href="Glossary_o_darstellungsarten.htm">representation types</span> are present and that they match the device <span class="GlossaryPopup" href="Glossary_o_funktionen.htm">functions</span>. The results of this check are shown in the <span class="gui">Status</span> table column. If the macro contains all the necessary data then a green icon <img src="../Pictures/Gui/ALL/all_statusok_as.png"> is displayed. In rows of the macros where data is missing (for example a particular representation type), a yellow icon <img src="../Pictures/Gui/ALL/all_statusnotok_as.png"> is displayed. If the macro is missing or does not match (e.g. it contains too few <span class="GlossaryPopup" href="Glossary_o_anschluesse.htm">connection points</span>) then a red icon <img src="../Pictures/Gui/ALL/erroricon_error_systemmessages.png"> is displayed.</p>
+                                            <p>If you mark a table cell with an icon, the <span class="gui">Show messages</span> popup menu item can be used to open a dialog containing detailed status information.</p>
+                                            <p>If warnings / errors still exist when generating the schematic, then these macros are placed anyway and only the DT is used at the corresponding boxes and connection points in the macro.</p>
+                                            <h4>Wiring macros</h4>
+                                            <p>With <span class="GlossaryPopup" href="Glossary_o_sps_anschluesse.htm">PLC connection points</span> you can specify <span class="GlossaryPopup" href="Glossary_o_verdrahtungen.htm">wiring</span> macros. The wiring macros can contain single-line and <span class="GlossaryPopup" href="Glossary_o_allpoligedarstellungen.htm">multi-line representations</span>. Automatic assignment of the multi-line and single-line wiring of the inputs and outputs is not possible when the connection point is not yet placed. You must perform this assignment yourself, by specifying appropriate <span class="GlossaryPopup" href="Glossary_o_fenstermakros.htm">window macros</span> in the <span class="gui">Generate PLC schematic</span> dialog, at the connection points where wiring is to be inserted. A macro can occupy multiple connection points, e.g. all connection points of a channel.</p>
+                                            <p>Automatic assignment of the wiring macro occurs when the connection point is already placed and the macro box was also inserted, e.g. via a previous schematic generation. At every placed connection point, a search is made in the connection point direction for the handle of a macro. The handle of the wiring macro must lie either exactly on the connection point of the PLC connection point or on the next <span class="GlossaryPopup" href="Glossary_o_raster.htm">grid</span> point in the connection direction.</p>
+                                            <p>If a macro is found, then the macro name is read from the macro box and entered into the appropriate cell of the <span class="gui">Generate PLC schematic</span> dialog. As with PLC macros, this occurs every time a device is added to the table.</p><a name="kanchor3905"></a><a name="I_ZuordnungSeiten"></a>
+                                            <h3>Automatic assignment of pages</h3>
+                                            <p>In the <span class="gui">Generate PLC schematic</span> dialog you select the representation type to be generated. The page type columns are activated or grayed out, depending on the selection. Within the enabled columns, only the page cells containing PLC macros are activated.</p>
+                                            <p>The error status is also appropriately adjusted. If (e.g.) only the multi-line representation is to be generated, then no more errors exist when no symbol variant A exists in the selected macro for the "Overview" representation type.</p>
+                                            <p>If particular representations already exist, then the existing page names are displayed.</p>
+                                            <p>The calculation (and subsequent generation) of the pages occurs for the devices selected in the tree view of the <span class="gui">Generate PLC schematic</span> dialog. This allows particular part sections to be inserted into particular identifier structures. Only functions that are not yet placed in the affected representation types, or functions that were automatically placed in a previous generation, are taken into account.</p>
+                                            <p>First single-line, then multi-line representations, then I/O overviews, and finally rack layout overviews are generated.</p>
+                                            <p>I/O overviews for inputs and outputs and rack layout overviews are distinguished by the macro variants. In both cases, the macros are placed using the "Overview" representation type. Macro variant A is intended for I/O overviews and macro variant E is for rack layouts.</p>
+                                            <p class="Seealso">See also</p>
+                                            <p class="Link_Seealso"><a href="plcgui_k_makrosschaltplanerzeugen.htm">Macros for PLC Schematic Generation</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="plcgui_k_spsschaltplanerzeugen.htm">PLC Schematic Generation</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="plcgui_k_start.htm">PLC</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="macrosgui_k_start.htm">Macros</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

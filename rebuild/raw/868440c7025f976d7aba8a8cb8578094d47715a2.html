@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Working with Connections|Cables|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="6:40:21 AM">
+        <meta name="BuildDate" content="Monday, October 6, 2025">
+        <meta id="productName" name="product" content="Eplan Platform">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="allLangExtended">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="The functionality of the cable is based on the connections. Since connections are not refreshed immediately while drawing, cables are also only up-to-..."><title>Cable Behavior</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZN49JJ5H1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FZN49JJ5H1', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="EPLAN_Help_k_start.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor931"></a>
+                                            <madcap:concept term="Grundlagen"></madcap:concept><a name="aanchor932"></a>
+                                            <madcap:concept term="Eplan Plattform;Eplan Electric P8"></madcap:concept><a name="kanchor890"></a>
+                                            <h2>Cable Behavior</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <p>The functionality of the cable is based on the <span class="GlossaryPopup" href="Glossary_o_verbindungen.htm">connections</span>. Since connections are not refreshed immediately while drawing, <span class="GlossaryPopup" href="Glossary_o_kabel.htm">cables</span> are also only up-to-date after the connections have been refreshed. The individual <span class="GlossaryPopup" href="Glossary_o_kabelverbindungen.htm">cable connections</span> are either defined using <span class="GlossaryPopup" href="Glossary_o_verbindungsdefinitionspunkte.htm">connection definition points</span> or using the <span class="gui">Cable connection point</span> property in the connection point logic of a function.</p><a name="I_QuelleZiel"></a>
+                                            <h3>Cable sources and targets</h3>
+                                            <p>Source and target of a cable are determined according to specific rules in Eplan from the DTs of the <span class="GlossaryPopup" href="Glossary_o_funktionen.htm">functions</span> that are connected to the individual cable connections. If contradictions occur (e.g., if two cable connections of a cable lead to different <span class="GlossaryPopup" href="Glossary_o_betriebsmittel.htm">devices</span>), the first graphical cable connection "wins". Every individual cable connection also has a source and a target whereby the first graphical DT is the source by default. The source of a cable connection can also be the target of a cable.</p>
+                                            <p>The source and the target that have a cable connection <span class="important">within the cable</span> are displayed in the dialog <span class="gui">Edit cable</span> (for a marked cable). In the list view of the cable navigator on the other hand the source and the target of the individual connection is displayed. These can deviate from the source and the target of the cable connection in the cable.</p>
+                                            <p>Through the <span class="GlossaryPopup" href="Glossary_o_eigenschaften.htm">properties</span> <span class="gui">Cable: Source</span> and <span class="gui">Cable: Target</span> the source and target of the cable in the schematic are shown at the cable. These properties can also be used in the <span class="GlossaryPopup" href="Glossary_o_blockeigenschaften.htm">block properties</span>, during external editing and in <span class="GlossaryPopup" href="Glossary_o_auswertungen.htm">reports</span>.</p>
+                                            <h4><a name="I_SeitenorientierteErmittlungQuelleZiel"></a>Page-oriented determination of cable source and target</h4>
+                                            <p>Alternatively to the determination by means of the specified rules, the source and target of a cable can also be determined through the source and target of the cable connections. The <span class="gui">Determine source and target of the cables via the cable connections</span> project setting must be activated to this purpose. If you use this option, it makes sense to draw the schematic in such a way that cable connections of a cable have the same source and the same target.</p>
+                                            <p>If the source and target of the cable are determined <span class="important">page-oriented</span>, the source and target of the cable connections must first be determined page-oriented. To this purpose the <span class="gui"><a href="connectionsettingsgui_d_einstellungenallgemein.htm">Determine the source and target of connections from the placement</a></span> project setting must be activated additionally.</p>
+                                            <p>To determine the source and target of the cable connections manually, use the <span class="gui">Source / Target</span> connection property at the connected functions.</p><a name="kanchor891"></a><a name="I_Reserveadern"></a>
+                                            <h3>Spare cable connections</h3>
+                                            <p>Spare cable connections (for example, connections included for safety reasons) are automatically placed on the terminals in the terminal strip where the other cable connections are placed. If no terminals are free there, Eplan shows you a message.</p><a name="kanchor892"></a><a name="I_Kabelauswahl"></a>
+                                            <h3>Cable selection</h3>
+                                            <p>In <span class="GlossaryPopup" href="Glossary_o_artikel.htm">parts</span> selection you can select a cable part for a cable defined in the schematic. <span class="GlossaryPopup" href="Glossary_o_kabelartikel.htm">Cable parts</span> are managed in the parts database. Cable information can be either manually entered or imported directly from the manufacturer using various import functions (e.g., ECAD or ECLASS).</p>
+                                            <p>During the device selection of a cable, the part connections contained in it are automatically assigned to the individual cable connections. The connection point type is taken into consideration here so that a PE / PEN conductor is automatically connected to a PE / PEN terminal, for example. Manual assignment is another option.</p>
+                                            <p>The cable parts used in a project are saved in the project and can be edited further if the project is passed on. This enables you to make new cable selections, for example. Certain properties (e.g., price specifications) can be deleted before a project is passed on.</p><a name="kanchor893"></a><a name="I_KabelAlsGeraetEinfuegen"></a>
+                                            <h3>Inserting cables as a device</h3>
+                                            <p>If you insert the cable as a device in the graphical editor (by using the <span class="GlossaryPopup" href="Glossary_o_einfuegezentrum.htm">Insert center</span>), the individual <span class="GlossaryPopup" href="Glossary_o_objekte.htm">objects</span> are offered for <span class="GlossaryPopup" href="Glossary_o_auflegen.htm">placing</span> in the order in which they are defined in the parts management. In the process the symbol for the cable definition line or the shield is displayed at the cursor. At the cable connections, the <span class="gui">Color / number</span> property of the cable connection is displayed.</p>
+                                            <p>If the part disposes of shielded cable connections, the shield is defined together with the corresponding cable connection in a common function template in the parts management. A shield is generated automatically before such a cable connection is inserted.</p>
+                                            <p>A connection definition point is generated when a cable connection is placed. If a connection definition point that is not empty already exists for the connection, a query is displayed whether you want to retain the connection definition point or replace it. When replaced, the old connection definition point is deleted and a new one placed with the data from parts management.</p>
+                                            <div class="example">
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Example:</a></p></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p class="Infoblock">The following <span class="GlossaryPopup" href="Glossary_o_funktionsschablonen.htm">function templates</span> are defined for a cable part:</p>
+                                                        <table>
+                                                            <tr>
+                                                                <th colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">Line</p>
+                                                                </th>
+                                                                <th>
+                                                                    <p class="Tabelle_Text">Function definition</p>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">Color / no.</p>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">...</p>
+                                                                </th>
+                                                                <th>
+                                                                    <p class="Tabelle_Text">Potential type</p>
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">1</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p class="Tabelle_Text">Cable definition</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text"></p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text"></p>
+                                                                </td>
+                                                                <td>
+                                                                    <p class="Tabelle_Text"></p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">2</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p class="Tabelle_Text">Conductor / wire</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">1</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text"></p>
+                                                                </td>
+                                                                <td>
+                                                                    <p class="Tabelle_Text">Undefined</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">3</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">Conductor / wire</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">SH</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text"></p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">SH</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <p class="Infoblock">In Row 3 a shielded cable connection is defined and - via the potential type "SH" - at the same time the shield. The shield name is taken from the <span class="gui">Color / no.</span> field of this cable connection.</p>
+                                                        <p class="Infoblock">When the device is inserted afterwards in the graphical editor the following objects are offered consecutively:</p>
+                                                        <table>
+                                                            <tr>
+                                                                <th colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text"></p>
+                                                                </th>
+                                                                <th>
+                                                                    <p class="Tabelle_Text">Object</p>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">Display at the cursor</p>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">Properties</p>
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">1.</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p class="Tabelle_Text">Cable definition</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>
+                                                                        <img src="../Pictures/Gui/ALL/navigatorgui_cable_as.png">
+                                                                    </p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text"></p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">2.</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p class="Tabelle_Text">Cable connection</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">1</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">Color / number: 1,<br>Potential type: Undefined</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">3.</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">Shield</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p>
+                                                                        <img src="../Pictures/Gui/ALL/navigatorgui_shieldingauxfunc_as.png">
+                                                                    </p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">Name of shield: SH</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">4.</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">Cable connection</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">SH</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1">
+                                                                    <p class="Tabelle_Text">Color / number: SH,<br>Potential type: SH</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div><a name="kanchor894"></a><a name="kanchor895"></a><a name="I_Standardkabel"></a>
+                                            <h3>Standard cable</h3>
+                                            <p>You can specify a standard cable in the project <span class="GlossaryPopup" href="Glossary_o_einstellungen.htm">settings</span>. If one is defined, then the connections will be assigned to the cable connections of the standard cable or to one of the existing cables when you are drawing a cable definition line. Existing connection properties are not changed.</p>
+                                            <p>The connections intersected by the cable definition line are searched for a cable DT. There are two possible cases:</p>
+                                            <ul>
+                                                <li class="Listitem_Normal" value="1">If no cable DT is found, then a new DT is generated and the cable connections of the <span class="important">standard cable</span> are assigned to the connections. This is done based on the identifying properties, which are also taken into consideration in the automatic assignment of suitable cable connections. Only the properties from the function templates are transferred to the connections. The cable does not adopt the part, cable type, or any other unassigned function templates from the standard cable.</li>
+                                                <li class="Listitem_Normal" value="2">If at least one of the connections intersected by the cable definition line belongs to a cable, then the cable definition line receives the first cable <span class="GlossaryPopup" href="Glossary_o_betriebsmittelkennzeichen.htm">device tag</span> that is found and the free cable connections of the existing cable are assigned to the newly added connections (if possible).</li>
+                                            </ul><a name="kanchor896"></a><a name="I_Kabelnummerierung"></a>
+                                            <h3>Cable numbering</h3>
+                                            <p>There are special formatting options for the numbering of cables. This allows you to use (e.g.) the source and target data in the cable DT. Alternatively, cables can also be numbered using the "normal" device numbering function. However, fewer formatting options are available there.</p>
+                                            <p class="Seealso">See also</p>
+                                            <p class="Link_Seealso"><a href="cablegui_k_start.htm">Cables</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="cablegui_k_arbeitsweise.htm">Definition of Cables</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="cablegui_k_verhaltenabschirmungen.htm">Behavior of shields</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="cablegui_k_grafischedarstellung.htm">Graphical Display of Cables and Shields</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="cablegui_k_quellezielermittlung.htm">Calculating the Source and Target</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="cablegui_h_kabelauswahlautomatisch.htm">Selecting Cables</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="cablegui_h_kabelauflegen.htm">Automatically Assigning Cable Connections</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

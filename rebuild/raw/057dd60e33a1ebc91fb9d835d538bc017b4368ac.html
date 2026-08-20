@@ -1,0 +1,741 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Signing Eplan assemblies</title>
+    <meta name="Title" content="Signing Eplan assemblies"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n206","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="As a part of your EADN (Eplan API Developer Network) partnership with Eplan GmbH &amp;amp; Co. KG, you get the opportunity to sign your software interface with our products. This allows you (or your customer) to use the API assembly without having an Epl" />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="53a37eb3-8569-4f10-855b-9873636a8e38"/>
+    <meta name="Microsoft.Help.TocParent" content="336e53eb-a15a-49ac-8013-c36cd5cf745f"/>
+    <meta name="Microsoft.Help.TocOrder" content="13"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/legal_footer.css"></link>
+    <style>#i-header-container { background-color: #000000 }
+#i-header-container { color: #FFFFFF }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/favicon1.png" border="0"></img></a>
+            <div class="i-project-title">Eplan Platform API</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">Eplan API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_Other.html">API Miscellaneous</a>
+ / Signing Eplan assemblies</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Signing Eplan assemblies</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>As a part of your EADN (Eplan API Developer Network) partnership with Eplan GmbH &amp; Co. KG, you get the opportunity to sign your software interface with our products. This allows you (or your customer) to use the API assembly without having an Eplan API developer license on his workstations. Instead, he receives&nbsp;â through you&nbsp;â a runtime license for an API interface.&nbsp;</p>
+
+<p>This chapter describes how you (or your developers) should proceed, to get properly signed EADN modules.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><strong>What is possible with API licenses?</strong></h2>
+
+<p>At first there should be clarified why signing is necessary. There are 2 kinds of API licenses:&nbsp;</p>
+
+<p><strong>a)</strong> <strong>API developer license</strong> â&nbsp;It should be used only for development and testing of an API interface. Normally it has a limitation of a maximum size of Eplan projects to 5 pages.&nbsp;Only unsigned API programs can be loaded using it.</p>
+
+<p><strong>b)</strong> <strong>API runtime license</strong> â In this case there can be used only signed API programs, so we need to sign it. The routine how to do it is described bellow.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>A user can check available licenses and select one by starting Eplan with shift key (then&nbsp;the <span class="SPAN.gui gui SPAN">Select license</span> dialog will appear).&nbsp;When Eplan is already running, the current license can be retrieved from:&nbsp;</p>
+
+<p><strong>a)</strong> the <span class="SPAN.gui gui SPAN">About Eplan</span>&nbsp;dialog</p>
+
+<p><strong>b)</strong> in the API&nbsp;using the &nbsp;<span class="SPAN.codetext codetext SPAN">EplApplication.License</span>&nbsp; property and the &nbsp;<span class="SPAN.codetext codetext SPAN">License</span>&nbsp; class.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><strong>The Concept of EADN / API Runtime signing</strong></h2>
+
+<p>EADN / API Runtime signing uses a concept of combining standard .NET strong-naming with additionally including an Eplan license option to the software.<br />
+To achieve this combination, please follow the instructions in this chapter.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><strong><a name="anchorRequirements" id="anchorRequirements">Requirements</a></strong></h2>
+
+<p>After you have concluded your EADN contract or purchased an API Runtime license and you created a new software interface with Eplan, the main administrator of your Eplan cloud organization will get informed about a new entitlement for using the cloud-based EADN Signing service. Additionally, you will receive a file containing the public part of a standard signature key, normally used for strong-naming a .NET assembly. We created this key especially for your software.&nbsp;</p>
+
+<p>For using the Eplan-Cloud based signing service, you have to be member of the regarding organization and got assigned the role <strong>User</strong> to the application <strong>EADN Singing</strong>:</p>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/Requirements.png" />&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Check available licenses inside active organization</h3>
+
+<p>Public pre-signing keyfiles (e.g. &nbsp;<span class="SPAN.codetext codetext SPAN">1234_public.snk</span>, refer to <a href="#anchorDelaySignTheAssemblies"><em>Delay sign the assemblies</em></a>) that are used inside a Visual Studio project must match the used Eplan Cloud organization.<br />
+To verify which pre-signing keyfiles can get used inside the active Eplan Cloud organization, authorize (refer to <a href="#anchorAuthorizeManualUsage"><em>Authorize manual usage of EADN-Signing</em></a>) and use the endpoint <span class="SPAN.gui gui SPAN">GET /licenses</span>&nbsp; and check the result.</p>
+
+<p>&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/CheckAvailableLicenses_001.png" width="60%" />&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/CheckAvailableLicenses_002.png" width="60%" />&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/CheckAvailableLicenses_003.png" width="60%" />&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<ol>
+    <li>Click on endpoint <span class="SPAN.gui gui SPAN">GET /licenses</span>&nbsp;<br />
+    â Section gets expanded and shows more details</li>
+
+    <li>Click on <span class="SPAN.gui gui SPAN">Try out</span></li>
+
+    <li>Click on <span class="SPAN.gui gui SPAN">Execute</span></li>
+
+    <li>Check Response of server in section <span class="SPAN.gui gui SPAN">Code</span></li>
+</ol>
+
+<p>The above example shows property&nbsp;&nbsp;<span class="SPAN.codetext codetext SPAN">optionId</span>&nbsp; with the value <strong>1234</strong>, which means assemblies with the used pre-signing keyfile&nbsp;&nbsp;<span class="SPAN.codetext codetext SPAN">1234_public.snk</span>&nbsp; would be allowed to get signed inside the active Eplan Cloud organization.<br /></p>
+
+<p>Example of response if no pre-signing key is assigned to the&nbsp;current organization&nbsp;â organization not allowed to sign assemblies.&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/CheckAvailableLicenses_004.png" width="60%" />&nbsp;</p>
+
+<div class="i-box i-box-note">
+    <p><strong>Notice:</strong><br />
+    In case no valid license (<span class="SPAN.codetext codetext SPAN">optionId</span>) is shown, please use&nbsp;<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Eplan Global Support Portal</a> for getting help.</p>
+</div>
+
+<h2><strong>How to proceed</strong></h2>
+
+<p>Take the following steps to get your application EADN / API Runtime signed:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Modify the AssemblyInfo</h3>
+
+<p>In your software projects, you need to add an additional attribute to your &nbsp;<span class="SPAN.codetext codetext SPAN">AssemblyInfo</span>&nbsp; files of all the assemblies that&nbsp;are referencing Eplan API Assemblies. The &nbsp;<span class="SPAN.codetext codetext SPAN">EplanSignedAssemblyAttribute</span>&nbsp; is implemented in the &nbsp;<span class="SPAN.codetext codetext SPAN">Eplan.EplApi.Starter.dll</span>, which you always have to reference in your API application. The following example shows how to use the attribute in your &nbsp;<span class="SPAN.codetext codetext SPAN">AssemblyInfo</span>&nbsp; file:</p>
+
+<div>
+    <div>
+        <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>C#</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <pre>
+<span style="COLOR: #0000ff">using</span> System.Reflection;
+<span style="COLOR: #0000ff">using</span> System.Runtime.CompilerServices;
+<span style="COLOR: #0000ff">using</span> System.Runtime.InteropServices;
+<span style="COLOR: #0000ff">using</span> Eplan.EplApi.Starter;
+<span style="COLOR: #008000">//..
+</span>[assembly: EplanSignedAssemblyAttribute(<span style="COLOR: #0000ff">true</span>)]
+</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<div class="i-box i-box-caution">
+    <p><span data-teams="true"><strong>Important:</strong><br />
+    Eplan checks the signature for <strong>all&nbsp;DLLs and exe files that directly or indirectly use Eplan API functions</strong>. Therefore, please ensure to add the&nbsp; <span class="SPAN.codetext codetext SPAN">EplanSignedAssembly</span>&nbsp; attribute in the&nbsp; <span class="SPAN.codetext codetext SPAN">AssemblyInfo.cs</span>&nbsp; files of every <span data-teams="true">DLL and exe file using Eplan API functionality directly or indirectly.</span></span></p>
+</div>
+
+<h3><a name="anchorDelaySignTheAssemblies" id="anchorDelaySignTheAssemblies">Delay sign the assemblies</a></h3>
+
+<p>The easiest way for delay signing your assemblies (<span class="SPAN.codetext codetext SPAN">DLL</span>&nbsp; or &nbsp;<span class="SPAN.codetext codetext SPAN">exe</span>) is entering the public key file in the signing properties of your software projects in Visual Studio. Check <span class="SPAN.gui gui SPAN">Sign the assembly</span> and activate the <span class="SPAN.gui gui SPAN">Delay sign only</span> flag. See the following image:&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/Delay_sign.png" />&nbsp;</p>
+
+<p>The delay signing is done, when building the software project and with it creating the assembly.&nbsp;</p>
+
+<p>Alternatively, you can use Microsoft's Assembly Linker&nbsp; <span class="SPAN.codetext codetext SPAN">Al.exe</span>&nbsp; to manually delay sign assemblies. Please refer to respective MSDN documentation.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Upload files manually</h3>
+
+<p>Log in to the Eplan Cloud Developer Portal <a href="https://developer.eplan.com/" target="_blank">https://developer.eplan.com</a>.</p>
+
+<div class="i-box i-box-note">
+    <p><strong>Notice:</strong><br />
+    An Eplan Cloud account is required to access the Developer Portal.</p>
+</div>
+
+<div class="i-box i-box-note">
+    <p><strong>Notice:</strong><br />
+    Manual signing via the Developer Portal is intended only for testing. The main purpose of the service is <strong>automatic signing</strong> (refer directly to <a href="#anchorFullyAutomatedSigning"><em>Fully automated signing process</em></a>).</p>
+</div>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/CloudUpload.JPG" />&nbsp;</p>
+
+<h3><a name="anchorAuthorizeManualUsage" id="anchorAuthorizeManualUsage">Authorize manual usage of EADN-Signing</a></h3>
+
+<ol>
+    <li>Select <strong><span class="gui">EADN-Signing</span></strong> in available list of APIs</li>
+
+    <li>Click on <strong><span class="gui">Authorize</span></strong><br />
+    &nbsp;&nbsp;â The authorization dialog opens</li>
+
+    <li>Click the drop-down list and select <strong><span class="gui">EADN Signing</span></strong></li>
+
+    <li>Click on <strong><span class="gui">Authorize</span></strong><br />
+    &nbsp;&nbsp;â The API is allowed for manual usage via <strong><span class="gui">Try it out</span></strong><span class="SPAN.gui gui">&nbsp;</span>feature</li>
+
+    <li>Click on <strong><span class="gui">Close</span></strong><br />
+    &nbsp;&nbsp;â The authorization dialog is closed<br />
+    &nbsp;&nbsp;â Activated authorization is shown via closed lock symbol <img title="" border="0" alt="" src="images/Signing_Assemblies/symbol1.png" /></li>
+</ol>
+
+<p>After successful authorization, the entry <span class="SPAN.gui gui SPAN">USER</span> is displayed as active role:</p><img title="" border="0" alt="" src="images/Signing_Assemblies/AuthorizeManualUsageOfEADNSigning_001.png" />
+
+<p>Example when authorization was <u><strong>not</strong></u> successful:</p><img title="" border="0" alt="" src="images/Signing_Assemblies/AuthorizeManualUsageOfEADNSigning_002.png" />
+
+<p>&nbsp;</p>
+
+<div class="i-box i-box-tip">
+    <strong>Tip:</strong><br />
+    In case no valid role <span class="SPAN.gui gui SPAN">USER</span> is shown, please refer to <em><a href="#anchorRequirements">Requirements</a></em> or contact the administrator of your Eplan Cloud organization. Same method can get used to verify, if a PAT is (still) valid. Just use the&nbsp;authorization method <span class="SPAN.gui gui SPAN">PAT</span> instead of <span class="SPAN.gui gui SPAN">Interactive (OAuth2, x-delegation)</span>.
+</div>
+
+<div class="i-box i-box-note">
+    <strong>Notice:</strong><br />
+    When a different API is selected in the list of available APIs, an active authorization is discarded. Repeat the above steps to perform an authorization again.
+</div>
+
+<p>&nbsp;</p>
+
+<h3>Upload pre-signed assemblies / executables</h3>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/UploadPre-Signed_1.JPG" />&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/UploadPre-Signed_2.JPG" />&nbsp;</p>
+
+<ol>
+    <li>Click on endpoint <strong><span class="gui">POST /assemblies</span></strong><br />
+    &nbsp;&nbsp;â Section gets expanded and show more details</li>
+
+    <li>Click on <strong><span class="gui">Try it out</span></strong><br />
+    &nbsp;&nbsp;â Enables value entry in the <strong><span class="gui">Request Body</span></strong><span class="SPAN.gui">&nbsp;</span>section</li>
+
+    <li>Click on <strong><span class="gui">Add file item</span></strong><br />
+    &nbsp;&nbsp;â Adds a new <strong><span class="gui">Choose file</span></strong>&nbsp;row</li>
+
+    <li>Click on <strong><span class="gui">Choose file</span></strong><br />
+    &nbsp;&nbsp;â File selection dialog opens<br />
+    &nbsp;&nbsp;â Select pre-signed assembly<br />
+    &nbsp;&nbsp;â Confirm with <strong><span class="gui">Open</span></strong> to add local file for upload<br />
+    &nbsp;&nbsp;â Repeat steps 3 and 4 for each file which needs to get signed</li>
+
+    <li>(Optional) Add personal <span class="SPAN.gui gui SPAN">Comment</span> for full upload-job<br />
+    &nbsp;&nbsp;â The authorization dialog is closed</li>
+
+    <li>Click on <strong><span class="gui">Execute</span></strong><br />
+    &nbsp;&nbsp;â All selected files will get uploaded and tried to get signed</li>
+
+    <li>Check Response of server in column <strong><span class="gui">Code</span></strong></li>
+
+    <li><a name="anchor1" id="anchor1">Select and copy value of&nbsp;<strong>ID</strong> in <strong><span class="SPAN.gui gui">Response&nbsp;body</span></strong></a>, for later usage of all files</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<h3>Check status of uploaded files</h3>
+
+<p>Log in to the Eplan Cloud Developer Portal <a href="https://developer.eplan.com/" target="_blank">https://developer.eplan.com</a>.<br />
+If required, perform <em><a href="#anchorAuthorizeManualUsage">Authorize manual usage of EADN-Signing</a></em>.<br />
+Make sure you have the&nbsp;<strong>ID</strong> of the desired upload process handy (see also <a href="#anchor1"><em>Select and copy value of&nbsp;<strong>ID</strong> in <strong><span class="SPAN.gui gui">Response&nbsp;body</span></strong></em></a>).</p>
+
+<div class="i-box i-box-note">
+    <strong>Notice:</strong><br />
+    Use the endpoint <strong><span class="gui">GET /assemblies</span></strong> to return a list of all existing uploaded packages inside your organization and determine the required ID.
+</div>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/CheckStatus.JPG" />&nbsp;</p>
+
+<ol>
+    <li>Click on endpoint <strong><span class="SPAN.gui gui">GET /assemblies/{id}/status</span></strong><br />
+    &nbsp;&nbsp;â Section gets expanded and show more details</li>
+
+    <li>Click on <strong><span class="SPAN.gui gui">Try it out</span></strong><br />
+    &nbsp;&nbsp;â Enables value entry in the <strong><span class="SPAN.gui gui">Parameters</span></strong> section</li>
+
+    <li>Insert previous copied&nbsp;ID into parameter <strong><span class="SPAN.gui gui">Id of the uploaded package</span></strong></li>
+
+    <li>Click on <strong><span class="SPAN.gui gui">Execute</span></strong><br />
+    &nbsp;&nbsp;â Details about given signing job are getting returned</li>
+
+    <li>Check response of server in section <strong><span class="SPAN.gui gui">Responses</span></strong> and get details about results of signing process</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<h3>Receive the signed Assemblies manually</h3>
+
+<p>Log in to the Eplan Cloud Developer Portal <a href="https://developer.eplan.com/" target="_blank">https://developer.eplan.com</a>.<br />
+If required, perform <em><a href="#anchorAuthorizeManualUsage">Authorize manual usage of EADN-Signing</a></em>.<br />
+Make sure you have the&nbsp;<strong>ID</strong> of the desired upload process handy (see also <a href="#anchor1"><em>Select and copy value of&nbsp;<strong>ID</strong> in <strong><span class="SPAN.gui gui">Response&nbsp;body</span></strong></em></a>).</p>
+
+<div class="i-box i-box-note">
+    <strong>Notice:</strong><br />
+    Use the endpoint <strong><span class="gui">GET /assemblies</span></strong> to return a list of all existing uploaded packages inside your organization and determine the required ID.
+</div>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/Receive.JPG" />&nbsp;</p>
+
+<ol>
+    <li>Click on endpoint <strong><span class="gui">GET /assemblies/{id}</span></strong><br />
+    &nbsp;&nbsp;â Section gets expanded and show more details</li>
+
+    <li>Click on <strong><span class="gui">Try it out</span></strong><br />
+    &nbsp;&nbsp;â Enables value entry in the <strong><span class="gui">Parameters</span></strong> section</li>
+
+    <li>Insert previous copied&nbsp;ID into parameter <strong><span class="gui">Id of the uploaded package</span></strong></li>
+
+    <li>Click on <strong><span class="gui">Execute</span></strong><br />
+    &nbsp;&nbsp;â Download request is getting executed</li>
+
+    <li>Click on <strong><span class="gui">Download file</span></strong> in section <strong><span class="gui">Responses</span></strong><br />
+    &nbsp;&nbsp;â <strong><span class="SPAN.gui gui">Save&nbsp;file</span></strong> selection dialog opens<br />
+    &nbsp;&nbsp;â Confirm with <strong><span class="gui">Save</span></strong> to download the file</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<h3>Delete uploaded files manually</h3>
+
+<p>Log in to the Eplan Cloud Developer Portal <a href="https://developer.eplan.com/" target="_blank">https://developer.eplan.com</a>.<br />
+If required, perform <em><a href="#anchorAuthorizeManualUsage">Authorize manual usage of EADN-Signing</a></em>.<br />
+(see also <a href="#anchor3"><em>Limitations</em></a> below)<br />
+Make sure you have the <strong>ID</strong> of the desired upload process handy.<br />
+(see also <a href="#anchor1"><em>Select and copy value of&nbsp;<strong>ID</strong> in <strong><span class="SPAN.gui gui">Response&nbsp;body</span></strong></em></a>)</p>
+
+<div class="i-box i-box-note">
+    <strong>Notice:</strong><br />
+    Use the endpoint <strong><span class="gui">GET /assemblies</span></strong> to return a list of all existing uploaded packages inside your organization and determine the required ID.
+</div>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/Delete.JPG" />&nbsp;</p>
+
+<ol>
+    <li>Click on endpoint <strong><span class="gui">DELETE /assemblies/{id}</span></strong><br />
+    &nbsp;&nbsp;â Section gets expanded and show more details</li>
+
+    <li>Click on <strong><span class="gui">Try it out</span></strong><br />
+    &nbsp;&nbsp;â Enables value entry in the <strong><span class="gui">Parameters</span></strong> section</li>
+
+    <li>Insert previous copied ID into parameter <strong><span class="gui">Id of the uploaded package</span></strong></li>
+
+    <li>Click on <strong><span class="gui">Execute</span></strong><br />
+    &nbsp;&nbsp;â Delete request is getting executed</li>
+
+    <li>Check result request in column <strong><span class="gui">Code</span></strong> in section <strong><span class="gui">Responses</span></strong></li>
+</ol>
+
+<p>&nbsp;</p>
+
+<h3><a name="anchorFullyAutomatedSigning" id="anchorFullyAutomatedSigning">Fully automated signing process</a></h3>
+
+<p><strong><br />
+Preparations / prerequisites</strong></p>
+
+<p>To take advantage of fully automated signing of assemblies during the build process of Visual Studio, you must create a personal access token (further called <strong>PAT</strong>) for the application <strong>EADN Signing</strong> inside the profile editor of your Eplan Cloud organization.</p>
+
+<p>See Eplan Cloud help:<br />
+&nbsp;&nbsp;&nbsp;â¢ <a href="https://www.eplan.help/en-us/Infoportal/Content/Cloud/Content/htm/Cloud_h_Settings_Open.htm?tocpath=My" target="_blank">Open My Settings</a><br />
+&nbsp;&nbsp;&nbsp;â¢ <a href="https://www.eplan.help/en-us/Infoportal/Content/Cloud/Content/htm/Cloud_h_Settings_PAT.htm?tocpath=My settings|Sign-in|Personal access token (PAT)|_____1" target="_blank">Add personal access token (PAT)</a><br />
+&nbsp;&nbsp;&nbsp;â¢ <a href="https://www.eplan.help/en-us/Infoportal/Content/Cloud/Content/htm/Cloud_k_RolesRights.htm" target="_blank">Roles and permissions</a></p>
+
+<div class="i-box i-box-note">
+    <strong>Notice:</strong><br />
+    Without assigned role <strong>User</strong> to <strong>EADN Service</strong>, no <strong>PAT</strong> creation is available for the user.<br />
+    Removing already assigned role <strong>User</strong> from <strong>EADN</strong> <strong>Signing</strong> makes existing PAT invalid.<br />
+    No prolonging of already created <strong>PAT</strong> (<em>new one needed after expiration</em>)<br />
+    E-Mail notification is automatically sent from Eplan Cloud.
+</div>
+
+<p>Download the provided PowerShell script from the <a href="https://developer.eplan.com/">Developer Portal</a>&nbsp; <a href="https://developer.eplan.com/apis/eadn-signing_v1_0">EADN Singing</a> for using it in Post-build event of Visual Studio.</p>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/automatedProcess_2.JPG" width="510" height="310" />&nbsp;</p>
+
+<p>An example for calling the script including available parameters can be found inside the script itself:</p>
+
+<div>
+    <div>
+        <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th></th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <pre>
+# Example command line:
+#
+# powershell -ExecutionPolicy Bypass -file <span style="COLOR: #800000">"&lt;YourFolderName&gt;\PostBuildScript.ps1"</span>
+</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div><br />
+
+<div class="i-box i-box-note">
+    <strong>Notice:</strong><br />
+    Depending on your IT guidelines, calling PowerShell scripts without bypassing executions policy may return an error.<br />
+    The active policy can get checked via running command &nbsp;<span class="codetext">Get-ExecutionPolicy -List</span>
+</div><br />
+
+<div class="i-box i-box-note">
+    <strong>Tip:</strong><br />
+    See also <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.2">Microsoft documentation</a>.
+</div>
+
+<p>&nbsp;</p>
+
+<h3>Parameter description</h3>
+
+<table>
+    <tbody>
+        <tr>
+            <th scope="col">Parameter name</th>
+
+            <th scope="col">Mandatory</th>
+
+            <th scope="col">Description</th>
+        </tr>
+
+        <tr>
+            <th><span class="codetext">baseUrl</span></th>
+
+            <td>No</td>
+
+            <td>Only for signing in Chinese environment; use parameter value*:<br />
+            <span class="codetext"><a href="https://api.eplan.com.cn/eadn-signing/v1.0" target="_blank">https://api.eplan.com.cn/eadn-signing/v1.0</a></span></td>
+        </tr>
+
+        <tr>
+            <th><span class="codetext">comment</span></th>
+
+            <td>No</td>
+
+            <td>Comment for complete upload job</td>
+        </tr>
+
+        <tr>
+            <th><span class="codetext">accessToken</span></th>
+
+            <td>Yes</td>
+
+            <td>PAT which was created in User profile</td>
+        </tr>
+
+        <tr>
+            <th><span class="codetext">assemblies</span></th>
+
+            <td>Yes</td>
+
+            <td>Filename(s) of assemblies / executables which have to get signed</td>
+        </tr>
+
+        <tr>
+            <th><span class="codetext">destinationPath</span></th>
+
+            <td>Yes</td>
+
+            <td>Local target folder for downloading result-package (<em>via PowerShell script target directory is tried to get created if missing</em>)</td>
+        </tr>
+
+        <tr>
+            <th><span class="codetext">deleteAfterwards</span></th>
+
+            <td>No</td>
+
+            <td>Delete upload-job after tried signing automatically (<em>Note: storage quota limitations</em>)</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>*<em>current <span class="SPAN.codetext codetext SPAN">baseUrl</span> can be viewed at any time in the&nbsp;<a href="https://developer.eplan.com" target="_blank">Developer Portal</a></em></p>
+
+<p>&nbsp;</p>
+
+<h3>Examples for all countries except China</h3>
+
+<div class="i-box i-box-note">
+    <strong>Example:</strong><br />
+    Command line call for signing <strong>a single file (not China!)</strong><br />
+    <span class="codetext">powershell -ExecutionPolicy Bypass<br />
+    -file "&lt;YourFolderName&gt;\PostBuildScript.ps1"<br />
+    -comment "This is a test comment from $(USERNAME)"<br />
+    -accessToken "&lt;YourPATforEADNSigningService&gt;"<br />
+    -assemblies "&lt;SourceFolderWithPreSignedFiles&gt;\$(TargetFileName)"<br />
+    -destinationPath "&lt;TargetFolder&gt;"<br />
+    -deleteAfterwards</span>
+</div><br />
+
+<div class="i-box i-box-note">
+    <strong>Example:</strong><br />
+    Command line call for signing <strong>multiple files&nbsp;<span style="FONT-WEIGHT: bold">â</span> no subfolders</strong> in ZIP result<strong>&nbsp;(not China!)</strong><br />
+    <span class="codetext">powershell -ExecutionPolicy Bypass<br />
+    -file "&lt;YourFolderName&gt;\PostBuildScript.ps1"<br />
+    -comment "This is a test comment from $(USERNAME)"<br />
+    -accessToken "&lt;YourPATforEADNSigningService&gt;"<br />
+    -assemblies "&lt;SourceFolder1&gt;\&lt;YourFile1.dll&gt;,&lt;SourceFolder2&gt;\&lt;YourFile2.dll&gt;"&nbsp;<br />
+    -destinationPath "&lt;TargetFolder&gt;"<br />
+    -deleteAfterwards</span>
+</div><br />
+
+<div class="i-box i-box-note">
+    <strong>Example:</strong><br />
+    Command line call for signing <strong>multiple files&nbsp;<span style="FONT-WEIGHT: bold">â&nbsp;</span>with subfolders</strong> in ZIP result <strong>(not China!)</strong><br />
+    <span class="codetext">powershell -ExecutionPolicy Bypass<br />
+    -file "&lt;YourFolderName&gt;\PostBuildScript.ps1"<br />
+    -comment "This is a test comment from $(USERNAME)"<br />
+    -accessToken "&lt;YourPATforEADNSigningService&gt;"<br />
+    -rootDirectory "&lt;RootSourceFolder&gt;"<br />
+    -assemblies "&lt;RelativeFolder1&gt;\&lt;YourFile1.dll&gt;,&lt;RelativeFolder2&gt;\&lt;YourFile2.dll&gt;"&nbsp;<br />
+    -destinationPath "&lt;TargetFolder&gt;"<br />
+    -deleteAfterwards</span>
+</div>
+
+<p>This allows, for example, files with the same name to be processed in one signing operation.<br /></p>
+
+<h3>Examples for China only</h3>
+
+<div class="i-box i-box-note">
+    <strong>Example:</strong><br />
+    Command line call for signing <strong>a single file (China only!)</strong><br />
+    <span class="codetext">powershell -ExecutionPolicy Bypass<br />
+    -file "&lt;YourFolderName&gt;\PostBuildScript.ps1"&nbsp;<br />
+    -baseUrl <a href="https://api.eplan.com.cn/eadn-signing/v1.0">https://api.eplan.com.cn/eadn-signing/v1.0</a><br />
+    -comment "This is a test comment from $(USERNAME)"<br />
+    -accessToken "&lt;YourPATforEADNSigningService&gt;"<br />
+    -assemblies "&lt;SourceFolderWithPreSignedFiles&gt;\$(TargetFileName)"<br />
+    -destinationPath "&lt;TargetFolder&gt;"<br />
+    -deleteAfterwards</span>
+</div><br />
+
+<div class="i-box i-box-note">
+    <strong>Example:</strong><br />
+    Command line call for signing <strong>multiple files&nbsp;<span style="FONT-WEIGHT: bold">â</span> no subfolders</strong> in ZIP result<strong>&nbsp;(China only!)</strong><br />
+    <span class="codetext">powershell -ExecutionPolicy Bypass<br />
+    -file "&lt;YourFolderName&gt;\PostBuildScript.ps1"<br />
+    -baseUrl <a href="https://api.eplan.com.cn/eadn-signing/v1.0">https://api.eplan.com.cn/eadn-signing/v1.0</a><br />
+    -comment "This is a test comment from $(USERNAME)"<br />
+    -accessToken "&lt;YourPATforEADNSigningService&gt;"<br />
+    -assemblies "&lt;SourceFolder1&gt;\&lt;YourFile1.dll&gt;,&lt;SourceFolder2&gt;\&lt;YourFile2.dll&gt;"<br />
+    -destinationPath "&lt;TargetFolder&gt;"<br />
+    -deleteAfterwards</span>
+</div>
+
+<div class="i-box i-box-note">
+    <strong>Example:</strong><br />
+    Command line call for signing <strong>multiple files&nbsp;<span style="FONT-WEIGHT: bold">â&nbsp;</span>with subfolders</strong> in ZIP result<strong>&nbsp;(China only!)</strong><br />
+    <span class="codetext">powershell -ExecutionPolicy Bypass -file "&lt;YourFolderName&gt;\PostBuildScript.ps1"<br />
+    -baseUrl <a href="https://api.eplan.com.cn/eadn-signing/v1.0">https://api.eplan.com.cn/eadn-signing/v1.0</a><br />
+    -comment "This is a test comment from $(USERNAME)"<br />
+    -accessToken "&lt;YourPATforEADNSigningService&gt;"<br />
+    -rootDirectory "&lt;RootSourceFolder&gt;"<br />
+    -assemblies "&lt;RelativeFolder1&gt;\&lt;YourFile1.dll&gt;,&lt;RelativeFolder2&gt;\&lt;YourFile2.dll&gt;"<br />
+    -destinationPath "&lt;TargetFolder&gt;"<br />
+    -deleteAfterwards</span>
+</div>
+
+<p>&nbsp;</p>
+
+<h3>Adopt command line for PostBuild-event in Visual Studio</h3>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/EventInVS.JPG" />&nbsp;</p>
+
+<ol>
+    <li>Click on <strong><span class="gui">Build events</span></strong><br />
+    &nbsp;&nbsp;â Pre- and Post-build details of Visual Studio are shown</li>
+
+    <li>Click on <strong><span class="gui">Edit Post-buildâ¦</span></strong><br />
+    &nbsp;&nbsp;â Post-build Event Command Line dialog opens</li>
+
+    <li>Paste required command line call</li>
+
+    <li>Click on <strong><span class="gui">OK</span></strong><br />
+    &nbsp;&nbsp;â Post-build Command Line dialog is closed</li>
+</ol>
+
+<p>Output console will show details after building:</p>
+
+<p><img title="" border="0" alt="" src="images/Signing_Assemblies/VSOutput.JPG" />&nbsp;</p>
+
+<p>All files (no matter if singing process was successful or not) will get extracted to the given folder in the&nbsp;&nbsp;<span class="codetext">destinationPath</span>&nbsp; parameter.</p>
+
+<p>&nbsp;</p>
+
+<h3><a name="anchor3" id="anchor3">Limitations</a></h3>
+
+<p>&nbsp;&nbsp;â¢ The filenames in one upload have to be unique. Adding the same filename multiple times (on the same folder level) is not allowed, because it can not be reflected in the ZIP-file for download.<br />
+<br />
+&nbsp;&nbsp;â¢ Each upload job can have a max. total file size of ~40 MB<br />
+<br />
+&nbsp;&nbsp;â¢ There is an upload limit of max. 9999 kept upload jobs for each organization.<br />
+<br />
+&nbsp;&nbsp;â¢ No automatic âcleanupâ is done in organization storage.<br />
+<br />
+&nbsp;&nbsp;â¢ If upload limit is reached, older uploaded files have to get deleted before new uploads are possible.</p>
+
+<div class="i-box i-box-note">
+    <strong>Tip:</strong><br />
+    It is recommended to delete uploaded files directly after signing (no matter if signing was successful or not), to avoid reaching the upload limit at all.
+</div><br />
+
+<div class="i-box i-box-note">
+    <strong>Notice:</strong><br />
+    Further details can be also found in the Developer Portal: <a href="https://developer.eplan.com/problemtypes/eadn-signing" target="_blank">ProblemTypes of EADN signing</a>
+</div>
+
+<p>&nbsp;</p>
+
+<h2><strong>Special cases</strong></h2>
+
+<h3>How to sign automatically generated serialization DLLs</h3>
+
+<p>If you use an automatically created serialization&nbsp;DLL for your classes, you need to delay-sign them via the&nbsp;&nbsp;<span class="SPAN.codetext codetext SPAN">sgen.exe</span>&nbsp; tool. This tool can be found the SDK directory of your development environment.&nbsp;</p>
+
+<div class="i-box i-box-note">
+    <strong>Example:</strong><br />
+    <span class="codetext">"C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\bin\sgen.exe" /compiler:/delaysign+ /assembly:"MyDllToBeSerialized.dll" /proxytypes<br />
+    /reference:"Eplan.EplApi.AFu.dll" /reference:&lt;â¦all further references you need&gt; /compiler:/keyfile:"D:\MyPublicKey.snk"</span>
+</div>
+
+<h3>Signing of your own COM interop DLLs</h3>
+
+<p>As you probably know, any strong-named .NET assembly can only reference / load other strong-named assemblies. In case your application registers COM DLLs, the development environment normally automatically creates so-called interop DLLs, which contain the .NET wrapping of the respective COM methods. Normally, these DLLs are not signed. To create these assemblies in an already delay-signed way Microsoft provides the command line tool tlbimp.exe â&nbsp;also to be found in the SDK directory of your development environment. See the following example, how it is used:&nbsp;</p>
+
+<div class="i-box i-box-note">
+    <strong>Example:</strong><br />
+    <span class="codetext">"C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\Bin\tlbimp.exe" yourComInterface.dll /delaysign /publickey:C:\YourKeyFilePublic.snk /out:Interop.yourComInterface.dll</span>
+</div>
+
+<p>&nbsp;</p>
+
+<h2><strong>What to do in case of problems</strong></h2>
+
+<p>If you encounter issues with the signing process, please contact the <a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Eplan Global Support Portal</a>.</p>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>Eplan API, 18.03.2026, Â© by EPLAN GmbH & Co. KG. All rights reserved.</p>
+<a href="https://www.eplan.de/services/eplan-global-support/" target="_blank">Use the Eplan Global Support Portal for feedback and support</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>
