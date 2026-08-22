@@ -1,0 +1,30 @@
+# DESIGNATION_SUBPRODUCT5 Property (FunctionBasePropertyList)
+
+DESIGNATION\_SUBPRODUCT5 Property (FunctionBasePropertyList)
+
+Product (Sub-identifier 5) # 1805. This property isn't indexed, and is read-only.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [DESIGNATION\_SUBPRODUCT5(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionBasePropertyList~DESIGNATION_SUBPRODUCT5(Int32).html) | Product (Sub-identifier 5) # 1805. This property isn't indexed, and is read-only. |
+| [DESIGNATION\_SUBPRODUCT5](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionBasePropertyList~DESIGNATION_SUBPRODUCT5().html) | Product (Sub-identifier 5) # 1805. |
+
+Remarks
+
+This property is read-only..
+
+See Also
+
+#### Reference
+
+[FunctionBasePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionBasePropertyList.html)
+  
+[FunctionBasePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionBasePropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionBasePropertyList~DESIGNATION_SUBPRODUCT5)

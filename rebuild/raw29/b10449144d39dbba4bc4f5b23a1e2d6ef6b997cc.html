@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.stepbystep" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Managing Master Data|Festo Product Catalog|Proceed as Follows">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Parts from the Festo product catalog can be imported into the EPLAN parts management and then used in a project." /><title>Importing Parts from the Festo Product Catalog</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/festocatalog_h_artikelimportieren.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2245"></a>
+            <MadCap:concept term="Handlung;EPLAN Plattform;EPLAN Electric P8;EPLAN Fluid" /><a name="kanchor2664"></a><a name="kanchor2665"></a><a name="kanchor2666"></a>
+            <h2>Importing Parts from the Festo Product Catalog</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Parts from the Festo product catalog can be imported into the EPLAN parts management and then used in a project.</p>
+            <p class="Bridgehead">Preconditions:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">You have opened a project.</li>
+                <li class="Listitem_Normal" value="2">You have installed the Festo product catalog and have created at least one shopping basket in the order management of the Festo product catalog.</li>
+                <li class="Listitem_Normal" value="3">In the <span class="codetext">festo.cfg</span> configuration file, you have defined the desired <a href="Glossary_o_einstellungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">settings</a> for the import.</li>
+            </ul>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1"><span class="gui">Utilities &gt; Parts &gt; Management &gt; [Extras] &gt; Import Festo shopping basket</span>
+                </li>
+                <li class="Listitem_Step_By_Step" value="2">Select a shopping basket in the order management of the Festo product catalog and click <span class="gui">[OK]</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> All parts in the shopping basket are transferred to the parts management.</li>
+            </ol>
+            <p>The following information is transferred on import:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> number that uniquely identifies the item. The part number can be constructed from different fields in the Festo product catalog.</li>
+                <li class="Listitem_Normal" value="2">The assignment of the item to a macro or symbol (if present). The <span class="codetext">festo.cfg</span> configuration file is used to assign the correct macro in EPLAN. </li>
+                <li class="Listitem_Normal" value="3">Sales data (e.g., manufacturer, packaging units, price, etc.) from the Festo product catalog. The import can be configured using the <span class="codetext">festo.cfg</span> configuration file, i.e., you can (e.g.) decide whether you wish to transfer the prices, and whether the existing prices should be overwritten.</li>
+                <li class="Listitem_Normal" value="4">Hyperlinks on the Festo website where current documentation and technical data of the part are stored.</li>
+            </ul><a name="kanchor2667"></a><a name="kanchor2668"></a><a name="I_FestoImportGeraeteliste"></a>
+            <h3>Import parts from the Festo product catalog into the device list</h3>
+            <p>The device list can be expanded with parts from the Festo product catalog.</p>
+            <p class="Bridgehead">Preconditions:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">You have opened a project.</li>
+                <li class="Listitem_Normal" value="2">You have installed the Festo product catalog and have created at least one shopping basket in the order management of the Festo product catalog.</li>
+            </ul>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1"><span class="gui">Project data &gt; Parts / Devices &gt; Device list</span>
+                </li>
+                <li class="Listitem_Step_By_Step" value="2">Select the <span class="gui">Festo shopping basket</span> popup menu item.</li>
+                <li class="Listitem_Step_By_Step" value="3">Select a shopping basket in the order management of the Festo product catalog and click <span class="gui">[OK]</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> All parts in the shopping basket are transferred to the device list.</li>
+            </ol>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="festocatalog_k_start.htm">Festo Product Catalog</a>
+            </p>
+            <p class="Link_Seealso"><a href="festocatalog_k_zugriffaufstueckliste.htm">Importing Festo Parts</a>
+            </p>
+            <p class="Link_Seealso"><a href="festocatalog_k_zuordnungsdatei.htm">Configuration File for Importing Festo Parts</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

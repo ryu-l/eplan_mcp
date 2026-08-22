@@ -25,6 +25,7 @@ chromadb/
 .chromadb/
 chroma_db/
 chroma_db_sota/
+chroma_db_p8_2_9/
 rag_db_llama_chroma/
 *.db
 *.sqlite3

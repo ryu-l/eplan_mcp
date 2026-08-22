@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Editing PLC Information|PLC|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Several bus systems and PLC controllers can be managed in an EPLAN project. Several bus systems may be connected to a single PLC, or a single bus syst..." /><title>Structure of PLCs</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/plcgui_k_prinzip.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor938"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor939"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor1059"></a>
+            <h2>Structure of PLCs</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Several bus systems and PLC controllers can be managed in an EPLAN project. Several bus systems may be connected to a single PLC, or a single bus system may contain several PLCs. To distinguish between several PLC controllers within a project, the addresses are assigned to a processor (i.e., a CPU).</p>
+            <h3>Configuration projects</h3>
+            <p>The so-called <a href="Glossary_o_konfigurationsprojekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">configuration projects</a> can be used to define subsets of PLC <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a> within an EPLAN project. All <a href="Glossary_o_sps_kaesten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC boxes</a>, <a href="Glossary_o_sps_busanschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">bus ports</a> and I/O <a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a> assigned to the same configuration project belong together and represent a PLC configuration. In the process the I/O connection points are automatically assigned to a configuration project via the respective PLC box. The data of the resulting specified set of devices can be exchanged with the <a href="Glossary_o_sps_konfigurationsprogramme.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC configuration programs</a> of various PLC manufacturers. Using the <span class="gui">Configuration project</span> property it is possible to export and import, for example, a complete PLC controller, different networks together, or parts of a network.</p>
+            <p>A configuration project can contain several <a href="Glossary_o_stationen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">stations</a> and bus connection points. Stations are subsets of PLC devices within a configuration project and can contain several racks with PLC devices as well as one or several CPUs. The <a href="Glossary_o_baugruppentraeger.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">rack</a> and the CPU are represented in the project by PLC boxes.</p>
+            <p><a name="I_VollstaendigerCPUName"></a>For a successful <a href="Glossary_o_datenaustausch.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">data exchange</a> at least one CPU must exist on the main rack within a configuration project. A CPU is uniquely identified by specification of the CPU name in the <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> <span class="codetext">[Configuration project].[Station ID].[CPU identifier]</span>.</p><a name="I_SPSKonfigurationen"></a>
+            <h3>PLC configurations</h3>
+            <fieldset data-mc-conditions="Conditions.New">
+                <p>Bus systems and bus ports must be represented graphically on single-line or multi-line schematic pages so that the <a href="Glossary_o_netzwerkstrukturen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">network structures</a> are included during the PLC data exchange. For the PLC data exchange in the AutomationML format the network structure to be replaced is determined from the single-line or multi-line bus ports connected to each other. For all other <a href="Glossary_o_formate.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">formats</a> only the single-line representation is considered. "Bus connection points" are <a href="Glossary_o_sps_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC connection points</a> with the "Network / bus <a href="Glossary_o_kabel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable</a> connection point" function definition. With the exception of PLC <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a>, general functions (e.g. converters, motors, valves, etc.) can be <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> of a bus system or network.</p>
+                <p>An additional overview display is possible. It is not used for the determination of the network structures.</p>
+                <div class="tip">
+                    <p class="Infoblock_Heading">
+                        <img src="../Pictures/Gui/ALL/info.png" />Tip:</p>
+                    <p class="Infoblock">For the sake of clarity, we recommend using the single-line representation. If bus ports are drawn both as single-line and multi-line, we recommend entering the bus data at the single-line bus ports.</p>
+                </div>
+            </fieldset>
+            <p>When PLC configuration files are imported, the individual bus ports are identified on the basis of the combination of bus interface name and plug designation. The connection point designation is not identifying and can be omitted.</p>
+            <h4><a name="I_BusfaehigeGeraete"></a>Bus capable devices</h4>
+            <p>Bus-capable devices are converters, motors, valve terminals, etc. that, in addition to the actual function, have one or more bus ports, but no I/O connection points. Such devices can be defined via the common DT or be configured as a black box. The resultingly structured devices are taken into consideration during the export and import of PLC configuration files.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">You want to configure a motor with a bus port. To this purpose you place a <a href="Glossary_o_schaltzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">component</a> for the motor and one for the bus port and assign the same DT to both of them. In this case the motor is the main function.</p>
+                        <p class="Infoblock">You want to configure a power converter with four <a href="Glossary_o_geraeteanschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">device connection points</a> and a bus port. To this purpose you place the corresponding component in a black box. The black box in this instance is the main function.</p>
+                    </div>
+                </div>
+            </div>
+            <p>PLC devices are always to be configured as PLC boxes. These are:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">Devices with I/O connection points</li>
+                <li class="Listitem_Single_Line" value="2">Devices that, in addition to the bus data, require further PLC <a href="Glossary_o_einstellungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">settings</a> (PLC structure data), for example CPU, power supply units, I/O cards, communication <a href="Glossary_o_module.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">modules</a>, switches, etc.</li>
+            </ul>
+            <div class="tip">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/info.png" />Tip:</p>
+                <p class="Infoblock">If you want to display certain <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> (for example the bus <a href="Glossary_o_id.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ID</a>) of the single-line bus ports at the associated PLC box or device, you can use the <a href="Glossary_o_blockeigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">block properties</a> to this purpose. When editing the format properties belonging to a block property the <span class="gui"><a href="eservicesgui_d_format.htm">Format</a></span> dialog provides the format element <span class="gui">Network / bus cable connection point (single-line) of the device</span> with the index values 1 to 5. This format element allows the data of the first five single-line bus ports of the device to be accessed and these to be displayed at the PLC box / device in the case of PLC devices bus-capable devices.</p>
+            </div><a name="kanchor1060"></a><a name="I_SpsKarten"></a>
+            <h3>PLC cards</h3>
+            <p>A bus system or a PLC usually contains several <a href="Glossary_o_sps_karten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC cards</a>, e.g., digital input or output modules. These are represented on the schematic by PLC boxes; a card can also be represented in distributed form using several boxes. In this case the PLC card data <span class="important">must</span> be entered at the PLC box declared as the main function. You can also enter data at the other boxes, but this is not taken into account in <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a>.</p><a name="kanchor1061"></a><a name="I_Versorgungsanschluesse"></a>
+            <h3>Card power supplies</h3>
+            <p>The PLC cards of a PLC or of a bus system also receive their operating voltage via separate power supply connection points (card power supply). Card power supply connection points and channel power supply connection points are usually represented separately. In EPLAN, multiple card power supply connection points can have the same connection point description.</p>
+            <h3>Racks and head stations</h3>
+            <p>PLC cards are usually mounted on a rack or adjoined at a head station. Such a rack is configured as a PLC box in EPLAN. EPLAN assumes that devices on the same rack are connected by means of a "backplane". This is not configured separately.</p>
+            <p>A head station is the first PLC card of a station (also "field bus station") and includes the bus ports. Such a head station is simultaneously always a rack. Additional PLC cards can both be adjoined next to the head station, placed on the head station or integrated into it.</p>
+            <fieldset data-mc-conditions="Conditions.New"><a name="kanchor1062"></a><a name="I_Antriebe"></a>
+                <h3>Drives</h3>
+                <p>Drive systems consist of different components such as motors, converters, sensors etc. To group such components belonging to a drive in EPLAN, the indexed property <span class="gui">Drive [1-10]</span> (ID 20576) is available at the functions in the schematic. With this property up to ten drives can be assigned to a function.</p>
+                <p>In the drive-oriented view of the PLC navigator, the PLC data within the <a href="Glossary_o_projektstruktur.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">project structure</a> is assigned according to the drives. The <span class="gui">Drive</span> property is identifying at the display in the tree view and therefore in one language.</p>
+                <p>For functions that are assigned to a drive you specify the type of device more precisely in the property <span class="gui">Drive: Device type</span> (ID 20577), for example "Synchronous motor", "Converter", "Encoder", etc. The property is displayed in the part reference data. The values to be entered in the device type are as a rule specified by the manufacturer.</p>
+                <p>With the part property of the same name <span class="gui">Drive: Device type</span> (ID 40349) you can store the device type at the part. During a part selection the device type is transferred to the function.</p>
+            </fieldset>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="plcgui_k_spsanschluesse.htm">PLC connection points</a>
+            </p>
+            <p class="Link_Seealso"><a href="plcgui_k_kanaele.htm">PLC channels</a>
+            </p>
+            <p class="Link_Seealso"><a href="plcgui_k_arbeitsweise.htm">Editing PLC Data</a>
+            </p>
+            <p class="Link_Seealso"><a href="plcgui_k_symbolischeadressen.htm">Symbolic Addresses</a>
+            </p>
+            <p class="Link_Seealso"><a href="plcprocessorgui_k_adressformate.htm">Address Formats</a>
+            </p>
+            <p class="Link_Seealso"><a href="plcgui_k_zuordnungslisten.htm">Assignment Lists</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

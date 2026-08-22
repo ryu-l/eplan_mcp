@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The &lt;columnFilter&gt; element configures one filter per table column within &lt;pureTable&gt;." /><title>columnFilter</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refformui_r_columnfilter.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1369"></a>
+            <MadCap:concept term="Referenz;Form-UI" /><a name="kanchor942"></a>
+            <h2>columnFilter</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The <span class="codetext">&lt;columnFilter&gt;</span> element configures one filter per table column within <span class="codetext">&lt;pureTable&gt;</span>.</p>
+            <p>The attribute <span class="codetext">filter</span> determines the values to be filtered.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute name</th>
+                        <th>Usage</th>
+                        <th>Attribute values</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>caseSensitive</td>
+                        <td>optional</td>
+                        <td>true, false</td>
+                        <td>true</td>
+                        <td>Controls consideration of case sensitivity for filtering<br />true = case-sensitive filtering is considered<br />false = case-sensitive filtering is not considered</td>
+                    </tr>
+                    <tr>
+                        <td>filter</td>
+                        <td>required for type="text"</td>
+                        <td />
+                        <td />
+                        <td>Defines the filter text: The wildcards * and ? can be used in the usual manner. The &lt; filters strings which reach up to this character.</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>optional</td>
+                        <td>text<br />combo</td>
+                        <td>text</td>
+                        <td>text = creates underneath the header row a filter for free text.<br />combo = creates, underneath the header row, a filter as a drop-down list box, which contains all the values of the respective column.</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>optional</td>
+                        <td>default, multi</td>
+                        <td>default</td>
+                        <td>Shows the possible filter values in a drop-down list box.<br />default = shows the possible filter values in a drop-down list box<br />multi = shows the possible filter values in a drop-down list box with check boxes</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Allowed sub-elements</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>none</td>
+                        <td />
+                    </tr>
+                </tbody>
+            </table>
+            <p class="Precondition">Table with filter whose values are selected in a drop-down list box:</p>
+            <p>The following example shows a table, which lists the name of the circular transfer system and, of its components of type <span class="codetext">'Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator'</span>, the parameters <span class="codetext">Place</span> and <span class="codetext">Name</span>. The number of displayed items is limited by selection of filters in drop-down list boxes.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable variable="x" receiver="=rmos('Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator')"&gt;
+	&lt;filters&gt;
+		&lt;columnFilter type="combo"/&gt;
+		&lt;columnFilter type="combo"/&gt;
+		&lt;columnFilter type="combo"/&gt;
+	&lt;/filters&gt;
+	&lt;column heading="No"&gt;
+		&lt;label text="=mroot.rmos('Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator').indexOf(x)"/&gt;
+	&lt;/column&gt;
+	&lt;column hSizeMaxPx="50" heading="Place"&gt;
+		&lt;label text="=x.$Place"/&gt;
+	&lt;/column&gt;
+	&lt;column hSizeMinPx="150" heading="Name"&gt;
+		&lt;label text="x.name"&gt;
+			&lt;link receiver="x" ref="IOs"/&gt;
+		&lt;/label&gt;
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <img src="../Pictures/form-ui_filter_combo.png" alt="" />
+            </p>
+            <p class="Bridgehead">Table with filter values in a drop-down list box which are selectable by check boxes:</p>
+            <p>The following example shows a table, which lists the name of the circular transfer system and, of its components of type <span class="codetext">'Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator'</span>, the parameters <span class="codetext">Place</span> and <span class="codetext">Name</span>. The number of displayed items is limited by selection of filters in drop-down list boxes with check boxes.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable variable="x" receiver="=rmos('Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator')"&gt;
+	&lt;filters&gt;
+		&lt;columnFilter type="combo"/&gt;
+		&lt;columnFilter type="combo" /&gt;
+		&lt;columnFilter type="combo"/&gt;
+	&lt;/filters&gt;
+	&lt;column heading="No"&gt;
+		&lt;label text="=mroot.rmos('Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator').indexOf(x)"/&gt;
+	&lt;/column&gt;
+	&lt;column hSizeMinPx="110" heading="Place"&gt;
+		&lt;label text="=x.$Place"/&gt;
+	&lt;/column&gt;
+	&lt;column hSizeMinPx="300" heading="Name"&gt;
+		&lt;label text="x.name"&gt;
+			&lt;link receiver="x" ref="IOs"/&gt;
+		&lt;/label&gt;
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <img src="../Pictures/form-ui_puretable11.png" alt="" />
+            </p>
+            <p class="Bridgehead">Filter searches strings with limited length</p>
+            <p>The following tables show how the sign <span class="codetextbold">&lt;</span> in a filter definition for pureTable is configured, in order to filter strings which only reach until to a specific character. The following figure shows the unfiltered results on the left side and the filtered results on the right side.</p>
+            <p>
+                <img src="../Pictures/form-ui_filter.png" alt="" />
+            </p>
+            <p class="Bridgehead">Filter searches strings considering case sensitivity</p>
+            <p>The following table shows how considering the case-sensitivity influences the number of filtered values.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;table columns="2"&gt;
+	&lt;td&gt;
+		&lt;label&gt;caseSensitive="false"&lt;/label&gt;
+	&lt;/td&gt;
+	&lt;td&gt;
+		&lt;label&gt;caseSensitive="true"&lt;/label&gt;
+	&lt;/td&gt;
+	&lt;td&gt;
+		&lt;pureTable receiver="=mos"&gt;
+			&lt;filters&gt;
+				&lt;columnFilter type="text" caseSensitive="false" /&gt;
+			&lt;/filters&gt;
+			&lt;column heading="Name"&gt;<br /> 				&lt;label text="this.name" /&gt;
+			&lt;/column&gt;
+		&lt;/pureTable&gt;
+	&lt;/td&gt;
+	&lt;td&gt;
+		&lt;pureTable receiver="=mos"&gt;
+			&lt;filters&gt;
+				&lt;columnFilter type="text" caseSensitive="true" /&gt;
+			&lt;/filters&gt;
+			&lt;column heading="Name"&gt;
+				&lt;label text="this.name" /&gt;
+			&lt;/column&gt;
+		&lt;/pureTable&gt;
+	&lt;/td&gt;
+&lt;/table&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <img src="../Pictures/form-ui_filter_casesensitive.png" alt="" />
+            </p>
+            <p class="Bridgehead">Text in header is broken with \n at any point</p>
+            <p>The following tables show how the text in a header is broken by <span class="codetextbold">\n</span>.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable receiver="=List{1,2,3,4,5,6,7,8,9}" variable="x"&gt;
+	&lt;column heading="Heading Line 1\nHeading Line 2\nHeading Line 3" hSizeMaxPx="150"&gt;
+		&lt;label text="'Cell '+x"&gt;&lt;/label&gt;
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <img src="../Pictures/form-ui_puretable13.png" alt="" />
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

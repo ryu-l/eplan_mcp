@@ -1,0 +1,40 @@
+# Placement3DService Class Members
+
+Placement3DService Class Members
+
+The following tables list the members exposed by [Placement3DService](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Placement3DService.html).
+
+Public Constructors
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Constructor | [Placement3DService Constructor](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Placement3DService~_ctor.html) | Default constructor |
+
+[Top](#top)
+
+Public Methods
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Method | [CheckIfPlacementsCollide](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Placement3DService~CheckIfPlacementsCollide.html) | Checks whether two 3d objects collides each other. |
+| Public Method | [CreateMountingSurface](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Placement3DService~CreateMountingSurface.html) | Creates mounting surface for the face identified by points and normal vector. |
+| Public Method | [Dispose](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Placement3DService~Dispose().html) | Destructor |
+| Public Method | [GetDrillingsFromDrillingPattern](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Placement3DService~GetDrillingsFromDrillingPattern.html) | Returns drilling objects which are generated based on drilling pattern assigned to 3d placement part. |
+| Public Method | [InterpretAutomatically](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Placement3DService~InterpretAutomatically.html) | Overloaded. Starts automatic interpretation. |
+| Public Method | [UpdatePartPlacement](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Placement3DService~UpdatePartPlacement.html) | Updates part placements |
+
+[Top](#top)
+
+See Also
+
+#### Reference
+
+[Placement3DService Class](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Placement3DService.html)
+  
+[Eplan.EplApi.HEServices Namespace](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices_namespace.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Placement3DService)

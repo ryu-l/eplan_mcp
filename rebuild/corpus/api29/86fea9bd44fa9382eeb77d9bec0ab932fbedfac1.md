@@ -1,0 +1,32 @@
+# SYMBLIB_NAME Property (SymbolLibraryPropertyList)
+
+SYMBLIB\_NAME Property (SymbolLibraryPropertyList)
+
+Symbol library # 15000. This property isn't indexed, and is read-only.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [SYMBLIB\_NAME(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.SymbolLibraryPropertyList~SYMBLIB_NAME(Int32).html) | Symbol library # 15000. This property isn't indexed, and is read-only. |
+| [SYMBLIB\_NAME](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.SymbolLibraryPropertyList~SYMBLIB_NAME().html) | Symbol library # 15000. |
+
+Remarks
+
+This property is read-only..
+
+Name of the symbol library, determined from the database name.
+
+See Also
+
+#### Reference
+
+[SymbolLibraryPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.SymbolLibraryPropertyList.html)
+  
+[SymbolLibraryPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.SymbolLibraryPropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.SymbolLibraryPropertyList~SYMBLIB_NAME)

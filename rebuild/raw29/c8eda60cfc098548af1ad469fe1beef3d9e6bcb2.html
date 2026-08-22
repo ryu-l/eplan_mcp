@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The &lt;tree&gt; element is used to display project components in a tree structure. The root of the tree is specified by the root attribute and the br..." /><title>tree</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refformui_r_tree.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1207"></a>
+            <MadCap:concept term="Referenz;Form-UI" /><a name="kanchor839"></a>
+            <h2>tree</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The <span class="codetext">&lt;tree&gt;</span> element is used to display project components in a tree structure. The root of the tree is specified by the <span class="codetext">root</span> attribute and the branches to be displayed are specified by the <span class="codetext">&lt;treeNode&gt;</span> sub-element. Furthermore, the display permits the background color, foreground color, horizontal and vertical expansion and visibility to be defined (see <a href="refformui_r_treenode.htm" class="MCXref xref" xrefformat="{para}">treeNode</a>).</p>
+            <p>Furthermore, the names of the project components can be manipulated and supplemented with symbols.</p>
+            <p>If the new <span class="codetext">&lt;treeNotification&gt;</span> element is used in combination with the <span class="codetext">&lt;onClickEvent&gt;</span> sub-element, actions can be executed via the displayed project components. (see <a href="refformui_r_treenotifications.htm" class="MCXref xref" xrefformat="{para}">treeNotifications</a> and <a href="refformui_r_onclickevent.htm" class="MCXref xref" xrefformat="{para}">onClickEvent</a>).</p>
+            <p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Attribute name</th>
+                            <th>Usage</th>
+                            <th>Attribute values</th>
+                            <th>Default value</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>bColor</td>
+                            <td>optional</td>
+                            <td>0,0,0 to 255,255,255</td>
+                            <td>System color</td>
+                            <td>Background color as RGB value</td>
+                        </tr>
+                        <tr>
+                            <td>fColor</td>
+                            <td>optional</td>
+                            <td>0,0,0 to 255,255,255</td>
+                            <td>System color</td>
+                            <td>Foreground color as RGB value</td>
+                        </tr>
+                        <tr>
+                            <td>hSize</td>
+                            <td>optional</td>
+                            <td />
+                            <td />
+                            <td>Width of the element<br />EEC = width in characters<br />Web application = width in pixels</td>
+                        </tr>
+                        <tr>
+                            <td>root</td>
+                            <td>required</td>
+                            <td />
+                            <td />
+                            <td>The specified formula must yield a project component that serves as the root of the tree structure.</td>
+                        </tr>
+                        <tr>
+                            <td>visible</td>
+                            <td>optional</td>
+                            <td>true, false</td>
+                            <td>true</td>
+                            <td>true = table is visible<br />true = table is invisible</td>
+                        </tr>
+                        <tr>
+                            <td>vSize</td>
+                            <td>optional</td>
+                            <td />
+                            <td />
+                            <td>Height of the element<br />EEC = height in characters<br />Web application = height in pixels</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Allowed sub-elements</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="refformui_r_treenode.htm" class="MCXref xref" xrefformat="{para}">treeNode</a>
+                            </td>
+                            <td>0..1</td>
+                        </tr>
+                        <tr>
+                            <td><a href="refformui_r_treenotifications.htm" class="MCXref xref" xrefformat="{para}">treeNotifications</a>
+                            </td>
+                            <td>0..1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="Bridgehead">Tree structure with icons in front of every project component:</p>
+                <p>The following example displays a tree structure that shows a different icon in front of each project component, depending on a parameter value.</p>
+                <div class="example">
+                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example of code for tree structure with symbols:</a></p></span>
+                        <div class="MCDropDownBody dropDownBody">
+                            <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;form title="project tree" id="projectTree"&gt;
+	&lt;tree root="=ref('Documentation_UI_Configuration.Mechatronic.Documentation')"&gt;
+		&lt;treeNode name="='Node: '+ node.name" 
+			icon="=	if ($found = true)
+				then type('Documentation_UI_Configuration.ProjectLibrary.
+					HelpObjects.Images.action').image
+				else type('Documentation_UI_Configuration.ProjectLibrary.
+					HelpObjects.Images.next_class').image endif"
+				children="=node.mos.flatten" /&gt;
+	&lt;/tree&gt;<br />&lt;/form&gt;</code></pre>
+                            </p>
+                            <p class="Bridgehead">Result:</p>
+                            <p>
+                                <img src="../Pictures/form-ui_tree_mit_symbolen.png" alt="" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="Bridgehead">Tree structure in which each project component is preceded by an icon that triggers an action when clicked:</p> <p>The following example displays a tree structure that shows a different icon in front of each project component, depending on a parameter value. The project components have stored a parameter value that is used by an action to calculate a value to be displayed. The action is triggered by clicking the project component in the tree structure.</p><div class="example"><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example of code for tree structure with actions and symbols:</a></p></span><div class="MCDropDownBody dropDownBody"><p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;form title="project tree with action" id="projectTreeAction"&gt;
+	&lt;tree root="=ref('Documentation_UI_Configuration.Mechatronic.Documentation')"&gt;
+		&lt;treeNode name="='Node: '+ node.name" 
+			icon="=	if ($found = true)
+				then type('Documentation_UI_Configuration.ProjectLibrary.
+					HelpObjects.Images.action').image
+				else type('Documentation_UI_Configuration.ProjectLibrary.
+					HelpObjects.Images.next_class').image endif"
+				children="=node.mos.flatten" /&gt;
+		&lt;treeNotifications&gt;
+			&lt;onClickEvent&gt;
+				&lt;performEvent name="Documentation_UI_Configuration.ProjectLibrary.
+					HelpObjects.CalculateCoordinateAction"
+					arguments="=List{node.$Coordinate, this}" /&gt;
+			&lt;/onClickEvent&gt;
+		&lt;/treeNotifications&gt;
+	&lt;/tree&gt;
+	&lt;line&gt;
+		&lt;label text="='Calculated cardinal point: '"&gt;&lt;/label&gt;
+		&lt;label text="=$CardinalPoints"&gt;&lt;/label&gt;
+	&lt;/line&gt;
+&lt;/form&gt;</code></pre></p><p class="Bridgehead">Result:</p><p><img src="../Pictures/form-ui_tree_mit_action.png" alt="" /></p></div></div></div></p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+# FUNC_TERMINAL_SWITCHABLE_JUMPER_INTERN(Int32) Property
+
+FUNC\_TERMINAL\_SWITCHABLE\_JUMPER\_INTERN(Int32) Property
+
+Switching jumper (internal) # 20291. This property isn't indexed.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue FUNC_TERMINAL_SWITCHABLE_JUMPER_INTERN( 
+   int index
+) {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ FUNC_TERMINAL_SWITCHABLE_JUMPER_INTERN {
+   PropertyValue^ get(int index);
+   void set (int index, PropertyValue^ value);
+}
+```
+```
+
+#### Parameters
+
+*index*
+
+#### Property Value
+
+Returns property value of type System.Int64.
+
+Remarks
+
+Shows the state of the switching jumper on the internal side of the terminal:
+
+0 = None,
+
+1 = Open,
+
+2 = Closed.
+
+The "Closed" setting affects the logic (connections, potentials, etc.). If this setting has been selected for a terminal, a switching jumper connection to the next terminal will be created. The "Open" setting does not affect the logic; it only serves to recognize the switching state.
+
+See Also
+
+#### Reference
+
+[Placement3DPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList.html)
+  
+[Placement3DPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_TERMINAL_SWITCHABLE_JUMPER_INTERN.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_TERMINAL_SWITCHABLE_JUMPER_INTERN(Int32))

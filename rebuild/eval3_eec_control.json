@@ -1,0 +1,310 @@
+{
+ "creating a configuration by importing an XML file": {
+  "官方EEC": {
+   "latency": 0.742668867111206,
+   "results": [
+    {
+     "title": "Creating a configuration by importing an XML file",
+     "score": 0.7861
+    },
+    {
+     "title": "Creating a configuration by importing an XML file",
+     "score": 0.7861
+    },
+    {
+     "title": "Part 1 - Creating a configuration by importing a file",
+     "score": 0.7855
+    },
+    {
+     "title": "Part 1 - Creating a configuration by importing a file",
+     "score": 0.7855
+    },
+    {
+     "title": "Creating a configuration by importing an XML file",
+     "score": 0.7737
+    }
+   ]
+  },
+  "本地2026": {
+   "latency": 0.17330694198608398,
+   "results": [
+    {
+     "title": "Part 1 - Creating a configuration by importing a file",
+     "score": 0.8027
+    },
+    {
+     "title": "Creating a configuration by importing an XML file",
+     "score": 0.7891
+    },
+    {
+     "title": "Task: Creating a configuration by importing",
+     "score": 0.7692
+    },
+    {
+     "title": "Action: XSettingsImport",
+     "score": 0.7575
+    },
+    {
+     "title": "EPLAN Engineering Configuration",
+     "score": 0.7369
+    }
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.14465093612670898,
+   "results": [
+    {
+     "title": "Part 1 - Creating a configuration by importing a file",
+     "score": 0.8055
+    },
+    {
+     "title": "Creating a configuration by importing an XML file",
+     "score": 0.7715
+    },
+    {
+     "title": "Action: XSettingsImport",
+     "score": 0.755
+    },
+    {
+     "title": "Task: Creating a configuration by importing",
+     "score": 0.7542
+    },
+    {
+     "title": "Creating a configuration by importing an IMX file",
+     "score": 0.7401
+    }
+   ]
+  }
+ },
+ "formula language abs function": {
+  "官方EEC": {
+   "latency": 0.919187068939209,
+   "results": [
+    {
+     "title": "abs()",
+     "score": 0.7879
+    },
+    {
+     "title": "abs()",
+     "score": 0.7879
+    },
+    {
+     "title": "Inserting formulas into the parameters of installed components",
+     "score": 0.6953
+    },
+    {
+     "title": "Inserting formulas into the parameters of installed components",
+     "score": 0.6953
+    },
+    {
+     "title": "Parameterization with formulas",
+     "score": 0.6941
+    }
+   ]
+  },
+  "本地2026": {
+   "latency": 0.0830230712890625,
+   "results": [
+    {
+     "title": "abs()",
+     "score": 0.7561
+    },
+    {
+     "title": "Dialog Format: Calculation",
+     "score": 0.6842
+    },
+    {
+     "title": "Basic types",
+     "score": 0.6768
+    },
+    {
+     "title": "Inserting formulas into the parameters of installed components",
+     "score": 0.672
+    },
+    {
+     "title": "Dialog Format: Calculation",
+     "score": 0.6713
+    }
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.0665278434753418,
+   "results": [
+    {
+     "title": "abs()",
+     "score": 0.7954
+    },
+    {
+     "title": "Basic types",
+     "score": 0.6773
+    },
+    {
+     "title": "Inserting formulas into the parameters of installed components",
+     "score": 0.6702
+    },
+    {
+     "title": "= for Boolean",
+     "score": 0.6624
+    },
+    {
+     "title": "asBoolean()",
+     "score": 0.6614
+    }
+   ]
+  }
+ },
+ "model variables administration": {
+  "官方EEC": {
+   "latency": 0.6071639060974121,
+   "results": [
+    {
+     "title": "Model variables: Overview",
+     "score": 0.7867
+    },
+    {
+     "title": "Model variables: Overview",
+     "score": 0.7867
+    },
+    {
+     "title": "Model variables",
+     "score": 0.7818
+    },
+    {
+     "title": "Model variables",
+     "score": 0.7818
+    },
+    {
+     "title": "Model variables: Overview",
+     "score": 0.7814
+    }
+   ]
+  },
+  "本地2026": {
+   "latency": 0.06824302673339844,
+   "results": [
+    {
+     "title": "Model variables: Overview",
+     "score": 0.7881
+    },
+    {
+     "title": "Menu Model",
+     "score": 0.7711
+    },
+    {
+     "title": "Model variables",
+     "score": 0.7637
+    },
+    {
+     "title": "Model variables",
+     "score": 0.7531
+    },
+    {
+     "title": "Set model variables in EEC",
+     "score": 0.7455
+    }
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.03906512260437012,
+   "results": [
+    {
+     "title": "Model variable: Term definition",
+     "score": 0.7719
+    },
+    {
+     "title": "Model variables",
+     "score": 0.767
+    },
+    {
+     "title": "Model variables",
+     "score": 0.7652
+    },
+    {
+     "title": "Menu Model",
+     "score": 0.7611
+    },
+    {
+     "title": "Configuring model variables",
+     "score": 0.7433
+    }
+   ]
+  }
+ },
+ "EEC scripting reference": {
+  "官方EEC": {
+   "latency": 0.6533348560333252,
+   "results": [
+    {
+     "title": "SCRIPTING",
+     "score": 0.7967
+    },
+    {
+     "title": "SCRIPTING",
+     "score": 0.7967
+    },
+    {
+     "title": "Creating a method in EEC",
+     "score": 0.7868
+    },
+    {
+     "title": "Creating a method in EEC",
+     "score": 0.7868
+    },
+    {
+     "title": "Modules: Overview",
+     "score": 0.7713
+    }
+   ]
+  },
+  "本地2026": {
+   "latency": 0.0744941234588623,
+   "results": [
+    {
+     "title": "Scripting methods: Overview",
+     "score": 0.7541
+    },
+    {
+     "title": "LicenseOptions Enumeration",
+     "score": 0.7497
+    },
+    {
+     "title": "getAllLibraryNames()",
+     "score": 0.7357
+    },
+    {
+     "title": "getAllMechatronicTopLevelComponents(List libraryNames)",
+     "score": 0.7321
+    },
+    {
+     "title": "getAllProjectNames()",
+     "score": 0.7294
+    }
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.03736710548400879,
+   "results": [
+    {
+     "title": "EEC",
+     "score": 0.7316
+    },
+    {
+     "title": "Changing a Job definition to import key-value pairs",
+     "score": 0.7278
+    },
+    {
+     "title": "LicenseOptions Enumeration",
+     "score": 0.7193
+    },
+    {
+     "title": "BASIC",
+     "score": 0.7191
+    },
+    {
+     "title": "com.mind8.script.debug.modus.enable",
+     "score": 0.7157
+    }
+   ]
+  }
+ }
+}

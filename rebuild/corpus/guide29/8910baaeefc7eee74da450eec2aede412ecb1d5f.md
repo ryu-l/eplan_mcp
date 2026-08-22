@@ -1,0 +1,9 @@
+# P022012: <x>
+
+### Description
+
+This message is output by the EPLAN Engineering Configuration. By default this message is output as a Warning. <x> stands for text that can be variable. The message category can be changed at any time.
+
+![](../Pictures/Gui/ALL/note.png) Note:
+
+Using a new check run (any desired scheme) this module-specific message can be deleted from the message management dialog.

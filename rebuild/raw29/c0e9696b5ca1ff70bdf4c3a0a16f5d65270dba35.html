@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Overviews|EPLAN Actions|Overview">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="author" content="bbe" />
+        <meta name="description" content="&#160;" /><title>Action: partslist</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/availableactions_o_partslist.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2526"></a>
+            <MadCap:concept term="EPLAN Plattform" /><a name="kanchor2985"></a>
+            <h2>Action: <notrans>partslist</notrans></h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <br />
+            <table>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><b style="font-weight: bold;">Parameter</b> <![CDATA[ ]]></p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text"><b style="font-weight: bold;">Description</b> <![CDATA[ ]]></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">TYPE </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Type of task to be carried out:<br /><notrans>IMPORT: </notrans>Import <a href="Glossary_o_stuecklisten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">bills of materials</a><br /><notrans>EXPORT: </notrans>Export bills of materials<br /><notrans>IMPORTTOSYSTEM: </notrans>Import into the parts management<br /><notrans>EXPORTFROMSYSTEM: </notrans>Export from the parts management<br /><notrans>DELETESTOREDPROPERTIES: </notrans>Delete saved <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> from the project</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">PROJECTNAME </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Project name with complete file path (optional).<br />If nothing is entered, the selected project will be used if the action is to be run over the user interface (e.g. via script or the toolbar). When executing from the Windows command line, PROJECTNAME must be specified or <span class="codetext">ProjectAction</span> has to be used before that. Otherwise a system message will appear.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">IMPORTFILE </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The directory and the name of the file to be imported must be specified here. Applies only for IMPORT.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">EXPORTFILE </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The directory and the name of the file to be exported must be specified here. The system adds a file name extension automatically. Applies only to EXPORT.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">FORMAT </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Optional: </p>
+                        <p class="Tabelle_Text">File <a href="Glossary_o_formate.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">formats</a> for the import <notrans_i>(TYPE:IMPORT)</notrans_i> / export <notrans_i>(TYPE:EXPORT)</notrans_i> of bills of materials:</p>
+                        <ul style="list-style: disc;" type="disc">
+                            <li class="Tabelle-Text" value="1">
+                                <notrans>XPalXmlExporter</notrans>
+                            </li>
+                            <li class="Tabelle-Text" value="2">or <notrans>XPalCSVConverter</notrans></li>
+                        </ul>
+                        <p class="Tabelle_Text">Default value: <notrans>XPalXmlExporter</notrans></p>
+                        <p class="Tabelle_Text"> <![CDATA[ ]]></p>
+                        <p class="Tabelle_Text">File format for importing into the parts management (IMPORTTOSYSTEM):</p>
+                        <ul style="list-style: disc;" type="disc">
+                            <li class="Tabelle-Text" value="1">
+                                <notrans>IXPamImportE21</notrans>
+                            </li>
+                            <li class="Tabelle-Text" value="2">
+                                <notrans>IXPamImportE5</notrans>
+                            </li>
+                            <li class="Tabelle-Text" value="3">
+                                <notrans>IXPamImportText</notrans>
+                            </li>
+                            <li class="Tabelle-Text" value="4">
+                                <notrans>IXPamImportCSV</notrans>
+                            </li>
+                            <li class="Tabelle-Text" value="5">
+                                <notrans>IXPamImportEcad</notrans>
+                            </li>
+                            <li class="Tabelle-Text" value="6">
+                                <notrans>IXPamImportCSVAddresses</notrans>
+                            </li>
+                            <li class="Tabelle-Text" value="7">
+                                <notrans>XPamImportXml</notrans>
+                            </li>
+                        </ul>
+                        <p class="Tabelle_Text">Default value: <notrans>XPamImportXml</notrans></p>
+                        <p class="Tabelle_Text"> <![CDATA[ ]]></p>
+                        <p class="Tabelle_Text">File format for exporting from the parts management (EXPORTFROMSYSTEM):</p>
+                        <ul style="list-style: disc;" type="disc">
+                            <li class="Tabelle-Text" value="1">
+                                <notrans>IXPamImportText</notrans>
+                            </li>
+                            <li class="Tabelle-Text" value="2">
+                                <notrans>IXPamImportCSV</notrans>
+                            </li>
+                            <li class="Tabelle-Text" value="3">
+                                <notrans>IXPamImportCSVAddresses</notrans>
+                            </li>
+                            <li class="Tabelle-Text" value="4">
+                                <notrans>XPamExportXml</notrans>
+                            </li>
+                        </ul>
+                        <p class="Tabelle_Text">Default value: <notrans>XPamExportXml</notrans></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">SQLFILTERPART </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Optional: SQL filter for advanced users.<br />Default value: <notrans>1 = 1</notrans></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">SQLFILTERADDRESS </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Optional: SQL filter for advanced users (is used with the format "IXPamImportCSVAddresses"). Is used for the export of addresses.<br />Default value: <notrans>1 = 1</notrans></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">SQLFILTERCONSTRUCTION</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Optional: SQL filter for advanced users. Is used for the export of <a href="Glossary_o_bohrbilder.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">drilling patterns</a>.</p>
+                        <p class="Tabelle_Text">Default value: <notrans>1 = 0</notrans></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">SQLFILTERTERMINAL</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Optional: SQL filter for advanced users. Is used for the export of <a href="Glossary_o_anschlussbilder.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection point patterns</a>.</p>
+                        <p class="Tabelle_Text">Default value: <notrans>1 = 0</notrans></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">SQLFILTERACCESSORYLIST</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Optional: SQL filter for advanced users. Is used for the export of accessory lists.</p>
+                        <p class="Tabelle_Text">Default value: <notrans>1 = 0</notrans></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">SQLFILTERACCESSORYPLACEMENT</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Optional: SQL filter for advanced users. Is used for the export of accessory placements.</p>
+                        <p class="Tabelle_Text">Default value: <notrans>1 = 0</notrans></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">CFGFILE </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Optional: Directory and file name of the configuration file.<br />Default value: currently used configuration file.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">FIELDASSIGNMENTSCHEME </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Optional: Name of the scheme of the field assignment for importing parts.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">MODE </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Optional: Import mode. Supported modes are:</p>
+                        <ul style="list-style: disc;" type="disc">
+                            <li class="Tabelle-Text" value="1">
+                                <notrans>0: </notrans>Add new records only (default value)</li>
+                            <li class="Tabelle-Text" value="2">
+                                <notrans>1: </notrans>Update existing records only</li>
+                            <li class="Tabelle-Text" value="3">
+                                <notrans>2: </notrans>Update existing records and add new ones</li>
+                        </ul>
+                        <p class="Tabelle_Text">
+                            <br />When specifying an invalid value, the default value 0 will be used.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">ADDITIONAL_LANGUAGE </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Optional. Only applies if TYPE = IMPORTTOSYSTEM. If the value of this parameter is 1, the multilingual properties will be updated with other language values. If the parameter is left out, the file content will replace the values of multilingual properties. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">CONFIGSCHEME </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Configuration scheme for the deletion of saved properties (optional).<br />Default value: most recently used configuration scheme.</p>
+                    </td>
+                </tr>
+            </table>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">If the action <span class="codetext">partslist</span> is to enable the complete export of all <a href="Glossary_o_datensatztypen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">record types</a> from parts management (<span class="codetext">TYPE=EXPORTFROMSYSTEM</span>), the parameters <span class="codetext">SQLFILTERCONSTRUCTION</span>, <span class="codetext">SQLFILTERTERMINAL</span>, <span class="codetext">SQLFILTERACCESSORYLIST</span>, and <span class="codetext">SQLFILTERACCESSORYPLACEMENT</span> must be transferred with the value 1=1 in addition to the parameters <span class="codetext">SQLFILTERPART</span> and <span class="codetext">SQLFILTERADDRESS</span>.</p>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock_Heading">Export: </p>
+                        <div class="eplan_code"><pre class="Eplan_Code" xml:space="preserve">partslist 
+/TYPE:EXPORT 
+/PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk 
+/FORMAT:XPalCSVConverter 
+/EXPORTFILE:d:\temp\PartsList.csv</pre>
+                        </div>
+                        <p class="Infoblock"> <![CDATA[ ]]></p>
+                        <p class="Infoblock_Heading">Import: </p>
+                        <div class="eplan_code"><pre class="Eplan_Code" xml:space="preserve">partslist 
+/TYPE:IMPORT 
+/PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk 
+/FORMAT:XPalCSVConverter 
+/IMPORTFILE:d:\temp\PartsList.csv</pre>
+                        </div>
+                        <p class="Infoblock"> <![CDATA[ ]]></p>
+                        <p class="Infoblock_Heading">Delete saved properties from the project: </p>
+                        <div class="eplan_code"><pre class="Eplan_Code" xml:space="preserve">partslist 
+/TYPE:DELETESTOREDPROPERTIES 
+/PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk 
+/CONFIGSCHEME:config_scheme</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

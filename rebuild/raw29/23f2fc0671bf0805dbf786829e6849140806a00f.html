@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Create in the T_Mechatronic_ModularSystem library the ECAD unit, and in it, the WiringDiagram subunit:" /><title>Import EPLAN&#160;Electric&#160;P8 macros</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/tutp8_h_import_p8_macros.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor197"></a>
+            <MadCap:concept term="EPLAN Electric P8" /><a name="aanchor198"></a>
+            <MadCap:concept term="Tutorial" />
+            <h2>Import EPLAN&#160;Electric&#160;P8 macros</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Create in the <span class="important">T_Mechatronic_ModularSystem</span> library the <span class="important">ECAD</span> unit, and in it, the <span class="important">WiringDiagram</span> subunit:</p>
+            <ol>
+                <li value="1">Select the <span class="important">T_Mechatronic_ModularSystem</span> library.</li>
+                <li value="2">Select <span class="gui">New &gt; Unit</span> in the shortcut menu.</li>
+            </ol>
+            <p>
+                <img src="../Pictures/tutorial_p8_unit_ecad.png" alt="" />
+            </p>
+            <ol data-mc-continue="true">
+                <li value="3">In the <span class="gui">Name</span> field, enter the text <span class="important">ECAD</span>.</li>
+                <li value="4">Select the <span class="important">ECAD</span> unit.</li>
+                <li value="5">Repeat steps 2 to 3. Enter the unit name <span class="important">WiringDiagram</span> in the process.</li>
+            </ol>
+            <p>The unit structure should then look like this:</p>
+            <p>
+                <img src="../Pictures/tutorial_p8_units1.png" alt="" />
+            </p>
+            <p>In the <span class="important">WiringDiagram</span> unit, insert a schematic component:</p>
+            <p>
+                <img src="../Pictures/tutorial_p8_Schaltplan1.png" alt="" />
+            </p>
+            <ol>
+                <li value="1">Select the <span class="important">WiringDiagram</span> unit.</li>
+                <li value="2">Select <span class="gui">New &gt; ECAD &gt; Schematic</span> from the shortcut menu.</li>
+                <li value="3">In the <span class="gui">Name</span> field, enter the text <span class="important">WiringDiagram</span>.</li>
+                <li value="4">In the <span class="gui">Resource location</span> panel, click <span class="gui">Import</span>.</li>
+                <li value="5">Highlight the <span class="codetext">Template_Project.zw1</span> file.</li>
+                <li value="6">Confirm with <span class="gui">Open</span>.</li>
+            </ol>
+            <p>In this process, the <span class="important">Parameter</span> unit was created in addition. This contains the parameters <span class="important">Location, PageNumber, Plant, Report, Script, ScriptArguments</span> and <span class="important">SubPageNumber</span>. The names of the parameters can be set under <span class="gui">Model &gt; Model Variables</span>. This way it is possible to define the structure identifiers in P8 in the EEC.</p>
+            <p>Launch the mass import of macros:</p>
+            <ol>
+                <li value="1">Select the <span class="important">ECAD</span> unit.</li>
+                <li value="2">Select <span class="gui">Create Model from Resources</span> from the popup menu.</li>
+            </ol>
+            <p>The <span class="gui">Create Model from Resources</span> wizard opens.</p>
+            <ol data-mc-continue="true">
+                <li value="3">Enter the path for the sources in the <span class="gui">Source</span> field:</li>
+            </ol><pre><code class="language-markup">&lt;EEC installation folder&gt;\resources\Tutorial\P8</code></pre>
+            <ol data-mc-continue="true">
+                <li value="4">Confirm via <span class="gui">[Next &gt;]</span>.</li>
+            </ol>
+            <p>In the next wizard window, the macro files are listed, among other things:</p>
+            <p>
+                <img src="../Pictures/tutorial_p8_modell_aus_ressourcen_erzeugen2.png" alt="" />
+            </p>
+            <ol data-mc-continue="true">
+                <li value="5">Deactivate all objects that do not reference macros.</li>
+                <li value="6">For the <span class="codetext">/Page/page.ema</span> macro, select the <span class="gui">Page</span> class.</li>
+                <li value="7">Apply the new class with <span class="gui">[Set]</span>.</li>
+                <li value="8">Press <span class="gui">[Finish]</span> to confirm.</li>
+            </ol>
+            <p>Due to the mass import, the units <span class="important">Page</span> and <span class="important">PLC_Inputs</span> have been created, and they contain the macros. The parameters have been adopted from the macros, and inserted in the <span class="important">Parameters</span> unit:</p>
+            <p>
+                <img src="../Pictures/tutorial_p8_unitstruktur_mit_makros.png" alt="" />
+            </p>
+            <p>Specify an abstract page as super class.</p>
+            <ol>
+                <li value="1">Select the <span class="important">Page</span> unit.</li>
+                <li value="2">Select <span class="gui">New &gt; ECAD &gt; Page</span>.</li>
+                <li value="3">In the <span class="gui">Name</span> field, enter the text <span class="important">abstract_Page</span>.</li>
+                <li value="4">Select the <span class="gui">Abstract</span> check box.</li>
+                <li value="5">Open the <span class="gui">Parameters</span> editor page.</li>
+                <li value="6">Insert the parameters <span class="important">Plant, Location, PageDescription</span> and <span class="important"> PageNumber</span>.</li>
+            </ol>
+            <p>
+                <img src="../Pictures/tutorial_p8_parameter_abstrakte_seite.png" alt="" />
+            </p>
+            <p>The parameters can be inserted easily in the editor via Drag &amp; Drop. To do so, highlight the parameters (1) and drag them to the editor (2). The parameters are then sorted exclusively in alphabetical order in the editor. The sequence can be changed via the arrows <span class="gui">Move up</span> and <span class="gui">Move down</span>.</p>
+            <p>Assign the <span class="important">abstract_page</span> super class to the <span class="important">Page</span> page.</p>
+            <ol>
+                <li value="1"><a href="glossary_o_double.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Double</a>-click and open the <span class="important">Page</span> page.</li>
+                <p>
+                    <img src="../Pictures/tutorial_p8_seite_oberklasse_aendern.png" alt="" />
+                </p>
+                <li value="2">In the <span class="gui">Super class</span> field, select the <span class="important">abstract_Page</span> class.</li>
+            </ol>
+            <p>Check the number of parameters. The structure parameters of the <span class="important">abstract_Page</span> super class must be included, as well as the parameters for the function texts and sockets of the macro file.</p>
+            <table>
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Standardized</th>
+                        <th>Type</th>
+                        <th>Declared in</th>
+                    </tr>
+                    <tr>
+                        <td>Input1</td>
+                        <td>false</td>
+                        <td><a href="glossary_o_socket.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Socket</a>
+                        </td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Input2</td>
+                        <td>false</td>
+                        <td>Socket</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Input3</td>
+                        <td>false</td>
+                        <td>Socket</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Input4</td>
+                        <td>false</td>
+                        <td>Socket</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Input5</td>
+                        <td>false</td>
+                        <td>Socket</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Input6</td>
+                        <td>false</td>
+                        <td>Socket</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Input7</td>
+                        <td>false</td>
+                        <td>Socket</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Input8</td>
+                        <td>false</td>
+                        <td>Socket</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Functiontext1</td>
+                        <td>false</td>
+                        <td><a href="glossary_o_string.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">String</a>
+                        </td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Functiontext2</td>
+                        <td>false</td>
+                        <td>String</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Functiontext3</td>
+                        <td>false</td>
+                        <td>String</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Functiontext4</td>
+                        <td>false</td>
+                        <td>String</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Functiontext5</td>
+                        <td>false</td>
+                        <td>String</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Functiontext6</td>
+                        <td>false</td>
+                        <td>String</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Functiontext7</td>
+                        <td>false</td>
+                        <td>String</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Functiontext8</td>
+                        <td>false</td>
+                        <td>String</td>
+                        <td>Page</td>
+                    </tr>
+                    <tr>
+                        <td>Plant</td>
+                        <td>false</td>
+                        <td>String</td>
+                        <td>abstractPage</td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td>false</td>
+                        <td>String</td>
+                        <td>abstractPage</td>
+                    </tr>
+                    <tr>
+                        <td>PageDescription</td>
+                        <td>false</td>
+                        <td>String</td>
+                        <td>abstractPage</td>
+                    </tr>
+                    <tr>
+                        <td>PageNumber</td>
+                        <td>false</td>
+                        <td>String</td>
+                        <td>abstractPage</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Each sensor has the parameters <span class="important">DT</span> and <span class="important">IP</span>, as seen in the example in the following figure for <span class="important">Sensor_Pressure</span>.</p>
+            <p>
+                <img src="../Pictures/tutorial_p8_sensor_parameter.png" alt="" />
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

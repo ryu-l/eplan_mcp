@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="External databases (Oracle, SQL server, etc.) with large data volumes continue to be maintained externally. Frequently, though, there are transparent ..." /><title>Using data sources as resources</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/eecbase_k_datasources_usage_of_datasources_as_resources.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1921"></a>
+            <MadCap:concept term="Basis" />
+            <h2>Using data sources as resources</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>External databases (Oracle, SQL server, etc.) with large data volumes continue to be maintained externally. Frequently, though, there are transparent models, for example, simple tables, where wire cross-sections are specified, certain part data are managed, etc. For such data formats (CSV files, MDL files, etc.), it often makes sense to transfer management to EEC.</p>
+            <p>All data sources, except DatabaseDataSource (with a Connection URL), therefore, are integrated into EEC in a manner similar to a new discipline. This has the following advantages:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">Data sources can be edited with the respective editors and are managed like discipline resources.</li>
+                <li class="Listitem_Normal" value="2">The editor to be used can be set in Eclipse via the file extensions.</li>
+                <li class="Listitem_Normal" value="3">The data can be internalized in the model.</li>
+                <li class="Listitem_Normal" value="4">Editing via <span class="gui">Edit Resource</span> is possible. Any open database connections will be closed automatically in the process.</li>
+                <li class="Listitem_Normal" value="5">Like with other disciplines, a default resource folder can be defined in the user preferences:</li>
+            </ul>
+            <p>
+                <img src="../Pictures/benutzervorgaben_datenquellen.png" alt="" />
+            </p>
+            <p>The user preferences for the connection pool are listed in detail in the following table.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th><a href="glossary_o_parameter.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Parameter</a> name</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Initial connection pool size</td>
+                        <td>1</td>
+                        <td>Number of connections to be captured at the start. This number should be greater than the minimum number, and less than the maximum size of the connection pool.</td>
+                    </tr>
+                    <tr>
+                        <td>Minimum size of the connection pool</td>
+                        <td>0</td>
+                        <td>Minimum number of connections that are served simultaneously.</td>
+                    </tr>
+                    <tr>
+                        <td>Maximum size of the connection pool</td>
+                        <td>3</td>
+                        <td>Maximum number of connections that are served simultaneously.</td>
+                    </tr>
+                    <tr>
+                        <td>Increment for pool increase</td>
+                        <td>2</td>
+                        <td>Number of connections that are added if the connection pool is exhausted.</td>
+                    </tr>
+                    <tr>
+                        <td>Maximum idle time of a connection in the pool</td>
+                        <td>300</td>
+                        <td>Time in seconds during which an unused connection remains in the pool until it is deleted.</td>
+                    </tr>
+                    <tr>
+                        <td>Maximum age of a connection in the pool</td>
+                        <td>28800</td>
+                        <td>Absolute time in seconds during which a connection exists in the pool before it is disconnected and deleted. Connections with few unused times are also removed. The maximum age is set to 0 by default.</td>
+                    </tr>
+                    <tr>
+                        <td>Number of connection attempts</td>
+                        <td>5</td>
+                        <td>Number of connection attempts before it is abandoned. If the attempt to connect is never to be abandoned, 0 must be entered.</td>
+                    </tr>
+                    <tr>
+                        <td>Pause between connection attempts</td>
+                        <td>1000</td>
+                        <td>Time in milliseconds between two connection attempts.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

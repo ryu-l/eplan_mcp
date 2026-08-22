@@ -1,0 +1,58 @@
+# FUNC_PLCCONFIGURATIONPROJECT_INDIRECT(Int32) Property
+
+FUNC\_PLCCONFIGURATIONPROJECT\_INDIRECT(Int32) Property
+
+Configuration project (indirect) # 20108. This property isn't indexed, and is read-only.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue FUNC_PLCCONFIGURATIONPROJECT_INDIRECT( 
+   int index
+) {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ FUNC_PLCCONFIGURATIONPROJECT_INDIRECT {
+   PropertyValue^ get(int index);
+   void set (int index, PropertyValue^ value);
+}
+```
+```
+
+#### Parameters
+
+*index*
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+This property is read-only..
+
+For a PLC connection point, this shows the configuration project of the associated PLC box. At bus ports of the "Overview" representation type the value is determined at the same single-line bus port.
+
+See Also
+
+#### Reference
+
+[PlcIOPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlcIOPropertyList.html)
+  
+[PlcIOPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlcIOPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlcIOPropertyList~FUNC_PLCCONFIGURATIONPROJECT_INDIRECT.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlcIOPropertyList~FUNC_PLCCONFIGURATIONPROJECT_INDIRECT(Int32))

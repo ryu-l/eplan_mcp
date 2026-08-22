@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Using Functions and Devices|Functions|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The function definition defines the standard behavior of a function. It determines how an object is treated in reports (for instance, contacts are sho..." /><title>Function Definitions: Principle</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/xfctdefbrowsergui_k_funktionsdefinitionen.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor3263"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor3264"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor3880"></a>
+            <h2>Function Definitions: Principle</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The function definition defines the standard behavior of a function. It determines how an object is treated in <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a> (for instance, contacts are shown in the <a href="Glossary_o_kontaktspiegel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">contact image</a>, terminals listed in the terminal diagram, etc.).</p>
+            <p>Moreover, additional logical information is stored in the function definition, such as whether a function is signal isolating. This logic information sometimes applies to the function as a whole, but more often to the <a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a>. </p>
+            <p>A function definition has the following <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a>:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><span class="important">Name:</span> A function definition includes a name for the function, such as "Power NO contact", "AC coil", etc.</li>
+                <li class="Listitem_Normal" value="2"><span class="important">Description:</span> Provides the technical purpose for which the function is used.</li>
+                <li class="Listitem_Normal" value="3"><span class="important">Number of connection points:</span> A normal function definition has at least one connection point. There are also special <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> which have no connection points (e.g. <a href="Glossary_o_geraetekaesten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">black boxes</a>). The number can also be variable, in which "n" then appears here. In this case, however, no detailed logic information can be specified for the connection points. Entries are then only possible which apply to all connection points ("n") and information for the last connection point ("z"), if multiple connection points are present.</li>
+            </ul>
+            <p>For each function definition, 10 connection point designation recommendations and 10 connection point description recommendations can be given. </p>
+            <p>For each function (i.e. each <a href="Glossary_o_schaltzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">component</a>) you can freely determine the connection point logic - independent of the setting of the function definition. The properties entered here are added to the component and subsequently overwrite the properties from the function definition.</p>
+            <p>The user can enter <a href="Glossary_o_funktionsdefinitionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function definitions</a> into parts and therefore enable the subsequent selection of <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a>. The system then automatically offers the appropriate <a href="Glossary_o_symbole.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">symbols</a> corresponding to the function definitions given for the device.</p><a name="kanchor3881"></a><a name="I_Funktionsdefinitionsbibliothek"></a>
+            <h3>Function definition library</h3>
+            <p>A function definition library is a collection of function definitions. The function definition library is hierarchically organized by trade, area, category, group, and function definition. This grouping is designed to make it easier to find a particular function definition. The function definitions are displayed in the function selection dialog in a tree layout that reflects this grouping.</p>
+            <p>Function definition libraries are provided by EPLAN for the most current applications and <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a> on the market; you <span class="important">cannot</span> <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> them or extend them yourself.</p>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Layer</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Meaning</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p><a name="kanchor3882"></a><a name="I_Gewerk"></a>Trade</p>
+                    </td>
+                    <td>
+                        <p>Determines the technical purpose for which the function is used, e.g., "electrical engineering" or "<a href="Glossary_o_hydraulik.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">hydraulics</a>".</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><a name="kanchor3883"></a><a name="I_Bereich"></a>Area</p>
+                    </td>
+                    <td>
+                        <p>Provides the area within the trade, e.g., "coils and contacts" or "motors".</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p><a name="kanchor3884"></a><a name="I_Kategorie"></a>Category</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>Determines the system behavior of a function. This also means that depending on the category (e.g., contacts, protection devices, coils, terminals) certain properties may be available to the functions. For example, the property <span class="gui">PLC address</span> only exists for PLC functions, and the property <span class="gui">Coil: Voltage</span> is only available for coils.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p><a name="kanchor3885"></a><a name="I_Gruppe"></a>Group</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>Provides the basic functions of each category. For instance, the function "NO contact (2 connection points)" is a general definition and is made more detailed by "Power NO contact".</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>Function definition</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>Defines the special type of function, e.g. "Power NO contact".</p>
+                    </td>
+                </tr>
+            </table>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The function definition "Power NO contact" can be found in the selection dialog for function definitions under the following <a href="Glossary_o_etagen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">levels</a>:</p>
+                        <table>
+                            <tr>
+                                <th>
+                                    <p class="Tabelle_Text">Layer</p>
+                                </th>
+                                <th>
+                                    <p class="Tabelle_Text">Entry</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Trade</p>
+                                </td>
+                                <td>
+                                    <p>Electrical engineering</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Area</p>
+                                </td>
+                                <td>
+                                    <p>Coils and contacts</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p>Category</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>NO contacts</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p>Group</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>NO contacts (2 connection points)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p>Function definition</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>Power switches</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <h4><a name="kanchor3886"></a><a name="I_Grundfunktionsdefinition"></a>General function definitions</h4>
+            <p>There are general function definitions, for example "Terminal, general, 2 connection points", in many groups of function definitions. Such a general function definition specifies the basic functionality of the item. All function definitions found within a group can be exchanged for one another. In this way, you can first use a general function in the project, and then later decide on a more precise definition.</p>
+            <p> The general function definitions are intended to be used in <a href="Glossary_o_projekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">projects</a> if the exact parts are not yet clear when the project configuration is carried out. At the device selection the general function definitions are suitable for all the exact function definitions within the same group. This means that the "Terminal, general, 2 connection points" can be replaced by an "N terminal, 2 connection points" as well as by a "PE terminal, 2 connection points" during the device selection.</p>
+            <p>If you store <a href="Glossary_o_funktionsschablonen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function templates</a> in the parts management, you should only use the exact function definitions there.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="xfctdefbrowsergui_k_start.htm">Functions</a>
+            </p>
+            <p class="Link_Seealso"><a href="xfctdefbrowsergui_k_prinzip.htm">Functions: Principle</a>
+            </p>
+            <p class="Link_Seealso"><a href="partsmanagementgui_k_start.htm">Parts Management</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+# ARTICLE_FREE_DATA_UNIT Property (ArticleReferencePropertyList)
+
+ARTICLE\_FREE\_DATA\_UNIT Property (ArticleReferencePropertyList)
+
+Free properties: Unit # 22148.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [ARTICLE\_FREE\_DATA\_UNIT(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList~ARTICLE_FREE_DATA_UNIT(Int32).html) | Free properties: Unit # 22148. |
+| [ARTICLE\_FREE\_DATA\_UNIT](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList~ARTICLE_FREE_DATA_UNIT().html) | Free properties: Unit # 22148. |
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 1000.
+
+Unit for the value of the free property. More than 1000 assignments can be made using the index.
+
+See Also
+
+#### Reference
+
+[ArticleReferencePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList.html)
+  
+[ArticleReferencePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList~ARTICLE_FREE_DATA_UNIT)

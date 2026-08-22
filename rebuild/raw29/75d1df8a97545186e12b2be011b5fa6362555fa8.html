@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The configured ECAD structure can be opened through an action for generating a wiring diagram in the ECAD system. Depending on the configuration of th..." /><title>Generation of project data</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/eececad_k_generate_project_docu.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor348"></a>
+            <MadCap:concept term="Basis" /><a name="aanchor349"></a>
+            <MadCap:concept term="EPLAN Electric P8" />
+            <h2>Generation of project data</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The configured ECAD structure can be opened through an action for generating a wiring diagram in the ECAD system. Depending on the configuration of the actions in the model, this can be done via the popup menu.</p>
+            <p>By means of a self-created <span class="gui">SequenceSelectionAction</span> an entry in the popup menu of the schematic object can be used to open the schematic in EPLAN Electric P8 (see <a href="eecbase_k_methodology_sequenceselectionaction.htm" class="MCXref xref" xrefformat="{para}">SequenceSelectionActions</a>):</p>
+            <p>
+                <img src="../Pictures/ecad_open_plan.png" alt="" />
+            </p>
+            <p>The open project in EPLAN Electric P8 looks as follows:</p>
+            <p>
+                <img src="../Pictures/ecad_result.png" alt="" />
+            </p>
+            <p>Alternatively, the action <span class="gui">Open Wiring Diagram</span> can be executed also for <b>one</b> page or fragment.</p>
+            <p>In addition it is possible to execute the action <span class="gui">Open Pages</span> to open <b>several</b> selected pages (see the figure below).</p>
+            <p>
+                <img src="../Pictures/ecad_open_pages.png" alt="" />
+            </p>
+            <p>EEC automatically enters information in each created page stating that it was created by EEC, provided that this feature is available in the EPLAN Electric P8 version used. The property name is called <span class="gui">Automatically created &lt;11006&gt;</span> and contains the value <span class="gui">EEC</span>.</p>
+            <p>By entering this property, EEC can differentiate between its own created pages and those created externally. If the action <span class="gui">Generate Schematic</span> is started again, only the automatically created pages of the schematic will be modified and / or overwritten.</p>
+            <p>Externally created pages are overwritten only on request.</p>
+            <p>The commands come with different signatures, which allows them to be combined with each other easily.</p>
+            <p class="Precondition">Application 1: Action "Generate structure, generate schematic and open"</p>
+            <p>The object selected for the action is <span class="codetext">MechatronicRoot</span>.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><a href="refcommands_r_ecad_generateecadstructurecommand.htm" class="MCXref xref" xrefformat="{para}">ECAD.GenerateEcadStructureCommand</a>: Generates the ECAD structure.</li>
+                <li class="Listitem_Normal" value="2"><a href="refcommands_r_ecad_generateecadprojectcommand.htm" class="MCXref xref" xrefformat="{para}">ECAD.GenerateEcadProjectCommand</a>: Generates the ECAD project.</li>
+                <li class="Listitem_Normal" value="3"><a href="refcommands_r_ecad_openecadprojectcommand.htm" class="MCXref xref" xrefformat="{para}">ECAD.OpenEcadProjectCommand</a>: Opens the relevant ECAD project.</li>
+            </ul>
+            <p>All three commands have a signature that fits the object <span class="codetext">MechatronicRoot</span>.</p>
+            <p>The associated action <span class="gui">SequenceSelectionAction</span> now has the following methods:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><a href="refcommands_r_engineering_startformulacachecommand.htm" class="MCXref xref" xrefformat="{para}">Engineering.StartFormulaCacheCommand</a>: Enable cache</li>
+                <li class="Listitem_Normal" value="2"><a href="refcommands_r_ecad_generateecadstructurecommand.htm" class="MCXref xref" xrefformat="{para}">ECAD.GenerateEcadStructureCommand</a>: Generate an ECAD structure</li>
+                <li class="Listitem_Normal" value="3"><a href="refcommands_r_engineering_stopformulacachecommand.htm" class="MCXref xref" xrefformat="{para}">Engineering.StopFormulaCacheCommand</a>: Disable cache</li>
+                <li class="Listitem_Normal" value="4"><a href="refcommands_r_engineering_abortexecutionIferrorcommand.htm" class="MCXref xref" xrefformat="{para}">Engineering.AbortExecutionIfErrorCommand</a>: Termination if error has occurred</li>
+                <li class="Listitem_Normal" value="5"><a href="refcommands_r_engineering_saveobjectcommand.htm" class="MCXref xref" xrefformat="{para}">Engineering.SaveObjectCommand</a>: Save</li>
+                <li class="Listitem_Normal" value="6"><a href="refcommands_r_engineering_startformulacachecommand.htm" class="MCXref xref" xrefformat="{para}">Engineering.StartFormulaCacheCommand</a>: Enable cache</li>
+                <li class="Listitem_Normal" value="7"><a href="refcommands_r_ecad_generateecadprojectcommand.htm" class="MCXref xref" xrefformat="{para}">ECAD.GenerateEcadProjectCommand</a>: Generate an ECAD project</li>
+                <li class="Listitem_Normal" value="8"><a href="refcommands_r_engineering_stopformulacachecommand.htm" class="MCXref xref" xrefformat="{para}">Engineering.StopFormulaCacheCommand</a>: Disable cache</li>
+                <li class="Listitem_Normal" value="9"><a href="refcommands_r_engineering_abortexecutionIferrorcommand.htm" class="MCXref xref" xrefformat="{para}">Engineering.AbortExecutionIfErrorCommand</a>: Termination if error has occurred</li>
+                <li class="Listitem_Normal" value="10"><a href="refcommands_r_engineering_saveobjectcommand.htm" class="MCXref xref" xrefformat="{para}">Engineering.SaveObjectCommand</a>: Save</li>
+                <li class="Listitem_Normal" value="11"><a href="refcommands_r_ecad_openecadprojectcommand.htm" class="MCXref xref" xrefformat="{para}">ECAD.OpenEcadProjectCommand</a>: Open associated ECAD project</li>
+            </ul>
+            <p class="Precondition">Application 2: Action "Generate structure and generate schematic"</p>
+            <p>The object selected for the action is <span class="codetext">MechatronicRoot</span>.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><a href="refcommands_r_ecad_generateecadstructurecommand.htm" class="MCXref xref" xrefformat="{para}">ECAD.GenerateEcadStructureCommand</a>: Generates the ECAD structure.</li>
+                <li class="Listitem_Normal" value="2"><a href="refcommands_r_ecad_generateecadprojectcommand.htm" class="MCXref xref" xrefformat="{para}">ECAD.GenerateEcadProjectCommand</a>: Generates the ECAD project.</li>
+            </ul>
+            <p>Both commands have a signature that fits the object <span class="codetext">MechatronicRoot</span>.</p>
+            <p>If the project is already loaded in an instance of EPLAN Electric P8, the project only needs to be updated (select project, press the <span class="gui">[F5]</span> key) to represent the changes in the instance. To do this, the EPLAN Electric P8 version must be configured in such a way that projects are not opened exclusively.</p>
+            <p class="Precondition">Application 3: Action "Generate schematic"</p>
+            <p>Depending on the action for the selected object, the command exhibits varying behavior:</p>
+            <p>If the object selected for the action is <span class="codetext">MechatronicRoot</span> or <span class="codetext">EcadRoot</span>, the command will create the entire wiring diagram.</p>
+            <p>If the object selected for the action is a list, the command will expect pages and or fragments as elements of the list. The command deletes all pages from the schematic, and then creates the selected pages as new again.</p>
+            <p>If the project is already loaded in an instance of EPLAN Electric P8, the project only needs to be updated (select project, press the <span class="gui">[F5]</span> key) to represent the changes in the instance. To do this, the EPLAN Electric P8 version must be configured in such a way that projects are not opened exclusively.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><a href="refcommands_r_ecad_generateecadprojectcommand.htm" class="MCXref xref" xrefformat="{para}">ECAD.GenerateEcadProjectCommand</a>: Generates the ECAD project.</li>
+            </ul>
+            <p class="Precondition">Application 4: Action "Update schematic"</p>
+            <p>The object selected for the action is a list. The command expects pages and / or fragments as elements of the list. It creates the pages and / or the pages with the selected fragments as new. Other pages remain unchanged.</p>
+            <p>If the project is already loaded in an instance of EPLAN Electric P8, the project only needs to be updated (select project, press the <span class="gui">[F5]</span> key) to represent the changes in the instance. To do this, the EPLAN Electric P8 version must be configured in such a way that projects are not opened exclusively.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><a href="refcommands_r_ecad_updateecadpagescommand.htm" class="MCXref xref" xrefformat="{para}">ECAD.UpdateEcadPagesCommand</a>: Updates all the pages of the ECAD project.</li>
+            </ul>
+            <p class="Precondition">Application 5: Action "Open schematic"</p>
+            <p>The command opens an already created schematic using the EPLAN Electric P8 version stated in EEC.</p>
+            <p>It does not matter which object (page, fragment, schematic, EcadRoot, etc.) has been selected.</p>
+            <p>The command reports an error if the project has not been created yet.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><a href="refcommands_r_ecad_openecadprojectcommand.htm" class="MCXref xref" xrefformat="{para}">ECAD.OpenEcadProjectCommand</a>: Opens the relevant ECAD project.</li>
+            </ul>
+            <p class="Precondition">Application 6: Creating an EDZ file for ECAD project</p>
+            <p>An EDZ file is created, which can be imported by EPLAN Electric P8 by means of an add-on (see Description of EDZ format in the EPLAN Electric P8 help). Since EPLAN Electric P8 is not required for the production of EDZ file, specifying ECAD preferences is not necessary (see <a href="admin_r_prefs_ecad_p8.htm" class="MCXref xref" xrefformat="{para}">EPLAN Electric P8</a>).</p>
+            <p>A root object must be selected for this action. All project components of the <span class="important">WiringDiagram</span> type are affected. An EDZ file is created and its name is returned as the result.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><a href="refcommands_r_ecad_generateedzforecadprojectcommand.htm" class="MCXref xref" xrefformat="{para}">ECAD.GenerateEdzForEcadProjectCommand</a>: Creates an EDZ file and returns the name of the created file.</li>
+            </ul>
+            <p class="Seealso">More:</p>
+            <p class="Link_Seealso"><a href="eececad_k_structure_identifier_management_in_p8.htm" class="MCXref xref" xrefformat="{para}">Structure identifier management in EPLAN&#160;Electric&#160;P8</a>
+            </p>
+            <p class="Link_Seealso"><a href="eececad_k_execute_c_script_in_p8.htm" class="MCXref xref" xrefformat="{para}">Executing C# scripts in EPLAN Electric P8</a>
+            </p>
+            <p class="Link_Seealso"><a href="eececad_k_ecad_actions.htm" class="MCXref xref" xrefformat="{para}">ECAD actions</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

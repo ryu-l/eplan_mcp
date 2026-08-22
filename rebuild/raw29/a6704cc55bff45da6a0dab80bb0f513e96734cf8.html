@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Several nodes must be configured for the room components. To start with, once again, a parent node is configured, which contains, as a common property..." /><title>Configuration of the nodes for room components</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/tutgraph2d_h_configuration_of_nodes_for_roomcomponents.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor100"></a>
+            <MadCap:concept term="Tutorial" />
+            <h2>Configuration of the nodes for room components</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Several nodes must be configured for the room components. To start with, once again, a parent node is configured, which contains, as a common property for all the room components to be displayed with it, the configuration for a tooltip. The tooltip is displayed when the mouse pointer is placed over a room component.</p>
+            <ol>
+                <li value="1">Below the configuration of the node <span class="important">Room</span>, insert the following lines for the parent node of the image object.</li>
+            </ol><pre xml:space="preserve"><code class="language-markup"><a name="aanchor101"></a><MadCap:concept term="Graph2D" />&lt;!-- Node of room components --&gt;
+&lt;!-- Room component with common properties which is referenced multiple --&gt;
+&lt;node id="<a href="glossary_o_component.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Component</a>"&gt;
+	&lt;figureImage figure="com.mind8.graph2d.figure.Image"&gt;
+		&lt;properties&gt;
+				&lt;property id="tooltip"&gt;
+					&lt;read value="=$Tooltip" /&gt;
+				&lt;/property&gt;
+			&lt;/properties&gt;
+		&lt;/figureImage&gt;
+	&lt;/node&gt;</code></pre>
+            <ol data-mc-continue="true">
+                <li value="2">Under this configuration, insert the following lines.</li>
+            </ol><pre xml:space="preserve"><code class="language-markup">&lt;!-- Master --&gt;
+&lt;node id="Master" super="Component" valid="=isInstanceOf('IT_Architecture.Levelcomponents.RoomComponent')"&gt;
+&lt;property id="img"&gt;
+		&lt;read value="=type('IT_ModularSystem.Images.Imageregister').image(this.type)" /&gt;
+	&lt;/property&gt;
+	&lt;/node&gt;</code></pre>
+            <p>In order that such a node can be inserted in a <span class="important">Room</span>, the configuration for <span class="important">Room</span> must be expanded with the attribute <span class="codetext">acceptedChildren="Master"</span>.</p>
+            <ol data-mc-continue="true">
+                <li value="3">In the tag <span class="codetext">&lt;node id="Room"&gt;</span> add the attribute <span class="codetext">acceptedChildren="Master"</span>.</li>
+                <li value="4">Save the diagram configuration (<span class="gui">[Ctrl]</span> + <span class="gui">[S]</span>).</li>
+            </ol>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownhotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Explanation:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The ID of the parent node is now <span class="codetext">Component</span>, which the node <span class="important">Master</span> references.</p> <p>The node with the ID <span class="important">Master</span> is in turn referenced as a permitted sub-node of <span class="important">Room</span>.</p> <p>With <span class="codetext">&lt;figureImage&gt;</span>, a node is configured, which is to be displayed as an image.</p> <p>It has the property <span class="codetext">&lt;property id="tooltip"&gt;</span> to display a tooltip.</p> <p>The tag <span class="important">&lt;read value="=$Tooltip" /&gt;</span> is used to access the parameter <span class="codetext">Tooltip</span> of the project component, to display its value as a tooltip.</p> <p>For the node Master, the attribute <span class="codetext">valid="=isInstanceOf('IT_Architecture.Levelcomponents.RoomComponents')</span> is used to determine the type that a project component must conform to, so that it can be displayed as an image.</p> <p>The property <span class="codetext">&lt;property id="img"&gt; &lt;read value="=type('IT_ModularSystem.Images.Imageregister').image(this.type)"&gt;</span> describes which image is to be accessed, i.e. an image from the <span class="important">Imageregister</span>, which conforms to the type of the project component to be inserted.</p> <p>The meanings of the individual properties:</p><table><thead><tr><th>ID name</th><th>Meaning</th></tr></thead><tbody><tr><td>img</td><td>Formula to the graphical object of the project component</td></tr><tr><td>tooltip</td><td>Tip for the element when the mouse cursor is placed on it. Either a fixed text or a formula that returns a string.</td></tr></tbody></table></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

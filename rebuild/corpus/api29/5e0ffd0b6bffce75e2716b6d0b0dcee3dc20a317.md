@@ -1,0 +1,53 @@
+# OpenInstallationSpaceWithPlacement3D Method
+
+OpenInstallationSpaceWithPlacement3D Method
+
+Opens the installation space and selects the Placement passed as oPlacement. The Placement is selected in the graphic editor.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public void OpenInstallationSpaceWithPlacement3D( 
+   Placement3D oPlacement
+)
+```
+```
+
+```
+```
+public:
+void OpenInstallationSpaceWithPlacement3D( 
+   Placement3D^ oPlacement
+)
+```
+```
+
+#### Parameters
+
+*oPlacement*
+:   Placement to be selected.
+
+Exceptions
+
+| Exception | Description |
+| --- | --- |
+| **ArgumentNullException** | Is thrown in case of null \parameters. |
+| **ApplicationException** | The graphics editor interface could not be created. |
+
+See Also
+
+#### Reference
+
+[Edit3D Class](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Edit3D.html)
+  
+[Edit3D Members](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Edit3D_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Edit3D~OpenInstallationSpaceWithPlacement3D)

@@ -77,12 +77,24 @@ def chunk_markdown(text, title):
 
 
 def main():
-    global FRESH
+    global FRESH, DB_PATH, MANIFEST, COLLECTION
     parser = argparse.ArgumentParser()
     parser.add_argument("--fresh", action="store_true",
                         help="delete existing collection and rebuild from scratch")
+    parser.add_argument("--db-path", default=None,
+                        help="chroma db folder (default: ../eplan-p8-mcp-server/chroma_db_sota)")
+    parser.add_argument("--manifest", default=None,
+                        help="manifest jsonl (default: rebuild/manifest.jsonl)")
+    parser.add_argument("--collection", default=None,
+                        help="collection name (default: eplan_docs)")
     args = parser.parse_args()
     FRESH = args.fresh
+    if args.db_path:
+        DB_PATH = args.db_path
+    if args.manifest:
+        MANIFEST = args.manifest
+    if args.collection:
+        COLLECTION = args.collection
 
     t0 = time.time()
     if not os.path.exists(MANIFEST):

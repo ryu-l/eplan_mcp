@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-conditions="Primary.concept" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|Editing PLC Information|PLC|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="6:40:21 AM">
+        <meta name="BuildDate" content="Monday, October 6, 2025">
+        <meta id="productName" name="product" content="Eplan Platform">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="allLangExtended">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="PLC data exchange is possible for different PLC manufacturers in AutomationML format (Automation Markup Language). This is a manufacturer-neutral XML-..."><title>PLC Data Exchange in AutomationML AR APC Format</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZN49JJ5H1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FZN49JJ5H1', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="EPLAN_Help_k_start.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor1193"></a>
+                                            <madcap:concept term="Grundlagen"></madcap:concept><a name="aanchor1194"></a>
+                                            <madcap:concept term="Eplan Plattform;Eplan Electric P8"></madcap:concept><a name="kanchor1161"></a><a name="kanchor1162"></a><a name="kanchor1163"></a>
+                                            <h2>PLC Data Exchange in AutomationML AR APC Format</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <p>PLC <span class="GlossaryPopup" href="Glossary_o_datenaustausch.htm">data exchange</span> is possible for different PLC manufacturers in AutomationML format (<notrans_i>Automation Markup Language</notrans_i>). This is a manufacturer-neutral XML-based data format. Different variants exist in the AutomationML format depending on the respective usage. The "<notrans_i>Application Recommendation Automation Project Configuration</notrans_i>" (short: "<notrans_i>AR APC</notrans_i>") variant is used for the PLC data exchange.</p>
+                                            <p>To this purpose the corresponding entries in the list of the possible <span class="GlossaryPopup" href="Glossary_o_formate.htm">formats</span> are available to you in the dialogs for the export and import of PLC data - depending on the selected PLC configuration program. Certain aspects have to be taken into consideration for the export in the AutomationML format:</p>
+                                            <ul>
+                                                <li class="Listitem_Normal" value="1">Each object is identified in AutomationML by a <span class="important">GUID (Globally Unique Identifier) that is unique worldwide</span>. This GUID is assigned automatically during the export, in as far as no GUID was specified, and should normally not be changed manually. Exporting in AutomationML format is therefore ony possible from editable <span class="GlossaryPopup" href="Glossary_o_projekte.htm">projects</span>.<br>An AutomationML GUID has the format "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", with "x" standing for one of the characters "0 1 2 3 4 5 6 7 8 9 a b c d e f A B C D E F".</li>
+                                                <li class="Listitem_Normal" value="2">Own GUIDs are also assigned to the <span class="important">connection points</span> of <span class="GlossaryPopup" href="Glossary_o_funktionen.htm">functions</span>. <span class="GlossaryPopup" href="Glossary_o_anschluesse.htm">Connection points</span> are exported as <notrans_i><span class="codetext">ExternalInterface</span></notrans_i>.</li>
+                                                <li class="Listitem_Normal" value="3"><span class="important">Accessory parts</span> can be output optionally in the export file and have own GUIDs assigned to them. This is, for example, necessary in order to exchange <span class="GlossaryPopup" href="Glossary_o_zubehoer.htm">accessories</span> with the TIA Selection Tool. All <span class="GlossaryPopup" href="Glossary_o_artikel.htm">parts</span> that are entered at the positions 2 to 50 on the <span class="gui">Parts</span> tab in the <span class="GlossaryPopup" href="Glossary_o_eigenschaftendialog.htm">property dialog</span> of a main function are considered to be accessories. A PLC type designation must be entered for these parts in the parts management to allow export of the accessory parts. The GUID for accessory parts is assigned automatically during exporting and is saved in the <span class="gui">AutomationML GUID (accessories)</span> property.<br>When an accessory part at the main function is deleted, the associated GUID is deleted, too. The GUID is retained when an accessory part is edited (for example new part selection, device selection or changing of the sequence on the <span class="gui">Parts</span> tab).</li>
+                                                <li class="Listitem_Normal" value="4">You can use the compressing function of projects to remove AutomationML GUIDs that are no longer required from a project (for example in a copy of the project). To do this activate the check box <span class="gui">AutomationML GUIDs</span> in the dialog <span class="gui">Settings: Compression</span> in the hierarchy level <span class="gui">Remove project data</span>.</li>
+                                                <li class="Listitem_Normal" value="5">During the export all those <span class="GlossaryPopup" href="Glossary_o_betriebsmittel.htm">devices</span> are taken into consideration that have at least one bus port. This means that <span class="GlossaryPopup" href="Glossary_o_geraetekaesten.htm">black boxes</span>, motors and other devices can be exported in addition to <span class="GlossaryPopup" href="Glossary_o_sps_kaesten.htm">PLC boxes</span>.</li>
+                                                <li class="Listitem_Normal" value="6">During the export of Ethernet-based bus systems you can specify whether the <span class="important">port-specific interconnection</span> of the <span class="GlossaryPopup" href="Glossary_o_sps_busanschluesse.htm">bus ports</span> is to be output in the export file. If you work with flexible cabling, you can deactivate the output of the port-specific interconnection in order to avoid re-working.</li>
+                                                <li class="Listitem_Normal" value="7">The names of the <span class="important">modules</span> within a <span class="GlossaryPopup" href="Glossary_o_baugruppentraeger.htm">rack</span> have to be unique for the export in AutomationML AR APC format. In this case the object description is not exported as the name, but rather the <span class="gui">PLC card name</span> property. If the PLC card name is empty, the object description is exported and - to make it unique - a consecutive item number is attached (Description_1, Description_2, etc.). If no object description is available, a unique PLC card name is generated. The PLC card names generated during the export are saved in the property <span class="gui">PLC card name</span> (<span class="GlossaryPopup" href="Glossary_o_id.htm">ID</span> 20437).</li>
+                                                <li class="Listitem_Normal" value="8">In addition to the <span class="GlossaryPopup" href="Glossary_o_funktionstexte.htm">function texts</span> of the <span class="GlossaryPopup" href="Glossary_o_sps_anschluesse.htm">PLC connection points</span> the <span class="important">function texts of the PLC boxes</span> are also exported and imported (<span class="gui">Function text (automatic)</span> property). The function texts are exported and imported in all existing languages. The language set in the dialog <span class="gui">Export PLC data</span> or <span class="gui">Import PLC data</span> is the main language in the exchange file and is stored there for the respective PLC object as the value (<notrans_i><span class="codetext">Value</span></notrans_i>). All the further languages as additional attributes.</li>
+                                                <li class="Listitem_Normal" value="9">During export in AutomationML AR APC format <a href="plcgui_k_spsanschluesse.htm#I_EinstellbareSpsAnschluesse">adjustable PLC connection points</a> are converted into normal I/O connection points (depending on the setting for the type of signal in the connection point logic). During import such connection points are converted back into adjustable PLC connection points if a suitable part is found which has a function template with the function definition "PLC connection point, multi-function".</li>
+                                                <li class="Listitem_Normal" value="10">During the import of an AutomationML file, empty or missing DT elements do not overwrite filled DT elements in Eplan.</li>
+                                                <li class="Listitem_Normal" value="11">When importing an AutomationML file, devices and PLC connection points that are available in the project but not in the import file, are tagged with the <span class="gui">Marked for deletion</span> property in Eplan. This is the case for PLC connection points if the symbolic address in the import file is empty, but the <span class="gui">Symbolic address (automatic)</span> property is filled at the associated PLC connection point in Eplan. The existing symbolic address remains. You can find and check these PLC <span class="GlossaryPopup" href="Glossary_o_objekte.htm">objects</span> via the check run 004029.</li>
+                                                <li class="Listitem_Normal" value="12">Free <span class="GlossaryPopup" href="Glossary_o_symbolischeadressen.htm">symbolic addresses</span> (which are not assigned to any PLC connection point) can be exported and imported in AutomationML AR APC format via the PLC data exchange. After the import of an AutomationML file, the free symbolic addresses existing there are available in Eplan and can be used from the assignment list.</li>
+                                            </ul>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Bridgehead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Extensions as of AutomationML AR APC Version 1.1.0</a></p></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ul>
+                                                        <li class="Listitem_Normal" value="1">Through extensions in the <span class="GlossaryPopup" href="Glossary_o_aml.htm">AML</span> AR APC format longer device tags can be replaced.</li>
+                                                        <li class="Listitem_Normal" value="2">An improved exchange of free symbolic addresses is possible through extensions in the AML AR APC format regarding the assignment list.</li>
+                                                        <li class="Listitem_Normal" value="3">The assignment of the <span class="GlossaryPopup" href="Glossary_o_sps_karten.htm">PLC cards</span> to your CPUs is replaced. This way you can restore the association of the PLC card to "its" CPU during the PLC data exchange.</li>
+                                                        <li class="Listitem_Normal" value="4">The bus system "PortToPort" can be used if you do not want to export the logical network but only the connection between the bus ports (port-specific interconnection).</li>
+                                                        <li class="Listitem_Normal" value="5">The bus systems "DRIVE-CLiQ", "PortToPort" and "ET connection" are correctly exported with port-specific interconnection.</li>
+                                                        <li class="Listitem_Normal" value="6">The <span class="GlossaryPopup" href="Glossary_o_verbindungen.htm">connections</span> between racks are exchanged with port-specific interconnection.</li>
+                                                        <li class="Listitem_Normal" value="7">Safety addresses at the bus systems are exchanged.</li>
+                                                        <li class="Listitem_Normal" value="8">The manufacturer name at the devices can be replaced. In Eplan the manufacturer name is saved in the part reference data.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Bridgehead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Extensions as of AutomationML AR APC Version 1.2.0</a></p></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ul>
+                                                        <li class="Listitem_Normal" value="1">The exchange of drive components is possible. For the export of drives and drive components, you can activate the <span class="gui">Export drives</span> check box in the <span class="gui">Settings: AutomationML AR APC export</span> dialog.</li>
+                                                        <li class="Listitem_Normal" value="2">The exchange of device-specific configuration values is possible. To this purpose you can specify a template in the <span class="gui">PLC device: TemplateIdentifier</span> and/or <span class="gui">PLC station: TemplateIdentifier</span> <span class="GlossaryPopup" href="Glossary_o_eigenschaften.htm">properties</span> or you can use <span class="GlossaryPopup" href="Glossary_o_benutzerdefiniert.htm">user-defined</span> part reference properties.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Bridgehead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Extensions as of AutomationML AR APC Version 1.3.0</a></p></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ul>
+                                                        <li class="Listitem_Normal" value="1">The exchange of symbolic addresses within user-defined data types (UDT) is possible. To this purpose you can specify the name and the associated data type of the UDT in the properties <span class="gui">Symbolic address: UDT (name)</span> and <span class="gui">Symbolic address: UDT (data type)</span>. The actual structure of the UDT is only required in the PLC configuration program and only specified there.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Bridgehead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Extensions as of AutomationML AR APC Version 1.4.0</a></p></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ul>
+                                                        <li class="Listitem_Normal" value="1">The management of pluggable bus ports at the superior device is possible. To this purpose the property <span class="gui">Manage bus ports at the superior device</span> (ID 20620) is available in the property dialog of PLC boxes in the tab <span class="gui">PLC structure data</span>.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <h3>Settings for different bus systems</h3>
+                                            <p>The following table provides an overview of the properties relevant for the PLC data exchange in the AutomationML AR APC format. Which properties at the bus ports must be filled (x) or are optional (o) depends on the bus system being used.</p>
+                                            <table style="width: 99%;">
+                                                <col>
+                                                <col style="width: 48px;">
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="Tabelle_Heading">Property</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="Tabelle_Heading">ID</p>
+                                                        </td>
+                                                        <td colspan="5" style="text-align: center;">
+                                                            <p class="Tabelle_Heading" style="text-align: center;">Bus system</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="font-size: 9pt;">
+                                                            <p class="Tabelle_Heading"></p>
+                                                        </td>
+                                                        <td style="font-size: 9pt;">
+                                                            <p class="Tabelle_Heading"></p>
+                                                        </td>
+                                                        <td style="text-align: center;font-size: 9pt;">
+                                                            <p class="Tabelle_Heading">Ethernet-based</p>
+                                                        </td>
+                                                        <td style="text-align: center;font-size: 9pt;">
+                                                            <p class="Tabelle_Heading">
+                                                                <notrans_i>Profibus DP</notrans_i>
+                                                            </p>
+                                                        </td>
+                                                        <td style="text-align: center;font-size: 9pt;">
+                                                            <p class="Tabelle_Heading">
+                                                                <notrans_i>ASI</notrans_i>
+                                                            </p>
+                                                        </td>
+                                                        <td style="text-align: center;font-size: 9pt;">
+                                                            <p class="Tabelle_Heading">
+                                                                <notrans_i>DRIVE CLiQ</notrans_i>
+                                                                <br>
+                                                                <notrans_i>IO-Link</notrans_i>
+                                                                <br>
+                                                                <notrans_i>PortToPort</notrans_i>
+                                                                <br>
+                                                                <notrans_i>ET-Connection</notrans_i>
+                                                                <br>Local-Bus: Extension</p>
+                                                        </td>
+                                                        <td style="text-align: center;font-size: 9pt;">
+                                                            <p class="Tabelle_Heading">All other</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="gui">Configuration project</span>
+                                                        </td>
+                                                        <td>20161</td>
+                                                        <td style="text-align: center;">o<sup>*1</sup></td>
+                                                        <td style="text-align: center;">o<sup>*1</sup></td>
+                                                        <td style="text-align: center;">o<sup>*1</sup></td>
+                                                        <td style="text-align: center;">o<sup>*1</sup></td>
+                                                        <td style="text-align: center;">o<sup>*1</sup></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="gui">Bus system</span>
+                                                        </td>
+                                                        <td>20308</td>
+                                                        <td style="text-align: center;">x</td>
+                                                        <td style="text-align: center;">x</td>
+                                                        <td style="text-align: center;">x</td>
+                                                        <td style="text-align: center;">x</td>
+                                                        <td style="text-align: center;">x</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="gui">Plug designation</span>
+                                                        </td>
+                                                        <td>20406</td>
+                                                        <td style="text-align: center;">x</td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="gui">Bus interface: Name</span>
+                                                        </td>
+                                                        <td>20447</td>
+                                                        <td style="text-align: center;">x</td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="gui">Bus interface: Main bus port</span>
+                                                        </td>
+                                                        <td>20448</td>
+                                                        <td style="text-align: center;">o</td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="gui">Physical network: Name</span>
+                                                        </td>
+                                                        <td>20413</td>
+                                                        <td style="text-align: center;">o</td>
+                                                        <td style="text-align: center;">o</td>
+                                                        <td style="text-align: center;">o</td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;">o</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="gui">Physical network: Bus ID / item number</span>
+                                                        </td>
+                                                        <td>20311</td>
+                                                        <td style="text-align: center;">o</td>
+                                                        <td style="text-align: center;">o</td>
+                                                        <td style="text-align: center;">o</td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;">o</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="gui">Physical network: Bus ID / item number 2</span>
+                                                        </td>
+                                                        <td>20386</td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;">o<sup>*2</sup></td>
+                                                        <td style="text-align: center;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="gui">Subnet mask</span>
+                                                        </td>
+                                                        <td>20446</td>
+                                                        <td style="text-align: center;">o</td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="gui">Logical network: Name</span>
+                                                        </td>
+                                                        <td>20414</td>
+                                                        <td style="text-align: center;">o</td>
+                                                        <td style="text-align: center;">o</td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="gui">Logical network: Bus port is master</span>
+                                                        </td>
+                                                        <td>20310</td>
+                                                        <td style="text-align: center;">o</td>
+                                                        <td style="text-align: center;">o</td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="gui">Ignore missing bus ID</span>
+                                                        </td>
+                                                        <td>20412</td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;"></td>
+                                                        <td style="text-align: center;">o<sup>*3</sup></td>
+                                                        <td style="text-align: center;"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>*1: Only required if the value deviates from that of the associated PLC box.</p>
+                                            <p>*2: Can be filled if it is an ASI dual device.</p>
+                                            <p>*3: Can be activated to ignore bus ports that do not require a bus address during the execution of the 004037 error checking.</p>
+                                            <p>Non-identified fields are not required for the PLC data exchange. If the optional fields (o) are left empty, the import to the PLC configuration program is possible but post-processing is required.</p>
+                                            <p class="Seealso">See also</p>
+                                            <p class="Link_Seealso"><a href="plcgui_k_prinzip.htm">Structure of PLCs</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="plcgui_k_austauschbuskonfig.htm">Data Exchange of PLC Configuration Files</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="plcgui_d_optionsaml.htm">Dialog Settings: AutomationML export</a>
+                                            </p>
+                                            <p class="Link_Seealso"><a href="plcgui_h_steckbarebusanschluesseverwalten.htm">Managing Pluggable Bus Ports at the Superior Device</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

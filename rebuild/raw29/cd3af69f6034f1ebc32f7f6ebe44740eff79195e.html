@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The &lt;slaveNode&gt; element is a child element of a node. It is, for example, used to represent the input and output side at direction-dependent obj..." /><title>slaveNode</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refgraph2d_r_slavenode.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1888"></a>
+            <MadCap:concept term="Referenz" /><a name="aanchor1889"></a>
+            <MadCap:concept term="Graph2D" />
+            <h2>slaveNode</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The <span class="codetext">&lt;slaveNode&gt;</span> element is a child element of a node. It is, for example, used to represent the input and output side at direction-dependent objects. If the slave node is assigned the attribute <span class="codetext">snapPoint="</span><span class="codetext">true"</span>, then it is depicted as a docking point. Arranging two master nodes with their docking points on top of each other causes an object reference to be calculated and stored in a parameter. This is indicated by red auxiliary lines that appear as crosshairs on the docking point. The docked master nodes can then be moved together in the diagram.</p>
+            <p>Docked nodes can then be separated from each other as follows:</p>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Highlight one of the docked nodes.</li>
+                <li class="Listitem_Step_By_Step" value="2">Press and hold the <span class="gui">[Alt]</span> key.</li>
+                <li class="Listitem_Step_By_Step" value="3">Move the highlighted nodes to one side.</li>
+                <li class="Listitem_Step_By_Step" value="4">Release the <span class="gui">[Alt]</span> key.</li>
+            </ol>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute name</th>
+                        <th>Usage</th>
+                        <th>Attribute values</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>autoUpdated</td>
+                        <td>optional</td>
+                        <td>true, false</td>
+                        <td />
+                        <td>Determines the automated placement of slave nodes in the diagram<br />true = slave nodes are placed automatically<br />false = slave nodes are placed automatically when a master node is placed</td>
+                    </tr>
+                    <tr>
+                        <td>creation</td>
+                        <td />
+                        <td>manual<br />byMaster</td>
+                        <td>byMaster</td>
+                        <td>Spezifies, how the &lt;slave&gt; element is created (manually or automatically), if the master is created.</td>
+                    </tr>
+                    <tr>
+                        <td>deletion</td>
+                        <td />
+                        <td>direct<br />withMaster<br />no</td>
+                        <td>direct</td>
+                        <td>Specifies, how the &lt;slaveNode&gt; element is deleted<br />direct = only the &lt;slaveNode&gt; element is deleted<br />withMaster = the master element also deletes all its &gt;slaveNode&gt; elements<br />no = the &lt;slave&gt; element cannot be deleted directly</td>
+                    </tr>
+                    <tr>
+                        <td>direction</td>
+                        <td>optional</td>
+                        <td>NORTH<br />EAST<br />SOUTH<br />WEST</td>
+                        <td />
+                        <td>Orientation of the slave relative to the master element. Can be defined as a formula or a constant</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>required</td>
+                        <td>any</td>
+                        <td />
+                        <td>Unique ID, which is referred to as reference</td>
+                    </tr>
+                    <tr>
+                        <td>layout</td>
+                        <td>required</td>
+                        <td>outsideEdged<br />insideEdged<br />insideFree<br />insideFloat</td>
+                        <td />
+                        <td>Specifies the arrangement of the slaves<br />outsideEdged = aligned to outside edges<br />insideEdged = aligned to inside edges<br />insideFree = free arrangement within the master (see Gantt chart)<br />insideFloat = adjustable arrangement within the master (see Gantt chart)</td>
+                    </tr>
+                    <tr>
+                        <td>node</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Reference to the node description. Is needed for separately defined nodes.</td>
+                    </tr>
+                    <tr>
+                        <td>parent</td>
+                        <td>required</td>
+                        <td />
+                        <td />
+                        <td>Formula to the master object</td>
+                    </tr>
+                    <tr>
+                        <td>position</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>The position of a slave node along the edge of the master node. As the value increases, the position shifts in a clockwise direction around the node.<br />50% = Value in Percent<br />50 px = Value in Pixels</td>
+                    </tr>
+                    <tr>
+                        <td>rotation</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Specifies the representation, if the &lt;node&gt; element is rotated in the diagram</td>
+                    </tr>
+                    <tr>
+                        <td>snapPoint</td>
+                        <td>optional</td>
+                        <td>true, false</td>
+                        <td />
+                        <td>Defines the slave node as a docking point<br />true = slave node is a docking point<br />false = slave node is not a docking point</td>
+                    </tr>
+                    <tr>
+                        <td>super</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Id of a node from which the properties are inherited.</td>
+                    </tr>
+                    <tr>
+                        <td>valid</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Formula to determine whether an EO is represented graphically by the current node. The formula is compared with the EO</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Allowed sub-elements</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="refgraph2d_r_figurebase.htm" class="MCXref xref">figureBase</a>
+                        </td>
+                        <td>any</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figurecontainer.htm" class="MCXref xref">figureContainer</a>
+                        </td>
+                        <td>any</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figureellipse.htm" class="MCXref xref">figureEllipse</a>
+                        </td>
+                        <td>any</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figureimage.htm" class="MCXref xref">figureImage</a>
+                        </td>
+                        <td>any</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figurelabel.htm" class="MCXref xref">figureLabel</a>
+                        </td>
+                        <td>any</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figurepolygon.htm" class="MCXref xref">figurePolygon</a>
+                        </td>
+                        <td>any</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_property.htm" class="MCXref xref">property</a>
+                        </td>
+                        <td>any</td>
+                    </tr>
+                    <tr>
+                        <td>slaveNode</td>
+                        <td>any</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figuredefinition.htm" class="MCXref xref">figureDefinition</a>
+                        </td>
+                        <td>any</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="Precondition">Example:</p>
+            <p>The icon and a text, which includes the description and the processing time, is displayed as <span class="codetext">&lt;slaveNode&gt;</span> underneath the graphical object of a project component.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;node id="<a href="glossary_o_fc.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Function</a>" super="<a href="glossary_o_component.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Component</a>" slaveNodes="=this"&gt;
+	&lt;figureImage figure="com.mind8.graph2d.figure.Image"/&gt;
+	&lt;slaveNode id="LabelAsSlave" node="LabelAsSlave" super="Component" valid="=isInstanceEO() and isInstanceOf('BodyShellWork_Architecture.LevelComponents.Function')" layout="outsideEdged" direction="SOUTH" parent="=this"&gt;
+		&lt;figureLabel figure="com.mind8.graph2d.figure.Label"&gt;
+			&lt;properties&gt;
+				&lt;property id="text"&gt;
+					&lt;read value="=$Designation+':'+$ProcessingTime+'ms'"/&gt;
+				&lt;/property&gt;
+				&lt;property id="prefWidth"&gt;
+					&lt;read value="100"/&gt;
+				&lt;/property&gt;
+				&lt;property id="prefHeight"&gt;
+					&lt;read value="50"/&gt;
+				&lt;/property&gt;
+			&lt;/properties&gt;
+		&lt;/figureLabel&gt;
+		&lt;property id="showLabel"&gt;
+			&lt;read value="true"/&gt;
+		&lt;/property&gt;
+		&lt;movement rotateWithMaster="NO" rotate="NO"/&gt;
+	&lt;/slaveNode&gt;
+&lt;/node&gt;</code></pre>
+                            <p class="Bridgehead">Result:</p>
+                            <p>The slave node is displayed on the lower edge of the graphical objet with icon, description and processing time of the project component.</p>
+                            <p>
+                                <img border="0" src="../Pictures/graph2d_label_von_slave.png" alt="" />
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Precondition">Example:</p>
+            <p>Thermodynamic components are traversed in one direction only. This property should be considered for the graphic objects of the Thermodynamics_Diagram. The connections of the project components are displayed in a manner that indicates the flow direction and are arranged to the master node in the correct orientation.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;node id="AbstractThermodynamicComponent" super="Component" slaveNodes="=rmos('Thermodynamic_Architecture.ConnectionPoint')" valid="=isInstanceOf('Thermodynamic_Architecture.IThermodynamikFunktion')"&gt;
+	&lt;figureImage&gt;
+		&lt;configuration&gt;
+			&lt;editRequestHandler xsi:type="formui:formui-handler" /&gt;
+			&lt;editRequestHandlerInfo xsi:type="formui:formui-handler-info" refId="TDD" /&gt;
+		&lt;/configuration&gt;
+		&lt;properties&gt;
+			&lt;property id="img"&gt;
+				&lt;readvalue="=type('Thermodynamic_ModularSystem.Diagram_Configuration.Imageregister').image(this)" /&gt;
+			&lt;/property&gt;
+		&lt;/properties&gt;
+	&lt;/figureImage&gt;
+	&lt;slaveNode node="AirInput" layout="outsideEdged" direction="WEST" parent="=mc"&gt;
+		&lt;movement direction="EAST SOUTH WEST NORTH" rotate="YES" /&gt;
+	&lt;/slaveNode&gt;
+	&lt;slaveNode node="AirOutput" layout="outsideEdged" direction="EAST" parent="=mc"&gt;
+		&lt;movement direction="EAST SOUTH WEST NORTH" rotate="YES" /&gt;
+	&lt;/slaveNode&gt;
+&lt;/node&gt;</code></pre>
+                            <p class="Bridgehead">Result:</p>
+                            <p>The slave nodes (marked by the circles) show the direction of the air flow. If the graphical object of the master rotates, the slave nodes rotate simultaneous.</p>
+                            <p>
+                                <img border="0" src="../Pictures/graph2d_slave-nodes_ein-ausgang.png" alt="" />
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;node id="abstractBelt" slaveNodes="=mos"&gt;
+	&lt;figureBase&gt;
+		&lt;properties&gt;
+			&lt;property id="resizable"&gt;
+				&lt;read value="true" /&gt;
+			&lt;/property&gt;
+		&lt;/properties&gt;
+	&lt;/figureBase&gt;
+	&lt;slaveNode id="startSlave" node="snapPointStart" parent="=mc" layout="onEdge" direction="=$Direction" creation="byMaster" snapPoint="true" position="50%" /&gt;
+	&lt;slaveNode id="endSlave" node="snapPointEnd" parent="=mc" layout="onEdge" direction="=$Direction" creation="byMaster" snapPoint="true" position="50%" /&gt;
+	&lt;slaveNode id="stopperSlave" node="stopperApp" parent="=mc" layout="outsideEdged" creation="byMaster"/&gt;
+&lt;/node&gt;</code></pre>
+                            <p class="Bridgehead">Result:</p>
+                            <p>
+                                <img border="0" src="../Pictures/g2d_layout_onEdge.png" alt="" />
+                            </p>
+                            <p>The slave nodes (2) are placed on the edge of the master node (1) as docking points.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

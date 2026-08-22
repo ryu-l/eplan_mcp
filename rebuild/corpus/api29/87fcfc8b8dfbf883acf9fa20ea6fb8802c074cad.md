@@ -1,0 +1,30 @@
+# ARTICLE_DEPTH Property (ArticlePropertyList)
+
+ARTICLE\_DEPTH Property (ArticlePropertyList)
+
+Depth # 22014. This property isn't indexed.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [ARTICLE\_DEPTH(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_DEPTH(Int32).html) | Depth # 22014. This property isn't indexed. |
+| [ARTICLE\_DEPTH](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_DEPTH().html) | Depth # 22014. |
+
+Remarks
+
+Please note that setting this property on article reference has no effect.
+
+See Also
+
+#### Reference
+
+[ArticlePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList.html)
+  
+[ArticlePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_DEPTH)

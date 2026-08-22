@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Commands are objects that have exactly one method, called an âexecuteâ method. A sequence of methods can be called by assembling a list of commands. S..." /><title>Commands and actions</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/concept_k_commands_and_actions.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor880"></a>
+            <MadCap:concept term="Konzept" />
+            <h2>Commands and actions</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Commands are objects that have exactly one method, called an âexecuteâ method. A sequence of methods can be called by assembling a list of commands. Such a list is used, for example, in connection with SequenceSelectionActions.</p>
+            <p>The plug-ins of the system provide commands via system libraries:</p>
+            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Pictures/commands.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="438" data-mc-height="516" src="../Pictures/commands_thumb_0_100.png" style="mc-thumbnail-max-height: 100px;mc-thumbnail: popup;" alt="" tabindex="" /></a>
+            </p>
+            <p>Management tasks, e.g. activating and deactivating the formula cache (Start/StopFormulaCacheCommand) or saving changes (SaveObjectCommand), are provided as atomic commands. These are then assembled into a sequence to automate a workflow.</p>
+            <p>This fine-granular division into commands makes sense so as to provide options for performance optimization (e.g., use of an active formula cache for several commands, etc.).</p>
+            <p>Actions connect the user interface (UI) to the application logic.</p>
+            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Pictures/editor_action.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="514" data-mc-height="272" src="../Pictures/editor_action_thumb_0_100.png" style="mc-thumbnail-max-height: 100px;mc-thumbnail: popup;" alt="" tabindex="" /></a>
+            </p>
+            <p>The Action system object is the superclass for all future options that will be available when calling application-logic commands from the user interface.</p>
+            <p>Thus far, the types provided by the system are<a href="eecbase_k_methodology_selectionaction.htm" class="MCXref xref">SelectionActions</a>, which always require selecting the object or objects for which an action is to be carried out. In the future, there may also be actions that donât require selection, and hence function âgloballyâ.</p>
+            <p>A SelectionAction takes a set of selected objects (selectedEOs, usually a multi-selection) and transfers it to its internal run method</p>
+            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Pictures/editor_selectionaction.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="660" data-mc-height="415" src="../Pictures/editor_selectionaction_thumb_0_100.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 100px;" alt="" tabindex="" /></a>
+            </p>
+            <p>SelectionActions have the following attributes:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><b>Image:</b> The icon shown here is displayed both in the popup menu and as a button on the toolbar when the <span class="gui">Project explorer toolbar button</span> option is enabled.</li>
+                <li class="Listitem_Normal" value="2"><b>Selected object:</b> Object within the classification hierarchy of the application model for which the action can be executed. For example, if the RTS24 object of the Pfuderer model is selected, the action will be displayed only in the popup menu for RTS24 objects (classes/instances).</li>
+                <li class="Listitem_Normal" value="3"><b>Visible in library/Visible in projects:</b> Specifies whether the action for classes (library) or instances (projects), or both, can be executed, for example, only for RTS24 instances in project configurations</li>
+                <li class="Listitem_Normal" value="4"><b>Number of selected objects:</b> Specifies how many objects can/must be selected in order for the action to be executed in a meaningful manner. Examples include 1, 1..2, 3..6, + (=1..n)<br />Note: This specification is derived, for example, from boundary conditions of the implementation of the run method. This may be set up only for the processing of one object.</li>
+                <li class="Listitem_Normal" value="5"><b>Pop-up path:</b> Defines the path to the action within the popup menu. The individual path entries are separated by a forward slash. For example, menu/sub menu/create.</li>
+                <li class="Listitem_Normal" value="6"><b>Displayed Name:</b> Action name displayed in the popup menu.</li>
+                <li class="Listitem_Normal" value="7"><b>Adding a button to the project explorer toolbar</b><b>:</b> A button that can be used to start the action is added to the toolbar in the project explorer view.</li>
+            </ul>
+            <p><b>Note:</b> To make this change visible, the view must be closed and re-opened (or EEC must be restarted).</p>
+            <p class="Precondition">Finding SelectionActions:</p>
+            <p>When modifying a pop-up structure that consists of many actions, it is important to ensure that it is possible to navigate from a pop-up entry to the corresponding action. This can be achieved by executing the action via the popup menu while holding down the <span class="gui">[CTRL]</span> key.</p>
+            <p>SelectionActions can be adjusted in any manner via scripts. But customizing the UI does require scripting expertise in this case. Scripts also have the disadvantage that the script code specifies when to call which commands, for example. The relationship between actions and commands is not modeled, and therefore cannot be navigated.</p>
+            <p>For defining simple actions, the system object <span class="important">SequenceSelectionAction</span> has been defined. It allows for the specification in table form of a sequence of <a href="refcommands_r_commands.htm" class="MCXref xref">Commands</a>.</p>
+            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Pictures/folge.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="569" data-mc-height="283" src="../Pictures/folge_thumb_0_100.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 100px;" alt="" tabindex="" /></a>
+            </p>
+            <p>The relationships between actions and commands are modeled for SequenceSelectionAction. This means that it is possible, for example, to use standard mechanisms (ALT+ mouse) to navigate from the table with commands (see the above screenshot) directly to the commands.</p>
+            <p>When a SequenceSelectionAction is executed, a script is created automatically from the modeled sequence of commands in the background, and then executed as a general SelectionAction.</p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

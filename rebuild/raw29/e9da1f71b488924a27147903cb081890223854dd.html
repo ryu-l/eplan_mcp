@@ -1,0 +1,449 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>API Parts Management Extension</title>
+    <meta name="Title" content="API Parts Management Extension"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n170","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="The API Parts Management Extension feature can be used to add you own custom information to parts stored in the EPLAN parts database. It is meant for information, which you don't want to set as part properties. " />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="167221ae-10ef-4fca-9c27-281965f460ed"/>
+    <meta name="Microsoft.Help.TocParent" content="336e53eb-a15a-49ac-8013-c36cd5cf745f"/>
+    <meta name="Microsoft.Help.TocOrder" content="2"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_Other.html">API Miscellaneous</a>
+ / API Parts Management Extension</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">API Parts Management Extension</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>The API Parts Management Extension feature can be used to add you own custom information to parts stored in the EPLAN parts database. It is meant for information, which you don't want to set as part properties.&nbsp;</p>
+
+<p>You store this information in your own database and can attach it to the part and visualize it. When a part which references such custom information is exported or stored in a project, the information is stored as a sting in the indexed properties ARTICLE_CUSTOM_DATA_INDEX and ARTICLE_CUSTOM_DATA_VALUE. The first property contains the name of the addin to which the information belongs, the second property contains the data string at the same index position.&nbsp;</p>
+
+<p>To use this feature, you need to call the methods MDPartsManagement.RegisterAddin(&lt;AddinName&gt;, &lt;ActionName&gt;) and MDPartsManagement.RegisterItem(&lt;AddinName&gt;, &lt;ItemType&gt;) in your addin. As &lt;ItemType&gt; you set the string "eplan.part"(There is also the possibility to register other custom items in the parts management tree, by setting other values for&lt;ItemType&gt;.). As &lt;AddinName&gt;, you set the assembly name of your addin, which is normally the dll title without the extension dll. In your addin, you implement an action with the name you set in the parameter &lt;ActionName&gt;.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Upon this, your action is called on different events in the parts management. It has a different set of parameters passed in the ActionCallingContext on each occasion. The parameter 'action' tells you, which kind of 'event' is called. The parameter can contain the following values:&nbsp;</p>
+
+<h3>List of 'action' calls:</h3>
+
+<div class="TableDiv">
+    <table class="i-page-title-text">
+        <tbody>
+            <tr>
+                <th rowspan="2">"Action" value</th>
+
+                <th rowspan="2">Description</th>
+
+                <th colspan="2">Parameters</th>
+            </tr>
+
+            <tr>
+                <th>input</th>
+
+                <th>output</th>
+            </tr>
+
+            <tr>
+                <td>GetRootLevel&nbsp;</td>
+
+                <td>The first tree level is requested.&nbsp;</td>
+
+                <td>itemtype : type of item for which the root node is requested</td>
+
+                <td>key : identifying key&nbsp;<br />
+                text : text to display in the tree&nbsp;<br />
+                subnode : (bool) are further sub nodes available ? (1 : yes, 0 : no)&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>GetNextLevel&nbsp;</td>
+
+                <td>The next level of the tree is requested.</td>
+
+                <td>itemtype : type of item which is expanded in the tree<br />
+                key : node, below which the next tree level is requested&nbsp;</td>
+
+                <td>key : Identifying key&nbsp;<br />
+                text : text to display in the tree&nbsp;<br />
+                subnode : (bool) are further sub nodes available ? (1 : yes, 0 : no)&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>CreateDatabase&nbsp;</td>
+
+                <td>A new parts database was created.&nbsp;</td>
+
+                <td>database : name of the created database</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>OpenDatabase&nbsp;</td>
+
+                <td>A new parts database was opened.&nbsp;</td>
+
+                <td>database (string) : name of the newly opened database&nbsp;<br />
+                readonly =(bool) read-only status of the opened parts database (1 : read-only, 0 : read/write</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>CloseDatabase&nbsp;</td>
+
+                <td>The current database was closed.</td>
+
+                <td></td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>SelectItem&nbsp;</td>
+
+                <td>An item / part was selected in parts management.</td>
+
+                <td>itemtype : type of item of the selected element&nbsp;<br />
+                partnr : selected part number (if only one part is selected)&nbsp;<br />
+                variant : selected part variant ((if only one variant is selected)&nbsp;<br />
+                key : identifying key of the selected element&nbsp;</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>PreShowTab&nbsp;</td>
+
+                <td>An item/part was selected in parts management.You have now the possibility to show/hide tab sheets, which are registered for this element.<span style="mso-spacerun: yes">&nbsp;</span></td>
+
+                <td>itemtype : type of item of the selected element&nbsp;<br />
+                partnr : selected part number (if only one part is selected)&nbsp;<br />
+                variant : selected part variant ((if only one variant is selected)&nbsp;<br />
+                key : identifying key of the selected element&nbsp;<br />
+                tabsheet : tab sheet, to be checked. The tab sheet was previously registered using MDPartsManagement.RegisterTabsheet(...)&nbsp;</td>
+
+                <td>show : (bool) should the tab sheet be displayed? (1 : yes (default), 0 : no)<span style="mso-spacerun: yes">&nbsp;</span></td>
+            </tr>
+
+            <tr>
+                <td>SaveItem&nbsp;</td>
+
+                <td>An item/part was saved in parts management.&nbsp;</td>
+
+                <td>partnr : selected part number (if only one part is selected)&nbsp;<br />
+                variant : selected part variant ((if only one variant is selected)&nbsp;<br />
+                itemtype : type of item of the selected element&nbsp;<br />
+                key : identifying key of the selected element&nbsp;</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>CopyItem&nbsp;</td>
+
+                <td>An item/part was copied in parts management (by the context menu items 'Copy' and 'Paste').&nbsp;</td>
+
+                <td>itemtype : type of item of the copied element&nbsp;<br />
+                key : identifying key of the currently selected element (optional)&nbsp;<br />
+                sourcekey : identifying key of the element to copy&nbsp;</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>CutCopyItem&nbsp;</td>
+
+                <td>An item/part was cut in parts management (by the context menu items 'Cut' and 'Paste').&nbsp;</td>
+
+                <td>itemtype : type of item of the cut element&nbsp;<br />
+                key : identifying key of the currently selected element (optional)&nbsp;<br />
+                sourcekey : identifying key of the element to cut&nbsp;</td>
+
+                <td>key : identifying key of the created element&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>SelectCopyItem&nbsp;</td>
+
+                <td>The context menu item 'Copy' was clicked in parts management tree.&nbsp;</td>
+
+                <td>itemtype : type of item of the copied element&nbsp;<br />
+                key : identifying key of the selected element (optional)</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>SelectCutItem&nbsp;</td>
+
+                <td>The context menu item 'Cut' was clicked in parts management tree.&nbsp;</td>
+
+                <td>itemtype : type of item of the cut element&nbsp;<br />
+                key : identifying key of the selected element (optional)&nbsp;</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>SelectPasteItem&nbsp;</td>
+
+                <td>The context menu item 'Paste' was clicked in parts management tree.</td>
+
+                <td>itemtype : type of item of the pasted element&nbsp;<br />
+                key : identifying key of the selected element (optional)&nbsp;</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>NewItem&nbsp;</td>
+
+                <td>An item/part was created in parts management.</td>
+
+                <td>itemtype : type of item of the newly created element&nbsp;<br />
+                key : identifying key of the currently selected element (optional)</td>
+
+                <td>key : identifying key of the created element&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>DeleteItem&nbsp;</td>
+
+                <td>item/part is being deleted from parts management.&nbsp;</td>
+
+                <td>itemtype : type of item of the currently selected to be deleted element&nbsp;<br />
+                partnr : selected part number (if only one part is selected)&nbsp;<br />
+                variant : selected part variant ((if only one variant is selected)&nbsp;<br />
+                key : identifying key of the element to be deleted&nbsp;</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>AddPartToProject&nbsp;</td>
+
+                <td>A part from parts management is stored in the project. The addin can add additional custom data to the stored part.</td>
+
+                <td>itemtype : type of the stored part (always 'eplan.part')&nbsp;<br />
+                key : identifying key of the stored part&nbsp;</td>
+
+                <td>value = (string) custom part data to be stored with the part inside the project (In properties ARTICLE_CUSTOM_DATA_INDEX and ARTICLE_CUSTOM_DATA_VALUE).</td>
+            </tr>
+
+            <tr>
+                <td>AddPartToDatabase&nbsp;</td>
+
+                <td>A part is synchronized from the project to the parts management. The additional custom data can now be extracted and stored by the addin.</td>
+
+                <td>itemtype : type of the synchronized part (always 'eplan.part')&nbsp;<br />
+                key : identifying key of the synchronized part&nbsp;<br />
+                value : (string) custom part data which was stored with the part inside the project&nbsp;</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>AddItemToProject&nbsp;</td>
+
+                <td>An item (part, manufacturer, drilling pattern, ...) is stored in the project. The addin can add additional custom data to the stored item.&nbsp;</td>
+
+                <td>&nbsp;itemtype : item types of stored items (eplan.part, eplan.manufacturer, ...)&nbsp;<br />
+                <span style="mso-spacerun: yes">&nbsp;</span>key : identifying field of stored items&nbsp;<br />
+                <span style="mso-spacerun: yes">&nbsp;</span>name : name of the stored items (abbreviated name of the manufacturer, name of drilling pattern, ...)&nbsp;</td>
+
+                <td>value = (string) custom data which was stored with an item inside a project (in properties ARTICLE_CUSTOM_DATA_INDEX and ARTICLE_CUSTOM_DATA_VALUE).<span style="mso-spacerun: yes">&nbsp;</span></td>
+            </tr>
+
+            <tr>
+                <td>ExportEplanItem&nbsp;</td>
+
+                <td>A part is exported from parts management to a file. The additional custom data from the addin can now be added to the export file.&nbsp;</td>
+
+                <td>itemtype : type of the item to export (always 'eplan.part')&nbsp;<br />
+                key : identifying key of the part to export&nbsp;</td>
+
+                <td>value : (string) custom part data to be added to the export file&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>ImportEplanItem&nbsp;</td>
+
+                <td>A part is imported to parts management. The additional custom data from the file can now be extracted and stored by the addin.&nbsp;</td>
+
+                <td>itemtype : type of the part to import (always 'eplan.part')&nbsp;<br />
+                key : identifying key of the imported part&nbsp;<br />
+                mode : import mode. Possible values:&nbsp;<br />
+                <span style="mso-spacerun: yes">&nbsp;&nbsp;</span> 0: append new records only&nbsp;<br />
+                <span style="mso-spacerun: yes">&nbsp;&nbsp;</span> 1: update existing records only&nbsp;<br />
+                <span style="mso-spacerun: yes">&nbsp;&nbsp;</span> 2: update existing records and append new ones&nbsp;<br />
+                value : (string) custom part data to be extracted from the file and stored by the addin.&nbsp;</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>ExportCustomItem&nbsp;</td>
+
+                <td>All custom items of the respective itemtype are exported from parts management.&nbsp;Please mind, that this only works with the XML export (Converter:"XPamExportXml").<span style="mso-spacerun: yes">&nbsp;</span></td>
+
+                <td>itemtype : type of the item to export&nbsp;</td>
+
+                <td>value : custom data of all items to be exported.&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>ImportCustomItem&nbsp;</td>
+
+                <td>All custom items of the respective itemtype are imported from a file into parts management. They have to be saved by the addin.&nbsp;Please mind, that this only works with the XML import (Converter:"XPamExportXml").&nbsp;</td>
+
+                <td>itemtype : type of the item to import&nbsp;<br />
+                value : custom data of all items to be imported&nbsp;<br />
+                mode : import mode.&nbsp;<br />
+                <span style="mso-spacerun: yes">&nbsp;&nbsp;</span> 0: append new records only&nbsp;<br />
+                <span style="mso-spacerun: yes">&nbsp;&nbsp;</span> 1: update existing records only&nbsp;<br />
+                <span style="mso-spacerun: yes">&nbsp;&nbsp;</span> 2: update existing records and append new ones</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>WillDeleteItem</td>
+
+                <td>An item / article is to be deleted in article management</td>
+
+                <td>itemtype = name of the type of the selected item<br />
+                key = key field of the currently selected element<br />
+                partnr = selected item number (only if an item is selected)<br />
+                variant = selected variant (only if an article is selected)<br />
+                objectid = id of a transient object being modified, (before changes)</td>
+
+                <td>allow : if set to 0, then DeleteItem is not called (Delete is not executed)</td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;WillSaveItem</td>
+
+                <td>An item/part will be saved in parts management</td>
+
+                <td>itemtype : type of item of the selected element&nbsp;<br />
+                key : identifying key of the selected element&nbsp;<br />
+                partnr : selected part number (if only one part is selected)&nbsp;<br />
+                variant : selected part variant ((if only one variant is selected)&nbsp;<br />
+                objectid : id of a transient object being modified, (before changes)&nbsp;</td>
+
+                <td>allow : when set to 0, SaveItem is not called (save is not performed)&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;</p>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: PartsManagementExtension">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

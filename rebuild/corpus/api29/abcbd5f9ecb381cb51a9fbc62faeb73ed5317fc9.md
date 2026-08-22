@@ -1,0 +1,60 @@
+# GetArticleReferences Method (DMObjectsFinder)
+
+GetArticleReferences Method (DMObjectsFinder)
+
+Returns [ArticleReference](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReference.html)s matching given filter.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public ArticleReference[] GetArticleReferences( 
+   ArticleReferencesFilter filter
+)
+```
+```
+
+```
+```
+public:
+array<ArticleReference^>^ GetArticleReferences( 
+   ArticleReferencesFilter^ filter
+)
+```
+```
+
+#### Parameters
+
+*filter*
+:   a [ArticleReferencesFilter](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencesFilter.html), can be `null`
+
+#### Return Value
+
+\* [ArticleReference](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReference.html)s matching given [ArticleReferencesFilter](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencesFilter.html). \* all [ArticleReference](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReference.html)s when filter is `null`. \* only valid ArticleReferences are returned (where ArticleReference.Count > 0 and ArticleReference.PartNr <> ""). \* method doesn't return ArticleReference from ConnectionDefinitionPoint. ArticleReferences are transient objects - they are in fact on a corresponding Connection.
+
+Exceptions
+
+| Exception | Description |
+| --- | --- |
+| [Eplan.EplApi.Base.BaseException](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException.html) | Thrown when internal used query throw exception. |
+
+See Also
+
+#### Reference
+
+[DMObjectsFinder Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder.html)
+  
+[DMObjectsFinder Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder_members.html)
+  
+[ArticleReference Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReference.html)
+  
+[ArticleReferencesFilter Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencesFilter.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DMObjectsFinder~GetArticleReferences)

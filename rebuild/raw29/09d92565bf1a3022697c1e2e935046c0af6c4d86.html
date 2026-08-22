@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The CSV file ParameterMap.csv is imported by means of an action in order to fill the ParameterMap parameter with key-value pairs in the existing confi..." /><title>Part 4 â Importing a CSV file via an action</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/tutimp_h_t4_command_set_mapvalues.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1394"></a>
+            <MadCap:concept term="Tutorial" /><a name="kanchor964"></a>
+            <h2>Part 4 â Importing a CSV file via an action</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p class="Bridgehead">Requirements:</p>
+            <ul>
+                <li value="1">The preparatory steps on the file level have been carried out.</li>
+                <li value="2">EEC is started.</li>
+                <li value="3">In addition to the system libraries, the <span class="gui">Library catalog</span> contains the architecture <span class="important">T_Mechatronic_Architecture</span> and the modular system <span class="important">T_Mechatronic_ModularSystem</span>.</li>
+                <li value="4">The <b>Feeder</b> project contains the <span class="gui">Project catalog</span>.</li>
+                <li class="Listitem_Normal" value="5">Section <a href="tutimp_h_t1_create_project_imx.htm" class="MCXref xref">Creating a configuration by importing an IMX file</a> is carried out.</li>
+            </ul>
+            <p>The CSV file <span class="codetext">ParameterMap.csv</span> is imported by means of an action in order to fill the <span class="important">ParameterMap</span> parameter with key-value pairs in the existing configuration. To this purpose the template file <span class="codetext">Template_CSV.imx</span> and the scheme file <span class="codetext">KeyValue.xsl</span> are required.</p>
+            <p>With the same action the CSV file <span class="codetext">Parameter.csv</span> is imported in order to set the values of the parameters <span class="important">ParameterBoolean</span>, <span class="important">ParameterInteger</span>, <span class="important">ParameterDouble</span> and <span class="important">ParamterString</span>. To this purpose the template file <span class="codetext">Template_CSV.imx</span> and the scheme file <span class="codetext">ParameterWithType.xsl</span> are required.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Content of the ParameterMap.csv:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">
+                            <img src="../Pictures/tutimp_t3_csv2.png" alt="" />
+                        </p>
+                        <p class="Infoblock">
+                            <p class="Bridgehead">Description of the CSV file:</p>
+                            <p>The CSV file consists of 9 rows and 3 columns.</p>
+                            <p>The columns do not have any headers.</p>
+                            <p>An area for header data is introduced via the data to be evaluated with a cell that contains the text <span class="important">Header</span>. The header data end in the row that contains a cell with the text <span class="important">LineEndHeader</span>.</p>
+                            <p>The data to be evaluated are distributed across 3 columns:</p>
+                            <p>A = Name of the parameter</p>
+                            <p>B = Value of the parameter</p>
+                            <p>C = Type of the parameter</p>
+                            <p>These specifications are converted internally into a fragment in IMX format by means of the XSL file <span class="codetext">KeyValue.xsl</span>. The fragment is inserted into the template file <span class="codetext">Template_CSV.imx</span> instead of the <span class="codetext">&lt;importFragment/&gt;</span> tag.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Content of the Template_CSV.imx:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;imx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" version="1.0"&gt;
+	&lt;project name="Feeder" save="true"&gt;
+		&lt;libraries&gt;
+			&lt;add type="<a href="glossary_o_string.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">String</a>" value="T_Mechatronic_ModularSystem"/&gt;
+		&lt;/libraries&gt;
+		&lt;mo name="Feeder" typeClass="T_Mechatronic_ModularSystem.Mechatronic.Stations.Feeder" &gt;
+			&lt;importFragment/&gt;
+		&lt;/mo&gt;
+	&lt;/project&gt;
+&lt;/imx&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Content of the Parameters.csv:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">
+                            <img src="../Pictures/tutimp_t3_csv.png" alt="" />
+                        </p>
+                        <p class="Infoblock">
+                            <p class="Bridgehead">Description of the CSV file:</p>
+                            <p>The CSV file consists of 8 rows and 3 columns.</p>
+                            <p>The columns do not have any headers.</p>
+                            <p>An area for header data is introduced via the data to be evaluated with a cell that contains the "Header" text. The header data end in the row that contains a cell with the "LineEndHeader" text.</p>
+                            <p>The data to be evaluated are distributed across 3 columns:</p>
+                            <p>A = Name of the parameter</p>
+                            <p>B = Value of the parameter</p>
+                            <p>C = Type of the parameter</p>
+                            <p>These specifications are converted internally into a fragment in IMX format by means of the XSL file <span class="codetext">Parameter.xsl</span>. The fragment is inserted into the template file <span class="codetext">Template_CSV.imx</span> instead of the <span class="codetext">&lt;importFragment/&gt;</span> tag.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>To execute an action a link is inserted in a Form-UI of the <span class="important">Feeder</span> component. The action starts the <span class="important">Engineering.ImportCsvCommand</span> command.</p>
+            <p class="Bridgehead">Create a unit for actions:</p>
+            <ol>
+                <li value="1">Mark the <span class="important">T_Mechatronic_ModularSystem</span> library in the <span class="gui">Library catalog</span>.</li>
+                <li value="2">Select <span class="gui">New &gt; Unit</span> in the shortcut menu.</li>
+                <li value="3">Enter <span class="important">Actions</span> in the <span class="gui">Name</span> field.</li>
+            </ol>
+            <p class="Bridgehead">Create the action <span class="important">ImportCsvAction</span>:</p>
+            <ol>
+                <li value="1">Mark the <span class="important">Actions</span> unit in the <span class="important">T_Mechatronic_ModularSystem</span> library in the <span class="gui">Library catalog</span>.</li>
+                <li value="2">Select <span class="gui">New &gt; Object...</span> from the popup menu.</li>
+                <li value="3">Select <span class="gui">Object &gt; Action</span>.</li>
+                <li value="4">Confirm with <span class="gui">[Finish]</span>.</li>
+                <li value="5">Enter <span class="important">ImportCsvAction</span> in the <span class="gui">Name</span> field.</li>
+                <li value="6">Open the <span class="gui">Methods</span> editor.</li>
+                <li value="7">Click the symbol <img src="../Pictures/Gui/ALL/new.png" alt="" /> (<span class="gui">Add method</span>).</li>
+                <li value="8">Add <span class="important">run</span> in the <span class="gui">Name</span> field.</li>
+                <li value="9">If applicable, mark the <span class="gui">Class method</span> option.</li>
+                <li value="10">If applicable, select the language <span class="gui">Sequence</span>.</li>
+                <li value="11">Click the symbol <img src="../Pictures/Gui/ALL/new.png" alt="" /> (<span class="gui">Add individual argument</span>).</li>
+                <li value="12">Enter the name <span class="important">xslt</span> for the new argument.</li>
+                <li value="13">Specify the <span class="important">Engineering String</span> type for the new argument.</li>
+                <li value="14">Repeat Steps 11 and 13 with the following specifications:<br /></li>
+                <table style="width: 100%;">
+                    <col />
+                    <col />
+                    <tbody>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                        </tr>
+                        <tr>
+                            <td>template</td>
+                            <td>Engineering.String</td>
+                        </tr>
+                        <tr>
+                            <td>project</td>
+                            <td>Engineering.Object</td>
+                        </tr>
+                        <tr>
+                            <td>csv</td>
+                            <td>Engineering.String</td>
+                        </tr>
+                        <tr>
+                            <td>delimiter</td>
+                            <td>Engineering.String</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <li value="15">Click the symbol <img src="../Pictures/Gui/ALL/new.png" alt="" /> (<span class="gui">Add called method</span>).</li>
+                <li value="16">Select <span class="gui">Object &gt; Command &gt; FrameworkCommand &gt; ImportCSVCommand</span>.</li>
+                <li value="17">In the <span class="gui">Matching methods</span> list select the method with the arguments <span class="important">String pathToXslt, String pathtoTemplate, Object projectOrMo, String pathToCsv, String delimiter</span>.</li>
+                <li value="18">Confirm with <span class="gui">[Finish]</span>.</li>
+            </ol>
+            <p>The result should have this appearance:</p>
+            <p>
+                <img src="../Pictures/tutimp_t4_importcsvaction.png" class="max" alt="" />
+            </p>
+            <p class="Bridgehead">Create a Form-UI for the Feeder component:</p>
+            <ol>
+                <li value="1">Open the <span class="important">Feeder</span> component in the <span class="important">T_Mechatronic_ModularSystem</span> library in the <span class="gui">Library catalog</span>.</li>
+                <li value="2">Open the <span class="gui">UI configuration</span> editor.</li>
+                <li value="3">If required, open the <span class="gui">Source</span> tab.</li>
+                <li value="4">Enter the following UI configuration.</li>
+                <div class="example">
+                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Content of the UI configuration:</a></p></span>
+                        <div class="MCDropDownBody dropDownBody">
+                            <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;uis xmlns="http://www.mind8.com/FormUI"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+	&lt;form title="Import" id="import"&gt;
+		&lt;action type="link" name="T_Mechatronic_ModularSystem.Actions.ImportCsvAction"
+			arguments="=List{
+			'install\\importschemas\\KeyValue.xsl',
+			'resources\\Import\\IMX\\Template_CSV.imx',
+			'resources\\Import\\CSV\\ParameterMap.csv',
+			';',
+			this}"&gt;
+			Import CSV Data as key-value pairs
+		&lt;/action&gt;
+		
+		&lt;action type="link" name="T_Mechatronic_ModularSystem.Actions.ImportCsvAction"
+			arguments="=List{
+			'resources\\Import\\XSL\\ParameterWithType.xsl',
+			'resources\\Import\\IMX\\Template_CSV.imx',
+			'resources\\Import\\CSV\\<a href="glossary_o_parameter.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Parameter</a>.csv',
+			';',
+			this}"&gt;
+			Import CSV Data as single parameter values
+		&lt;/action&gt;
+	&lt;/form&gt;
+&lt;/uis&gt;</code></pre>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </ol>
+            <p class="Bridgehead">Execute the action "Import CSV Data as key-value pairs" in Form-UI:</p>
+            <p>The created Form-UI is available directly after saving in the <span class="important">Feeder</span> project component under the name <span class="gui">Import</span>.</p>
+            <ol>
+                <li value="1">Open the <span class="important">Feeder</span> component in the <span class="gui">Project catalog</span>.</li>
+                <li value="2">Open the <span class="gui">Import</span> editor.</li>
+                <li value="3">Click the link <span class="important">Import CSV Data as key-value pairs</span>.</li>
+            </ol>
+            <p class="Bridgehead">Result:</p>
+            <p>The result can be checked directly in the <span class="important">Feeder</span> project component.</p>
+            <ol>
+                <li value="1">Select the <span class="gui">Parameters</span> editor.</li>
+            </ol>
+            <p>
+                <img src="../Pictures/tutimp_t3_csv_result3.png" class="max" alt="" />
+            </p>
+            <p>The <span class="gui">Value</span> column shows that the values from the columns <span class="gui">A</span> and <span class="gui">B</span> of the CSV file have been written as a key-value pair in the <span class="important">ParameterMap</span> parameter.</p>
+            <p class="Bridgehead">Execute the action "Import CSV data as single parameter values" in Form-UI:</p>
+            <ol>
+                <li value="1">Open the <span class="gui">Import</span> editor.</li>
+                <li value="2">Click the link <span class="important">Import CSV data as single parameter values</span>.</li>
+            </ol>
+            <p class="Bridgehead">Result:</p>
+            <p>The result can be checked directly in the <span class="important">Feeder</span> project component.</p>
+            <ol>
+                <li value="1">Select the <span class="gui">Parameters</span> editor.</li>
+            </ol>
+            <p>
+                <img src="../Pictures/tutimp_t4_action_result2.png" class="max" alt="" />
+            </p>
+            <p>The <span class="gui">Values</span> column shows that all the values from the CSV file have been imported with their own types.</p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

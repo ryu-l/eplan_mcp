@@ -1,0 +1,7 @@
+# page (deprecated)
+
+Delivers the page for fragment macros resp. fragment group macros.
+
+| page |
+| --- |
+| Is deprecated and should be replaced by rdc('ECAD.ChapterElement') (see [rdc(String typeName)](refformulas_r_rdc_2.htm)). |

@@ -25,13 +25,21 @@ DB_PATH = os.path.join(ROOT, "..", "eplan-p8-mcp-server", "chroma_db_sota")
 COLLECTION = "eplan_docs"
 MODEL_NAME = "BAAI/bge-base-en-v1.5"
 
-CATEGORIES = ["API Reference", "User Guide", "Api"]
+CATEGORIES = ["API Reference", "User Guide", "Api", "EEC Pro"]
 
-print("loading model ...", flush=True)
-MODEL = SentenceTransformer(MODEL_NAME, device="mps")
-CLIENT = chromadb.PersistentClient(path=os.path.abspath(DB_PATH))
-COL = CLIENT.get_collection(COLLECTION)
-print(f"ready: {COL.count()} docs", flush=True)
+MODEL = None
+CLIENT = None
+COL = None
+
+
+def load_backend():
+    """Load model + chroma client. Called from main() after arg parsing."""
+    global MODEL, CLIENT, COL
+    print("loading model ...", flush=True)
+    MODEL = SentenceTransformer(MODEL_NAME, device="mps")
+    CLIENT = chromadb.PersistentClient(path=os.path.abspath(DB_PATH))
+    COL = CLIENT.get_collection(COLLECTION)
+    print(f"ready: {COL.count()} docs", flush=True)
 
 TOOLS = [
     {
@@ -67,7 +75,10 @@ def search(query, top_k=5, category=None):
     fetch_k = max(top_k * 8, 40)
     qvec = MODEL.encode([query], normalize_embeddings=True).tolist()
     where = {"category": category} if category else None
-    res = COL.query(query_embeddings=qvec, n_results=fetch_k, where=where)
+    # Re-resolve the collection per call: long-lived handles can go stale
+    # after the collection is rebuilt (chroma segment cache invalidation).
+    col = CLIENT.get_collection(COLLECTION)
+    res = col.query(query_embeddings=qvec, n_results=fetch_k, where=where)
     out = []
     for i in range(len(res["ids"][0])):
         meta = res["metadatas"][0][i]
@@ -90,7 +101,7 @@ def stats():
         "index": "eplan_docs-local",
         "model": MODEL_NAME,
         "dimensions": 768,
-        "vectorCount": COL.count(),
+        "vectorCount": CLIENT.get_collection(COLLECTION).count(),
     }
 
 
@@ -212,11 +223,18 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def main():
+    global DB_PATH
     parser = argparse.ArgumentParser()
     parser.add_argument("--port", type=int, default=8765)
+    parser.add_argument("--db-path", default=None,
+                        help="chroma db folder (default: ../eplan-p8-mcp-server/chroma_db_sota)")
     args = parser.parse_args()
+    if args.db_path:
+        DB_PATH = args.db_path
+    load_backend()
     server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
-    print(f"local MCP listening on http://127.0.0.1:{args.port}/mcp", flush=True)
+    print(f"local MCP listening on http://127.0.0.1:{args.port}/mcp "
+          f"(db: {DB_PATH})", flush=True)
     server.serve_forever()
 
 

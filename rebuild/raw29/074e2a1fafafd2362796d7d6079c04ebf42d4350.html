@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The &lt;properties&gt; tag fills the named parameters of the Map type of the parent component with key-value pairs." /><title>&lt;properties&gt;</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refexcel_r_properties.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor515"></a>
+            <MadCap:concept term="Referenz" /><a name="kanchor373"></a>
+            <h2>&lt;properties&gt;</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The <span class="codetext">&lt;properties&gt;</span> tag fills the named parameters of the <span class="codetext">Map</span> type of the parent component with key-value pairs.</p>
+            <p>If the <span class="codetext">multiRowEntryKey</span> and <span class="codetext">multiRowKey</span> attributes are not specified, a one-dimensional map is created that contains, as keys, the entry for the <span class="codetext">name</span> attribute and, as values, the entry for the <span class="codetext">typeClass</span> attribute of the parent component.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute name</th>
+                        <th>Usage</th>
+                        <th>Attribute values</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>name</td>
+                        <td>required</td>
+                        <td />
+                        <td />
+                        <td>Specifies the name of the parameter of <span class="codetext">Map</span> type.</td>
+                    </tr>
+                    <tr>
+                        <td>multiRowEntrykey</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Specifies the absolute name of the library component from which an instance should be added.</td>
+                    </tr>
+                    <tr>
+                        <td>multiRowKey</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td />
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Allowed sub-elements</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="refexcel_r_property.htm" class="MCXref xref">&lt;property&gt;</a>
+                        </td>
+                        <td>any</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example for a one-dimensional map:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">
+                            <p class="MsoBodyText">For this example, the modular system of the tutorial can be used. The following modifications must be made therein:</p> <ul><li class="Listitem_Normal" value="1">The following library components must be supplemented by an insertion place for an arbitrary number of arbitrary components and by a new parameter <span class="codetext">MyMap</span> of type <span class="codetext">Map</span>:</li><li class="Listitem_Normal" value="2">Feeder</li><li class="Listitem_Normal" value="3">Insert</li><li class="Listitem_Normal" value="4">Inspect</li><li class="Listitem_Normal" value="5">Move</li></ul> <p>The content of the Excel table is divided into three sections to be able to better show the content:</p><table><thead><tr><th /><th>A</th><th>B</th></tr></thead><tbody><tr><td>1</td><td>Machine_Name</td><td>Machine_Type</td></tr><tr><td>2</td><td>Feeder_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Stations.Feeder</td></tr><tr><td>3</td><td>Feeder_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Stations.Feeder</td></tr><tr><td>4</td><td>Feeder_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Stations.Feeder</td></tr><tr><td>5</td><td>Feeder_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Stations.Feeder</td></tr><tr><td>6</td><td>Feeder_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Stations.Feeder</td></tr></tbody></table><table><thead><tr><th /><th>C</th><th>D</th></tr><tr><td>1</td><td>Functiongroup_Name</td><td>Functiongroup_Type</td></tr></thead><tbody><tr><td>2</td><td>Discard_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functiongroups.Discard</td></tr><tr><td>3</td><td>Insert_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functiongroups.Insert</td></tr><tr><td>4</td><td>Inspect_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functiongroups.Inspect</td></tr><tr><td>5</td><td>Move_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functiongroups.Move</td></tr><tr><td>6</td><td>Store_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functiongroups.Store</td></tr></tbody></table><table><thead><tr><th /><th>E</th><th>F</th></tr><tr><td>1</td><td>Functionunit_Name</td><td>Functionunit_Type</td></tr></thead><tbody><tr><td>2</td><td>Axis_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functionunits.Axis</td></tr><tr><td>3</td><td>Gripper_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functionunits.Gripper</td></tr><tr><td>4</td><td>Orientationinspector_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functionunits.Orientationinspector</td></tr><tr><td>5</td><td>Separator_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functionunits.Separator</td></tr><tr><td>6</td><td>Stack_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functionunits.Stack</td></tr></tbody></table> <p class="Bridgehead">Schema file content:</p><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;schema tableName="Mechatronic" columnKeySeparator="_"&gt;
+	&lt;node id="Station" name="${Machine_Name}" typeClass="${Machine_Type}"&gt;
+		&lt;node id="Functiongroup" name="${Functiongroup_Name}" typeClass="${Functiongroup_Type}"&gt;
+			&lt;properties name="SizesMap"/&gt;
+			&lt;node id="Functionunit" name="${Functionunit_Name}" typeClass="${Functionunit_Type}"&gt;
+			&lt;/node&gt;
+		&lt;/node&gt;
+	&lt;/node&gt;
+&lt;/schema&gt;</code></pre> <p class="Bridgehead">Result:</p> <p>The result the key-value pair of the map formed from the entries of the <span class="codetext">Functiongroup_name</span> and <span class="codetext">Functiongroup_Type</span> columns. The content of the <span class="codetext">Functiongroup_name</span> column is entered as the key and the content of the <span class="codetext">Functiongroup_Type</span> column is entered as the value of the Map.</p><pre xml:space="preserve"><code class="language-javascript">=Map{
+	Pair{'Name','Axis_2'},
+	Pair{'Type','T_Mechatronic_ModularSystem.Mechatronic.Functionunits.Axis'}
+}</code></pre></p>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example for a three-dimensional map:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">
+                            <p>For this example, the modular system of the tutorial can be used. The following modifications must be made therein:</p> <ul><li class="Listitem_Normal" value="1">The <span class="codetext">Feeder</span> and <span class="codetext">Move</span> library components must be supplemented by an insertion place for an arbitrary number of arbitrary components.</li><li class="Listitem_Normal" value="2">The <span class="codetext">Axis</span> library component must be supplemented by a new parameter <span class="codetext">MyMap</span> of type <span class="codetext">Map</span>.</li></ul> <p>The content of the Excel table is divided into four sections to be able to better show the content:</p><table><thead><tr><th /><th>A</th><th>B</th></tr></thead><tbody><tr><td>1</td><td>Machine_Name</td><td>Machine_Type</td></tr><tr><td>2</td><td>Feeder_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Stations.Feeder</td></tr><tr><td>3</td><td>Feeder_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Stations.Feeder</td></tr><tr><td>4</td><td>Feeder_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Stations.Feeder</td></tr><tr><td>5</td><td>Feeder_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Stations.Feeder</td></tr><tr><td>6</td><td>Feeder_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Stations.Feeder</td></tr></tbody></table><table><thead><tr><th /><th>C</th><th>D</th></tr><tr><td>1</td><td>Functiongroup_Name</td><td>Functiongroup_Type</td></tr></thead><tbody><tr><td>2</td><td /><td /></tr><tr><td>3</td><td>Move_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functiongroups.Insert</td></tr><tr><td>4</td><td>Move_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functiongroups.Inspect</td></tr><tr><td>5</td><td>Move_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functiongroups.Move</td></tr><tr><td>6</td><td>Move_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functiongroups.Store</td></tr></tbody></table><table><thead><tr><th /><th>E</th><th>F</th></tr><tr><td>1</td><td>Functionunit_Name</td><td>Functionunit_Type</td></tr></thead><tbody><tr><td>2</td><td /><td /></tr><tr><td>3</td><td>Axis_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functionunits.Axis</td></tr><tr><td>4</td><td>Axis_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functionunits.Axis</td></tr><tr><td>5</td><td>Axis_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functionunits.Axis</td></tr><tr><td>6</td><td>Axis_2</td><td>T_Mechatronic_ModularSystem.Mechatronic.Functionunits.Axis</td></tr></tbody></table><table><thead><tr><th /><th>G</th><th>H</th></tr><tr><td>1</td><td>Functionunit_Key_Position</td><td>Functionunit_Key_<a href="glossary_o_fc.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Function</a></td></tr></thead><tbody><tr><td>2</td><td /><td /></tr><tr><td>3</td><td>1</td><td>Get_item</td></tr><tr><td>4</td><td>2</td><td>Inspect_item</td></tr><tr><td>5</td><td>3</td><td>Store_good_item</td></tr><tr><td>6</td><td>4</td><td>Discard_bad_item</td></tr></tbody></table> <p class="Bridgehead">Schema file content:</p><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;schema tableName="Mechatronic" columnKeySeparator="_"&gt;
+	&lt;node id="Station" name="${Machine_Name}" typeClass="${Machine_Type}"&gt;
+		&lt;node id="Functiongroup" name="${Functiongroup_Name}" typeClass="${Functiongroup_Type}"&gt;
+			&lt;node id="Functionunit" name="${Functionunit_Name}" typeClass="${Functionunit_Type}"&gt;
+				&lt;properties name="MyMap" multiRowKey="Key" multiRowEntryKey="Functionunit_Key_Position"/&gt;
+			&lt;/node&gt;
+		&lt;/node&gt;
+	&lt;/node&gt;
+&lt;/schema&gt;</code></pre> <p class="Bridgehead">Result:</p> <p>The result shows the nested map. The outer map is made up of the key-value pairs that have the ID (<span class="codetext">Functionunit</span>) of the parent node in the column name, including the first column name with the key word (attribute <span class="codetext">multiRowKey</span>). Here, the part of the column heading after the separator character (attribute <span class="codetext">columnKeySeparator</span>) forms the key and the content of the column forms the value of each pair.</p> <p>Starting with the first column whose heading contains the key word (<span class="codetext">multiRowKey="</span><span class="codetext">Key"</span>), the contents of this column are applied as the key and another map is applied as the value.</p> <p>The innermost map forms the key from the column headings with the combination <span class="codetext">ID_multiRowKey</span> (<span class="codetext">Functionunit_Key</span>) and the values from the corresponding column values.</p><pre xml:space="preserve"><code class="language-javascript">=Map{
+	Pair{'Name','X_Axis_2'},
+		Pair{'Key',Map{
+			Pair{'3',Map{
+				Pair{'Function','Store_good_item'},
+				Pair{'Position','3'}
+				}
+			},
+			Pair{'2',Map{
+				Pair{'Function','Inspect_item'},
+				Pair{'Position','2'}
+				}
+			},
+			Pair{'1',Map{
+				Pair{'Function','Get_item'},
+				Pair{'Position','1'}
+				}
+			},
+			Pair{'4',Map{
+				Pair{'Function','Discard_bad_item'},
+				Pair{'Position','4'}
+				}
+			}
+		}	
+	},
+	Pair{'Type','T_Mechatronic_ModularSystem.Mechatronic.Functionunits.Axis'}
+}</code></pre></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,340 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Interactions</title>
+    <meta name="Title" content="Interactions"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n164","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="In EPLAN API, &quot;interactions&quot; term refers to classes used to handle events related to interactive work in GED. " />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="62ef4cf7-d4cb-417d-9b1f-4afa2b4e006e"/>
+    <meta name="Microsoft.Help.TocParent" content="83e0aa48-04c2-4e59-982a-0bee5fa917cb"/>
+    <meta name="Microsoft.Help.TocOrder" content="3"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="EServices.html">API Electrotechnical services</a>
+ / Interactions</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Interactions</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>In EPLAN API, "interactions" term refers to classes used to handle events related to&nbsp;interactive work in GED.&nbsp;</p>
+
+<p>Mechanism of interactions bases mostly on "XGedStartInteractionAction" action, which is invoked by EPLAN framework in case of moving, adding or selecting object, etc in graphic editor. For example when inserting a window macro on a page, EPLAN framework calls action:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div>
+    <div>
+        <pre>
+ XGedStartInteractionAction /Name:XMIaInsertMacro
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>Its parameter "Name" is used to pass a name of an interaction.&nbsp;</p>
+
+<p>There are 2 general types of API Interactions usage : creating custom ones and overriding default (system).&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Creating custom interactions&nbsp;</h3>
+
+<p>EPLAN API enables programmers to create their own custom interactions.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">class</span> DeleteTerminalsInteraction : Interaction
+{
+   <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> RequestCode OnStart(InteractionContext pContext)
+   {
+      <span style="COLOR: #008000">// interaction has been stated.
+      // set initial state
+</span>      m_state = State.Start;
+      <span style="COLOR: #008000">//
+      // activate placement filter
+      //
+</span>      IsPlacementFilterActive = <span style="COLOR: #0000ff">true</span>;
+      <span style="COLOR: #008000">//
+      // request point and set prompt for user
+      //
+</span>      <span style="COLOR: #0000ff">this</span>.PromptForStatusLine = <span style="COLOR: #800000">"select Terminals"</span>;
+      <span style="COLOR: #0000ff">return</span>  RequestCode.Select;
+  }
+<span style="COLOR: #008000">//can be used to filter for selection or for highlight
+</span>  <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> <span style="COLOR: #0000ff">bool</span> OnFilterElement(StorableObject placement)
+  {
+     <span style="COLOR: #0000ff">if</span> (placement <span style="COLOR: #0000ff">is</span> Terminal)
+     {
+        <span style="COLOR: #0000ff">return</span> <span style="COLOR: #0000ff">true</span>;
+     }
+     <span style="COLOR: #0000ff">return</span> <span style="COLOR: #0000ff">false</span>;
+   }
+   <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> RequestCode OnSelect(StorableObject[] placements, SelectionContext context)
+   {
+      m_Terminals = placements.Cast&lt;Terminal&gt;().ToArray();
+      m_state = State.Select;
+      <span style="COLOR: #0000ff">return</span> RequestCode.Success;
+   }
+   <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> <span style="COLOR: #0000ff">void</span> OnSuccess(InteractionContext result)
+   {
+      <span style="COLOR: #0000ff">if</span> (m_state == State.Select)
+      {
+         <span style="COLOR: #0000ff">for</span> (<span style="COLOR: #0000ff">int</span> i = 0; i &lt; m_Terminals.Length; i++)
+         {
+            m_Terminals[i].Remove();
+         }
+      }
+   }
+   <span style="COLOR: #0000ff">enum</span> State
+   {
+      Start = 0,
+      Select,
+   };
+
+   State m_state;
+   Terminal[] m_Terminals;
+}
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <div>
+        <pre>
+    
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>To add interaction to EPLAN , it must be included in an API add-in or addon. Interaction is registered under name of its class while loading an API add-in containing it.&nbsp;</p>
+
+<p>There is also special class Eplan::EplApi::EServices::Ged::InsertInteraction for interactions which insert objects on a page. It contains additional property showing placed object.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Interaction attributes&nbsp;</h3>
+
+<p>Programmer can decorate interaction class with Eplan::EplApi::EServices::Ged::InteractionAttribute to customize name of interaction, set name of interaction to override (see paragraph bellow), ordinal number and priority:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #008000">//example of interaction attributes
+</span>    [InteractionAttribute(Name = <span style="COLOR: #800000">"DerivedSymbolInsertInteraction"</span>, NameOfBaseInteraction = <span style="COLOR: #800000">"XEGedIaInsertSymRef"</span>, Ordinal = 50, Prio = 20)]
+    <span style="COLOR: #0000ff">class</span> DerivedSymbolInsertInteraction : InsertInteraction
+    {
+        <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> RequestCode OnStart(InteractionContext pContext)
+        {
+            <span style="COLOR: #0000ff">return</span> <span style="COLOR: #0000ff">base</span>.OnStart(pContext);
+        }
+        <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> <span style="COLOR: #0000ff">void</span> OnSuccess(InteractionContext result)
+        {
+            <span style="COLOR: #008000">// execute standard operation of symbol insert interaction
+            //
+</span>            <span style="COLOR: #0000ff">base</span>.OnSuccess(result);
+            <span style="COLOR: #008000">//
+            // set property of inserted function
+</span>            Placement[] placements = InsertedPlacements;
+            <span style="COLOR: #0000ff">for</span> (<span style="COLOR: #0000ff">int</span> i = 0; i &lt; placements.Length; i++)
+            {
+                Function f = (Function)placements[i];
+                <span style="COLOR: #0000ff">if</span> (f != <span style="COLOR: #0000ff">null</span>)
+                {
+                    f.Properties[Properties.Function.FUNC_TEXT] = <span style="COLOR: #800000">"API_Demos : DerivedSymbolInsertInteraction"</span>;
+                }
+            }
+        }
+    }
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;</p>
+
+<p>For more details see&nbsp;<a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.InteractionAttribute.html">Eplan::EplApi::EServices::Ged::InteractionAttribute</a>.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Overriding default interactions&nbsp;</h3>
+
+<p>API interactions can also override default EPLAN interactions. This way execution will be passed to a user code instead of EPLAN core.&nbsp;</p>
+
+<p>Such interactions has to derive from Interaction class also. Example how to do it is shown above (DerivedSymbolInsertInteraction)&nbsp;</p>
+
+<p>The only change which has to be done is in InteractionAttribute :&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div>
+    <div>
+        <pre>
+[InteractionAttribute(Name = "XEGedIaInsertSymRef", NameOfBaseInteraction = "XEGedIaInsertSymRef", Ordinal = 50, Prio = 20)]
+</pre>
+    </div>
+</div>
+
+<p>How does this mechanism work ?&nbsp;</p>
+
+<p>By default all events connected with inserting symbol operation are routed to the core interaction XEGedIaInsertSymRef.&nbsp;</p>
+
+<p>But DerivedSymbolInsertInteraction can override default interaction by using 'NameOfBaseInteraction' and 'Name' property of the InteractionAttribute.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Getting feedback from GED&nbsp;</h3>
+
+<p>Most of interaction's methods return&nbsp;<a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.RequestCode.html">Eplan::EplApi::EServices::Ged::RequestCode</a> which is used to control workflow of interaction. Default implementation of method Interaction::OnStart returns RequestCode::Success which causes end of interaction. If it's overridden and returns RequestCode::Point then interaction stays active, and when user clicks mouse button, method Interaction::OnPoint is called by EPLAN.</p>
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-see-also-sub-heading">API Interactions</h4><div class="i-see-also-link">
+<a href="API Interactions.html">Interactions</a></div>
+
+<h4 class="i-see-also-sub-heading">Reference</h4><div class="i-see-also-link">
+<a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.RequestCode.html">RequestCode Enumeration</a></div>
+
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Interactions">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

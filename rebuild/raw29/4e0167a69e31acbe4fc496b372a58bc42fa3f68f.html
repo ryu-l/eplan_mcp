@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|EPLAN Pro Panel|3D Mounting Layout|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The Migrate part functionality is a conversion aid for Rittal TS8-based projects to migrate existing individual parts from the Rittal baying system TS..." /><title>Migration of Enclosure Parts</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/cabinetgui_k_artikelmigrieren.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2017"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor2018"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Pro Panel" /><a name="kanchor2402"></a>
+            <h2>Migration of Enclosure Parts</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The <span class="gui">Migrate part</span> functionality is a conversion aid for Rittal TS8-based <a href="Glossary_o_projekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">projects</a> to migrate existing individual parts from the Rittal baying system TS8 to the Rittal baying system VX25.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">Please read the EPLAN <a href="license_k_start.htm#Haftungsausschluss">Disclaimer of Liability Declaration</a> first before you use the <span class="gui">Migrate part</span> functionality.</p>
+            </div>
+            <p>The following conditions and limits apply:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The menu <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a> <span class="gui">Migrate part</span> and <span class="gui">Correct enclosure distance</span> are not available in the optionally available EPLAN Pro Panel Add-on.</li>
+                <li class="Listitem_Normal" value="2">A migration is only possible for the Rittal TS8 system.</li>
+                <li class="Listitem_Normal" value="3">All parts must have been placed with a 3D macro.</li>
+                <li class="Listitem_Normal" value="4">Special parts that are not contained in the Rittal catalog and not in the EPLAN Data Portal are not migrated.</li>
+                <li class="Listitem_Normal" value="5">Article placements with automatic and manual protection are not migrated. Therefore every protection has to be removed before migration.</li>
+                <li class="Listitem_Normal" value="6">Enclosures that were created with the RICS Configurator are not migrated, since they are subject to automatic protection.</li>
+                <li class="Listitem_Normal" value="7">Enclosures that were created in external systems and integrated via a STEP import, cannot be migrated.</li>
+                <li class="Listitem_Normal" value="8">The required VX25 replacement parts must be contained in the parts database used. Missing replacement parts are determined and can be exported to a CSV file and obtained via the shopping basket of the EPLAN Data Portal. It is advisable to obtain missing replacement parts only from the EPLAN Data Portal.</li>
+                <li class="Listitem_Normal" value="9">The <a href="messages_p_026104.htm">Check run 026104</a> determines migratable Rittal TS8 parts which have not been migrated yet.</li>
+                <li class="Listitem_Normal" value="10">The <a href="messages_p_026102.htm">Check run 026102</a> determines Rittal TS8 parts that cannot be migrated. These are discontinued parts.</li>
+                <li class="Listitem_Normal" value="11">The <a href="messages_p_026103.htm">Check run 026103</a> determines the <a href="Glossary_o_artikelplatzierungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part placements</a> whose mounting surface does not exist in the migrated enclosure. These <a href="Glossary_o_objekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">objects</a> are displayed in the <a href="Glossary_o_bauraum.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">layout space</a> navigator under the hierarchy level "Incorrectly placed". For the correction incorrectly placed <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> placements must be placed manually on the existing <a href="Glossary_o_montageflaechen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">mounting surfaces</a>.</li>
+                <li class="Listitem_Normal" value="12">All part placements are copied geometrically unchanged onto the mounting surface of the same name into the migrated enclosure from the origin in the same X/Y position.<br /></li>
+                <li class="Listitem_Normal" value="13">You can assign a new 3D macro to Rittal TS8 parts that exist in modified <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> (for example hole with <a href="Glossary_o_langloecher.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">slotted holes</a> instead of round holes) by using the menu item <span class="gui">Update part placement</span>.</li>
+                <li class="Listitem_Normal" value="14">Part placements for which no mounting surface of the same name is found in the target enclosure are displayed in the layout space navigator under the hierarchy level "Incorrectly placed". At these part placements a manual re-placement is required.</li>
+            </ul>
+            <p><a name="AutomatischesMigrieren"></a>
+            </p>
+            <h3>Automatic migration</h3>
+            <p>Depending on the selection in the layout space navigator, a project, the complete contents of a layout space or an individual enclosure is analyzed and migrated on the part level. The following parts can be automatically migrated:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">Enclosure</li>
+                <li class="Listitem_Single_Line" value="2">Base</li>
+                <li class="Listitem_Single_Line" value="3">Doors</li>
+                <li class="Listitem_Single_Line" value="4">Panels, for example side panels, partitions</li>
+                <li class="Listitem_Single_Line" value="5">Cover with door</li>
+                <li class="Listitem_Single_Line" value="6">TS disconnect switch cover</li>
+                <li class="Listitem_Single_Line" value="7">Roof plate</li>
+                <li class="Listitem_Single_Line" value="8">Top module.</li>
+            </ul>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">A peculiarity applies for bases / top <a href="Glossary_o_module.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">modules</a>: The migration generates a completely closed base with covers.</p>
+            </div>
+            <p><a name="ManuellesMigrieren"></a>
+            </p>
+            <h3>Manual migration</h3>
+            <p>Non automatically migratable part placements can be migrated manually, for example:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">Adjoining parts</li>
+                <li class="Listitem_Single_Line" value="2">Pivoting frames</li>
+                <li class="Listitem_Single_Line" value="3">Rails</li>
+                <li class="Listitem_Single_Line" value="4">Chassis</li>
+                <li class="Listitem_Single_Line" value="5">Partial mounting panel</li>
+                <li class="Listitem_Single_Line" value="6">Partial doors</li>
+                <li class="Listitem_Single_Line" value="7">Floor sheet</li>
+                <li class="Listitem_Single_Line" value="8">Lock system</li>
+                <li class="Listitem_Single_Line" value="9">Adapter profile</li>
+                <li class="Listitem_Single_Line" value="10">Wire duct</li>
+                <li class="Listitem_Single_Line" value="11">Hinge.</li>
+            </ul>
+            <p><a name="Kontrolle"></a>
+            </p>
+            <h3>Required check and post-processing after the migration</h3>
+            <p>After the migration an exact check of the results should be carried out. Perform the following updates and checks at the migrated enclosure:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">Checking all part placements for the correct position</li>
+                <li class="Listitem_Single_Line" value="2">Renumbering DT</li>
+                <li class="Listitem_Single_Line" value="3">Renumbering legend item</li>
+                <li class="Listitem_Single_Line" value="4">Updating views (<a href="Glossary_o_modell_ansichten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">model views</a>, 2D <a href="Glossary_o_bohransichten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">drilling views</a>, copper unfolds)</li>
+                <li class="Listitem_Single_Line" value="5">Updating <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a> (<a href="Glossary_o_stuecklisten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">bills of materials</a>, enclosure legend)</li>
+                <li class="Listitem_Single_Line" value="6">Checking and correcting routing path network</li>
+                <li class="Listitem_Single_Line" value="7">Routing <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a>.</li>
+            </ul>
+            <h3>Correction of the enclosure distance for line ups</h3>
+            <p>Since a VX25 enclosure is 2 mm wider than a TS8 enclosure, an intersection of the migrated VX25 enclosures occurs after the migration of an enclosure line up. The check run P026011 reports this as a collision.</p>
+            <p>To correct the distance within the line up, select the menu item <span class="gui">Edit &gt; Correct enclosure distance</span>.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="cabinetgui_h_artikelmigrieren.htm">Migrating Parts</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

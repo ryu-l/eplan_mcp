@@ -1,0 +1,214 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>edit</title>
+    <meta name="Title" content="edit"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n49892","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="Action class for edit functions: open a project, open a page with a name, open a page with a device name and open a page with name and set the cursor at x y coordinates.
+
+
+
+
+Parameter
+Description
+
+
+PROJECTNAME
+Project name with full path (o" />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="33c3884a-29f5-48d6-b3e6-ad4caa089b6d"/>
+    <meta name="Microsoft.Help.TocParent" content="3e41d92d-c4b9-41c5-ac0e-391e5f31e47b"/>
+    <meta name="Microsoft.Help.TocOrder" content="8"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API Reference.html">API Reference</a>
+ / <a href="API Actions.html">Actions</a>
+ / edit</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">edit</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <DIV class=DescriptionContent><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Action class for edit functions: open a project, open a page with a name, open a page with a device name and open a page with name and set the cursor at x y coordinates.
+</PRE></DIV><BR>
+<TABLE>
+<TBODY>
+<TR>
+<TH>Parameter</TH>
+<TH>Description</TH></TR>
+<TR>
+<TD>
+<P class=ParameterCell>PROJECTNAME</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Project name with full path (optional).
+If not entered, the selected project is used when the action is called from GUI (like from a script or button bar). 
+If called from the windows command line, PROJECTNAME must be set or the  must be used first, otherwise an  exception is thrown. 
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>PAGENAME</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Name of the page to be opened(optional). Required if X, Y have been specified as parameters. 
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>DEVICENAME</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Name of an item (optional).
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>X</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">X coordinate (optional). Parameter is only valid if the PAGENAME parameter is available.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>Y</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Y coordinate (optional). Parameter is only valid if the PAGENAME parameter is available.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>INSTALLATIONSPACE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Name of the installation space too be opened (optional). not possible to use with PAGENAME
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>DEVICENAME3D</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Name of an item inside of an installation space (optional).
+</PRE></TD></TR></TBODY></TABLE>
+<DIV>
+<DIV id=remarksSectionHeading class=SectionHeading><SPAN class=SectionHeadingIcon><BR></SPAN><SPAN class=SectionHeadingText>Remarks</SPAN> </DIV>
+<DIV id=remarksSectionContent class=SectionContent><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">The current action checks the parameters and execute the corresponding operation. One of the following operation will be done. 
+The operation nÂ° 1 has a highest priority and the operation nÂ° 5 has the lowest priority. 
+For example if a page   name and device name are set, so the operation nÂ° 1 will be executed. 
+Otherwise it checks if it is possible to execute the remaining operations. 
+If at all no parameter was set, soonly the project will be opened(operation nÂ° 5). 
+1- open a page with name and a device name. The device will be selected. If the given device was not found on the page, so the page will be opened and no element will be selected. 
+   In this case an error message will be inserted into message system. 
+2- open a page with a name, X and Y coordinates. 
+3- open a page only with a name. 
+4- open a page which holds the  first device name found. 
+5- open a project
+
+</PRE></DIV></DIV><A id=exampleBookmark name=exampleBookmark></A>
+<DIV id=exampleSectionHeading class=SectionHeading><SPAN class=SectionHeadingIcon><BR></SPAN><SPAN class=SectionHeadingText>Example</SPAN> </DIV>
+<DIV id=exampleSectionContent class=SectionContent>
+<DIV id=TabContent class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word"><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Open project:
+edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
+
+Open page:
+
+edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/7
+
+Open page by a device tag of a device, which is located on the page:
+
+edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /DEVICENAME:=AP+PT1-G1
+
+Open page and set cursor to X, Y position:
+
+edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/7 /X:200 /Y:100
+
+edit /PROJECTNAME:$(MD_PROJECTS)\ESS_Sample_Project.elk /INSTALLATIONSPACE:"=EB3+ET1 (-MP1)"
+
+edit /PROJECTNAME:$(MD_PROJECTS)\ESS_Sample_Project.elk /DEVICENAME3D:=EB3+ET1-F14
+</PRE></DIV><BR></DIV>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: edit">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

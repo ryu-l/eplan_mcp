@@ -1,0 +1,50 @@
+# ARTICLE_CROSSSECTIONTILL Property
+
+ARTICLE\_CROSSSECTIONTILL Property
+
+Terminals: Cross-section to # 22085.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue ARTICLE_CROSSSECTIONTILL {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ ARTICLE_CROSSSECTIONTILL {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type .
+
+Remarks
+
+Property of a part variant. Permissible connection cross-section in mm².
+
+See Also
+
+#### Reference
+
+[ArticlePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList.html)
+  
+[ArticlePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_CROSSSECTIONTILL.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_CROSSSECTIONTILL())

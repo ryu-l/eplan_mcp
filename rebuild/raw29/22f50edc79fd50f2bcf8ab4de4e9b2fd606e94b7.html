@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Working with Connections|Routing Paths (Topology)|Proceed as Follows">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="In order to route connections that run between different identification structures (for example connections between two enclosures at different mounti..." /><title>Routing Connections between Different Identification Structures</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/cablinggui_h_strukturenverbinden.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor869"></a>
+            <MadCap:concept term="Handlung;EPLAN Plattform;EPLAN Electric P8" />
+            <h2>Routing Connections between Different Identification Structures</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>In order to <a href="Glossary_o_verlegen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">route</a> <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> that run between different identification structures (for example connections between two enclosures at different mounting locations) the connected <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> have to exist as <a href="Glossary_o_topologie.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">topology</a> functions. EPLAN supports you here by providing the possibility to manually or automatically <a href="Glossary_o_erzeugen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">generate</a> these topology functions and the associated <a href="Glossary_o_strecken.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing paths</a>.</p>
+            <p>The starting point of this procedure are the <span class="important">structure routing points</span>. These represent a specific identification structure. At a structure routing point you either manually select the desired functions from which topology functions are to be generated, or you have them generated automatically. Through subsequent routing you <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> <a href="Glossary_o_verlegeverbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing connections</a> between the functions in the various identification structures.</p>
+            <p>If you want to place the topology functions and routing paths subsequently, first place the unplaced topology functions on the schematic page of the routing point and then use the functionality of the automatic placement of unplaced routing paths.</p>
+            <p>This section describes the procedure for routing connections between <span class="important">two</span> different identification structures. Connections between several different identification structures can, however, be routed by the same means. In this case further <a href="Glossary_o_strukturverlegepunkte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">structure routing points</a> are required.</p>
+            <p class="Bridgehead">Preconditions:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">You have opened a project.</li>
+                <li class="Listitem_Normal" value="2">You have inserted two structure <a href="Glossary_o_verlegepunkte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing points</a> and connected these with each other through a routing path. The structure routing points and the routing path can, but do not have to be, placed on a topology page.</li>
+                <li class="Listitem_Normal" value="3">The required multi-line or single-line functions already exist and are connected with each other.</li>
+            </ul>
+            <h3>Routing connections with the automatic generation of the topology functions</h3>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Mark the two structure routing points on the topology page of in the topology navigator.</li>
+                <li class="Listitem_Step_By_Step" value="2">Select the menu <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a> <span class="gui">Project data &gt; Topology &gt; Generate topology functions &gt; Automatic</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> Unplaced topology functions are generated from the multi-line or single-line functions that correspond to the identification structure of the marked structure routing points. The resulting topology functions are connected via unplaced routing paths with the structure routing points.</li>
+                <li class="Listitem_Step_By_Step" value="3">Mark the multi-line connections (for example in the connections navigator) or the topology functions in the topology navigator, or simply mark the project in the page navigator, and select the menu items <span class="gui">Project data &gt; Topology &gt; Route</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> Unplaced routing connections are generated between the functions in the first identification structure (selected at Structure routing point 1) and the functions in the second identification structure (selected at Structure routing point 2).</li>
+            </ol>
+            <div class="tip">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/info.png" />Tip:</p>
+                <p class="Infoblock">You can specify a filter in the <span class="gui">Connected structures</span> tab in the <a href="Glossary_o_eigenschaftendialog.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">property dialog</a> of a structure routing point. You can use such a filter to limit the generation of the unplaced topology filter to a <span class="important">subset</span> of the functions that correspond to the identification structure of the marked structure routing point and to the structure routing points connected to these. You can, for example, filter by functions that are located in a specific <a href="Glossary_o_einbauort.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">mounting location</a> or that have a specific function definition.</p>
+            </div>
+            <h3>Routing connections with the manual generation of the topology functions</h3>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Mark the first structure routing point on the topology page of in the topology navigator.</li>
+                <li class="Listitem_Step_By_Step" value="2">Select the menu items <span class="gui">Project data &gt; Topology &gt; Generate topology functions &gt; Manual</span>.<br /></li>
+                <li class="Listitem_Step_By_Step" value="3">Select the desired functions of the first identification structure for which the topology functions are to be generated in the <span class="gui">Main functions without topology</span> area in the <span class="gui">Generate topology functions</span> dialog.</li>
+                <li class="Listitem_Step_By_Step" value="4">Use the arrow button to move the marked function into the <span class="gui">Connected topology functions</span> list.</li>
+                <li class="Listitem_Step_By_Step" value="5">Click <span class="gui">[OK]</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The unplaced topology functions are generated and connected through unplaced routing paths with the structure routing point.</li>
+                <li class="Listitem_Step_By_Step" value="6">Use the same procedure to generate unplaced topology functions and routing paths for the second identification structure at the second structure routing point.</li>
+                <li class="Listitem_Step_By_Step" value="7">Mark the multi-line connections (for example in the connections navigator) or the topology functions in the topology navigator, or simply mark the project in the page navigator, and select the menu items <span class="gui">Project data &gt; Topology &gt; Route</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> Unplaced routing connections are generated between the functions in the first identification structure (selected at Structure routing point 1) and the functions in the second identification structure (selected at Structure routing point 2).</li>
+            </ol>
+            <div class="tip">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/info.png" />Tip:</p>
+                <p class="Infoblock">You can use the menu items <span class="gui">Project data &gt; Topology &gt; Generate topology functions &gt; Manual</span> at any time top open the dialog <span class="gui">Generate topology functions</span>. There you can view the generated topology functions and, if required, change them subsequently. The automatically generated topology functions are also displayed in this dialog.</p>
+            </div>
+            <h3>Placing topology functions</h3>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">If you want to place the previously generated unplaced topology functions and routing paths, first open a topology page in the graphical editor and there place the two structure routing points and the connecting routing path (in as far as not yet done).</li>
+                <li class="Listitem_Step_By_Step" value="2">Mark the unplaced topology functions in the topology navigator and select the <span class="gui">Place &gt; Topology</span> popup menu items.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The first function hangs on the cursor.</li>
+                <li class="Listitem_Step_By_Step" value="3">Place the functions consecutively on the topology page - by clicking with the left-hand mouse button.</li>
+                <li class="Listitem_Step_By_Step" value="4">Mark the unplaced topology functions in the topology navigator and select the <span class="gui">Place &gt; Automatic</span> popup menu items.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The topology functions are connected consecutively with the corresponding structure routing point.</li>
+            </ol>
+            <p class="Seealso" data-mc-conditions="Primary.ScreenOnly">See also</p>
+            <p class="Link_Seealso" data-mc-conditions="Primary.ScreenOnly"><a href="cablinggui_k_prinzip.htm">Routing Paths (Topology): Principle</a>
+            </p>
+            <p class="Link_Seealso" data-mc-conditions="Primary.ScreenOnly"><a href="cablinggui_h_verlegepunkteeinfuegen.htm">Inserting Routing Points (Topology)</a>
+            </p>
+            <p class="Link_Seealso" data-mc-conditions="Primary.ScreenOnly"><a href="cablinggui_h_verlegen.htm">Routing Connections (Topology)</a>
+            </p>
+            <p class="Link_Seealso" data-mc-conditions="Primary.ScreenOnly"><a href="devicetaggui_r_cablingstrukturen.htm">Tab Connected structures</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Managing Master Data|Form and Plot Frame Editor|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The reporting direction for forms is defined via the Form orientation property. This property defines the sequence in which the form is filled during ..." /><title>Reporting Direction for Forms</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/formeditorgui_k_auswertungsrichtung.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor1103"></a>
+            <MadCap:concept term="Grundlagen;EPLAN Plattform;EPLAN Electric P8;EPLAN Fluid" />
+            <h2>Reporting Direction for Forms</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p><a name="kanchor1244"></a><a name="kanchor1245"></a>The reporting direction for <a href="Glossary_o_formulare.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">forms</a> is defined via the <span class="gui">Form orientation </span>property. This property defines the sequence in which the <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> is filled during the report - either by row or by column. "By row" means that first all the cells of a row are filled before switching to the next row. "By column" means that first all the cells of a column are filled before switching to the next column.</p>
+            <p>In addition, the <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> <span class="gui">Column width </span>and <span class="gui">Row height </span>are also relevant to the reporting direction. By entering positive or negative values in these properties, you specify whether the report is generated from left to right, from top to bottom or in reverse.</p>
+            <h3>Report by row</h3>
+            <p>In the tables, a "+" entry represents a positive value, and a "-" entry a negative value.</p>
+            <h4>Report from top to bottom and from left to right</h4>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Property</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Value</p>
+                    </th>
+                    <td rowspan="4">
+                        <img src="../Pictures/Visualisation/ALL/formeditorgui_dr_av.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Form orientation</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">By row</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Column width</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">+</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Row height</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">+</p>
+                    </td>
+                </tr>
+            </table>
+            <h4>Report from top to bottom and from right to left</h4>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Property</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Value</p>
+                    </th>
+                    <td rowspan="4">
+                        <img src="../Pictures/Visualisation/ALL/formeditorgui_dl_av.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Form orientation</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">By row</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Column width</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">-</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Row height</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">+</p>
+                    </td>
+                </tr>
+            </table>
+            <h4>Report from bottom to top and from left to right</h4>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Property</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Value</p>
+                    </th>
+                    <td rowspan="4">
+                        <img src="../Pictures/Visualisation/ALL/formeditorgui_ur_av.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Form orientation</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">By row</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Column width</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">+</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Row height</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">-</p>
+                    </td>
+                </tr>
+            </table>
+            <h4>Report from bottom to top and from right to left</h4>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Property</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Value</p>
+                    </th>
+                    <td rowspan="4">
+                        <img src="../Pictures/Visualisation/ALL/formeditorgui_ul_av.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Form orientation</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">By row</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Column width</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">-</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Row height</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">-</p>
+                    </td>
+                </tr>
+            </table>
+            <h3>Report by column</h3>
+            <p>In the tables, a "+" entry represents a positive value, and a "-" entry a negative value.</p>
+            <h4>Report from left to right and from top to bottom</h4>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Property</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Value</p>
+                    </th>
+                    <td rowspan="4">
+                        <img src="../Pictures/Visualisation/ALL/formeditorgui_rd_av.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Form orientation</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">By column</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Column width</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">+</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Row height</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">-</p>
+                    </td>
+                </tr>
+            </table>
+            <h4>Report from left to right and from bottom to top</h4>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Property</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Value</p>
+                    </th>
+                    <td rowspan="4">
+                        <img src="../Pictures/Visualisation/ALL/formeditorgui_ru_av.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Form orientation</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">By column</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Column width</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">+</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Row height</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">+</p>
+                    </td>
+                </tr>
+            </table>
+            <h4>Report from right to left and from top to bottom</h4>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Property</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Value</p>
+                    </th>
+                    <td rowspan="4">
+                        <img src="../Pictures/Visualisation/ALL/formeditorgui_ld_av.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Form orientation</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">By column</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Column width</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">-</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Row height</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">-</p>
+                    </td>
+                </tr>
+            </table>
+            <h4>Report from right to left and from bottom to top</h4>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Property</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Value</p>
+                    </th>
+                    <td rowspan="4">
+                        <img src="../Pictures/Visualisation/ALL/formeditorgui_lu_av.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Form orientation</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">By column</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Column width</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">-</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Row height</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">+</p>
+                    </td>
+                </tr>
+            </table>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">In this example, a terminal diagram is to be created, where several columns are represented on a report page. For this purpose, a report is generated for the form by row; the rows are filled from top to bottom, and the columns are run through from left to right. The form used for the terminal diagram is set up as follows:</p>
+                        <table>
+                            <tr>
+                                <th>
+                                    <p class="Tabelle_Text">Property</p>
+                                </th>
+                                <th>
+                                    <p class="Tabelle_Text">Value</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="Tabelle_Text">Form orientation</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">By row</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="Tabelle_Text">No. of columns</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">4</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="Tabelle_Text">No. of rows</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">12</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="Tabelle_Text">Column width</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">90.00 mm</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="Tabelle_Text">Row height</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">8.00 mm</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="Tabelle_Text">Reuse header for new column</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">deselected</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="Infoblock"><span class="codetext"><img src="../Pictures/Visualisation/ALL/formeditorgui_formtermdiagex_av.png" /></span>
+                        </p>
+                        <p class="Infoblock">The report is generated from top to bottom and from left to right. A report page can contain up to four columns (in the figure, numbered from 1 to 4). First, the rows of the first column are filled one by one, followed by the rows of the second column, etc. (In the figure, the reporting direction is illustrated by the arrows in the red-framed box.) The report page then appears as follows:</p>
+                        <p class="Infoblock">
+                            <img src="../Pictures/Visualisation/ALL/formeditorgui_termdiagex_av.png" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Notes:</p>
+                <ul>
+                    <li class="Listitem_Normal" value="1">Use the <span class="gui">No. of rows</span> and <span class="gui">Row height</span> form properties to define the maximum evaluation range of the page in <a href="Glossary_o_dynamischeformulare.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">dynamic forms</a>: The two values are multiplied, and give the value (in "mm") for the (not visible) boundary line after which the break occurs. The boundary line is calculated in reference to the end of the header. For the above example, this means: If the number of rows = <span class="codetext">12</span> and the row height = <span class="codetext">8 mm</span>, the break is placed after <span class="codetext">12 x 8 mm = 96 mm</span>.</li>
+                    <li class="Listitem_Normal" value="2">If the <span class="gui">Reuse header for new column</span> form property is deactivated, the header will be displayed only in the first column. In the following columns, then, more data rows are displayed than have been defined in the <span class="gui">No. of rows </span>property.<br /></li>
+                </ul>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="formeditorgui_k_start.htm">Form and Plot Frame Editor</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,267 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>SelectionInteraction Class</title>
+    <meta name="Title" content="SelectionInteraction Class"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n42282","initialNodeContainer":"c495","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.SelectionInteraction"/>
+    <meta name="Description" content="Base class for specific interactions that selects objects." />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged_namespace"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.EServices.Ged.SelectionInteraction"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged_namespace.html">Eplan.EplApi.EServices.Ged Namespace</a>
+ / SelectionInteraction Class</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <a class="i-page-link" href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.SelectionInteraction_members.html">Members</a>
+                    <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">SelectionInteraction Class</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">Base class for specific interactions that selects objects.</div>
+            
+            <div class="i-section-heading" id="i-inheritance-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Inheritance Hierarchy</span></div><div id="i-inheritance-section-content" class="i-section-content"><P><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemObjectClassTopic','System.Object')">System.Object</a><BR />&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<STRONG>Eplan.EplApi.EServices.Ged.SelectionInteraction</STRONG><BR /></P></div>			
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">class</span> SelectionInteraction : <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Interaction</a> </pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">ref</span> <span style="color: #0000FF; ">class</span> SelectionInteraction : <span style="color: #0000FF; ">public</span> <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Interaction</a> </pre></pre>
+            </div>
+        
+
+            </div>
+        </div>
+            
+            
+            
+            
+            <a name="exampleBookmark"></a>
+            
+            
+            
+            
+            <a name="ConstructorsBookmark"></a>
+            <div class="i-section-heading" id="i-publicConstructors-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Constructors</span></div><div id="i-publicConstructors-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Constructor" src="template/packages/core-dotnet/images/publicConstructor.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.SelectionInteraction~_ctor.html">SelectionInteraction Constructor</A></td><td class="i-member-description">Default constructor. &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="FieldsBookmark"></a>
+            
+            
+            
+            <a name="PropertiesBookmark"></a>
+            <div class="i-section-heading" id="i-publicProperties-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Properties</span></div><div id="i-publicProperties-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~Description.html">Description</A></td><td class="i-member-description">Description of undo step for this interaction. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~DraggingMouseCursor.html">DraggingMouseCursor</A></td><td class="i-member-description">Mouse cursor which will be used for next dragging operation. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~InstallationSpace.html">InstallationSpace</A></td><td class="i-member-description">Installation space, the editor belongs to. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~IsAutorestartEnabled.html">IsAutorestartEnabled</A></td><td class="i-member-description">Returns <code originaltag="c">true</code>, if interaction should restart after stop. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.SelectionInteraction~IsInsertInteraction.html">IsInsertInteraction</A></td><td class="i-member-description">Overridden.&nbsp;Returns <code originaltag="c">true</code>, if interaction is used to insert one ore more placements on page. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~IsObjectPlacementModeActive.html">IsObjectPlacementModeActive</A></td><td class="i-member-description">Returns <code originaltag="c">true</code>, if special object placement mode is active. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~IsPlacementFilterActive.html">IsPlacementFilterActive</A></td><td class="i-member-description">If true, then placement-filter is active. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~IsReadOnly.html">IsReadOnly</A></td><td class="i-member-description">Returns <code originaltag="c">true</code>, if function does not change the project database. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.SelectionInteraction~IsSelectionInteraction.html">IsSelectionInteraction</A></td><td class="i-member-description">Overridden.&nbsp;Returns <code originaltag="c">true</code>, if interaction is a helper interaction to select placements. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~MousePosition.html">MousePosition</A></td><td class="i-member-description">current mouse position (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~Page.html">Page</A></td><td class="i-member-description">Page, the editor belongs to. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~Project.html">Project</A></td><td class="i-member-description">Project, the editor belongs to. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~PromptForCommandLine.html">PromptForCommandLine</A></td><td class="i-member-description">Prompt for command line. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~PromptForStatusLine.html">PromptForStatusLine</A></td><td class="i-member-description">Prompt for status line. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~RootPlacement3D.html">RootPlacement3D</A></td><td class="i-member-description">Root placement to which the editor belongs. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~StartPosition.html">StartPosition</A></td><td class="i-member-description">start position of Interaction. The StartPosition is needed to calculate the current position while ortho mode is active or after input of length or angle the start position is automatically set after point input and before call of OnPoint after start of an interaction StartPosition is null (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~WereLogicalPlacementsChanged.html">WereLogicalPlacementsChanged</A></td><td class="i-member-description">Returns true, if logical placements were changed. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="MethodsBookmark"></a>
+            <div class="i-section-heading" id="i-publicMethods-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Methods</span></div><div id="i-publicMethods-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~ClearCursor.html">ClearCursor</A></td><td class="i-member-description">Remove Cursor-Representation. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~Dispose().html">Dispose()</A></td><td class="i-member-description">Destructor for deterministic finalization of InsertInteraction object. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~IsEnabled.html">IsEnabled</A></td><td class="i-member-description">Returns true, if interaction should be enabled in menu (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnAngle.html">OnAngle</A></td><td class="i-member-description">Is called after input of an angle by the user. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnCalculateCursorPos.html">OnCalculateCursorPos</A></td><td class="i-member-description">Is called to calculate the cursor position. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnCalculateStaticCursorPos.html">OnCalculateStaticCursorPos</A></td><td class="i-member-description">Is called to manipulate the position of the static CAD cursor. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnCancel.html">OnCancel</A></td><td class="i-member-description">Is called after abort of interaction. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnChar.html">OnChar</A></td><td class="i-member-description">Is called after keyboard inputs by the user. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnCursorMove.html">OnCursorMove</A></td><td class="i-member-description">Is called on move of cursor by mouse or keys. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnDeactivate.html">OnDeactivate</A></td><td class="i-member-description">Is called after start of a new interaction with same or higher priority. In this case the current interaction is deactivated until the new interaction stops. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnDrawCursor.html">OnDrawCursor</A></td><td class="i-member-description">Is called to get drawable objects for the cursor representation. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnEdge.html">OnEdge</A></td><td class="i-member-description">Is called after edged of a 3D mesh was selected by user. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnEdgeBelowMouse.html">OnEdgeBelowMouse</A></td><td class="i-member-description">Is called after edge was found below the mouse pointer. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnElementFound.html">OnElementFound</A></td><td class="i-member-description">Is called, when the placement below the mouse pointer changes as result of mouse movement. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnEndDrag.html">OnEndDrag</A></td><td class="i-member-description">Is called after end of a dragging operation. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnFace.html">OnFace</A></td><td class="i-member-description">Is called after face of a 3D mesh was selected by user. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnFaceBelowMouse.html">OnFaceBelowMouse</A></td><td class="i-member-description">Is called after face was found below the mouse pointer. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnFilterElement.html">OnFilterElement</A></td><td class="i-member-description">Is called by framework to determine if oObject should be included in selection or will be highlighted. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnInputFinish.html">OnInputFinish</A></td><td class="i-member-description">Is called after special input operation has finished. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnLength.html">OnLength</A></td><td class="i-member-description">Is called after input of length. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnMouseLeavingWindow.html">OnMouseLeavingWindow</A></td><td class="i-member-description">Is called after Mouse leave the window. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnPageChange.html">OnPageChange</A></td><td class="i-member-description">Is called, if the associated page was changed. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnPoint.html">OnPoint</A></td><td class="i-member-description">Is called after a point input by user via mouse or keyboard. That means, that the user has clicked into the CAD Window or opened the command line and input the coordinates of a point. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnReactivate.html">OnReactivate</A></td><td class="i-member-description">Is called after stop of the current interaction and this interaction is reactivated. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnRestart.html">OnRestart</A></td><td class="i-member-description">Is called after restart of the interaction. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnReturnFromSubInteraction.html">OnReturnFromSubInteraction</A></td><td class="i-member-description">Is called on end of sub-interaction. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnSelect.html">OnSelect</A></td><td class="i-member-description">Is called after object selection in the graphical editor by user. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnSpecialEvent.html">OnSpecialEvent</A></td><td class="i-member-description">Special event has occurred. Usually caused by user input. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnStart.html">OnStart</A></td><td class="i-member-description">Is called after start of interaction (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnStartDrag.html">OnStartDrag</A></td><td class="i-member-description">Is called after begin of a dragging operation. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnStop.html">OnStop</A></td><td class="i-member-description">Is called before an interaction stops. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnSuccess.html">OnSuccess</A></td><td class="i-member-description">Is called after successful input of all necessary data as reaction to the request code Success (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnVertex.html">OnVertex</A></td><td class="i-member-description">Is called after vertex of a 3D mesh was selected by user. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~OnVertexBelowMouse.html">OnVertexBelowMouse</A></td><td class="i-member-description">Is called after vertex was found below the mouse pointer. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~SetRubberboxCursor.html">SetRubberboxCursor</A></td><td class="i-member-description">Active Rubber-box cursor. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~SetRubberlineCursor.html">SetRubberlineCursor</A></td><td class="i-member-description">Active Rubber-line cursor. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~SetSelection.html">SetSelection</A></td><td class="i-member-description">can be called to change selection. should only be used inside the OnSelect() method (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction~SetStaticCursor.html">SetStaticCursor</A></td><td class="i-member-description">Overloaded.&nbsp;Sets <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a>, that will be temporary drawn as Cursor Representation. (Inherited from <a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.Interaction.html">Eplan.EplApi.EServices.Ged.Interaction</a></strong>)</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            
+            <a name="EventsBookmark"></a>
+            
+            
+            
+            <a name="OperatorsBookmark"></a>
+            									
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.SelectionInteraction_members.html">SelectionInteraction Members</a>
+<br/><a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged_namespace.html">Eplan.EplApi.EServices.Ged Namespace</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.SelectionInteraction">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

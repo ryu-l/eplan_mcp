@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Using Functions and Devices|Part / Device Selection|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Device selection can be performed for the entire project or a selection of devices. Device selection can be called up from different places:" /><title>Device Selection: Procedure</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/partselectiongui_k_vorgehensweise.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor1222"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor1223"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor1472"></a>
+            <h2>Device Selection: Procedure</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Device selection can be performed for the entire project or a selection of <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a>. Device selection can be called up from different places:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">From the <span class="gui">Properties &lt;...&gt;</span> dialog</li>
+                <li class="Listitem_Single_Line" value="2">From the graphical editor</li>
+                <li class="Listitem_Single_Line" value="3">From the Device navigator</li>
+                <li class="Listitem_Single_Line" value="4">From the Bill of materials navigator. </li>
+            </ul>
+            <p>Depending on where the device selection was called up, the following different selection sets are available:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">The current <span class="important">project</span></li>
+                <li class="Listitem_Single_Line" value="2">Marked <span class="important">pages</span></li>
+                <li class="Listitem_Single_Line" value="3">Highlighted <span class="important">elements</span> in the graphical editor, in the device navigator or in the bill of materials navigator. </li>
+            </ul>
+            <p>When you select a device, the program first checks if the parts manager contains the same <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> as the device. If not, the program checks whether there are general functions (e.g. turnkeys, general). If so, the device is offered. On the other hand, for a device with general functions, all devices are offered that have a functional template from the same group.</p>
+            <p>You can select a device based on the type number, order number, or <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> number. For each part selected, (electrical) characteristics, <a href="Glossary_o_funktionsgruppen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function groups</a>, part group, protection variant, assembly, and product subgroup are taken from the part definition in the schematic. Possible accessory components of a part are displayed with it.</p>
+            <p>Furthermore, there is a tabular preview of the defined <a href="Glossary_o_funktionsschablonen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function templates</a>. The necessary function templates (that is, those defined for the device via its functions) and those determined in the device definition are displayed. </p>
+            <p>Depending on the <a href="Glossary_o_einstellungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">settings</a> for device selection, it is checked whether existing function data (e.g. the <a href="Glossary_o_anschlussbezeichnungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection point designations</a>) are changed by a device selection. An icon shows whether the device's <a href="Glossary_o_funktionsdefinitionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function definitions</a> correspond to those of a device definition.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Notes:</p>
+                <ul>
+                    <li class="Listitem_Normal" value="1">For devices with function definitions from the "Graphic" group, the device selection returns all the parts that have function templates with the "Graphic" function definition. In addition, all parts without function templates and accessory parts are displayed. In this way, parts from the "Mechanics" generic product group, for example, can be selected.</li>
+                    <li class="Listitem_Normal" value="2">The <span class="gui">Connection point designation</span> has to be activated in the settings of the device selection in order for existing <a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a> to be taken into consideration when <a href="Glossary_o_zubehoer.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">accessories</a> are added through device selection.</li>
+                </ul>
+            </div>
+            <h3>Device selection for special functions</h3>
+            <p>Functions that are only needed to define a device are handled separately in the device selection. This includes <a href="Glossary_o_geraetekaesten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">black boxes</a>, <a href="Glossary_o_sps_kaesten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC boxes</a>, <a href="Glossary_o_klemmenleistendefinitionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">terminal strip definitions</a>, <a href="Glossary_o_steckerdefinitionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">plug definitions</a>, <a href="Glossary_o_kabeldefinitionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable definitions</a> and <a href="Glossary_o_abschirmungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">shields</a>.</p>
+            <p>If the device selection is carried out for a device that consists <span class="important">only</span> of such functions and is otherwise empty. the device selection will display all parts that have at least the function templates for this function.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /> <a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">If you carry out a device selection for an <span class="important">empty</span> PLC box, for example, only parts that have a function template with the function definition "PLC box" (and any number of function templates for the <a href="Glossary_o_sps_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC connection points</a>) will be displayed.</p>
+                        <p class="Infoblock">On the other hand, no parts that only have function templates for the PLC connection points, and none for the PLC box will be displayed.</p>
+                    </div>
+                </div>
+            </div><a name="kanchor1473"></a><a name="I_Mehrfachauswahl"></a>
+            <h3>Multiple selection (block editing)</h3>
+            <p>For multiple selection of elements, the behavior of the device or part selection changes according to whether they are started from the <span class="gui">Properties &lt;...&gt;</span> dialog or from the navigator:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">If you select a device or a part from the <span class="gui">Properties &lt;...&gt;</span> dialog, the selected part data are "copied" to all selected components (i.e. the selected part is assigned to all marked elements). However, only the first <a href="Glossary_o_schaltzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">component</a> is used as a selection criterion. If the part selected does not fit the other elements, then the appropriate messages are displayed after a test run.</li>
+                <li class="Listitem_Normal" value="2">For device selection or part selection from the bill of materials navigator, the selection dialog is called up for each selected element in succession.</li>
+            </ul>
+            <p>The device selection is performed once for each main function selected.</p><a name="kanchor1474"></a><a name="I_ZuordnungArtikelBetriebsmittel"></a>
+            <h3>Assignment of parts to devices</h3>
+            <p>Devices can be represented by one or more components:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">Single symbol, e.g. motor</li>
+                <li class="Listitem_Single_Line" value="2">Distributed device (multiple <a href="Glossary_o_symbole.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">symbols</a>, same DT), e.g. contactor, premade <a href="Glossary_o_kabel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable</a></li>
+                <li class="Listitem_Single_Line" value="3">Module (multiple symbols, different device tags), e.g. star-delta starter circuit as a 19" / MCC insert.</li>
+            </ul>
+            <p>Different parts can be assigned to these devices:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">Single parts</li>
+                <li class="Listitem_Single_Line" value="2">Assembly</li>
+                <li class="Listitem_Single_Line" value="3">Hierarchically organized assembly</li>
+                <li class="Listitem_Single_Line" value="4">Module.</li>
+            </ul>
+            <p>Any combination of device and parts is possible. Module information is stored in the main function. </p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example: </a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The following table shows examples for the assignment of parts to devices:</p>
+                        <table>
+                            <tr>
+                                <th>Example</th>
+                                <th colspan="1" rowspan="1">
+                                    <p>Device</p>
+                                </th>
+                                <th>
+                                    <p>Part</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>A part is assigned to one device.</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>Motor </p>
+                                </td>
+                                <td>
+                                    <p>DC motor 4711</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Multiple parts are assigned to one device.</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>Fuse</p>
+                                </td>
+                                <td>
+                                    <p>Fuse insert 4712 + base 4713 + gauge ring 4714</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Multiple parts are assigned to a distributed device.</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>Contactor (main function = contactor coil)</p>
+                                </td>
+                                <td>
+                                    <p>Contactor coil 4715 + contactor contact 4716 + quenching circuit 4717</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p>Multiple parts are assigned to one device via an assembly.</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>Fuse</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>Assembly B001 (fuse insert 4712 + base 4713 + gauge ring 4714)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p>Multiple parts are assigned to one device via a hierarchical assembly.</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>Fuse</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>Assembly B001 (fuse insert 4712 + assembly B002 (base 4713 + gauge ring 4714))</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p>Multiple devices are assigned to one module.</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>U1-K1 + U1-K2 + U1-K3</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>Star-delta starter circuit 4718</p>
+                                    <p>U1 contains the module part. U1-K1 etc. each contain the individual parts preselected in the module for this device. The individual parts carry information about which module they are from.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div><a name="kanchor1475"></a><a name="I_ZuordnungModule"></a>
+            <h3>Assignment of modules</h3>
+            <p>Modules can also be assigned using the device selection - in addition to individual parts or <a href="Glossary_o_baugruppen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">assemblies</a>. </p>
+            <p>If a module is assigned to a "normal" main function, then the part number of the module is stored there. </p>
+            <p>If a module is assigned to a black box, however, then EPLAN looks at all the main and <a href="Glossary_o_nebenfunktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">auxiliary functions</a> contained in the marked black box and in all black boxes cross-referenced with it, and assigns the parts of the module to the appropriate <a href="Glossary_o_hauptfunktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">main functions</a>. The data from the function templates is also transferred to the functions contained in the black box.</p>
+            <p>If an assembly is assigned to the black box instead of a module, then the parts of the assembly are stored in the black box and are not distributed among the functions it contains.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="partselectiongui_k_start.htm">Part / Device Selection</a>
+            </p>
+            <p class="Link_Seealso"><a href="partselectiongui_h_geraeteauswahl.htm">Selecting Devices</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

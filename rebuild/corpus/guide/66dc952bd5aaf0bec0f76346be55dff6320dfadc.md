@@ -1,0 +1,76 @@
+# Project Options: Principle
+
+Project options are areas of a project that can be selectively switched on and off. This allows different variants of a machine to be managed and individually generated within a project.
+
+![](../Pictures/Gui/ALL/note.png)Note:
+
+Ensure that after the connection-relevant options have been switched over you regenerate the connections with the [Shift] key (this ensures that all the connections are included).
+
+In the Project options - <Project name> dialog, you create and edit the project options (via the popup menu). The ![](../Pictures/Gui/ALL/all_statusok_as.png) icon next to the project option indicates if it is activated. In the tree view, the project options are displayed in the following order:
+
+- Project options groups
+- Project options
+- Sections
+- Placeholder objects.
+
+![](../Pictures/Gui/ALL/example.png)[![Closed](../../Skins/Default/Stylesheets/Images/transparent.gif)Example:](javascript:void(0);)
+
+You have created two project options groups: OG1 and OG2. Project options group OG1 contains two project options: O1 and O2. Project option O1 contains four sections: S1 to S4. The sections contain the placeholder objects P1 and P2. This is represented in the tree view of the project option navigator in the following manner:
+
+![](../Pictures/Visualisation/ALL/projectoptionsgui_treeoptions_av.png)
+
+In project options group OG1 the option O1 is switched on (recognizable by the green icon). Click the icon in front of the project option O2, this project option will now be switched on and project option O1 automatically switched off.
+
+### Project options groups
+
+The project options group is used to group project options that may only alternatively appear in a project. A maximum of one project option at a time can be switched on within an option group; the other project options are automatically switched off. However, several project options from different project options groups may be switched on at the same time.
+
+Specifying a project options group is not compulsory; a project option can exist without a project options group. However, splitting into project options groups is useful when you want to make different project options exclusive to each other.
+
+Every project options group has a name (single-language) and a description (multi-language). The description is a multi-language text and is displayed by default in the tree view next to the name, separated by a blank and within round brackets.
+
+When a project options group is deleted, the objects of the project options that are switched on in the project are retained; objects of the project options that are switched off in the project are deleted.
+
+### Project options
+
+A project option consists of one or more areas, i.e., schematic areas, pages, or unplaced functions and connections or objects in a layout space. All areas of a project option can only be switched on and off together.
+
+Every project option has a name (single-language) and a description (multi-language). The description is a multi-language text and is displayed by default in the tree view next to the name, separated by a blank and within round brackets.
+
+When a project option is deleted, the objects are retained in the project when the project option is switched on; if the project option is switched off then the objects are deleted from the project.
+
+### Sections
+
+A section consists of a schematic section, one or more pages, or unplaced functions and connections or objects in a layout space. Groupings are either completely included or excluded in a section. If only part of a grouping is selected, then it is not taken into account.
+
+Every section has a name (single-language) and a description (multi-language). The description is a multi-language text and is displayed by default in the tree view next to the name, separated by a blank and within round brackets.
+
+When a section is deleted, the objects are retained in the project when the associated project option is switched on; if the project option is switched off then the objects are deleted from the project.
+
+### Placeholder objects
+
+Sections can contain placeholder objects. The placeholder objects are shown in the Project options navigator at the same level as the section; but they are only visible for options that are switched on. Below an activated project option, first all sections and then all placeholder objects contained in this project option are displayed. Value sets for the placeholder objects can be selected from the popup menu.
+
+In the Placeholder object navigator, all placeholder objects in the project are displayed; here you can edit their properties and assign value sets to the placeholders.
+
+Placeholder objects with the same name are summarized in a single level. If you select such a level, then you can assign the same value set to all placeholder objects under this level.
+
+### Hiding project options
+
+The project options can be switched on and off, which means that they are selectively included in reports or not. Project options that have been switched off can be displayed transparently or completely hidden. Entire pages and unplaced functions can only be completely hidden and cannot be displayed transparently.
+
+When the project options are switched on and off, the position and the existing numbering of the component always remain the same and are not changed. The user must therefore ensure that the project options are consistent with each other.
+
+Project options can only be used in the graphical editor and not in the master data editors.
+
+#### Search in hidden project options
+
+During the search for texts or properties, objects in hidden project options are considered if these project options are displayed transparently. In addition, objects contained in hidden project options and thus invisible can also be accounted for. For this, the Hidden project options check box must be activated in the Search location group box of the Find dialog.
+
+If the search was successful, the Search results dialog will list the objects found (e.g., a device with the part number in question). However, double-clicking this result does not open the property dialog of this object, but the Section dialog. This dialog shows you the name of the hidden project option and the name of the hidden section. To edit the object found, you must navigate to the project options navigator and there reveal the hidden project options again.
+
+See also
+
+[Project Options](projectoptionsgui_k_start.htm)
+
+[Toggling Project Options](projectoptionsgui_h_optioneneinaus.htm)

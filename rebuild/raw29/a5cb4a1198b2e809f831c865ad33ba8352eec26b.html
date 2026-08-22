@@ -1,0 +1,288 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Locking</title>
+    <meta name="Title" content="Locking"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n94","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="In computer science, locking is a synchronization mechanism for enforcing limits on access to a resource in an environment where there are many threads of execution (multiple-user environment). Locks are one way of enforcing concurrency control polic" />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="b5f316dc-bafe-4129-8517-09396f784f08"/>
+    <meta name="Microsoft.Help.TocParent" content="0d3ad3ee-158d-4f4e-ac44-69b81813a790"/>
+    <meta name="Microsoft.Help.TocOrder" content="8"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_DataModel.html">API DataModel</a>
+ / Locking</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Locking</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>In computer science,&nbsp;locking is a synchronization mechanism for enforcing limits on access to a resource in an environment where there are many threads of execution (multiple-user environment). Locks are one way of enforcing concurrency control policies.&nbsp;</p>
+
+<p>In EPLAN API, the term <strong>'locking an object'</strong> means to set an object reference to a state, where it can be edited by the current user/process, whereas no other user/process can edit it. In general, the user can always get an object in an un-locked/read-only way, even if it is locked by another user. If even this read-only access is not possible, we speak of an <strong>'exclusive lock'</strong>. Exclusive locking is necessary, if e.g. the structure of an EPLAN project is changed or if a project is copied, renamed or a backup is done.&nbsp;</p>
+
+<p>Please take into account that API locking only wraps P8 locking techniques. For further details about this functionality please refer to EPLAN Help-&gt;Editing and Managing Project-&gt;Multi-user Operation chapter of P8 help.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>What can be locked 'automatically'?</h3>
+
+<ul>
+    <li>All project data&nbsp;- this can be done by getting Project from SelectionSet (in addins) or when opening it by ProjectManager. This depends on property LockProjectByDefault (by default set on true). Also getting the selected project by method HeServices.SelectionSet.GetCurrentProject locks the project completely (and its data). Please take into account that read-only access is still possible from other P8 instances.</li>
+
+    <li>Exclusive project locking&nbsp;- this is done by switching USER.TrDMProject.OperationMode.OpenProjectsExclusive setting on true before opening it. As mentioned above, some project-wide operations need such an exclusive lock of a project where it can be used by only 1 P8 instance.</li>
+
+    <li>Selected elements&nbsp;- this is possible by setting property SelectionSet.LockSelectionByDefault on true. By default the option is enabled (set on true), so when getting selected elements of a project, they can be changed in API without setting the property.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3>SafetyPoint</h3>
+
+<p>SafetyPoint class provides automatic locking of DataModel objects. The mechanism is enabled since creation and until disposal of a SafetyPoint object, so the recommended way is to use it with using keyword:</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">var</span> project = <span style="COLOR: #0000ff">new</span> ProjectManager {LockProjectByDefault = <span style="COLOR: #0000ff">false</span>}.OpenProject(<span style="COLOR: #800000">@"$(MD_PROJECTS)\EPLAN-DEMO.elk"</span>);
+<span style="COLOR: #008000">//view placement '8' (on page =EB3+ETM/4)
+</span>ViewPlacement viewPlacement8 = project
+.Pages[42]
+.AllFirstLevelPlacements
+.OfType&lt;ViewPlacement&gt;()
+.FirstOrDefault(item =&gt; item.Properties.DMG_VIEWPLACEMENT_DESIGNATION.ToString() == <span style="COLOR: #800000">"8"</span>);
+<span style="COLOR: #0000ff">using</span> (SafetyPoint safetyPoint = SafetyPoint.Create())
+{               
+    Console.WriteLine(viewPlacement8.IsLocked);     <span style="COLOR: #008000">//false
+</span>    viewPlacement8.Scale = 44.44;                   <span style="COLOR: #008000">//set another scale
+</span>    Console.WriteLine(viewPlacement8.IsLocked);     <span style="COLOR: #008000">//true                  
+</span>    safetyPoint.Commit();                           <span style="COLOR: #008000">//necessary, otherwise changes are rolled-back
+</span>}
+Console.WriteLine(viewPlacement8.IsLocked);         <span style="COLOR: #008000">//again false</span>
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;Automatic means that they are locked internally before any change and unlocked after disposing SafetyPoint. This way is recommended in case of necessity to lock as little as possible and is not clear which objects need to be locked to perform a change. After the SafetyPoint block, please call Commit method, otherwise the changes are rolled-back.</p>
+
+<p>&nbsp;</p>
+
+<h3>What is a LockingStep?</h3>
+
+<p>LockingStep is an object for automatically unlocking API resources (as Projects, Functions, etc). There are 2 ways of creating this object:</p>
+
+<ul>
+    <li>Explicit. Must be done in modeless dialog boxes and in offline API applications:</li>
+</ul>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">using</span>(LockingStep oLockingStep = <span style="COLOR: #0000ff">new</span> LockingStep())
+{
+   ....
+}
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>When there is necessary access to some resources and the LockingStep is not created, an exception will be thrown (NoLockingStepException)</p>
+
+<ul>
+    <li><a this="" of="" case="" in="" done="" is="">Actions</a> and scripts by the P8 framework</li>
+</ul>
+
+<p>There however is no Unlock method in any DataModel class. The LockingStep class remembers all locks set during its lifespan and releases them when the LockingStep is being disposed. This guarantees that objects are released, even if an exception was thrown inside the block.&nbsp;</p>
+
+<p>In rare cases however it may be necessary to switch off creating LockingStep (manually or automatically). This can be done by the methods PauseManualLock() and ResumeManualLock() of the LockingVector class. Please use them only in exceptional cases, i.e. when there is necessary to 'manually' decide what to lock instead of relying on P8 framework (see bellow).&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Manual locking mode</h3>
+
+<p>Apart from automatic locking mechanism there is also possible to call locking methods directly on required objects. This low-level type of locking can be used concurrently with 'automatic' one or as the only locking.&nbsp;</p>
+
+<ul>
+    <li>Locking single StorableObject. This is done by calling LockObject on required object. Please take into account that only properties directly connected with objects can be locked this way (like internal/ normal properties, sub-Functions or sub-Placements are excluded).&nbsp;</li>
+</ul>
+
+<ul>
+    <li>Locking all placements of a Page in exclusive mode. This can be done by calling Page::LockAllObjects. Please consider that it is different than calling Page::LockObject, where only properties of a Page are locked.&nbsp;</li>
+</ul>
+
+<ul>
+    <li>Locking all objects of a project. This can be done by Project::LockAllObjects.&nbsp;</li>
+</ul>
+
+<ul>
+    <li>Locking all objects of a device. This is done by Function::LockDevice. Calling the method also locks all Functions placed on the same page as Functions of a device.&nbsp;</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3>Guideline to Locking of DataModel objects</h3>
+
+<p>If you don't need to mind multiple-user issues, e.g. if you create a new project with your own schematics generator, you should always lock the complete project. The project is locked by default, when it is opened or created using the respective methods (OpenProject(...) / CreateProject(...)) of the ProjectManager class in DataModel . Also getting the selected project by the method GetCurrentProject(...) in HeServices.SelectionSet class, will lock the project completely.&nbsp;</p>
+
+<p>In case you need to consider other users, or processes working on the same project, please lock <strong>as little of the project data as possible</strong>. To do this you should first get, open, or create the project in an un-locked way. This can be done by setting the LockProjectByDefault property of a ProjectManager or the SelectionSet object to false. Having this not-locked project object you just lock the object (e.g. Page) you want to change. Also mind, that the locks are only released when disposing the respective LockingSteps, so set as few as possible locks in one LockingStep.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Differences between Add-Ins and offline API&nbsp;</h3>
+
+<p>The main difference between Locking in Add-Ins and offline API applications is that the Execute(...) method of the IEplAction interface, is already surrounded by a Locking step, while the API programmer needs to implement the LockingStep(s) in an offline application by himself.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>API <a href="Verifications.html">Verifications</a>&nbsp;</h3>
+
+<p>Methods of verification which are called by EPLAN framework are not surrounded by a Locking step. If it is necessary then user needs to implement it by himself. Please have in mind that creating a Locking step inside verification method has a big influence on performance of whole check. This is why this should be done as little as possible.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Locking in Service methods (HeServices/<a href="Actions.html">Actions</a>)&nbsp;</h3>
+
+<p>All service functionality, to which you pass a project resource as a string parameter, will always automatically care for locking/unlocking said resource. If the locking is not possible, due to multiple-user issues, an exception will be thrown. This applies to all command line actions, which only have string parameters. HeServices classes most of the time have method overloads with both string-based and object passed parameters. If you pass an object to the method, you need to take care for the locking.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Determining, which users currently have the project open&nbsp;</h3>
+
+<p>In order to find out, which users currently work on the project, the Project class provides a CurrentUsers property, which returns an array of UserInfo structures of the users accessing the project.</p>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Locking">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

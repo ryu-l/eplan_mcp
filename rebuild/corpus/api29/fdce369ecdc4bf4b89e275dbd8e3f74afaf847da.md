@@ -1,0 +1,56 @@
+# DMPLAOBJECT_PIPECLASS(Int32) Property
+
+DMPLAOBJECT\_PIPECLASS(Int32) Property
+
+Pipe class # 44072. This property isn't indexed.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue DMPLAOBJECT_PIPECLASS( 
+   int index
+) {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ DMPLAOBJECT_PIPECLASS {
+   PropertyValue^ get(int index);
+   void set (int index, PropertyValue^ value);
+}
+```
+```
+
+#### Parameters
+
+*index*
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+The pipe class specifies the range of application in relation to the pressure and temperature, meaning the maximum permissible pressure at which the piping may be operated at a maximum permissible temperature. When doing this, a pipe class contains a fixed number of pipe items, such as pipes, fittings, flanges, nuts, bolts, and gaskets.
+
+See Also
+
+#### Reference
+
+[PlanningSegmentPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList.html)
+  
+[PlanningSegmentPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList~DMPLAOBJECT_PIPECLASS.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList~DMPLAOBJECT_PIPECLASS(Int32))

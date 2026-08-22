@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Editing Terminals and Plugs|Terminals|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The main terminal represents a terminal device on a terminal strip. A device can contain any number of main terminals but only one main function. Ther..." /><title>Using Main Terminals</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/terminalgui_k_hauptklemmen.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor1024"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor1025"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor1152"></a><a name="kanchor1153"></a>
+            <h2>Using Main Terminals</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The main terminal represents a terminal device on a terminal strip. A device can contain any number of <a href="Glossary_o_hauptklemmen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">main terminals</a> but only one main function. Therefore the terminal strip is defined as a main function and the terminals as main terminals or auxiliary terminals. If a terminal is defined as a main terminal, then it behaves in a similar manner to a main function. For example, for a main terminal the <a href="Glossary_o_funktionsschablonen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function templates</a> are displayed in the terminal strip navigator, and a device selection can be performed.</p><a name="I_EigenstaendigeBereiche"></a>
+            <h3>Independent areas of a terminal strip</h3>
+            <p>The use of main terminals divides a terminal strip is divided into "independent areas". An independent area corresponds to a terminal device, which may be formed from several <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a>. Terminal <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a> are additionally identified through the <span class="gui">Terminal: Device position</span> property. Normally all the terminals of an independent area have the same <a href="terminalgui_k_verwaltung.htm#Klemmeng">device position</a> and there is only one main terminal per terminal device. A terminal strip can contain any number of main terminals and therefore any number of independent areas. When you insert a terminal, it is inserted as a main terminal by default. Therefore an independent area is created for each terminal. You can change a terminal into an auxiliary terminal by deselecting the <span class="gui">Main terminal</span> check box in the <a href="Glossary_o_eigenschaftendialog.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">property dialog</a> for the terminal.</p>
+            <p>An independent area extends from one main terminal (including the terminal) to the next main terminal (at the same device position). It therefore contains one main terminal and the associated auxiliary terminals. If the first terminal on the terminal strip is not a main terminal, the first area of the terminal strip (i.e. the area from the start of the terminal strip to the first main terminal) is defined by the terminal strip definition. If there are no main terminals, the whole terminal strip <a href="Glossary_o_formulare.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">forms</a> just <span class="value_in_gui">one</span> area which is entirely defined by the terminal strip definition. If there is no terminal strip definition, no function templates are available for the first area of the terminal strip.</p>
+            <p>You can use the <span class="gui">Do not use main terminals</span> property to specify that a terminal strip should <span class="important">not</span> be divided into independent areas and should only be defined via the terminal strip definition. The function templates of the parts entered at the terminals are not used, but the parts are output in <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a>. In addition, free function templates are re-used when copying and pasting terminals.</p>
+            <h4>Definition of multi-level terminals</h4>
+            <p>Independent areas can be used to define multi-level terminals. A multi-level terminal consists of several consecutive terminals <span class="important">in one area</span>, each with consecutive <a href="Glossary_o_etagen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">levels</a>. The level number can be ascending or descending in the process. Terminals in different areas cannot belong to the same multi-level terminal. This means that every multi-level terminal can contain only one main terminal; its associated terminals must be auxiliary terminals.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">A terminal strip consists of a terminal strip definition and terminals <span class="codetext">1</span>, <span class="codetext">2</span>, <span class="codetext">3</span>, <span class="codetext">4</span>, <span class="codetext">5</span>, <span class="codetext">6</span>, <span class="codetext">7</span>. Terminals <span class="codetext">3</span> and <span class="codetext">6</span> are main terminals. The terminal strip is therefore divided into three independent areas:</p>
+                        <p class="Infoblock">Area 1: Terminal strip definition + terminals <span class="codetext">1</span>, <span class="codetext">2</span><br />Area 2: Main terminal <span class="codetext">3</span> + terminals <span class="codetext">4</span>, <span class="codetext">5</span><br />Area 3: Main terminal <span class="codetext">6</span> + terminal <span class="codetext">7</span></p>
+                        <p class="Infoblock">
+                            <img src="../Pictures/Visualisation/ALL/terminalgui_mainterminals_av.png" />
+                        </p>
+                        <p class="Infoblock">In this example, each area defines a multi-level terminal. The level is shown here in square brackets (e.g. <span class="codetext">[1]</span> for the lowest level).</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Assign the function templates</h3>
+            <p>If parts containing function templates are entered at the terminal strip definition or at the main terminals, these function templates are superimposed by the terminal functions within the independent area in question. Assignment does not extend beyond the boundaries of the area, even though suitable functions may be available there.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">If a <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> with function templates is entered at the <span class="important">terminal strip definition</span> and the <span class="gui">Do not use main terminals</span> property is activated, the function templates determine the sequence of the terminals on the terminal strip. The device position and the sort code of the terminals only specify the order in which the terminals are assigned to the function templates. If the terminal strip definition has no function templates, the terminals alone determine the order on the terminal strip.</li>
+                <li class="Listitem_Normal" value="2">If a part with function templates is entered at a <span class="important">main terminal</span>, these are superimposed by the terminal functions of the main terminal and of the associated auxiliary terminals. The independent areas are defined through the device position of the main terminals: all the auxiliary terminals having the same device position belong to one main terminal. This is irrespective of whether a free function template is available at the main terminal. Within an independent area, the sort code determines the order in which the terminals are assigned to the function templates.</li>
+            </ul>
+            <p>We recommend that a terminal strip should be constructed entirely from main terminals (and their associated auxiliary terminals) or completely without main terminals. This means that the terminal strip should be defined either by the independent areas of the main terminals alone or by the terminal strip definition. It is possible to mix these components but this is less clear for assignment of the function templates. In the first case, enter parts at the relevant main terminal but not at the terminal strip definition. The function templates of the part are superimposed by the terminal functions of the main terminal and of the associated auxiliary terminals. In the second case, enter the part at the terminal strip definition and nowhere else. The function templates of the parts are superimposed by the terminal functions of all the terminals on the terminal strip.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">When working with the 3D mounting layout navigator, you should enter the parts at the main terminals (and not at the terminal strip definition). This is the only way of making the terminals visible in the 3D mounting layout navigator as it only displays devices to which a part has been assigned. This is a basic condition for interfaces with external terminal configuration programs.</p>
+            </div>
+            <h4>Device selection</h4>
+            <p>During device selection, function templates are only assigned within an independent area. Multi-level terminals are retained and are not pulled apart.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="terminalgui_k_start.htm">Terminals</a>
+            </p>
+            <p class="Link_Seealso"><a href="terminalgui_k_verwaltung.htm">Managing Terminals</a>
+            </p>
+            <p class="Link_Seealso"><a href="terminalgui_k_mehrstockklemmen.htm">Multi-level terminals</a>
+            </p>
+            <p class="Link_Seealso"><a href="terminalgui_k_klemmenzubehoer.htm">Terminal Strip and Terminal Accessories</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

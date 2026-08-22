@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The &lt;action&gt; tag defines an action to be performed by the Job Server. The actions are executed in the order in which they occur in the document...." /><title>action</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refjobserver_r_action.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1426"></a>
+            <MadCap:concept term="Referenz;Job Server" /><a name="kanchor990"></a><a name="kanchor991"></a><a name="kanchor992"></a><a name="kanchor993"></a><a name="kanchor994"></a>
+            <h2>action</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The <span class="codetext">&lt;action&gt;</span> tag defines an action to be performed by the Job Server. The actions are executed in the order in which they occur in the document. The formula language can be used for the <span class="codetext">arguments</span> attribute.</p>
+            <p>Static methods are called up. To this purpose the following syntax is used:</p><pre xml:space="preserve"><code class="language-markup">&lt;action name="&lt;class name&gt;:&lt;static method name&gt;" arguments="List{&lt;argument1&gt;, &lt;argument2&gt;}" /&gt;</code></pre>
+            <p>The tag has no sub-elements.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Usage</th>
+                        <th>Values</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>name</td>
+                        <td>required</td>
+                        <td />
+                        <td />
+                        <td>Absolute name of the action or command, e.g. <span class="codetext">T_Ecad_Ui.UpdateExtensions</span>.<br />In order to call a static method the name of the static method is attached to the absolute name of the class, separated by a colon.</td>
+                    </tr>
+                    <tr>
+                        <td>arguments</td>
+                        <td>required</td>
+                        <td />
+                        <td />
+                        <td>List of arguments that are passed to the action or command. When defining the arguments, it is implied that <span class="codetext">this</span> indicates the job object that recognizes a trigger property. The formula language can be used in order to determine an object as an argument.<br />A property of the trigger can be accessed with the syntax <span class="codetext">trigger.&lt;Trigger property&gt;</span>. The properties for File Trigger, WebService Trigger and both File Trigger as well as WebService Trigger are differentiated.<br />File Trigger:<ul><li class="Listitem_Normal" value="1"><span class="codetext">trigger.fileName</span>/<span class="codetext">trigger.getFileName</span>: Returns the file name without extension, for example <span class="codetext">Job2010916</span>.</li><li class="Listitem_Normal" value="2"><span class="codetext">trigger.fullFileName</span>/<span class="codetext">trigger.getFullFileName</span>: Returns the file name with extension, for example <span class="codetext">Job20140916.xls</span>.</li><li class="Listitem_Normal" value="3"><span class="codetext">trigger.fileExtension</span>/<span class="codetext">trigger.getFileExtension</span>: Returns the file extension, for example <span class="codetext">xls</span>.</li><li class="Listitem_Normal" value="4"><span class="codetext">trigger.filePath</span>/<span class="codetext">trigger.getFilePath</span>: Returns the absolute path to the file that triggered the Job processing, for example <span class="codetext">C:\input\Job20140916.xls</span>.</li></ul><p>WebService Trigger:</p><ul><li class="Listitem_Normal" value="1"><span class="codetext">trigger.params</span>/<span class="codetext">trigger.getParams</span>: Returns the value of an URL parameter.</li></ul><p>File Trigger and WebService Trigger:</p><ul><li class="Listitem_Normal" value="1"><span class="codetext">trigger.additionalResultsDir</span>/<span class="codetext">trigger.getAdditionalResultsDir</span>: Folder for additional data, for example a PX file.</li><li class="Listitem_Normal" value="2"><span class="codetext">trigger.outputFolder</span>/<span class="codetext">trigger.getOutputFolder</span>: Returns the path to the defined output folder for the storage of the data in case of success:</li><li class="Listitem_Normal" value="3"><span class="codetext">trigger.failedFolder</span>/<span class="codetext">trigger.getFailedFolder</span>: Returns the path to the defined output folder for the storage of the data in case of failure:</li><li class="Listitem_Normal" value="4"><span class="codetext">trigger.jobName</span>/<span class="codetext">trigger.getJobName</span>: Returns the unique name of the Job to be executed. Consists of the value of the <span class="codetext">name</span> attribute of the tag <span class="codetext">&lt;jobdefinition&gt;</span> + <span class="codetext">&lt;_TimeStamp (yyMMdd_HHmm_ssSSS)&gt;</span></li></ul> The formal language permits the use of regular expressions.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.1"?&gt;
+&lt;jobdefinition name="='test'+ <span class="Bold">trigger.fileName</span>" continueOnError="false" model="K:\customers\2.4\64869_JobServer\JobServer\model.eox" xmlns:xi="http://www.w3.org/2001/XInclude"&gt;
+	&lt;fileTrigger&gt;
+		&lt;<span class="Bold">failedFolder</span> value="K:\customers\2.4\64869_JobServer\JobServer\error" /&gt;
+		&lt;incomingFolder value="K:\customers\2.4\64869_JobServer\JobServer\input" /&gt;
+		&lt;<span class="Bold">outputFolder</span> value="K:\customers\2.4\64869_JobServer\JobServer\output" /&gt;
+		&lt;filter value="*.px" /&gt;
+	&lt;/fileTrigger&gt;
+	&lt;actions&gt;
+		&lt;action name="T_Mechatronic_ModularSystem.Action.ImportPXAction" arguments="List{<span class="Bold">trigger.filePath</span>}" /&gt;
+		&lt;action name="Engineering.ExportPXCommand" arguments="List{'TestProj',<span class="Bold">trigger.additionalResultsDir</span> + 'proj.px',true}" /&gt;
+		&lt;action name="T_Mechatronic_ModularSystem.Action.SendMailOnEndCommand" arguments="List{<span class="Bold">trigger.outputFolder</span>,<span class="Bold">trigger.failedFolder</span>,<span class="Bold">trigger.jobName</span>}" /&gt;
+	&lt;/actions&gt;
+&lt;/jobdefinition&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Code example for calling a static method:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p>A static method is created as follows:</p>
+                        <ol>
+                            <li value="1">Create a mechatronics component (for example <span class="codetext">StaticClass</span>).</li>
+                            <li value="2">Open the <span class="gui">Methods</span> editor.</li>
+                            <li value="3">At least one method is added (for example <span class="codetext">setResultData</span>).</li>
+                            <li value="4">Mark the <span class="gui">Class method</span> check box.</li>
+                            <li value="5">Select a language (for example <span class="gui">Java</span>).</li>
+                            <li value="6">Add at least one argument (for example <span class="codetext">data</span>).</li>
+                            <li value="7">Create the code of the method to be executed in the code window.</li>
+                        </ol>
+                        <p>This method is called in the following Job definition:</p>
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+	&lt;jobdefinition name="Job Name"
+		model="/C:/jobserver/eox/basis.eox"
+		xmlns:xi='http://www.w3.org/2001/XInclude'
+		xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+		xsi:noNamespaceSchemaLocation='C:/jobserver/xsd/jmx.xsd'&gt;
+	&lt;webserviceTrigger&gt;
+		&lt;failedFolder value="C:/jobserver/worker/error" /&gt;
+		&lt;outputFolder value="C:/jobserver/worker/out" /&gt;
+	&lt;/webserviceTrigger&gt;
+	&lt;actions&gt;
+		&lt;action name="T_Mechatronic_ModularSystem.Actions.StaticClass:setResultData"
+			arguments="List{'testContent'}" /&gt;
+	&lt;/actions&gt;
+&lt;/jobdefinition&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code for an action whose argument contains a formula:</a><![CDATA[  ]]></p></span>
+                    <div class="MCDropDownBody dropDownBody"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.1"?&gt;
+&lt;jobdefinition name="testJob" continueOnError="false" model="K:\JobServer\model.eox" xmlns:xi="http://www.w3.org/2001/XInclude"&gt;
+	&lt;webserviceTrigger&gt;
+		&lt;failedFolder value="K:\JobServer\error" /&gt;
+		&lt;outputFolder value="K:\JobServer\output" /&gt;
+	&lt;/webserviceTrigger&gt;
+	&lt;actions&gt;
+		&lt;action name="T_Mechatronic_ModularSystem.Action.ImportPXAction" arguments="List{trigger.params.value('file')}" /&gt;
+		&lt;action name="Customizing_Engineering.SetResultDataToObjectNameAction" arguments="List{absRef('TestProj.Mechatronik.Feeder.Discard')}"/&gt;
+		&lt;action name="Engineering.ExportPXCommand" arguments="List{'TestProj',trigger.additionalResultsDir + 'proj.px',true}" /&gt;
+	&lt;/actions&gt;
+&lt;/jobdefinition&gt;</code></pre>
+                        <p class="Bridgehead">Description:</p>
+                        <p>With the first action (ImportPXAction) components are imported and added to the project. The second action (SetResultDataToObjectNameAction) references the name of the component that can be determined via the formula <span class="codetext">absRef('TestProj.Mechatronic.Feeder.Discard')</span>. The name of the determined component is used for the naming of the created data.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code for an action that offers the target file for downloading in the user interface:</a><![CDATA[  ]]></p></span>
+                    <div class="MCDropDownBody dropDownBody"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.1"?&gt;
+&lt;jobdefinition name="testJob" continueOnError="false" model="\\share\models\model.eox" xmlns:xi="http://www.w3.org/2001/XInclude"&gt;
+	&lt;webserviceTrigger&gt;
+		&lt;failedFolder value="failed" /&gt;
+		&lt;outputFolder value="output" /&gt;
+	&lt;/webserviceTrigger&gt;
+	&lt;actions&gt;
+		&lt;action name="T_Mechatronic_ModularSystem.Action.ImportPXAction" arguments="List{trigger.params.value('file')}" /&gt;
+		&lt;action name="Customizing_Engineering.SetResultDataToObjectNameAction" arguments="List{absRef('TestProj.Mechatronik.Feeder.Discard')}"/&gt;
+		&lt;action name="Engineering.ExportPXCommand" arguments="List{'TestProj',trigger.additionalResultsDir + 'proj.px',true}" /&gt;
+		&lt;action name="T_Mechatronic_ModularSystem.Commands.MarkFileForDownloadCommand" arguments="List{trigger.outputFolder + 'results\\proj1.px'}"/&gt;
+	&lt;/actions&gt;
+&lt;/jobdefinition&gt;</code></pre>
+                        <p class="Bridgehead">Description:</p>
+                        <p>The <span class="codetext">MarkFileForDownloadCommand</span> command creates a link to the target file of the Job.</p>
+                        <p>The link to the target file is displayed as a symbol in the user interface:</p>
+                        <p>
+                            <img src="../Pictures/jobserver_download_resultdata.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">The action shown in the example uses a command whose implementation has to be created self with scripting.<br />The script uses the <span class="important">markFileForDownload</span> method from the <span class="important">IJobAPI</span> class. The method expects the path to the target file as the parameter.</p>
+                <p class="Infoblock">Example for the implementation:</p><pre xml:space="preserve"><code class="language-markup">
+<code class="language-markup">import com.mind8.mechatronic.skill.api.IJobAPI;
+IJobAPI.DEFAULT.markFileForDownload(pathToFile);</code></code></pre>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Code example for saving the model data as an EOX file:</a><![CDATA[  ]]></p></span>
+                    <div class="MCDropDownBody dropDownBody"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.1"?&gt;&lt;jobdefinition name="Job8" continueOnError="true" model="<a href="glossary_o_eox.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">EOX</a>\Tutorial_JobServer.eox" xmlns:xi="http://www.w3.org/2001/XInclude"&gt;
+	&lt;fileTrigger&gt;
+		&lt;failedFolder value="error" /&gt;
+		&lt;incomingFolder value="input" /&gt;
+		&lt;outputFolder value="output" /&gt;
+		&lt;filter value="*.imx" /&gt;
+	&lt;/fileTrigger&gt;
+	&lt;actions&gt;
+		&lt;action name="Engineering.ImportIMXCommand" arguments="=List{trigger.filePath}" /&gt;
+		&lt;action name="Engineering.SaveObjectCommand" arguments="=List{absRef('NewFeeder.Mechatronic.Feeder')}" /&gt;
+		&lt;action name="Engineering.ExportEOXCommand" arguments="=List{trigger.outputFolder + 'results\\<a href="glossary_o_modell.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Model</a>.eox',List{'NewFeeder'}}" /&gt;
+	 	&lt;action name="JobServer.MarkFileForDownloadCommand" arguments="=List{trigger.outputFolder + 'results\\Model.eox'}" /&gt; 
+	&lt;/actions&gt;
+&lt;/jobdefinition&gt;</code></pre>
+                        <p class="Bridgehead">Description:</p>
+                        <p>All model changes are first saved through the <span class="codetext">Engineering.SaveObjectCommand</span> command. Then the model data is written into an EOX file with the <span class="codetext">Engineering.ExportEOXCommand</span> command.</p>
+                        <p>The <span class="codetext">MarkFileForDownloadCommand</span> command creates a link to the EOX file.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="Infoblock">To offer multiple files for download, the <span class="codetext">JobServer.MarkFileForDownloadCommand</span> has to be performed for each individual file.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">To download target files the browser has to be set so that popup windows are allowed for this application.</p>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

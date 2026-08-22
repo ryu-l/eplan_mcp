@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Managing Master Data|Importing Part Data to the eCl@ss Standard|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="eCl@ss characteristics can have a cardinality, for example the number of connection points of an item. This is used to define how often a block of eCl..." /><title>Parts management: Assignment of eCl@ss properties to EPLAN part properties</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/partsimportbmecatgui_k_mappingdetails.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor877"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor878"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8;EPLAN Fluid;EPLAN Preplanning;EPLAN Pro Panel" /><a name="kanchor988"></a><a name="kanchor989"></a>
+            <h2>Parts management: Assignment of eCl@ss properties to EPLAN part properties</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p><a href="Glossary_o_eclass.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">eCl@ss</a> characteristics can have a cardinality, for example the number of <a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a> of an item. This is used to define how often a block of eCl@ss <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> occurs repeatedly. At the moment of definition of an assignment of eCl@ss data one only knows that a block can occur several times. But not however how often the block occurs during the actual import. This can differ at every imported object.</p>
+            <p>It must be possible to assign eCl@ss properties with cardinality to several EPLAN <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> properties. This is realized as follows:</p>
+            <fieldset data-mc-conditions="Conditions.New">
+                <ul>
+                    <li class="Listitem_Normal" value="1">The user can also select several EPLAN properties for each eCl@ss property that can occur several times due to the cardinality.</li>
+                    <li class="Listitem_Normal" value="2">During importing these eCl@ss properties are assigned to these EPLAN properties in sequence.</li>
+                    <li class="Listitem_Normal" value="3">User-defined properties and indexed EPLAN properties such as attributes and free properties can also be selected here.</li>
+                    <li class="Listitem_Normal" value="4">The user selects all the indexes to be used explicitly in the process, for example "Attributes 10 to 20".</li>
+                    <li class="Listitem_Normal" value="5">A dialog is available with one list each for the assignment of available properties and selected properties in which the sequence of the selected properties can be changed by means of buttons.</li>
+                    <li class="Listitem_Normal" value="6">If an object to be imported contains more eCl@ss properties than were defined during the assignment of the cardinality, the superfluous properties are ignored.</li>
+                </ul>
+            </fieldset>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="partsimportbmecatgui_k_start.htm">Parts Management: Importing Parts Data to the eCl@ss Standard</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Working with Connections|Routing Paths (Topology)|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Routing paths connect routing points or topology functions. Routing paths are automatically or manually inserted sections along which connections can ..." /><title>Topology Routing Paths</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/cablinggui_k_strecken.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2286"></a>
+            <MadCap:concept term="Grundlagen;EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor2705"></a><a name="kanchor2706"></a>
+            <h2>Topology Routing Paths</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Routing paths connect <a href="Glossary_o_verlegepunkte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing points</a> or <a href="Glossary_o_topologie.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">topology</a> <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a>. Routing paths are automatically or manually inserted sections along which <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> can be routed. Routing paths can, but do not have to, consist of a material, and can have a <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a>.</p>
+            <p>A routing path always has the "Topology" representation type; this cannot be changed. Routing paths are displayed graphically by means of dark-red <a href="Glossary_o_leitungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">lines</a> with snap points at the starting, end and center points (default setting of the layer).</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"> Manual <a href="Glossary_o_strecken.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing paths</a> define the track through any starting and end points.</li>
+                <li class="Listitem_Normal" value="2">A manual routing path is drawn in the same way as a polyline. Only starting and end point are used as snap points, any other points in between are pure graphics. The polyline cannot be closed.</li>
+                <li class="Listitem_Normal" value="3">The starting and end points of a manual routing path must be connected to routing points, topology functions or topology <a href="Glossary_o_abbruchstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">interruption points</a>.</li>
+                <li class="Listitem_Normal" value="4">If two routing paths collide, you must insert a routing point at the intersection of the paths to enable routing through the path.</li>
+            </ul>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">All routing paths are assigned the <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> <span class="gui">Topology: Routing length</span> and <span class="gui">Topology: Routing length (automatic)</span>. <span class="gui">Topology: Routing length (automatic)</span> automatically corresponds to the geometric length and is determined on the basis of the sum of all partial lengths of the routing path. You can manually enter a value into the <span class="gui">Topology:</span><span class="gui"> Routing length</span> property if your drawing is not to scale, or values for a Z-axis have to be assigned.</p>
+            </div><a name="kanchor2707"></a>
+            <h3>Automatically generated routing paths</h3>
+            <p>Connections never enter a routing path in the middle during routing. If a topology function is not connected to a routing path, an automatic routing path is generated between this function and the closest routing point. The routing paths thus generated remain and will not be re-generated for each routing. Graphically, these routing paths are displayed by orange lines (default setting of the layer).</p>
+            <p>Automatically generated routing paths are, e.g., used if many targets end at the same routing point, for example in an enclosure. In this case you place the targets in the vicinity of the routing point; during routing, the routing paths will then be automatically generated.</p>
+            <p>The <a href="Glossary_o_durchlauflaenge.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing length</a> of the automatic routing paths is not calculated automatically; only the manually entered length is evaluated.</p>
+            <p class="Seealso" data-mc-conditions="Primary.ScreenOnly">See also</p>
+            <p class="Link_Seealso" data-mc-conditions="Primary.ScreenOnly"><a href="cablinggui_k_start.htm">Routing Paths (Topology)</a>
+            </p>
+            <p class="Link_Seealso" data-mc-conditions="Primary.ScreenOnly"><a href="cablinggui_h_streckeeinfuegen.htm">Inserting Routing Paths (Topology)</a>
+            </p>
+            <p class="Link_Seealso" data-mc-conditions="Primary.ScreenOnly"><a href="cablinggui_k_vorgehensweise.htm">Routing Connections (Topology): Procedure</a>
+            </p>
+            <p class="Link_Seealso" data-mc-conditions="Primary.ScreenOnly"><a href="cablinggui_k_teilstrecke.htm">Consideration of Height Differences during Routing</a>
+            </p>
+            <p class="Link_Seealso" data-mc-conditions="Primary.ScreenOnly"><a href="cablinggui_k_verlegeart.htm">Routing Path Type</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

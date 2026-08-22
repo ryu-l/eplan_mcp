@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="By using the command data are packed into an EDZ file whose contents represent a part for the P8 parts database. To this purpose a macro is created an..." /><title>ECAD.GenerateMacroAndEdzForEcadProjectCommand</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refcommands_r_ecad_generatemacroandedzforecadprojectcommand.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1998"></a>
+            <MadCap:concept term="Referenz" /><a name="kanchor1373"></a>
+            <h2>ECAD.GenerateMacroAndEdzForEcadProjectCommand</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>By using the command data are packed into an EDZ file whose contents represent a part for the P8 parts database. To this purpose a macro is created and packed together with further information and files into an EDZ file.</p>
+            <p class="Bridgehead">Requirements:</p>
+            <ul>
+                <li value="1">EPLAN Electric P8 Version 2.6 and above.</li>
+                <li value="2">The basic project template <span class="codetext">IEC_bas001.zw9</span>is available in the current P8 version.</li>
+                <li value="3">The enveloping macro has a placeholder object with special properties (see <a href="#Variablen_Platzhalterobjekt" target="_self">Variable_Placeholder_Object</a>).</li>
+                <li value="4"><a name="aanchor1999"></a>
+                    <MadCap:concept term="EPLAN Electric P8" />The executable file or EPLAN&#160;Electric P8 (<span class="codetext">W3u.exe</span>) is entered in the EEC preferences.</li>
+                <li value="5">Either the option <span class="gui">Keep macro boxes in window macros</span> or <span class="gui">Keep macro boxes in symbol macros</span> is activated in the EEC preferences. In the case of the generation of an EDZ file these options are mutually exclusive! For information on creating macros see <a href="admin_r_prefs_ecad_p8.htm" class="MCXref xref">EPLAN Electric P8</a>.</li>
+                <li value="6">The current configuration already contains a valid ECAD structure.</li>
+                <li value="7">The specified C# script contains an <span class="codetext">EcExportMacroAction</span> in order to create a macro and an <span class="codetext">EcCleanProjectAction</span> in order to remove the temporarily created projects.</li>
+            </ul>
+            <p>The following parameters / model variables are important:</p>
+            <table>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Installed in</th>
+                        <th>Standard</th>
+                        <th>Meaning</th>
+                    </tr>
+                    <tr>
+                        <td>Disciplines &gt;&#160;ECAD&#160;&gt;&#160;EPLAN&#160;Electric P8 &gt; <b><a href="glossary_o_parameter.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Parameter</a> Name For C# Script</b></td>
+                        <td><a href="glossary_o_string.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">String</a>
+                        </td>
+                        <td>WiringDiagram</td>
+                        <td>Script</td>
+                        <td>Stores the path to the C# script.</td>
+                    </tr>
+                    <tr>
+                        <td>Disciplines &gt;&#160;ECAD&#160;&gt;&#160;EPLAN&#160;Electric P8 &gt; <b>Parameter Name For C# Script Arguments</b></td>
+                        <td>String</td>
+                        <td>WiringDiagram</td>
+                        <td>ScriptArguments</td>
+                        <td>Stores arguments that are passed to the C# script.</td>
+                    </tr>
+                    <tr>
+                        <td>Disciplines &gt;&#160;ECAD&#160;&gt;&#160;EPLAN&#160;Electric P8 &gt; EPLAN Data Zip (.edz) generation &gt; <b>Macro Project Template</b></td>
+                        <td>String</td>
+                        <td />
+                        <td>Template\$(EPLAN_VERSION_SHORT)\IEC_bas001.zw9</td>
+                        <td>Basic project template for creating the EDZ data.</td>
+                    </tr>
+                    <tr>
+                        <td>Disciplines &gt;&#160;ECAD&#160;&gt;&#160;EPLAN&#160;Electric P8 &gt; EPLAN Data Zip (.edz) generation &gt; <b>Parameter Name For Picture Path</b></td>
+                        <td>Map</td>
+                        <td>Page</td>
+                        <td>Image path</td>
+                        <td>Stores the source and target paths of the images. The path is specified either absolutely or relatively to the P8 directory for images. While the EDZ file is being imported into P8 the image is stored in a directory that is made up of the P8 directory for images and the relative path. The paths are specified in a map with the syntax <span class="codetext">=Map{Pair{"src","&lt;source folder&gt;"},Pair{"dest","&lt;destination folder&gt;"}}</span>.</td>
+                    </tr>
+                    <tr>
+                        <td>Disciplines &gt;&#160;ECAD&#160;&gt;&#160;EPLAN&#160;Electric P8 &gt; EPLAN Data Zip (.edz) generation &gt; <b>Parameter Name For Part Attributes</b></td>
+                        <td>Map</td>
+                        <td>Page</td>
+                        <td>Part attributes</td>
+                        <td>The part attributes are specified with the syntax <span class="codetext">=Map{Pair{"&lt;Attribute name1&gt;","&lt;Value&gt;"},Pair{"&lt;Attribute name2&gt;","&lt;Value&gt;"}}</span>. At least one of these part attributes has to be specified: <ul><li value="1"><span class="codetext">P_ARTICLE_PARTTYPE</span></li><li value="2"><span class="codetext">P_ARTICLE_GROUPSYMBOLMACRO</span></li><li value="3"><span class="codetext">P_ARTICLE_PARTNR</span></li><li value="4"><span class="codetext">P_ARTICLE_TYPENR</span> </li></ul></td>
+                    </tr>
+                    <tr>
+                        <td>Disciplines &gt;&#160;ECAD&#160;&gt;&#160;EPLAN&#160;Electric P8 &gt; EPLAN Data Zip (.edz) generation &gt; <b>Parameter Name For Macro Path</b></td>
+                        <td>String</td>
+                        <td>Page</td>
+                        <td>Macro name</td>
+                        <td>Stores the relative path to the macro that is created.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p />
+            <p>The following method creates an EDZ file from a schematic page that contains a macro already created. If the schematic contains more than page, an error message is output. The name of the created EDZ file is returned.</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Argument</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>wiringDiagram</td>
+                        <td>WiringDiagam</td>
+                        <td>Project component of the WiringDiagram type whose subcomponents are collected.</td>
+                    </tr>
+                    <tr>
+                        <td>targetFolderName</td>
+                        <td>String</td>
+                        <td>Name of the target directory, where the created EDZ file is stored. The EDZ file is stored with the specified part number as the file name.<br />When a relative path is specified, the created EDZ file is stored in the project directory.<br />Alternatively an absolute path can be specified.<br /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The following method creates an EDZ file from a schematic page that contains a macro already created. If the schematic contains more than page, an error message is output. The name of the created EDZ file is returned.</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Argument</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>root</td>
+                        <td>Root</td>
+                        <td>Project component, subcomponents of the <span class="codetext">WiringDiagram</span> type thereof are collected.</td>
+                    </tr>
+                    <tr>
+                        <td>targetFolderName</td>
+                        <td>String</td>
+                        <td>Name of the target directory, where the created EDZ file is stored. The EDZ file is stored with the specified part number as the file name.<br />When a relative path is specified, the created EDZ file is stored in the project directory.<br />Alternatively an absolute path can be specified.<br /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="Bridgehead"><a name="Variablen_Platzhalterobjekt"></a>Placeholder object with variables for the generation of an EDZ+ file:</p>
+            <p>
+                <img src="../Pictures/edz_placeholderobject_properties.png" alt="" class="max" />
+            </p>
+            <table>
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <th>Property</th>
+                        <th>Current value</th>
+                        <th>Variable</th>
+                    </tr>
+                    <tr>
+                        <td><a href="glossary_o_macrobox.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Macro box</a> &gt; &lt;Macro name&gt; &gt;&#160;Macro:Name &gt;&#160;Macro:Name[1]</td>
+                        <td>&lt;Name of the macro box&gt;</td>
+                        <td>&lt;Macro name&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Free text &gt;&#160;&lt;MacroVariant&gt; &gt;&#160;Text contents</td>
+                        <td>&lt;MacroVariant&gt;</td>
+                        <td>&lt;MacroVariant&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Free text &gt;&#160;&lt;MacroRepresentationType&gt; &gt; Text contents</td>
+                        <td>&lt;MacroRepresentationType&gt;</td>
+                        <td>&lt;MacroRepresentationType&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Free text &gt;&#160;&lt;MacroInsertPointActive&gt; &gt; Text contents</td>
+                        <td>&lt;MacroInsertPoint&gt;</td>
+                        <td>&lt;MacroInsertPoint&gt;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="Seealso">See also:</p>
+            <p class="Link_Seealso"><a href="https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/EPLAN_Help.htm#htm/xmlexport_o_tags.htm" target="_blank">XML-Export / -Import: Tags und zugehÃ¶rige Attribute</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

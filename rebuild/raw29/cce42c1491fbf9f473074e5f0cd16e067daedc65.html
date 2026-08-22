@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.concept" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Managing Master Data|Festo Product Catalog|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="In the festo.cfg file, which is located in the ..\&lt;Version number&gt;\cfg directory, you define the Festo part properties that are to be imported. ..." /><title>Configuration File for Importing Festo Parts</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/festocatalog_k_zuordnungsdatei.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor105"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor106"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8;EPLAN Fluid" /><a name="kanchor100"></a><a name="kanchor101"></a>
+            <h2>Configuration File for Importing Festo Parts</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>In the <span class="codetext">festo.cfg</span> file, which is located in the <span class="codetext">..\&lt;Version number&gt;\cfg</span> directory, you define the Festo <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> that are to be imported. The assignment of the Festo parts to EPLAN <a href="Glossary_o_makros.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">macros</a> or <a href="Glossary_o_symbole.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">symbols</a> is also done here. You can also define your own assignments for the properties.</p>
+            <p>The configuration file is divided into different sections: In the "Festo-Settings" section, you define the property assignments. This allows you, for example, to configure how the part numbers are constructed. The "Festo-MacroMapping" section defines the assignment of the macros to the Festo parts.</p>
+            <p>The following rules apply to editing of the configuration file:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The maximum size of the file is 400000 bytes (including <a href="Glossary_o_kommentare.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">comments</a>).</li>
+                <li class="Listitem_Normal" value="2">The end of a data line is terminated with \r\n (line break).</li>
+                <li class="Listitem_Normal" value="3">A maximum of 255 operations can be processed on a single data line (+ | - | * | /).</li>
+                <li class="Listitem_Normal" value="4">The data is calculated using the format (String, Double, Long, Bool) supported by the assigned property (i.e., the property to which the values are assigned).</li>
+                <li class="Listitem_Normal" value="5">Only one pair of properties can be compared using the IF condition.</li>
+                <li class="Listitem_Normal" value="6">The following comparison operators may be used in an IF condition: (==; !=; &lt;; &gt;; &lt;=; &gt;=).</li>
+                <li class="Listitem_Normal" value="7">Upper / lower case sensitivity is important when evaluating IF conditions.</li>
+                <li class="Listitem_Normal" value="8">There is no ELSE branch. The configuration file is processed sequentially.</li>
+                <li class="Listitem_Normal" value="9">A Boolean value is defined as follows: 0 = FALSE, &gt;0 = TRUE.</li>
+                <li class="Listitem_Normal" value="10">Comment <a href="Glossary_o_leitungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">lines</a> are marked with "; " (; and space).</li>
+                <li class="Listitem_Normal" value="11">A string is defined by "...".</li>
+                <li class="Listitem_Normal" value="12">Placeholders for properties are defined by [#&lt;Property name&gt;].</li>
+                <li class="Listitem_Normal" value="13">You can use the index to access indexed properties.</li>
+                <li class="Listitem_Normal" value="14">Variables are defined by [$&lt;Variable name&gt;]</li>
+                <li class="Listitem_Normal" value="15">The EPLAN display language at the time of import can be queried.</li>
+            </ul>
+            <h3>Import mode</h3>
+            <p>In the "DataImportSetting" section of the configuration file, you define the import mode using the following syntax:</p>
+            <p><span class="codetext">ImportMode=&lt;Number&gt;</span>
+            </p>
+            <p>The import mode defines whether parts overwrite, or are appended to existing data when importing into the EPLAN internal parts management. The following import modes are possible:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><span class="important">0 = Append new records only:</span> This is the default behavior. Existing parts remain unchanged. Only new parts that do not currently exist are imported.</li>
+                <li class="Listitem_Normal" value="2"><span class="important">1 = Update existing records only:</span> Existing parts are overwritten with the new values. New parts are not imported.</li>
+                <li class="Listitem_Normal" value="3"><span class="important">2 = Update existing records and create new ones:</span> Existing parts are overwritten with the new values. New parts are also imported.</li>
+            </ul>
+            <h3>Assign properties</h3>
+            <p>Properties are assigned in the "Festo-Settings" section of the configuration file, according to the following syntax:</p>
+            <p><span class="codetext">&lt;Property number&gt; = "&lt;value&gt;"</span>
+            </p>
+            <div class="warning">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/warning.png" />Warning:</p>
+                <p class="Infoblock">You should not change the default properties in the "Festo Settings" section, since these are used to ensure that a functioning EPLAN part is created after the import.</p>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><a name="I_Beispiel"></a> <img src="../Pictures/Gui/ALL/example.png" /> <a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">
+                            <notrans><span class="codetext">; Festo-Settings<br /><br />
+22007 = "FESTO"<br />
+22008 = "FESTO"<br />
+22132 = 1<br />
+22135 = 1<br />
+22022 = 1<br />
+22138 = 2<br />
+22041 = 30<br />
+22023 = 1</span>
+                            </notrans>
+                        </p>
+                        <p class="Infoblock">This defines the following properties:</p>
+                        <table>
+                            <tr>
+                                <th>
+                                    <p class="Tabelle_Text">Number</p>
+                                </th>
+                                <th colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Name</p>
+                                </th>
+                                <th colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Type</p>
+                                </th>
+                                <th>
+                                    <p class="Tabelle_Text">Value</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="Tabelle_Text">22007</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Manufacturer</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">String</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">FESTO</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="Tabelle_Text">22008</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Supplier</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">String</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">FESTO</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">22132</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Fluid power trade</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Bool</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">1, i.e., check box selected</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">22135</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Trade: Pneumatics</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Bool</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">1, i.e., check box selected</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">22022</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Mounting site</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Long</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">1, i.e., Mounting panel</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">22138</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Generic product group</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Long</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">2, i.e., Fluid</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">22041</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Product group</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Long</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">30, i.e., Power units / Plants</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">22023</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Record type</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Long</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">1, i.e., Component</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <p>You can define additional properties according to the rules specified above. Since the configuration file is processed sequentially, we recommend that you add your own definitions at the end of the section.</p>
+            <h4>Defining the Festo properties to be imported</h4>
+            <p>The Festo properties to be imported are specified via xDKIâPlaintextName (this is the language-independent name of the Festo property), whereby the name is case-sensitive.</p>
+            <p>The following Festo part data can be imported:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">
+                    <notrans>Benennung</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="2">
+                    <notrans>Typ</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="3">
+                    <notrans>VPE</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="4">
+                    <notrans>ME</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="5">
+                    <notrans>KTN</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="6">
+                    <notrans>XHUB</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="7">
+                    <notrans>XHUBMin</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="8">
+                    <notrans>XHUBMax</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="9">
+                    <notrans>PRICE</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="10">
+                    <notrans>TOTALPRICE</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="11">
+                    <notrans>Text</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="12">
+                    <notrans>Prod_Txt</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="13">
+                    <notrans>REMARKS</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="14">
+                    <notrans>Menge</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="15">
+                    <notrans>Teilenummer</notrans>
+                </li>
+                <li class="Listitem_Single_Line" value="16">
+                    <notrans>SymbolId.</notrans>
+                </li>
+            </ul>
+            <p>Placeholders for properties are designated by a preceding "#'" character.</p>
+            <p>Syntax: <span class="codetext">[#&lt;Property name&gt;]</span></p>
+            <p>For Festo properties: <span class="codetext">[#&lt;xDKI clear name&gt;]</span></p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><a name="I_Beispiel1131"></a> <img src="../Pictures/Gui/ALL/example.png" /> <a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The following entry imports the contents of the remarks field ("REMARKS" Festo property) into the <span class="gui">Description</span> &lt;22009&gt; EPLAN property:</p>
+                        <p class="Infoblock">
+                            <notrans><span class="codetext">22009 = [#REMARKS]</span>
+                            </notrans>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><a name="I_Beispiel113"></a> <img src="../Pictures/Gui/ALL/example.png" /> <a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The <span class="gui">Type</span> field from Festo is to be imported into the EPLAN <span class="gui">Part number</span> field, whereby the part number should begin with the text "FESTO_". <br />The <span class="gui">Type</span> field should also be imported into the EPLAN <span class="gui">Order number</span> field but without additional text.</p>
+                        <p class="Infoblock">To do this, the following entry is required in the <span class="codetext">festo.cfg</span> file:</p>
+                        <p class="Infoblock">
+                            <notrans><span class="codetext">22001 = "FESTO_"+[#Typ]<br />
+22003 = [#Typ]</span>
+                            </notrans>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">If new Festo properties are added to new Festo product catalogs in the future, then these can also be imported by specifying the corresponding xDKIâPlaintextName.</p>
+            </div>
+            <h4>Indexed properties</h4>
+            <p>It is possible to access indexed properties (e.g., the "Free properties").</p>
+            <p>Syntax: <span class="codetext">&lt;EPLAN Property number&gt;.&lt;Index&gt;</span></p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><a name="I_Beispiel112"></a> <img src="../Pictures/Gui/ALL/example.png" /> <a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The following entry imports the contents of the remarks field ("REMARKS" Festo property) into the EPLAN property <span class="gui">Free properties: Description</span> &lt;22146&gt; with Index "1":</p>
+                        <p class="Infoblock">
+                            <notrans><span class="codetext">22146.1 = [#REMARKS]</span>
+                            </notrans>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h3>Other customization</h3>
+            <p>You can make a number of import customizations in the configuration file. Among others, you can use the following commands and elements for this. Be sure to observe the rules at the beginning of the configuration file.</p>
+            <h4>IF conditions</h4>
+            <p>IF conditions can be used within the assignment file. Only one pair of properties can be compared using the IF condition. Upper / lower case sensitivity is important when evaluating IF conditions. The following comparison operators are available:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">== (equal)</li>
+                <li class="Listitem_Single_Line" value="2">!= (not equal)</li>
+                <li class="Listitem_Single_Line" value="3">&lt; (less than)</li>
+                <li class="Listitem_Single_Line" value="4">&gt; (greater than)</li>
+                <li class="Listitem_Single_Line" value="5">&lt;= (less than or equal)</li>
+                <li class="Listitem_Single_Line" value="6">&gt;= (greater than or equal).</li>
+            </ul>
+            <h4>Hyperlinks</h4>
+            <p>Hyperlinks in the parts data provide access to the Festo website, which contains current documentation and technical data of the parts. On import, hyperlinks are automatically entered into the <span class="gui">File / Hyperlink 1 </span>field on the <span class="gui">Documents</span> tab of the <span class="gui">Parts management</span> module.</p>
+            <h4>Displayed language</h4>
+            <p>You can use the <span class="codetext">#EPLAN.Lng</span> placeholder to display properties in a particular language. On import, this placeholder is filled with the current display language.</p>
+            <p>Syntax: <span class="codetext">long=[#EPLAN.Lng]</span></p>
+            <div class="warning">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/warning.png" />Warning:</p>
+                <p class="Infoblock">The display language at the time of import is permanently entered into the properties and is <span class="important">not</span> updated when the display language is changed. The language can only be changed by re-importing the parts with the changed display language. The old parts must be deleted when doing this.</p>
+            </div>
+            <p>You can also enter a language directly using the <span class="codetext">lang=&lt;Language&gt;</span> entry (for example <span class="codetext">lang="en_US"</span>).</p>
+            <h4>Variables</h4>
+            <p>10 variables of type "String" are available for temporary storage of values within the configuration (without misusing EPLAN properties for this purpose). Variables are designated by a preceding "$" character.</p>
+            <p>Syntax: <span class="codetext">[$EPLAN.Str0]</span> â¦ <span class="codetext">[$EPLAN.Str9]</span></p>
+            <p>The values assigned to variables are only temporarily available during the import, and do not change any values of the Festo part properties to be imported.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><a name="I_Beispiel1111"></a> <img src="../Pictures/Gui/ALL/example.png" /> <a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The <span class="codetext">EPLAN.Str0 </span>variable is used in the configuration file to assign an alternative display language that is not offered by the Festo website.</p>
+                        <p class="Infoblock">
+                            <notrans><span class="codetext">[$EPLAN.Str0] 
+ = [#EPLAN.Lng]<br />
+if ([$EPLAN.Str0] == "da_DK") [$EPLAN.Str0] = "en_US"</span>
+                            </notrans>
+                        </p>
+                        <p class="Infoblock">The first entry stores the value of the current EPLAN display language in the <span class="codetext">EPLAN.Str0</span> variable. If the current display language is Danish, then this is changed to English for the import.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><a name="I_Beispiel1132"></a> <img src="../Pictures/Gui/ALL/example.png" /> <a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">In this example, the sales price is calculated based on the purchase price. Since the variables can only be strings, a suitable EPLAN property must be "misused" for the calculation. The <span class="codetext">$EPLAN.Str1</span> variable is used to temporarily store the contents of this property and restore it after the calculation. This means that no data is lost.</p>
+                        <p class="Infoblock">
+                            <notrans><span class="codetext">22109 = [#PRICE]<br />
+[$EPLAN.Str1] = 22110<br />
+if (22109 &gt; "0") 22110 = 22109 / 100 * 25 + 22109<br />
+if (22109 &gt;= "50") 22110 = 22109 / 100 * 15 + 22109<br />
+if (22109 &gt;= "100") 22110 = 22109 / 100 * 10 + 22109<br />
+22107 = 22110<br />
+22110 = [$EPLAN.Str1]</span>
+                            </notrans>
+                        </p>
+                        <p class="Infoblock">Line 1: The content of the Festo "PRICE" property is stored in the EPLAN property <span class="gui">Purchase price/Price unit Currency 1</span> &lt;22109&gt; .<br />Line 2: The value of the property <span class="gui">Purchase price/price unit Currency 2</span> &lt;22110&gt; is stored in the <span class="codetext">$EPLAN.Str1</span> variable.<br />Lines 3 to 5: The value of the property <span class="gui">Purchase price/price unit Currency 1</span> &lt;22109&gt; is compared and â depending on the figure â increased by 25%, 15%, or 10%. The new value is stored in the property <span class="gui">Purchase price/price unit Currency 2</span> &lt;22110&gt;.<br />Line 6: The value of the property <span class="gui">Purchase price/price unit Currency 2</span> &lt;22110&gt; is stored in the property <span class="gui">Sales price Currency 1</span> &lt;22107&gt;.<br />Line 7: The value stored in the <span class="codetext">$EPLAN.Str1</span> variable is written back to the property <span class="gui">Purchase price/price unit Currency 2</span> &lt;22110&gt;.</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Assign macros or symbols</h3>
+            <p>Macros or symbols are assigned to the Festo parts in the "Festo-MacroMapping" section of the configuration file, according to the following syntax:</p>
+            <p>For macros:</p>
+            <p>if ([#SymbolId] == "&lt;Order number&gt;") 22145 = "&lt;Subdirectory&gt;\&lt;Macro name&gt;.EMA"</p>
+            <p>or</p>
+            <p>if ([#SymbolId] == "&lt;Order number&gt;") 22145 = "&lt;Subdirectory&gt;\&lt;Macro name&gt;.EMS"</p>
+            <p>For symbols:</p>
+            <p>if ([#SymbolId] == "&lt;Order number&gt;") 22146 = "&lt;Subdirectory&gt;\&lt;Symbol name&gt;.ESY"</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><a name="I_Beispiel1"></a> <img src="../Pictures/Gui/ALL/example.png" /> <a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">
+                            <notrans>; Festo-MacroMapping <br /><br />
+if ([#SymbolId] == "00991001") 22145 = "FESTO\P_V_0100.EMS"<br />
+if ([#SymbolId] == "00991002") 22145 = "FESTO\P_V_0101.EMS"<br />
+...</notrans>
+                        </p>
+                        <p class="Infoblock">This assigns the EPLAN <span class="gui">Order number</span> &lt;22003&gt; property to the Festo "SymbolId" property; &lt;22145&gt; is the EPLAN <span class="gui">Macro</span> property.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="festocatalog_k_start.htm">Festo Product Catalog</a>
+            </p>
+            <p class="Link_Seealso"><a href="properties_k_prinzip.htm">EPLAN Properties</a>
+            </p>
+            <p class="Link_Seealso"><a href="festocatalog_k_listeeigenschaften.htm">Overview of EPLAN Part Properties</a>
+            </p>
+            <p class="Link_Seealso"><a href="festocatalog_k_listeauswahllisten.htm">Overview of Entries in Drop-down Lists</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

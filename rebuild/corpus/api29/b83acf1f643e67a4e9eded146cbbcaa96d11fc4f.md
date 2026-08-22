@@ -1,0 +1,61 @@
+# ProjectEntries(String) Property
+
+ProjectEntries(String) Property
+
+Returns the file names of all master data stored in the project.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public StringCollection ProjectEntries( 
+   string strFullLinkFileName
+) {get;}
+```
+```
+
+```
+```
+public:
+property StringCollection^ ProjectEntries {
+   StringCollection^ get(String^ strFullLinkFileName);
+}
+```
+```
+
+#### Parameters
+
+*strFullLinkFileName*
+:   Full link file name of the project, of which the information will be read.
+
+Exceptions
+
+| Exception | Description |
+| --- | --- |
+| **ArgumentNullException** | A parameter was set to a null reference. |
+| **ArgumentException** | \Parameters are invalid, e.g. the project does not exist. |
+| **ApplicationException** | \Internal interface for master data could not be created. |
+| [Eplan.EplApi.Base.BaseException](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException.html) | Project master data could not be correctly determined.. |
+
+Remarks
+
+The project "strFullLinkFileName" may be open in EPLAN or not. If the project was not already open, it will be opened and after the export it will be closed again.
+
+See Also
+
+#### Reference
+
+[Masterdata Class](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Masterdata.html)
+  
+[Masterdata Members](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Masterdata_members.html)
+  
+[Overload List](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Masterdata~ProjectEntries.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Masterdata~ProjectEntries(String))

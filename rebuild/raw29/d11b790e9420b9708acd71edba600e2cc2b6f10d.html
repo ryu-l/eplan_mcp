@@ -1,0 +1,233 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>NameService Class</title>
+    <meta name="Title" content="NameService Class"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n43464","initialNodeContainer":"c534","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService"/>
+    <meta name="Description" content="Class for managing the Function names (device tags) on the specified Page" />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices_namespace"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.HEServices.NameService"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices_namespace.html">Eplan.EplApi.HEServices Namespace</a>
+ / NameService Class</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <a class="i-page-link" href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService_members.html">Members</a>
+                    <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">NameService Class</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">Class for managing the Function names (device tags) on the specified Page</div>
+            
+            <div class="i-section-heading" id="i-inheritance-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Inheritance Hierarchy</span></div><div id="i-inheritance-section-content" class="i-section-content"><P><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemObjectClassTopic','System.Object')">System.Object</a><BR />&nbsp;&nbsp;&nbsp;<STRONG>Eplan.EplApi.HEServices.NameService</STRONG><BR /></P></div>			
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">class</span> NameService </pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">ref</span> <span style="color: #0000FF; ">class</span> NameService </pre></pre>
+            </div>
+        
+
+            </div>
+        </div>
+            
+            
+            
+            <div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content">When using EPLAN interactively, the system keeps track, that the structure identifiers of a Function on a Page are adjusted according to the page and according to location boxes or black boxes in which the Function is located. In API, the methods of the NameService class help you to do this. Please read 'Adoption of Device Tags' chapter of P8 help in order to get further information about these rules.</div>
+            <a name="exampleBookmark"></a>
+            
+            
+            
+            
+            <a name="ConstructorsBookmark"></a>
+            <div class="i-section-heading" id="i-publicConstructors-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Constructors</span></div><div id="i-publicConstructors-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Constructor" src="template/packages/core-dotnet/images/publicConstructor.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~_ctor.html">NameService Constructor</A></td><td class="i-member-description">Overloaded.&nbsp; &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="FieldsBookmark"></a>
+            
+            
+            
+            <a name="PropertiesBookmark"></a>
+            <div class="i-section-heading" id="i-publicProperties-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Properties</span></div><div id="i-publicProperties-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~AdjustmentOfDeviceTagSeparatorIsEnabled.html">AdjustmentOfDeviceTagSeparatorIsEnabled</A></td><td class="i-member-description">Determines if adjustment of the visible device tag separator should be forced &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~Page.html">Page</A></td><td class="i-member-description">Gets/Sets the page. Page must be set, because most of the NameService class's methods work on page only (except for e.g. CorrectDeviceTagProperties, EvaluateAndSetAllNamesTXN methods). &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~RemovalOfUnnecessaryDeviceTagNamePartsIsEnabled.html">RemovalOfUnnecessaryDeviceTagNamePartsIsEnabled</A></td><td class="i-member-description">Determines if removal of unnecessary main and nested device tag in the visible name should be forced. The property is need to be set, if you have a function with a device tag in the visible name, you want to evaluate a new visible name and the device tag should be removed from the visible name if it matches the device tag of a surrounding device box or of a function laying in search direction (which normally is "left"). By default or if this parameter is set to false, the device tag is kept in the visible name even if it is not necessary. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~RemovalOfUnnecessaryProjectStructuresIsEnabled.html">RemovalOfUnnecessaryProjectStructuresIsEnabled</A></td><td class="i-member-description">Determines if removal of unnecessary project structures in the visible device tag should be forced. This property is need to be set, if you have a function with a visible name that contains project structures, you want to evaluate a new visible name and the project structures should be removed from the visible name if they matches the project structures of a surrounding location box or the page. By default or if this parameter is set to false, the project structures are kept in the visible name even if they are not necessary. &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="MethodsBookmark"></a>
+            <div class="i-section-heading" id="i-publicMethods-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Methods</span></div><div id="i-publicMethods-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~AdjustFullName.html">AdjustFullName</A></td><td class="i-member-description">Overloaded.&nbsp;Sets the page and evaluates for a given functionbase the full name from the visible name of the functionbase and sets that evaluated value at the functionbase-object &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~AdjustVisibleName.html">AdjustVisibleName</A></td><td class="i-member-description">Overloaded.&nbsp;Sets the page and evaluates for a given functionbase the visible name and visible name format from the fullname of the functionbase and sets these evaluated values at the functionbase-object &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~CanDeviceTagBeNested.html">CanDeviceTagBeNested</A></td><td class="i-member-description">Overloaded.&nbsp;Sets the page and returns, if the device tag of a given function can be nested &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~CorrectDeviceTagProperties.html">CorrectDeviceTagProperties</A></td><td class="i-member-description">Do a correction on the namelist, if properties for main and nested devicetags are incorrect. In detail the nested devicetags are moved to the main devicetags if these have been empty. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~Dispose().html">Dispose</A></td><td class="i-member-description">Destructor &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~EvaluateAndSetAllNames.html">EvaluateAndSetAllNames</A></td><td class="i-member-description">Overloaded.&nbsp;Sets the page and evaluates the full name for all placed functions and interruption points on page by calling EvaluateName for all those objects. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~EvaluateAndSetAllNamesTXN.html">EvaluateAndSetAllNamesTXN</A></td><td class="i-member-description">Evaluate all names for all FunctionBase objects in the project by calling EvaluateName for all those objects. This methods does own transactions, so no transactions around the method are allowed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~EvaluateAndSetAllVisibleNames.html">EvaluateAndSetAllVisibleNames</A></td><td class="i-member-description">Overloaded.&nbsp;Sets the page and evaluate the visible names from the full names for all placed functions and interruption points on page. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~EvaluateName.html">EvaluateName</A></td><td class="i-member-description">Overloaded.&nbsp;Sets the page and evaluates the full name for a FunctionBase (which is either a Function or a Location box or an Interruption-point) by using the visible device tag of that FunctionBase and building the full name by graphical search on the page where the FunctionBase is placed. In the visible name missing project structures, which for example are supplemented from surrounding LocationBoxes or from the Page-Object itself. For an empty visible name the full name is taken from a function in search direction or from a surrounding device box. Nesting of device tags is made by using an surrounding device box, if nesting is enabled. The parameters used for evaluation are defined in the dialog with the project properties. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~FindNameGivingFunction.html">FindNameGivingFunction</A></td><td class="i-member-description">Overloaded.&nbsp;Sets the page and finds the function, that would give hActual the function name, if hActual has no instance name parts (has no visible device tag). Returns NULL, if no such function exists or hActual don't take over a name. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~FindNameGivingObject.html">FindNameGivingObject</A></td><td class="i-member-description">Overloaded.&nbsp;Finds an object, that would give the f function its name, if f has no its instance name parts assigned (has no visible device tag). Returns NULL, if no such object exists or f don't take over a name. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~GetSortedListOfLogicals.html">GetSortedListOfLogicals</A></td><td class="i-member-description">Overloaded.&nbsp;Sets the page and returns a sorted list of logicals (that is everything derived from functionbase). The logicals are sorted in that way, so that objects which are dependent on the name of other logicals are sorted behind them. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~RenameDevice.html">RenameDevice</A></td><td class="i-member-description">Overloaded.&nbsp;Rename all functions of device. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~SetFullNameAndAdjustVisibleName.html">SetFullNameAndAdjustVisibleName</A></td><td class="i-member-description">Overloaded.&nbsp;Sets the page and sets the given full name as the new full name to the given function and adjusts the visible name of that function. Returns false, if a problem occured (if a visible name cannot be evaluated) - no changes to the function-object have been made then. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~SetName.html">SetName</A></td><td class="i-member-description">Sets a default device tag to the function. (I.e. a device tag which is automatically assigned when manually inserting a symbol on a page) &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~SetVisibleNameAndAdjustFullName.html">SetVisibleNameAndAdjustFullName</A></td><td class="i-member-description">Overloaded.&nbsp;Sets the page and sets the given visible name as the new visible name to the given function and adjusts the full name of that function accordingly (by calling "EvaluateName"). &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService~UpdateConnectionDefinitionPointsParent.html">UpdateConnectionDefinitionPointsParent</A></td><td class="i-member-description">Overloaded.&nbsp;Sets the page and updates the graphical parent of a connection definition point &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            
+            <a name="EventsBookmark"></a>
+            
+            
+            
+            <a name="OperatorsBookmark"></a>
+            									
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService_members.html">NameService Members</a>
+<br/><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices_namespace.html">Eplan.EplApi.HEServices Namespace</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.NameService">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

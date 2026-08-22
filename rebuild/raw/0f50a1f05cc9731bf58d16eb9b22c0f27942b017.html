@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Eplan-News|News 2026|New Features for Eplan API">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="6:40:21 AM">
+        <meta name="BuildDate" content="Monday, October 6, 2025">
+        <meta id="productName" name="product" content="Eplan Platform">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="allLangExtended">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="News 2026: The class MDPart represents a part in the parts database. The class MDPart includes the new method SumUpFunctionTemplates in order to summa..."><title>New Features for Eplan API</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZN49JJ5H1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FZN49JJ5H1', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="EPLAN_Help_k_start.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <h2>New Features for <notrans_i>Eplan API</notrans_i></h2>
+                                        <table class="display" id="table-1">
+                                            <col>
+                                            <col>
+                                            <thead>
+                                                <tr>
+                                                    <th>Area</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Summarize <span class="GlossaryPopup" href="Glossary_o_funktionsschablonen.htm">function templates</span> of an assembly or module</p>
+                                                    <p>The class <notrans_i><span class="codetext">MDPart</span></notrans_i> represents a part in the <span class="GlossaryPopup" href="Glossary_o_artikel.htm">parts</span> database. The class <notrans_i><span class="codetext">MDPart</span></notrans_i> includes the new method <notrans_i><span class="codetext">SumUpFunctionTemplates</span></notrans_i> in order to summarize the function templates of this part. This only <span class="GlossaryPopup" href="Glossary_o_funktionen.htm">functions</span> if the part is an assembly or a module. By means of the new property <notrans_i><span class="codetext">SummedUp</span></notrans_i> from the class <notrans_i><span class="codetext">MDFunctionTemplatePosition</span></notrans_i> you can determine whether a function template has already been summarized.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">New method for calculating the total weight of enclosures</p>
+                                                    <p>The class <notrans_i><span class="codetext">Placement3DService</span></notrans_i> now includes the new method <notrans_i><span class="codetext">CalculateCabinetWeight</span></notrans_i> to calculate the enclosure weight. In the user interface this corresponds to the command <span class="gui">Calculate total enclosure weight</span>.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Events (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">New event "Eplan.EplApi.OnLoadWorkspace"</p>
+                                                    <p>The new event <notrans_i><span class="codetext">Eplan.EplApi.OnLoadWorkspace</span></notrans_i> is now available in the Eplan API. This event is triggered when a user changes the workspace. The event can be used in the Eplan API to supplement any missing entries in the ribbon in the newly loaded workspace.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">New method for project-specific <span class="GlossaryPopup" href="Glossary_o_pfadvariablen.htm">path variables</span></p>
+                                                    <p>To resolve project-specific path variables for a specific project, the class <notrans_i><span class="codetext">PathMap</span></notrans_i> now contains a new overload of the method <notrans_i><span class="codetext">SubstitutePath</span></notrans_i>.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">New method for <span class="GlossaryPopup" href="Glossary_o_verlegeverbindungen.htm">routing connections</span></p>
+                                                    <p>The new method <notrans_i><span class="codetext">RouteConnection</span></notrans_i> from the class <notrans_i><span class="codetext">ConnectionService3D</span></notrans_i> makes it possible to <span class="GlossaryPopup" href="Glossary_o_verlegen.htm">route</span> a routing connection via a specific routing track. This new feature is available as of Version 2025 Update1.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="GlossaryPopup" href="Glossary_o_eigenschaften.htm">Properties</span> (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Renaming <span class="GlossaryPopup" href="Glossary_o_montagepunkte.htm">mounting points</span></p>
+                                                    <p>The new property <notrans_i><span class="codetext">Name</span></notrans_i> from the class <notrans_i><span class="codetext">Mate</span></notrans_i> can now be used to rename <span class="GlossaryPopup" href="Glossary_o_benutzerdefiniert.htm">user-defined</span> mounting points as in the user interface.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Consideration of the export scheme during the STEP export</p>
+                                                    <p>The new methods <notrans_i><span class="codetext">Placements3DToStep</span></notrans_i> and <notrans_i><span class="codetext">ProjectToStep</span></notrans_i> from the class <notrans_i><span class="codetext">Edit3D</span></notrans_i> can be used to export 3D <span class="GlossaryPopup" href="Glossary_o_objekte.htm">objects</span> into the STEP format under consideration of the export scheme.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Properties (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">New property for the property arrangements of <span class="GlossaryPopup" href="Glossary_o_modell_ansichten.htm">model views</span></p>
+                                                    <p>You can now access the property arrangements of model views by means of the new property <notrans_i><span class="codetext">PropertyPlacementsSchemas</span></notrans_i> from the class <notrans_i><span class="codetext">ViewPlacement</span></notrans_i>.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Properties (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Determine displayed <span class="GlossaryPopup" href="Glossary_o_quickinfos.htm">tooltips</span></p>
+                                                    <p>The new property <notrans_i><span class="codetext">Tooltip</span></notrans_i> from the class <notrans_i><span class="codetext">Placement</span></notrans_i> now makes it possible to query the tooltip for a placement in the graphical editor as it is displayed in the user interface (for example the <span class="GlossaryPopup" href="Glossary_o_vollstaendigesbmk.htm">full DT</span> for a function).</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>User-defined properties</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Create user-defined properties with the field type "Value with unit"</p>
+                                                    <p>The method <notrans_i><span class="codetext">Create</span></notrans_i> from the classes <notrans_i><span class="codetext">UserDefinedPropertyDefinition</span></notrans_i> and <notrans_i><span class="codetext">MDUserdefinedPropertyDefinition</span></notrans_i> makes it possible to create user-defined properties with the field type "Value with unit" and to assign a unit group to these properties.</p>
+                                                    <p class="Link_Seealso"><a href="news_p_eigenschaften_einheitengruppen_471994.htm"><img src="../Pictures/Gui/ALL/link_news.png">Unit Groups for Properties of the Field Type "Value with unit"</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Properties (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Determining the availability of tabs in the ribbon</p>
+                                                    <p>In the past it was already possible to switch the availability of a tab in the configuration of the ribbon with the property <notrans_i><span class="codetext">IsSetAsVisible</span></notrans_i> from the class <notrans_i><span class="codetext">RibbonTab</span></notrans_i>. Now you can also use the <notrans_i><span class="codetext">IsSetAsVisible</span></notrans_i> property to specify the value for a tab in the ribbon (activated or deactivated).</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">New method for determining user-defined mounting aids</p>
+                                                    <p>The new <notrans_i><span class="codetext">GetCustomMateEntries</span></notrans_i> method is now available in the <notrans_i><span class="codetext">DMObjectsFinder</span></notrans_i> class. You can use this method to determine user-defined mounting aids in the tree of the <span class="GlossaryPopup" href="Glossary_o_bauraum.htm">layout space</span> navigator via Eplan API.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Properties (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Determine all words not to be translated</p>
+                                                    <p>The new property <notrans_i><span class="codetext">NotTranslatedWords</span></notrans_i> from the class <notrans_i><span class="codetext">MDTranslationDatabase</span></notrans_i> makes it possible to determine all the words "not to be translated" from the dictionary.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">New method for the export in IFC format</p>
+                                                    <p>The new <notrans_i><span class="codetext">InstallationSpacesToIFC</span></notrans_i> method is now available in the <notrans_i><span class="codetext">Export3D</span></notrans_i> class. This method can be used to export 3D graphic data in the IFC format. This new feature is available as of Version 2025 Update1.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">New methods for exporting and importing in JT format</p>
+                                                    <p>In the <notrans_i><span class="codetext">Export3D</span></notrans_i> class the new method <notrans_i><span class="codetext">InstallationSpacesToJT</span></notrans_i> is now available, and in the <notrans_i><span class="codetext">Import3D</span></notrans_i> class the new method <notrans_i><span class="codetext">JT</span></notrans_i>. These methods can be used to import and export 3D graphic data in the JT format.</p>
+                                                    <p>The <notrans_i><span class="codetext">import3D</span></notrans_i> action is now also available for importing 3D graphic data in the JT format (and also in the STEP format). For the export in the JT format the <notrans_i><span class="codetext">TYPE</span></notrans_i> parameter of the <notrans_i><span class="codetext">export3D</span></notrans_i> action has been extended with the <notrans_i><span class="codetext">JT</span></notrans_i> value for the JT format, and the <notrans_i><span class="codetext">STEPINSTALLATIONSPACES</span></notrans_i> value of the <notrans_i><span class="codetext">TYPE</span></notrans_i> parameter has been renamed to <notrans_i><span class="codetext">STEP</span></notrans_i>.</p>
+                                                    <p>This new feature is available as of Version 2025 Update1.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Outdated methods for the ribbon removed</p>
+                                                    <p>You could have a menu bar with the "old" menus from Version 2.9 shown as a transition help for the ribbon. This possibility was removed from the user interface in Version 2024. Now the outdated methods, classes and <span class="GlossaryPopup" href="Glossary_o_aktionen.htm">actions</span> for the menu bar have also been removed in the Eplan API.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Specifying the format of the export file and further options for the export of PLC data</p>
+                                                    <p>In the user interface the <span class="gui">Export PLC data</span> dialog provides the <span class="gui">Format of export file</span> field and the <span class="gui">[Options]</span> button. In order to carry out the corresponding <span class="GlossaryPopup" href="Glossary_o_einstellungen.htm">settings</span> via Eplan API, the class <notrans_i><span class="codetext">PLCService</span></notrans_i> now contains a new revision of the method <notrans_i><span class="codetext">ExportData</span></notrans_i> (with the parameters <notrans_i><span class="codetext">strFormat</span></notrans_i>, <notrans_i><span class="codetext">bExportPortSpecificInterconnection</span></notrans_i>, <notrans_i><span class="codetext">bExportAccessories</span></notrans_i>, <notrans_i><span class="codetext">bExportDrives</span></notrans_i>, <notrans_i><span class="codetext">bExportDeviceSpecificConfValues</span></notrans_i>). Analog to this, the action <notrans_i><span class="codetext">plcservice</span></notrans_i> has been extended with the new parameters <notrans_i><span class="codetext">FORMAT</span></notrans_i>, <notrans_i><span class="codetext">EXPORTPORTSPECIFICINTERCONNECTION</span></notrans_i>, <notrans_i><span class="codetext">EXPORTACCESSORIES</span></notrans_i>, <notrans_i><span class="codetext">EXPORTDRIVES</span></notrans_i> and <notrans_i><span class="codetext">EXPORTDEVICESPECIFICCONFIGURATIONVALUES</span></notrans_i>.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Properties (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Consideration of additional saddle jumper slots</p>
+                                                    <p>Additional saddle jumper slots are now considered in the <notrans_i><span class="codetext">BridgeSegments</span></notrans_i> property from the <notrans_i><span class="codetext">Terminal.Bridge</span></notrans_i> class. To this purpose the <notrans_i><span class="codetext">Terminal.Bridge.Kinds</span></notrans_i> list returned by the <notrans_i><span class="codetext">Kind</span></notrans_i> property from the <notrans_i><span class="codetext">BridgeInfo</span></notrans_i> class has been extended by corresponding entries for the additional slots.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Generating multi-level terminals as <span class="GlossaryPopup" href="Glossary_o_betriebsmittel.htm">devices</span></p>
+                                                    <p>The new <notrans_i><span class="codetext">CreateTerminalDevice</span></notrans_i> method is now available in the <notrans_i><span class="codetext">DeviceService</span></notrans_i> class. This method can be used to <span class="GlossaryPopup" href="Glossary_o_erzeugen.htm">generate</span> multi-level terminals in accordance with the <span class="gui">Generate terminals (devices)</span> dialog.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading"><span class="GlossaryPopup" href="Glossary_o_erstellen.htm">Creating</span> Links in Pre-Planning</p>
+                                                    <p>The new <notrans_i><span class="codetext">CreateLink</span></notrans_i> method is now available in the <notrans_i><span class="codetext">PlanningSegment</span></notrans_i> class. You can use this method to create links in the pre-planning.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Class (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">New classes for the <span class="GlossaryPopup" href="Glossary_o_prueflaeufe.htm">check runs</span> in the parts management</p>
+                                                    <p>The check runs for the part <span class="GlossaryPopup" href="Glossary_o_stammdaten.htm">master data</span> are now executed in the parts management. Therefore check runs of the previous message class 501 "Part master data" have been renamed and moved into the new message class 502 "Part master data". As a result of this new feature the Eplan API has been extended with several new classes (for example, <notrans_i><span class="codetext">MDPartsDatabaseMessages</span></notrans_i>, <notrans_i><span class="codetext">MDPartsMessage</span></notrans_i> etc.). The <notrans_i><span class="codetext">VerifyMDPartsDatabaseItems</span></notrans_i> method, with which the check runs for the part master data are started, now no longer requires a parameter for the specification of a project. In the <notrans_i><span class="codetext">Check</span></notrans_i> class, the <notrans_i><span class="codetext">VerifyMDPartsDatabaseItems</span></notrans_i> method has been revised for this reason.</p>
+                                                    <p class="Link_Seealso"><a href="news_p_artikelverwaltung_artikelprueflaeufe_489829.htm"><img src="../Pictures/Gui/ALL/link_news.png">Improved check runs for part master data</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Methods (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Specify scheme for the design space import</p>
+                                                    <p>In the user interface you can select a scheme with settings for the import in the <span class="gui">Design space import</span> dialog when importing a design space. This possibility has now also been taken into consideration in the Eplan API. To this purpose there is a new overload in the method <notrans_i><span class="codetext">DesignSpace</span></notrans_i> in the <notrans_i><span class="codetext">Import3D</span></notrans_i> class with the parameter <notrans_i><span class="codetext">strSchemeName</span></notrans_i>. And the action <notrans_i><span class="codetext">import3d</span></notrans_i> has been extended analog to this with the new parameter <notrans_i><span class="codetext">SCHEME</span></notrans_i>.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Parts management</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">New import option "Replace existing records and add new ones"</p>
+                                                    <p>For the import of parts data, the user interface includes the new option <span class="gui">Replace existing records and add new ones</span>. This option can now also be used in the Eplan API. To this purpose the enumeration <notrans_i><span class="codetext">ImportMode</span></notrans_i> from the class <notrans_i><span class="codetext">MDPartsManagement</span></notrans_i> has had the option <notrans_i><span class="codetext">ReplaceAndAppend</span></notrans_i> added to it (Value 3).</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Parts management</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Using supplemental parts in the Eplan API</p>
+                                                    <p>The new record type "Supplemental part" is now available in the parts management. To be able to use this record type in the Eplan API as well, the enumeration <notrans_i><span class="codetext">MDPartsDatabaseItem.Enums.Type</span></notrans_i> has been extended with the option <notrans_i><span class="codetext">SupplementalPart</span></notrans_i> (value 16).</p>
+                                                    <p class="Link_Seealso"><a href="news_p_artikelverwaltung_ergaenzungsteile_488170.htm"><img src="../Pictures/Gui/ALL/link_news.png">Management of Supplemental Parts</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr data-mc-conditions="">
+                                                <td>Actions (API)</td>
+                                                <td>
+                                                    <p class="Tabelle_Heading">Outdated action "<notrans_i>XPamArticlesSyncAction</notrans_i>" removed</p>
+                                                    <p>The possibility to write back the parts data of a new parts database (Version 202x) into an old, updated parts database (Version 2.9 SP1 or older) has been removed. Since these old Eplan versions are no longer supported, the <notrans_i><span class="codetext">XPamArticlesSyncAction</span></notrans_i> action is no longer available.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <script>/* <![CDATA[ */ requirejs(['../Resources/Stylesheets/tablefilter/tablefilter'], function(mod) {
+		var TableFilter = mod.TableFilter;
+		var tfConfig = {
+		base_path: '../Resources/Stylesheets/tablefilter/',
+		col_0: 'select',
+		col_1: 'input',
+		col_2: 'input',
+		col_3: 'select',
+
+		alternate_rows: true,
+		rows_counter: true,
+		rows_counter_text: "Records: ",
+		btn_reset: true,
+		loader: true,
+		status_bar: false,
+		exec_delay: 250,
+		filters_row_index: 1,
+		mark_active_columns: true,
+		help_instructions: false,
+		loader_text: "Data are filtered",
+		fixed_headers: true,
+		highlight_keywords: true,
+        col_widths: [
+            '15%', '75%', '10%',
+            '35%', '10%', '10%',
+            '5%', '5%', '10%'
+        ],
+        
+        extensions:[{ name: 'sort' }]
+    };
+
+var tf = new TableFilter(
+			document.getElementById('table-1'),
+			tfConfig);
+			tf.init();
+			});
+/* ]]> */</script>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

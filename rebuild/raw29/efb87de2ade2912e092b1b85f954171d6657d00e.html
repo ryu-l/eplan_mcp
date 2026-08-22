@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The MediaSource library allows for image objects to be created. A MediaSource image object manages an image and enables the internalization of the ima..." /><title>Image objects</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/eecbase_k_mediasource_image_object.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor226"></a>
+            <MadCap:concept term="Basis" />
+            <h2>Image objects</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The <span class="important">MediaSource</span> library allows for image objects to be created. A MediaSource image object manages an image and enables the internalization of the image in the model. This neutralizes the reference to objects in the file system, and the backing up, restoration and replacement of models are simplified. The MediaSource image object is upstream from the actual image and enables a uniform use in EEC in analogy to other model objects. To access the image thus stored, the image object has in the editor a preview page, as well as two methods for the formula language (see <a href="refformulas_r_image_objects_methods.htm" class="MCXref xref" xrefformat="{para}">Methods for image objects</a> and <a href="refformulas_r_image_register_methods.htm" class="MCXref xref" xrefformat="{para}">Methods for image registers</a>).</p>
+            <p>The imported and / or referenced image is loaded from the image object using the <span class="important">image</span> method. An inactive image can be represented using the method <span class="important">disabledImage</span>. This way, the image is changed in color prior to loading. By converting the colors to grayscale, the graphical effect is one of an inactive button. The imported image itself is not modified by these changes in color and contrast.</p>
+            <p>To insert a new image in the library, select <span class="gui">New &gt; Media sources &gt; Image</span> in the context menu.</p>
+            <p>
+                <img src="../Pictures/medienquellen_neu_bild_intern.png" alt="" />
+            </p>
+            <p>If the model variable <span class="important">MediaSources â Manage Resources</span> has the value <span class="important">false</span>:</p>
+            <p>On the <span class="gui">Attributes</span> page of the editor for the image (see figure above), use <span class="gui">[Import]</span>, or in the <span class="gui">Resource path</span> field <span class="gui">[..]</span> to (1) create a reference to the external resource at first. Then use the <span class="gui">Internalize</span> button (2) to internalize the image in the library (also see <a href="eecbase_k_resources_and_their_management.htm" class="MCXref xref" xrefformat="{para}">Resources and their management</a>).</p>
+            <p>If the model variable <span class="important">MediaSources â Internalize Resources</span> has the value <span class="important">true</span>:</p>
+            <p>On the <span class="gui">Attributes</span> page of the editor for the image, use <span class="gui">[Import]</span>, or in the <span class="gui">Resource path</span> field, <span class="gui">[..]</span> to internalize the image directly in the library.</p>
+            <p>An internalized image can be converted to a reference to an external file by way of <span class="gui">[Externalize]</span>. Use <span class="gui">[Internalize]</span> to convert a reference to an external image to an internalized image.</p>
+            <p>An internalized image can be viewed on the <span class="gui">Preview</span> page of the editor.</p>
+            <p>
+                <img src="../Pictures/medienquellen_neu_bild_vorschau.png" alt="" />
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+# Parameterization of project objects
+
+When using an ECAD object in a project, the constant value is applied or the formula is calculated:
+
+![](../Pictures/ecad_instance_object_parameter_view.png)
+
+Parameters whose values do not derive from library specifications must be parameterized in a project-specific manner (e.g., Lamp1, Lamp2, etc.).

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Working with Connections|Cables|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The functionality of the cable is based on the connections. Since connections are not refreshed immediately when drawing, cables also can only be gene..." /><title>Cable Behavior</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/cablegui_k_prinzip.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor3371"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor3372"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor4019"></a>
+            <h2>Cable Behavior</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The functionality of the <a href="Glossary_o_kabel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable</a> is based on the <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a>. Since connections are not refreshed immediately when drawing, cables also can only be generated and updated after the connections have been refreshed. The individual <a href="Glossary_o_kabelverbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable connections</a> are either defined using <a href="Glossary_o_verbindungsdefinitionspunkte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection definition points</a> or using the <span class="gui">Cable connection point</span> property in the connection point logic of a function.</p><a name="I_QuelleZiel"></a>
+            <h3>Cable sources and targets</h3>
+            <p>Every individual cable connection has a source and a target whereby the first graphical DT is always the source. The cable also has a source and target. These are determined according to certain rules based on the <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> of the cable connections in the cable. The source of a cable connection can also be the target of a cable.</p>
+            <p>If contradictions occur (e.g., if two cable connections of a cable lead to different <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a>), the first graphical cable connection "wins".</p>
+            <p>The source and the target that have a cable connection <span class="important">within the cable</span> are displayed in the dialog <span class="gui">Edit cable</span> (for a marked cable). In the list view of the cable navigator on the other hand the source and the target of the individual connection is displayed. These can deviate from the source and the target of the cable connection in the cable.</p>
+            <p>Through the properties <span class="gui">Cable: Source</span> and <span class="gui">Cable: Target</span> the source and target of the cable in the schematic are shown at the cable. These properties can also be used in the <a href="Glossary_o_blockeigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">block properties</a>, during external editing and in <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a>.</p><a name="kanchor4020"></a><a name="kanchor4021"></a><a name="I_Reserveadern"></a>
+            <h3>Spare cable connections</h3>
+            <p>Spare cable connections (for example, connections included for safety reasons) are automatically placed on the terminals in the terminal strip where the other cable connections are placed. If no terminals are free there, EPLAN shows you a message.</p><a name="kanchor4022"></a><a name="I_Kabelauswahl"></a>
+            <h3>Cable selection</h3>
+            <p>In parts selection you can select a <a href="Glossary_o_kabelartikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable part</a> for a cable defined in the schematic. Cable parts are managed in the parts database. Cable information can be either manually entered or imported directly from the manufacturer using various import <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> (e.g., ECAD or <a href="Glossary_o_eclass.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">eCl@ss</a>).</p>
+            <p>When selecting cables, the <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> connections contained therein are automatically assigned to the individual cable connections. The connection point type is taken into consideration here so that a PE / PEN conductor is automatically connected to a PE / PEN terminal, for example. Manual assignment is another option.</p>
+            <p>The cable parts used in a project are saved in the project and can be edited further if the project is passed on. This enables you to make new cable selections, for example. Certain properties (e.g., price specifications) can be deleted before a project is passed on.</p><a name="kanchor4023"></a><a name="I_KabelAlsGeraetEinfuegen"></a>
+            <h3>Inserting cables as a device</h3>
+            <p>If you insert the cable as a device in the graphical editor (for example by using <span class="gui">Insert &gt; Device</span>), the individual <a href="Glossary_o_objekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">objects</a> are offered for <a href="Glossary_o_auflegen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">placing</a> in the order in which they are defined in the parts management. In the process the symbol for the cable definition line or the shield is displayed at the cursor. At the cable connections, the <span class="gui">Color / number</span> property of the cable connection is displayed.</p>
+            <p>If the part disposes of shielded cable connections, the shield is defined together with the corresponding cable connection in a common function template in the parts management. A shield is generated automatically before such a cable connection is inserted.</p>
+            <p>A connection definition point is generated when a cable connection is placed. If a connection definition point that is not empty already exists for the connection, a query is displayed whether you want to retain the connection definition point or replace it. When replaced, the old connection definition point is deleted and a new one placed with the data from parts management.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The following <a href="Glossary_o_funktionsschablonen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function templates</a> are defined for a cable part:</p>
+                        <table>
+                            <tr>
+                                <th colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Line</p>
+                                </th>
+                                <th>
+                                    <p class="Tabelle_Text">Function definition</p>
+                                </th>
+                                <th colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Color / no.</p>
+                                </th>
+                                <th colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">...</p>
+                                </th>
+                                <th>
+                                    <p class="Tabelle_Text">Potential type</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">1</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">Cable definition</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text" />
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text" />
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">2</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">Conductor / wire</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">1</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text" />
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">Undefined</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">3</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Conductor / wire</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">SH</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text" />
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">SH</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="Infoblock">In Row 3 a shielded cable connection is defined and - via the potential type "SH" - at the same time the shield. The shield name is taken from the <span class="gui">Color / no.</span> field of this cable connection.</p>
+                        <p class="Infoblock">When the device is inserted afterwards in the graphical editor the following objects are offered consecutively:</p>
+                        <table>
+                            <tr>
+                                <th colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text" />
+                                </th>
+                                <th>
+                                    <p class="Tabelle_Text">Object</p>
+                                </th>
+                                <th colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Display at the cursor</p>
+                                </th>
+                                <th colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Properties</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">1.</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">Cable definition</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>
+                                        <img src="../Pictures/Gui/ALL/navigatorgui_cable_as.png" />
+                                    </p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">2.</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">Cable connection</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">1</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Color / number: 1,<br />Potential type: Undefined</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">3.</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Shield</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p>
+                                        <img src="../Pictures/Gui/ALL/navigatorgui_shieldingauxfunc_as.png" />
+                                    </p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Name of shield: SH</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">4.</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Cable connection</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">SH</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Color / number: SH,<br />Potential type: SH</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div><a name="kanchor4024"></a><a name="kanchor4025"></a><a name="I_Standardkabel"></a>
+            <h3>Standard cable</h3>
+            <p>You can specify a standard cable in the project <a href="Glossary_o_einstellungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">settings</a>. If one is defined, then the connections will be assigned to the cable connections of the standard cable or to one of the existing cables when you are drawing a cable definition line. Existing connection properties are not changed.</p>
+            <p>The connections intersected by the cable definition line are searched for a cable DT. There are two possible cases:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">If no cable DT is found, then a new DT is generated and the cable connections of the <span class="important">standard cable</span> are assigned to the connections. This is done based on the identifying properties, which are also taken into consideration in the automatic assignment of suitable cable connections. Only the properties from the function templates are transferred to the connections. The cable does not adopt the part, cable type, or any other unassigned function templates from the standard cable.</li>
+                <li class="Listitem_Normal" value="2">If at least one of the connections intersected by the cable definition line belongs to a cable, then the cable definition line receives the first cable device tag that is found and the free cable connections of the existing cable are assigned to the newly added connections (if possible).</li>
+            </ul><a name="kanchor4026"></a><a name="I_Kabelnummerierung"></a>
+            <h3>Cable numbering</h3>
+            <p>There are special formatting options for the numbering of cables. This allows you to use (e.g.) the source and target data in the cable DT. Alternatively, cables can also be numbered using the "normal" device numbering function. However, fewer formatting options are available there.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="cablegui_k_start.htm">Cables</a>
+            </p>
+            <p class="Link_Seealso"><a href="cablegui_k_arbeitsweise.htm">Definition of Cables</a>
+            </p>
+            <p class="Link_Seealso"><a href="cablegui_k_verhaltenabschirmungen.htm">Behavior of shields</a>
+            </p>
+            <p class="Link_Seealso"><a href="cablegui_k_grafischedarstellung.htm">Graphical Display of Cables and Shields</a>
+            </p>
+            <p class="Link_Seealso"><a href="cablegui_h_kabelauswahlautomatisch.htm">Selecting Cables</a>
+            </p>
+            <p class="Link_Seealso"><a href="cablegui_h_kabelauflegen.htm">Automatically Assigning Cable Connections</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

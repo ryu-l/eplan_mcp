@@ -1,0 +1,19 @@
+# Numbering range
+
+You have three options to specify the scope of numbering for devices:
+
+- In the page navigator
+- In the graphical editor
+- Within the device navigators.
+
+| What should be numbered? | What will be numbered? | Where and how? |
+| --- | --- | --- |
+| All devices in a project | All placed and unplaced selected functions in the project. | Page navigator: Mark project name  Page navigator, graphical editor, navigators: Dialog Numbering (offline) > Apply to entire project |
+| All devices on one or more pages | All placed main functions on this page.  All matching placed auxiliary functions on unselected pages.  All matching unplaced auxiliary functions. | Page navigator: Mark page  Graphical editor: Mark page |
+| All selected devices on a page | All placed main functions on this page.  All matching placed auxiliary functions on unselected pages.  All matching unplaced auxiliary functions. | Graphical editor: Mark component |
+| All selected devices | All placed and unplaced selected functions.  All matching placed and unplaced auxiliary functions. | Navigators: Mark devices |
+| All devices in a selected structure identifier | All placed and unplaced selected functions.  All matching placed and unplaced auxiliary functions. | Navigators: Mark structure identifiers |
+
+See also
+
+[Numbering the Devices Offline](offlinenumerationgui_h_formatfestlegen.htm)

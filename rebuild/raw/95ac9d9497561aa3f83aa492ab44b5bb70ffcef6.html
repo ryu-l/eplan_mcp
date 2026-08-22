@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic _Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Administration|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="7:15:22 AM">
+        <meta name="BuildDate" content="Monday, April 27, 2026">
+        <meta id="productName" name="product" content="Eplan Engineering Configuration">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="de_en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="EEC can be installed and operated as a Windows service in the 64-bit version."><title>Operation as Windows service</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/Helpsystem_print.gif') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/CopyLink.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VXGSPHHC4V">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-VXGSPHHC4V', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="main_k_home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor1099"></a>
+                                            <madcap:concept term="Administration"></madcap:concept><a name="kanchor906"></a><a name="kanchor907"></a><a name="kanchor908"></a><a name="kanchor909"></a><a name="kanchor910"></a><a name="kanchor911"></a><a name="kanchor912"></a><a name="kanchor913"></a><a name="kanchor914"></a><a name="kanchor915"></a><a name="kanchor916"></a><a name="kanchor917"></a><a name="kanchor918"></a><a name="kanchor919"></a>
+                                            <h2>Operation as Windows service</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <p>EEC can be installed and operated as a Windows service in the 64-bit version.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="I_WindowsDienstVoraussetzungen"></a><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Requirements</a></h3></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ul>
+                                                        <li class="Listitem_Normal" value="1"><span class="important">.Net</span> in Version 4.x (at least 4.5.2) must be installed on the host computer. The installed version can be displayed, for example, in the <span class="important">Registry Editor</span>, key <span class="codetext">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</span>.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="I_WindowsDienstInstallation"></a><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Installation</a></h3></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h4><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open"></a><a name="I_WindowsDienstInstallationMLR"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_">Installation of Job Server</a></h4></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p>Follow the description in the Section <a href="admin_h_installation_job_server.htm" class="MCXref xref" xrefformat="{paratext}">Job Server installation</a> to install the Job Server.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h4><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open"></a><a name="I_WindowsDienstInstallationVisualC"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_">Installation of the Visual C++ Redistributable</a></h4></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p><span class="important">Visual C++ Redistributable 2010, 2012 and 2015</span> have to be installed on the host computer in the 64-bit version. The installation files are contained in the directory <span class="codetext">&lt;EEC installation folder&gt;\install\other</span>.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h4><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open"></a><a name="I_WindowsDienstEplanLicenseManager"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_">Eplan License Manager</a></h4></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p>The current version of the Eplan License Manager has to be installed in the 64-bit version.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h4><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open"></a><a name="I_WindowsDienstAnmeldungDienst"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_">Log on as service</a></h4></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p>The user with whom the Windows service is to be carried out later requires the authorization: <b>Log on as service</b>. The authorization can be configured with Administrator rights by using the <span class="important">Editor for local group policies</span>.</p>
+                                                            <ol>
+                                                                <li value="1">Open the editor for <span class="important">local group policies</span> (for example either via the <span class="important">Microsoft Management Console</span> or by running <span class="codetext">gpedit.msc</span>).</li>
+                                                            </ol>
+                                                            <p>
+                                                                <img border="0" src="../Pictures/localGroupPoliciyEditor.png" alt="Local Group Policy Editor - Anmeldung als Dienst">
+                                                            </p>
+                                                            <ol data-mc-continue="true">
+                                                                <li value="2">In the console tree navigate to <span class="gui">Local Computer Policies &gt; Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Local Policies &gt; User Rights Assignment</span>.</li>
+                                                                <li value="3">Select the <span class="gui">Log on as Service</span> entry in the <span class="gui">Policy</span> list.</li>
+                                                                <li value="4">Open the properties of the policy.</li>
+                                                                <li value="5">Open the <span class="gui">Local Security Setting</span> tab.</li>
+                                                                <li value="6">Use <span class="gui">[Add User or Group...]</span> to add the user.</li>
+                                                                <li value="7">Confirm the settings with <span class="gui">[OK]</span>.</li>
+                                                            </ol>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h4><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open"></a><a name="I_WindowsDienstCOMSicherheitskonfigurationEClientService"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_">COM safety configuration of the EClientService</a></h4></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p>The user with whom the Windows service is to be carried out later requires start and activation authorization for <b>EClientService</b>. The authorization can be configured with Administrator rights by using the <span class="important">Component service management</span>.</p>
+                                                            <ol>
+                                                                <li value="1">Open the editor for <span class="important">component service</span> (for example either via the <span class="important">Microsoft Management Console</span> or by running <span class="codetext">comexp.msc</span>).</li>
+                                                            </ol>
+                                                            <p>
+                                                                <img border="0" src="../Pictures/componentServices.png" alt="Komponentendienste - COM Sicherheitskonfiguration des EClientService">
+                                                            </p>
+                                                            <ol data-mc-continue="true">
+                                                                <li value="2">In the console tree navigate to <span class="gui">Console Root &gt; Component Services &gt; Computers &gt; My Computer &gt; DCOM Config</span>.</li>
+                                                                <li value="3">Select <span class="gui">EClientService</span> from the list.</li>
+                                                                <li value="4">Open the properties of the <span class="GlossaryPopup" href="glossary_o_component.htm">component</span> service.</li>
+                                                                <li value="5">Open the <span class="gui">Security</span> tab.</li>
+                                                                <li value="6">Mark the option <span class="gui">Customize</span> in the <span class="gui">Launch and Activation Permission</span> section.</li>
+                                                                <li value="7">Open the <span class="gui">Launch and Activation Permission</span> via <span class="gui">[Edit...]</span>.</li>
+                                                                <li value="8">Use <span class="gui">[Add User or Group...]</span> to add the user.</li>
+                                                                <li value="9">Select the Allow check box under <span class="gui">Local Launch</span> and <span class="gui">Local Activation</span>.</li>
+                                                                <li value="10">Confirm the settings with <span class="gui">[OK]</span>.</li>
+                                                            </ol>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h4><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open"></a><a name="I_WindowsDienstLizenz"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_">Creating and configuring the license default setting file</a></h4></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p>In order to start the EEC as a service you require a <span class="important">default setting file</span> for the license selection. This can be created with the familiar license selection dialog.</p>
+                                                            <ol>
+                                                                <li value="1">Start the <span class="codetext">ec.exe</span> file so that the license selection dialog is opened. By default the <span class="gui">[Shift]</span> key is kept pressed at the same time.</li>
+                                                                <li value="2">Select <span class="gui">Network license &gt; Create default setting file...</span>.</li>
+                                                                <li value="3">Enter a name for the default setting file.</li>
+                                                                <li value="4">Select a valid license.</li>
+                                                                <li value="5">Confirm with <span class="gui">[Save]</span>.</li>
+                                                                <li value="6">Abort the launching process.</li>
+                                                                <li value="7">The path to this default setting file is entered in the <span class="codetext">ec.ini</span> file (see <a href="admin_r_vmargs_licensefile.htm" class="MCXref xref" xrefformat="{paratext}">de.eplan.eec.licenseFile</a>): <span class="codetext">-Dde.eplan.eec.licenseFile=&lt;EEC installation folder&gt;/license.lis</span></li>
+                                                            </ol>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h4><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open"></a><a name="I_HeadlessEEC"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_">Configuring EEC headless</a></h4></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p>The following configuration setting is only for the operation of the job server without interface (see <a href="admin_r_vmargs_headless.htm" class="MCXref xref" xrefformat="{paratext}">de.eplan.eec.headless</a>).</p>
+                                                            <ol>
+                                                                <li value="1">Open the initialization file (for example <span class="codetext">ec.ini</span>) with a suitable editor.</li>
+                                                                <li value="2">Insert the following line below the entry <span class="codetext">-vmargs</span>:</li>
+                                                            </ol><pre xml:space="preserve" class="language-markup"><code>-Dde.eplan.eec.headless=true</code></pre>
+                                                            <ol data-mc-continue="true">
+                                                                <li value="3">Save the initialization file.</li>
+                                                            </ol>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h4><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open"></a><a name="I_WindowsDienstVoraussetzungen"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_">Installation and start of the Windows service</a></h4></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p>A PowerShell script <span class="codetext">_installService.ps1</span> is available in the directory <span class="codetext">&lt;EEC installation folder&gt;\install\service</span> for the installation of the Windows service.</p>
+                                                            <ol>
+                                                                <li value="1">Run the script for example by using the following <span class="GlossaryPopup" href="glossary_o_command.htm">command</span> line call with Administrator rights:</li><pre xml:space="preserve" class="language-markup"><code>powershell -ExecutionPolicy ByPass .\_installService.ps1</code></pre>
+                                                            </ol>
+                                                            <p>In the process the script creates the required <span class="important">EventLog source</span> <span class="codetext">EEC</span>, installs the service and starts it. A dialog for querying the user is opened.</p>
+                                                            <ol data-mc-continue="true">
+                                                                <li value="2">Enter the user with which the service is to be executed.</li>
+                                                            </ol>
+                                                            <p>The PowerShell script <span class="codetext">_uninstallService.ps1</span> that is executed analog is used to remove the service. The <span class="important">EventLog source</span> is not removed in the process.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="note">
+                                                <h3>Note</h3>
+                                                <p>A further <span class="important">log file</span> is available for the analysis of problems during the service start. The storage location can be specified in the configuration file <span class="codetext">ec.exe.config</span>.</p>
+                                                <p>In addition, error messages are also logged in the <span class="important">event log</span> of the host computer.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

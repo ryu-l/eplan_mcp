@@ -1,0 +1,43 @@
+# MDSymbolLibrary Class Members
+
+MDSymbolLibrary Class Members
+
+The following tables list the members exposed by [MDSymbolLibrary](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibrary.html).
+
+Public Properties
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Property | [Properties](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibrary~Properties.html) | .NET Property enabling access to P8 properties of the MDSymbolLibrary object. |
+| Public Property | [Symbol](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibrary~Symbol.html) | Index operator to get a symbol by its name. |
+| Public Property | [Symbols](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibrary~Symbols.html) | Gets a read only list of all Symbols in the library |
+
+[Top](#top)
+
+Public Methods
+
+|  | Name | Description |
+| --- | --- | --- |
+| Public Method | [AddSymbol](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibrary~AddSymbol.html) | Creates a new symbol with a unique Id and a unique strName. |
+| Public Method | [Close](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibrary~Close.html) | Closes (and saves) the symbol library. |
+| Public Methodstatic (Shared in Visual Basic) | [Create](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibrary~Create.html) | Creates a new SymbolLibrary |
+| Public Method | [Dispose()](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.PropertiesAndHandleObject~Dispose().html) | Destructor for deterministic finalization of MDSymbolLibrary object. (Inherited from [Eplan.EplApi.MasterData.PropertiesAndHandleObject](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.PropertiesAndHandleObject.html)) |
+| Public Method | [GetSymbol](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibrary~GetSymbol.html) | Gets a Symbol object out of the library. |
+| Public Methodstatic (Shared in Visual Basic) | [Open](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibrary~Open.html) | Overloaded. Opens an existing symbol library. |
+| Public Method | [Remove](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibrary~Remove.html) | Removes the symbol library. |
+
+[Top](#top)
+
+See Also
+
+#### Reference
+
+[MDSymbolLibrary Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibrary.html)
+  
+[Eplan.EplApi.MasterData Namespace](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData_namespace.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolLibrary)

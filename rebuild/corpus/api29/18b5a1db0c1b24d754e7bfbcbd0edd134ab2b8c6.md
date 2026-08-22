@@ -1,0 +1,32 @@
+# FUNCTION3D_TERMINALPOSITION_STRIPPINGLENGTH Property
+
+FUNCTION3D\_TERMINALPOSITION\_STRIPPINGLENGTH Property
+
+Stripping length # 36096.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNCTION3D\_TERMINALPOSITION\_STRIPPINGLENGTH(Int32)](topic1617.html) | Stripping length # 36096. |
+| [FUNCTION3D\_TERMINALPOSITION\_STRIPPINGLENGTH](topic1618.html) | Stripping length # 36096. |
+
+Remarks
+
+This property is read-only. Property is indexed. Possible indexes are from 1 to 1000.
+
+Length in millimeters in which the wire fabrication machine is to cut off the insulation.
+
+See Also
+
+#### Reference
+
+[Placement3DPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList.html)
+  
+[Placement3DPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNCTION3D_TERMINALPOSITION_STRIPPINGLENGTH)

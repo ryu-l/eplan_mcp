@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Under the newly created unit (in the example: de.eplan.eec.scripting) create a class for the new method New &gt; Class." /><title>Creating a native method</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/eecscripting_k_create_method.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1487"></a>
+            <MadCap:concept term="Basis" />
+            <h2>Creating a native method</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Under the newly created unit (in the example: <span class="codetext">de.eplan.eec.scripting</span>) create a class for the new method <span class="gui">New &gt; Class</span>.</p>
+            <p>
+                <img src="../Pictures/java_class_2.png" alt="" />
+            </p>
+            <ol>
+                <li value="1">Select the unit (here <span class="codetext">de.eplan.eec.scripting</span>).</li>
+                <li value="2">Select <span class="gui">New &gt; Class </span> from the popup menu.</li>
+            </ol>
+            <p>The wizard for the creation of a new Java class starts.</p>
+            <p>
+                <img src="../Pictures/java_class_3.png" alt="" />
+            </p>
+            <p>The name of the unit is already entered in the <span class="gui">Package</span> field. In accordance with naming conventions, it should be extended by <span class="codetext">.methods</span>, if more than several methods developed in a package.</p>
+            <ol>
+                <li value="1">Enter a (meaningful) name for the new class in the <span class="gui">Name</span> field. This name is usually identical to the name of the method it contains.</li>
+                <li value="2">Use <span class="gui">[Browse...]</span> in the <span class="gui">Superclass</span> field to add the class <span class="codetext">com.mind8.mechatronic.skill.methods.AbstractNativeMethod</span>.</li>
+                <li value="3">Add the <span class="codetext">com.mind8.mechatronic.INativeMethod</span> interface in the <span class="gui">Interfaces</span> field by using <span class="gui">[Add...]</span>.</li>
+                <li value="4">Ensure that the <span class="gui">public static void main(String[args])</span> check box is not activated as well as that the <span class="gui">Constructors from superclass</span> and <span class="gui">Inherited abstract methods</span> buttons are activated.</li>
+                <li value="5">Close the wizard via <span class="gui">[Finish]</span>.</li>
+            </ol>
+            <p>The newly created method is opened in the editor and completed there.</p>
+            <p>Before this a view of the data structure:</p>
+            <p>
+                <img src="../Pictures/java_class_4.png" alt="" />
+            </p>
+            <p>Because of the previous steps the units <span class="codetext">de.eplan.eec.scripting</span> with the file <span class="codetext">NativeMethodExtension.java</span> and <span class="codetext">de.eplan.eec.scripting.methods</span> with the file <span class="codetext">IncrementLength.java</span> have arisen. In the <span class="codetext">NativeMethodExtension.java</span> file the connection between the method of the <span class="codetext">IncrementLength.java</span> file and the method in EEC is later established.</p>
+            <p>The following figure shows the previously created class <span class="codetext">IncrementLength</span>.</p>
+            <p>
+                <img src="../Pictures/java_class_5.png" alt="" />
+            </p>
+            <p>Explanations on the example code:</p>
+            <p>The created class must be derived from <span class="codetext">AbstractNativeMethod</span> (<span class="PreKeyword">extends </span><span class="codetext">AbstractNativeMethod</span>) and the interface <span class="codetext">INativeMethod</span> implements (<span class="PreKeyword">implements </span><span class="codetext">INativeMethod</span>). See Line 10.</p>
+            <p>The constructor of the method must be created with the visibility modifier <span class="PreKeyword">public</span>. If the visibility is not <span class="PreKeyword">public</span>, an error message occurs during the registration of the method. If creation of the constructor is transferred to the Eclipse, the visibility modifier is <span class="PreKeyword">protected</span> and thereby prevents the registration and execution of the method. In this case the visibility modifier has to be manually corrected (see Line 12).</p>
+            <p>In fact this method only consists of the return of <span class="PreKeyword">zero</span>.</p>
+            <p>With this the created class is complete. The method contained in it is subsequently registered and the plug-in is compiled.</p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

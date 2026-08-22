@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Before the Web EEC is installed and configured, you must stop the service of the Tomcat web server:" /><title>Web EEC installation and configuration</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/admin_h_installation_web_eec_configuration.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1146"></a>
+            <MadCap:concept term="Administration" />
+            <h2>Web EEC installation and configuration</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Before the Web EEC is installed and configured, you must stop the service of the Tomcat web server:</p>
+            <ol>
+                <li value="1">Right-click the symbol of the Tomcat Monitor on the taskbar.</li>
+                <li value="2">Select Stop service from the context menu.</li>
+                <p>The Web EEC is provided as a web archive with the file extension <span class="codetext">.war</span>. This file format represents a <span class="codetext">JAR</span> and / or <span class="codetext">ZIP</span> archive, and can be opened and edited using a compression program, for example, 7-ZIP.</p>
+                <li value="3">Extract the file <span class="codetext">webec.war</span> to a folder of the same name.</li>
+                <li value="4">Open the file <span class="codetext">\webec\WEB-INF\web.xml</span> in an editor.</li>
+                <li value="5">Change the following configuration parameters:</li>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Configuration parameter</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="codetext">com.mind8.formui.eox</span>
+                            </td>
+                            <td>Name of the model <a href="glossary_o_eox.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">EOX</a> file without file extension. This information must match the information in the file <span class="codetext">ec.ini</span> of the EEC Server.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="codetext">com.mind8.formui.perspective.object</span>
+                            </td>
+                            <td>Path to the project component that contains the Form-UI to be displayed initially.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="codetext">com.mind8.formui.perspective.form-id</span>
+                            </td>
+                            <td>The ID of the Form-UI to be displayed initially.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="codetext">com.mind8.formui.host</span>
+                            </td>
+                            <td>Host of the EEC Server.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="codetext">com.mind8.formui.port</span>
+                            </td>
+                            <td>Port of the EEC Server. This information must match the information in the file <span class="codetext">ec.ini</span> of the EEC Server.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="codetext">com.mind8.formui.timeout</span>
+                            </td>
+                            <td>Waiting time until a session-timeout is triggered after inactivity (in seconds).</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="note">
+                    <p class="Infoblock_Heading">
+                        <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                    <p class="Infoblock"><a href="glossary_o_parameter.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Parameter</a> values to be entered by the user are identified by a comment:</p>
+                    <p class="Infoblock"><span class="codetext">&lt;!-- TODO: Comment text --&gt;</span>.</p>
+                    <p class="Infoblock">The complete comment, including <span class="codetext">&lt;!--</span> and <span class="codetext">--&gt;</span> has to be replaced by a parameter value.</p>
+                    <p class="Infoblock">Example for a parameter value before the change by the user:</p>
+                    <p class="Infoblock"><span class="codetext">&lt;param-value&gt;&lt;!-- TODO: ExampleEOX (without file type .eox) --&gt;&lt;/param-value&gt;</span>
+                    </p>
+                    <p class="Infoblock">Example for a parameter value after the changes by the user:</p>
+                    <p class="Infoblock"><span class="codetext">&lt;param-value&gt;TutorialModel&lt;/param-value&gt;</span>
+                    </p>
+                </div>
+                <div class="example">
+                    <p class="Infoblock_Heading">
+                        <img src="../Pictures/Gui/ALL/example.png" alt="" />Example of configuration:</p><pre xml:space="preserve"><code class="language-javascript">&lt;web-app id="WebApp"&gt;
+...
+	&lt;context-param&gt;
+		&lt;param-name&gt;com.mind8.formui.eox&lt;/param-name&gt;
+		&lt;param-value&gt;<b>Tutorial_model</b>&lt;/param-value&gt;	
+	&lt;/context-param&gt;
+	&lt;context-param&gt;
+	&lt;param-name&gt;com.mind8.formui.perspective.object&lt;/param-name&gt;
+	&lt;param-value&gt;<b>Feeder.Feeder</b>&lt;/param-value&gt;
+	&lt;/context-param&gt;
+	&lt;context-param&gt;
+		&lt;param-name&gt;com.mind8.formui.perspective.form-id&lt;/param-name&gt;
+		&lt;param-value&gt;<b>feeder</b>&lt;/param-value&gt;
+	&lt;/context-param&gt;
+	&lt;context-param&gt;
+		&lt;param-name&gt;com.mind8.formui.host&lt;/param-name&gt;
+		&lt;param-value&gt;<b>localhost</b>&lt;/param-value&gt;
+	&lt;/context-param&gt;
+	&lt;context-param&gt;
+		&lt;param-name&gt;com.mind8.formui.port&lt;/param-name&gt;
+		&lt;param-value&gt;<b>7171</b>&lt;/param-value&gt;
+	&lt;/context-param&gt;
+...
+&lt;/web-app&gt;</code></pre>
+                </div>
+                <li value="6">Copy the folder <span class="codetext">\webec to the folder C:\Program Files\Apache Software Foundation\Tomcat &lt;Tomcat version&gt;\webapps</span>.</li>
+                <li value="7">Delete the content of the folder <span class="codetext">C:\Program Files\Apache Software Foundation\Tomcat 7.0&lt;Tomcat version&gt;\work</span>.</li>
+                <li value="8">Right-click the symbol of the Tomcat Monitor on the taskbar.</li>
+                <li value="9">Select <span class="gui">Start service</span> from the context menu. Check the Tomcat log files for any error messages.</li>
+            </ol>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

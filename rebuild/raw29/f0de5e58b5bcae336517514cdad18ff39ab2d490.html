@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The functional configuration approach requires a functional component not only to contain information from individual disciplines, but also to describ..." /><title>Development of virtual mechatronic components</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/concept_k_development_of_virtual_mechatronic_components.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor959"></a>
+            <MadCap:concept term="Konzept" /><a name="kanchor677"></a><a name="kanchor678"></a><a name="kanchor679"></a><a name="kanchor680"></a><a name="kanchor681"></a><a name="kanchor682"></a><a name="kanchor683"></a>
+            <h2>Development of virtual mechatronic components</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The functional configuration approach requires a functional component not only to contain information from individual disciplines, but also to describe interdisciplinary relationships.</p>
+            <p>The following diagram uses the example of a functional component for a <span class="important">clamp</span> to illustrate how pieces of information are distributed and how they interact.</p>
+            <p>
+                <img src="../Pictures/2006102052.svg" alt="" style="mc-thumbnail: popup;mc-thumbnail-max-height: 100px;" />
+            </p>
+            <p>The <span class="important">clamp</span> component consists of paths for the schematics diagram, a universally valid function block for connected axes and a dual-position monitor. Pieces of information are provided here in the form of names or parameters.</p>
+            <p>The parameters are each assigned values based on the functional component. In this way it is determined, for example, if a cam switch is available or what dimensions a contactor should be given. To avoid having to enter the corresponding value for each clamping unit or its superordinate unit, the values can be <span class="important">derived</span>. This means that individual values can be handed down to components or passed through them. In this way, many parameters can obtain their values from already parameterized components or calculate their own values based on the values obtained. An additional possibility is the use of <span class="important">initial values</span>. This involves introducing and applying automatically predefined values, for example, for a very frequently installed variant of a clamp fixture.</p>
+            <p>The principle of deriving from parameter values is illustrated in the following diagram:</p>
+            <p>
+                <img src="../Pictures/2006102053.svg" alt="" style="mc-thumbnail: popup;mc-thumbnail-max-height: 100px;" />
+            </p>
+            <p>Functional mechatronic components must be adjustable via <span class="important">mechatronic parameters</span> so that they can be used in different areas of application. Subcomponents, in turn, have parameters that either can already be specified when the mechatronic components are being developed or can be derived from mechatronic parameters. Aspects of the clamping function that must be adjustable if the component is to be reused flexibly include, for example, the motor being used, the IO addresses and the release condition.</p>
+            <p>The <span class="important">internal pre-wiring</span> in virtual mechatronical components reduces the multitude of parameters that today must be adjusted in various tools to just a few parameters. Internal pre-wiring ensures, for example, that IO addresses are always consistent in the schematics diagram and the PLC software.</p>
+            <p><a href="glossary_o_parameter.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Parameter</a> values are derived via <span class="important">formulas</span> similarly to how data is transferred between cells in MS Excel tables. The formula <span class="codetext">mc. $ArticleNo_Motor</span> directly assigns the value of the mechatronical parameter <span class="codetext">ArticleNo_Motor</span> as the value of the parameter of a subcomponent. Furthermore, formulas can also be used to formulate all sorts of calculations, if-then conditions, etc.</p>
+            <p>A very powerful possibility for modeling variants is presented by the <span class="important">enabler concept</span>: The EEC assigns each component a boolean <span class="important">enable</span> parameter, for which a formula can be defined that decides whether or not the component is to be used in a specific configuration. In the case of the clamping function, for example, the <a href="glossary_o_boolean.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Boolean</a> âWS_monitoringâ parameter can help decide whether to use one or two sensors when determining the âclampedâ condition. This concept makes a major contribution towards minimizing the number of modular system components and, by extension, the amount of administrative effort required for the modular systems.</p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

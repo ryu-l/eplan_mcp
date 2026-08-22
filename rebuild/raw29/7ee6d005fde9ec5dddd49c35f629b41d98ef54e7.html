@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Using Graphical Editing|2D Panel Layout|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The placement types are separated into single placement, multiple placement, and placement of locked areas. For this the mounting clearances for every..." /><title>2D Panel Layout: Placement Types</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/panellayoutgui_k_platzierungsarten.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor461"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor462"></a>
+            <MadCap:concept term="EPLAN Plattform" /><a name="kanchor514"></a><a name="kanchor515"></a><a name="kanchor516"></a>
+            <h2>2D Panel Layout: Placement Types</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The placement types are separated into single placement, multiple placement, and placement of locked areas. For this the mounting clearances for every item / device must be stored in the parts data to where the device walls are not <span class="important">on top of each other</span>, but rather <span class="important">next to each other</span>. The clearances are automatically accounted for during placement.</p><a name="kanchor517"></a><a name="kanchor518"></a><a name="I_Einzelplatzierung"></a>
+            <h3>Individual placement</h3>
+            <p>In single placement, all <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a> used in the schematic, or all devices present in the <a href="Glossary_o_artikelvorauswahl.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">parts preselection</a> are displayed in a list view or tree view. The content depends on the filter <a href="Glossary_o_einstellungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">settings</a>.</p>
+            <p>During actual placement, the X and Y positions of the item on the <span class="important">mounting panel</span> are displayed (<span class="important">not</span> on the page!). The handle (contact point) for <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> placement is always at the middle left on creation; this greatly simplifies the positioning of the devices on a mounting rail. (The handle can be changed in the <span class="gui">Settings: 2D <a href="Glossary_o_schaltschrankaufbau.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">panel layout</a></span> dialog (<span class="gui">Popup menu &gt; Settings</span>) but should always be kept consistent for each project.)<br />If you have selected the <span class="gui">View &gt; Insertion points</span> menu <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a> to display the insertion points for <a href="Glossary_o_symbole.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">symbols</a> and text, and the handle differs from the insertion point, then it is displayed as well.</p><a name="kanchor519"></a><a name="kanchor520"></a><a name="I_MehrfacheEinzelplatzierung"></a>
+            <h3>Multiple placement</h3>
+            <p>If you select several devices for placement, then the part placement can occur sequentially on the mounting panel per mouse click. Even if you do not move the cursor during placement, the symbols will be automatically adjoined to the previous symbol after the first placement (which is effected like an individual placement via the specification of X and Y position) according to the equipment direction if there is enough space on the mounting panel:</p>
+            <ul>
+                <li class="Listitem_Value_In_Gui" value="1"><span class="value_in_gui">"Horizontal":</span> From left to right </li>
+                <li class="Listitem_Value_In_Gui" value="2"><span class="value_in_gui">"Vertical":</span> From top to bottom. </li>
+            </ul>
+            <p>The equipment direction is defined using the <span class="gui">Settings</span> popup menu item in the <span class="gui">2D panel layout - &lt;Project name&gt;</span> dialog.</p>
+            <p>The dimensioning of the part is taken from the parts management data (<span class="gui">Mounting data</span> tab).</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">In order to use the same part placement on two differently dimensioned panel layout pages (for example, one page displaying an overview and another displaying a detailed hook-up), the <span class="gui">Representation type</span> drop-down list, which can be used to set the type of placement, is available in the <span class="gui">Part placement</span> tab of the <span class="gui">Properties &lt;...&gt;</span> dialog. <br />The standard setting is part placement using the "Panel layout" representation type, but contrary to this the "Detailed panel layout" representation type can also be selected. It is possible to display an item a second time in the panel layout via this representation type without this affecting the quantity in the bill of materials.</p>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">An item is placed on the completely depicted mounting panel with the "panel layout" representation type, on a second mounting panel a second time with an enlarged drawing with the "detailed panel layout" representation type. The quantity reported in the bill of materials is "1".</p>
+                    </div>
+                </div>
+            </div><a name="kanchor521"></a><a name="I_PlatzierenGeraet"></a>
+            <h3>Placement as device</h3>
+            <p>A mounting panel stored in parts management as a macro can also be inserted as a device. It is unimportant whether a macro is stored as a "Graphical macro" on the <span class="gui">Mounting data</span> tab or as a "Macro" on the <span class="gui">Technical data</span> tab. What is important for <a href="Glossary_o_makros.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">macros</a> is that they are saved with the "Parts placement" representation type when they are created. In order to place a mounting panel part as a device, the following requirements must be fulfilled:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The part must belong to the generic product group "Mechanics", the product group "Housing", and the product subgroup "Mounting panels" (<span class="gui">Product subgroup</span> property, <a href="Glossary_o_id.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ID</a> 22028). Only when this property has been set for a part will it be recognized as a mounting panel. Parts for which this property is not specified will be treated as normal devices.</li>
+                <li class="Listitem_Normal" value="2">If an appropriate part is found, EPLAN checks whether a graphical macro or a macro is stored in the parts data. If no graphical macro / macro is stored, a message is shown and you will be asked whether you wish to apply the measurements of the part.</li>
+                <li class="Listitem_Normal" value="3">If no measurements have been assigned to the part, the function is canceled.</li>
+            </ul>
+            <p>Inserting <a href="Glossary_o_montageplatten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">mounting panels</a> as devices is possible on open "Panel layout" type pages in the following ways:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">via the <span class="gui">Insert &gt; Device</span> menu path</li>
+                <li class="Listitem_Normal" value="2">using drag &amp; drop from the parts <a href="Glossary_o_stammdaten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">master data</a> navigator</li>
+                <li class="Listitem_Normal" value="3">using drag &amp; drop from the device list</li>
+                <li class="Listitem_Normal" value="4">by inserting a part as a device from the EPLAN Data Portal.</li>
+            </ul><a name="kanchor522"></a><a name="kanchor523"></a><a name="I_Sperrflaeche"></a>
+            <h3>Locked areas</h3>
+            <p>The software allows particular areas of the mounting panel to be locked for placements. Part placement can't occur in these areas. If this is attempted, then the placement is inhibited and an appropriate message is displayed.</p>
+            <p>A locked area is an independent object drawn as a rectangle.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="panellayoutgui_k_start.htm">2D Panel Layout</a>
+            </p>
+            <p class="Link_Seealso"><a href="panellayoutgui_d_schaltschrankaufbaueinstellungen.htm">Dialog Settings: 2D panel layout</a>
+            </p>
+            <p class="Link_Seealso"><a href="devicetaggui_r_artikelplatzierung.htm">Tab Part placement</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

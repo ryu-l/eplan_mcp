@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Managing Master Data|Form and Plot Frame Editor|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="There are two types of forms in EPLAN, distinguished by the Form handling form property:" /><title>Dynamic Forms</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/formeditorgui_k_dynamformulare.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor3194"></a>
+            <MadCap:concept term="Grundlagen;EPLAN Plattform;EPLAN Electric P8;EPLAN Fluid" /><a name="kanchor3821"></a>
+            <h2>Dynamic Forms</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>There are two types of <a href="Glossary_o_formulare.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">forms</a> in EPLAN, distinguished by the <span class="gui">Form handling</span> <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> property:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><span class="important">Static forms:</span> With these forms, any graphic that may exist is the same on every report page, and the reported data have a constant row height.</li>
+                <li class="Listitem_Normal" value="2"><span class="important">Dynamic forms:</span> With these forms, any graphics that may exist are dynamic, and you have the opportunity to insert so-called "dynamic areas". The row height can be varied by activating the <span class="gui">Adapt row height dynamically</span> form property, and it is possible to combine the <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a> of several <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> on one report page.</li>
+            </ul>
+            <p>The individual dynamic areas that can be inserted into a dynamic form (using the <span class="gui">Insert &gt; Dynamic area &gt; ...</span> in the form editor), are explained in the following sections.<br />The following applies to all areas: The area width specified in the form editor is not considered, only the height is reported. Please also note that the report starts at the position occupied by the first insertion point of an area; so, for example, if you delete a header from the form without moving the data area, the report will start at the position occupied by the data area insertion point.</p>
+            <p>Use the <span class="gui">No. of rows</span> and <span class="gui">Row height</span> form <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> to define the maximum evaluation range of the page: The two values are multiplied, and give the value (in "mm") for the (not visible) boundary line after which the break occurs. The boundary line is calculated in reference to the end of the header. If the number of rows = <span class="codetext">20</span> and the row height = <span class="codetext">10 mm</span>, the break is placed after <span class="codetext">20 x 10 mm = 200 mm</span>.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">Each dynamic area must only occur <span class="important">once</span> in the form, otherwise a message will be output and the second area ignored.</p>
+            </div>
+            <h3>Header</h3>
+            <p>The header is repeated for each device in the report. If the <span class="gui">Combine</span> check box (in the <span class="gui">Settings: Output to pages</span> dialog) is selected, the reports of several functions are combined on one report page, and the header is repeated at the start of each page and before the next reported function.</p>
+            <p>Header areas are normally only used for forms from which function related reports such as terminal diagrams are generated. The header area is irrelevant for overviews, such as parts lists, for example.</p>
+            <p>If the <span class="gui">Reuse header for new column</span> form property is selected, the header will be repeated in each new column. If this property is not selected, the header will be displayed only in the first column. In the following columns, then, more data rows are displayed than have been defined in the <span class="gui">No. of rows </span>property.</p>
+            <h3>Data header area</h3>
+            <p>The data header area is repeated for each report function as standard, but you still have the opportunity to report this area as a column header, by activating the <span class="gui">Reuse data header area for new column</span> form property.</p>
+            <p>It is possible to define several data header areas in one form, if, for instance, you want to display the mounting locations for the terminal strips in the terminal diagram. To do this, select the <span class="gui">Generate data headers for the first x sorting properties</span> form property and specify the required setting for the <span class="gui">Sort setting</span> field in the <span class="gui">Reports - &lt;Project name&gt;</span> dialog (using the relevant property on the <span class="gui">Templates</span> tab).</p>
+            <p>You can also use the <span class="gui">No line feed in data header area</span> property to control the position of the data header area in the forms: If the property is activated, the data header area is output with the next data row. If the property is deactivated then the data header area is output in its own row.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">If you want to have a data header area for each <a href="Glossary_o_anlage.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">higher-level function</a>, the report must be sorted by higher-level functions. This is the only way to ensure that each higher-level function data header area is only output once.</p>
+            </div>
+            <h3>Data area</h3>
+            <p>Data are reported in this area. If the form has several columns (<span class="gui">No. of columns</span> form property) and the <span class="gui">Combine</span> check box (<span class="gui">Settings: Output to pages</span> dialog) is selected, you can use the <span class="gui">Use new column for each device</span> property to control whether a new column should start for each reported function, or whether the data should be reported vertically, to save space.</p>
+            <h3>Data footer area</h3>
+            <p>This area is the "counterpiece" to the data header area, i.e., it is displayed after the data area and before the next reported function. Here, for example, you can define a line to visually indicate that a function report is completed.</p>
+            <h3>Footer</h3>
+            <p>The footer is reported once per page, that is, not for each individual function. When forms have several columns, it is positioned after the last column.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">In <a href="Glossary_o_dynamischeformulare.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">dynamic forms</a>, graphical elements and placeholders can also be placed outside the dynamic areas. As with <a href="Glossary_o_statischeformulare.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">static forms</a>, they are then output once on each report page, with placeholders being reported once with the data of the first header object (for example, the first terminal strip on the page).</p>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="formeditorgui_k_auswertungsrichtung.htm">Reporting Direction for Forms</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

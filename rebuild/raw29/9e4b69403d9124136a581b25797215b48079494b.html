@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Each element &lt;node&gt; defines a graphical element that can be added to the diagram. Nodes are the graphical representations of engineering objects..." /><title>node</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refgraph2d_r_node.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor207"></a>
+            <MadCap:concept term="Referenz" /><a name="aanchor208"></a>
+            <MadCap:concept term="Graph2D" /><a name="kanchor137"></a>
+            <h2>node</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Each element <span class="codetext">&lt;node&gt;</span> defines a graphical element that can be added to the diagram. Nodes are the graphical representations of engineering objects.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute name</th>
+                        <th>Usage</th>
+                        <th>Attribute values</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>acceptedChildren</td>
+                        <td>optional</td>
+                        <td>IDREFS</td>
+                        <td />
+                        <td>A list of IDs and slaves, which can be added to the current node.</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>required</td>
+                        <td />
+                        <td />
+                        <td>Unique ID of the action</td>
+                    </tr>
+                    <tr>
+                        <td>labelText</td>
+                        <td>Only required for figureStickyNote</td>
+                        <td />
+                        <td />
+                        <td>Text that represents the node in the tool palette</td>
+                    </tr>
+                    <tr>
+                        <td>router</td>
+                        <td>optional</td>
+                        <td>ID of a router</td>
+                        <td />
+                        <td>Specifies the router ID of the router, which shall be used for the current &lt;node&gt; element, if it has an own connection layer.</td>
+                    </tr>
+                    <tr>
+                        <td>slaveNodes</td>
+                        <td>optional</td>
+                        <td><a href="glossary_o_string.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">String</a>
+                        </td>
+                        <td />
+                        <td>Formula,which returns a list of depending objects</td>
+                    </tr>
+                    <tr>
+                        <td>super</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Id of a node from which the properties are inherited.</td>
+                    </tr>
+                    <tr>
+                        <td>valid</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Formula to determine whether an EO is represented graphically by the current node. The formula is compared with the EO</td>
+                    </tr>
+                    <tr>
+                        <td>verticalLinePosition</td>
+                        <td>optional</td>
+                        <td>0 through 1</td>
+                        <td>1</td>
+                        <td>If the container element supports the display of the cursor position, then this attribute defines to which page the cursor shall jump.<br />0 = West<br />0.5 = Center<br />1 = East</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Allowed sub-elements</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="refgraph2d_r_figurebase.htm" class="MCXref xref">figureBase</a>
+                        </td>
+                        <td>0..1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figurecontainer.htm" class="MCXref xref">figureContainer</a> </td>
+                        <td>0..1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figureellipse.htm" class="MCXref xref">figureEllipse</a>
+                        </td>
+                        <td>0..1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figureganttcontainer.htm" class="MCXref xref">figure-ganttContainer</a>
+                        </td>
+                        <td>0..1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figureimage.htm" class="MCXref xref">figureImage</a>
+                        </td>
+                        <td>0..1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figurelabel.htm" class="MCXref xref">figureLabel</a>
+                        </td>
+                        <td>0..1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figurepolygon.htm" class="MCXref xref">figurePolygon</a>
+                        </td>
+                        <td>0..1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_figurestickynote.htm" class="MCXref xref">figureStickyNote</a>
+                        </td>
+                        <td>0..1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_property.htm" class="MCXref xref">property</a>
+                        </td>
+                        <td>any</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refgraph2d_r_slavenode.htm" class="MCXref xref">slaveNode</a>
+                        </td>
+                        <td>any</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p>Configuration of a node that can be inserted into the diagram both as an existing instance from the project tree and as a new instance from the palette.</p>
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;!-- Inherits properties of "abstract_Buildingcomponent" --&gt;
+&lt;node id="Floor" super="abstract_Buildingcomponent" valid="=isInstanceEO() and isInstanceOf('IT_Architecture.Levelcomponents.Floor')" acceptedChildren="Room"&gt;
+	&lt;figurePolygon figure="com.mind8.graph2d.figure.container.Polygon"&gt;
+		&lt;properties&gt;
+			&lt;property id="prefWidth"&gt;
+				&lt;read value="2000" /&gt;
+			&lt;/property&gt;
+			&lt;property id="prefHeight"&gt;
+				&lt;read value="2000" /&gt;
+			&lt;/property&gt;
+			&lt;property id="bendpointsCount"&gt;
+				&lt;read value="4" /&gt;
+			&lt;/property&gt;
+				&lt;property id="bendpointsModifiable"&gt;
+				&lt;read value="true" /&gt;
+			&lt;/property&gt;
+		&lt;/properties&gt;
+	&lt;/figurePolygon&gt;
+	&lt;property id="text"&gt;
+		&lt;read value="=$Tooltip" /&gt;
+		&lt;write key="value" receiver="=parameter('Number')" /&gt;
+	&lt;/property&gt;
+&lt;/node&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Bridgehead">Explanation:</p>
+            <p>The validity of the node is checked using the attribute <span class="codetext">valid="=isInstanceEO() and isInstanceOf('IT_Architecture.Levelcomponents.Floor')"</span>. The term <span class="codetext">isInstanceEO()</span> checks whether the node represents an instance from the project tree. The type of the project component is determined via the term<span class="codetext">and isInstanceOf('IT_Architecture.Levelcomponents.Floor')</span>.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">
+                            <p>f the attribute <span class="codetext">creation</span> of the element <span class="codetext">&lt;slaveNode&gt;</span> is set to the value <span class="codetext">byMaster</span> (default setting!), then all slave nodes, which are instantiated outside the diagram, are placed in the diagram. The automatically placed slave nodes are indicated in the diagram with a separate border color, by expanding the configuration of the slave node with <span class="codetext">&lt;property id="autoSlaveBoColor"&gt; &lt;read="RGB Value"&gt;</span>.</p><pre xml:space="preserve"><code class="language-markup">&lt;node id="Station" super="<a href="glossary_o_component.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Component</a>"
+	valid="=isInstanceOf('BodyShellWork_ModularSystem_V2.Mechatronic.RobotsStation')"
+	slaveNodes="=mos('BodyShellWork_ModularSystem_V2.Mechatronic.Robot')"&gt;
+	&lt;figureImage figure="com.mind8.graph2d.figure.Image"&gt;
+		&lt;properties&gt;
+			&lt;property id="img"&gt;
+				&lt;read value="=type('BodyShellWork_ModularSystem_V2.Diagram_Configuration.Planning_Diagram.Register').image(this)" /&gt;
+			&lt;/property&gt;
+			&lt;property id="highlightBoColor"&gt;
+				&lt;read value="0,255,0" /&gt;
+			&lt;/property&gt;
+		&lt;/properties&gt;
+	&lt;/figureImage&gt;
+	&lt;slaveNode id="slaveRobot" node="Robot" layout="outsideEdged" direction="=$diagramDirection" parent="=mc"&gt;
+		&lt;movement rotateWithMaster="NO" rotate="NO" /&gt;
+	&lt;/slaveNode&gt;
+&lt;/node&gt;
+&lt;node id="Robot" super="Station" valid="=isInstanceOf('BodyShellWork_ModularSystem_V2.Mechatronic.Robot')"&gt;
+	&lt;figureImage figure="com.mind8.graph2d.figure.Image"&gt;
+		&lt;properties&gt;
+			&lt;property id="highlightBoColor"&gt;
+				&lt;read value="0,255,0" /&gt;
+			&lt;/property&gt;
+			&lt;property id="autoSlaveBoColor"&gt;
+				&lt;read value="255,0,0"/&gt;
+			&lt;/property&gt;
+			&lt;property id="img"&gt;
+				&lt;read value="=type('BodyShellWork_ModularSystem_V2.Diagram_Configuration.Planning_Diagram.Register').image(this)" /&gt;
+			&lt;/property&gt;
+		&lt;/properties&gt;
+	&lt;/figureImage&gt;
+&lt;/node&gt;</code></pre> </p>
+                    </div>
+                </div>
+            </div>
+            <p>To show this, the demo model <span class="gui">BodyshellWork</span> is modified in a kind, that up to four robots are grouped as slaves around a robot station. The first figure below shows the robot station with two robots as the current state of the diagram.</p>
+            <p>
+                <img border="0" src="../Pictures/graph2d_slave-nodes1.png" alt="" />
+            </p>
+            <p>With closed diagram, an additional robot is instantiated (1.) and then the diagram is opened again (see below).</p>
+            <p>
+                <img border="0" src="../Pictures/graph2d_slave-nodes2.png" alt="" />
+            </p>
+            <p>The additional robot is docked as a slave to the RobotStation in the diagram without interaction (2.). To identify the added robot, the border is differently colored (in this example, red), as the previously existing robots. As the robot was inserted without additional interaction in the diagram, the chart is in the <span class="gui">change</span> condition (see <a href="eecbase_k_editors_working_on_editor_area.htm" class="MCXref xref">Working in the editor area</a>). Only when the diagram is stored, the robot is permanently inserted in the diagram and its border changes its color to the normal value.</p>
+            <p>To reset the frame color without saving the state of the diagram, the <span class="gui">F6</span> key is to press.</p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

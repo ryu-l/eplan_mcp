@@ -1,0 +1,56 @@
+# RECTANGLE_WIDTH(Int32) Property
+
+RECTANGLE\_WIDTH(Int32) Property
+
+Width # 20221. This property isn't indexed.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue RECTANGLE_WIDTH( 
+   int index
+) {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ RECTANGLE_WIDTH {
+   PropertyValue^ get(int index);
+   void set (int index, PropertyValue^ value);
+}
+```
+```
+
+#### Parameters
+
+*index*
+
+#### Property Value
+
+Returns property value of type System.Double.
+
+Remarks
+
+Allows the width of black boxes, structure boxes and PLC boxes to be specified in placeholder objects.
+
+See Also
+
+#### Reference
+
+[Placement3DPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList.html)
+  
+[Placement3DPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~RECTANGLE_WIDTH.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~RECTANGLE_WIDTH(Int32))

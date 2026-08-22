@@ -1,0 +1,37 @@
+# Decider Constructor
+
+Decider Constructor
+
+Create a new Decider Object.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public Decider()
+```
+```
+
+```
+```
+public:
+Decider();
+```
+```
+
+See Also
+
+#### Reference
+
+[Decider Class](Eplan.EplApi.Baseu~Eplan.EplApi.Base.Decider.html)
+  
+[Decider Members](Eplan.EplApi.Baseu~Eplan.EplApi.Base.Decider_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.Baseu~Eplan.EplApi.Base.Decider~_ctor)

@@ -1,0 +1,275 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>InsertModelViewAction</title>
+    <meta name="Title" content="InsertModelViewAction"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n49922","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="Action to insert model view object on a page.
+
+
+
+
+Parameter
+Description
+
+
+PROJECTNAME
+Project name with full path (optional).
+If not entered, the selected project is used when the action is called from GUI (like from a script or button bar" />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="65ee9f27-957c-42de-a022-64d5528276e8"/>
+    <meta name="Microsoft.Help.TocParent" content="3e41d92d-c4b9-41c5-ac0e-391e5f31e47b"/>
+    <meta name="Microsoft.Help.TocOrder" content="23"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API Reference.html">API Reference</a>
+ / <a href="API Actions.html">Actions</a>
+ / InsertModelViewAction</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">InsertModelViewAction</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <DIV class=DescriptionContent><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Action to insert model view object on a page.
+</PRE></DIV><BR>
+<TABLE>
+<TBODY>
+<TR>
+<TH>Parameter</TH>
+<TH>Description</TH></TR>
+<TR>
+<TD>
+<P class=ParameterCell>PROJECTNAME</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Project name with full path (optional).
+If not entered, the selected project is used when the action is called from GUI (like from a script or button bar). If called from the windows command line,
+PROJECTNAME must be set or the  must be used first, otherwise an  exception is thrown. 
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>LAYOUTSPACE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Name of layout space for which model view is created. This parameter is mandatory.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>STRUCTURE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Structure identifier for which model view is created. This parameter is mandatory if name of layout space is not unique in project.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>PAGENAME</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Full name of page on which model view will be inserted. This parameter is mandatory.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>X</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">X-coordinate of model view's lower left corner. This parameter is mandatory.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>Y</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Y-coordinate of model view's lower left corner. This parameter is mandatory.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>DX</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Width of model view. This parameter is mandatory.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>DY</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Height of model view. This parameter is mandatory.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>VIEWNAME</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Name of model view.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>DESCRIPTION</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Description of model view. Value of this parameter can be in multi-language string format.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>ANGLE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Rotation of the content of model view. 
+Possible values are: 
+1 - content is rotated 90Â° counter-clockwise; 
+2 - content is rotated 90Â° in opposite direction.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>SELECTIONSCHEME</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Name of the selection scheme. It must be used with cabinet VIEWTYPE parameter.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>STYLE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Style in which content of model view is displayed.
+Possible values are:
+0 - Wire frame model;
+1 - Hidden lines;
+2 - Shading;
+3 - Hidden lines / Simplified representation;
+4 - Shading / Simplified representation.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>ITEMLABELING</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Name of the scheme which is applied for labeling the items in the model view.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>VIEWPOINT</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">The direction from which objects are seen in model view.
+Possible values are:
+0 - Default;
+1 - Bottom;
+2 - Top;
+3 - Left;
+4 - Right;
+5 - Front;
+6 - Rear;
+7 - SE isometric;
+8 - SW isometric;
+9 - NE isometric;
+10 - NW isometric;
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>ROOTELEMENTS</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Values of property FUNCTION3D_ID_RELATIVE separated by # from 3D placements which will be set as root elements in created model view.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>SCALESETTING</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Type of scaling used to display objects in the model view.
+Possible values are:
+0 - Automatic;
+1 - Fit;
+2 - Manually defined;
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>SCALE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Scale used to display objects in model view.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>VIEWTYPE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Type of view used to display objects. 
+Possible values are:
+0 - Undefined;
+1 - Cabinet;
+2 - EMI;
+3 - Unfolding;
+4 - DrillView;
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>OBJECTID</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">[OUT] Object id of created model view.
+</PRE></TD></TR></TBODY></TABLE>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: InsertModelViewAction">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

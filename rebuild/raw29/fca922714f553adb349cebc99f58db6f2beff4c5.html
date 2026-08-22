@@ -1,0 +1,184 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>XSettingsImport</title>
+    <meta name="Title" content="XSettingsImport"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n0","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content=" Imports project-, station-, company- or user-settings from a xml-file.
+ 
+
+
+
+
+Parameter
+Description
+
+XmlFile
+ full name of a xml-file. If the param is empty a file selection dialog will appere to choose a xml-file
+
+
+Node
+ node of settin" />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="f7b5977f-e41f-49a4-b0d3-e2dda8e59cce"/>
+    
+    
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">XSettingsImport</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <DIV class=DescriptionContent><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line"> Imports project-, station-, company- or user-settings from a xml-file.
+ 
+</PRE></DIV><BR>
+<TABLE class=FilteredItemListTable>
+<TBODY>
+<TR>
+<TH>Parameter</TH>
+<TH>Description</TH></TR>
+<TR>
+<TD class=ParameterCell>XmlFile</TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line"> full name of a xml-file. If the param is empty a file selection dialog will appere to choose a xml-file
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell>Node</TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line"> node of settings to import
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell>Project</TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line"> fullname of the target project
+</PRE></TD></TR>
+<TR>
+<TD class=ParameterCell>Option</TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line"> option to control import :
+ INSERT ( insert only, if not already exist ),
+ OVERWRITE ( overwrite values and definitions ),
+ UPDATE ( actualize only the values )
+ 
+</PRE></TD></TR></TBODY></TABLE><A id=exampleBookmark name=exampleBookmark></A>
+<DIV id=exampleSectionHeading class=SectionHeading><SPAN class=SectionHeadingIcon><BR></SPAN><SPAN class=SectionHeadingText>Example</SPAN> </DIV>
+<DIV id=exampleSectionContent class=SectionContent>
+<DIV id=TabContent class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word"><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">         Imports all station-, company- and user-settings from given xml-file:
+   
+   XSettingsImport /XmlFile:c:\file.xml
+   
+</PRE></DIV><BR>
+<DIV id=TabContent class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word"><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">         Imports only the node from given xml-file:
+   
+   XSettingsImport /XmlFile:c:\file.xml /Node:User.XSbGui.CustomSymbols
+   
+</PRE></DIV><BR>
+<DIV id=TabContent class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word"><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">   Imports project-settings to target project from given xml-file:
+   
+   XSettingsImport /XmlFile:c:\my_project.xml /Project:c:\...\ESS_Sample_Project.elk
+   
+</PRE></DIV><BR>
+<DIV id=TabContent class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word"><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">   Imports only the project-setting-node to target project from given xml-file:
+   
+   XSettingsImport /XmlFile:c:\my_project.xml /Project:c:\...\ESS_Sample_Project.elk /Node:XSbGui.CustomSymbols
+   
+</PRE></DIV><BR></DIV>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: XSettingsImport ">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

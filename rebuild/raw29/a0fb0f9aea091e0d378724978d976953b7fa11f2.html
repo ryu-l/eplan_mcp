@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|EPLAN Pro Panel|Routing Connections (Layout Space)|Proceed as Follows">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Nets can be connected in the multi-line planning:" /><title>Optimizing Nets Manually</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/routinggui_h_netzmanuelloptimieren.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor215"></a>
+            <MadCap:concept term="Handlung;EPLAN Plattform;EPLAN Pro Panel" /><a name="kanchor240"></a><a name="kanchor241"></a>
+            <h2>Optimizing Nets Manually</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Nets can be connected in the multi-line planning:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">By means of <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> that have the <span class="gui">Net-connecting</span> property enabled</li>
+                <li class="Listitem_Single_Line" value="2">By means of their potential transmission</li>
+                <li class="Listitem_Single_Line" value="3">or by means of jumpers.</li>
+            </ul>
+            <p>The logic of the net transmission can be used also for <a href="Glossary_o_artikelplatzierungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part placements</a> through the manual optimization of a net. New conductor chains are generated. Fixed <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> (jumpers, <a href="Glossary_o_direktverbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">direct connections</a>, internal connections) remain in place and cannot be optimized.</p>
+            <p class="Bridgehead">Precondition:</p>
+            <p>You have created <a href="Glossary_o_verlegeverbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing connections</a>. <span class="important">One</span> complete net is highlighted in the <a href="Glossary_o_bauraum.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">layout space</a> navigator or in the connections navigator.</p>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Select the menu <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a> <span class="gui">Project data &gt; Connections &gt; Optimize net manually</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> All <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> placements to be connected are colored red.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> Part placements not involved are represented as transparent.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> All sources or targets not visible are displayed.</li>
+                <li class="Listitem_Step_By_Step" value="2">Click all red part placements, one by one, that are to be connected to each other.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> All part placements that have only one connection point in the net and two connections are colored green.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> Part placements that have one connection point in the net and one connection are colored yellow.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> If a part placement has several <a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a> in the net, clicking it will display a list of connection points from which you can select a connection point.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> Connections are generated in the sequence of clicking.</li>
+                <li class="Listitem_Step_By_Step" value="3">To define a new chain, press the <span class="gui">[N]</span> key.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> Jumpered red part placements and those at the start and at the end that have only a connected connection are highlighted in yellow. They can be used once again to close a ring or to start a new chain.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> After clicking the last red part placement, a check is run to see whether the net is a complete single block.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The <span class="gui">Optimize net manually</span> dialog is displayed; here you can define whether the last chain is to be closed to <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> a ring and whether the new connections are to be routed.</li>
+                <li class="Listitem_Step_By_Step" value="4">In the <span class="gui">Optimize net manually</span> dialog, click <span class="gui">[OK]</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The generated connections are routed in the new <a href="Glossary_o_verlegewege.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing tracks</a>.</li>
+            </ol>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="routinggui_d_netzmanuelloptimieren.htm">Dialog Optimize net manually</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

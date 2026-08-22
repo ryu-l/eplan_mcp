@@ -1,0 +1,324 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>plcservice </title>
+    <meta name="Title" content="plcservice "/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n49942","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="Exports/imports PLC data using the specified converter.
+
+
+
+
+Parameter
+Description
+
+
+TYPE
+Type of task to be performed by the action
+BUSDATAEXPORT: Bus data export.
+BUSDATAIMPORT: Bus data import.
+GENERATEPLCSCHEMATIC: Schematics generati" />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="f607baf4-d3d9-461b-a595-3961a1fe9ee1"/>
+    <meta name="Microsoft.Help.TocParent" content="3e41d92d-c4b9-41c5-ac0e-391e5f31e47b"/>
+    <meta name="Microsoft.Help.TocOrder" content="33"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API Reference.html">API Reference</a>
+ / <a href="API Actions.html">Actions</a>
+ / plcservice </div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">plcservice </div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <DIV class=DescriptionContent><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Exports/imports PLC data using the specified converter.
+</PRE></DIV><BR>
+<TABLE>
+<TBODY>
+<TR>
+<TH>Parameter</TH>
+<TH>Description</TH></TR>
+<TR>
+<TD>
+<P class=ParameterCell>TYPE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Type of task to be performed by the action
+BUSDATAEXPORT: Bus data export.
+BUSDATAIMPORT: Bus data import.
+GENERATEPLCSCHEMATIC: Schematics generation.
+EXPORTADDRESSOVERVIEW: Address overview export.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>PROJECTNAME</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Project name with full path.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>LANGUAGE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Language identifier 
+This parameter is only effective with the following values of the TYPE parameter: BUSDATAEXPORT, BUSDATAIMPORT
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>CONVERTERID</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Identification for busdata exporter. Values are:
+â¢ PlcDcExchangerBeckhoffTC3AML = Beckhoff TwinCAT 3
+â¢ PlcDcExchangerBoschAML = Bosch Nexeed Automation
+â¢ PlcDcExchangerLogiCals3AML = logi.cals logi.CAD 3
+â¢ PlcDcExchangerMitsubishiAML = Mitsubishi iQ Works
+â¢ PlcDcExchangerPhoenixContactAML = Phoenix Contact PLCnext Engineer 2019
+â¢ PlcDcExchangerRockwellArchitectAML = Rockwell Automation Studio 5000
+â¢ PlcDcExchangerSiemensTIAAML = Siemens SIMATIC STEP 7 TIA-Portal 14SP1
+â¢ PlcDcExchangerSiemensTIA15AML = Siemens SIMATIC STEP 7 TIA-Portal 15
+â¢ PlcDcExchangerSiemensTIA151AML = Siemens SIMATIC STEP 7 TIA Portal 15.1
+â¢ PlcDcExchangerSiemensTIA16AML = Siemens SIMATIC STEP 7 TIA Portal 16
+â¢ PlcDcExchangerSiemensTSTAML = Siemens TIA Selection Tool
+â¢ PlcDcAMLExchangerGeneral = Eplan Electric P8 AML-format
+â¢ PlcDcXMLExchangerABB = ABB Automation Builder
+â¢ PlcDcXMLExchangerBandR = B and R Automation Studio
+â¢ PlcDcXMLExchangerBeckhoff = Beckhoff TwinCAT 2.10/2.11
+â¢ PlcDcXMLExchangerLogiCals = logi.cals logi.CAD
+â¢ PlcDcXMLExchangerMitsubishi = Mitsubishi GX-Works2
+â¢ PlcDcXMLExchangerRexroth = Bosch Rexroth Indra Works
+â¢ PlcDcXMLExchangerSchneider = Schneider Unity Pro XL
+â¢ PlcDcXMLExchangerSiemens = Siemens SIMATIC STEP 7 5.6
+â¢ PlcDcXMLExchangerUniversal = Eplan Electric P8 PLC standard exchange format
+â¢ XMLRockwellExchanger = Rockwell Studio 5000 Architect 20/21
+This parameter is only effective with the following values of the TYPE parameter:BUSDATAEXPORT, BUSDATAIMPORT
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>CONFIGURATIONPROJECT</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">The name of the PLC configuration data set to export. 
+This parameter is only effective with the following values of the TYPE parameter:BUSDATAEXPORT, EXPORTADDRESSOVERVIEW
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>DESTINATIONFILE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Destination file for data export.
+This parameter is only effective with the following values of the TYPE parameter:BUSDATAEXPORT, EXPORTADDRESSOVERVIEW
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>SOURCEFILE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Source file for data import.
+This parameter is only effective with the following values of the TYPE parameter:BUSDATAIMPORT.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>OVERWRITE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">If the output file already exists, this parameter specifies      whether it should be overwritten.
+Possible values: '0' - No (default), '1' - Yes.
+This parameter is only effective with the following values of the TYPE parameter:BUSDATAEXPORT.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>IMPORTMATCH</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Matching options for PLC data import. 
+The import process tries to match imported objects with those existing in the project.
+Based on the option selected, the matching may be performed by internal object ids or by objects' identifying names.
+If an imported object is matched with an existing function, properties of the existing function will be updated whereas for unmatched imported objects, new functions will be created in the project.
+The options are:
+0 = Match by internal object ids.
+1 = Match by identifying names. Note: in this case, a comparison dialog may be displayed for the user to individually selecting some function to update.
+2 = Don't match. Create new functions for all imported objects.
+This parameter is only effective with the following values of the TYPE parameter:BUSDATAIMPORT.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>SHOWCOMPAREDLG</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Shows compare dialog.
+Possible values: '0' - No (default), '1' - Yes.
+This parameter is only effective with the following values of the TYPE parameter:BUSDATAIMPORT.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>CONFIGFILE</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">A path to a  configuration file for schematics generation.
+This parameter is only effective with the following values of the TYPE parameter:GENERATEPLCSCHEMATIC.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>SINGLELINEPAGES</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">If set, single-line pages will be generated.
+Possible values: '0' - No (default), '1' - Yes.
+This parameter is only effective with the following values of the TYPE parameter:GENERATEPLCSCHEMATIC.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>MULTILINEPAGES</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">If set, multi-line pages will be generated.
+Possible values: '0' - No (default), '1' - Yes.
+This parameter is only effective with the following values of the TYPE parameter:GENERATEPLCSCHEMATIC.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>OVERVIEWS</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">If set, overview pages will be generated.
+Possible values: '0' - No (default), '1' - Yes.
+This parameter is only effective with the following values of the TYPE parameter:GENERATEPLCSCHEMATIC.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>RACKOVERVIEWS</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">If set, rack overview pages will be generated.
+Possible values: '0' - No (default), '1' - Yes.
+This parameter is only effective with the following values of the TYPE parameter:GENERATEPLCSCHEMATIC.
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>PLCSTATION</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">The name of the PLC station name to export.
+This parameter is only effective with the following values of the TYPE parameter:EXPORTADDRESSOVERVIEW
+</PRE></TD></TR>
+<TR>
+<TD>
+<P class=ParameterCell>PLCCPU</P></TD>
+<TD class=DescriptionCell><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">The name of the PLC CPU name to export.
+This parameter is only effective with the following values of the TYPE parameter:EXPORTADDRESSOVERVIEW
+</PRE></TD></TR></TBODY></TABLE><A id=exampleBookmark name=exampleBookmark></A>
+<DIV id=exampleSectionHeading class=SectionHeading><SPAN class=SectionHeadingIcon><BR></SPAN><SPAN class=SectionHeadingText>Example</SPAN> </DIV>
+<DIV id=exampleSectionContent class=SectionContent>
+<DIV id=TabContent class="FilteredContentcs ui-tabs-panel ui-widget-content ui-corner-bottom" style="WORD-WRAP: break-word"><PRE style="FONT-FAMILY: Verdana; WHITE-SPACE: pre-line">Bus data export:
+
+plcservice 
+                /TYPE:BUSDATAEXPORT
+                /CONFIGURATIONPROJECT:Schneider-Electric
+                /DESTINATIONFILE:"c:\tempdir\plcservice_export_1.xef"
+                /PROJECTNAME:"C:\Users\Public\EPLAN\Electric P8\Projects\Microsoft\ESS_Sample_Project.elk" 
+                /LANGUAGE:de_DE
+                /CONVERTERID:PlcDcXMLExchangerSchneider
+                /OVERWRITE:1
+
+Bus data import:
+
+plcservice 
+                /TYPE:BUSDATAIMPORT
+                /SOURCEFILE:"c:\tempdir\plcservice_export_2.pbf"
+                /PROJECTNAME:"C:\Users\Public\EPLAN\Electric P8\Projects\Microsoft\ESS_Sample_Project.elk" 
+                /LANGUAGE:de_DE
+                /CONVERTERID:PlcDcXMLExchangerUniversal
+
+Schematics generation:
+
+plcservice 
+                /TYPE:GENERATEPLCSCHEMATIC
+                /PROJECTNAME:"C:\Users\Public\EPLAN\Electric P8\Projects\Microsoft\ESS_Sample_Project.elk" 
+                /CONFIGFILE:"c:\tempdir\schematics_generation_config.xml"
+                /SINGLELINEPAGES:1
+                /MULTILINEPAGES:1
+                        
+Address overview export:
+
+plcservice 
+                /TYPE:EXPORTADDRESSOVERVIEW
+                /PROJECTNAME:"C:\Users\Public\EPLAN\Electric P8\Projects\Microsoft\ESS_Sample_Project.elk" 
+                /CONFIGURATIONPROJECT:"CAx_AML_Drive_00"
+                /PLCSTATION:"S71500/ET200MP station_1"
+                /PLCCPU:"1"
+                /DESTINATIONFILE:"c:\tempdir\address_overview_export.csv"
+</PRE></DIV><BR></DIV>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: plcservice ">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

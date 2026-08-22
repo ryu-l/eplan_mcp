@@ -1,0 +1,58 @@
+# ARTICLE_PLCGROUP_INDEXINFILE_1(Int32) Property
+
+ARTICLE\_PLCGROUP\_INDEXINFILE\_1(Int32) Property
+
+PLC subdevice 1: Device description: Index in file # 22366. This property isn't indexed.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue ARTICLE_PLCGROUP_INDEXINFILE_1( 
+   int index
+) {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ ARTICLE_PLCGROUP_INDEXINFILE_1 {
+   PropertyValue^ get(int index);
+   void set (int index, PropertyValue^ value);
+}
+```
+```
+
+#### Parameters
+
+*index*
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Index for PLC subdevice 1 in the device description file of a PLC card. This property has to be filled for PLC subdevices if these are expected as independent devices in the PLC configuration program and are identified via a device description file and the associated index. The device description file is specified at the PLC box (main device). Through the index it is possible to select a device within such a file language-neutral. During a part selection or device selection the property is filled with the corresponding value from the parts management. The property is taken into consideration during the PLC data exchange in AutomationML format.
+
+PLC devices exist that consist of several integrated modules, meaning subdevices, and that have several start addresses. Such a device can consist, for example, of an internal CPU module, an internal input-output module as well as internal counter module - however with only one part number. In order to map such logical function units within a PLC device, up to twelve PLC subdevices are available to you.
+
+See Also
+
+#### Reference
+
+[ArticlePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList.html)
+  
+[ArticlePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_PLCGROUP_INDEXINFILE_1.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_PLCGROUP_INDEXINFILE_1(Int32))

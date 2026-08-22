@@ -1,0 +1,32 @@
+# DESIGNATION_FULLSUBPRODUCT Property (ConnectionPropertyList)
+
+DESIGNATION\_FULLSUBPRODUCT Property (ConnectionPropertyList)
+
+Product (sub-identifier, complete) # 1821. This property isn't indexed, and is read-only.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [DESIGNATION\_FULLSUBPRODUCT(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPropertyList~DESIGNATION_FULLSUBPRODUCT(Int32).html) | Product (sub-identifier, complete) # 1821. This property isn't indexed, and is read-only. |
+| [DESIGNATION\_FULLSUBPRODUCT](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPropertyList~DESIGNATION_FULLSUBPRODUCT().html) | Product (sub-identifier, complete) # 1821. |
+
+Remarks
+
+This property is read-only..
+
+Provides the full name of the product aspect with all the sub-identifiers, e.g. "UA.UA2".
+
+See Also
+
+#### Reference
+
+[ConnectionPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPropertyList.html)
+  
+[ConnectionPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPropertyList~DESIGNATION_FULLSUBPRODUCT)

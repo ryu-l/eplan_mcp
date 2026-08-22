@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="A relational database is accessed via DatabaseDataSource:" /><title>DatabaseDataSource</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/eecbase_k_datasources_database.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="kanchor540"></a><a name="kanchor541"></a>
+            <h2>DatabaseDataSource</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>A relational database is accessed via DatabaseDataSource:</p>
+            <p>
+                <img src="../Pictures/datenquellen_databasedatasource.png" alt="" />
+            </p>
+            <p>The connection with a database is established via the <span class="important">Connection URL</span>, also called URL connection string.</p>
+            <p>For access to external databases, explicit input fields are available for the user name and password. The password is saved in encrypted form; this way, it is not visible to users at any time.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">Connections entered in the <span class="gui">Connection URL</span> field, including user name and password, represent a security risk, because these data appear in clear text in the log file! Use the user name and password only in the input fields of the same name.</p>
+            </div>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">The use of the jTDS JDBC driver for Microsoft SQL database connections allows authentication via Windows Authentication. To this purpose the specification of the <span class="codetext">useNTLMv2=true</span> parameter is required.</p>
+            </div>
+            <p>The following table shows connection URLs for common databases with specification of the user and the password since this form is valid as well.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Database</th>
+                        <th>Connection URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Microsoft SQL Server</td>
+                        <td><span class="codetext">jdbc:jtds:sqlserver://localhost:1433/databasename;user=username;password=password</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft SQL Server with instance</td>
+                        <td><span class="codetext">jdbc:jtds:sqlserver://localhost:1433/databasename;instance=instancename;user=username;password=password</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>hsqldb</td>
+                        <td><span class="codetext">jdbc:hsqldb:hsql://localhost/xdb;user=user;password=password</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Oracle</td>
+                        <td><span class="codetext">jdbc:oracle:thin:username/password@localhost:1521/orcl</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PostgreSQL</td>
+                        <td><span class="codetext">jdbc:postgresql://localhost:5432/databasename?user=postgres&amp;password=postgres</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>JDBC-ODBC-Bridge</td>
+                        <td><span class="codetext">jdbc:odbc:Driver={PostgreSQL Unicode};Server=localhost;port=5432;Database=databasename;UID=postgres;PWD=postgres;</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">Unicode support is available only for URLs that point to native JDBC drivers. The JDBC-ODBC bridge does not support Unicode.</p>
+            </div>
+            <p>If the Connection URL is written without stating the user name and password, no semicolon has to be added at the end.</p>
+            <p>In this case, the Connection URL for <span class="codetext">hsqldb</span> is then, for example, <span class="codetext">jdbc:hsqldb:hsql://localhost/xdb.</span></p>
+            <p>The results of requests to external relational databases are returned as strings by default. Using the option Convert <a href="glossary_o_integer.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Integer</a>, <a href="glossary_o_double.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Double</a> and <a href="glossary_o_boolean.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Boolean</a>, DatabaseDataSource can be set in such a way that the database column types of the external relational databases are converted to the primitive EEC data types Integer, Double and Boolean.</p>
+            <p>Depending on the database, there are special points to note:</p>
+            <p>The JDBC standard specifies the SQL types and a standard mapping on Java types. The respective JDBC driver specifies the mapping of native database types on the JDBC types. Finally, it depends on the database and the JDBC driver whether the primitive type conversion works 100%.</p>
+            <p>An example is the definition of the data type <span class="codetext">Bool</span> in PostgreSQL: Via the PostgreSQL-ODBC driver, the data type <span class="codetext">Boolean</span> is mapped on <span class="codetext">java.sql.Types.CHAR</span>, so that a conversion to the primitive type <span class="codetext">Boolean</span> does not work.</p>
+            <p class="Precondition">Further information on SQL requests of various databases:</p>
+            <p>The different supported databases exhibit special characteristics in handling the uppercase / lowercase spelling of column and table names, which are shown below for each database. This is followed at the end by a recommendation concerning the choice of column / table names if there is to be an option to change databases.</p>
+            <p>The examples are based on a table called <span class="codetext">Parts</span> with a column <span class="codetext">PartNumber</span>, a table called <span class="codetext">SUPPLIERS</span> with a column <span class="codetext">SUPPLIERNUMBER</span>, and a table called <span class="codetext">Customers</span> with a column <span class="codetext">CustomerNumber</span>.</p>
+            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="kanchor542"></a><a name="I_Microsoft SQL Server Express"></a><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Microsoft SQL Server Express</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>The Microsoft SQL Server Express is created as an instance.</p>
+                    <p>Syntax of the URL:</p><pre xml:space="preserve">jdbc:jtds:sqlserver://&lt;Server name&gt;/&lt;Database name&gt;;instance=SQLEXPRESS</pre>
+                    <div class="note">
+                        <p class="Infoblock_Heading">
+                            <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                        <p class="Infoblock">Upper-case / lower-case differentiation is not relevant for the <span class="codetext">&lt;Database name&gt;</span> specification.</p>
+                    </div>
+                    <p>The following settings are carried out by means of <span class="important">SQL Server Configuration Manager</span>:</p>
+                    <ul>
+                        <li value="1">For the SQL Server activate the TCP/IP protocol.</li>
+                        <li value="2">For the SQL Native Clients activate the <span class="important">TCP/IP</span> protocol.</li>
+                        <li value="3">Start the services <span class="important">SQL Server Browser</span> and <span class="important">SQL Server (SQLEXPRESS)</span>.</li>
+                    </ul>
+                    <p>The following settings have to be carried out by using the <span class="important">Microsoft SQL Server Management Studio</span>:</p>
+                    <ul>
+                        <li value="1">Activate the Windows identifier.</li>
+                        <li value="2">Activate SQL-Login.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="kanchor543"></a><a name="I_Microsoft SQL Server mit Instanz"></a><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Microsoft SQL Server with instance</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>A local SQL login has to be specified for the login process.</p>
+                    <p>You have to observe upper-case / lower-case spelling at both the server and the instance name.</p>
+                    <p>There can be several instances of a Microsoft SQL Server database on a server. For such instances, the URL addresses must be extended to include additional properties.</p>
+                </div>
+            </div>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">The entries for <span class="gui">Connection URL</span>, <span class="gui">Default table</span>, <span class="gui">User</span> and <span class="gui">Password</span> could be overwritten by means of EEC arguments. The EEC arguments are given in the initialization file (e.g.ec.ini).</p>
+            </div>
+            <p class="Seealso">See also:</p>
+            <p class="Link_Seealso"><a href="admin_r_vmargs_datasource_url.htm" class="MCXref xref">de.eplan.eec.datasource.url</a>
+            </p>
+            <p class="Link_Seealso"><a href="admin_r_vmargs_datasource_defaulttable.htm" class="MCXref xref">de.eplan.eec.datasource.defaultTable</a>
+            </p>
+            <p class="Link_Seealso"><a href="admin_r_vmargs_datasource_user.htm" class="MCXref xref">de.eplan.eec.datasource.user</a>
+            </p>
+            <p class="Link_Seealso"><a href="admin_r_vmargs_datasource_password.htm" class="MCXref xref">de.eplan.eec.datasource.password</a>
+            </p>
+            <p class="Seealso">More:</p>
+            <p class="Link_Seealso"><a href="eecbase_k_datasources_database_hsqldb.htm" class="MCXref xref">hsqldb</a>
+            </p>
+            <p class="Link_Seealso"><a href="eecbase_k_datasources_database_oracle.htm" class="MCXref xref">Oracle</a>
+            </p>
+            <p class="Link_Seealso"><a href="eecbase_k_datasources_database_ms_sql_server.htm" class="MCXref xref">Microsoft SQL Server</a>
+            </p>
+            <p class="Link_Seealso"><a href="eecbase_k_datasources_database_postgresql.htm" class="MCXref xref">PostgreSQL</a>
+            </p>
+            <p class="Link_Seealso"><a href="eecbase_k_datasources_recommendations.htm" class="MCXref xref">General recommendation for the choice of column and table names</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

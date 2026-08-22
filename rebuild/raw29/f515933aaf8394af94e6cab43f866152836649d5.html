@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The upgrade to extension points has the advantage that during the configuration of a machine or plant only mechatronic components are involved and the..." /><title>Creating actions for the import of the discipline library into the modular system</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/tutp8_h_expert_create_action_for_import_of_discipline.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor450"></a>
+            <MadCap:concept term="Tutorial;EPLAN Electric P8" />
+            <h2>Creating actions for the import of the discipline library into the modular system</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The upgrade to extension points has the advantage that during the configuration of a machine or plant only mechatronic components are involved and the data model therefore remains smaller. Only when the documents of a discipline have to be created for the completely configured machine or plant, are the discipline components installed per import of the discipline library and update of the extension points.</p>
+            <p>Both the import as well as the update are to be triggered through actions by means of buttons of a user interface. The actions are based on a command and a SequenceSelectionAction that are created in the following steps.</p>
+            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating a command for the import of a library</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <ol>
+                        <li value="1">Select the <span class="important">T_Mechatronic_ModularSystem</span> library.</li>
+                        <li value="2">Select <span class="gui">New &gt; Unit</span> in the shortcut menu.</li>
+                        <li value="3">Specify the <span class="important">Actions</span> name.</li>
+                        <li value="4">Select the new <span class="important">Actions</span> unit.</li>
+                        <li value="5">Select <span class="gui">New &gt; Object</span> from the popup menu.</li>
+                        <li value="6">Click <span class="gui">Object &gt; Command</span>.</li>
+                        <li value="7">Confirm with <span class="gui">[Finish]</span>.</li>
+                        <li value="8">Specify the <span class="important">ImportLibCommand</span> name.</li>
+                        <li value="9">Switch to the <span class="gui">Methods</span> editor page.</li>
+                        <li value="10">Click <img src="../Pictures/button_finder.png" alt="" />.</li>
+                    </ol>
+                    <p>The <span class="important">New Name</span> has to be entered in the table and the <span class="gui">Name</span> field.</p>
+                    <ol data-mc-continue="true">
+                        <li value="11">Specify <span class="important">execute</span> as the name.</li>
+                        <li value="12">In the drop-down list select  <span class="gui">Language</span><span class="important">Sequence</span>.</li>
+                        <li value="13">In the <span class="gui">Arguments</span> area click on <img src="../Pictures/button_finder.png" alt="" />.</li>
+                        <li value="14">The <span class="important">New Argument</span> with the <span class="important">Engineering.Object</span> type is entered in the table of the arguments.</li>
+                        <li value="15">Enter <span class="important">root</span> as the name.</li>
+                        <li value="16">Enter <span class="important">Engineering.Root</span> as the type.</li>
+                        <li value="17">Repeat Steps 12 to 15 with the name <span class="important">libNames</span> and the type <span class="important">Engineering.List</span>.</li>
+                    </ol>
+                    <p>The new arguments are entered as values for the signature of the method. It is now an execute method that requires the root node of the mechatronic and the list of the libraries to be imported as arguments.</p>
+                    <p>Below a table is shown with the specification of type names, method names and method arguments.</p>
+                    <ol data-mc-continue="true">
+                        <li value="18">Click <img src="../Pictures/button_finder.png" alt="" /> above the table.</li>
+                        <li value="19">In the <span class="gui">Select method</span> dialog, click <span class="gui">Object &gt; Command &gt; FrameworkCommand &gt; ImportLibrariesCommand</span>.</li>
+                        <li value="20">Confirm with <span class="gui">[Finish]</span>.</li>
+                        <li value="21">Repeat Steps 18 to 20 with <span class="gui">Object &gt; Command &gt; FrameworkCommand &gt; SaveObjectCommand</span>.</li>
+                        <li value="22">Save the command.</li>
+                    </ol>
+                    <p>This concludes the creation of the command for the import of a library. With this command the framework commands for the import of libraries and the subsequent saving are performed.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating SequenceSelectionAction for the update of extension points</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <ol>
+                        <li value="1">Select the <span class="important">Actions</span> unit.</li>
+                        <li value="2">Select <span class="gui">New &gt; Object</span> from the popup menu.</li>
+                        <li value="3">Click <span class="gui">Object &gt; Action &gt; SelectionAction &gt; SequenceSelectionAction</span>.</li>
+                        <li value="4">Confirm with <span class="gui">[Finish]</span>.</li>
+                        <li value="5">Specify the <span class="important">UpdateExtensionPointsAction</span> name.</li>
+                        <li value="6">Specify <span class="important">Update Extension Points</span> in the <span class="gui">Displayed Name</span> field.</li>
+                        <li value="7">Switch to the <span class="gui">Methods</span> editor page.</li>
+                        <li value="8">Click <img src="../Pictures/button_finder.png" alt="" />.</li>
+                        <li value="9">Click <span class="gui">Object &gt; Command &gt; FrameworkCommand &gt; StartFormulaCacheCommand</span>.</li>
+                        <li value="10">Confirm with <span class="gui">[Finish]</span>.</li>
+                        <li value="11">Repeat Steps 8 to 10 with <span class="gui">Object &gt; Command &gt; FrameworkCommand &gt; UpdateExtensionsCommand</span>.</li>
+                        <li value="12">Repeat Steps 8 to 10 with <span class="gui">Object &gt; Command &gt; FrameworkCommand &gt; StopFormulaCacheCommand</span>.</li>
+                        <li value="13">Repeat Steps 8 to 10 with <span class="gui">Object &gt; Command &gt; FrameworkCommand &gt; SaveObjectCommand</span>.</li>
+                        <li value="14">Switch to the <span class="gui">Attributes</span> editor page.</li>
+                        <li value="15">Specify <span class="important">Component</span> in the <span class="gui">Selected object</span> field.</li>
+                        <li value="16">Save the SequenceSelectionAction.</li>
+                    </ol>
+                    <p>This completes the creation of the SequenceSelectionAction for updating the extension points. With this SequenceSelectionAction the framework commands for starting the formula cache, the update of extension points, stopping the formula cache and the subsequent saving are performed consecutively.</p>
+                </div>
+            </div>
+            <p>The created actions are then linked with interfaces in a small user interface. The user interface (Form-UI) is created for the component <span class="important">Feeder</span> and therefore is available directly after the creation of a project.</p>
+            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating Form-UI for Feeder</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>With the user interface you can not only set up the interfaces for the import of the library but you can also make the option for checking workpiece available for selection.</p>
+                    <ol>
+                        <li value="1">Open the <span class="important">Feeder</span> component.</li>
+                        <li value="2">Change to the <span class="gui">UI configuration</span> editor page.</li>
+                        <li value="3">Change to the <span class="gui">Source</span> tab.</li>
+                    </ol>
+                    <ol data-mc-continue="true">
+                        <li value="4">In the <span class="codetext">&lt;form&gt;</span> tag specify the <span class="codetext">Feeder</span> title and the ID <span class="codetext">feeder</span>.</li>
+                        <li value="5">Insert the following lines after the opening tag <span class="codetext">&lt;form&gt;</span>:</li>
+                    </ol>
+                    <p><pre xml:space="preserve"><code language="markup">&lt;line&gt;
+	&lt;label font="Arial-20-bold"&gt;Feeder configuration&lt;/label&gt;
+&lt;/line&gt;
+&lt;line&gt;
+	&lt;gap hSizePx="10"/&gt;
+&lt;/line&gt;
+&lt;line&gt;
+	&lt;input receiver="=parameter('Option_Inspect_available')" type="check" &gt;&lt;/input&gt;
+	&lt;label font="Arial-12"&gt;Add workpiece inspection&lt;/label&gt;
+&lt;/line&gt;
+&lt;line&gt;
+	&lt;gap hSizePx="10"/&gt;
+&lt;/line&gt;
+&lt;action name="T_Mechatronic_ModularSystem.Actions.ImportLibCommand" 
+	arguments="=List{this.mroot.parent, List{'T_ECAD_P8'}}" 
+	type="button" 
+	text="Import ECAD P8 Discipline"&gt;
+&lt;/action&gt;
+&lt;action name="T_Mechatronic_ModularSystem.Actions.UpdateExtensionPointsAction" 
+	arguments="=mroot" 
+	type="button" 
+	text="Update extensions"&gt;
+&lt;/action&gt;</code></pre>
+                    </p>
+                    <p>Through the first three rows the user interface receives the <span class="important">Feeder configuration</span> header.</p>
+                    <p>The header is followed by three rows to create space.</p>
+                    <p>Below that is a row with a check box, followed by a text. The check box influences the <span class="important">Option_Inspect_available</span> parameter that amongst others is used for the Disabler of the function groups <span class="important">Inspect</span> and <span class="important">Discard</span>.</p>
+                    <p>Three further lines follow to create space to the buttons.</p>
+                    <p>This is followed by two buttons that can each perform actions.</p>
+                    <p>The first button triggers the action to import the library <span class="important">T_ECAD_P8</span>.</p>
+                    <p>With the second button the action for updating the extension points is performed.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Setting the default value for the Option_Inspect_available parameter</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>The check box for the <span class="important">Option_Inspect_available</span> parameter in the user interface should always have a defined state at the beginning of the configuration. In this case the check box should not be selected, so that the value is <span class="codetext">false</span>.</p>
+                    <ol>
+                        <li value="1">Open the <span class="important">Option_Inspect_available</span> parameter.</li>
+                        <li value="2">Switch to the <span class="gui">Formula</span> editor page.</li>
+                        <li value="3">Enter <span class="codetext">false</span> in the <span class="gui">Value</span> field.</li>
+                        <li value="4">Save the parameter.</li>
+                    </ol>
+                    <p>This value is now specified as the default value. As a result the <span class="important">Add workpiece inspection</span> option will not be selected when opening the user interface for the first time.</p>
+                </div>
+            </div>
+            <p class="Seealso">See also:</p>
+            <p class="Link_Seealso"><a href="refformui_r_formui.htm" class="MCXref xref" xrefformat="{para}">Form-UI</a>
+            </p>
+            <p class="Link_Seealso"><a href="refformui_r_action.htm" class="MCXref xref" xrefformat="{para}">action</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

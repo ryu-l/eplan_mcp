@@ -1,0 +1,40 @@
+# InternalString Property
+
+InternalString Property
+
+Sets internal string representation with format validation.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public string InternalString {get; set;}
+```
+```
+
+```
+```
+public:
+property String^ InternalString {
+   String^ get();
+   void set (    String^ value);
+}
+```
+```
+
+See Also
+
+#### Reference
+
+[MultiLangString Class](Eplan.EplApi.Baseu~Eplan.EplApi.Base.MultiLangString.html)
+  
+[MultiLangString Members](Eplan.EplApi.Baseu~Eplan.EplApi.Base.MultiLangString_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.Baseu~Eplan.EplApi.Base.MultiLangString~InternalString)

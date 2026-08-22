@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Generates an EDZ file of the specified project components of the WiringDiagram type. The name of the created EDZ file is returned. In addition the pat..." /><title>ECAD.GenerateEdzForEcadProjectCommand</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refcommands_r_ecad_generateedzforecadprojectcommand.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor241"></a>
+            <MadCap:concept term="Referenz;EPLAN Electric P8" /><a name="kanchor159"></a>
+            <h2>ECAD.GenerateEdzForEcadProjectCommand</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Generates an EDZ file of the specified project components of the <span class="codetext">WiringDiagram</span> type. The name of the created EDZ file is returned. In addition the path to the C# script has to be specified in a parameter. The name of this parameters has to be specified in the model variable <a href="admin_r_modelvar_p8scriptargs.htm" class="MCXref xref">Parameter name for C# script arguments</a>.</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Argument</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>root</td>
+                        <td>Root</td>
+                        <td>Project component, subcomponents of the <span class="codetext">WiringDiagram</span> type thereof are collected.</td>
+                    </tr>
+                    <tr>
+                        <td>partXmlFilepath</td>
+                        <td><a href="glossary_o_string.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">String</a>
+                        </td>
+                        <td>File path to the parts description (<span class="codetext">part.xml</span>).</td>
+                    </tr>
+                    <tr>
+                        <td>pictureFilepath</td>
+                        <td>String</td>
+                        <td>File path to the parts image.</td>
+                    </tr>
+                    <tr>
+                        <td>companyCode</td>
+                        <td>String</td>
+                        <td>Company name. The specification may not be empty or zero. Is used to form an internal path specification. May only contain characters that are allowed for Windows folder names.</td>
+                    </tr>
+                    <tr>
+                        <td>targetFolderName</td>
+                        <td>String</td>
+                        <td>Name of the target directory, where the created EDZ file is stored.<br />If a name or a relative path is specified, the created files are stored in the project directory.<br />An absolute name can be specified alternatively.<br /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The following method creates an EDZ file from which a macro is created during importing to P8. The required values for the file path to the part image (pictureFilePath), the file path to the part description (partXmlFilePath) and the company code (companyCode) have to be specified via parameters in the model. The names of the parameters have to be specified in the model variables (see <a href="admin_r_modelvar_eplandatazipgeneration.htm" class="MCXref xref">Eplan Data Zip (.edz) generation</a>)!</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Argument</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>root</td>
+                        <td>Root</td>
+                        <td>Project component, subcomponents of the <span class="codetext">WiringDiagram</span> type thereof are collected.</td>
+                    </tr>
+                    <tr>
+                        <td>targetFolderName</td>
+                        <td>String</td>
+                        <td>Name of the target directory, where the created EDZ file is stored.<br />If a name or a relative path is specified, the created files are stored in the project directory.<br />An absolute name can be specified alternatively.<br /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>In the following method the file path to the part description can be entered as an absolute path. The specified absolute path is scanned for the occurrence of the subfolder <span class="codetext">\partxml</span>. The directory structure below this folder is subsequently used as a relative path.</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Argument</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>wiringDiagram</td>
+                        <td>WiringDiagram</td>
+                        <td>ECAD component (e.g. page) in the ECAD-structure for which the schematic diagram should be created.</td>
+                    </tr>
+                    <tr>
+                        <td>partXmlFilepath</td>
+                        <td>String</td>
+                        <td>File path to the parts description (<span class="codetext">part.xml</span>).</td>
+                    </tr>
+                    <tr>
+                        <td>pictureFilepath</td>
+                        <td>String</td>
+                        <td>File path to the parts image.</td>
+                    </tr>
+                    <tr>
+                        <td>companyCode</td>
+                        <td>String</td>
+                        <td>Company name. This specification may not be empty or zero. Is used to form an internal path specification. May only contain characters that are allowed for Windows folder names.</td>
+                    </tr>
+                    <tr>
+                        <td>targetFolderName</td>
+                        <td>String</td>
+                        <td>Name of the target directory, where the created EDZ file is stored.<br />If a name or a relative path is specified, the created files are stored in the project directory.<br />An absolute name can be specified alternatively.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The following method creates an EDZ file from which a macro is created during importing to P8. The required values for the file path to the part image (pictureFilePath), the file path to the part description (partXmlFilePath) and the company code (companyCode) have to be specified via parameters in the model. The names of the parameters have to be specified in the model variables (see <a href="admin_r_modelvar_eplandatazipgeneration.htm" class="MCXref xref">Eplan Data Zip (.edz) generation</a>)!</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Argument</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>wiringDiagram</td>
+                        <td>WiringDiagram</td>
+                        <td>ECAD component (e.g. page) in the ECAD-structure for which the schematic diagram should be created.</td>
+                    </tr>
+                    <tr>
+                        <td>targetFolderName</td>
+                        <td>String</td>
+                        <td>Name of the target directory, where the created EDZ file is stored.<br />If a name or a relative path is specified, the created files are stored in the project directory.<br />An absolute name can be specified alternatively.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example for partXmlFilepath:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p>Path specification for partXmlFilepath:</p><pre xml:space="preserve"><code class="language-markup">c:/temp/edz/data/partxml/myParts/part.xml</code></pre>
+                        <p>Resulting path specification:</p><pre xml:space="preserve"><code class="language-markup">myParts/part.xml</code></pre>
+                    </div>
+                </div>
+            </div>
+            <p>The file path to the part image can be specified as an absolute path. The specified absolute path is scanned for the occurrence of the subfolder <span class="codetext">\picture</span>. The directory structure below this folder is subsequently used as a relative path.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example for pictureFilepath:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p>Path specification for pictureFilepath:</p><pre xml:space="preserve"><code class="language-markup">c:/temp/edz/data/pictures/myPictures/part.jpg</code></pre>
+                        <p>Resulting path specification:</p><pre xml:space="preserve"><code class="language-markup">myPictures/part.jpg</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example in formula:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody"><pre xml:space="preserve"><code class="language-javascript">=type('ECAD.GenerateEdzForEcadProjetCommand').execute(mroot,
+	'c:\\parts\\descriptions\sensor001_part.xml',
+	'c:\\parts\\images\\sensor001.jpg','c:\\edz')</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example in Form-UI:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-javascript">&lt;action name="ECAD.GenerateEdzForEcadProjetCommand"
+	arguments="=List{mroot,
+	'c:\\parts\\descriptions\sensor001_part.xml',
+	'c:\\parts\\images\\sensor001.jpg','c:\\edz'}"
+	type="link"&gt;Create EDZ file&lt;/action&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example in scripting:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody"><pre xml:space="preserve">
+<code class="language-javascript">import com.mind8.mechatronic.skill.eos.TypeClass;
+	TypeClass.findType(self.getUnitOfWork(),
+	"ECAD.GenerateEdzForEcadProjetCommand").perform
+	("execute",mroot,"c:\\parts\\descriptions\sensor001_part.xml",
+	"c:\\parts\\images\\sensor001.jpg","c:\\edz");</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

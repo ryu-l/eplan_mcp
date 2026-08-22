@@ -1,0 +1,30 @@
+# FUNC_COILINDEX Property (Placement3DPropertyList)
+
+FUNC\_COILINDEX Property (Placement3DPropertyList)
+
+Contact / coil index # 20047. This property isn't indexed.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_COILINDEX(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_COILINDEX(Int32).html) | Contact / coil index # 20047. This property isn't indexed. |
+| [FUNC\_COILINDEX](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_COILINDEX().html) | Contact / coil index # 20047. |
+
+Remarks
+
+Specifies the index of the coil or contact. This allows the contacts to be assigned to the appropriate coils in a contactor with multiple coils.
+
+See Also
+
+#### Reference
+
+[Placement3DPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList.html)
+  
+[Placement3DPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_COILINDEX)

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Before you can define Word components, it is necessary to create the documents required for this purpose." /><title>Splitting the target file into Word resources</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/tutword_h_create_word_components_2.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1403"></a>
+            <MadCap:concept term="Tutorial" /><a name="aanchor1404"></a>
+            <MadCap:concept term="Office" />
+            <h2>Splitting the target file into Word resources</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Before you can define Word components, it is necessary to create the documents required for this purpose.</p>
+            <p>The predefined target file has to be split up into a main document and several fragment documents in a way that allows the target file to be recreated from them.</p>
+            <p>
+                <img src="../Pictures/tutorial_word_ressourcen.png" alt="" />
+            </p>
+            <ol>
+                <li value="1">Open <span class="codetext">ListOfComponents .docx</span> located in the <span class="codetext">Tutorial\Word</span> sub-folder in the installation folder.</li>
+                <li value="2">Replace the heading <span class="important">List of Components</span> with <span class="codetext">#(Heading)</span> on the first page.</li>
+            </ol>
+            <p>The number string <span class="codetext">#{</span> instructs the parser to treat the following text up to character <span class="codetext">}</span> as the name of a parameter and to replace with the parameter value.</p>
+            <ol data-mc-continue="true">
+                <li value="3">Also replace the image with <span class="codetext">#(Image:Logo)</span> on the first page.</li>
+            </ol>
+            <p>The parameter type is specified here as <span class="codetext">Image</span> in front of the name of a parameter. Without this information <span class="codetext">String</span> would be used as the type and, as a result, no image returned.</p>
+            <p>Do not make any changes to the table of contents.</p>
+            <ol data-mc-continue="true">
+                <li value="4">Delete everything below the second heading <span class="important">1.1 Actuators</span> on the third page and replace Actuators with <span class="codetext">(*{LOOP:dos}*)(*{Content}*)(*{END_LOOP}*)</span>.</li>
+            </ol>
+            <p>The line contains three commands in the form of <span class="codetext">(*{â¦}*)</span>. The first and last commands act as a loop construct that iterates over all directly contained discipline components <span class="codetext">(dos = "<b>d</b>iscipline <b>o</b>bject<b>s</b>")</span>. The middle command is responsible for their content.</p>
+            <ol data-mc-continue="true">
+                <li value="5">Save the open Word file as <span class="codetext">Body.docx</span> in the folder <span class="codetext">resources\Office\Word</span>.</li>
+                <li value="6">Repeat the first step.</li>
+                <li value="7">Delete pages 1 and 2, the heading <span class="important">1 Actuators and Sensors</span>, the heading <span class="important">1.2 Sensors</span>, and the <span class="important">Sensors</span> table.</li>
+                <li value="8">Replace the heading <span class="important">1.1 Actuators</span> with <span class="codetext">#{Heading}</span>.</li>
+                <li value="9">Replace the word <span class="important">Actuators</span> with <span class="codetext">#{Heading}</span> in the table header.</li>
+                <li value="10">Replace the image for <span class="important">actuator ()</span> with <span class="codetext">(*{LOOP:dos}*)</span> in the first row, the image for <span class="important">actuator ()</span> with <span class="codetext">(*{Content}*)</span> in the second row, and the image for <span class="important">actuator ()</span> with <span class="codetext">(*{END_LOOP}*)</span> in the third row in the <span class="gui">Symbol</span> column.</li>
+                <li value="11">Delete all table rows below this (positions 4 to 7).</li>
+                <li value="12">Delete the contents from the table cells below <span class="important">Position</span> and <span class="important">Description</span>.</li>
+                <li value="13">Add a second blank row below the table.</li>
+                <li value="14">Save the open Word file as <span class="codetext">Chapter.docx</span>.</li>
+                <li value="15">Repeat the first step.</li>
+                <li value="16">Delete pages 1 and 2, all headings, and the bottom table.</li>
+                <li value="17">Delete everything except for the final row in the remaining table.</li>
+                <li value="18">Replace the image for <span class="important">actuator ()</span> with the <span class="codetext">#{Image:Icon}</span> parameter, the number of the position with the <span class="codetext">#{Pos}</span> parameter, and the descriptor with the <span class="codetext">#{Descriptor}</span> parameter in the remaining table row.</li>
+                <li value="19">Save the open Word file as <span class="codetext">Row.docx</span>.</li>
+            </ol>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

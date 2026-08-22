@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="A &lt;fileSelectionForm&gt; is used for file selection. The file selection window is called by means of the &lt;open&gt; element and the ID of the win..." /><title>fileSelectionForm</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refformui_r_fileselectionform.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor2094"></a>
+            <MadCap:concept term="Form-UI" /><a name="aanchor2095"></a>
+            <MadCap:concept term="Referenz" /><a name="kanchor1445"></a>
+            <h2>fileSelectionForm</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>A <span class="codetext">&lt;fileSelectionForm&gt;</span> is used for file selection. The file selection window is called by means of the <span class="codetext">&lt;open&gt;</span> element and the ID of the window. The selected file can be processed directly by a script or the absolute name can be passed to a parameter.</p>
+            <p>The title (see <b>1</b> in the figure <span class="important">File selection window</span>) and the selectable file type (see <span class="gui">2</span> in <span class="important">File selection window</span>) can be defined for the file selection window.</p>
+            <p>The fileSelectionForm is called by using the element <a href="refformui_r_open.htm" class="MCXref xref" xrefformat="{para}">open</a> from another Form-UI or from a Graph2D diagram.</p>
+            <p>The representation of the file selection window differ depending on whether it is started in a desktop or Web EEC installation.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">In the case of a desktop installation a Windows standard dialog is displayed that supports standard functions, for example file filters.</li>
+                <li class="Listitem_Normal" value="2">In the case of a Web EEC installation a window is displayed that supports uploading of the file to be selected. In it the selected file is listed (<b>2</b> in the following figure) and the upload to the server is visualized with a progress bar (<b>3</b> in the following figure) and a status display (<b>1</b> in the following figure). The actual file selection takes place as an intermediate step in a Windows standard dialog that is started via a button (<b>4</b> in the following figure).</li>
+            </ul>
+            <p>
+                <img src="../Pictures/form-ui_fileselectionform_webeec1.png" alt="" />
+            </p>
+            <p>If the <span class="gui">[Cancel]</span> button is not to execute any action, it need not be explicitly shown in the <span class="codetext">fileButtonArea</span>. An action should always be provided for the <span class="gui">[OK]</span> button.</p>
+            <p>For the action that is triggered upon actuating a button, no argument need be provided in the list of arguments for the <span class="codetext">run()</span> method for the selected file path (see figure <span class="important">File path for action</span>). EEC will append the absolute path to the selected file as the last argument before the <span class="codetext">run()</span> method of the action is called.</p>
+            <p>It is merely ensured that the transferred filename is the same as the one that is returned by <span class="codetext">&lt;fileSelectionForm&gt;</span>.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">In a Client/Server environment, the path of the client side is replaced by a temporary path on the server side - for example, the client-side <span class="codetext">c:\test\BOM.csv</span> becomes, on the server side, <span class="codetext">c:\tmp\33568991\BOM.csv</span>.</p>
+            </div>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">In a Web EEC environment an upload file is stored in a temporary file below <span class="codetext">&lt;Tomcat_Installation Path&gt;\temp</span>. This folder is called <span class="codetext">fileupload_&lt;Session_Number&gt;</span>.</p>
+            </div>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">The associated temporary folder is deleted by terminating or exiting a session. The data in the temporary folder are then no longer available for any generations of target data possibly started beforehand.</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute name</th>
+                        <th>Usage</th>
+                        <th>Attribute values</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                        <td>required</td>
+                        <td>any</td>
+                        <td />
+                        <td>Unique ID, which is referred to as reference</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>required</td>
+                        <td>any</td>
+                        <td />
+                        <td>Name of the Form-UI</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Allowed sub-elements</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="refformui_r_filebuttonarea.htm" class="MCXref xref" xrefformat="{para}">fileButtonArea</a> </td>
+                        <td>0..1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refformui_r_filefilters.htm" class="MCXref xref" xrefformat="{para}">fileFilters</a> (not for Web EEC)</td>
+                        <td>0..1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refformui_r_pathlocation.htm" class="MCXref xref" xrefformat="{para}">pathLocation</a> (not for Web EEC)</td>
+                        <td>0..1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="tableseparator">
+                <br clear="all" />
+            </p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;form id="openSelectFileForm" title="Open file window"&gt;
+	&lt;open ref="FileSelectionFormUI" type="link" receiver="=this" &gt;Open file selection window &lt;/open&gt;
+&lt;/form&gt;
+&lt;fileSelectionForm id="FileSelectionFormUI" title="Open File" &gt;
+	&lt;pathLocation text="C:\" /&gt;
+	&lt;fileFilters&gt;
+		&lt;ext name="*.csv" /&gt;
+		&lt;ext name="*.mdb" /&gt;
+	&lt;/fileFilters&gt;
+	&lt;fileButtonArea&gt;
+		&lt;okButton&gt;
+			&lt;performEvent
+				name="Documentation_UI_Configuration.ProjectLibrary.HelpObjects.ImportFileDataAction"
+				arguments="=List{$selectionReceiver}" /&gt;
+		&lt;/okButton&gt;
+		&lt;cancelButton&gt;&lt;/cancelButton&gt;
+	&lt;/fileButtonArea&gt;
+&lt;/fileSelectionForm&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Result:</p>
+                        <p>
+                            <img src="../Pictures/form-ui_fileselectionform.png" alt="" />
+                        </p>
+                        <p>
+                            <img src="../Pictures/form-ui_fileselectionform_action.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

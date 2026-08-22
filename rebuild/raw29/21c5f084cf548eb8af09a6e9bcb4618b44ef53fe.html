@@ -1,0 +1,172 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Shadow Copying</title>
+    <meta name="Title" content="Shadow Copying"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n49","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="Since version 2.6, EPLAN API assemblies are shadow copied, i.e. during registration, they are stored into a temporary folder, and loaded from there (See API Help: Shadow Copying API Assemblies)." />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="e9aedb05-39b9-4a5f-a40d-1c5f00f2d9b1"/>
+    <meta name="Microsoft.Help.TocParent" content="2cb1462d-8bcf-45cd-88b2-b41418ffb5a9"/>
+    <meta name="Microsoft.Help.TocOrder" content="4"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_Framework.html">API Framework</a>
+ / <a href="Addons.html">Addons</a>
+ / Shadow Copying</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Shadow Copying</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>Since version 2.6, EPLAN API assemblies are shadow copied, i.e. during registration, they are stored into a temporary folder, and loaded from there (See API Help: Shadow Copying API Assemblies).</p>
+
+<p>This concerns both add-ons and add-ins.</p>
+
+<p>In case of addons, the whole addon's bin directory with subdirectories will be copied to the user application roaming directory (%appdata%\EPLAN\ShadowCopyAssemblies\Process-ID\Addon-Name).&nbsp;</p>
+
+<p>Example :</p>
+
+<p>&nbsp;</p>
+
+<p><img border="0" alt="" src="images/shadow_copying.png" />&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Application roaming directory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Process-ID</p>
+
+<p>So all files (*.dlls, *.xml etc.) and all bin subdirectories (language subdirectories etc.) are also copied. This is done when EPLAN starts and an addon is registered or when an addon is manually registered from Add-ons dialogue.&nbsp;</p>
+
+<p>Eplan will load addon's assemblies from the shadow directory and not from the original addon directory. So an addon could be updated without the need to stop all Eplan instances using the addon.</p>
+
+<p>&nbsp;</p>
+
+<h3><a name="_Toc531170121">What EPLAN does</a>&nbsp;?</h3>
+
+<p>At any start of EPLAN, the registry or the path for server add-ons is scanned for new add-ons. The install.xmlis read and the following things are done:</p>
+
+<p>Â·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Does this addon fit to the main version?</p>
+
+<p>Â·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Is the correct license option booked?</p>
+
+<p>Â·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Is the version correct?</p>
+
+<p>When everything is done so far EPLAN then:</p>
+
+<p>Â·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; registers the new addon:</p>
+
+<p>Â·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Read all *.xmlfiles from the CFGfolder. The settings are copied to the settings of the main version.</p>
+
+<p>Â·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Read the eplset&lt;applicationmodifer&gt;.xml: All binaries defined there are loaded now.</p>
+
+<p>Â·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Load the API modules.</p>
+
+<p>Â·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Register the API references.</p>
+
+<p>Â·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Register the scripts.</p>
+
+<p>Â·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copy the base data of the add-on to the base data of EPLAN.</p>
+
+<p></p>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: ShadowCopying">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

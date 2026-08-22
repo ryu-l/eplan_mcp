@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|EPLAN Pro Panel|3D Mounting Layout|Proceed as Follows|Editing the Device Logic">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="You can import 3D graphic data from external CAD systems to create your own items and 3D macros. The item data must be available in the common interna..." /><title>Importing 3D Graphic Data</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/cabinetgui_h_3dgrafikimportieren.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor765"></a>
+            <MadCap:concept term="Handlung;EPLAN Plattform;EPLAN Pro Panel" /><a name="kanchor857"></a><a name="kanchor858"></a><a name="3dGrafikimportieren"></a>
+            <h2>Importing 3D Graphic Data</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>You can import 3D graphic data from external CAD systems to <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> your own <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a> and 3D <a href="Glossary_o_makros.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">macros</a>. The item data must be available in the common international STEP format (<span class="important">ST</span>andard for the <span class="important">E</span>xchange of <span class="important">P</span>roduct model data).</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p>EPLAN supports solely the import of STEP files that have been generated with the application protocol AP 203 or AP 214.</p>
+            </div>
+            <p>A new <a href="Glossary_o_bauraum.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">layout space</a> is generated for each import, and is given the name of the imported STEP file. Once imported, the item data can be edited and given functional logic.</p>
+            <p class="Bridgehead">Precondition:</p>
+            <p>You have opened a project. The layout space navigator is open.</p>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Select the following menu items: <![CDATA[               ]]><span class="gui">Layout space &gt; Import (3D graphic)</span>.</li>
+                <li class="Listitem_Step_By_Step" value="2">In the <span class="gui">Open</span> dialog select the desired STEP file.</li>
+                <li class="Listitem_Step_By_Step" value="3">Click <span class="gui">[Open]</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The 3D graphic data will be imported to a new layout space with the description from the name of the STEP file. Function definitions are automatically generated for the individual 3D <a href="Glossary_o_objekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">objects</a>.</li>
+                <li class="Listitem_Step_By_Step" value="4">You can now edit the imported graphic and add functional logic, so that it can be used as an enclosure item, a device or a 3D macro. Use the menu items <span class="gui">Edit &gt; Graphic &gt; Rotate around axis</span>, <span class="gui">Edit &gt; Graphic &gt; Unite</span>, and <span class="gui">Edit &gt; Device logic &gt; Mounting surface / Handle / Mounting point / Placement area &gt; Define</span> to do this.</li>
+            </ol>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">
+                    As well as the <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> <span class="gui">Width</span>, <span class="gui">Height</span>, and <span class="gui">Depth</span>, EPLAN Pro Panel also provides the option of displaying <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a> and items using qualified 3D graphical macros.</p>
+                <p class="Infoblock">In order to create own devices, items and 3D graphics macros, 3D model data in STEP format can be imported into EPLAN Pro Panel. This data, normally provided by <a href="Glossary_o_schaltzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">component</a> manufacturers, is usually based on the component manufacturer's CAD design data, and is often complex and detailed.</p>
+                <p class="Infoblock">Using complex, detailed 3D models as the basis for EPLAN 3D graphical macros is correspondingly RAM-intensive and can have a negative impact on the program's performance when editing <a href="Glossary_o_projekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">projects</a> in EPLAN.</p>
+                <p class="Infoblock">To obtain further information about this topic as well recommendations please contact the EPLAN Support.</p>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="xstepgui_d_einstellungen3dimport.htm">Dialog Settings: 3D import</a>
+            </p>
+            <p class="Link_Seealso"><a href="cabinetgui_h_drehenxyz.htm">Rotating Objects around Axis</a>
+            </p>
+            <p class="Link_Seealso"><a href="cabinetgui_h_vereinigen.htm">Uniting Objects in the Layout Space</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

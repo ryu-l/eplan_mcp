@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Working with Connections|Routing Paths (Topology)|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Routing connections are connections with the 'Topology' representation type. When routing, these connections are generated from multi-line c..." /><title>Routing Connections (Topology)</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/cablinggui_k_verlegeverbindungen.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor3257"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor3258"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor3876"></a><a name="kanchor3877"></a>
+            <h2>Routing Connections (Topology)</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Routing <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> are connections with the 'Topology' representation type. When routing, these connections are generated from multi-line connections, you can, however, also define the <a href="Glossary_o_verlegeverbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing connections</a> manually in the <span class="gui">Interconnect devices</span> dialog. Routing is done in two steps: First, routing connections are generated from the multi-line connections (if multi-line connections are highlighted), and then all the routing connections that exist in the selection are routed in the <a href="Glossary_o_topologie.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">topology</a>. For a multi-line connection and /or routing connection to be routed, there must be topology <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> for their sources and targets.</p>
+            <p>A routing connection has all the <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> that a multi-line connection also has, but it also additionally contains information about its routing track. If during a <a href="Glossary_o_verlegen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">route</a> a connection cannot find a routing track through which it can run, a <span class="important">non-routed routing connection</span> is created. Such a connection graphically takes a direct path (i.e., also diagonal) between the source and target, and is represented by default as a thin orange line.</p>
+            <p>Routing connections are copied as well if their targets are highlighted. If both targets of a routing connection are deleted, this will also delete the routing connection.</p>
+            <h3>Routing of single-line cables</h3>
+            <p>Routing connections can also be generated from cables with single-line representation. The resulting routing connections are identified by the property <span class="gui">Topology: Generated single-line</span> (<a href="Glossary_o_id.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ID</a> 20343). Single-line individual connections can, on the other hand, not be routed.</p>
+            <p>The multi-line representation takes precedence during routing. This means:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">If a <a href="Glossary_o_kabel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable</a> has a single-line representation and a multi-line representation, the multi-line representation is used during routing.</li>
+                <li class="Listitem_Normal" value="2">If a multi-line representation is added to a single-line representation, the single-line routing connection is replaced by the multi-line one.</li>
+            </ul>
+            <h3>Protected routing for cables</h3>
+            <p>If the entered length at a cable is to be retained, you can exclude the cable from routing by using the <span class="gui">Protected routing</span> property. If this property is activated at any representation type of a cable, the cable is not taken into consideration during routing in the topology. An entered routing track and the length remain. If the <span class="gui">Protected routing</span> property is activated at any connection of the cable, the complete cable is also not routed.</p>
+            <div class="tip">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/info.png" />Tip:</p>
+                <p class="Infoblock">The <span class="gui">Protected routing</span> property can, for example, be used for prefabricated cables. For prefabricated cable parts (these belong to the product subgroup "Prefabricated") the length is defined via the <span class="gui">Length (prefabricated)</span> property in the parts management. For a <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> selection this length is transferred at the cable in the project. Also activate the <span class="gui">Protected routing</span> property to exclude the cable from routing and thus retain the length.</p>
+            </div>
+            <p>If the cable has already been routed in the topology or if a length was manually entered at the cable, the length of the cable can deviate from the prefabricated length. You can find deviating cable and part data via the <a href="messages_p_007023.htm">007023</a> check run.</p>
+            <h3>Reports</h3>
+            <p>The following <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a> can be generated on the basis of the <a href="Glossary_o_streckennetze.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing path networks</a> and the routed connections:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><span class="important">Topology: Routing path list:</span> Outputs the <a href="Glossary_o_strecken.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing paths</a> with their data and <a href="Glossary_o_verlegepunkte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing points</a>, or the topology functions and their data.</li>
+                <li class="Listitem_Normal" value="2"><span class="important">Topology: Routing path diagram:</span> Outputs for each routing path the connections and cables that pass through it.</li>
+                <li class="Listitem_Normal" value="3"><span class="important">Topology: Routed cables / connections:</span> Outputs all routed cables and connections of the project.</li>
+            </ul>
+            <h3>Settings for routing connections</h3>
+            <p>When generating routing connections, the project <a href="Glossary_o_einstellungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">settings</a> are considered that are generally defined for routing connections in the <a href="Glossary_o_bauraum.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">layout space</a> and the topology (menu path: <span class="gui">Options &gt; Settings &gt; Projects &gt; "Project name" &gt; Routing connections &gt; General</span>). These settings concern the <a href="Glossary_o_verbindungsende_behandlung.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">wire termination processing</a>, the connection filter for the generation of routing path networks and the global extra length for the route.</p>
+            <p>The following special features apply to topology routing connections:</p>
+            <fieldset data-mc-conditions="Conditions.New">
+                <ul>
+                    <li class="Listitem_Normal" value="1"><a href="connectionsettingsgui_r_einstellungenverbindungsende.htm">Tab Wire termination processing</a>
+                        <br />The use of <span class="important">dual sleeves</span> is not evaluated.</li>
+                    <li class="Listitem_Normal" value="2"><a href="connectionsettingsgui_r_einstellungenverbindungsfilter.htm">Tab Connection filter</a>
+                        <br />The filter criteria defined here are available later in the project for selection at the routing paths in the property <span class="gui">Topology: Connection filter</span> (ID 20247).<br />The connection filter is used during routing to control which connections may be routed through which routing track (routing paths and routing points).</li>
+                    <li class="Listitem_Normal" value="3"><a href="connectionsettingsgui_r_einstellungenverlegung.htm">Tab Route</a>
+                        <br />For routing connections in topology, the settings made here are <span class="important">not</span> evaluated.</li>
+                </ul>
+            </fieldset>
+            <h3>Function definitions of the connections</h3>
+            <p>Only connections with the following <a href="Glossary_o_funktionsdefinitionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function definitions</a> are routed:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">Conductor / wire</li>
+                <li class="Listitem_Single_Line" value="2">Connection general</li>
+                <li class="Listitem_Single_Line" value="3">Tube</li>
+                <li class="Listitem_Single_Line" value="4">Pipe</li>
+                <li class="Listitem_Single_Line" value="5">Non-electrical connection</li>
+                <li class="Listitem_Single_Line" value="6">Optical fiber</li>
+                <li class="Listitem_Single_Line" value="7">Process engineering.</li>
+            </ul>
+            <h3>Properties of the routing connections</h3>
+            <p>The following properties are entered at the connection during routing:</p>
+            <table>
+                <tr>
+                    <th style="">
+                        <p class="Tabelle_Text">Property</p>
+                    </th>
+                    <th style="">
+                        <p class="Tabelle_Text">Meaning</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Connection: Length</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Length of the connection from the source to the target. The length is determined from all routing paths and routing points that have been passed through, including lengths from the connection point pattern (X, Y, and Z position and <a href="Glossary_o_zusatzlaenge.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">additional length</a>), connection point lengths of source and target, and a global extra length. The lengths are always rounded off to full mm.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Connection: Connection point length (Source / Target)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Indicates the item length of the connection that is required to connect the source or target item. It is by this value that the connection must project at the last routing point.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Topology: Routing track</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Here, the routing paths passed through from the source to the target with DT are listed. The names are separated by a semicolon.</p>
+                        <p class="Tabelle_Text">An empty <span class="gui">Topology: Routing track</span> property indicates a non-routed connection. If a route is removed, this property will be cleared again.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Topology: Routing track specification</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The <span class="gui">Topology: Routing track specification</span> connection property is filled by modifying the routing track manually. Subsequently, the connection <a href="Glossary_o_filter.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">filters</a> are no longer taken into account for the routing of these connections.</p>
+                        <p class="Tabelle_Text">The routing track specification of a connection has priority. So, for example, if a voltage is not permitted, but the routing track specification of the routing path has been entered, the routing path will be used and routed without regard for any other connection filters.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Wire termination processing source / target</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The intended processing of wire terminations is entered for routing connections according to the settings.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Connection dimension source / target</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">During routing, the <a href="Glossary_o_anschlussmass.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection dimension</a> is carried over from the properties of the topology function (<span class="gui">Connection point pattern</span> tab) to these two properties.</p>
+                    </td>
+                </tr>
+            </table>
+            <p>The following properties are additionally entered on cables:</p>
+            <table>
+                <tr>
+                    <th style="">
+                        <p class="Tabelle_Text">Property</p>
+                    </th>
+                    <th style="">
+                        <p class="Tabelle_Text">Meaning</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Length (prefabricated)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Length of the cable from the source to the target. The length is determined from all routing paths and routing points that have been passed through and from the lengths of the connections. The lengths are always rounded off to full mm.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Cable: Connection point length (Source / Target)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Indicates the item length of the connection that is required to connect the source or target item. It is by this value that the cable must project at the last routing point.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Topology: Routing track</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Here, the routing paths passed through from the source to the target with DT are listed. The names are separated by a semicolon.</p>
+                        <p class="Tabelle_Text">An empty <span class="gui">Topology: Routing track</span> property indicates a non-routed connection. If a route is removed, this property will be cleared again.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">Cable / Conduit: Stripping length (Source / Target)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The <a href="Glossary_o_absetzlaenge.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">stripping length</a> is derived from the longest connector from the entry point into the device, as well as the additional length from the connection point pattern.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="Seealso" data-mc-conditions="Primary.ScreenOnly">See also</p>
+            <p class="Link_Seealso" data-mc-conditions="Primary.ScreenOnly"><a href="cablinggui_k_start.htm">Routing Paths (Topology)</a>
+            </p>
+            <p class="Link_Seealso" data-mc-conditions="Primary.ScreenOnly"><a href="cablinggui_h_verlegen.htm">Routing Connections (Topology)</a>
+            </p>
+            <p class="Link_Seealso" data-mc-conditions="Primary.ScreenOnly"><a href="cablinggui_k_teilstrecke.htm">Consideration of Height Differences during Routing</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

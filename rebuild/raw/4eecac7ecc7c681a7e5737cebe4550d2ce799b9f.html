@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic _Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="7:15:22 AM">
+        <meta name="BuildDate" content="Monday, April 27, 2026">
+        <meta id="productName" name="product" content="Eplan Engineering Configuration">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="de_en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="This command can be used both in the Job Server environment with fileTrigger as well with a normal EEC installation."><title>Engineering.SetParameterValueFromJsonFileCommand</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/Helpsystem_print.gif') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/CopyLink.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VXGSPHHC4V">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-VXGSPHHC4V', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="main_k_home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor1540"></a>
+                                            <madcap:concept term="Referenz"></madcap:concept><a name="kanchor1251"></a>
+                                            <h2>Engineering.SetParameterValueFromJsonFileCommand</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <div class="note">
+                                                <h3>Note</h3>
+                                                <p>This <span class="GlossaryPopup" href="glossary_o_command.htm">command</span> can be used both in the Job Server environment with fileTrigger as well with a normal EEC installation.</p>
+                                            </div>
+                                            <p>Saves the contents of a JSON file as map in a <span class="GlossaryPopup" href="Glossary_o_parameter.htm">parameter</span>. The JSON file is transferred to the Job Server via FileTrigger.</p>
+                                            <p>The following variant of the command writes the contents of the specified JSON file into the parameter whose name is defined in the <span class="GlossaryPopup" href="glossary_o_modell.htm">model</span> variables. The parameter must be contained in the project <span class="GlossaryPopup" href="glossary_o_component.htm">component</span> of the uppermost level.</p>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Argument</th>
+                                                        <th>Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>jsonFile</td>
+                                                        <td><span class="GlossaryPopup" href="glossary_o_string.htm">String</span></td>
+                                                        <td>Name of the JSON file.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table><pre xml:space="preserve" class="language-java"><code>Engineering.SetParameterValueFromJsonCommand("c:\json\parameter.json")</code></pre>
+                                            <p>The following variant of the command writes the contents of the specified JSON file into the parameter whose name is defined in the model variables. The parameter must be included in the specified project component.</p>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Argument</th>
+                                                        <th>Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>jsonFile</td>
+                                                        <td>String</td>
+                                                        <td>Name of the JSON file.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>componentPath</td>
+                                                        <td>String</td>
+                                                        <td>Path to the project component.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table><pre xml:space="preserve" class="language-java"><code>Engineering.SetParameterValueFromJsonCommand("c:\json\parameter.json", "Feeder.Mechatronic.Feeder")</code></pre>
+                                            <p>The following variant of the command writes the contents of the specified JSON file into the parameter whose name is transferred. The parameter must be included in the specified project component.</p>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Argument</th>
+                                                        <th>Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>jsonFile</td>
+                                                        <td>String</td>
+                                                        <td>Name of the JSON file.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>componentPath</td>
+                                                        <td>String</td>
+                                                        <td>Path to the project component.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>parameterName</td>
+                                                        <td>String</td>
+                                                        <td>Name of the parameter.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table><pre xml:space="preserve" class="language-java"><code>Engineering.SetParameterValueFromJsonCommand("c:\json\parameter.json", "Feeder.Mechatronic.Feeder", "MyJsonData")</code></pre>
+                                            <p>The following variant of the command writes the contents of the specified JSON file into the parameter whose name is defined in the model variables. The parameter must be included in the specified project component.</p>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Argument</th>
+                                                        <th>Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>jsonFile</td>
+                                                        <td>String</td>
+                                                        <td>Name of the JSON file.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>obj</td>
+                                                        <td>Object</td>
+                                                        <td>Project or project component.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table><pre xml:space="preserve" class="language-java"><code>Engineering.SetParameterValueFromJsonCommand("c:\json\parameter.json", Â«FeederÂ»)</code></pre>
+                                            <p>The following variant of the command writes the contents of the specified JSON file into the parameter whose name is transferred. The parameter must be included in the specified project component.</p>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Argument</th>
+                                                        <th>Type</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>jsonFile</td>
+                                                        <td>String</td>
+                                                        <td>Name of the JSON file.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>obj</td>
+                                                        <td>Object</td>
+                                                        <td>Project or project component.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>parameterName</td>
+                                                        <td>String</td>
+                                                        <td>Name of the parameter.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table><pre xml:space="preserve" class="language-java"><code>Engineering.SetParameterValueFromJsonCommand("c:\json\parameter.json", Â«FeederÂ», "MyJsonData")</code></pre>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Example application</a></h3></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">The extension of the tutorial model with additional parameters</a></h3></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <ol>
+                                                                <li value="1">Start EEC</li>
+                                                                <li value="2">Import the <span class="GlossaryPopup" href="glossary_o_eox.htm">EOX</span> file <span class="codetext">\install\Tutorial\Mechatronic\Mechatronic.eox</span>.</li>
+                                                                <li value="3">Create a parameter with the name <span class="important">JsonData</span> and the type <span class="important">Map</span> in the <span class="GlossaryPopup" href="glossary_o_unit.htm">unit</span> <span class="important">T_Mechatronic_ModularSystem.Mechatronic.Parameter</span>. The name of the parameter must be identical with the value of the <span class="GlossaryPopup" href="glossary_o_modelvariable.htm">model variable</span> <span class="gui">Name of the parameter which stores the JSON structure</span>.</li>
+                                                                <li value="4">Create the parameter with the name <span class="important">PartName</span> and the type <span class="important">String</span>, as well the name <span class="important">OrderPos</span> and the type <span class="important">Integer</span>.</li>
+                                                                <li value="5">Add the selection values <span class="codetext">1</span>, <span class="codetext">2</span>, <span class="codetext">3</span> and <span class="codetext">4</span> to the parameter <span class="important">OrderPos</span>.</li>
+                                                                <li value="6">Open the <span class="important">Feeder</span> mechatronic component.</li>
+                                                                <li value="7">Enter the three new parameters in the mechatronic component <span class="important">Feeder</span>.</li>
+                                                                <li value="8">Enter the following formula for the <span class="important">PartName</span> parameter:</li>
+                                                            </ol><pre xml:space="preserve" class="language-java"><code>=$JsonData.value('json').value('OrderItems').value(parameter('OrderPos').value().toString).select(x|x.key='PartName').values().asList().at(0)</code></pre>
+                                                            <ol data-mc-continue="true">
+                                                                <li class="li-result" value="9">With that the tutorial model is successfully extended.</li>
+                                                            </ol>
+                                                            <p>Explanation of the formula:</p>
+                                                            <p>The target of the formula is to determine the part name (<span class="important">PartName</span> parameter) for a specified order position (<span class="important">OrderPos</span> parameter) from 1 to 4.</p>
+                                                            <p>The expression <span class="codetext">$JsonData.value('json').value('OrderItems')</span> accesses the read-in JSON data in the <span class="important">JsonData</span> parameter and reduces them to entries within the <span class="codetext">OrderItems</span> map.</p>
+                                                            <p>The expression <span class="codetext">.value(parameter('OrderPos').value().toString)</span> reduces the entries to the contents of the map with the specified number in the parameter <span class="important">OrderPos</span>. Since this parameter is of the type <span class="important">Integer</span>, the value is converted into a string.</p>
+                                                            <p>The expression <span class="codetext">.select(x|x.key='PartName').values().asList().at(0)</span> returns the values for the key <span class="codetext">PartName</span> as a list and takes the first (and in this example only) entry from there.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">The extension of the modular system with an action</a></h3></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <ol>
+                                                                <li value="1">In the mechatronic <span class="GlossaryPopup" href="glossary_o_baukasten.htm">modular system</span> create a new unit called <span class="important">Actions</span>.</li>
+                                                                <li value="2">In the <span class="important">Actions</span> unit create a new action called <span class="important">WriteJsonFileToParameterAction</span>.</li>
+                                                                <li value="3">Add a new method to the action.</li>
+                                                                <li value="4">Change the name of the method from <span class="codetext">New Name</span> to <span class="codetext">run</span>.</li>
+                                                                <li value="5">As the language select the method <span class="codetext">java</span>.</li>
+                                                                <li value="6">Add an argument.</li>
+                                                                <li value="7">Change the name of the argument from <span class="codetext">New Argument</span> to <span class="codetext">jsonFileName</span>.</li>
+                                                                <li value="8">Change the type of the argument from <span class="codetext">Engineering.Object</span> to <span class="codetext">Engineering.String</span>.</li>
+                                                                <li value="9">Enter the following Java code into the <span class="gui">Code</span> field:</li>
+                                                            </ol><pre xml:space="preserve" class="language-java"><code>import com.mind8.mechatronic.skill.*;
+import com.mind8.mechatronic.skill.eos.*;
+import com.mind8.mechatronic.skill.api.IUtilAPI;
+import org.foederal.apache.log4j.SpaceLogger;
+
+logger = SpaceLogger.getSpaceLogger("SetParameterValueFromJsonAction");
+logger.info(this, "Start logging");
+
+TypeClass.findType(self.getUnitOfWork(),"Engineering.SetParameterValueFromJsonFileCommand").perform("execute", jsonFileName);
+self.getUnitOfWork().saveChanges();</code></pre>
+                                                            <ol data-mc-continue="true">
+                                                                <li value="10">Save the action.</li>
+                                                                <li class="li-result" value="11">The <span class="codetext">WriteJsonFileToParameterAction</span> action has been successfully created.</li>
+                                                            </ol>
+                                                            <p>For explanation:</p>
+                                                            <p>The arguments <span class="codetext">execute</span> and <span class="codetext">jsonFileName</span> are transferred to the <span class="codetext">Engineering.SetParameterValueFromJsonFileCommand</span> command. The first argument corresponds to the start method and the second argument transfers the absolute file name of the JSON File. This file name must be transferred as an argument during the action call.</p>
+                                                            <p>During the execution the contents of the JSON structure is written into the parameter, whose name is defined in the model variables (default is <span class="codetext">JsonData</span>). The parameter must be contained in the project component of the top level (this is the <span class="codetext">Feeder</span> component in the tutorial model).</p>
+                                                            <p>This change is saved when the JSON data has been written into the parameter.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">The extension of the tutorial model with a Form-UI</a></h3></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p>The user is to have the following possibilities through a Form-UI:</p>
+                                                            <ul>
+                                                                <li value="1">Import the JSON file on request.</li>
+                                                                <li value="2">Select a value for the order position.</li>
+                                                                <li value="3">Receive the part designation as a result.</li>
+                                                            </ul>
+                                                            <ol>
+                                                                <li value="1">Open the <span class="important">Feeder</span> mechatronic component.</li>
+                                                                <li value="2">Change to the <span class="gui">UI configuration</span> editor.</li>
+                                                                <li value="3">Change to the <span class="gui">Source</span> editor tab.</li>
+                                                                <li value="4">Copy the following configuration in the editor area:</li>
+                                                            </ol><pre xml:space="preserve" class="language-markup"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;uis xmlns="http://www.mind8.com/FormUI"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+	&lt;form title="SetParameterFromJsonFile" id="SetParameterFromJsonFile"&gt;
+		&lt;label&gt;Click the button below to write the content of a JSON file to the parameter 'JsonData'.&lt;/label&gt;
+		&lt;action name="T_Mechatronic_ModularSystem.Actions.WriteJsonFileToParameterAction" arguments="=List{'C:\\JSON\\order.json'}" type="button" &gt;Import JSON File&lt;/action&gt;
+		&lt;table columns="2"&gt;
+			&lt;td&gt;&lt;label&gt;Select an order position&lt;/label&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;input receiver="=parameter('OrderPos')" type="combo"&gt;&lt;/input&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;label text="='Part name'"&gt;&lt;/label&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;label text="=$PartName"&gt;&lt;/label&gt;&lt;/td&gt;
+		&lt;/table&gt;
+	&lt;/form&gt;
+&lt;/uis&gt;</code></pre>
+                                                            <ol data-mc-continue="true">
+                                                                <li value="5">Save the UI configuration.</li>
+                                                                <li class="li-result" value="6">The Form-UI has been successfully created as a result.</li>
+                                                            </ol>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">The creation of the JSON file c:\JSON\order.json</a></h3></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <ol>
+                                                                <li value="1">Start any text editor, for example Notepad++.</li>
+                                                                <li value="2">Insert the following JSON structure:</li>
+                                                            </ol><pre xml:space="preserve" class="language-json"><code>{
+	"defaultJobName":"DemoJob",
+	"params":{
+		"OrderNo":"20211117001",
+		"OrderDate":"20211117"
+	},
+	"json":{
+		"OrderHeader":{
+			"Company":"Eplan",
+			"Address":{
+				"Street":"An der alten Ziegelei 2",
+				"ZipCode":"40789",
+				"City":"Monheim"
+			}
+		},
+		"OrderItems":{
+			"1":{
+				"PartName":"Main switch",
+				"EAN":"001356897563",
+				"Qty":"1"
+			},
+			"2":{
+				"PartName":"Fuse",
+				"EAN":"001452976326",
+				"Qty":"24"
+			},
+			"3":{
+				"PartName":"Terminal",
+				"EAN":"000556894712",
+				"Qty":"48"
+			},
+			"4":{
+				"PartName":"Wire",
+				"EAN":"00059655331",
+				"Qty":"96"
+			}
+		}
+	}
+}</code></pre>
+                                                            <ol data-mc-continue="true">
+                                                                <li value="3">Save this data under the file name <span class="codetext">C:\JSON\order.json</span>.</li>
+                                                                <li class="li-result" value="4">The JSON file has been successfully created as a result.</li>
+                                                            </ol>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">The tutorial model with evaluation of the read-in data structure</a></h3></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <ol>
+                                                                <li value="1">Open the <span class="important">Feeder.Mechatronic.Feeder</span> project component.</li>
+                                                                <li value="2">Open the Form-UI <span class="important">SetParameterFromJsonFile</span>.</li>
+                                                                <li value="3">Click the button <span class="gui">Import JSON File</span>.</li>
+                                                                <li value="4">For <span class="gui">Select an order position</span> select a value of 1 to 4 from the drop-down list.</li>
+                                                                <li class="li-result" value="5">For <span class="important">OrderPos</span> = <span class="codetext">1</span> the <span class="important">Part name</span> = <span class="codetext">Main switch</span> is determined.</li>
+                                                                <li class="li-result" value="6">For <span class="important">OrderPos</span> = <span class="codetext">2</span> the <span class="important">Part name</span> = <span class="codetext">Fuse</span> is determined.</li>
+                                                                <li class="li-result" value="7">For <span class="important">OrderPos</span> = <span class="codetext">3</span> the <span class="important">Part name</span> = <span class="codetext">Terminal</span> is determined.</li>
+                                                                <li class="li-result" value="8">For <span class="important">OrderPos</span> = <span class="codetext">4</span> the <span class="important">Part name</span> = <span class="codetext">Wire</span> is determined.</li>
+                                                            </ol>
+                                                            <p>The example has been created as a result.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="Seealso">More:</p>
+                                            <p class="Link_Seealso"><a href="../../../admin/Content/htm/admin_r_modelvar_commands_json.htm" class="MCXref xref" xrefformat="{paratext}">Parameter name for the JSON structure</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

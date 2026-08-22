@@ -1,0 +1,32 @@
+# FUNC_ARTICLE_MAINTENANCE Property (ProjectPropertyList)
+
+FUNC\_ARTICLE\_MAINTENANCE Property (ProjectPropertyList)
+
+Lubrication / maintenance # 20912.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_ARTICLE\_MAINTENANCE(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~FUNC_ARTICLE_MAINTENANCE(Int32).html) | Lubrication / maintenance # 20912. |
+| [FUNC\_ARTICLE\_MAINTENANCE](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~FUNC_ARTICLE_MAINTENANCE().html) | Lubrication / maintenance # 20912. |
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 50.
+
+Lubrication / maintenance information, e.g. the maintenance interval. Entry is limited to 16 characters. A max. of 50 definitions can be defined using the index.
+
+See Also
+
+#### Reference
+
+[ProjectPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList.html)
+  
+[ProjectPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~FUNC_ARTICLE_MAINTENANCE)

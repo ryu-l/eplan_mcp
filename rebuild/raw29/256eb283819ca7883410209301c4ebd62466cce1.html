@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Using Functions and Devices|Devices|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Complex devices can be realized by means of a device group. Functions from different trades and devices tags can be grouped graphically and logically ..." /><title>Device Groups</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <link href="../../../Ftechnic/Content/css/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/devicelistgui_k_geraetegruppierung.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor3043"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor3044"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor3614"></a>
+            <h2>Device Groups</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Complex <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a> can be realized by means of a device group. Functions from different <a href="Glossary_o_gewerke.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">trades</a> and devices tags can be grouped graphically and logically into one device. This way, for example, Fluid power devices can be grouped with electrical engineering components.</p>
+            <p>The <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> combined as a device group are as a rule saved as a macro. Therefore the creation and ungrouping of device groups is only possible in a <span class="important">macro project</span>.</p>
+            <p>The following criteria can / must be fulfilled to <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> a device group: </p>
+            <ul>
+                <li class="Listitem_Normal" value="1">There must be exactly one main function to which the "multi-line" or "<a href="Glossary_o_ri_fliessbild.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">P&amp;I diagram</a>" representation type is assigned.</li>
+                <li class="Listitem_Normal" value="2">There must be exactly one main function to which the "Pair cross-reference" representation type is assigned. (The configuration of the trade for main or <a href="Glossary_o_nebenfunktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">auxiliary functions</a> doesn't apply here.)</li>
+                <li class="Listitem_Normal" value="3">The "Graphic" representation type can contain any number of components. (These components are included graphically but not logically.)</li>
+                <li class="Listitem_Normal" value="4">It can contain any number of graphical elements (<a href="Glossary_o_leitungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">lines</a>, rectangles, etc.). (These elements are included graphically but not logically.)</li>
+            </ul>
+            <p>In the device navigator, the functions of a device group to which the "Pair cross-reference" representation type has been assigned are displayed below the multi-line main function, even though these functions have other device tags.</p><a name="I_GeraetegruppeErstellen"></a>
+            <h3>Create device groups</h3>
+            <p>Device groups can only be created in a macro project. To group devices, you must first select the functions and graphical elements to be grouped in the schematic. Then select the menu <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a> <span class="gui">Edit &gt; Other &gt; Group device</span>. The program first checks whether the criteria for creating a device group have been fulfilled. If not, a message is displayed indicating this. If the criteria are met, the group is created.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">Please note that the functions grouped into a device group are treated as a group <span class="important">only</span> when the <span class="gui"><a href="gededitgui_h_elementegruppieren.htm#I_GruppierungBeruecksichtigen">Consider groupings</a></span> option has been activated. Otherwise, the functions are not treated as a group but as individual functions with <a href="Glossary_o_aktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">actions</a> like <a href="Glossary_o_blockbearbeitung.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">block editing</a>, deleting, copying, moving, etc.</p>
+            </div>
+            <h3>Ungroup device groups</h3>
+            <p>Device groups can be broken down into their individual components again in a macro project. Before device groups can be ungrouped, the group must be selected in the schematic. Use the menu items <span class="gui">Edit &gt; Other &gt; Ungroup</span> to separate the devices.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">In schematic <a href="Glossary_o_projekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">projects</a> you can use the menu items <span class="gui">Edit &gt; Other &gt; Ungroup</span> to ungroup only the grouping of element groups (i.e. a grouping of graphical elements).</p>
+            </div>
+            <h3>Behavior of device groups in the schematic project</h3>
+            <p>If you move the cursor in the graphical editor over a device group when the <span class="gui">Consider groupings</span> option is activated, all the elements of this group are highlighted in same color.</p>
+            <p>The logical elements of a device group are always considered individually when the <span class="gui">Consider groupings</span> option is activated. This means that you can select the individual functions of a device group (auxiliary functions, <a href="Glossary_o_paarquerverweise.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">pair cross-references</a>) and can open the respective <a href="Glossary_o_eigenschaftendialog.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">property dialog</a>.</p>
+            <p>In a schematic project the functions and graphical elements of a device group cannot be deleted from the device group.</p>
+            <h3>Unplaced device groups</h3>
+            <p>The <a href="Glossary_o_auflegen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">placing</a> of a selected device group can be deleted completely in the schematic project by using the menu items <span class="gui">Edit &gt; Delete placement</span>. It is irrelevant whether the deleting of the placement is carried out in the device navigator or in the graphical editor.</p>
+            <p>Unplaced device groups behave exactly like other <a href="Glossary_o_nicht_platziertefunktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">unplaced functions</a> and can, for example, be placed again from the device navigator as a complete device group in the graphical editor, if the device group was inserted as a device with stored <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> macro.</p>
+            <h3>Block properties for device groups</h3>
+            <p>As concerns the functions of a device group, in <a href="Glossary_o_blockeigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">block properties</a> the <span class="gui">Format</span> dialog comes with the "Device group (further functions)" format element. Using this format element, within one device group you can access the <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> of the other functions from a function of a device group. This way, for example, you can display the parts data or property values of the main function at a function of the device group on an electric engineering schematic page, while the main function with the device group is placed on a page of the "Fluid power schematic" type.</p>
+            <p>In order to access the other functions of a device group via the block properties, in the <span class="gui">Format</span> dialog first select an element from the group "Device group (further functions)" and click the <img src="../Pictures/Gui/ALL/all_stairup_as.png" /> (Next level) button. From the starting function you can go to the other functions of the device group and there select the required parts data (e.g., <span class="gui">Part number</span>) or function properties (e.g., <span class="gui">Function text</span>, <span class="gui">Remark</span>, etc.).</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">If you selected the top format element without index value, the property values for all functions of the device group are output with the exception of the currently selected function. </li>
+                <li class="Listitem_Normal" value="2">If you selected in the child property group the element "Function properties 1", then navigate via the <img src="../Pictures/Gui/ALL/all_stairup_as.png" /> (Next level) button to the <a href="Glossary_o_indirekteeigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">indirect properties</a> of another function of the device group. If at that time you are in the property dialog of an auxiliary function, the values of the main function will be output as a result.</li>
+            </ul>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="devicelistgui_k_start.htm">Devices</a>
+            </p>
+            <p class="Link_Seealso"><a href="xfctdefbrowsergui_h_funktioneneinfuegen.htm">Inserting Functions</a>
+            </p>
+            <p class="Link_Seealso"><a href="blockproperties_k_start.htm">Block Properties</a>
+            </p>
+            <p class="Link_Seealso"><a href="gededitgui_h_elementegruppieren.htm">Working with Element Groups</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

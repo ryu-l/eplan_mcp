@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The first step is to link EPLAN Pro Panel components that represent the mechanical structure of the enclosure to the Feeder mechatronic component." /><title>Installing Pro Panel components in mechatronic components</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/tutpropanel_h_insert_propanel_components_into_mechatronic_components.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1247"></a>
+            <MadCap:concept term="Tutorial" /><a name="aanchor1248"></a>
+            <MadCap:concept term="EPLAN Pro Panel" />
+            <h2>Installing Pro Panel components in mechatronic components</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The first step is to link EPLAN Pro Panel components that represent the mechanical structure of the enclosure to the <span class="important">Feeder</span> mechatronic component.</p>
+            <ol>
+                <li value="1">In <span class="important">T_Mechatronic_ModularSystem</span>, open the <span class="important">Feeder</span> component.</li>
+            </ol>
+            <p>
+                <img src="../Pictures/tutorial_pp_hauptkomponenten_einbauen.png" alt="" />
+            </p>
+            <ol data-mc-continue="true">
+                <li value="2">Drag and drop each of the components into the component area of the editor once: <span class="important">WiringDiagram</span>, <span class="important">LayoutSpace</span>, <span class="important">AE1050_500</span>, <span class="important">MountingPanel</span> and <span class="important">Plane</span>.</li>
+                <li value="3">Drag the <span class="important">KK3060</span> component into the component area twice and rename the resulting components <span class="important">KK3060Left</span> and <span class="important">KK3060Right</span>.</li>
+                <li value="4"><span class="important"></span>Drag the <span class="important">KK3040</span> component into the component area three times and rename the resulting components <span class="important">KK3040Top</span>, <span class="important">KK3040Middle</span> and <span class="important">KK3040Bottom</span>.</li>
+                <li value="5">Drag the <span class="important">TS35_7_5</span> component into the component area twice and rename the resulting components <span class="important">TS35_7_5Top</span> and <span class="important">TS35_7_5Bottom</span>.</li>
+                <li value="6">Drag the <span class="important">PowerSupply_PXC_2938581</span> and <span class="important">PXC_IL_PB_DP</span> components into the component area once.</li>
+                <li value="7">Drag the <span class="important">PxC_IL_24_DI</span> component into the component area five times.</li>
+                <li value="8">Drag the <span class="important">EndBracket_PXC_3022276</span> component into the component area four times.</li>
+                <li value="9">Drag the <span class="important">Terminal_PXC_3031212</span> component into the component area three times and rename the resulting components <span class="important">L1</span>, <span class="important">N</span> and <span class="important">PE</span>.</li>
+            </ol>
+            <p>The arrow above the component area may be used to move the installed components to the correct position.</p>
+            <p class="Precondition">Preliminary considerations regarding the discipline structure:</p>
+            <p>The hierarchy of the Pro Panel components is set by the discipline. To create a discipline-component structure that deviates from the mechatronic structure, the plug-socket principle is applied. This means that the superordinate discipline components receive one or more socket parameters and the subordinate discipline components receive a plug parameter. The socket and plug parameters are assigned values. Discipline components whose plug parameters have the same value as a socket parameter from a different discipline component are installed there.</p>
+            <p>If more than one discipline component has the same value for the plug parameter, the components are installed either in the order in which they are collected in the mechatronic structure, or in the order specified by the value of the <span class="codetext">Position</span> sequence parameter. This tutorial shows how both techniques may be applied.</p>
+            <p class="Precondition">Preliminary considerations regarding the positioning of the discipline components:</p>
+            <p>
+                <img src="../Pictures/2013110601.png" alt="" />
+            </p>
+            <p>The Mounting panel with zero points diagram shows both the null points and the handles for the parts that are positioned using a coordinate.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The zero point (x=0, y=0, z=0) of the mounting plate is located in the lower left corner.</li>
+                <li class="Listitem_Normal" value="2">The handles of the wire ducts and mounting rails are mainly located in the lower left corner. The coordinate specification for the position of these parts refers to the distance from the zero point on the mounting plate to the handle. A part is rotated around this handle (wire ducts<span class="important">KK3060Left</span> and <span class="important">KK3060Right</span> by 90 degrees).</li>
+                <li class="Listitem_Normal" value="3">The electrical parts and terminal clamps are mounted on the mounting rails. The coordinate specification for the position of these parts no longer refers to the distance from the zero point on the mounting plate to the handle, but from the start of the center line on the mounting rail (line mate) to the handle.</li>
+            </ul>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

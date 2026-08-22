@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title>Configuring a Web EEC Server with a public key certificate</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <link href="" rel="stylesheet" type="text/css">
+        <meta name="description" content="For companies with distributed structures, a secure connection to the Web EEC Server by means of a signed public key certificate is usually required. ...">
+<!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VXGSPHHC4V">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-VXGSPHHC4V', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="nscr" id="nscr">
+            <madcap:concept term="Administration" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></madcap:concept>
+			<madcap:keyword term="Public key certificate&quot; xmlns:MadCap=&quot;http://www.madcapsoftware.com/Schemas/MadCap.xsd"></madcap:keyword>
+			<madcap:keyword term="Keystore&quot; xmlns:MadCap=" http://www.madcapsoftware.com/schemas/madcap.xsd"=""></madcap:keyword>
+			<madcap:keyword term="Keytool" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></madcap:keyword>
+			<madcap:keyword term="Certificate Signing Request" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></madcap:keyword>
+			<madcap:keyword term="Certificate" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></madcap:keyword>
+<h2>Configuring a Web EEC Server with a public key certificate</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>For companies with distributed structures, a secure connection to the Web EEC Server by means of a signed public key certificate is usually required. This section describes the creation of the certificate and the configuration of the Web EEC Server with a signed public certificate.</p>
+            <p class="Precondition">Requirements:</p>
+            <ul>
+                <li>The Tomcat web server service is installed on a server.</li>
+                <li>Web EEC and Web EEC server are installed on the same server.</li>
+            </ul>
+            <madcap:dropdown xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                <madcap:dropdownhead>
+<h3><madcap:dropdownhotspot>Creating a keystore and certificate with Java Keytool</madcap:dropdownhotspot></h3>
+                </madcap:dropdownhead>
+                <madcap:dropdownbody>
+                    <ol>
+                        <li>Open a console with administrator rights on the server.</li>
+                        <li>Navigate to the folder of the Java installation where the <span class="codetext">keytool.exe</span> file is located.</li>
+                        <li>Enter the <span class="GlossaryPopup" href="glossary_o_command.htm">command</span> to create the keystore and certificate using the following syntax:</li>
+                        <p><pre xml:space="preserve" class="language-markup"><code>keytool -genkeypair -dname &quot;cn=&lt;TOMCAT-SERVER-URL&gt;, ou=&lt;DEPARTMENT&gt;, o=&lt;COMPANY-NAME&gt;, l=&lt;LOCATION-TOWN&gt;,c=&lt;STATE&gt;&quot; -alias &lt;SERVER-ALIAS-NAME&gt; -validity 712 -keyalg RSA -keysize 4096 -ext ExtendedKeyUsage=serverAuth -ext KeyUsage=digitalSignature,keyEncipherment -ext SubjectAlternativeName=DNS:&lt;TOMCAT-SERVER-URL&gt; -keystore &lt;KEYSTORE-NAME&gt;.jks</code></pre>
+                        
+                        <li>Replace &lt;TOMCAT-SERVER-URL&gt;, &lt;DEPARTMENT&gt;, &lt;COMPANY-NAME&gt;, &lt;LOCATION-TOWN&gt;, &lt;STATE&gt;, &lt;SERVER-ALIAS-NAME&gt;, &lt;TOMCAT-SERVER-URL&gt; and &lt;KEYSTORE-NAME&gt; with your own specifications.</li>
+                        <li>Enter the password for the keystore.</li>
+                        <li class="li-result">The file <span class="codetext">.keystore</span> is located in the same folder as the file <span class="codetext">keytool.exe</span>.</li>
+                    </ol>
+                    <p>Additional information about the command syntax of keytool is available at https://docs.oracle.com/en/java/javase/17/docs/specs/man/keytool.html.</p>
+                    <div class="example">
+<h3>Example</h3>
+                        <p>&lt;TOMCAT-SERVER-URL&gt; = webserver.de.flg.int,</p>
+                        <p>&lt;DEPARTMENT&gt; = development,</p>
+                        <p>&lt;COMPANY-NAME&gt; = EPLAN GmbH &amp; Co. KG,</p>
+                        <p>&lt;LOCATION-TOWN&gt; = Stuttgart,</p>
+                        <p>&lt;STATE&gt; = DE,</p>
+                        <p>&lt;SERVER-ALIAS-NAME&gt; = eec-webserver,</p>
+                        <p>&lt;TOMCAT-SERVER-URL&gt; = webserver.de.flg.int,</p>
+                        <p>&lt;KEYSTORE-NAME&gt; = webserver_keystore</p>
+                        <p>The following command to create the keystore and the certificate results from these specifications:</p>
+                        <p><pre xml:space="preserve" class="language-markup"><code>keytool -genkeypair -dname &quot;cn=webserver.de.flg.int, ou=development, o=EPLAN GmbH &amp; Co. KG, l=Stuttgart,c=DE&quot; -alias eec-webserver -validity 712 -keyalg RSA -keysize 4096 -ext ExtendedKeyUsage=serverAuth -ext KeyUsage=digitalSignature,keyEncipherment -ext SubjectAlternativeName=DNS:webserver.de.flg.int -keystore webserver_keystore.jks</code></pre>
+                        
+                    </div>
+                </madcap:dropdownbody>
+            </madcap:dropdown>
+            <p>A private certificate is now stored in the new keystore.</p>
+            <madcap:dropdown xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                <madcap:dropdownhead>
+<h3><madcap:dropdownhotspot>Creating a Certificate Signing Request (CSR file) with Java Keytool</madcap:dropdownhotspot></h3>
+                </madcap:dropdownhead>
+                <madcap:dropdownbody>
+                    <ol>
+                        <li>Open a console with administrator rights on the server.</li>
+                        <li>Navigate to the folder of the Java installation where the <span class="codetext">keytool.exe</span> file is located.</li>
+                        <li>Enter the command to create the Certificate Signing Request using the following syntax:</li>
+                        <p><pre xml:space="preserve" class="language-markup"><code>keytool -certreq -alias &lt;SERVER-ALIAS-NAME&gt; -keystore &lt;KEYSTORE-NAME&gt;.jks -file &lt;SERVER-ALIAS-NAME&gt;.csr -ext SubjectAlternativeName=DNS:&lt;TOMCAT-SERVER-URL&gt;</code></pre>
+                        
+                        <li>Replace &lt;SERVER-ALIAS-NAME&gt;, &lt;KEYSTORE-NAME&gt; and &lt;TOMCAT-SERVER-URL&gt; with your own specifications.</li>
+                        <li>Enter the password for the keystore.</li>
+                        <li class="li-result">The <span class="codetext">&lt;SERVER-ALIAS-NAME&gt;.csr</span> file is located in the same folder as the <span class="codetext">keytool.exe</span> file.</li>
+                    </ol>
+                </madcap:dropdownbody>
+            </madcap:dropdown>
+            <p>Send the CSR file to the appropriate authorized issuing authority.</p>
+            <p>A signed certificate (CRT file) is returned from the authorized issuing authority.</p>
+            <p>The signed certificate contains a certificate chain. A certificate chain can be recognized when looking at the contents by the fact that it contains at least two blocks that start with <span class="codetext">BEGIN CERTIFICATE</span> and end with <span class="codetext">END CERTIFICATE</span>.</p>
+            <madcap:dropdown xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                <madcap:dropdownhead>
+<h3><madcap:dropdownhotspot>Example of a signed certificate with a certificate chain</madcap:dropdownhotspot></h3>
+                </madcap:dropdownhead>
+                <madcap:dropdownbody>
+                    <p><pre xml:space="preserve" class="language-markup"><code>-----BEGIN CERTIFICATE-----
+MIIGVzCCBT+gAwIBAgITbQA6dz5jedRlyde5UgAAADp3PjANBgkqhkiG9w0BAQsF
+ADBYMRMwEQYKCZImiZPyLGQBGRYDaW50MRMwEQYKCZImiZPyLGQBGRYDZmxnMRIw
+
+	...
+
+2Km685y4zOhD4a2Z4GgZbDiiUscDt/cPFK833PN+fOJG+nM3J/C2Ld3WuFgz2Fkg
+Re4wyba9MPOTZTmRBcgsLDqmLi0zc8Adq4JeNB8Z9x8b/U6YcD95rEwDcA==
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIIXqAYJKoZIhvcNAQcCoIIXmTCCF5UCAQExADCCBm4GCSqGSIb3DQEHAaCCBl8E
+AQsFADBYMRMwEQYKCZImiZPyLGQBGRYDaW50MRMwEQYKCZImiZPyLGQBGRYDZmxn
+
+	...
+
+gUX8SnZNOw/VnA81WXcSg3lZBi2I3QC10bbKFP4S41z+2Cu8T8Q4U4ewu0VeGakt
+l9XPQ8pEDClKmzEA
+-----END CERTIFICATE-----</code></pre>
+                    
+                </madcap:dropdownbody>
+            </madcap:dropdown>
+            <madcap:dropdown xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                <madcap:dropdownhead>
+<h3><madcap:dropdownhotspot>Importing a signed certificate into Keystore</madcap:dropdownhotspot></h3>
+                </madcap:dropdownhead>
+                <madcap:dropdownbody>
+                    <ol>
+                        <li>Open a console with administrator rights on the server.</li>
+                        <li>Navigate to the folder of the Java installation where the files <span class="codetext">keytool.exe</span> and <span class="codetext">&lt;KEYSTORE-NAME&gt;.jks</span> are located.</li>
+                        <li>Enter the command to import the certificate into the keystore with the following syntax:</li>
+                        <p><pre xml:space="preserve" class="language-markup"><code>keytool -importcert -file &lt;CERTIFICATE-NAME&gt;.crt -keystore &lt;KEYSTORE-NAME&gt;.jks -alias &quot;&lt;SERVER-ALIAS-NAME&gt;&quot;</code></pre>
+                        
+                        <li>Replace &lt;CERTIFICATE-NAME&gt;, &lt;KEYSTORE-NAME&gt; and &lt;SERVER-ALIAS-NAME&gt; with your own specifications.</li>
+                        <li>Enter the password for the keystore.</li>
+                        <li class="li-result">The signed certificate is then successfully stored in the keystore.</li>
+                    </ol>
+                </madcap:dropdownbody>
+            </madcap:dropdown>
+            <madcap:dropdown xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                <madcap:dropdownhead>
+<h3><madcap:dropdownhotspot>Configuring the connection with the TomCat server</madcap:dropdownhotspot></h3>
+                </madcap:dropdownhead>
+                <madcap:dropdownbody>
+                    <ol>
+                        <li>Open the <span class="codetext">&lt;Tomcat installation folder&gt;/conf/server.xml</span> file with an editor.</li>
+                        <li>Navigate to the entry for an <span class="GlossaryPopup" href="glossary_o_ssl.htm">SSL</span>/TLS <span class="GlossaryPopup" href="glossary_o_http.htm">HTTP</span>/1.1 Connector.</li>
+                        <li>Replace the existing entry with the following lines:</li>
+                        <p><pre xml:space="preserve" class="language-markup"><code>&lt;!-- HTTPS configuration --&gt;
+	&lt;Connector port=&quot;443&quot; protocol=&quot;HTTP/1.1&quot; SSLEnabled=&quot;true&quot; maxThreads=&quot;150&quot; scheme=&quot;https&quot; secure=&quot;true&quot; keystoreFile=&quot;&lt;PATH-TO-KEYSTORE&gt;/&lt;KEYSTORE-FILENAME&gt;&quot; keystorePass=&quot;&lt;PASSWORD&gt;&quot; clientAuth=&quot;false&quot; sslProtocol=&quot;TLS&quot; &gt;
+	&lt;/Connector&gt;</code></pre>
+                        
+                        <li>Replace &lt;PATH-TO-KEYSTORE&gt;/&lt;KEYSTORE-NAME&gt; and &lt;PASSWORD&gt; with your own specifications.</li>
+                        <li class="li-result">The configuration is complete. Activate the configuration by restarting the Tomcat service.</li>
+                    </ol>
+                </madcap:dropdownbody>
+            </madcap:dropdown>
+            <madcap:dropdown xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                <madcap:dropdownhead>
+<h3><madcap:dropdownhotspot>Activating the configuration</madcap:dropdownhotspot></h3>
+                </madcap:dropdownhead>
+                <madcap:dropdownbody>
+                    <ol>
+                        <li>Open the Task Manager.</li>
+                        <li>Open the <span class="gui">Services</span> tab.</li>
+                        <li>Navigate to the entry <span class="gui">Tomcat9</span>.</li>
+                        <li>From the popup menu for <span class="gui">Tomcat9</span> select the menu item <span class="gui">Restart</span>.</li>
+                        <li class="li-result">The URL for calling up the Web EEC in the browser has changed through the configuration to <a href="https://localhost:443/webec/main">https://&lt;SERVER-ALIAS-NAME&gt;/web/main</a></li>
+                    </ol>
+                    <div class="note">
+<h3>Note</h3>
+                        <p>To use the secure connection you have to restart the browser.</p>
+                    </div>
+                </madcap:dropdownbody>
+            </madcap:dropdown>
+        </div>
+    </body>
+</html>

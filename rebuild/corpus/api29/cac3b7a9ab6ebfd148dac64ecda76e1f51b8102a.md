@@ -1,0 +1,54 @@
+# OnRegister Method (IVerificationBase)
+
+OnRegister Method (IVerificationBase)
+
+Called by EPLAN when the new check is added to the system.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+void OnRegister( 
+   ref string strName,
+   ref int iOrdinal
+)
+```
+```
+
+```
+```
+void OnRegister( 
+   String^% strName,
+   int% iOrdinal
+)
+```
+```
+
+#### Parameters
+
+*strName*
+:   The new check is saved with this name in the system.
+
+*iOrdinal*
+:   Overload level for the new check.
+
+Remarks
+
+It is not allowed to override the functionality of an existing check. Only the message text can be changed as described in [IMessage.OnRegister](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.IMessage~OnRegister.html) It is not possible to overwrite an existing verification. The overload level is just needed for registration purposes.
+
+See Also
+
+#### Reference
+
+[IVerificationBase Interface](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.IVerificationBase.html)
+  
+[IVerificationBase Members](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.IVerificationBase_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.IVerificationBase~OnRegister)

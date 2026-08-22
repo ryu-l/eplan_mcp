@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.stepbystep" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Working with Connections|Cables|Proceed as Follows">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Using the Assign cable connections menu items you have two different possibilities to automatically assign the connections of a cable part to cable co..." /><title>Automatically Assigning Cable Connections</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/cablegui_h_kabelauflegen.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor3299"></a>
+            <MadCap:concept term="Handlung;EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor3931"></a>
+            <h2>Automatically Assigning Cable Connections</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Using the <span class="gui">Assign cable connections</span> menu <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a> you have two different possibilities to automatically assign the <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> of a <a href="Glossary_o_kabelartikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable part</a> to <a href="Glossary_o_kabelverbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable connections</a>:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The <span class="gui">Reassign all</span> option overwrites all connection <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> with the properties from the <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a>. Only the potential type is compared.</li>
+                <li class="Listitem_Normal" value="2">The <span class="gui">Keep existing properties</span> option will retain existing connection properties without changing them. The assignment only occurs when all identifying properties of the <a href="Glossary_o_kabel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable</a> connections match those of the part connection. </li>
+            </ul>
+            <p>The sequence of the cable connections for the selected cables is resorted during this. The sequence of the connections is determined according to the rules for determining source and target of the cable or, in the case of terminals, according to the sequence of the terminals on the terminal strip.</p>
+            <p class="Bridgehead">Preconditions:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">You have selected a cable definition line in the graphical editor or a cable definition in the <span class="gui">Cables - &lt;Project name&gt;</span> navigator dialog.</li>
+                <li class="Listitem_Normal" value="2">The cable is already assigned a part.</li>
+            </ul>
+            <h3>Reassign all cable connections</h3>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Select the <span class="gui">Project data &gt; Cables &gt; Assign cable connections &gt; Reassign all</span> menu items.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The connections of the cable part are assigned to the cable connections, if the potential type matches. Existing properties of the cable connections are overwritten by the part properties.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The data at the <a href="Glossary_o_verbindungsdefinitionspunkte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection definition points</a> are correspondingly updated. Existing data are overwritten. New data are only written to the connection definition points if these are not yet entered at the associated cable definition line / shield.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The organization of <a href="Glossary_o_abschirmungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">shields</a> is retained, but the shield <a href="Glossary_o_bezeichnungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">designations</a> can change.</li>
+            </ol>
+            <div class="tip">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/info.png" />Tip:</p>
+                <p class="Infoblock">The <span class="gui">Assign cable connections</span> menu item can also be found in the popup menu of the navigator dialog <span class="gui">Cables - &lt;Project name&gt;</span> and of the <span class="gui">Edit cable</span> dialog.</p>
+            </div>
+            <h3>Assign cable connections with suitable properties</h3>
+            <p class="Bridgehead">Identifying properties for the assignment:</p>
+            <ul>
+                <li class="Listitem_Value_In_Gui" value="1"><span class="gui">Function definition</span>
+                </li>
+                <li class="Listitem_Value_In_Gui" value="2"><span class="gui">Shield designation (shielded by)</span>
+                </li>
+                <li class="Listitem_Value_In_Gui" value="3"><span class="gui">Pair index</span>
+                </li>
+                <li class="Listitem_Value_In_Gui" value="4"><span class="gui">Potential type</span>
+                </li>
+                <li class="Listitem_Value_In_Gui" value="5"><span class="gui">Color / number</span>
+                </li>
+                <li class="Listitem_Value_In_Gui" value="6"><span class="gui">Cross-section / diameter</span>.</li>
+            </ul>
+            <p class="Bridgehead">Rules for the assignment:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">If a property of the part connection is filled in, the cable connection must have the same value.</li>
+                <li class="Listitem_Normal" value="2">Blank properties of the part connection match any value on the cable connection.</li>
+                <li class="Listitem_Normal" value="3">Shielded <a href="Glossary_o_adern.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">conductors</a> also match non-shielded connections; however, if a matching shielded connection has already been found, it will be assigned preferentially.</li>
+            </ul>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Select the <span class="gui">Project data &gt; Cables &gt; Assign cable connections &gt; Keep existing properties</span> menu items.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The connections of the cable part are assigned to the cable connections if their identifying properties match.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> Existing properties of cable connections are retained, additional properties of the cable part are supplemented.</li>
+            </ol>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The property <span class="gui">Cross-section / diameter</span> has the following values for the part connection and the cable connection:</p>
+                        <table>
+                            <tr>
+                                <th>
+                                    <p class="Tabelle_Text">Part connection</p>
+                                </th>
+                                <th colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">Cable connection</p>
+                                </th>
+                                <th>
+                                    <p class="Tabelle_Text">matching</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="Tabelle_Text">5 mmÂ²</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">5 mmÂ²</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">yes</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="Tabelle_Text">5 mmÂ²</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">2 mmÂ²</p>
+                                </td>
+                                <td>
+                                    <p class="Tabelle_Text">No</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">5 mmÂ²</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">â</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">No</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">â</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">5 mmÂ²</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">yes</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">â</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">2 mmÂ²</p>
+                                </td>
+                                <td colspan="1" rowspan="1">
+                                    <p class="Tabelle_Text">yes</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="cablegui_k_quellezielermittlung.htm">Calculating the Source and Target</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

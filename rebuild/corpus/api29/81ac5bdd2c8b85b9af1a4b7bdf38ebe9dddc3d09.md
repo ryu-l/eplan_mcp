@@ -1,0 +1,50 @@
+# PART_TERMINAL_LASTCHANGE Property
+
+PART\_TERMINAL\_LASTCHANGE Property
+
+Last editor / Modification date (connection point pattern) # 22944.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue PART_TERMINAL_LASTCHANGE {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ PART_TERMINAL_LASTCHANGE {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Last change to the connection point pattern in parts management. Shows the login name of the user who last edited the record along with the date and time of the last change.
+
+See Also
+
+#### Reference
+
+[ConnectionPointsInfoPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPointsInfoPropertyList.html)
+  
+[ConnectionPointsInfoPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPointsInfoPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPointsInfoPropertyList~PART_TERMINAL_LASTCHANGE.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPointsInfoPropertyList~PART_TERMINAL_LASTCHANGE())

@@ -1,0 +1,21 @@
+# P013048: A field named '<x>' does not exist and is therefore ignored
+
+### Cause
+
+An invalid field name was found when importing the bill of materials. A field name in the import file may have been changed manually, and a typographical error has occurred. The result is that, after the import, the data in question is ignored and not displayed in the project as a property of the device.
+
+### Solution
+
+Open the import file with a text or XML editor, and find the character string specified in the message management dialog under message "013048".
+
+Compare the character string with the field name specified in the Help under [Bills of Materials: Export File Fields](partslistgui_k_felderexportdatei.htm). If you find the incorrect field names, correct them. Save the file, then import the bill of materials again.
+
+![](../Pictures/Gui/ALL/example.png)[![Closed](../../Skins/Default/Stylesheets/Images/transparent.gif)Example:](javascript:void(0);)
+
+The field name for the property contains a typographical error. In the field name P\_ARTICLE\_MANUFACTURE="Siemens" the "R" is missing at the end of the field name.
+
+This means that the manufacturer cannot be assigned. The correct assignment is P\_ARTICLE\_MANUFACTURER="Siemens".
+
+![](../Pictures/Gui/ALL/note.png)Note:
+
+Using a new check run (any desired scheme) this module-specific message can be deleted from the message management dialog.

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The element &lt;include&gt; inserts the content of a Form-UI at the place where the element tag &lt;include&gt; is positioned." /><title>include</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refformui_r_include.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1899"></a>
+            <MadCap:concept term="Form-UI" /><a name="aanchor1900"></a>
+            <MadCap:concept term="Referenz" /><a name="kanchor1322"></a>
+            <h2>include</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The element <span class="codetext">&lt;include&gt;</span> inserts the content of a Form-UI at the place where the element tag <span class="codetext">&lt;include&gt;</span> is positioned.</p>
+            <p>If the Form-UI which is inserted with <span class="codetext">&lt;include&gt;</span>, contains buttons, they can be displayed explicitly with the <span class="codetext">showButton</span> attribute.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute name</th>
+                        <th>Usage</th>
+                        <th>Attribute values</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>readonly</td>
+                        <td>optional</td>
+                        <td>true, false</td>
+                        <td />
+                        <td>true = The inserted Form-UI is read-only.<br />false = Input can be written to the inserted Form-UI.</td>
+                    </tr>
+                    <tr>
+                        <td>receiver</td>
+                        <td>required</td>
+                        <td />
+                        <td />
+                        <td>Formula to the object</td>
+                    </tr>
+                    <tr>
+                        <td>ref</td>
+                        <td>required</td>
+                        <td>Form-UI ID</td>
+                        <td />
+                        <td>Shows the Form-UI with the corresponding ID No value has to be supplied for displaying buttons.</td>
+                    </tr>
+                    <tr>
+                        <td>showButtons</td>
+                        <td>optional</td>
+                        <td>Button-IDs</td>
+                        <td />
+                        <td>Shows the buttons with the corresponding IDs</td>
+                    </tr>
+                    <tr>
+                        <td>visible</td>
+                        <td>optional</td>
+                        <td>true, false</td>
+                        <td>true</td>
+                        <td>true = the included element is visible<br />false = the included element is invisible</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Allowed sub-elements</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>none</td>
+                        <td />
+                    </tr>
+                </tbody>
+            </table>
+            <p class="Bridgehead">Example code of a simple nesting:</p>
+            <p>The following example shows a Form-UI, which includes the Form-UI with the <span class="codetext">id="docu"</span> attribute by means of the <span class="codetext">ref="docu"</span> attribute. The Form-UI element <span class="codetext">&lt;instantiation&gt;</span> is represented as a hyperlink.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;group title="Include without buttons" expanded="false"&gt;
+	&lt;loop variable="x" receiver="mosWithPlaceholders"&gt;
+		&lt;instantiation receiver="x"
+			visible="x.isInstanceOf('Engineering.<a href="glossary_o_placeholder.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Placeholder</a>')"
+			type="link" name="='St'+(mc.mos.indexOf(this)+1)+type.name" /&gt;
+		&lt;include visible="not x.isInstanceOf('Engineering.Placeholder')"
+			receiver="x" ref="docu" /&gt;
+	&lt;/loop&gt;
+&lt;/group&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Result:</p>
+                        <p>
+                            <img src="../Pictures/form-ui_include1.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Bridgehead">Example code for a nesting with attribute showButtons:</p>
+            <p>The following example shows the same nesting as the previous example, but the <span class="codetext">showButtons</span> attribute has the value  <span class="codetext">DELETE</span>, which adds a button for each instantiated object, for deleting its self. The Form-UI element <span class="codetext">&lt;instantiation&gt;</span> is represented as a hyperlink with calculated text.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;group title="Include with delete Buttons and calculated text" expanded="false"&gt;
+	&lt;loop variable="x" receiver="mosWithPlaceholders"&gt;
+		&lt;instantiation text="8/2+5" receiver="x"
+			visible="x.isInstanceOf('Engineering.Placeholder')" type="link"
+			name="='St'+(mc.mos.indexOf(this)+1)+type.name" /&gt;
+		&lt;include showButtons="DELETE"
+			visible="not x.isInstanceOf('Engineering.Placeholder')" receiver="x"
+			ref="docu" /&gt;
+	&lt;/loop&gt;
+&lt;/group&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Result:</p>
+                        <p>
+                            <img src="../Pictures/form-ui_include2.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Bridgehead">Example code for a nesting with attribute showButtons:</p>
+            <p>The following example shows the same nesting as the previous example, but the <span class="codetext">showButtons</span> attribute has the value <span class="codetext">MOVE</span>, which adds a button for each instantiated object, for moving its self. The Form-UI element <span class="codetext">&lt;instantiation&gt;</span> is represented as a button.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;group title="Include only with move buttons and type=&amp;quot;button&amp;quot;"
+	expanded="false"&gt;
+	&lt;loop variable="x" receiver="mosWithPlaceholders"&gt;
+		&lt;instantiation receiver="x"
+			visible="x.isInstanceOf('Engineering.Placeholder')" type="button"
+			name="='St'+(mc.mos.indexOf(this)+1)+type.name" /&gt;
+		&lt;include showButtons="MOVE"
+			visible="not x.isInstanceOf('Engineering.Placeholder')" receiver="x"
+			ref="docu" /&gt;
+	&lt;/loop&gt;
+&lt;/group&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Result:</p>
+                        <p>
+                            <img src="../Pictures/form-ui_include3.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Bridgehead">Example code for a nesting with attribute showButtons:</p>
+            <p>The following example shows the same nesting as the previous example, but the <span class="codetext">showButtons</span> attribute has the value  <span class="codetext">DELETE|MOVE</span>, which adds a button for each instantiated object, for deleting and moving its self. The Form-UI element <span class="codetext">&lt;instantiation&gt;</span> is represented as a hyperlink.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;group title="Include with delete and move buttons" expanded="false"&gt;
+	&lt;loop variable="x" receiver="mosWithPlaceholders"&gt;
+	&lt;instantiation
+		receiver="x" visible="x.isInstanceOf('Engineering.Placeholder')"
+		type="link" name="='St'+(mc.mos.indexOf(this)+1)+type.name" /&gt;
+	&lt;include showButtons="DELETE|MOVE"
+		visible="not x.isInstanceOf('Engineering.Placeholder')"
+		receiver="x" ref="docu" /&gt;
+	&lt;/loop&gt;
+&lt;/group&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Result:</p>
+                        <p>
+                            <img src="../Pictures/form-ui_include4.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

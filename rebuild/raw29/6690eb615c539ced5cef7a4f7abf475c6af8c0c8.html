@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The element &lt;pureTable&gt; is used to display large amounts of data in a table. Within a table column only one of the elements &lt;label&gt; or ..." /><title>pureTable</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refformui_r_puretable.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1258"></a>
+            <MadCap:concept term="Referenz" /><a name="aanchor1259"></a>
+            <MadCap:concept term="Form-UI" /><a name="kanchor865"></a>
+            <h2>pureTable</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The element <span class="codetext">&lt;pureTable&gt;</span> is used to display large amounts of data in a table. Within a table column only one of the elements <span class="codetext">&lt;label&gt;</span> or <span class="codetext">&lt;input&gt;</span> are presented. For the <span class="codetext">&lt;input&gt;</span> element only the types <span class="codetext">check</span>, <span class="codetext">text</span> and <span class="codetext">combo</span> are allowed.</p>
+            <p>The attribute <span class="codetext">receiver</span> has to return a list which is used to iterate over in the table.</p>
+            <p class="Precondition">Sorting the content:</p>
+            <p>The content of the table is displayed in order of iterations, but can be sorted in ascending or descending order for each column. Each mouse click on the columns header switches between unsorted, ascending order and descending order. The manually selected value is stored persistently.</p>
+            <p class="Precondition">Content filtering:</p>
+            <p>To limit the amount of viewable content filters can be activated and configured as needed. The following filter types are possible:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">Filter for free text.</li>
+                <li class="Listitem_Normal" value="2">Filter for selection of existing cell content out of a drop-down list.</li>
+            </ul>
+            <p class="Precondition">Filter for free text:</p>
+            <p>If this filter is configured, a row underneath the header row appears, where filter text may be input for each column. Predefined filter are also displayed underneath the header row and may be overwritten.</p>
+            <p>If the content is limited by a predefined filter and the filter is changed afterwards to show more content, a scrollbar appears on the right border of the table.</p>
+            <p>The manually entered value is stored persistently.</p>
+            <p class="Precondition">Filter for selection of existing cell content out of a drop-down list:</p>
+            <p>If this filter is configured, a row underneath the header row appears, containing a drop-down list box for each column. The drop-down list boxes are filled-up with values of the respective column. The selected value of a drop-down list box limits the shown number of table rows.</p>
+            <p>A selected filter value is stored persistently.</p>
+            <p class="Precondition">Column width:</p>
+            <p>The width of the columns is predefined by several attributes but may be changed manually. The manually entered columns widths are stored persistently.</p>
+            <p class="Precondition">Modifying of cell contents:</p>
+            <p>To start the editor in a modifiable cell the following actions are possible:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">A single click opens the editor and the complete cell content is marked.</li>
+                <li class="Listitem_Normal" value="2">A double click opens the editor and places the cursor at the mouse cursor.</li>
+                <li class="Listitem_Normal" value="3">Pressing the <span class="gui">Enter</span> key or the <span class="gui">[F2]</span> key opens the editor and the complete cell content is marked.</li>
+            </ul>
+            <p class="Precondition">Marking and copying of table contents:</p>
+            <p>The content of a single table cell (attribute <span class="codetext">selectionMode="cell"</span>) is marked copied to the clipboard by means of the mouse and the key-combination <span class="gui">[Ctrl]</span> + <span class="gui">[C]</span>. Further table cells are marked by pressing the <span class="gui">[Ctrl]</span> key at the same time and an area of cells is marked by pressing the <span class="gui">[Shift]</span> key at the same time. A complete table row is also marked with the mouse, if the <span class="codetext">selectionMode="row"</span> attribute is set.</p>
+            <p>To past the content of the clipboard back into table cells the key combination <span class="gui">[Strg]</span> + <span class="gui">[V]</span> is used. The files in the clipboard should be conform to the Excel format, meaning that columns are separated by tabulators, rows by line breaks, cells are surrounded by quotation marks. To show a quotation mark it must be written twice.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code of  valid clipboard content</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">1.1 2.1 3.1<br />1.2 2.2 "(""2.3"")"<br />1.3 2.3 3.3</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>Possible inserting modes:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">Inserting the complete clipboard content:</li>
+            </ul>
+            <p>If the clipboard contains <b>as many values</b> <b>as cells</b> are <b>marked in the table</b>, the values are pasted into the marked cells.</p>
+            <p>If the clipboard contains <b>less values</b> than <b>cells</b> are <b>marked</b> in the table, then the values of clipboard are pasted into the according number of table cells.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">Multiple pasting of a single value:</li>
+            </ul>
+            <p>If the clipboard contains only a single value, this value is pasted into all marked table cells.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute name</th>
+                        <th>Usage</th>
+                        <th>Attribute values</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>columnsMax</td>
+                        <td>optional, only together with freezeLeft and/or freezeRight</td>
+                        <td />
+                        <td />
+                        <td>Maximum number of displayed columns beside/between fixed columns.</td>
+                    </tr>
+                    <tr>
+                        <td>freezeLeft</td>
+                        <td>optional</td>
+                        <td>true, false</td>
+                        <td>false</td>
+                        <td>Number of fixed columns on the left side of the table.</td>
+                    </tr>
+                    <tr>
+                        <td>freezeRight</td>
+                        <td>optional</td>
+                        <td>true, false</td>
+                        <td>false</td>
+                        <td>Number of fixed columns on the right side of the table.</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>optional</td>
+                        <td><a href="glossary_o_integer.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Integer</a>, fillForm</td>
+                        <td />
+                        <td>Height of the entire table.<br />Integer = height of the table in pixel<br />fillForm = the table occupies the entire height of the Form-UI</td>
+                    </tr>
+                    <tr>
+                        <td>maxHeight</td>
+                        <td>optional, only together with height="fillForm"</td>
+                        <td />
+                        <td />
+                        <td>The pureTable will not grow higher than the maximum height in pixel when the Form-UI window is enlarged.</td>
+                    </tr>
+                    <tr>
+                        <td>maxWidth</td>
+                        <td>optional, only in conjunction with width="fitToForm"</td>
+                        <td />
+                        <td />
+                        <td>The pureTable will not grow wider than the maximum width in pixel when the Form-UI window is enlarged.</td>
+                    </tr>
+                    <tr>
+                        <td>minHeight</td>
+                        <td>optional, only together with height="fillForm"</td>
+                        <td />
+                        <td />
+                        <td>The Form-UI window cannot become smaller than the minimum height of the pureTable in pixels.</td>
+                    </tr>
+                    <tr>
+                        <td>minWidth</td>
+                        <td>optional, only in conjunction with width="fitToForm"</td>
+                        <td />
+                        <td />
+                        <td>The Form-UI window cannot become smaller than the minimum width of the pureTable in pixels.</td>
+                    </tr>
+                    <tr>
+                        <td>readonly</td>
+                        <td>optional</td>
+                        <td>true, false</td>
+                        <td />
+                        <td>true = pureTable is read-only.<br />false = Input can be written to the pureTable.</td>
+                    </tr>
+                    <tr>
+                        <td>receiver</td>
+                        <td>required</td>
+                        <td />
+                        <td />
+                        <td>A list has to be returned. In the table is iterated over the list and thus the number of lines below the header determined.<br />If a formula returns a list of components, the determined component can be referenced for each iteration.</td>
+                    </tr>
+                    <tr>
+                        <td>selectionMode</td>
+                        <td>optional</td>
+                        <td>cell, row</td>
+                        <td>row</td>
+                        <td>Switches the selection mode between cell content and row content.</td>
+                    </tr>
+                    <tr>
+                        <td>rows</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Number of displayed table rows</td>
+                    </tr>
+                    <tr>
+                        <td>rowsMax</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Maximum number of displayed table rows</td>
+                    </tr>
+                    <tr>
+                        <td>rowsMin</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Minimum number of displayed table rows The minimum number of table rows cannot be less than 3.</td>
+                    </tr>
+                    <tr>
+                        <td>variable</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Name of the variable</td>
+                    </tr>
+                    <tr>
+                        <td>visible</td>
+                        <td>optional</td>
+                        <td>true, false</td>
+                        <td>true</td>
+                        <td>true = table is visible<br />true = table is invisible</td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>optional</td>
+                        <td>Integer, fitToForm</td>
+                        <td />
+                        <td>Width of the entire table.<br />Integer = Width of the table in pixels<br />fillForm = Table takes on the entire width of the Form-UI</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Allowed sub-elements</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="refformui_r_column.htm" class="MCXref xref">column</a> </td>
+                        <td>any</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refformui_r_filters.htm" class="MCXref xref">filters</a> </td>
+                        <td>0..1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="Bridgehead">Table with two columns:</p>
+            <p>The following example shows a table that lists, for all the components of type <span class="codetext">Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator</span>, the parameters <span class="codetext">Place</span> and <span class="codetext">Name</span>.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable receiver="=rmos('Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator')"&gt;
+	&lt;column heading="Place"&gt;
+		&lt;label text="=$Place"/&gt;
+	&lt;/column&gt;
+	&lt;column heading="Name"&gt;
+		&lt;label text="=this.name"/&gt;
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <img src="../Pictures/form-ui_puretable1.png" alt="" />
+            </p>
+            <p class="Bridgehead">Table with three columns of predefined width:</p>
+            <p>The following example shows a table, that lists the name of the circular transfer system and of all components of the type <span class="codetext">'Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator'</span> the parameters <span class="codetext">Place</span> and <span class="codetext">Name</span>.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;pureTable variable="x" receiver="=rmos('Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator')"&gt;
+	&lt;column hSizeMax="20" heading="Circular Transfer System"&gt;
+		&lt;label text="this.name"/&gt;
+	&lt;/column&gt;
+	&lt;column hSizeMaxPx="50" heading="Place"&gt;
+		&lt;label text="=x.$Place"/&gt;
+	&lt;/column&gt;
+	&lt;column hSizeMinPx="150" heading="Name"&gt;
+		&lt;label text="=x.name"/&gt;
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre> </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <img src="../Pictures/form-ui_puretable3.png" alt="" />
+            </p>
+            <p class="Bridgehead">Table with predefined filter:</p>
+            <p>The following example shows a table, that lists the name of the circular transfer system and of all components of the type <span class="codetext">'Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator'</span> the parameters <span class="codetext">Place</span> and <span class="codetext">Name</span>. The number of items to display should be limited to the sensors and actuators, which are installed in the station St21.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable variable="x" receiver="=rmos('Pfuderer_ModularSystem.Mechatronic.Sensors.
+	SensorsActuators.Base.SensorActuator ')"&gt;
+	&lt;filters&gt;
+		&lt;columnfilter /&gt;	
+		&lt;columnfilter filter="St21" /&gt;
+	&lt;/filters&gt;
+	&lt;column hSizeMax="20" heading="Circular Transfer System"&gt;
+		&lt;label text="this.name"/&gt;
+	&lt;/column&gt;
+	&lt;column hSizeMaxPx="50" heading="Place"&gt;
+		&lt;label text="=x.$Place"/&gt;
+	&lt;/column&gt;
+	&lt;column hSizeMinPx="150" heading="Name"&gt;
+		&lt;label text="=x.name"/&gt;
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <img src="../Pictures/form-ui_puretable4.png" alt="" />
+            </p>
+            <p class="Bridgehead">Table with limited number of rows:</p>
+            <p>The following example shows a table, which has a limited number of rows with <span class="codetext">rowsMax="10"</span>.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable variable="x" rowsMax="10" receiver="=rmos('Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator')"&gt;
+	&lt;column heading="No"&gt;
+		&lt;label text="=mroot.rmos('Pfuderer_ModularSystem.Mechatronic.SensorsActuators.Base.SensorActuator').indexOf(x)"/&gt;
+	&lt;/column&gt;
+	&lt;column hSizeMaxPx="50" heading="Place"&gt;
+		&lt;label text="=x.$Place"/&gt;
+	&lt;/column&gt;
+	&lt;column hSizeMinPx="150" heading="Name"&gt;
+		&lt;label text="=x.name"/&gt;
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <img src="../Pictures/form-ui_puretable8.png" alt="" />
+            </p>
+            <p class="Bridgehead">Table with minimum number of rows:</p>
+            <p>The following example shows a table, which has a minimum number if rows, predefined with <span class="codetext">rowsMin="10"</span>.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable variable="x" rowsMin="10" receiver="=mos('Pfuderer_ModularSystem.Mechatronic.Stations.Base.AbstractStation')"&gt;
+	&lt;column heading="No"&gt;
+		&lt;label text="=mos('Pfuderer_ModularSystem.Mechatronic.Stations.Base.AbstractStation').indexOf(x)"/&gt;
+	&lt;/column&gt;
+	&lt;column hSizeMaxPx="50" heading="Place"&gt;
+		&lt;label text="=x.$Place"/&gt;
+	&lt;/column&gt;
+	&lt;column hSizeMinPx="150" heading="Name"&gt;
+		&lt;label text="=x.name"/&gt;
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <img src="../Pictures/form-ui_puretable9.png" alt="" />
+            </p>
+            <p class="Bridgehead">Double-clicking on a table row starts an action</p>
+            <p>In the following table an action is started by double-clicking any row.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable variable="x" receiver="=mos"&gt;
+	&lt;column hSize="20" heading="Name"&gt;
+		&lt;command event="doubleclick" name="Documentation_UI_Configuration.ProjectLibrary.HelpObjects.okAction" arguments="List{x}" /&gt;
+		&lt;label text="x.name" /&gt;
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Bridgehead">Table with fixed columns:</p>
+            <p>The following example shows a table which representation is limited to a maximum of 5 rows and 7 columns. On the left side 7 columns and on the right side one column is fixed. The columns and rows in between are reached by means of scrollbars.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable receiver="=List{1,2,3,4,5,6,7,8,9}" variable="x" freezeLeft="1" freezeRight="2" columnsMax="7" rowsMax="5"&gt;
+	&lt;column heading="Line"&gt;
+		&lt;label text="x" /&gt;
+	&lt;/column&gt; 	
+	&lt;column heading="Column 1"&gt; 
+		&lt;label text="'Cell 1.'+ x" /&gt; 
+	&lt;/column&gt; 
+	&lt;column heading="Column 2"&gt; 
+		&lt;label text="'Cell 2.'+ x" /&gt;
+	&lt;/column&gt;
+	&lt;column heading="Column 3"&gt; 
+		&lt;label text="'Cell 3.'+ x" /&gt; 
+	&lt;/column&gt; 
+	&lt;column heading="Column 4"&gt;
+		&lt;label text="'Cell 4.'+ x" /&gt;
+	&lt;/column&gt; 
+	&lt;column heading="Column 5"&gt;
+		&lt;label text="'Cell 5.'+ x" /&gt;
+	&lt;/column&gt; 
+	&lt;column heading="Column 6"&gt;
+		&lt;label text="'Cell 6.'+ x" /&gt;
+	&lt;/column&gt; 
+	&lt;column heading="Column 7"&gt;
+		&lt;label text="'Cell 7.'+ x" /&gt;
+	&lt;/column&gt; 
+	&lt;column heading="Column 8"&gt;
+		&lt;label text="'Cell 8.'+ x" /&gt;
+	&lt;/column&gt; 
+	&lt;column heading="Column 9"&gt;
+		&lt;label text="'Cell 9.'+ x" /&gt;
+	&lt;/column&gt; 
+	&lt;column heading="Column 10"&gt;
+		&lt;label text="'Cell 10.'+ x" /&gt; 
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <img src="../Pictures/form-ui_puretable12.png" alt="" />
+            </p>
+            <p class="Bridgehead">Table with fixed height:</p>
+            <p>The following example shows a table whose height is fixed at 150 pixels.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable receiver="=List{1,2,3,4}" variable="x" <b>height="150"</b>&gt; 
+	&lt;column heading="Col 1"&gt; 
+		&lt;label text="='Cell 1.'+ x"&gt;
+		&lt;/label&gt; 
+	&lt;/column&gt; 
+	&lt;column heading="Col 2"&gt; 
+		&lt;label text="='Cell 2.'+ x"&gt;
+		&lt;/label&gt; 
+	&lt;/column&gt; 
+	&lt;column heading="Col 3"&gt; 
+		&lt;label text="='Cell 3.'+ x"&gt;
+		&lt;/label&gt; 
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Precondition">Result:</p>
+            <p>
+                <img src="../Pictures/form-ui_height_150.png" alt="" />
+            </p>
+            <p class="Bridgehead">Table with a dynamic height:</p>
+            <p>The following example shows a table whose height matches that of the Form-UI.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable receiver="=List{1,2,3,4}" variable="x" <b>height="fillForm"</b>&gt; 
+	&lt;column heading="Col 1"&gt; 
+		&lt;label style="left" text="='Cell 1.'+ x"&gt;
+		&lt;/label&gt; 
+	&lt;/column&gt; &lt;column heading="Col 2"&gt; 
+		&lt;label style="center" text="='Cell 2.'+ x"&gt;
+		&lt;/label&gt; 
+	&lt;/column&gt; 
+	&lt;column heading="Col 3"&gt; 
+		&lt;label style="right" text="='Cell 3.'+ x"&gt;
+		&lt;/label&gt; 
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Precondition">Result:</p>
+            <p>
+                <img src="../Pictures/form-ui_height_fillform.png" alt="" />
+            </p>
+            <p class="Bridgehead">Table with fixed width:</p>
+            <p>The following example shows a table whose width is fixed at 350 pixels.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable receiver="=List{1,2,3,4}" variable="x" width<b>="350"</b>&gt;
+	&lt;column heading="Col 1"&gt; &lt;label style="left" text="='Cell 1.'+ x"&gt;
+		&lt;/label&gt;
+	&lt;/column&gt;
+	&lt;column heading="Col 2"&gt;
+		&lt;label style="center" text="='Cell 2.'+ x"&gt;
+		&lt;/label&gt;
+	&lt;/column&gt;
+	&lt;column heading="Col 3"&gt;
+		&lt;label style="right" text="='Cell 3.'+ x"&gt;
+		&lt;/label&gt;
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Precondition">Result:</p>
+            <p>
+                <img src="../Pictures/form-ui_width_350.png" alt="" />
+            </p>
+            <p class="Bridgehead">Table with dynamic width:</p>
+            <p>The following example shows a table, whose width matches that of the Form-UI.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;pureTable receiver="=List{1,2,3,4}" variable="x" width="fitToForm"&gt;
+	&lt;column heading="Col 1"&gt;
+		&lt;label style="left" text="='Cell 1.'+ x"&gt;
+		&lt;/label&gt;
+	&lt;/column&gt;
+	&lt;column heading="Col 2"&gt;
+		&lt;label style="center" text="='Cell 2.'+ x"&gt;
+		&lt;/label&gt;
+	&lt;/column&gt;
+	&lt;column heading="Col 3"&gt;
+		&lt;label style="right" text="='Cell 3.'+ x"&gt;
+		&lt;/label&gt;
+	&lt;/column&gt;
+&lt;/pureTable&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Precondition">Result:</p>
+            <p>
+                <img src="../Pictures/form-ui_width_fittoform.png" alt="" />
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

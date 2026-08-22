@@ -1,0 +1,70 @@
+# CreateTransient(Project,String,String) Method
+
+CreateTransient(Project,String,String) Method
+
+Creates transient and not placed MountingPanel object.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public void CreateTransient( 
+   Project oProject,
+   string strArticleNr,
+   string strVariant
+)
+```
+```
+
+```
+```
+public:
+void CreateTransient( 
+   Project^ oProject,
+   String^ strArticleNr,
+   String^ strVariant
+)
+```
+```
+
+#### Parameters
+
+*oProject*
+:   Project to which this object will be assign. Can't be null.
+
+*strArticleNr*
+:   Part number of article used to create this object. Can't be null or have zero length.
+
+*strVariant*
+:   Part variant of article.
+
+Exceptions
+
+| Exception | Description |
+| --- | --- |
+| [System.ArgumentNullException](#) | Thrown when param is `null` value. Check exceptions message for more info. |
+| [System.ArgumentException](#) | Thrown if `strArticleNr` has zero length. |
+| [Eplan.EplApi.DataModel.ObjectCreationException](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ObjectCreationException.html) | Thrown when the MountingPanel cannot be created. |
+
+Remarks
+
+If strArticleVariant null or have zero length default variant "1" is used.
+
+See Also
+
+#### Reference
+
+[MountingPanel Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingPanel.html)
+  
+[MountingPanel Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingPanel_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingPanel~CreateTransient.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingPanel~CreateTransient(Project,String,String))

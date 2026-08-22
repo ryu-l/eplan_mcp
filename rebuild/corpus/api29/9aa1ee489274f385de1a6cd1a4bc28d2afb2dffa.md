@@ -1,0 +1,36 @@
+# SYMB_NETCONNECTING Property (MDSymbolPropertyList)
+
+SYMB\_NETCONNECTING Property (MDSymbolPropertyList)
+
+Net-connecting # 16043. This property isn't indexed.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [SYMB\_NETCONNECTING(Int32)](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolPropertyList~SYMB_NETCONNECTING(Int32).html) | Net-connecting # 16043. This property isn't indexed. |
+| [SYMB\_NETCONNECTING](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolPropertyList~SYMB_NETCONNECTING().html) | Net-connecting # 16043. |
+
+Remarks
+
+Shows whether a net-connecting function is created when placing and replacing a symbol. The visibility of the property depends on the type of symbol. The following values are possible:
+
+0 = Not defined (the property is not observed when placing and replacing the symbol).
+
+1 = Yes (a net-connecting function is generated for this symbol when placing and replacing the symbol).
+
+2 = No (a function that does not connect nets is generated for this symbol when placing and replacing the symbol).
+
+See Also
+
+#### Reference
+
+[MDSymbolPropertyList Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolPropertyList.html)
+  
+[MDSymbolPropertyList Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolPropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbolPropertyList~SYMB_NETCONNECTING)

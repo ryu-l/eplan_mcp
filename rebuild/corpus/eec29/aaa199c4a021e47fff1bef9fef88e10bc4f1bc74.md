@@ -1,0 +1,22 @@
+# Installation of the SAP Java connector
+
+Because the Java Connector provided free by SAP may not be passed on to third parties due to licensing reasons, the customers must obtain this themselves.
+
+The package is provided for download in the customer area of the SAP Service Marketplace.
+
+![](../Pictures/sap_portal.png)
+
+Requirement:
+
+An SAP account is required to access the SAP customer area.
+
+Here are the steps to download the SAP Java Connector.
+
+1. Start Microsoft Internet ExplorerÂ©.
+2. Navigate to SAP Support Portal (service.sap.com/connectors).
+3. Click SAP Java Connector > Tools & Services > Download SAP JCo Release 3.1.
+4. Download the SAP JCo 3.1.x files in accordance with your operating system.
+
+The downloaded files include the file sapjco3.dll. This file has to be unpacked and copied to the following directory:
+
+5. Copy the 64-bit variant into the folder <EEC installation folder>\plugins\de.eplan.sap\_<Build Number>\os\win32\x86\_64.

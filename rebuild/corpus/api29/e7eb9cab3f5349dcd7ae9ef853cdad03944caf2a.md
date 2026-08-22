@@ -1,0 +1,32 @@
+# PROJ_BLOCKFORMAT_CONNECTION Property
+
+PROJ\_BLOCKFORMAT\_CONNECTION Property
+
+Block property: Format (connection) # 10608.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [PROJ\_BLOCKFORMAT\_CONNECTION(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~PROJ_BLOCKFORMAT_CONNECTION(Int32).html) | Block property: Format (connection) # 10608. |
+| [PROJ\_BLOCKFORMAT\_CONNECTION](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~PROJ_BLOCKFORMAT_CONNECTION().html) | Block property: Format (connection) # 10608. |
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 100.
+
+Predefines which properties are specified in the relevant block property. If you assign a "Block property [n]" to a function and a format is not entered for either the function or the symbol, then the program uses the relevant format property that has been entered for this function category in the project.
+
+See Also
+
+#### Reference
+
+[ProjectPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList.html)
+  
+[ProjectPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~PROJ_BLOCKFORMAT_CONNECTION)

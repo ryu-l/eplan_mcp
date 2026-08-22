@@ -1,0 +1,19 @@
+# Methods for Images
+
+More:
+
+[rotate90](refformulas_r_image_rotate90.htm)
+
+[rotate180](refformulas_r_image_rotate180.htm)
+
+[rotate270](refformulas_r_image_rotate270.htm)
+
+[scale(Integer factor)](refformulas_r_image_scale_integer_factor.htm)
+
+[scale(Double factor)](refformulas_r_image_scale_double_factor.htm)
+
+[flipH](refformulas_r_image_fliph.htm)
+
+[flipV](refformulas_r_image_flipv.htm)
+
+[disable](refformulas_r_image_disable.htm)

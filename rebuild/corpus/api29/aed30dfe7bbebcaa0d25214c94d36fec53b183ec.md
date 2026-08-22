@@ -1,0 +1,56 @@
+# MACROBOX_MACRO_SOURCE(Int32) Property
+
+MACROBOX\_MACRO\_SOURCE(Int32) Property
+
+Macro: Source / reference # 23003. This property isn't indexed.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue MACROBOX_MACRO_SOURCE( 
+   int index
+) {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ MACROBOX_MACRO_SOURCE {
+   PropertyValue^ get(int index);
+   void set (int index, PropertyValue^ value);
+}
+```
+```
+
+#### Parameters
+
+*index*
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Describing text in which you can, for example, specify where the schematic originates (e.g., "Siemens catalog").
+
+See Also
+
+#### Reference
+
+[MacroBoxPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MacroBoxPropertyList.html)
+  
+[MacroBoxPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MacroBoxPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MacroBoxPropertyList~MACROBOX_MACRO_SOURCE.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MacroBoxPropertyList~MACROBOX_MACRO_SOURCE(Int32))

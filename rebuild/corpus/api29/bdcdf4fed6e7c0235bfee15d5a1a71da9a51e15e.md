@@ -1,0 +1,16 @@
+# XMLRockwellExchanger
+
+XMLRockwellExchanger
+
+```
+This class is used to export and import PLC data to/from formats used in the Rockwell's RSLogix Architect application.
+(supported file extension is *.xml)
+```
+
+  
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: XMLRockwellExchanger)

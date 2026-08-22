@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|EPLAN Pro Panel|Generating Manufacturing Data for Wire Fabrication Machines|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="EPLAN Pro Panel allows for the output of manufacturing data for wire fabrication machines of different manufacturers and for sharing it with service p..." /><title>Generating Manufacturing Data for Wire Fabrication Machines</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/productionwiringgui_k_start.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor756"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor757"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Pro Panel" /><a name="kanchor844"></a><a name="kanchor845"></a>
+            <h2>Generating Manufacturing Data for Wire Fabrication Machines</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>EPLAN Pro Panel allows for the output of manufacturing data for <a href="Glossary_o_drahtkonfektionierung.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">wire fabrication</a> machines of different manufacturers and for sharing it with service providers:</p>
+            <fieldset data-mc-conditions="Conditions.New">
+                <ul>
+                    <li class="Listitem_Single_Line" value="1">Rittal - Wire Terminal WT</li>
+                    <li class="Listitem_Single_Line" value="2">Komax</li>
+                    <li class="Listitem_Single_Line" value="3">CadCabel</li>
+                    <li class="Listitem_Single_Line" value="4">Metzner (Triathlon Kabelcenter)</li>
+                    <li class="Listitem_Single_Line" value="5">Schleuniger (Easy Production Server)</li>
+                    <li class="Listitem_Single_Line" value="6">Steinhauer (Personal Wiring Assistant)</li>
+                </ul>
+            </fieldset>
+            <p>Each of these <a href="Glossary_o_formate.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">formats</a> must be licensed as separate interfaces.</p>
+            <p>In addition, it is possible to configure and output a "General <a href="Glossary_o_draehte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">wires</a> parts list". The exported file can be used by manufacturing machines, which interpret this format, for the purposes of automatic cutting to length, labeling and production of conductor ends of cables. The wires parts list contains all information on <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> between <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a>, their <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> numbers, their flows and length:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">Wire number</li>
+                <li class="Listitem_Single_Line" value="2">Starting device with unique DT</li>
+                <li class="Listitem_Single_Line" value="3">Connecting point of such device</li>
+                <li class="Listitem_Single_Line" value="4">Target device with unique DT</li>
+                <li class="Listitem_Single_Line" value="5">Connecting point of such device</li>
+                <li class="Listitem_Single_Line" value="6">Part number of the wire</li>
+                <li class="Listitem_Single_Line" value="7">Length of wire</li>
+                <li class="Listitem_Single_Line" value="8">Starting direction from the connecting point of the first device</li>
+                <li class="Listitem_Single_Line" value="9">End direction to the connecting point of the second device</li>
+                <li class="Listitem_Single_Line" value="10">Bundle number.</li>
+            </ul>
+            <p>For all machining exports from EPLAN Pro Panel, the final message is contained in a dialog which lists specific information on the exported components or states reasons why certain components could not be exported. This dialog displays the following information:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">Name of the exported format</li>
+                <li class="Listitem_Single_Line" value="2">Name of the used scheme and the set output path</li>
+                <li class="Listitem_Single_Line" value="3">Number of exported components</li>
+                <li class="Listitem_Single_Line" value="4">Alternative exports</li>
+                <li class="Listitem_Single_Line" value="5">List of all components which were not exported including the reasons why they were not exported</li>
+                <li class="Listitem_Single_Line" value="6">Reference to <a href="Glossary_o_systemmeldungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">system messages</a> if any have occurred.</li>
+            </ul>
+            <fieldset data-mc-conditions="Conditions.New">
+                <div class="note">
+                    <p class="Infoblock_Heading">
+                        <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                    <p class="Infoblock">To prepare the manufacturing data exported with EPLAN for the wire fabrication machine <span class="important">Rittal Wire Terminal WT</span>, an import template is required that you <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> by means of the <span class="important">Wire Cockpit</span> software.</p>
+                </div>
+            </fieldset>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="productionwiringgui_h_drahtdatenexportieren.htm">Exporting Wire Fabrication</a>
+            </p>
+            <p class="Link_Seealso"><a href="productionwiringgui_h_maschinekonfigurieren.htm">Configuring Wire Fabrication Machine</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

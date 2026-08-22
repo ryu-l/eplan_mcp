@@ -1,0 +1,483 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>EPLAN Remoting</title>
+    <meta name="Title" content="EPLAN Remoting"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n55","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="
+    
+        EPLAN Remoting is a part of API which enables user to connect to an EPLAN Platform variant and control it in remote way. Internally it uses WCF technology. 
+
+        The connection is established from client application (a .Net prog" />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="149a04c1-2a9a-429a-b386-182380b9a673"/>
+    <meta name="Microsoft.Help.TocParent" content="b30d8f94-3d53-4159-acde-312399e2fc2e"/>
+    <meta name="Microsoft.Help.TocOrder" content="2"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_Framework.html">API Framework</a>
+ / <a href="EplanInOtherApplications.html">Using EPLAN in other applications</a>
+ / EPLAN Remoting</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">EPLAN Remoting</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="Element11">
+    <div class="Element10">
+        <p class="Element10">EPLAN Remoting is a part of API which enables user to connect to an EPLAN Platform variant and control it in remote way. Internally it uses WCF technology.&nbsp;</p>
+
+        <p class="Element10">The connection is established from client application (a .Net program written by API user) to existing EPLAN instance which is available in network.&nbsp;</p>
+
+        <p class="Element10">The condition is that EPLAN variant is started as remoting server (without /NoRemoting parameter).&nbsp;</p>
+
+        <p class="Element10">&nbsp;</p>
+
+        <p class="Element10">EPLAN Remoting consits of following libraries:</p>
+
+        <ul class="Element630">
+            <li class="Element600">Eplan.EplApi.RemoteClientu.dll (namespace <a href="Eplan_EplApi_RemoteClient.html">Eplan.EplApi.RemoteClient</a>)</li>
+
+            <li class="Element600">Eplan.EplApi.Remotingu.dll (namespace <a href="Eplan_EplApi_Remoting.html">Eplan.EplApi.Remoting</a>)</li>
+        </ul>
+
+        <p class="Element10">&nbsp;</p>
+
+        <p class="Element10">Both dlls are stored in EPLAN Platform bin folder. Bellow are examples how to use it.&nbsp;</p>
+
+        <p class="Element10">&nbsp;</p>
+
+        <p class="Element10">Establishing connection with localhost:&nbsp;&nbsp;</p>
+
+        <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>C#</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <pre>
+EplanRemoteClient m_pClient = <span style="COLOR: #0000ff">new</span> EplanRemoteClient();
+<span style="COLOR: #0000ff">bool</span> bConnected = m_pClient.Connect(<span style="COLOR: #800000">"localhost"</span>, <span style="COLOR: #800000">"49155"</span>);   <span style="COLOR: #008000">//default port for EPLAN instance is 49155</span>
+</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="Element10">Establishing connection with a remote server:</p>
+
+        <div class="Element13">
+            <div class="Element12">
+                <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+                    <table class="i-syntax-table">
+                        <tbody>
+                            <tr>
+                                <th>C#</th>
+
+                                <th>
+                                    <div class="i-copy-code-wrapper">
+                                        <span class="i-copy-code">Copy Code</span>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="i-code" colspan="2">
+                                    <pre>
+EplanRemoteClient m_pClient = <span style="COLOR: #0000ff">new</span> EplanRemoteClient();
+<span style="COLOR: #0000ff">bool</span> bConnected = m_pClient.Connect(<span style="COLOR: #800000">"remote_server"</span>, <span style="COLOR: #800000">"49155"</span>, <span style="COLOR: #0000ff">new</span> TimeSpan(0, 0, 0, 5));   <span style="COLOR: #008000">//wait 5 seconds</span>
+</pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <p class="Element10">&nbsp;</p>
+
+        <p class="Element10">Start EPLAN instance locally from a client:</p>
+
+        <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>C#</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <pre>
+List&lt;EplanServerData&gt; oInstalledEplanVersions = <span style="COLOR: #0000ff">new</span> List&lt;EplanServerData&gt;(); m_pClient.GetInstalledEplanVersionsOnLocalMachine(<span style="COLOR: #0000ff">out</span> oInstalledEplanVersions); EplanServerData oConnected = oEplanRemoteClient.StartEplan(oInstalledEplanVersions[0].EplanPath);
+</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="Element10">To make sure that EPLAN Server was started, please check registry key HKEY_CURRENT_USER\Software\EPLAN\RemoteServer\&lt;port_number&gt;&nbsp;</p>
+
+        <p class="Element10">&nbsp;</p>
+
+        <p class="Element10">Calling an action :</p>
+
+        <div class="Element13">
+            <div class="Element12">
+                <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+                    <table class="i-syntax-table">
+                        <tbody>
+                            <tr>
+                                <th>C#</th>
+
+                                <th>
+                                    <div class="i-copy-code-wrapper">
+                                        <span class="i-copy-code">Copy Code</span>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="i-code" colspan="2">
+                                    <pre>
+<span style="COLOR: #0000ff">bool</span> oResp = m_pClient.ExecuteAction(<span style="COLOR: #800000">"XPartsManagementStart"</span>);
+</pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <p class="Element10">&nbsp;</p>
+
+        <p class="Element10">Calling action in asynchronous mode:</p>
+
+        <div class="Element13">
+            <div class="Element12">
+                <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+                    <table class="i-syntax-table">
+                        <tbody>
+                            <tr>
+                                <th>C#</th>
+
+                                <th>
+                                    <div class="i-copy-code-wrapper">
+                                        <span class="i-copy-code">Copy Code</span>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="i-code" colspan="2">
+                                    <pre>
+m_pClient.SynchronousMode = <span style="COLOR: #0000ff">false</span>; m_pClient.ExecuteAction(<span style="COLOR: #800000">"XPartsManagementStart"</span>);
+</pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <p class="Element10">In this case program starts action and continues.&nbsp;</p>
+
+        <p class="Element10">&nbsp;</p>
+
+        <p class="Element10">Calling action in synchronous mode, for example to get input from user:</p>
+
+        <div class="Element13">
+            <div class="Element12">
+                <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+                    <table class="i-syntax-table">
+                        <tbody>
+                            <tr>
+                                <th>C#</th>
+
+                                <th>
+                                    <div class="i-copy-code-wrapper">
+                                        <span class="i-copy-code">Copy Code</span>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="i-code" colspan="2">
+                                    <pre>
+m_pClient.SynchronousMode = <span style="COLOR: #0000ff">true</span>; CallingContext oCallingContext = <span style="COLOR: #0000ff">new</span> CallingContext(); m_pClient.ExecuteAction(<span style="COLOR: #800000">"XPamSelectPart"</span>, <span style="COLOR: #0000ff">ref</span> oCallingContext);
+</pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <p class="Element10">In this case program waits until action execution is finished.&nbsp;</p>
+
+        <p class="Element10">&nbsp;</p>
+
+        <p class="Element10">Listing servers on a local machine:</p>
+
+        <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>C#</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <pre>
+List&lt;EplanServerData&gt; oActiveEplanVersions = <span style="COLOR: #0000ff">new</span> List&lt;EplanServerData&gt;();
+m_pClient.GetActiveEplanServersOnLocalMachine(<span style="COLOR: #0000ff">out</span> oActiveEplanVersions);
+<span style="COLOR: #0000ff">foreach</span> (EplanServerData oVersion <span style="COLOR: #0000ff">in</span> oActiveEplanVersions)
+   Console.WriteLine(oVersion.EplanVariant + <span style="COLOR: #800000">","</span> + oVersion.EplanVersion + <span style="COLOR: #800000">","</span> + oVersion.ServerPort);
+</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="Element10"></p>
+
+        <div class="Element13">
+            <div class="Element12">
+                <pre class="Element12">
+ Getting installed servers: 
+</pre>
+            </div>
+        </div>
+
+        <div class="Element13">
+            <div class="Element12">
+                <pre class="Element12">
+</pre>
+
+                <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+                    <table class="i-syntax-table">
+                        <tbody>
+                            <tr>
+                                <th>C#</th>
+
+                                <th>
+                                    <div class="i-copy-code-wrapper">
+                                        <span class="i-copy-code">Copy Code</span>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="i-code" colspan="2">
+                                    <pre>
+List&lt;EplanServerData&gt; oInstalledEplanVersions = <span style="COLOR: #0000ff">new</span> List&lt;EplanServerData&gt;();
+m_pClient.GetInstalledEplanVersionsOnLocalMachine(<span style="COLOR: #0000ff">out</span> oInstalledEplanVersions);
+<span style="COLOR: #0000ff">foreach</span> (EplanServerData oVersion <span style="COLOR: #0000ff">in</span> oInstalledEplanVersions)
+   Console.WriteLine(oVersion.EplanVariant + <span style="COLOR: #800000">","</span> + oVersion.EplanVersion + <span style="COLOR: #800000">","</span> + (oVersion.Is64Bit ? <span style="COLOR: #800000">"64"</span> : <span style="COLOR: #800000">"32"</span>);
+</pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <pre>
+ 
+</pre>
+            </div>
+        </div>
+
+        <p class="Element10">Making selection:</p>
+
+        <div class="Element13">
+            <div class="Element12">
+                <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+                    <table class="i-syntax-table">
+                        <tbody>
+                            <tr>
+                                <th>C#</th>
+
+                                <th>
+                                    <div class="i-copy-code-wrapper">
+                                        <span class="i-copy-code">Copy Code</span>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="i-code" colspan="2">
+                                    <pre>
+StringCollection oObjects = <span style="COLOR: #0000ff">new</span> StringCollection(); oObjects.Add(<span style="COLOR: #800000">@"17/688"</span>);
+EplanResponse oResponse = m_pClient.SelectEplanObjects(<span style="COLOR: #800000">@"$(MD_PROJECTS)\ESS_Sample_Project.elk"</span>, oObjects, <span style="COLOR: #0000ff">true</span>);
+</pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <p class="Element10">&nbsp;</p>
+
+        <p class="Element10">Disconnection :</p>
+
+        <div class="Element13">
+            <div class="Element12">
+                <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+                    <table class="i-syntax-table">
+                        <tbody>
+                            <tr>
+                                <th>C#</th>
+
+                                <th>
+                                    <div class="i-copy-code-wrapper">
+                                        <span class="i-copy-code">Copy Code</span>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="i-code" colspan="2">
+                                    <pre>
+m_pClient.Disconnect();
+</pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><a name="47726F7570"></a>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: EPLANRemoting">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

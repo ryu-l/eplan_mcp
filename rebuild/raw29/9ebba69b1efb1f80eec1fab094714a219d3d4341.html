@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.concept" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Editing Schematics|Devices|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Functions which do not have their own displayed DT can use the DT from another function. This has the following advantages:" /><title>Adoption of Device Tags</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/devicetaggui_k_bmkuebernahme.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor1975"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor1976"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor2363"></a>
+            <h2>Adoption of Device Tags</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Functions which do not have their own displayed DT can use the DT from another function. This has the following advantages:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The view on the page is easier to understand.</li>
+                <li class="Listitem_Normal" value="2">You can simply rename components using graphical operations (like deletion, moving, copying, or insertion from <a href="Glossary_o_makros.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">macros</a>).</li>
+                <li class="Listitem_Normal" value="3">Devices can easily be composed of multiple <a href="Glossary_o_symbole.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">symbols</a> in this way.</li>
+            </ul>
+            <p>In DT adoption, the system always jumps to the next function in the search direction. The insertion point is the feature searched for: When adopting from the previous column, the insertion points must lie at the same height in the Y direction; when adopting from the previous line, the insertion points must lie at the same height in the X direction. The property <span class="gui">DT adoption: Search direction</span> must be set on the function. The search direction can be "According to orientation of plot frame" or "As an alternative to orientation of plot frame".</p>
+            <p>If the function found contains no displayed DT, the system jumps from here to the next function (insofar as a search direction has been determined for DT adoption in this function). This happens until a DT is found. If no DT can be found, or if the function is not suitable for DT adoption, then an "empty" DT is entered and an appropriate warning is issued.</p>
+            <p>In addition, the setting "Only from boxes" is available. In this case, the DT will only be adopted from the box surrounding the function (black box, PLC box). If the function is not located in a box, no DT can be adopted.</p>
+            <p>The DT adoption "Only from boxes" can also be specified for individual project pages by activating the plot frame property <span class="gui">DT adoption: Only from boxes</span> at the selected plot frame.</p>
+            <p>The DT is also adopted from a 'graphical' and 'external' function.</p><a name="kanchor2364"></a><a name="SuchrichtungenBmkuebernahme"></a>
+            <h3>Search directions for DT adoption</h3>
+            <p>As standard, the search direction is taken from the plot frame orientation. The plot frame orientation depends on the setting ("Vertical" or "Horizontal"), defined in the <span class="gui">Reporting direction</span> property for the plot frame.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example: </a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">For <a href="Glossary_o_projekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">projects</a> conforming to the IEC standard, the <span class="gui">Reporting direction</span> property for the plot frame usually has the value "Vertical"; for projects conforming to the <a href="Glossary_o_nfpa_norm.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">NFPA standard</a> "Horizontal".</p>
+                        <p class="Infoblock">If the setting "According to orientation of plot frame" is selected for the <span class="gui">DT adoption: Search direction</span> property, the DT is taken from the left in projects based on the IEC standard and from above in projects based on the NFPA standard.</p>
+                        <p class="Infoblock">If the setting "As an alternative to orientation of plot frame" is selected for the <span class="gui">DT adoption: Search direction</span> property, the DT is taken from above in projects based on the IEC standard and from the left in projects based on the NFPA standard.</p>
+                    </div>
+                </div>
+            </div>
+            <h4><a name="kanchor2365"></a><a name="SuchrichtungGost"></a>Search direction for the GOST standard</h4>
+            <p>The <span class="gui">DT adoption: Search direction conforming to GOST standard</span> plot frame property allows the search direction for DT adoption to be changed to suit the <a href="Glossary_o_gost_norm.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">GOST standard</a>. If this property is activated, then in <a href="Glossary_o_normblaetter.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">plot frames</a> with a "Vertical" reporting direction, the DT is searched for towards the right and with a "Horizontal" reporting direction the DT is searched for downwards.</p>
+            <h4><a name="kanchor2366"></a><a name="TabellarischeUebersichtSuchrichtungen"></a>Tabular overview of the search directions</h4>
+            <p>The following table clarifies the possible search directions for DT adoption based on the reporting direction of the plot frame. A precondition for this is that the <span class="gui">DT adoption: Search direction conforming to GOST standard</span> plot frame property is deselected for plot frames conforming to the IEC and NFPA standards and selected for plot frames conforming to the GOST standard. The alternative search direction is used when the "As an alternative to orientation of plot frame" setting is selected in the <span class="gui">DT adoption: Search direction</span> property at a function.</p>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Plot frame</p>
+                    </th>
+                    <th colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Reporting direction</p>
+                    </th>
+                    <th colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Search direction</p>
+                    </th>
+                    <th colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Alternative search direction</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">IEC</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Vertical</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Left</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Up</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">NFPA</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Horizontal</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Up</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Left</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">GOST</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Vertical</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Right</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Down</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">GOST</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Horizontal</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Down</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Right</p>
+                    </td>
+                </tr>
+            </table><a name="kanchor2367"></a>
+            <h3>Retaining the DT when moving</h3>
+            <p>If you hold down the <span class="gui">[Shift]</span> key while moving a <a href="Glossary_o_schaltzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">component</a>, the original full DT will be retained. The identifying device tags of the components existing on the page and affected by this action are also retained. As a result of this action, the displayed DTs of the moved component, and other affected components, may change. The <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> of a device retain their relationships during such a moving action.</p>
+            <p>Moving with a pressed <span class="gui">[Shift]</span> key furthermore affects the <span class="gui">Plug designation</span> and <span class="gui">Channel designation</span> <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a>. During "normal" moving of a component the values of these properties remain unchanged. In the case of moving with a pressed <span class="gui">[Shift]</span> key the values of the properties <span class="gui">Plug designation</span> and <span class="gui">Channel designation</span> are adapted so that the values of the properties <span class="gui">Plug designation (automatic)</span> and <span class="gui">Channel designation (automatic)</span> remain the same.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="devicetaggui_k_start.htm">Devices</a>
+            </p>
+            <p class="Link_Seealso"><a href="devicetaggui_k_bmkuebernahmesonder.htm">Specifics of DT adoption</a>
+            </p>
+            <p class="Link_Seealso"><a href="devicetaggui_h_bmkuebernahmefestlegen.htm">Defining the Search Direction for DT Adoption</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

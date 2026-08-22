@@ -1,0 +1,234 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>EplanRemoteClient Class</title>
+    <meta name="Title" content="EplanRemoteClient Class"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n49510","initialNodeContainer":"c664","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient"/>
+    <meta name="Description" content="Eplan Remoting Client used to communicate with an Eplan instance. Note that the binding name should be exactly &quot;EplanRemotingClientBindingConfig&quot; otherwise it will be ignored." />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient_namespace"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.RemoteClient.EplanRemoteClient"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient_namespace.html">Eplan.EplApi.RemoteClient Namespace</a>
+ / EplanRemoteClient Class</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <a class="i-page-link" href="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient_members.html">Members</a>
+                    <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">EplanRemoteClient Class</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">Eplan Remoting Client used to communicate with an Eplan instance. Note that the binding name should be exactly "EplanRemotingClientBindingConfig" otherwise it will be ignored.</div>
+            
+            <div class="i-section-heading" id="i-inheritance-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Inheritance Hierarchy</span></div><div id="i-inheritance-section-content" class="i-section-content"><P><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemObjectClassTopic','System.Object')">System.Object</a><BR />&nbsp;&nbsp;&nbsp;<STRONG>Eplan.EplApi.RemoteClient.EplanRemoteClient</STRONG><BR /></P></div>			
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre>[<a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemRuntimeInteropServicesGuidAttributeClassTopic','System.Runtime.InteropServices.GuidAttribute')">Guid</a>(<span style="color: #800000; ">&quot;25B37226-6821-4493-B585-F805EFBC3146&quot;</span>)]
+[<a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemRuntimeInteropServicesComVisibleAttributeClassTopic','System.Runtime.InteropServices.ComVisibleAttribute')">ComVisible</a>(<span style="color: #0000FF; ">true</span>)]
+<span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">class</span> EplanRemoteClient </pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre>[<a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemRuntimeInteropServicesGuidAttributeClassTopic','System.Runtime.InteropServices.GuidAttribute')">Guid</a>(<span style="color: #800000; ">&quot;25B37226-6821-4493-B585-F805EFBC3146&quot;</span>)]
+[<a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemRuntimeInteropServicesComVisibleAttributeClassTopic','System.Runtime.InteropServices.ComVisibleAttribute')">ComVisible</a>(<span style="color: #0000FF; ">true</span>)]
+<span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">ref</span> <span style="color: #0000FF; ">class</span> EplanRemoteClient </pre></pre>
+            </div>
+        
+
+            </div>
+        </div>
+            
+            
+            
+            <div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content">A client application can has a config file (ApplicationName.exe.config). This allows setting some WCF communication parameters. &lt;configuration&gt; &lt;system.serviceModel&gt; &lt;bindings&gt; &lt;netTcpBinding&gt; &lt;binding name="EplanRemotingClientBindingConfig" sendTimeout="08:00:00"&gt; &lt;/binding&gt; &lt;/netTcpBinding&gt; &lt;/bindings&gt; &lt;client&gt; &lt;endpoint binding="netTcpBinding" bindingConfiguration="EplanRemotingClientBindingConfig" /&gt; &lt;/client&gt; &lt;/system.serviceModel&gt; &lt;/configuration&gt; Be careful when editing WCF communication parameters. If these are not set correctly, the application could not work correctly! Example of a config file for a client application used to set a SendTimeout to 8 hours: SendTimeout is used to initialize the OperationTimeout, which governs the whole process of sending a message, including receiving a reply message for a request/reply service operation. This timeout also applies when sending reply messages from a callback contract method.</div>
+            <a name="exampleBookmark"></a>
+            
+            
+            
+            
+            <a name="ConstructorsBookmark"></a>
+            <div class="i-section-heading" id="i-publicConstructors-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Constructors</span></div><div id="i-publicConstructors-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Constructor" src="template/packages/core-dotnet/images/publicConstructor.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~_ctor.html">EplanRemoteClient Constructor</A></td><td class="i-member-description">Constructor. &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="FieldsBookmark"></a>
+            <div class="i-section-heading" id="i-publicFields-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Fields</span></div><div id="i-publicFields-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Field" src="template/packages/core-dotnet/images/publicField.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~ResponseArrivedFromEplanServer.html">ResponseArrivedFromEplanServer</A></td><td class="i-member-description">Handler to receive Eplan server notifications. &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="PropertiesBookmark"></a>
+            <div class="i-section-heading" id="i-publicProperties-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Properties</span></div><div id="i-publicProperties-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~License.html">License</A></td><td class="i-member-description">License file name (*.lis). &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~Password.html">Password</A></td><td class="i-member-description">Eplan log-in password used for Rights Management. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~SynchronousMode.html">SynchronousMode</A></td><td class="i-member-description">Sets and gets the Synchronous mode. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~User.html">User</A></td><td class="i-member-description">Eplan log-in user used for Rights Management. User settings will be used from this user. &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="MethodsBookmark"></a>
+            <div class="i-section-heading" id="i-publicMethods-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Methods</span></div><div id="i-publicMethods-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~Connect.html">Connect</A></td><td class="i-member-description">Overloaded.&nbsp;Connect to Eplan Server. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~DisableSynchronizingCalls.html">DisableSynchronizingCalls</A></td><td class="i-member-description">Disable synchronizing calls. The execution of remote calls are synchronized in EPLAN. A remote call is executed only if the EPLAN Application is in an idle situation and there is no action running. Otherwise the call will wait until the EPLAN application is idle and no action is running. This property can be used to disable this mode. If calls synchronization is disabled, remote calls are executed in EPLAN although the EPLAN application is not in an idle situation. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~Disconnect.html">Disconnect</A></td><td class="i-member-description">Disconnect from Eplan Server. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~Dispose().html">Dispose</A></td><td class="i-member-description">Dispose. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~ExecuteAction.html">ExecuteAction</A></td><td class="i-member-description">Overloaded.&nbsp;Execute an action. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~GetActiveEplanServersOnLocalMachine.html">GetActiveEplanServersOnLocalMachine</A></td><td class="i-member-description">Get Eplan Servers which are currently active on local machine. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"><IMG alt="static (Shared in Visual Basic)" src="template/packages/core-dotnet/images/static.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~GetFreePort.html">GetFreePort</A></td><td class="i-member-description">Returns first free port which can act as a tunnel for remote server. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~GetInstalledEplanVersionsOnLocalMachine.html">GetInstalledEplanVersionsOnLocalMachine</A></td><td class="i-member-description">Get Eplan versions which are currently installed on local machine. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"><IMG alt="static (Shared in Visual Basic)" src="template/packages/core-dotnet/images/static.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~IsPortFree.html">IsPortFree</A></td><td class="i-member-description">Checks if the port is free. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~Ping.html">Ping</A></td><td class="i-member-description">Ping the Eplan Server. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~StartEplan.html">StartEplan</A></td><td class="i-member-description">Overloaded.&nbsp;Starts an Eplan instance. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient~StopEplan.html">StopEplan</A></td><td class="i-member-description">Stops the Eplan instance which is connected to the current client. &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            
+            <a name="EventsBookmark"></a>
+            
+            
+            
+            <a name="OperatorsBookmark"></a>
+            									
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient_members.html">EplanRemoteClient Members</a>
+<br/><a href="Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient_namespace.html">Eplan.EplApi.RemoteClient Namespace</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.RemoteClientu~Eplan.EplApi.RemoteClient.EplanRemoteClient">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

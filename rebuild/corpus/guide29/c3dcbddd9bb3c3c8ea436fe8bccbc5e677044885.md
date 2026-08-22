@@ -1,0 +1,18 @@
+# P007030: The DT ID '<x>' differs from those at the templates at the part '<y>' ('<z>')
+
+### Cause
+
+The DT [ID](Glossary_o_id.htm) '<x>' entered at a function (main or auxiliary function) that is a [component](Glossary_o_schaltzeichen.htm) of a [part](Glossary_o_artikel.htm) macro for a module differs from the DT ID '<z>' that is entered at the associated function template at the module part '<y>'.
+
+### Solution
+
+1. Locate the function of the part macro placed in the schematic that you have assigned to the module. For this purpose use the function Go to (graphic) from the popup menu in the Message management dialog.
+2. Call up the [property dialog](Glossary_o_eigenschaftendialog.htm) of the function and determine the entered DT ID in the property list.
+3. Open the parts management and call up the part [properties](Glossary_o_eigenschaften.htm) of the module part.
+4. Bring the Function templates tab to the front and check the ID entered for the corresponding function in the Subordinate DT / DT ID column.
+5. Change to the Module tab and enter the DT ID that you have determined at the function of the part macro placed in the schematic at the part of the function.
+6. Select [Extras] > Sum up [function templates](Glossary_o_funktionsschablonen.htm).  
+     
+   ![](../Pictures/Gui/ALL/arrow.png) The entered DT ID of the function is modified at the function template of the module part.
+7. Close the parts management and save the modified parts data.
+8. Then start a new check run.

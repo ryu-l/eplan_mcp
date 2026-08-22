@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|EPLAN Pro Panel|Routing Connections (Layout Space)|Proceed as Follows">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="With this method existing connections are combined by inserting a phase busbar while designing a schematic. A DT and a part are assigned to the phase ..." /><title>Inserting a Phase Busbar</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/routinggui_h_phasenschieneneinfg.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor1111"></a>
+            <MadCap:concept term="Handlung;EPLAN Plattform;EPLAN Pro Panel" /><a name="kanchor1316"></a><a name="kanchor1317"></a>
+            <h2>Inserting a Phase Busbar</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>With this method existing <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> are combined by inserting a phase busbar while designing a schematic. A DT and a <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> are assigned to the phase busbar so that it can afterwards be placed as a device from the 3D mounting layout navigator in the <a href="Glossary_o_bauraum.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">layout space</a>. The connections that were combined through the phase busbar have the "Phase busbar" function definition assigned to them and are therefore no longer taken into consideration during <a href="Glossary_o_verdrahtungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">wiring</a> and during <a href="Glossary_o_drahtkonfektionierung.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">wire fabrication</a>.</p>
+            <p class="Bridgehead">Precondition:</p>
+            <p> A schematic page is opened. The layout space navigator and the 3D mounting layout navigator are opened.</p>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Select the <span class="gui">Insert &gt; Phase busbar</span> menu options.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> You are prompted to enter the first and second point of a definition line for the phase busbar.</li>
+                <li class="Listitem_Step_By_Step" value="2">Draw the definition line across the desired connections.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The <span class="gui">Properties (components): Phase busbar</span> is displayed.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> An automatically generated DT and the "Phase busbar" function definition are displayed on the <span class="gui">Phase busbar</span> tab.</li>
+                <li class="Listitem_Step_By_Step" value="3">Select a part for the phase busbar in the <span class="gui">Part number</span> field of the <span class="gui">Part</span> tab and click <span class="gui">OK</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The phase busbar is displayed as a device in the 3D mounting layout navigator.</li>
+                <li class="Listitem_Step_By_Step" value="4">Open the layout space in which the phase busbar is to be placed. Set the 3D viewing angle "From top to bottom".</li>
+                <li class="Listitem_Step_By_Step" value="5">Drag-and-drop the phase busbar from the 3D mounting layout navigator into the layout space.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> If the part of the phase busbar does not have an assigned 3D macro, the <span class="gui">Dimensions</span> dialog is displayed.</li>
+                <li class="Listitem_Step_By_Step" value="6">Enter suitable values for the width, height and depth of the phase busbar in the dialog <span class="gui">Dimensions</span>. Click <span class="gui">[OK]</span>.</li>
+                <li class="Listitem_Step_By_Step" value="7">Place the phase busbar hanging from the cursor onto the <a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a> of the desired device.</li>
+                <li class="Listitem_Step_By_Step" value="8">Re-<a href="Glossary_o_verlegen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">route</a> the connections in the layout space.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The <a href="Glossary_o_verlegeverbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">routing connections</a> existing beforehand at this position are replaced by the placed phase busbar and are no longer displayed.</li>
+            </ol>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="routinggui_h_phasenschienenvbdgerzg.htm">Generating Phase Busbar Connections</a>
+            </p>
+            <p class="Link_Seealso"><a href="routinggui_h_verlegen.htm">Routing Connections</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Managing Master Data|Parts Management|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Modules have the same properties as parts, but additionally contain lists of subparts (so-called module positions). These subparts are identified via ..." /><title>Parts Management: Modules</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/partsmanagementgui_k_module.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor492"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor493"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8;EPLAN Fluid;EPLAN Preplanning;EPLAN Pro Panel" /><a name="kanchor551"></a><a name="kanchor552"></a>
+            <h2>Parts Management: Modules</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Modules have the same <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> as parts, but additionally contain lists of subparts (so-called module positions). These subparts are identified via a subordinate DT or a so-called "DT <a href="Glossary_o_id.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ID</a>". A module is thus a set of parts that belong to several nested <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a> (for example, a motor control unit installed in a 19" <a href="Glossary_o_baugruppentraeger.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">rack</a>). Modules <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> one of the possibilities in the EPLAN platform of mapping complex devices.</p>
+            <p>A module can contain parts, <a href="Glossary_o_baugruppen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">assemblies</a> and other <a href="Glossary_o_module.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">modules</a>. The parts contained in modules also contain information about <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> <a href="Glossary_o_varianten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">variants</a>. Specially for device selection and for <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a>, then, the technical data for variants will also be taken into account.</p>
+            <h3>Procedure</h3>
+            <ul>
+                <li class="Listitem_Normal" value="1"><span class="important">Prepare macros for the modules:</span> <br />Before you define the part-specific data for a module in the parts management, you must first <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> a macro for using with this module.<br />We recommend preparing the <a href="Glossary_o_makros.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">macros</a> for the modules in a macro project. If the DT ID is used, these identifiers have to be unique within a macro / module. The DT ID is stored at the devices via the <span class="gui">DT ID</span> property. Note that you have to define this property both at the main and the <a href="Glossary_o_nebenfunktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">auxiliary functions</a> so that modules are also taken into consideration during the device selection.<br />It is imperative that the elements of a macro be located within a black box. This black box also becomes part of the macro. All the devices belonging to the module have to be nested in the macro within the black box. It is not absolutely necessary to assign the parts when you create the macro as this is done automatically when you place a module part in the graphical editor.</li>
+                <li class="Listitem_Normal" value="2"><span class="important">Creating modules in the parts management:</span> <br />Creation of modules is carried out below the hierarchy level "Generic product group" (analog to individual components or assemblies). The <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a>, i.e. the parts, that are to be contained in a module are assigned to the module on the <span class="gui">Module</span> tab. The associated macro has to be assigned to each module (on the <span class="gui">Technical data</span> tab in the <span class="gui">Macro</span> field.)<br />Either the subordinate DT of the device or the DT ID entered at the device is used to identify a device located in the macro. DT IDs make the used macros and modules independent of a device identification standard, so that different standards can be used as a result.</li>
+                <li class="Listitem_Normal" value="3"><span class="important">Using modules in the configuration:</span> <br />Modules can be used similarly to devices and inserted, for example, through the menu items <span class="gui">Insert &gt; Device</span>.</li>
+            </ul>
+            <fieldset data-mc-conditions="Conditions.New">
+                <h3>Mechanical modules</h3>
+                <p>In the 3D mounting layout a mechanical module constitutes a standard item that has been delivered as a whole to a manufacturer by another manufacturer (for example, an enclosure socket that consists of different elements such as socket corner piece, socket orifice, <a href="Glossary_o_kabel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable</a> rail, etc.). In the parts management you create such a module below the "Mechanics" generic product group. In contrast to other modules, mechanical modules may only contain parts and no other assemblies or modules.</p>
+                <p>The procedure for the mechanical modules correspondents more or less to the procedure for the other modules. For the placement of a mechanical module in the 3D mounting layout, you must create a 3D macro that represents the standard item and in which all module elements are already included. For the later DT numbering, the elements in the 3D macro must have a DT ID or a subordinate DT. You store the finished 3D macro at the module part in the parts management (on the <span class="gui">Mounting data</span> tab in the <span class="gui">Graphical macro</span> field).</p>
+                <p>Mechanical modules can only be placed as a unit. Accordingly the <span class="gui">Distributed placement of module</span> setting in the <span class="gui">Module</span> tab is preset to the option "Place module part and its elements" and cannot be changed either.</p>
+                <p>When <a href="Glossary_o_auflegen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">placing</a> mechanical modules in a <a href="Glossary_o_bauraum.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">layout space</a>, the length of the length-variable items are determined from the stored macro and the part reference data is entered in the property <span class="gui">Subset / length</span> (ID 31008). Snap points are displayed for a mechanical module during the placement so that a module can be adjoined multiple times.</p>
+            </fieldset>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="partsmanagementgui_h_moduleanlegen.htm">Creating Modules</a>
+            </p>
+            <p class="Link_Seealso"><a href="partsmanagementgui_r_modul.htm">Tab Module</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

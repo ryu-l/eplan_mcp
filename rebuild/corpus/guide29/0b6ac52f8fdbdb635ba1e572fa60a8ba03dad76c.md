@@ -1,0 +1,17 @@
+# Action: ExportSegmentsTemplate
+
+|  |  |
+| --- | --- |
+| **Parameter** | **Description** |
+| PROJECTNAME | Project name with complete file path (optional). If nothing is entered, the selected project will be used if the action is to be run over the user interface (e.g. via script or the toolbar). When executing from the Windows command line, PROJECTNAME must be specified or ProjectAction has to be used before that. Otherwise a system message will appear. |
+| FILENAME | Full path and name of the target file. May not be empty. |
+| DESCRIPTION | Description within the exported file (multi-language string). |
+
+![](../Pictures/Gui/ALL/example.png)[![Closed](../../Skins/Default/Stylesheets/Images/transparent.gif)Example:](javascript:void(0);)
+
+```
+ExportSegmentsTemplate 
+/PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk 
+/FILENAME:C:\EPLAN\Templates\SegmentTemplates.txt 
+/DESCRIPTION:Segment templates exported from ESS_Sample_Project
+```

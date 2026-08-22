@@ -1,0 +1,30 @@
+# Exists Method (DimensionCirclePropertyList)
+
+Exists Method (DimensionCirclePropertyList)
+
+Checks property existence for used obiect.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [Exists(DimensionCircle)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.DimensionCirclePropertyList~Exists(DimensionCircle).html) | Checks property existence for used obiect. |
+| [Exists(GraphicalPlacement)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.GraphicalPlacementPropertyList~Exists(GraphicalPlacement).html) | Checks property existence for used obiect. (Inherited from [Eplan.EplApi.DataModel.Graphics.GraphicalPlacementPropertyList](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.GraphicalPlacementPropertyList.html)) |
+| [Exists(Placement)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList~Exists(Placement).html) | Checks property existence for used obiect. (Inherited from [Eplan.EplApi.DataModel.PlacementPropertyList](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList.html)) |
+| [Exists(StorableObject)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObjectPropertyList~Exists(StorableObject).html) | Checks property existence for used obiect. (Inherited from [Eplan.EplApi.DataModel.StorableObjectPropertyList](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObjectPropertyList.html)) |
+| [Exists(String)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList~Exists(String).html) | Checks property existence for used object. (Inherited from [Eplan.EplApi.DataModel.UniversalPropertyList](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList.html)) |
+| [Exists(AnyPropertyId)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList~Exists(AnyPropertyId).html) | Checks property existence for used object. (Inherited from [Eplan.EplApi.DataModel.UniversalPropertyList](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList.html)) |
+
+See Also
+
+#### Reference
+
+[DimensionCirclePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.DimensionCirclePropertyList.html)
+  
+[DimensionCirclePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.DimensionCirclePropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.DimensionCirclePropertyList~Exists)

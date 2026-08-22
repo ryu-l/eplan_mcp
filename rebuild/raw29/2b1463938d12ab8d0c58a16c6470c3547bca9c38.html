@@ -1,0 +1,336 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Events</title>
+    <meta name="Title" content="Events"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n60","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="EPLAN has its own mechanism to send notifications and to react on notifications. Notifications (events) are identified in EPLAN by their names (string). This means there is no specific type of class you send as a notification. " />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="d3d71e7e-8fc2-463b-8fad-ed01cffa33be"/>
+    <meta name="Microsoft.Help.TocParent" content="2a9045cb-4002-4778-87b9-6506829e5a1f"/>
+    <meta name="Microsoft.Help.TocOrder" content="5"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_Framework.html">API Framework</a>
+ / Events</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Events</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>EPLAN has its own mechanism to send notifications and to react on notifications. Notifications (events) are identified in EPLAN by their names (string). This means there is no specific type of class you send as a notification.&nbsp;</p>
+
+<p>EPLAN and each module in EPLAN can send and handle events without any need to register the event in the system. EPLAN's event mechanism is very flexible. Even the API user can send and handle events with new names.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>For a list of EPLAN events, please refer to this link&nbsp;<a href="API Events.html">Eplan.EplApi.ApplicationFramework.Events</a>.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>How to react on EPLAN events?</h3>
+
+<p>&nbsp;To react on an event, just implement an event handler function and register it with the EPLAN EventHandler object.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+<span style="COLOR: #0000ff">class</span> MyEventListener
+{
+    <span style="COLOR: #008000">// create an EventHandler object
+</span>    Eplan.EplApi.ApplicationFramework.EventHandler myHandler= <span style="COLOR: #0000ff">new</span>
+    Eplan.EplApi.ApplicationFramework.EventHandler();
+    <span style="COLOR: #0000ff">public</span> MyEventListener()
+    {
+        <span style="COLOR: #008000">// react on the EPLAN event "onActionStart.String.*"
+</span>        myHandler.SetEvent(<span style="COLOR: #800000">"onActionStart.String.*"</span>);
+        <span style="COLOR: #008000">// If the event "onActionStart.String.*" is raised,
+        // the function myHandler_EplanEvent should be called
+</span>        myHandler.EplanEvent +=  myHandler_EplanEvent;
+    }
+
+    <span style="COLOR: #0000ff">private</span> <span style="COLOR: #0000ff">void</span> myHandler_EplanEvent(IEventParameter iEventParameter)
+    {
+        <span style="COLOR: #008000">// TODO: do something, when the event is caught
+</span>    }
+}
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+<span style="COLOR: #0000ff">Class</span> MyEventListener
+      <span style="COLOR: #008000">' create an EventHandler object
+</span>      <span style="COLOR: #0000ff">Dim</span> myHandler <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">New</span> Eplan.EplApi.ApplicationFramework.EventHandler()
+   <span style="COLOR: #0000ff">Public</span> <span style="COLOR: #0000ff">Sub</span> <span style="COLOR: #0000ff">New</span>()
+      <span style="COLOR: #008000">' react on the EPLAN event "onActionStart.String.*"
+</span>      myHandler.SetEvent(<span style="COLOR: #800000">"onActionStart.String.*"</span>)
+      <span style="COLOR: #008000">' If the event "onActionStart.String.*" is raised,
+</span>      <span style="COLOR: #008000">' the function myHandler_EplanEvent should be called
+</span>      <span style="COLOR: #0000ff">Dim</span> oEvent <span style="COLOR: #0000ff">As</span> EventHandlerFunction = <span style="COLOR: #0000ff">New</span> EventHandlerFunction(<span style="COLOR: #0000ff">AddressOf</span> myHandler_EplanEvent)
+      myHandler.EplanEvent = System.Delegate.Combine(myHandler.EplanEvent, oEvent)
+   <span style="COLOR: #0000ff">End Sub</span> <span style="COLOR: #008000">'New
+</span>   <span style="COLOR: #0000ff">Private</span> <span style="COLOR: #0000ff">Sub</span> myHandler_EplanEvent(iEventParameter <span style="COLOR: #0000ff">As</span> IEventParameter)
+      <span style="COLOR: #008000">' TODO: do something, when the event is caught
+</span>   <span style="COLOR: #0000ff">End Sub</span> <span style="COLOR: #008000">'myHandler_EplanEvent
+</span><span style="COLOR: #0000ff">End Class</span> <span style="COLOR: #008000">'MyEventListener</span>
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>Now you need to create an instance of your event listener class. During the lifetime of this object the event is handled. You can for instance instantiate the object in the API module class of your add-in:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+<span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">class</span> AddInModule: IEplAddIn
+{
+    <span style="COLOR: #0000ff">private</span> MyEventListener m_EventHandler;
+    <span style="COLOR: #008000">///</span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// This function is called, when starting EPLAN,
+    /// if the add-in is loaded on system startup.
+    ///</span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;returns&gt;&lt;/returns&gt;</span><span style="COLOR: #008000">
+    ///</span><span style="COLOR: #808080">&lt;seealso cref="OnRegister"/&gt;</span><span style="COLOR: #008000">
+</span>     <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">bool</span> OnInit()
+    {
+        m_EventHandler= <span style="COLOR: #0000ff">new</span> MyEventListener ();
+        <span style="COLOR: #0000ff">return</span> <span style="COLOR: #0000ff">true</span>;
+    }
+<span style="COLOR: #008000">//...
+</span>}
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+<span style="COLOR: #0000ff">Public</span> <span style="COLOR: #0000ff">Class</span> AddInModule
+   <span style="COLOR: #0000ff">Implements</span> IEplAddIn
+   <span style="COLOR: #0000ff">Private</span> m_EventHandler <span style="COLOR: #0000ff">As</span> MyEventListener
+
+   <span style="COLOR: #008000">'''</span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+   ''' This function is called, when starting EPLAN,
+   ''' if the add-in is loaded on system startup.
+   '''</span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+   ''' </span><span style="COLOR: #808080">&lt;returns&gt;&lt;/returns&gt;</span><span style="COLOR: #008000">
+   '''</span><span style="COLOR: #808080">&lt;seealso cref="OnRegister"/&gt;</span><span style="COLOR: #008000">
+</span>   <span style="COLOR: #0000ff">Public</span> <span style="COLOR: #0000ff">Function</span> OnInit() <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">Boolean</span> <span style="COLOR: #0000ff">Implements</span> IEplAddIn.OnInit
+      m_EventHandler = <span style="COLOR: #0000ff">New</span> MyEventListener()
+      <span style="COLOR: #0000ff">Return</span> <span style="COLOR: #0000ff">True</span>
+   <span style="COLOR: #0000ff">End Function</span> <span style="COLOR: #008000">'OnInit
+'...
+</span><span style="COLOR: #0000ff">End Class</span> <span style="COLOR: #008000">'AddInModule</span>
+</pre>
+    </div>
+</div>
+
+<h3>&nbsp;</h3>
+
+<h3>Event parameter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+
+<p>Every event may additionally have parameters of a certain type. For this purpose we have EventParameter classes, like for example EventParameterString.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>The "OnEvent()" function has a generic interface as parameter. It takes the specific EventParameter classes as constructor argument. Subsequently it tries to create this parameter object. If the interface does not contain an adequate object, EPLAN throws an exception.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>So if you handle a specific event, you need to know in advance the type of the event parameter in order to create the correct parameter from the interface.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div>
+    <div>
+        <div class="i-tab-container i-tab-container-widget">
+            <ul role="tablist">
+                <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+                <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+            </ul>
+
+            <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+                <pre>
+<span style="COLOR: #0000ff">private</span> <span style="COLOR: #0000ff">void</span> myHandler_EplanEvent(IEventParameter iEventParameter)
+{
+<span style="COLOR: #0000ff">try</span>
+{ EventParameterString oEventParameterString= <span style="COLOR: #0000ff">new</span>
+EventParameterString(iEventParameter);
+String strActionName= oEventParameterString.String; 
+}
+<span style="COLOR: #0000ff">catch</span> (System.InvalidCastException exc)
+{
+String strexc= exc.Message;
+}
+}
+</pre>
+            </div>
+
+            <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+                <pre>
+<span style="COLOR: #0000ff">Private</span> <span style="COLOR: #0000ff">Sub</span> myHandler_EplanEvent(iEventParameter <span style="COLOR: #0000ff">As</span> IEventParameter)
+TryDim oEventParameterString <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">New</span> EventParameterString(iEventParameter)
+<span style="COLOR: #0000ff">Dim</span> strActionName <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">String</span> = oEventParameterString.String 
+<span style="COLOR: #0000ff">Catch</span> exc <span style="COLOR: #0000ff">As</span> System.InvalidCastException
+<span style="COLOR: #0000ff">Dim</span> strexc <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">String</span> = exc.Message
+<span style="COLOR: #0000ff">End</span> <span style="COLOR: #0000ff">Try</span>
+<span style="COLOR: #0000ff">End Sub</span> <span style="COLOR: #008000">'myHandler_EplanEvent</span>
+</pre>
+            </div>
+        </div>
+        <pre>
+
+
+</pre>
+    </div>
+</div>
+
+<h3>&nbsp;Raising events&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+
+<p>You can create and send your own events with arbitrary names. However you have no influence on whether your event is handled somewhere.In the following example an event named "EventFromCSharpAddIn" is raised. The event has a parameter of type EventParameterString.&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+EventParameterString oEventParamString = <span style="COLOR: #0000ff">new</span> EventParameterString();
+oEventParamString.String=<span style="COLOR: #800000">"ParameterAusCSharpAddIn"</span>;
+<span style="COLOR: #0000ff">long</span> lRetVal= <span style="COLOR: #0000ff">new</span> EventManager.Send(<span style="COLOR: #800000">"EventFromCSharpAddIn"</span>, oEventParamString);
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+<span style="COLOR: #0000ff">Dim</span> oEventParamString <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">New</span> EventParameterString()
+oEventParamString.String = <span style="COLOR: #800000">"ParameterAusCSharpAddIn"</span>
+<span style="COLOR: #0000ff">Dim</span> lRetVal <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">Long</span> = <span style="COLOR: #0000ff">New</span> EventManager.Send(<span style="COLOR: #800000">"EventFromCSharpAddIn"</span>, oEventParamString)
+</pre>
+    </div>
+</div>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Events">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

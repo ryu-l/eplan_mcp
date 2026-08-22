@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.concept" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Editing PLC Information|PLC|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The configuration data of the PLC controllers of bus systems can be exchanged with different PLC configuration programs. The PLC data exchange is base..." /><title>Data Exchange of PLC Configuration Files</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/plcgui_k_austauschbuskonfig.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2543"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor2544"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" />
+            <h2>Data Exchange of PLC Configuration Files</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p><a name="kanchor3001"></a><a name="kanchor3002"></a>The configuration data of the PLC controllers of bus systems can be exchanged with different <a href="Glossary_o_sps_konfigurationsprogramme.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC configuration programs</a>. The PLC <a href="Glossary_o_datenaustausch.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">data exchange</a> is based on an exchange file (PLC configuration file) that one processing program writes and another processing program reads. This file can be exchanged simply between the EPLAN designer and the PLC programmer.</p>
+            <p>PLC configuration programs and EPLAN view the configuration data differently. While the electrotechnical hardware details are represented in EPLAN, PLC configuration programs have a logical view for the purpose of the PLC programming. For instance, there are <a href="Glossary_o_sps_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC connection points</a> in EPLAN that are dedicated to the power supply. These <a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a> are not required in the PLC configuration program. On the other hand, there is interface information, such as router information, in the PLC configuration programs that is not needed in EPLAN. Data that an editing program does not find in the exchange file because the other editing program does not know them, are supplemented during importing.</p>
+            <p>EPLAN treats the <a href="plcgui_k_spsanschluesse.htm#I_Netzwerkanschluesse">Ethernet-based bus systems</a> equivalently during exporting / importing, because they have the same hardware <a href="Glossary_o_topologie.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">topology</a>.</p>
+            <fieldset data-mc-conditions="Conditions.New">
+                <p>In addition to PLC <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a>, bus-capable devices are also exchanged during the PLC data exchange. The specification of the configuration project is required for the PLC data exchange.</p>
+            </fieldset>
+            <h3>Scope of interface</h3>
+            <p>In principle the following configuration data is exchanged:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">Hardware data of the used devices<br />Rack structure with <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> information.</li>
+                <li class="Listitem_Normal" value="2">Symbol table (also called assignment list, table of variables or similar)<br />Assignment of the symbolic address to a hardware address.</li>
+                <li class="Listitem_Normal" value="3">Network structures<br />The logical view (association of the devices to networks) is always replaced. The export / import of the exact cabling depends on the bus system and the exchange format used.</li>
+            </ul>
+            <p>Through the different views of the programs and the current developments on the hardware and software sector, the data exchange cannot always cover all the requirements. The applies for example to passive <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a> in the bus <a href="Glossary_o_buendel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">bundle</a> and used field bus systems.</p><a name="I_Geraeteidentifizierung"></a>
+            <h3>Device identification</h3>
+            <p>Identification of the devices both in EPLAN and in the PLC configuration program is effected either by means of the PLC type designation or by specifying a device description file. The <a href="plcgui_k_importbuskonfig.htm#I_Artikelzuordnung">part allocation</a> during the import of PLC configuration files is also carried out on the basis of these <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a>.</p>
+            <p>Every PLC card can only have <span class="important">one</span> device identification. A combination of several parts by entering several PLC type <a href="Glossary_o_bezeichnungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">designations</a>, device description files or indexes is not supported.</p>
+            <p class="Bridgehead">PLC type designation</p>
+            <p>The PLC type designation often corresponds to the order number in the hardware catalog of the respective PLC configuration program. The upper- / lower-case letters as well as the position of blanks has to be taken into consideration. For certain <a href="plcgui_k_importbuskonfig.htm#I_Artikelzuordnung">Import formats</a> several parts with the same PLC type designation can be differentiated by means of the <span class="gui">Object description</span> property.</p>
+            <p class="Bridgehead"><a name="I_GSDDatei"></a>Device description file</p>
+            <p>The specification of a device description file can be necessary, among other things, if you use devices from different manufacturers within a bus system, for example a Beckhoff device that is coupled with a SIEMENS control unit.<br />A device description file contains device information that is not contained in the default hardware catalog of a manufacturer. You obtain device description files (for example GSD files) from the manufacturers of the used components. These files have to be integrated into the default hardware catalog of the PLC configuration program.</p>
+            <p>A description file is specified at the PLC card in the <span class="gui">Device description: File name</span> property. The file name is entered with the file name extension, but without file path. In addition to the <span class="gui">Device description: File name</span> property, the <span class="gui">Object description</span> property or - when exchanging data in the AutomationML format - the <span class="gui">Device description: Index in file</span> property has to be specified as well. On the basis of these properties a device is selected within the file during the import of PLC configuration files.</p>
+            <p>In the <span class="gui">Device description: File name</span> property not only the GSD file name but also other entries, for example device IDs of CC-Link <a href="Glossary_o_module.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">modules</a>, can be stored. To this purpose you enter a prefix followed by a <span class="important">colon</span> before the actual device <a href="Glossary_o_id.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ID</a>, for example <span class="codetext">CSP+:AJ65VBTCE2-8T</span>. This entry is then exported unchanged. This value also has to be contained in the parts management for the import. Otherwise the device cannot be found during importing.</p>
+            <p>If the entry does not contain a prefix (meaning no colon) or the prefix "GSD:", for example <span class="codetext">GSD:SIEM8139.GSD</span>, the entry is interpreted as a device description file. In this case the device description file name is exported together with the index (if it exists).</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">If a device description file name is specified, the <span class="gui">PLC type designation</span> property is <span class="important">not</span> exported during the PLC data exchange. <br />During PLC data exchange in AutomationML format the <span class="gui">Device description: File name</span> property is, however, only exported if <span class="important">no</span> PLC type designation is specified.</p>
+            </div>
+            <h3>Recommendations for the project planning</h3>
+            <p>Begin with the <a href="Glossary_o_baugruppentraeger.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">rack</a> layout on a single-line schematic page. Use single-line <a href="Glossary_o_sps_kaesten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC boxes</a> as <a href="Glossary_o_hauptfunktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">main functions</a>.</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">The hardware data of the used devices is planned through the rack layout. All the main <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> exist in the single-line representation. When this representation is copied, the parts entered there are copied as well.</li>
+                <li class="Listitem_Single_Line" value="2">Individual functions (I/O connection points, power supply, <a href="Glossary_o_sps_busanschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">bus ports</a>, etc.) can be placed via drag &amp; drop from the PLC navigator.</li>
+                <li class="Listitem_Normal" value="3">The rack layout can be exchanged with PLC configuration programs.</li>
+            </ul>
+            <p>Connect the single-line bus ports of the modules via <a href="Glossary_o_autoconnecting.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">autoconnecting</a>.</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">The network structure can be documented clearly by connecting the single-line bus ports.</li>
+                <li class="Listitem_Normal" value="2">The network structure can be exchanged with PLC configuration programs.</li>
+            </ul>
+            <p>Place the I/O connection points with the associated sensors / actuators on multi-line schematic pages. Use bitwise representation (meaning one macro per channel) with functional grouping of the devices. Represent one I/O connection point with the associated sensor / actuator and, if applicable, main circuit per page.</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">Once <a href="Glossary_o_makros.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">macros</a> have been created they can be used repeatedly for similar machine functions.</li>
+                <li class="Listitem_Single_Line" value="2">I/O connection points or <a href="Glossary_o_kanaele.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">channels</a> can be placed via drag &amp; drop from the PLC navigator or assigned.</li>
+                <li class="Listitem_Normal" value="3">You can check the assignment in the PLC navigator or on an overview page.</li>
+            </ul>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="plcgui_k_prinzip.htm">Structure of PLCs</a>
+            </p>
+            <p class="Link_Seealso"><a href="plcgui_k_exportbuskonfig.htm">Exporting PLC Configuration Files</a>
+            </p>
+            <p class="Link_Seealso"><a href="plcgui_k_importbuskonfig.htm">Importing PLC Configuration Files</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

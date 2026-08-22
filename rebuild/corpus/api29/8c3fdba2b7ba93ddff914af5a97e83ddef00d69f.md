@@ -1,0 +1,56 @@
+# FRAME_EVALUATION_AREA_START_POINT_Y(Int32) Property
+
+FRAME\_EVALUATION\_AREA\_START\_POINT\_Y(Int32) Property
+
+Grid offset Y # 12004. This property isn't indexed.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue FRAME_EVALUATION_AREA_START_POINT_Y( 
+   int index
+) {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ FRAME_EVALUATION_AREA_START_POINT_Y {
+   PropertyValue^ get(int index);
+   void set (int index, PropertyValue^ value);
+}
+```
+```
+
+#### Parameters
+
+*index*
+
+#### Property Value
+
+Returns property value of type System.Double.
+
+Remarks
+
+Grid offset in the Y direction relative to the origin.
+
+See Also
+
+#### Reference
+
+[PlotFramePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PlotFramePropertyList.html)
+  
+[PlotFramePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PlotFramePropertyList_members.html)
+  
+[Overload List](topic1783.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PlotFramePropertyList~FRAME_EVALUATION_AREA_START_POINT_Y(Int32))

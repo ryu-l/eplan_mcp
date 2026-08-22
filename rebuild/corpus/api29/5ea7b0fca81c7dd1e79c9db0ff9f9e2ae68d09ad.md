@@ -1,0 +1,60 @@
+# FUNC_ARTICLE_PIECETYPE(Int32) Property
+
+FUNC\_ARTICLE\_PIECETYPE(Int32) Property
+
+Part group # 20903.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue FUNC_ARTICLE_PIECETYPE( 
+   int index
+) {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ FUNC_ARTICLE_PIECETYPE {
+   PropertyValue^ get(int index);
+   void set (int index, PropertyValue^ value);
+}
+```
+```
+
+#### Parameters
+
+*index*
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 50.
+
+Part groups are used to group parts of the same type, e.g., in heat or vibration sensitive items. A maximum of 10 characters can be entered into this field. A max. of 50 part groups can be defined using the index.
+
+Changes done on this property are also visible on properties: \* ARTICLEREF\_PIECETYPE of corresponding [Eplan.EplApi.DataModel.ArticleReference](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReference.html).
+
+See Also
+
+#### Reference
+
+[PlanningSegmentPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList.html)
+  
+[PlanningSegmentPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList~FUNC_ARTICLE_PIECETYPE.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList~FUNC_ARTICLE_PIECETYPE(Int32))

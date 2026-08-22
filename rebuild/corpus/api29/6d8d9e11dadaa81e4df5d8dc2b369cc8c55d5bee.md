@@ -1,0 +1,30 @@
+# FUNC_PLCSTATIONNAME Property (FunctionPropertyList)
+
+FUNC\_PLCSTATIONNAME Property (FunctionPropertyList)
+
+PLC station ID # 20408. This property isn't indexed.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [FUNC\_PLCSTATIONNAME(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_PLCSTATIONNAME(Int32).html) | PLC station ID # 20408. This property isn't indexed. |
+| [FUNC\_PLCSTATIONNAME](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_PLCSTATIONNAME().html) | PLC station ID # 20408. |
+
+Remarks
+
+PLC station ID at the PLC box. The station ID is used as a grouping element for the network components. As a rule it is assigned depending on the physical place (enclosure, switch box etc.) of the network components.
+
+See Also
+
+#### Reference
+
+[FunctionPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList.html)
+  
+[FunctionPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_PLCSTATIONNAME)

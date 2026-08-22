@@ -1,0 +1,50 @@
+# PLCIOENTRY_COMMUNICATIONENTITY_NAME Property
+
+PLCIOENTRY\_COMMUNICATIONENTITY\_NAME Property
+
+Name of the communication unit # 23400.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue PLCIOENTRY_COMMUNICATIONENTITY_NAME {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ PLCIOENTRY_COMMUNICATIONENTITY_NAME {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+This property is no longer in use and only taken into consideration in old projects. PLC addresses can be assigned to a particular communication unit of a PLC card. This property represents the second part of the reference to the communication unit. The first part of the reference is the database ID of the associated PLC box.
+
+See Also
+
+#### Reference
+
+[PlcIOPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlcIOPropertyList.html)
+  
+[PlcIOPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlcIOPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlcIOPropertyList~PLCIOENTRY_COMMUNICATIONENTITY_NAME.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlcIOPropertyList~PLCIOENTRY_COMMUNICATIONENTITY_NAME())

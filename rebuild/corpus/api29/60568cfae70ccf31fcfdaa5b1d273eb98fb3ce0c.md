@@ -1,0 +1,50 @@
+# ARTICLE_VOLTAGEUL Property
+
+ARTICLE\_VOLTAGEUL Property
+
+Terminals: Voltage UL # 22091.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public MDPropertyValue ARTICLE_VOLTAGEUL {get; set;}
+```
+```
+
+```
+```
+public:
+property MDPropertyValue^ ARTICLE_VOLTAGEUL {
+   MDPropertyValue^ get();
+   void set (    MDPropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type .
+
+Remarks
+
+Property of a part variant.
+
+See Also
+
+#### Reference
+
+[MDPartsDatabaseItemPropertyList Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList.html)
+  
+[MDPartsDatabaseItemPropertyList Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList~ARTICLE_VOLTAGEUL.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList~ARTICLE_VOLTAGEUL())

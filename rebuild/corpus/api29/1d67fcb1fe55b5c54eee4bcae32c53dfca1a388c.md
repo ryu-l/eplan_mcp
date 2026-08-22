@@ -1,0 +1,58 @@
+# ReadSettings Method (Settings)
+
+ReadSettings Method (Settings)
+
+Imports a settings xml file and sets all the settings it contains.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public void ReadSettings( 
+   string strFilename
+)
+```
+```
+
+```
+```
+public:
+void ReadSettings( 
+   String^ strFilename
+)
+```
+```
+
+#### Parameters
+
+*strFilename*
+:   Indicates the name of the settings \file.
+
+Exceptions
+
+| Exception | Description |
+| --- | --- |
+| [System.ArgumentNullException](#) | Thrown when `strFilename` is `null`. |
+| [System.ArgumentException](#) | Thrown when `strFilename` is empty. |
+| [BaseException](Eplan.EplApi.Baseu~Eplan.EplApi.Base.BaseException.html) | Method failed. |
+
+Remarks
+
+In contrary to GUI all the settings from the XML file are imported, not only those, which are visible in the settings dialog. Settings imported by this method may not take effect immediately.
+
+See Also
+
+#### Reference
+
+[Settings Class](Eplan.EplApi.Baseu~Eplan.EplApi.Base.Settings.html)
+  
+[Settings Members](Eplan.EplApi.Baseu~Eplan.EplApi.Base.Settings_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.Baseu~Eplan.EplApi.Base.Settings~ReadSettings)

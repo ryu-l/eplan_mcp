@@ -1,0 +1,52 @@
+# Properties.PlaceHolder Enumeration
+
+Properties.PlaceHolder Enumeration
+
+Identificators of properties owned by PlaceHolder class.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public enum Properties.PlaceHolder : System.Enum
+```
+```
+
+```
+```
+public enum class Properties.PlaceHolder : public System.Enum
+```
+```
+
+Members
+
+| Member | Value | Description |
+| --- | --- | --- |
+| **PLACEHOLDER\_DELETE\_AFTER\_USAGE\_IN\_COGINEER** | 19315 | Remove placeholder object after generation with EPLAN Cogineer # 19315. |
+| **PLACEHOLDER\_DESCRIPTION** | 19308 | Placeholder object description # 19308. |
+| **PLACEHOLDER\_LASTUSEDVALUESET** | 19301 | Placeholder object: Last value set selected # 19301. |
+| **PLACEHOLDER\_NAME** | 19300 | Placeholder object name # 19300. |
+| **PLACEHOLDER\_USE\_IN\_COGINEER** | 19314 | Use placeholder object in EPLAN Cogineer # 19314. |
+| **PLACEHOLDER\_VALUESET\_NAME** | 19303 | Value set name # 19303. |
+
+Inheritance Hierarchy
+
+[System.Object](#)  
+   [System.ValueType](#)  
+      [System.Enum](#)  
+         **Eplan.EplApi.DataModel.Properties.PlaceHolder**
+
+See Also
+
+#### Reference
+
+[Eplan.EplApi.DataModel Namespace](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel_namespace.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+PlaceHolder)

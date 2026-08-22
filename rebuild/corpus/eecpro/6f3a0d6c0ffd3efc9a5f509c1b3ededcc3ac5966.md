@@ -1,0 +1,5 @@
+# Delete duplicate sensors, PLC inputs, and power supply lines
+
+Since only one macro can be created from each sensor type, all duplicate sensors must be deleted. This also applies for PLC inputs and power supply lines. The 1b Sensors page should then look like this:
+
+![](../Pictures/tutorial_p8_1bsensoren1.png)

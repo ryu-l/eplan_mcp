@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Managing Master Data|Parts Management|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Configuration files can be used to influence the export and import of parts management data. The configuration file can be selected in the Import reco..." /><title>Parts Management: Control Files for Importing and Exporting Data</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/partsmanagementgui_k_steuerdateiimportexport.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor317"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor318"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8;EPLAN Fluid;EPLAN Preplanning;EPLAN Pro Panel" /><a name="kanchor368"></a>
+            <h2>Parts Management: Control Files for Importing and Exporting Data</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Configuration files can be used to influence the export and import of parts management data. The configuration file can be selected in the <span class="gui">Import records</span> and <span class="gui">Export records</span> dialogs (<span class="gui">Utilities &gt; Parts &gt; Management &gt; [Extras] &gt; Import</span> and <span class="gui">... &gt; Export</span> ) by clicking <span class="gui">[...]</span> in the <span class="gui">File type</span> field, if one of the entries "CSV for &lt;...&gt;", "ECAD" or "Text" is selected. </p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">You have several possibilities for exporting and importing CSV files: You can select the areas "Addresses", "Parts", "Drilling patterns", "Accessory list", and "Accessory placement". These areas may be defined sequentially in a CFG file.</p>
+            </div>
+            <p>To <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> a configuration file, open the desired parts database (e.g., by double-clicking the appropriate directory), select the table whose data you wish to import or export (e.g., "tblFunctionTemplate" for the function template table), and carry over all relevant columns except the "id" column into the <span class="codetext">*.cfg</span> file (using the editor). </p>
+            <p>The following information must be specified at the start of the <span class="codetext">cfg</span> file:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">Column <a href="Glossary_o_trennzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">separator</a>, e.g., "separator=," to define the comma as the column separator</li>
+                <li class="Listitem_Normal" value="2">The "skipLeadIn" entry must take all the headings into account; since "fieldTitle" and "header" each <a href="Glossary_o_erzeugen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">generate</a> a header line, "skipLeadIn" must therefore have a minimum value of 2.</li>
+                <li class="Listitem_Normal" value="3">The number of <a href="Glossary_o_leitungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">lines</a> for a record is defined by the "rowsPerRecord" entry.</li>
+                <li class="Listitem_Normal" value="4">"header" defines the header line, i.e., whatever lies after the "=" will be output as the header line. This entry must also be accounted for in the "skipLeadIn" value.</li>
+                <li class="Listitem_Normal" value="5">Define "fieldTitle=1", so that the names of the fields are output as column headers. This entry must also be accounted for in the "skipLeadIn" value.</li>
+                <li class="Listitem_Normal" value="6">Define "trim=1" so that empty spaces before and after the text are removed on import and the text is carried over left-justified into the EPLAN data field.</li>
+                <li class="Listitem_Normal" value="7">Define "convert-region-dependent=1" so that the numerical representation of the control panel is used during the import. For example, the "German (Germany)" regional scheme means that a period "." is used as the thousands separator and a comma "," is used as the decimal separator (e.g. "1.200,00").</li>
+                <li class="Listitem_Normal" value="8">These entries define the name of the respective table in the <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> "table=&lt;Table name&gt;" (e.g."table=tblFunctionTemplate").</li>
+            </ul>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">By default, a " is imported as "", e.g., "Designation 1: PC with 15"" monitor". You can change the symbol, however, by entering the following line in the <span class="codetext">cfg</span> file:<br />textquote=â<br />The " is then imported as a ".</p>
+            </div>
+            <p>The entries for the individual database fields following the definition of the table name are constructed as follows:</p>
+            <p><span class="codetext">variant=[1!#189]</span>
+            </p>
+            <p>In this example, "variant" is the field from the database. Everything after the "=" is the desired value. The position is specified in the square brackets "[ ]", where everything in front of the "!" defines the number of lines, since a record can also be output over multiple lines. The column information follows the "#" character.</p>
+            <p>Fixed text can also be assigned to fields. This then appears as (e.g.):</p>
+            <p><span class="codetext">variant="text before" + [1!#6] + "text after"</span> or <span class="codetext">partnr="Loz."+[1!#4]</span> or <span class="codetext">partnr="Siemens"</span>.</p>
+            <p>The value in the square brackets "[ ]" can also contain a field with fixed formatting, e.g. <span class="codetext">variant=[6,5]</span>. Here, the first number specifies column information, the second number after the comma specifies the length of the text, i.e., in this case five characters are read in / out of column 6.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The <span class="codetext">...\Parts\EPLAN</span> directory contains the file <span class="codetext">csvimportexport.cfg</span>, which contains the function template data, among other information:</p>
+                        <p class="Infoblock"><span class="codetext">separator=,</span>
+                            <br /><span class="codetext">skipLeadIn=3</span>
+                            <br /><span class="codetext">rowsPerRecord=1</span>
+                            <br /><span class="codetext">header=Header</span>
+                            <br /><span class="codetext">fieldTitle=1</span>
+                            <br />
+                            <br /><span class="codetext">table=tblFunctionTemplate</span>
+                            <br /><span class="codetext">variant=[1!#189]</span>
+                            <br /><span class="codetext">connectionDesignation=[1!#190]</span>
+                            <br /><span class="codetext">pos=[1!#191]</span>
+                            <br /><span class="codetext">terminalNr=[1!#192]</span>
+                            <br /><span class="codetext">idx1=[1!#193]</span>
+                            <br /><span class="codetext">idx2=[1!#194]</span>
+                            <br /><span class="codetext">characteristics=[1!#195]</span>
+                            <br /><span class="codetext">functiondefcategory=[1!#196]</span>
+                            <br /><span class="codetext">functiondefgroup=[1!#197]</span>
+                            <br /><span class="codetext">functiondefid=[1!#198]</span>
+                            <br /><span class="codetext">intrinsicsafety=[1!#199]</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="warning">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/warning.png" />Warning:</p>
+                <p class="Infoblock">Please note that the <span class="important">"tblFunctionTemplate"</span> table may only be imported or exported as a whole. Even if this table apparently contains several fields they are still treated as one field. If, for example, a field has been commented on during the import, any existing entry in the parts management is deleted! </p>
+            </div>
+            <p>When importing parts data of the file types "CSV for &lt;...&gt;" and "Text", in the configuration file you can also define the language to be used when importing the texts. To do this, the desired language code is specified next to the relevant multi-language fields in the configuration file.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><span class="codetext">description1="DE_de@" + [1!#26] + ";EN_us@" + [1!#27] + ";RU_ru@" + [1!#28] + ";"</span>
+                            <br />Here, the information for <span class="gui">Designation 1</span> (<span class="codetext">description1</span>) is split over three columns: Column 26 = German, column 27 = English and column 28 = Russian. The above configuration combines these three columns together.</p>
+                    </div>
+                </div>
+            </div>
+            <p>When you import <span class="important">free <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a></span> and <span class="important">attributes</span>, make sure that the identifier in the CSV file is the field name. In addition, a row number is appended for the tables.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">A possible definition in the configuration file:</p>
+                        <p class="Infoblock"><span class="codetext">table=tblFreeProperty</span>
+                            <br /><span class="codetext">description.1=[1!#207]</span>
+                            <br /><span class="codetext">val.1=[1!#208]</span>
+                            <br /><span class="codetext">unit.1=[1!#209]</span>
+                            <br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>Here, the ".1" represents the first row in the <span class="gui">Free properties</span> table. The attributes are edited in the same way.</p>
+            <p>When importing <span class="important">free properties</span> it is also possible to place all imported free properties on a single line. To do this, in the associated configuration file the free properties to be imported must be listed with the corresponding row number in the <span class="gui">Free properties</span> tab. The row number is entered in the form of a dot "." after the <span class="codetext">description</span>, <span class="codetext">val</span> and <span class="codetext">unit</span> field <a href="Glossary_o_bezeichnungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">designations</a>.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">A possible definition in the configuration file:</p>
+                        <p class="Infoblock"><span class="codetext">table=tblFreeProperty</span>
+                            <br /><span class="codetext">description.1=[#3]</span>
+                            <br /><span class="codetext">val.1=[#4]</span>
+                            <br /><span class="codetext">unit.1=[#5]</span>
+                            <br /><span class="codetext">description.2=[#6]</span>
+                            <br /><span class="codetext">val.2=[#7]</span>
+                            <br /><span class="codetext">unit.2=[#8]</span>
+                            <br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="partslistgui_k_felderexportdatei.htm">Bills of Materials: Export File Fields</a>
+            </p>
+            <p class="Link_Seealso"><a href="partsmanagementgui_k_konfigurationcsvartikel.htm">Parts Management: CSV Import and Export for Parts</a>
+            </p>
+            <p class="Link_Seealso"><a href="partsmanagementgui_k_konfigurationcsvadressen.htm">Parts Management: CSV Import and Export for Addresses</a>
+            </p>
+            <p class="Link_Seealso"><a href="partsmanagementgui_k_konfigurationcsvanschluesse.htm">Parts Management: CSV Import and Export for Connection Point Patterns</a>
+            </p>
+            <p class="Link_Seealso"><a href="partsmanagementgui_k_konfigurationcsvkonstruktion.htm">Parts Management: CSV Import and Export for Drilling Patterns</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

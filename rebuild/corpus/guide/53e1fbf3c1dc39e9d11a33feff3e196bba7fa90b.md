@@ -1,0 +1,39 @@
+# P026074: NC Export:  <x>
+
+### Cause
+
+During the export of the NC machining data, a missing setting was discovered.
+
+Which setting is missing is indicated by the placeholder <x> in the message. The following placeholders are possible:
+
+- The outline definition does not contain an NC outline record for the machine
+- The outline definition does not contain NC outline records
+- The outline definition was not found
+- No tool for drill hole D<value a>
+- No tool for thread M<value a>
+- Cut-out <Form variant> too small for selected tool
+- Alternative drill hole D<value b> produced for drill hole D<value a>
+- Alternative drill hole D <value a> is milled
+- Alternative thread M<value b> produced for thread M<value a>
+- Alternative thread M<value b> drilled for thread M<value a>
+- Alternative core hole D<value b> milled for thread M<value a>
+- Slotted hole with identical values for height and length was not exported
+- Rotated restricted cut-out area cannot be exported.
+
+Additional information:
+
+- Value a = value of diameter to be produced (from placement)
+- Value b = value of diameter which is actually produced
+- Form variant = placeholder for the forms "Rectangle", "Slotted hole", "Octagon", "Hexagon"
+- Regarding "Slotted hole with identical values for height and length was not exported.": The drilling pattern was not defined correctly in the parts database.
+
+### Solution
+
+1. Complete and / or modify the setting for the export of the NC machining data in correspondence with the placeholder.  
+     
+   "Slotted hole with identical values for height and length was not exported.": Change the drill type to "Drill".
+2. Export the NC machining data again.
+
+![](../Pictures/Gui/ALL/note.png)Note:
+
+Using a new check run (any desired scheme) this module-specific message can be deleted from the message management dialog.

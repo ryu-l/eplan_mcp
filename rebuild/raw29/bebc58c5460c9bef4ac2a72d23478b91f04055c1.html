@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Editing PLC Information|PLC|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="You can edit the data for a PLC at every position in the project where this data occurs: Both on the schematic and on the overview page and in the nav..." /><title>Editing PLC Data</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/plcgui_k_arbeitsweise.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2298"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor2299"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor2729"></a>
+            <h2>Editing PLC Data</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>You can edit the data for a PLC at every position in the project where this data occurs: Both on the schematic and on the overview page and in the <a href="Glossary_o_navigatoren.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">navigators</a>. It makes no difference where you begin editing. Changing the hardware data (e.g., the connection point designation) in the schematic does not change this data on the overview page.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">If the scale is changed on schematic pages, the <a href="Glossary_o_eigenschaftstexte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">property texts</a> for the <a href="Glossary_o_sps_kaesten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC boxes</a> are visually modified (scaled) in exactly the same way as for other components. <br />However, a change in the scale does <span class="important">not</span> affect the property texts of the boxes on pages of the type "Panel layout": The corresponding texts remain optically unchanged.</p>
+            </div><a name="I_BearbeitungImSchaltplan"></a>
+            <h3>Editing in the schematic</h3>
+            <p>You can <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> PLC boxes and <a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a> in the graphical editor or in the device or PLC navigators. You can use the graphical editor to insert PLC boxes or connection points into a schematic or overview page and then edit their <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a>. The previously mentioned navigators allow you to predefine PLC boxes or connection points with particular properties and then place them at a later time.</p>
+            <p><a href="Glossary_o_sps_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC connection points</a> can also be inserted without PLC boxes. They are assigned to a PLC box through entry of the DT.</p>
+            <p>If you insert a PLC connection point on a schematic page and give it a connection point designation that has already been assigned in the overview, then the connection points are cross-referenced and the cross-reference is displayed in the schematic and the overview. The following data from the PLC connection point is identifying for the cross reference:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">DT of the PLC card</li>
+                <li class="Listitem_Single_Line" value="2">Function definition</li>
+                <li class="Listitem_Single_Line" value="3">Plug designation<br />(For <a href="Glossary_o_sps_busanschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">bus ports</a>: Bus interface name + Plug designation)</li>
+                <li class="Listitem_Single_Line" value="4">Connection point designation.</li>
+            </ul>
+            <p>If these data are identical, the PLC connection point is <span class="important">additionally</span> identified based on the PLC address.</p>
+            <fieldset data-mc-conditions="Conditions.New">
+                <p>For bus ports the bus interface name together with plug designation is identifying. If the same bus port exists in multiple <a href="Glossary_o_darstellungsarten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">representation types</a> in the project, it is necessary that the bus interface name is entered in all representation types for global editing and for <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a>. With the project correction you can transfer the bus interface names at all representation types of the same bus port by using the <span class="gui">Synchronize bus interface names</span> setting.</p>
+                <p>You can place the plug of a PLC card on a separate schematic page. The <a href="Glossary_o_anschlussbezeichnungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection point designations</a> of the PLC connection points can be transferred via synchronization to the <a href="Glossary_o_steckerkontakte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">pins</a> connected to these. A corresponding setting is available to this purpose in the project correction.</p>
+            </fieldset>
+            <p>You can also draw the PLC configuration, the power supply, and the I/O assignments on separate schematic pages. Automatic <a href="Glossary_o_querverweise.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cross-references</a> between these displays are automatically created and displayed. You can also mix these displays and draw them together on a single page. In this case, a PLC card box is the main function where the cross-references to the other boxes is displayed.</p>
+            <h4><a name="I_BmkUebernahme"></a>DT adoption in PLC connection points</h4>
+            <p>Functions which have not been assigned their own displayed DT can use the DT from another function. For that reason PLC connection points too have the property <span class="gui">DT adoption: Search direction</span>. With regard to this, the following special features of PLC connection points should be noted:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">For PLC connection points, the search direction is not only used to adopt the DT, but also to adopt the plug designation from another PLC connection point.</li>
+                <li class="Listitem_Normal" value="2">In overview pages the search direction is always upwards, regardless of the orientation of the plot frame. Searching to the left can be forced by toggling the search direction directly on the PLC connection point.</li>
+            </ul><a name="kanchor2730"></a><a name="kanchor2731"></a><a name="I_BearbeitungInKartenuebersicht"></a>
+            <h3>Editing in the overview</h3>
+            <p>As well as schematics, the PLC documentation frequently includes overview pages providing a different view of the cards in a PLC. A PLC card overview shows the physical cards of the PLC, which are represented in the schematic as individual PLC boxes that are often drawn distributed over the schematic. It graphically displays which inputs / outputs are occupied and which are available, which function they perform, and on which schematic page they are displayed. This type of overview can contain a different number of inputs and outputs, depending on the manufacturer and type.</p>
+            <p>You draw <a href="Glossary_o_sps_kartenuebersichten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC card overviews</a> on pages of type "Overview". A synchronization in the <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> of cross-references occurs between the PLC card overview and the schematic pages. All of the PLC connection point data can be entered in both the overview and in the schematic.</p>
+            <p>You can draw a PLC card overview at any time, even when no PLC <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> have been placed in the schematic. In this case, the cards and PLC connection points are created and can be later re-used in the schematic.</p>
+            <p>It is also possible to place connection points in the PLC card overview that have already been placed in a different manner (e.g. in the graphical editor, the PLC navigator, or the device navigator). In this case, the cross-reference to the corresponding existing connection point is displayed. The identifying properties for the cross-reference are the DT of the PLC card, the plug designation (for bus ports: Bus interface name + Plug designation) and the connection point designation. This means that <span class="codetext">A1:1</span> is not the same as <span class="codetext">A1:1</span>, when separately entered as plug <span class="codetext">X1</span> and <span class="codetext">X2</span>.</p><a name="kanchor2732"></a><a name="I_Auswertungen"></a>
+            <h3>Reports</h3>
+            <p>In reports, it is possible to display the data of a connected PLC connection point for all <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a>. For this, in <a href="Glossary_o_formulare.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">forms</a> you can use the properties offered when entering placeholder text for the "Connected PLC connection point" element. In EPLAN, the following PLC-specific reports can be generated:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">PLC diagrams</li>
+                <li class="Listitem_Single_Line" value="2">PLC card overviews.</li>
+            </ul><a name="kanchor2733"></a><a name="kanchor2734"></a><a name="kanchor2735"></a><a name="I_Abgleichen"></a>
+            <h3>Synchronize properties</h3>
+            <p>When synchronizing properties between multi-line and <a href="Glossary_o_einpoligedarstellungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">single-line representations</a> and overview pages, automatically determined properties, e.g. the function text and the symbolic address, are not overwritten.</p>
+            <h4>Function text</h4>
+            <p>If during synchronization the function text of a PLC connection point in the schematic is transferred to the same connection point in the overview and the function text of the PLC connection point in the schematic does not exist then the value found in the schematic path is transferred, i.e. the path function text. If no value is present there, then nothing is transferred.</p>
+            <p>If the reverse occurs during synchronization and the function text of a PLC connection point in the overview is transferred to the PLC connection point in the schematic, then it is only transferred to locations where a function text already exists. If (e.g.) function text already exists for a PLC connection point in the schematic, then this is overwritten. If no function text exists for the PLC connection point, then the path function text is searched for. If this exists, then it is overwritten. If none exists, then the function text at the PLC connection point is filled.</p>
+            <h4>Symbolic address</h4>
+            <p>If during synchronization the symbolic address of a PLC connection point in the schematic is transferred to the same connection point in the overview and the symbolic address of the PLC connection point in the schematic does not exist, then the value found by the sensor / actuator search is transferred.</p>
+            <p>If the reverse occurs during synchronization and the symbolic address of a PLC connection point in the overview is transferred to the PLC connection point in the schematic, then the symbolic address at the PLC connection point is always changed.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="plcgui_h_spszeichnen.htm">Drawing PLC Cards and Connection Points</a>
+            </p>
+            <p class="Link_Seealso"><a href="plcgui_h_spsanlegen.htm">Creating and Editing PLC Cards and Connection Points</a>
+            </p>
+            <p class="Link_Seealso"><a href="xessettingsgui_h_spsquerverweiseerzeugen.htm">Creating PLC Cross-references</a>
+            </p>
+            <p class="Link_Seealso"><a href="formgeneratorgui_k_auswertungstypen.htm">Report Types</a>
+            </p>
+            <p class="Link_Seealso"><a href="adjustdata_h_funktionabgleichen.htm">Synchronizing Distributed Functions</a>
+            </p>
+            <fieldset data-mc-conditions="Conditions.New">
+                <p class="Link_Seealso"><a href="ProjectCorrectionGui_h_projektkorrigieren.htm">Correcting a Project</a>
+                </p>
+            </fieldset>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

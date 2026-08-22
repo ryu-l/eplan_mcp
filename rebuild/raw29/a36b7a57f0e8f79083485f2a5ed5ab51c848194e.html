@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Previously, the discipline components were inserted in the mechatronic modular system T_Mechatronic_ModularSystem below the ECAD unit. The discipline ..." /><title>Creating a library for the discipline ECAD P8</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/tutp8_h_expert_create_discipline_lib.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor82"></a>
+            <MadCap:concept term="Tutorial;EPLAN Electric P8" />
+            <h2>Creating a library for the discipline ECAD P8</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Previously, the discipline components were inserted in the mechatronic modular system <span class="important">T_Mechatronic_ModularSystem</span> below the <span class="important">ECAD</span> unit. The discipline components is now to be collected in their own library.</p>
+            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating a library for ECAD P8:</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <ol>
+                        <li value="1">In the <span class="gui">Library Catalog</span> click <img src="../Pictures/button_new_library.png" alt="" />.</li>
+                        <li value="2">Enter <span class="important">T_ECAD_P8</span> in the <span class="gui">Name</span> field.</li>
+                    </ol>
+                    <p>Import the libraries <span class="important">ECAD</span>, <span class="important">T_Mechatronic_Architecture</span> and <span class="important">T_Interfaces</span>:</p>
+                    <ol>
+                        <li value="1">Open the editor page <span class="gui">Imported libraries</span>.</li>
+                        <li value="2">Click the symbol <span class="gui">[Add library]</span>.</li>
+                        <li value="3">In the <span class="gui">Library finder</span> dialog click <span class="gui">[Search]</span>.</li>
+                        <li value="4">Mark the libraries <span class="important">ECAD</span>, <span class="important">T_Mechatronic_Architecture</span> and <span class="important">T_Interfaces</span>.</li>
+                        <li value="5">Confirm with <span class="gui">[OK]</span>.</li>
+                        <li value="6">Save the library.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Moving discipline components into the library T_ECAD_P8:</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p class="Bridgehead">Making the T_ECAD_P8 library visible for T_Mechatronic_ModularSystem</p>
+                    <ol>
+                        <li value="1">Select the <span class="important">T_Mechatronic_ModularSystem</span> library.</li>
+                        <li value="2">Open the editor page <span class="gui">Imported libraries</span>.</li>
+                        <li value="3">Click the symbol <span class="gui">[Add library]</span>.</li>
+                        <li value="4">In the <span class="gui">Library finder</span> dialog click <span class="gui">[Search]</span>.</li>
+                        <li value="5">Select the <span class="important">T_ECAD_P8</span> library.</li>
+                        <li value="6">Confirm with <span class="gui">[OK]</span>.</li>
+                        <li value="7">Save the library.</li>
+                    </ol>
+                    <p>The visibility is established.</p>
+                    <p class="Bridgehead">Moving discipline components</p>
+                    <ol>
+                        <li value="1">Mark the <span class="important">ECAD</span> unit in the <span class="important">T_Mechatronic_ModularSystem</span> library.</li>
+                        <li value="2">Drag the unit into the <span class="important">T_ECAD_P8</span> library.</li>
+                    </ol>
+                    <p class="Bridgehead">Undoing visibility</p>
+                    <ol>
+                        <li value="1">Open the <span class="important">T_Mechatronic_ModularSystem</span> library.</li>
+                        <li value="2">Open the editor page <span class="gui">Imported libraries</span>.</li>
+                        <li value="3">Select the <span class="important">T_ECAD_P8</span> library.</li>
+                        <li value="4">Press the key <span class="gui">[Del]</span>.</li>
+                        <li value="5">Save the library.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

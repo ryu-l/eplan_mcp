@@ -1,0 +1,32 @@
+# CDP_CON_DESCRIPTION Property
+
+CDP\_CON\_DESCRIPTION Property
+
+Associated connections: Connection description # 31032. This property isn't indexed, and is read-only.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [CDP\_CON\_DESCRIPTION(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPointPropertyList~CDP_CON_DESCRIPTION(Int32).html) | Associated connections: Connection description # 31032. This property isn't indexed, and is read-only. |
+| [CDP\_CON\_DESCRIPTION](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPointPropertyList~CDP_CON_DESCRIPTION().html) | Associated connections: Connection description # 31032. |
+
+Remarks
+
+This property is read-only..
+
+This property is no longer in use and only taken into consideration in old projects. On a connection definition point, this shows the corresponding property of the connection running below the connection definition point.
+
+See Also
+
+#### Reference
+
+[ConnectionDefinitionPointPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPointPropertyList.html)
+  
+[ConnectionDefinitionPointPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPointPropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPointPropertyList~CDP_CON_DESCRIPTION)

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Using Graphical Editing|Path Function Texts|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="If no other function text is entered for a component, the function text generated automatically from the path will be used for reports. The search dir..." /><title>Path Function Texts: Principle</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/gededitgui_k_pfadtextprinzip.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2897"></a>
+            <MadCap:concept term="Grundlagen;EPLAN Plattform" /><a name="kanchor3447"></a>
+            <h2>Path Function Texts: Principle</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>If no other function text is entered for a <a href="Glossary_o_schaltzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">component</a>, the function text generated automatically from the path will be used for <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a>. The search direction depends on the plot frame used.<br />To decide whether a function text on a component has been entered or is an automatically generated function text, each function has the <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> <span class="gui">Function text</span> and <span class="gui">Function text (automatic)</span>.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The <span class="gui">Function text</span> property contains the manually entered function text.</li>
+                <li class="Listitem_Normal" value="2">The <span class="gui">Function text (automatic)</span> property is automatically determined and cannot be changed manually. It contains the manually entered function text if that property is not empty. Otherwise the relevant path function text in the schematic is entered here.</li>
+            </ul>
+            <div class="warning">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">The path function text is only correctly adopted in the <span class="gui">Function text (automatic)</span> property as standard, when the insertion point of the component and the insertion point of the path function text lie directly above/below each other.</p>
+            </div>
+            <div>
+                <p>It is possible to extend the search for path function text to the entire schematic path. The project setting <span class="gui">Extend path function text on the schematic path</span> (under <span class="gui">Options &gt; Settings &gt; Projects &gt; "Project name" &gt; Graphical editing &gt; General</span>) must be selected. In this case, a path function text is carried over into the <span class="gui">Function text (automatic)</span> property of a component if it is located anywhere within the same path. However, the insertion point of the path function text does not need to be located immediately above / below the insertion point of the component in question. If there are multiple <a href="Glossary_o_pfad_funktionstexte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">path function texts</a> in the path, the first path found is transferred to the component. For this, the schematic path - identical for all <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> - is searched from left to right and from bottom to top.</p>
+                <div class="example">
+                    <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /> <a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example: </a></p></span>
+                        <div class="MCDropDownBody dropDownBody">
+                            <p class="Infoblock">Correct positioning of the path function text in a line above the component. The path function text can be reported here and adopted in the <span class="gui">Function text (automatic)</span> property.</p>
+                            <p class="Infoblock">
+                                <img src="../Pictures/Gui/ALL/gededitgui_pathfunctiontext1_as.png" />
+                            </p>
+                            <p class="Infoblock">Incorrect positioning of the path function text, displaced below the component. The path function text cannot be reported here and the <span class="gui">Function text (automatic)</span> property remains empty.</p>
+                            <p class="Infoblock">
+                                <img src="../Pictures/Gui/ALL/gededitgui_pathfunctiontext2_as.png" />
+                            </p>
+                            <p class="Infoblock">But if the <span class="gui">Extend path function text on the schematic path</span> project setting is selected, the path function text is also transferred to the <span class="gui">Function text (automatic)</span> property here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="warning">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">The path function text is only transferred within the complete schematic path if the plot <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> either only contains columns or only <a href="Glossary_o_leitungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">lines</a>. If the plot frame contains columns <span class="important">and </span>lines, the path function text is only transferred to the components that are in the same "Field" (defined by the column and line number) as the path function text.</p>
+            </div>
+            <p>When displaying the <span class="gui">Function text (automatic)</span> property on a project page, the line breaks of the path function text or of the manually entered function text are removed. These line breaks are not required for display on PLC overview pages or in the <a href="Glossary_o_auswertungsseiten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">report pages</a> and would even cause problems.</p>
+            <p>The path function text basically behaves like a graphical text and has the same orientation options.</p><a name="kanchor3448"></a><a name="I_VerhaltenBeimAbbuchen"></a>
+            <h3>Behavior of the path function text for removal and return of functions</h3>
+            <p>If a function is taken from a navigator and placed, it automatically takes the path function text from the path, if that exists. If a function is returned from the schematic to the navigator, the function text of the returned function is changed if it was taken from the path, but not entered directly in the component.</p>
+            <p>If a component is cut and reinserted in a different place in the project or in a different project, then the function text in the newly generated function is changed if it was derived from the path function text in the original function.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="gededitgui_k_pfadtextstart.htm">Path Function Texts</a>
+            </p>
+            <p class="Link_Seealso"><a href="gededitgui_k_pfadtextauswertung.htm">Reporting of Path Function Texts</a>
+            </p>
+            <p class="Link_Seealso"><a href="gededitgui_h_pfadtexteinfuegen.htm">Inserting and Editing Path Function Texts</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

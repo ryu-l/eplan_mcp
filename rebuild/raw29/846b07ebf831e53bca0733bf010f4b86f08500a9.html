@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Managing Project Data|Bills of materials|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="When exporting a bill of materials, the parts data is output to an export file. Data exported in this manner can then be edited and re-imported. Howev..." /><title>Bills of Materials: Export File Fields</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/partslistgui_k_felderexportdatei.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor3162"></a>
+            <MadCap:concept term="Grundlagen;EPLAN Plattform;EPLAN Electric P8;EPLAN Fluid;EPLAN Pro Panel" /><a name="kanchor3769"></a>
+            <h2>Bills of Materials: Export File Fields</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>When exporting a bill of materials, the parts data is output to an export file. Data exported in this manner can then be edited and re-imported. However, only the <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> listed below are written back on import:</p>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Export file field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Property</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_PARTNO</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Part number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_VARIANT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Part variant, category <span class="gui">Part reference data</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_PARTTYPE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Record type, category <span class="gui">Part reference data</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_COUNT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Number of units / quantity</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_FUNCTIONGROUP</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Function group, category <span class="gui">Part reference data</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_PIECETYPE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Part group, category <span class="gui">Part reference data</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_ASSIGNMENT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Part allocation, category <span class="gui">Part reference data</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_ASSEMBLY</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Assembly, category <span class="gui">Part reference data</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_POSNR</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Item number, category <span class="gui">Part reference data</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_ADDITIONAL_TEXTFIELD</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Supplementary field text, category <span class="gui">Part reference data</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_ADDITIONAL_BOOLFIELD</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Supplementary field yes/no, category <span class="gui">Part reference data</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_EXTERNAL_PLACEMENT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">External placement, category <span class="gui">Part reference data</span></p>
+                    </td>
+                </tr>
+            </table>
+            <p>The following table provides an overview of all properties written to the export file:</p>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Export file field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Property</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_IDENTNAME</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_PLANT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Higher-level function (main identifier)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_FULLPLANT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Higher-level function</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_LOCATION</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Mounting location (main identifier)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_FULLLOCATION</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Mounting location</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_FUNCTIONALASSIGNMENT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Functional assignment (main identifier)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_FULLFUNCTIONALASSIGNMENT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Functional assignment</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_PLACEOFINSTALLATION</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Installation site (main identifier)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_FULLPLACEOFINSTALLATION</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Installation site</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_USERDEFINED</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">User-defined structure (main identifier)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_FULLUSERDEFINED</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">User-defined structure</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_INSTALLATIONNUMBER</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Higher-level function number (main identifier)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_FULLINSTALLATIONNUMBER</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Higher-level function number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_DESIGNATION_FULLSUBINSTALLATIONNUMBER</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Installation subnumber</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_PROPUSER_DBOBJECTID</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Object identification</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_INSTANCE_FULLPLACEMENTLOCATION</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Placement</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DEVICETAG_MAIN</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (superior, without project structures)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DEVICETAG_NESTED</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate, without project structures)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_PREFIX</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Prefix</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_CODE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Identifier</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_COUNTER</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Counter</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_SUFFIX</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Subcounter</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_NESTEDPREFIX</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Prefix</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_NESTEDCODE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Identifier</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_NESTEDCOUNTER</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate):Counter</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_NESTEDSUFFIX</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Subcounter</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_MOUNTINGLOCATION</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Mounting site (describing)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_GRAVINGTEXT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Engraving text</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_COMPONENTTYPE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Function definition</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_TECHNICAL_CHARACTERISTIC</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Technical characteristics</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_TEXT_AUTOMATIC</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Function text (automatic)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DEVICETAG_FULLNAME</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Name (without project structures)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_CABLE_LAYOUT_FORM</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Cable assignment diagram <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_TYPE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Representation type</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT_PAGECOUNTER</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Page</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT_PAGESUBCOUNTER</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Subpage</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT_COLUMN</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Column</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT_ROW</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Row</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT_SECTION</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Section</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT_FUNCTIONCODE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Application</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT_SUPPLEMENTARYFIELD01</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Supplementary field 1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT_SUPPLEMENTARYFIELD02</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Supplementary field 2</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT_SUPPLEMENTARYFIELD03</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Supplementary field 3</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT_SUPPLEMENTARYFIELD04</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Supplementary field 4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT_SUPPLEMENTARYFIELD05</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT: Supplementary field 5</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT2_PAGECOUNTER</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Page</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT2_PAGESUBCOUNTER</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Subpage</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT2_COLUMN</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Column</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT2_ROW</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Row</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT2_SECTION</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Section</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT2_FUNCTIONCODE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Application</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT2_SUPPLEMENTARYFIELD01</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Supplementary field 1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT2_SUPPLEMENTARYFIELD02</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Supplementary field 2</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT2_SUPPLEMENTARYFIELD03</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Supplementary field 3</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT2_SUPPLEMENTARYFIELD04</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Supplementary field 4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_DT2_SUPPLEMENTARYFIELD05</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">DT (subordinate): Supplementary field 5</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_CRAFT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Trade</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_SUBCRAFT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Subtrade</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_ISPLACEDIN_CIRCUIT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Function has the "Multi-line" representation type</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_ISPLACEDIN_SINGLELINE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Function has the "Single-line" representation type</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_ISPLACEDIN_PAIRCROSSREFERENCE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Function has the "Pair cross-reference" representation type</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_ISPLACEDIN_OVERVIEW</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Function has the "Overview" representation type</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_FUNC_ISPLACEDIN_PROCESSANDINSTDIAGRAM</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Function has the "<a href="Glossary_o_ri_fliessbild.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">P&amp;I diagram</a>" representation type</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_PARTNO</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Part number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_COUNT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Quantity</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_COUNT_PLACED</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Quantity (placed)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_COUNT_NOTPLACED</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Quantity (unplaced)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_MOUNTINGPLATE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Mounting panel</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_PARTTYPE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Record type</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_POSNR</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Item number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_VARIANT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Variant</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_FUNCTIONGROUP</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Function group</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_PIECETYPE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Part group</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_ASSIGNMENT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Part allocation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_ASSEMBLY</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Assembly</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_MODULE_PART</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Module <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_SUPPRESSINPARTSLIST</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Suppress in bill of materials (if filtered)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_PROJECTARTICLE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Project parts</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_COUNT_TOTAL</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Total amount (number of units)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_LENGTH_SUM</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Total <a href="Glossary_o_kabel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable</a> length</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_ADDITIONAL_TEXTFIELD</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Suppl. field: Text</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_ADDITIONAL_BOOLFIELD</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Supplementary field Yes / No</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_TOTALPURCHASEPRICE_1</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Total purchase price 1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLEREF_TOTALPURCHASEPRICE_2</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Total purchase price 2</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_TYPENR</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Type number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_ORDERNR</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Order number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_DESCR1</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Designation 1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_DESCR2</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Designation 2</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_DESCR3</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Designation 3</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_MANUFACTURER</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Manufacturer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_SUPPLIER</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Supplier</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_MACRO</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Graphical macro (incl. directory)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_HEIGHT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Height</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_WIDTH</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Width</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_DEPTH</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Depth</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_MACRONAME</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Graphical macro</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_PRODUCTSUBGROUP</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Product subgroup</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_PICTUREFILE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Image file</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_CABLEDESIGNATION</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Cable designation in graphic</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_SALESPRICE_1</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Sales price 1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_SALESPRICE_2</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Sales price 2</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_WEAR</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Wearing part</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_SPARE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Spare part</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_MAINTENANCE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Lubrication / maintenance</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_LIFETIME</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Service time</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_STRESS</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Stress</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_USAGE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Procurement</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_FREE_DATA_DESCRIPTION</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Free property: Description</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_FREE_DATA_VALUE</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Free property: Value</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_FREE_DATA_UNIT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Free property / unit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">P_ARTICLE_EXTERNAL_PLACEMENT</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">External placement</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">REFERENCE_POS</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Reference position of the part; when assigning several parts, this defines the sequence in which parts are entered into the <span class="gui">Part</span> tab in the <span class="gui">Properties &lt;...&gt;</span> dialog.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="partslistgui_h_stuecklistenexportieren.htm">Exporting Bills of Materials</a>
+            </p>
+            <p class="Link_Seealso"><a href="partslistgui_h_stuecklistenimportieren.htm">Importing Bills of Materials</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

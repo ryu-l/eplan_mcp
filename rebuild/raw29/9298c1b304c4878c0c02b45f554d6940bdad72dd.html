@@ -1,0 +1,291 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Implicit Type Conversion Operator (AnyPropertyId)</title>
+    <meta name="Title" content=""/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n2018","initialNodeContainer":"c74","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit"/>
+    <meta name="Description" content="Converts the specified property number into AnyProjectId object. When setting a property by number, be aware, that the property might not exist for the object." />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId_methods"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.DataModel.AnyPropertyId.op_Implicit~Eplan.EplApi.DataModel.Properties+Line"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel_namespace.html">Eplan.EplApi.DataModel Namespace</a>
+ / <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId Class</a>
+ / Implicit Type Conversion Operator</div></div>
+
+    
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Implicit Type Conversion Operator (AnyPropertyId)</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">Converts the specified property number into AnyProjectId object. When setting a property by number, be aware, that the property might not exist for the object.</div>
+            
+            <div class="i-section-heading" id="i-overloadlist-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Overload List</span></div><div id="i-overloadlist-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>Overload</th><th>Description</th></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Line,AnyPropertyId).html">Implicit Type Conversion(Line,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(PlotFrame,AnyPropertyId).html">Implicit Type Conversion(PlotFrame,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(HyperLink,AnyPropertyId).html">Implicit Type Conversion(HyperLink,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(InterruptionPoint,AnyPropertyId).html">Implicit Type Conversion(InterruptionPoint,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(CopperBundle,AnyPropertyId).html">Implicit Type Conversion(CopperBundle,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(LocationBox,AnyPropertyId).html">Implicit Type Conversion(LocationBox,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Connection3D,AnyPropertyId).html">Implicit Type Conversion(Connection3D,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(CommunicationEntity,AnyPropertyId).html">Implicit Type Conversion(CommunicationEntity,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Symbol,AnyPropertyId).html">Implicit Type Conversion(Symbol,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Page,AnyPropertyId).html">Implicit Type Conversion(Page,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(TerminalStrip,AnyPropertyId).html">Implicit Type Conversion(TerminalStrip,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(SegmentDefinition,AnyPropertyId).html">Implicit Type Conversion(SegmentDefinition,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Image,AnyPropertyId).html">Implicit Type Conversion(Image,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(PlaceHolder,AnyPropertyId).html">Implicit Type Conversion(PlaceHolder,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(MacroBox,AnyPropertyId).html">Implicit Type Conversion(MacroBox,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Cable,AnyPropertyId).html">Implicit Type Conversion(Cable,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(PotentialDefinition,AnyPropertyId).html">Implicit Type Conversion(PotentialDefinition,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Article,AnyPropertyId).html">Implicit Type Conversion(Article,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(DimensionCircle,AnyPropertyId).html">Implicit Type Conversion(DimensionCircle,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(ArticleReference,AnyPropertyId).html">Implicit Type Conversion(ArticleReference,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(PipingDefinition,AnyPropertyId).html">Implicit Type Conversion(PipingDefinition,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(BusBar,AnyPropertyId).html">Implicit Type Conversion(BusBar,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(MacroEntry,AnyPropertyId).html">Implicit Type Conversion(MacroEntry,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(OptionFragment,AnyPropertyId).html">Implicit Type Conversion(OptionFragment,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Location,AnyPropertyId).html">Implicit Type Conversion(Location,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(PathText,AnyPropertyId).html">Implicit Type Conversion(PathText,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(DimensionItem,AnyPropertyId).html">Implicit Type Conversion(DimensionItem,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(PlugStrip,AnyPropertyId).html">Implicit Type Conversion(PlugStrip,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(SegmentTemplate,AnyPropertyId).html">Implicit Type Conversion(SegmentTemplate,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(FunctionDefinitionLibrary,AnyPropertyId).html">Implicit Type Conversion(FunctionDefinitionLibrary,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(InstallationSpace,AnyPropertyId).html">Implicit Type Conversion(InstallationSpace,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(OptionGroup,AnyPropertyId).html">Implicit Type Conversion(OptionGroup,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(DeletedObjectInfo,AnyPropertyId).html">Implicit Type Conversion(DeletedObjectInfo,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(MergedArticleReference,AnyPropertyId).html">Implicit Type Conversion(MergedArticleReference,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(ConnectionPointsInfo,AnyPropertyId).html">Implicit Type Conversion(ConnectionPointsInfo,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Int32).html">Implicit Type Conversion(AnyPropertyId,Int32)</A></td><td class="i-description">Converts the specified property number into AnyProjectId object. When setting a property by number, be aware, that the property might not exist for the object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,ConnectionPointsInfo).html">Implicit Type Conversion(AnyPropertyId,ConnectionPointsInfo)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+ConnectionPointsInfo.html">Properties.ConnectionPointsInfo</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,MergedArticleReference).html">Implicit Type Conversion(AnyPropertyId,MergedArticleReference)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+MergedArticleReference.html">Properties.MergedArticleReference</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,DeletedObjectInfo).html">Implicit Type Conversion(AnyPropertyId,DeletedObjectInfo)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+DeletedObjectInfo.html">Properties.DeletedObjectInfo</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,OptionGroup).html">Implicit Type Conversion(AnyPropertyId,OptionGroup)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+OptionGroup.html">Properties.OptionGroup</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,InstallationSpace).html">Implicit Type Conversion(AnyPropertyId,InstallationSpace)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+InstallationSpace.html">Properties.InstallationSpace</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,FunctionDefinitionLibrary).html">Implicit Type Conversion(AnyPropertyId,FunctionDefinitionLibrary)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+FunctionDefinitionLibrary.html">Properties.FunctionDefinitionLibrary</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,SegmentTemplate).html">Implicit Type Conversion(AnyPropertyId,SegmentTemplate)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+SegmentTemplate.html">Properties.SegmentTemplate</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,PlugStrip).html">Implicit Type Conversion(AnyPropertyId,PlugStrip)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+PlugStrip.html">Properties.PlugStrip</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,DimensionItem).html">Implicit Type Conversion(AnyPropertyId,DimensionItem)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+DimensionItem.html">Properties.DimensionItem</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,PathText).html">Implicit Type Conversion(AnyPropertyId,PathText)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+PathText.html">Properties.PathText</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Location).html">Implicit Type Conversion(AnyPropertyId,Location)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Location.html">Properties.Location</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,OptionFragment).html">Implicit Type Conversion(AnyPropertyId,OptionFragment)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+OptionFragment.html">Properties.OptionFragment</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,MacroEntry).html">Implicit Type Conversion(AnyPropertyId,MacroEntry)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+MacroEntry.html">Properties.MacroEntry</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,BusBar).html">Implicit Type Conversion(AnyPropertyId,BusBar)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+BusBar.html">Properties.BusBar</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,PipingDefinition).html">Implicit Type Conversion(AnyPropertyId,PipingDefinition)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+PipingDefinition.html">Properties.PipingDefinition</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,ArticleReference).html">Implicit Type Conversion(AnyPropertyId,ArticleReference)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+ArticleReference.html">Properties.ArticleReference</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,DimensionCircle).html">Implicit Type Conversion(AnyPropertyId,DimensionCircle)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+DimensionCircle.html">Properties.DimensionCircle</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Article).html">Implicit Type Conversion(AnyPropertyId,Article)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Article.html">Properties.Article</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,PotentialDefinition).html">Implicit Type Conversion(AnyPropertyId,PotentialDefinition)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+PotentialDefinition.html">Properties.PotentialDefinition</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Cable).html">Implicit Type Conversion(AnyPropertyId,Cable)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Cable.html">Properties.Cable</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,MacroBox).html">Implicit Type Conversion(AnyPropertyId,MacroBox)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+MacroBox.html">Properties.MacroBox</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,PlaceHolder).html">Implicit Type Conversion(AnyPropertyId,PlaceHolder)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+PlaceHolder.html">Properties.PlaceHolder</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Image).html">Implicit Type Conversion(AnyPropertyId,Image)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Image.html">Properties.Image</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,SegmentDefinition).html">Implicit Type Conversion(AnyPropertyId,SegmentDefinition)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+SegmentDefinition.html">Properties.SegmentDefinition</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,TerminalStrip).html">Implicit Type Conversion(AnyPropertyId,TerminalStrip)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+TerminalStrip.html">Properties.TerminalStrip</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Page).html">Implicit Type Conversion(AnyPropertyId,Page)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Page.html">Properties.Page</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Symbol).html">Implicit Type Conversion(AnyPropertyId,Symbol)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Symbol.html">Properties.Symbol</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,CommunicationEntity).html">Implicit Type Conversion(AnyPropertyId,CommunicationEntity)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+CommunicationEntity.html">Properties.CommunicationEntity</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Connection3D).html">Implicit Type Conversion(AnyPropertyId,Connection3D)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Connection3D.html">Properties.Connection3D</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,LocationBox).html">Implicit Type Conversion(AnyPropertyId,LocationBox)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+LocationBox.html">Properties.LocationBox</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,CopperBundle).html">Implicit Type Conversion(AnyPropertyId,CopperBundle)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+CopperBundle.html">Properties.CopperBundle</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,InterruptionPoint).html">Implicit Type Conversion(AnyPropertyId,InterruptionPoint)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+InterruptionPoint.html">Properties.InterruptionPoint</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,HyperLink).html">Implicit Type Conversion(AnyPropertyId,HyperLink)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+HyperLink.html">Properties.HyperLink</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,PlotFrame).html">Implicit Type Conversion(AnyPropertyId,PlotFrame)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+PlotFrame.html">Properties.PlotFrame</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Line).html">Implicit Type Conversion(AnyPropertyId,Line)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Line.html">Properties.Line</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Text).html">Implicit Type Conversion(AnyPropertyId,Text)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Text.html">Properties.Text</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,ViewPlacement).html">Implicit Type Conversion(AnyPropertyId,ViewPlacement)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+ViewPlacement.html">Properties.ViewPlacement</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,StrandConnector).html">Implicit Type Conversion(AnyPropertyId,StrandConnector)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+StrandConnector.html">Properties.StrandConnector</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,PlanningSegment).html">Implicit Type Conversion(AnyPropertyId,PlanningSegment)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+PlanningSegment.html">Properties.PlanningSegment</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Segment).html">Implicit Type Conversion(AnyPropertyId,Segment)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Segment.html">Properties.Segment</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,ConnectionDefinitionPoint).html">Implicit Type Conversion(AnyPropertyId,ConnectionDefinitionPoint)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+ConnectionDefinitionPoint.html">Properties.ConnectionDefinitionPoint</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Arc).html">Implicit Type Conversion(AnyPropertyId,Arc)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Arc.html">Properties.Arc</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,DeviceListEntry).html">Implicit Type Conversion(AnyPropertyId,DeviceListEntry)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+DeviceListEntry.html">Properties.DeviceListEntry</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Project).html">Implicit Type Conversion(AnyPropertyId,Project)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Project.html">Properties.Project</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Rectangle).html">Implicit Type Conversion(AnyPropertyId,Rectangle)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Rectangle.html">Properties.Rectangle</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Function3D).html">Implicit Type Conversion(AnyPropertyId,Function3D)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Function3D.html">Properties.Function3D</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Placement3D).html">Implicit Type Conversion(AnyPropertyId,Placement3D)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Placement3D.html">Properties.Placement3D</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,SymbolLibrary).html">Implicit Type Conversion(AnyPropertyId,SymbolLibrary)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+SymbolLibrary.html">Properties.SymbolLibrary</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,RoutedConnection).html">Implicit Type Conversion(AnyPropertyId,RoutedConnection)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+RoutedConnection.html">Properties.RoutedConnection</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Connection).html">Implicit Type Conversion(AnyPropertyId,Connection)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Connection.html">Properties.Connection</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Function).html">Implicit Type Conversion(AnyPropertyId,Function)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Function.html">Properties.Function</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,FunctionBase).html">Implicit Type Conversion(AnyPropertyId,FunctionBase)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+FunctionBase.html">Properties.FunctionBase</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,TextBase).html">Implicit Type Conversion(AnyPropertyId,TextBase)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+TextBase.html">Properties.TextBase</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,SegmentPlacement).html">Implicit Type Conversion(AnyPropertyId,SegmentPlacement)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+SegmentPlacement.html">Properties.SegmentPlacement</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,SymbolReference).html">Implicit Type Conversion(AnyPropertyId,SymbolReference)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+SymbolReference.html">Properties.SymbolReference</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Option).html">Implicit Type Conversion(AnyPropertyId,Option)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Option.html">Properties.Option</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,PlcIO).html">Implicit Type Conversion(AnyPropertyId,PlcIO)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+PlcIO.html">Properties.PlcIO</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,GraphicalPlacement).html">Implicit Type Conversion(AnyPropertyId,GraphicalPlacement)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+GraphicalPlacement.html">Properties.GraphicalPlacement</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Block).html">Implicit Type Conversion(AnyPropertyId,Block)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Block.html">Properties.Block</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,SymbolVariant).html">Implicit Type Conversion(AnyPropertyId,SymbolVariant)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+SymbolVariant.html">Properties.SymbolVariant</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,Placement).html">Implicit Type Conversion(AnyPropertyId,Placement)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Placement.html">Properties.Placement</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(AnyPropertyId,StorableObject).html">Implicit Type Conversion(AnyPropertyId,StorableObject)</A></td><td class="i-description">Used in conversion from <code originaltag="c"><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+StorableObject.html">Properties.StorableObject</a></code> to the <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId</a> object. &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(StorableObject,AnyPropertyId).html">Implicit Type Conversion(StorableObject,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Placement,AnyPropertyId).html">Implicit Type Conversion(Placement,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(SymbolVariant,AnyPropertyId).html">Implicit Type Conversion(SymbolVariant,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Block,AnyPropertyId).html">Implicit Type Conversion(Block,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(GraphicalPlacement,AnyPropertyId).html">Implicit Type Conversion(GraphicalPlacement,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(PlcIO,AnyPropertyId).html">Implicit Type Conversion(PlcIO,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Option,AnyPropertyId).html">Implicit Type Conversion(Option,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(SymbolReference,AnyPropertyId).html">Implicit Type Conversion(SymbolReference,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(SegmentPlacement,AnyPropertyId).html">Implicit Type Conversion(SegmentPlacement,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(TextBase,AnyPropertyId).html">Implicit Type Conversion(TextBase,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(FunctionBase,AnyPropertyId).html">Implicit Type Conversion(FunctionBase,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Function,AnyPropertyId).html">Implicit Type Conversion(Function,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Connection,AnyPropertyId).html">Implicit Type Conversion(Connection,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(RoutedConnection,AnyPropertyId).html">Implicit Type Conversion(RoutedConnection,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(SymbolLibrary,AnyPropertyId).html">Implicit Type Conversion(SymbolLibrary,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Placement3D,AnyPropertyId).html">Implicit Type Conversion(Placement3D,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Function3D,AnyPropertyId).html">Implicit Type Conversion(Function3D,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Rectangle,AnyPropertyId).html">Implicit Type Conversion(Rectangle,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Project,AnyPropertyId).html">Implicit Type Conversion(Project,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(DeviceListEntry,AnyPropertyId).html">Implicit Type Conversion(DeviceListEntry,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Arc,AnyPropertyId).html">Implicit Type Conversion(Arc,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(ConnectionDefinitionPoint,AnyPropertyId).html">Implicit Type Conversion(ConnectionDefinitionPoint,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Segment,AnyPropertyId).html">Implicit Type Conversion(Segment,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(PlanningSegment,AnyPropertyId).html">Implicit Type Conversion(PlanningSegment,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(StrandConnector,AnyPropertyId).html">Implicit Type Conversion(StrandConnector,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(ViewPlacement,AnyPropertyId).html">Implicit Type Conversion(ViewPlacement,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+<tr><td class=i-link><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit(Text,AnyPropertyId).html">Implicit Type Conversion(Text,AnyPropertyId)</A></td><td class="i-description"> &nbsp;</td></tr>
+</table></div>
+            
+            
+            
+            
+            
+            
+            
+            <a name="exampleBookmark"></a>
+            
+            
+            
+            
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId.html">AnyPropertyId Class</a>
+<br/><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId_members.html">AnyPropertyId Members</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~op_Implicit">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

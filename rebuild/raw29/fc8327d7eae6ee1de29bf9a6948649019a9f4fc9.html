@@ -1,0 +1,496 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>DrawingService Class</title>
+    <meta name="Title" content="DrawingService Class"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n42818","initialNodeContainer":"c534","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService"/>
+    <meta name="Description" content="This class allows the user to create previews of macros and other DataModel objects." />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices_namespace"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.HEServices.DrawingService"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices_namespace.html">Eplan.EplApi.HEServices Namespace</a>
+ / DrawingService Class</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <a class="i-page-link" href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService_members.html">Members</a>
+                    <a class="i-page-link" href="#ExampleBookmark">Example</a><!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">DrawingService Class</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">This class allows the user to create previews of macros and other DataModel objects.</div>
+            
+            <div class="i-section-heading" id="i-inheritance-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Inheritance Hierarchy</span></div><div id="i-inheritance-section-content" class="i-section-content"><P><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemObjectClassTopic','System.Object')">System.Object</a><BR />&nbsp;&nbsp;&nbsp;<STRONG>Eplan.EplApi.HEServices.DrawingService</STRONG><BR /></P></div>			
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">class</span> DrawingService </pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">ref</span> <span style="color: #0000FF; ">class</span> DrawingService </pre></pre>
+            </div>
+        
+
+            </div>
+        </div>
+            
+            
+            
+            <div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content">In <a href="UsingEplanAssemblies.html">UsingEplanAssemblies</a>, please make sure to clean up. The DrawingService object before calling <strong>Eplan::EplApi::System::EplApplication:</strong>. The finalizer of DrawingService needs the API to be initialized for freeing the internal display list.</div>
+            <a name="exampleBookmark"></a>
+            <div class="i-section-heading" id="i-example-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Example</span></div><div id="i-example-section-content" class="i-section-content">The example shows how to use DrawingService for a macro preview. The example shows how the DrawingService can be used. Basically to draw EP8 objects one needs to gather objects to draw, set the properties that control service behavior and implement control's Paint event. This application displays a form with a toolbar by which the DrawingService properties (like zoom, colors, etc) can be affected.
+             
+<div class="i-tab-container">
+    <ul>
+        <li class="i-filtered-content-cs">
+			<a href="#i-tab-content-480fbcbc-b792-4e3e-91f5-9132ccc1db64">C#</a>
+		</li>
+
+    </ul>
+	<div id="i-tab-content-480fbcbc-b792-4e3e-91f5-9132ccc1db64" class="i-code i-filtered-content-cs">
+		<pre><span style="color: #008000; ">//prepare window macro
+</span>WindowMacro oWindowMacro = <span style="color: #0000FF; ">new</span> WindowMacro();
+oWindowMacro.Open(<span style="color: #800000; ">&quot;$(MD_MACROS)\\ENT.11043516.ema&quot;</span>, m_oTestProject);
+
+<span style="color: #008000; ">//prepare DrawingService
+</span>DrawingService oDrawingService = <span style="color: #0000FF; ">new</span> DrawingService();
+oDrawingService.MacroPreview = <span style="color: #0000FF; ">true</span>;
+oDrawingService.CreateDisplayList(oWindowMacro);
+
+<span style="color: #008000; ">//prepare preview form
+</span>Form oForm = <span style="color: #0000FF; ">new</span> Form();
+Panel oPanel = <span style="color: #0000FF; ">new</span> Panel();
+oPanel.Dock = DockStyle.Fill;
+oPanel.Size = <span style="color: #0000FF; ">new</span> System.Drawing.Size((<span style="color: #0000FF; ">int</span>)oWindowMacro.Size.X, (<span style="color: #0000FF; ">int</span>)oWindowMacro.Size.Y);
+oForm.Controls.Add(oPanel);
+oPanel.Paint += <span style="color: #0000FF; ">delegate</span>(<span style="color: #0000FF; ">object</span> sender, PaintEventArgs e) { oDrawingService.DrawDisplayList(e, oForm.ClientRectangle); };
+
+<span style="color: #008000; ">//show preview
+</span>oForm.Show();
+
+</pre>
+	</div>
+	
+</div>
+
+<div class="i-tab-container">
+    <ul>
+        <li class="i-filtered-content-cs">
+			<a href="#i-tab-content-e39f4551-e325-42df-b098-bba25ca121a5">C#</a>
+		</li>
+
+    </ul>
+	<div id="i-tab-content-e39f4551-e325-42df-b098-bba25ca121a5" class="i-code i-filtered-content-cs">
+		<pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">void</span> DisplayPlacements()
+{
+    <span style="color: #0000FF; ">try</span>
+    {
+        Project oPrj = <span style="color: #0000FF; ">new</span> ProjectManager().OpenProject(<span style="color: #800000; ">&quot;$(MD_PROJECTS)\\ESS_Sample_Project.elk&quot;</span>);
+        <span style="color: #0000FF; ">if</span> (oPrj == <span style="color: #0000FF; ">null</span> || !oPrj.IsOpen)
+        {
+            <span style="color: #0000FF; ">return</span>;
+        }
+
+        Page[] arrPages = oPrj.Pages;
+        Placement[] arrPlacements = <span style="color: #0000FF; ">null</span>;
+        <span style="color: #0000FF; ">foreach</span> (Page oPage <span style="color: #0000FF; ">in</span> arrPages)
+        {
+            <span style="color: #0000FF; ">if</span> (oPage.AllPlacements.Length &gt; 0)
+            {
+                arrPlacements = oPage.AllPlacements;
+                <span style="color: #0000FF; ">break</span>;
+            }
+        }
+
+        <span style="color: #0000FF; ">if</span> (arrPlacements != <span style="color: #0000FF; ">null</span>)
+        {
+            PreviewForm frm = <span style="color: #0000FF; ">new</span> PreviewForm();
+            frm.Placements = arrPlacements;
+            frm.ShowDialog();
+        }
+    }
+    <span style="color: #0000FF; ">catch</span> (Eplan.EplApi.Base.BaseException e)
+    {
+        Console.Out.WriteLine(e.Message);
+    }
+}
+<span style="color: #008000; ">/////////////////////
+</span><span style="color: #008000; ">// PreviewForm.cs  //
+</span><span style="color: #008000; ">/////////////////////   
+</span>
+
+<span style="color: #0000FF; ">internal</span> <span style="color: #0000FF; ">class</span> PreviewForm : System.Windows.Forms.Form
+{
+    <span style="color: #0000FF; ">private</span> System.ComponentModel.Container components = <span style="color: #0000FF; ">null</span>;
+    <span style="color: #0000FF; ">private</span> System.Windows.Forms.Panel pnlPreview;
+    <span style="color: #0000FF; ">private</span> System.Windows.Forms.Panel pnlCtrls;
+    <span style="color: #0000FF; ">private</span> Eplan.EplApi.DataModel.Placement[] _arrPalcements = <span style="color: #0000FF; ">null</span>; <span style="color: #008000; ">//array of Placements to preview
+</span>    <span style="color: #0000FF; ">private</span> System.Windows.Forms.ToolBarButton btnZoomAll;
+    <span style="color: #0000FF; ">private</span> System.Windows.Forms.ToolBarButton btnZoomIn;
+    <span style="color: #0000FF; ">private</span> System.Windows.Forms.ToolBarButton btnZoomOut;
+    <span style="color: #0000FF; ">private</span> System.Windows.Forms.ToolBarButton separator;
+    <span style="color: #0000FF; ">private</span> System.Windows.Forms.ToolBar toolBarPreview;
+    <span style="color: #0000FF; ">private</span> System.Windows.Forms.ToolBarButton btnDrawConenctions;
+    <span style="color: #0000FF; ">private</span> System.Windows.Forms.ToolBarButton btnBlackWhite;
+    <span style="color: #0000FF; ">private</span> Eplan.EplApi.HEServices.DrawingService dwgService = <span style="color: #0000FF; ">new</span> Eplan.EplApi.HEServices.DrawingService();
+
+    <span style="color: #0000FF; ">public</span> Eplan.EplApi.DataModel.Placement[] Placements
+    {
+        <span style="color: #0000FF; ">get</span>
+        {
+            <span style="color: #0000FF; ">return</span> _arrPalcements;
+        }
+        <span style="color: #0000FF; ">set</span>
+        {
+            _arrPalcements = value;
+            <span style="color: #0000FF; ">if</span> (value != <span style="color: #0000FF; ">null</span>)
+                dwgService.CreateDisplayList(value);
+        }
+    }
+
+    <span style="color: #0000FF; ">public</span> PreviewForm()
+    {
+        InitializeComponent();
+
+        <span style="color: #0000FF; ">this</span>.btnZoomAll.Text = <span style="color: #800000; ">&quot;Zoom all&quot;</span>;
+        <span style="color: #0000FF; ">this</span>.btnZoomIn.Text = <span style="color: #800000; ">&quot;Zoom in&quot;</span>;
+        <span style="color: #0000FF; ">this</span>.btnZoomOut.Text = <span style="color: #800000; ">&quot;Zoom out&quot;</span>;
+        <span style="color: #0000FF; ">this</span>.separator.Text = <span style="color: #800000; ">&quot;Separator&quot;</span>;
+        <span style="color: #0000FF; ">this</span>.btnDrawConenctions.Text = <span style="color: #800000; ">&quot;Draw connections&quot;</span>;
+        <span style="color: #0000FF; ">this</span>.btnBlackWhite.Text = <span style="color: #800000; ">&quot;Black white&quot;</span>;
+    }
+
+    <span style="color: #008000; ">/// Clean up any resources being used.
+</span>    <span style="color: #0000FF; ">protected</span> <span style="color: #0000FF; ">override</span> <span style="color: #0000FF; ">void</span> Dispose(<span style="color: #0000FF; ">bool</span> disposing)
+    {
+        <span style="color: #0000FF; ">if</span> (disposing)
+        {
+            <span style="color: #0000FF; ">if</span> (components != <span style="color: #0000FF; ">null</span>)
+            {
+                components.Dispose();
+            }
+        }
+        <span style="color: #0000FF; ">base</span>.Dispose(disposing);
+    }
+
+    <span style="color: #008000; ">/// Required method for Designer support - do not modify
+    /// the contents of this method with the code editor.
+</span>    <span style="color: #0000FF; ">private</span> <span style="color: #0000FF; ">void</span> InitializeComponent()
+    {
+        <span style="color: #0000FF; ">this</span>.pnlPreview = <span style="color: #0000FF; ">new</span> System.Windows.Forms.Panel();
+        <span style="color: #0000FF; ">this</span>.pnlCtrls = <span style="color: #0000FF; ">new</span> System.Windows.Forms.Panel();
+        <span style="color: #0000FF; ">this</span>.toolBarPreview = <span style="color: #0000FF; ">new</span> System.Windows.Forms.ToolBar();
+        <span style="color: #0000FF; ">this</span>.btnZoomAll = <span style="color: #0000FF; ">new</span> System.Windows.Forms.ToolBarButton();
+        <span style="color: #0000FF; ">this</span>.btnZoomIn = <span style="color: #0000FF; ">new</span> System.Windows.Forms.ToolBarButton();
+        <span style="color: #0000FF; ">this</span>.btnZoomOut = <span style="color: #0000FF; ">new</span> System.Windows.Forms.ToolBarButton();
+        <span style="color: #0000FF; ">this</span>.separator = <span style="color: #0000FF; ">new</span> System.Windows.Forms.ToolBarButton();
+        <span style="color: #0000FF; ">this</span>.btnDrawConenctions = <span style="color: #0000FF; ">new</span> System.Windows.Forms.ToolBarButton();
+        <span style="color: #0000FF; ">this</span>.btnBlackWhite = <span style="color: #0000FF; ">new</span> System.Windows.Forms.ToolBarButton();
+        <span style="color: #0000FF; ">this</span>.pnlCtrls.SuspendLayout();
+        <span style="color: #0000FF; ">this</span>.SuspendLayout();
+        <span style="color: #0000FF; ">this</span>.Resize += <span style="color: #0000FF; ">new</span> System.EventHandler(<span style="color: #0000FF; ">this</span>.ResizeEndHandler);
+        <span style="color: #008000; ">// 
+        // pnlPreview
+        // 
+</span>        <span style="color: #0000FF; ">this</span>.pnlPreview.BackColor = System.Drawing.Color.WhiteSmoke;
+        <span style="color: #0000FF; ">this</span>.pnlPreview.Dock = System.Windows.Forms.DockStyle.Fill;
+        <span style="color: #0000FF; ">this</span>.pnlPreview.Location = <span style="color: #0000FF; ">new</span> System.Drawing.Point(0, 0);
+        <span style="color: #0000FF; ">this</span>.pnlPreview.Name = <span style="color: #800000; ">&quot;pnlPreview&quot;</span>;
+        <span style="color: #0000FF; ">this</span>.pnlPreview.Size = <span style="color: #0000FF; ">new</span> System.Drawing.Size(292, 266);
+        <span style="color: #0000FF; ">this</span>.pnlPreview.TabIndex = 0;
+        <span style="color: #0000FF; ">this</span>.pnlPreview.Paint += <span style="color: #0000FF; ">new</span> System.Windows.Forms.PaintEventHandler(<span style="color: #0000FF; ">this</span>.pnlPreview_Paint);
+        <span style="color: #008000; ">// 
+        // pnlCtrls
+        // 
+</span>        <span style="color: #0000FF; ">this</span>.pnlCtrls.Controls.Add(<span style="color: #0000FF; ">this</span>.toolBarPreview);
+        <span style="color: #0000FF; ">this</span>.pnlCtrls.Dock = System.Windows.Forms.DockStyle.Top;
+        <span style="color: #0000FF; ">this</span>.pnlCtrls.Location = <span style="color: #0000FF; ">new</span> System.Drawing.Point(0, 0);
+        <span style="color: #0000FF; ">this</span>.pnlCtrls.Name = <span style="color: #800000; ">&quot;pnlCtrls&quot;</span>;
+        <span style="color: #0000FF; ">this</span>.pnlCtrls.Size = <span style="color: #0000FF; ">new</span> System.Drawing.Size(292, 40);
+        <span style="color: #0000FF; ">this</span>.pnlCtrls.TabIndex = 1;
+        <span style="color: #008000; ">// 
+        // toolBarPreview
+        // 
+</span>        <span style="color: #0000FF; ">this</span>.toolBarPreview.Buttons.AddRange(<span style="color: #0000FF; ">new</span> System.Windows.Forms.ToolBarButton[] {
+            <span style="color: #0000FF; ">this</span>.btnZoomAll,
+                <span style="color: #0000FF; ">this</span>.btnZoomIn,
+                <span style="color: #0000FF; ">this</span>.btnZoomOut,
+                <span style="color: #0000FF; ">this</span>.separator,
+                <span style="color: #0000FF; ">this</span>.btnDrawConenctions,
+                <span style="color: #0000FF; ">this</span>.btnBlackWhite});
+        <span style="color: #0000FF; ">this</span>.toolBarPreview.DropDownArrows = <span style="color: #0000FF; ">true</span>;
+        <span style="color: #0000FF; ">this</span>.toolBarPreview.Location = <span style="color: #0000FF; ">new</span> System.Drawing.Point(0, 0);
+        <span style="color: #0000FF; ">this</span>.toolBarPreview.Name = <span style="color: #800000; ">&quot;toolBarPreview&quot;</span>;
+        <span style="color: #0000FF; ">this</span>.toolBarPreview.ShowToolTips = <span style="color: #0000FF; ">true</span>;
+        <span style="color: #0000FF; ">this</span>.toolBarPreview.Size = <span style="color: #0000FF; ">new</span> System.Drawing.Size(292, 28);
+        <span style="color: #0000FF; ">this</span>.toolBarPreview.TabIndex = 0;
+        <span style="color: #0000FF; ">this</span>.toolBarPreview.ButtonClick += <span style="color: #0000FF; ">new</span> System.Windows.Forms.ToolBarButtonClickEventHandler(<span style="color: #0000FF; ">this</span>.toolBarPreview_ButtonClick);
+        <span style="color: #008000; ">// 
+        // separator
+        // 
+</span>        <span style="color: #0000FF; ">this</span>.separator.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
+        <span style="color: #008000; ">// 
+        // btnDrawConenctions
+        // 
+</span>        <span style="color: #0000FF; ">this</span>.btnDrawConenctions.Style = System.Windows.Forms.ToolBarButtonStyle.ToggleButton;
+        <span style="color: #008000; ">// 
+        // btnBlackWhite
+        // 
+</span>        <span style="color: #0000FF; ">this</span>.btnBlackWhite.Style = System.Windows.Forms.ToolBarButtonStyle.ToggleButton;
+        <span style="color: #008000; ">// 
+        // PreviewForm
+        // 
+</span>        <span style="color: #0000FF; ">this</span>.AutoScaleBaseSize = <span style="color: #0000FF; ">new</span> System.Drawing.Size(5, 13);
+        <span style="color: #0000FF; ">this</span>.ClientSize = <span style="color: #0000FF; ">new</span> System.Drawing.Size(292, 266);
+        <span style="color: #0000FF; ">this</span>.Controls.Add(<span style="color: #0000FF; ">this</span>.pnlCtrls);
+        <span style="color: #0000FF; ">this</span>.Controls.Add(<span style="color: #0000FF; ">this</span>.pnlPreview);
+        <span style="color: #0000FF; ">this</span>.Name = <span style="color: #800000; ">&quot;PreviewForm&quot;</span>;
+        <span style="color: #0000FF; ">this</span>.Text = <span style="color: #800000; ">&quot;Preview&quot;</span>;
+        <span style="color: #0000FF; ">this</span>.pnlCtrls.ResumeLayout(<span style="color: #0000FF; ">false</span>);
+        <span style="color: #0000FF; ">this</span>.ResumeLayout(<span style="color: #0000FF; ">false</span>);
+    }
+
+    <span style="color: #0000FF; ">private</span> <span style="color: #0000FF; ">void</span> ResizeEndHandler(<span style="color: #0000FF; ">object</span> sender, EventArgs e)
+    {
+        <span style="color: #0000FF; ">this</span>.Invalidate();
+        <span style="color: #0000FF; ">this</span>.Refresh();
+    }
+
+    <span style="color: #0000FF; ">private</span> <span style="color: #0000FF; ">void</span> pnlPreview_Paint(<span style="color: #0000FF; ">object</span> sender, System.Windows.Forms.PaintEventArgs e)
+    {
+        <span style="color: #0000FF; ">if</span> (_arrPalcements != <span style="color: #0000FF; ">null</span>)
+        {
+            dwgService.DrawDisplayList(e, <span style="color: #0000FF; ">this</span>.ClientRectangle);
+        }
+    }
+
+    <span style="color: #0000FF; ">private</span> <span style="color: #0000FF; ">void</span> toolBarPreview_ButtonClick(<span style="color: #0000FF; ">object</span> sender, System.Windows.Forms.ToolBarButtonClickEventArgs e)
+    {
+        <span style="color: #0000FF; ">if</span> (e.Button == <span style="color: #0000FF; ">this</span>.btnZoomAll)
+        {
+            dwgService.ZoomAll();
+        }
+        <span style="color: #0000FF; ">else</span> <span style="color: #0000FF; ">if</span> (e.Button == <span style="color: #0000FF; ">this</span>.btnZoomIn)
+        {
+            dwgService.ZoomIn(2.0);
+        }
+        <span style="color: #0000FF; ">else</span> <span style="color: #0000FF; ">if</span> (e.Button == <span style="color: #0000FF; ">this</span>.btnZoomOut)
+        {
+            dwgService.ZoomOut(2.0);
+        }
+        <span style="color: #0000FF; ">else</span> <span style="color: #0000FF; ">if</span> (e.Button == <span style="color: #0000FF; ">this</span>.btnDrawConenctions)
+        {
+            dwgService.DrawConnections = <span style="color: #0000FF; ">this</span>.btnDrawConenctions.Pushed;
+            <span style="color: #0000FF; ">if</span> (_arrPalcements != <span style="color: #0000FF; ">null</span>)
+                dwgService.CreateDisplayList(_arrPalcements);
+        }
+        <span style="color: #0000FF; ">else</span> <span style="color: #0000FF; ">if</span> (e.Button == <span style="color: #0000FF; ">this</span>.btnBlackWhite)
+        {
+            dwgService.DrawBlackAndWhite = <span style="color: #0000FF; ">this</span>.btnBlackWhite.Pushed;
+            <span style="color: #0000FF; ">if</span> (_arrPalcements != <span style="color: #0000FF; ">null</span>)
+                dwgService.CreateDisplayList(_arrPalcements);
+        }
+        pnlPreview.Refresh();
+    }
+}
+
+
+</pre>
+	</div>
+	
+</div>
+</div>
+            
+            
+            <a name="ConstructorsBookmark"></a>
+            <div class="i-section-heading" id="i-publicConstructors-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Constructors</span></div><div id="i-publicConstructors-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Constructor" src="template/packages/core-dotnet/images/publicConstructor.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~_ctor.html">DrawingService Constructor</A></td><td class="i-member-description">default constructor. &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="FieldsBookmark"></a>
+            
+            
+            
+            <a name="PropertiesBookmark"></a>
+            <div class="i-section-heading" id="i-publicProperties-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Properties</span></div><div id="i-publicProperties-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~CenterView.html">CenterView</A></td><td class="i-member-description">Is the preview centered or not? &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~DrawBackGround.html">DrawBackGround</A></td><td class="i-member-description">Gets/Sets whether the preview is created with or without background. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~DrawBlackAndWhite.html">DrawBlackAndWhite</A></td><td class="i-member-description">Should the preview be shown in color or black-and-white? Warning: images are always colored, independently on a value of the property &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~DrawConnections.html">DrawConnections</A></td><td class="i-member-description">Should the auto-connecting lines be drawn in a macro preview or not? &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~DrawCrossReferences.html">DrawCrossReferences</A></td><td class="i-member-description">Determines, whether cross references should be displayed or not. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~DrawInvisibleObjects.html">DrawInvisibleObjects</A></td><td class="i-member-description">Determines, that the preview should show invisible objects or not ? &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~MacroPreview.html">MacroPreview</A></td><td class="i-member-description">Determines, that the preview should look similar to the macro preview in the GUI or not &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~UseThumbnail.html">UseThumbnail</A></td><td class="i-member-description">Use of the stored thumbnail bitmap for preview macro files or not ? &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="MethodsBookmark"></a>
+            <div class="i-section-heading" id="i-publicMethods-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Methods</span></div><div id="i-publicMethods-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~CreateDisplayList.html">CreateDisplayList</A></td><td class="i-member-description">Overloaded.&nbsp;Creates a display list for a symbol variant. Removes the representation of previously displayed objects when creating a new list. If parameter bReturnSymbolConnectionPointsData is TRUE, return also a structure with information about the symbol variant's connection points &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~Dispose().html">Dispose</A></td><td class="i-member-description">Default destructor. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~DrawDisplayList.html">DrawDisplayList</A></td><td class="i-member-description">Overloaded.&nbsp;Draws a display list on a window. The preview is fit to the window, while keeping its aspect ratio. Only the rectangle specified by the parameter rcClientRect will be used &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~GetViewport.html">GetViewport</A></td><td class="i-member-description">Gets the coordinates of the viewport region &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~Reset.html">Reset</A></td><td class="i-member-description">Resets all settings of the class to standard values. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~SetDefaultViewport.html">SetDefaultViewport</A></td><td class="i-member-description">Adjusts viewport to the bounding box of the objects from drawing list &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~SetDefaultWindow.html">SetDefaultWindow</A></td><td class="i-member-description">Sets resolution of the drawn image to 100x100. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~setDrawingFlags.html">setDrawingFlags</A></td><td class="i-member-description">For internal use. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~SetViewport.html">SetViewport</A></td><td class="i-member-description">Sets the coordinates of the viewport region &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~SetWindow.html">SetWindow</A></td><td class="i-member-description">Overloaded.&nbsp;Defines resolution of the drawn image. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~testDrawingFlags.html">testDrawingFlags</A></td><td class="i-member-description">For internal use. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~unsetDrawingFlags.html">unsetDrawingFlags</A></td><td class="i-member-description">For internal use. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~ZoomAll.html">ZoomAll</A></td><td class="i-member-description">Recalculates the view port so the complete image is displayed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~ZoomIn(Double).html">ZoomIn</A></td><td class="i-member-description">Recalculates the view port to zoom into the image. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~ZoomOut(Double).html">ZoomOut</A></td><td class="i-member-description">Recalculates the view port to zoom out of the image. &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            
+            <a name="EventsBookmark"></a>
+            
+            
+            
+            <a name="OperatorsBookmark"></a>
+            									
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService_members.html">DrawingService Members</a>
+<br/><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices_namespace.html">Eplan.EplApi.HEServices Namespace</a>
+<br/><strong>HE_Display.html</strong>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+# P005076: Differing property '<x>' within a piping
+
+### Cause
+
+In the [P&I diagram](Glossary_o_ri_fliessbild.htm) there are several piping definitions (piping [connection points](Glossary_o_anschluesse.htm) or piping definition points) that have the same piping name, the same substance and the same state, but have different values with regard to specific property <x>. The check run takes the following [properties](Glossary_o_eigenschaften.htm) into account:
+
+- Connection designation
+- Connection: Cross-section / diameter
+- Connection color / number
+- Connection description
+- Connection: Length with unit
+- Type designation
+- Remark
+- Autoconnecting line: Line thickness
+- Autoconnecting line: Color
+- Autoconnecting line: Line type
+- Autoconnecting line: Pattern length
+- Autoconnecting line: Layer.
+
+### Solution
+
+1. Locate the piping definitions in the P&I diagram using the Go to (graphic) function from the popup menu in the Message management dialog.
+2. Open the properties dialog of each piping definition and enter the same value for the reported property <x>.
+3. Refresh the [connections](Glossary_o_verbindungen.htm) and then start a new check run.

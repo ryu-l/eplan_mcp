@@ -1,0 +1,52 @@
+# Remove Method (PrjMessagesCollection)
+
+Remove Method (PrjMessagesCollection)
+
+Removes the first occurrence of a specific object from the `PrjMessagesCollection`.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public virtual bool Remove( 
+   BaseProjectMessage msg
+)
+```
+```
+
+```
+```
+public:
+virtual bool Remove( 
+   BaseProjectMessage^ msg
+)
+```
+```
+
+#### Parameters
+
+*msg*
+:   The object to remove to the `PrjMessagesCollection`.
+
+Exceptions
+
+| Exception | Description |
+| --- | --- |
+| [System.NotSupportedException](#) | The `PrjMessagesCollection` is read-only. |
+
+See Also
+
+#### Reference
+
+[PrjMessagesCollection Class](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.PrjMessagesCollection.html)
+  
+[PrjMessagesCollection Members](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.PrjMessagesCollection_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.PrjMessagesCollection~Remove)

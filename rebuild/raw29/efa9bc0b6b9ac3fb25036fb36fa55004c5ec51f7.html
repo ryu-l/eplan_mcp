@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The element &lt;img&gt; inserts a picture." /><title>img</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refformui_r_img.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor263"></a>
+            <MadCap:concept term="Form-UI" /><a name="aanchor264"></a>
+            <MadCap:concept term="Referenz" /><a name="kanchor174"></a>
+            <h2>img</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The element <span class="codetext">&lt;img&gt;</span> inserts a picture.</p>
+            <p>The image can be referenced as external or internal resource. Similarly, references to image registers can be used to display different images depending on the object type (class or instance object).</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">Path specifications to external picture files are evaluated like formulas, which is why they have to be enclosed in single quotation marks. Allowable paths specifications are:</p><pre xml:space="preserve"><code class="language-markup">&lt;img src="'T:/image.png'"&gt;
+&lt;img src="='T:/image.png'"&gt;
+&lt;img src="'images/image.png'"&gt;
+&lt;img src="='images/image.png'"&gt;
+&lt;img src="'T:\\image.png'"&gt;
+&lt;img src="='T:\\image.png'"&gt;
+&lt;img src="'images\\image.png'"&gt;
+&lt;img src="='images\\image.png'"&gt;</code></pre>
+                <p class="Infoblock">Servers cannot be referenced by, for example, <span class="codetext">&lt;img&#160;src="'//SRV01.MyDomain.local/images/image.png'"&gt;</span>.</p>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Attribute name</th>
+                        <th>Usage</th>
+                        <th>Attribute values</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>src</td>
+                        <td>required</td>
+                        <td>absolute or relative path</td>
+                        <td />
+                        <td>absolute or relative path to an external image, starting from the installation directory or path to the image object of the internal image</td>
+                    </tr>
+                    <tr>
+                        <td>tooltip</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Text or Form-UI of the overlaying tooltip (see <a href="refformui_r_tooltip.htm" class="MCXref xref" xrefformat="{para}">tooltip</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>visible</td>
+                        <td>optional</td>
+                        <td>true,false</td>
+                        <td>true</td>
+                        <td>true = image is visible<br />true = image is invisible</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Allowed sub-elements</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr>
+                        <td><a href="refformui_r_tooltip.htm" class="MCXref xref" xrefformat="{para}">tooltip</a>
+                        </td>
+                        <td>0..1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Image objects can be manipulated by methods. These methods can be combined.</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Method</th>
+                        <th>Example</th>
+                        <th>Example code</th>
+                    </tr>
+                    <tr>
+                        <td>disable</td>
+                        <td>
+                            <img src="../Pictures/delta_abc_disable.png" alt="" />
+                        </td>
+                        <td><span class="codetext">&lt;img src="type('Documentation_UI_Configuration.ProjectLibrary.HelpObjects.Images.delta_abc').image.disable"/&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>flipH</td>
+                        <td>
+                            <img src="../Pictures/delta_abc_flipH.png" alt="" />
+                        </td>
+                        <td><span class="codetext">&lt;img src="type('Documentation_UI_Configuration.ProjectLibrary.HelpObjects.Images.delta_abc').image.flipH"/&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>flipV</td>
+                        <td>
+                            <img src="../Pictures/delta_abc_flipV.png" alt="" />
+                        </td>
+                        <td><span class="codetext">&lt;img src="type('Documentation_UI_Configuration.ProjectLibrary.HelpObjects.Images.delta_abc').image.flipV"/&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>rotate180</td>
+                        <td>
+                            <img src="../Pictures/delta_abc_r180.png" alt="" />
+                        </td>
+                        <td><span class="codetext">&lt;img src="type('Documentation_UI_Configuration.ProjectLibrary.HelpObjects.Images.delta_abc').image.rotate180"/&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>rotate270</td>
+                        <td>
+                            <img src="../Pictures/delta_abc_r270.png" alt="" />
+                        </td>
+                        <td><span class="codetext">&lt;img src="type('Documentation_UI_Configuration.ProjectLibrary.HelpObjects.Images.delta_abc').image.rotate270"/&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>rotate90</td>
+                        <td>
+                            <img src="../Pictures/delta_abc_r90.png" alt="" />
+                        </td>
+                        <td><span class="codetext">&lt;img src="type('Documentation_UI_Configuration.ProjectLibrary.HelpObjects.Images.delta_abc').image.rotate90"/&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>scale</td>
+                        <td>
+                            <img src="../Pictures/delta_abc_2x.png" alt="" />
+                        </td>
+                        <td><span class="codetext">&lt;img src="type('Documentation_UI_Configuration.ProjectLibrary.HelpObjects.Images.delta_abc').image.scale(2)"/&gt;</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">For new Form-UIs should only references on image objects be used.</p>
+            </div>
+            <p class="Bridgehead">Specification of an absolute path to an external picture file:</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;line&gt;
+	&lt;img src="='C:\\Users\\Public\\EPLAN\\
+	EngineeringConfiguration\\2_4_20140218_0227\\install\\
+	icon-collection\\Rumpf.png'"/&gt;
+&lt;/line&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+                <p class="Bridgehead">Result:</p>
+                <p>
+                    <img src="../Pictures/Rumpf.png" alt="" />
+                </p>
+            </div>
+            <p class="Bridgehead">Relative path to an external image file:</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;line&gt;
+	&lt;img src="='pics/action.png'"/&gt;
+&lt;/line&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+                <p class="Bridgehead">Result:</p>
+                <p>
+                    <img src="../Pictures/symbol_action.png" alt="" />
+                </p>
+            </div>
+            <p class="Bridgehead">Reference on an internalized image file (see also <a href="refformulas_r_image_objects_method_image.htm" class="MCXref xref" xrefformat="{para}">image</a>):</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;line&gt;
+	&lt;img src="type('Documentation_UI_Configuration.
+	ProjectLibrary.HelpObjects.Images.delta_abc').image"/&gt;
+&lt;/line&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+                <p class="Bridgehead">Result:</p>
+                <p>
+                    <img src="../Pictures/form-ui_image_intern.png" alt="" />
+                </p>
+            </div>
+            <p class="Bridgehead">Reference on an image register to display the image of a class object (see also <a href="refformulas_r_image_objects_method_image.htm" class="MCXref xref" xrefformat="{para}">image</a>):</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;line&gt;
+	&lt;img src="type('Documentation_UI_Configuration.
+	ProjectLibrary.HelpObjects.Images.nav_next').
+	image(this,ref('Documentation_UI_Configuration.
+	Mechatronic.Documentation').type)"/&gt;
+&lt;/line&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+                <p class="Bridgehead">Result:</p>
+                <p>
+                    <img src="../Pictures/form-ui_image_klassenobjekt.png" alt="" />
+                </p>
+            </div>
+            <p class="Bridgehead">Reference on an image register to display the image of an instance object (see also <a href="refformulas_r_image_objects_method_image.htm" class="MCXref xref" xrefformat="{para}">image</a>):</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+<code class="language-markup">&lt;line&gt;
+	&lt;img src="type('Documentation_UI_Configuration.
+	ProjectLibrary.HelpObjects.Images.nav_next').
+	image(this,ref('Documentation_UI_Configuration.
+	Mechatronic.Documentation'))"/&gt;
+&lt;/line&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+                <p class="Bridgehead">Result:</p>
+                <p>
+                    <img src="../Pictures/form-ui_image_instanzobjekt.png" alt="" />
+                </p>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The method of a new plug-in is created in a library component or a command." /><title>Creating a method in EEC</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/eecscripting_k_create_method_in_eec.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor640"></a>
+            <MadCap:concept term="Basis" />
+            <h2>Creating a method in EEC</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The method of a new plug-in is created in a library component or a command.</p>
+            <ul>
+                <li value="1">Methods that are created in a command are usually executed at a specific time by the project engineer.</li>
+                <li value="2">Methods that are created in a library component are executed after the end of the instantiation.</li>
+            </ul>
+            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="I_Sprung_auf_Anker"></a><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating a method in a command</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>For the example the method is created in the <span class="important">Mechatronic.Actions.IncrementValueCommand</span> command. This name was specified during the registration of the native Java method. If the name is to be changed, the new name must be specified for the registration (see <a href="eecscripting_k_implement_register_method_of_plugin.htm" class="MCXref xref" xrefformat="{para}">Registering the plug-in method</a>).</p>
+                    <p>This is how the command is created (the library and unit is required):</p>
+                    <ol>
+                        <li value="1">Mark the unit in which the new SequenceSelectionAction is created (here <span class="important">Actions</span>).</li>
+                        <li value="2">Select <span class="gui">New &gt; Object...</span> from the popup menu.</li>
+                        <li value="3">Navigate the selection dialog to <span class="gui">Object &gt; Command</span>.</li>
+                        <li value="4">Confirm with <span class="gui">[Finish]</span>.</li>
+                        <li value="5">Enter a name for the new command (here <span class="important">IncrementValueCommand</span>).</li>
+                        <li value="6">Open the <span class="gui">Method</span> tab.</li>
+                    </ol>
+                    <p>
+                        <img src="../Pictures/java_ec_methode_1.png" alt="" />
+                    </p>
+                    <ol data-mc-continue="true">
+                        <li value="7">By clicking <span class="gui">Add</span>, add a new method to the list of methods..</li>
+                        <li value="8">Specify the name of the method (here <span class="codetext">execute</span>, this name has been specified for the registration of the method, see <a href="eecscripting_k_implement_register_method_of_plugin.htm" class="MCXref xref" xrefformat="{para}">Registering the plug-in method</a>).</li>
+                        <li value="9">Select the <span class="gui">Native</span> language type.</li>
+                        <li value="10">If applicable, mark the <span class="gui">Static</span> option.</li>
+                        <li value="11">Add the arguments that are to be passed to the method and assign the respective type (here <span class="codetext">obj</span> with the type <span class="codetext">Engineering.Object</span>. This type has been specified for the registration, see <a href="eecscripting_k_implement_register_method_of_plugin.htm" class="MCXref xref" xrefformat="{para}">Registering the plug-in method</a>).</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a name="I_Sprung_auf_Anker"></a><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating SequenceSelectionAction for starting the command</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>An action is required, for example SequenceSelectionAction, to be able to execute the new command. This can be started from the popup menu of a component.</p>
+                    <p>This is how the SequenceSelectionAction is created:</p>
+                    <ol>
+                        <li value="1">Mark the unit in which the new SequenceSelectionAction is created (here <span class="important">Actions</span>).</li>
+                        <li value="2">Select <span class="gui">New &gt; Object...</span> from the popup menu.</li>
+                        <li value="3">Navigate the selection dialog to <span class="gui">Object &gt; Action &gt; SelectionAction &gt; SequenceSelectionAction</span>.</li>
+                        <li value="4">Confirm with <span class="gui">[Finish]</span>.</li>
+                    </ol>
+                    <p>
+                        <img src="../Pictures/java_ec_methode_2.png" alt="" />
+                    </p>
+                    <ol data-mc-continue="true">
+                        <li value="5">Enter a name for the new SequenceSelectionAction (here <span class="important">IncrementValueSelectionAction</span>).</li>
+                        <li value="6">In the <span class="gui">Selected object</span> field, select the project component that owns the <span class="important">length</span> parameter (here <span class="important">Station</span>).</li>
+                        <li value="7">Select the <span class="gui">Visible in projects</span> check box.</li>
+                        <li value="8">In the <span class="gui">Displayed Name</span> field specify a name for the SequenceSelectionAction that is shown in the popup menu of the station (here <span class="codetext">Increment Value</span>).</li>
+                        <li value="9">Open the <span class="gui">Methods</span> editor page.</li>
+                    </ol>
+                    <p>
+                        <img src="../Pictures/java_ec_methode_3.png" alt="" />
+                    </p>
+                    <ol data-mc-continue="true">
+                        <li value="10">Click <img src="../Pictures/button_finder.png" alt="" />.</li>
+                        <li value="11">To insert the commands in the list, select the following commands one by one:</li>
+                    </ol>
+                    <p><span class="codetext">Object </span>&gt; <span class="codetext">Command </span>&gt; <span class="codetext">FrameworkCommand </span>&gt; <span class="codetext">StartFormulaCacheCommand</span></p>
+                    <p><span class="codetext">Object </span>&gt; <span class="codetext">Command </span>&gt; <span class="codetext">IncrementValueCommand</span></p>
+                    <p><span class="codetext">Object </span>&gt; <span class="codetext">Command </span>&gt; <span class="codetext">FrameworkCommand </span>&gt; <span class="codetext">StopFormulaCacheCommand</span></p>
+                    <p><span class="codetext">Object </span>&gt; <span class="codetext">Command </span>&gt; <span class="codetext">FrameworkCommand </span>&gt; <span class="codetext">SaveObjectCommand</span></p>
+                    <ol data-mc-continue="true">
+                        <li value="12">Save the editor.</li>
+                    </ol>
+                    <p>Subsequently the method can be started by calling up <span class="important">Increment Value</span> from the popup menu of the station.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

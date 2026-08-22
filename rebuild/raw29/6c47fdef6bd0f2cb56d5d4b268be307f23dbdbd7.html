@@ -1,0 +1,268 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>PotentialDefinition Class</title>
+    <meta name="Title" content="PotentialDefinition Class"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n21930","initialNodeContainer":"c72","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition"/>
+    <meta name="Description" content="This class represents potential definition point. It is useful, when a potential of connection is described by more than one PotentialDefinitionPoint, and values assigned to them are different among themselves. In that situation the user has to read " />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel_namespace"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.DataModel.PotentialDefinition"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel_namespace.html">Eplan.EplApi.DataModel Namespace</a>
+ / PotentialDefinition Class</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <a class="i-page-link" href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition_members.html">Members</a>
+                    <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">PotentialDefinition Class</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">This class represents potential definition point. It is useful, when a potential of connection is described by more than one PotentialDefinitionPoint, and values assigned to them are different among themselves. In that situation the user has to read data from a chosen PotentialDefinitionPoint.</div>
+            
+            <div class="i-section-heading" id="i-inheritance-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Inheritance Hierarchy</span></div><div id="i-inheritance-section-content" class="i-section-content"><P><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemObjectClassTopic','System.Object')">System.Object</a><BR />&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Eplan.EplApi.DataModel.Placement</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<STRONG>Eplan.EplApi.DataModel.PotentialDefinition</STRONG><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.NetDefinitionPoint.html">Eplan.EplApi.DataModel.NetDefinitionPoint</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PipingDefinition.html">Eplan.EplApi.DataModel.PipingDefinition</a><BR /></P></div>			
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">class</span> PotentialDefinition : <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">SymbolReference</a> </pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">ref</span> <span style="color: #0000FF; ">class</span> PotentialDefinition : <span style="color: #0000FF; ">public</span> <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">SymbolReference</a> </pre></pre>
+            </div>
+        
+
+            </div>
+        </div>
+            
+            
+            
+            
+            <a name="exampleBookmark"></a>
+            
+            
+            
+            
+            <a name="ConstructorsBookmark"></a>
+            <div class="i-section-heading" id="i-publicConstructors-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Constructors</span></div><div id="i-publicConstructors-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Constructor" src="template/packages/core-dotnet/images/publicConstructor.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition~_ctor().html">PotentialDefinition Constructor</A></td><td class="i-member-description">Default constructor. Should never be used. Always throws NotImplementedException. It was designed only for COM compatibility. &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="FieldsBookmark"></a>
+            
+            
+            
+            <a name="PropertiesBookmark"></a>
+            <div class="i-section-heading" id="i-publicProperties-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Properties</span></div><div id="i-publicProperties-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~AreTargetsSpecifed.html">AreTargetsSpecifed</A></td><td class="i-member-description">The value determines if target is taken from net-based routing or not. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~Block.html">Block</A></td><td class="i-member-description">Returns a block which this SymbolReference object is part of. If this object is not a part of any block, this property returns NULL. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~CrossReferencedObjectsAll.html">CrossReferencedObjectsAll</A></td><td class="i-member-description">Returns an array of objects cross-referenced with this object (i.e. having the same name - in case of functions - or otherwise associated) (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~DatabaseIdentifier.html">DatabaseIdentifier</A></td><td class="i-member-description">Returns the project as number. The number is unique for all open projects in one session. The number changes when the project is closed and opened again. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement~DrawingOrder.html">DrawingOrder</A></td><td class="i-member-description">Sets display sequence. The drawing order flag will be used to sort elements according to drawing order within a group. If elements chare the same value the drawing order will result from order of the data model. Default value is 67. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Eplan.EplApi.DataModel.Placement</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~GraphicalConnectionPoints.html">GraphicalConnectionPoints</A></td><td class="i-member-description">An array of the symbols's connection points (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~GraphicalConnections.html">GraphicalConnections</A></td><td class="i-member-description">An array of <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference+GraphicalConnection.html">SymbolReference.GraphicalConnection</a> objects representing all auto-connecting lines connected to the pins of the symbol. This property may be useful to check graphical layout of connections associated with the symbol (including T-nodes, corners, etc.). (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement~Group.html">Group</A></td><td class="i-member-description">Returns a group that the Placement object belongs to. If the Placement object doesn't belong to any group, NULL is returned. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Eplan.EplApi.DataModel.Placement</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~HasPolylineAsLogicalArea.html">HasPolylineAsLogicalArea</A></td><td class="i-member-description">Returns true if the symbol's logical area is a polyline (consisting of segments) rather than just a rectangle. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~IsLocked.html">IsLocked</A></td><td class="i-member-description"><p>Determines if the the StorableObject is locked.</p>
+
+<p>The StorableObject is locked when it was explicitly or implicitly locked.</p> (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement~IsPlaced.html">IsPlaced</A></td><td class="i-member-description">Returns true if the placement is placed (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Eplan.EplApi.DataModel.Placement</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~IsReadOnly.html">IsReadOnly</A></td><td class="i-member-description">Determines if StorableObject is read-only (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement~IsSetAsVisible.html">IsSetAsVisible</A></td><td class="i-member-description">Gets/Sets visibility of the object as set in its properties dialog. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Eplan.EplApi.DataModel.Placement</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~IsTransient.html">IsTransient</A></td><td class="i-member-description"><p>Determines if the the StorableObject is transient.</p>
+
+<p>The StorableObject is transient when it was created by default constructor and:</p>
+
+<p>it is a <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Page</a> and it was not assigned a <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Project.html">Project</a>,</p>
+
+<p>it is a <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Placement</a> or any class derived from it and was not assigned a <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Page</a>.</p> (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~IsValid.html">IsValid</A></td><td class="i-member-description">Determines if StorableObject is correct database object and is not deleted. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~Location.html">Location</A></td><td class="i-member-description">Get or set the placement's location. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~LogicalAreaSegments.html">LogicalAreaSegments</A></td><td class="i-member-description">Gets/Sets an array of segments that the symbol's logical area may consist of. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~ObjectIdentifier.html">ObjectIdentifier</A></td><td class="i-member-description">Returns the object identifier as number. The number is unique for all objects of this type. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement~Page.html">Page</A></td><td class="i-member-description">Returns the page the Placement is on, or assigns a Page object to the placement. If the placement was previously assigned to another page, it is removed from old one and assigned to the page given as an argument. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Eplan.EplApi.DataModel.Placement</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition~PotentialName.html">PotentialName</A></td><td class="i-member-description">Gets/Sets the name of the potential. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~Project.html">Project</A></td><td class="i-member-description">Returns the project the StorableObject belongs to. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition~Properties().html">Properties</A></td><td class="i-member-description">.NET Property enabling access to P8 properties of the PotentialDefinition object. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~PropertyPlacements.html">PropertyPlacements</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.PropertyPlacement.html">Eplan.EplApi.DataModel.Graphics.PropertyPlacement</a>s assigned to the SymbolReference. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~PropertyPlacementsSchemas.html">PropertyPlacementsSchemas</A></td><td class="i-member-description">Returns <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~PropertyPlacementsSchemas.html">SymbolReference.PropertyPlacementsSchemas</a> assigned to this SymbolReference. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition~SignalName.html">SignalName</A></td><td class="i-member-description">Gets/Sets the name of the signal. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~SymbolVariant.html">SymbolVariant</A></td><td class="i-member-description">Specifies <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.SymbolVariant.html">Eplan.EplApi.DataModel.MasterData.SymbolVariant</a> assigned to this SymbolReference. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~SymbolWiringType.html">SymbolWiringType</A></td><td class="i-member-description">Set configuration type to select different variants for point or destination wiring (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~TypeIdentifier.html">TypeIdentifier</A></td><td class="i-member-description">Returns the type of the object as number. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~UseLocalPropertyPlacements.html">UseLocalPropertyPlacements</A></td><td class="i-member-description">Return true if the instance uses the local property instances, otherwise it uses the ones of the variant. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="MethodsBookmark"></a>
+            <div class="i-section-heading" id="i-publicMethods-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Methods</span></div><div id="i-publicMethods-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~ConvertToGraphics.html">ConvertToGraphics</A></td><td class="i-member-description">Converts the symbol representing this object into a group of graphical placements. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement~CopyTo.html">CopyTo</A></td><td class="i-member-description">Overloaded.&nbsp;Copy Placement and insert the Copy into destination group. Copied placement will be inserted into desired project of destination group. If this placement is temporary, the copy will be persistent, if the destination group is also persistent. Group or Page, where the placement will be inserted. Defines whether a layer should be matched by name. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Eplan.EplApi.DataModel.Placement</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~Create.html">Create</A></td><td class="i-member-description">Creates a SymbolReference. It is placed on the page passed as a parameter, using a given SymbolVariant. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~Dispose().html">Dispose()</A></td><td class="i-member-description">Destructor (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~Equals.html">Equals</A></td><td class="i-member-description">Operator of comparison implementation. Checks if two StorableObjects refer to the same object in the project. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement~GetBoundingBox.html">GetBoundingBox</A></td><td class="i-member-description">Placement bounding box. Bounding box is a rectangle which contain this placement. It can be also used to determine placement size. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Eplan.EplApi.DataModel.Placement</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~GetHashCode.html">GetHashCode</A></td><td class="i-member-description">Serves as the default hash function. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~GetLogicalArea.html">GetLogicalArea</A></td><td class="i-member-description">Returns a rectangle which is the logical area of the object derived from SymbolReference. For objects having symbols consisting of segments, this method returns the bounding box of the polyline created by those segments. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~GetPropertyPlacements.html">GetPropertyPlacements</A></td><td class="i-member-description">Gets list of property placements of given type. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~GetTypeName.html">GetTypeName</A></td><td class="i-member-description">Returns object type name. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~IsPointInsideLogicalArea(PointD).html">IsPointInsideLogicalArea</A></td><td class="i-member-description">Checks, if the point is inside logical area of the symbol. Returns true, if the symbol has a logical area and the point is inside. The logical area may be a rectangle or a polyline without arcs. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~LockObject().html">LockObject</A></td><td class="i-member-description">Tries to lock current object in database for exclusive access. Throws <a href="Eplan.EplApi.Baseu~Eplan.EplApi.Base.LockingException.html">Eplan.EplApi.Base.LockingException</a> on failure. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement~Remove.html">Remove</A></td><td class="i-member-description">Removes placement. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Eplan.EplApi.DataModel.Placement</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~ReorderPropertyPlacements.html">ReorderPropertyPlacements</A></td><td class="i-member-description">Reorders property placements of one type, which are assigned to this SymbolReference. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement~Scale.html">Scale</A></td><td class="i-member-description">Overloaded.&nbsp;Scales the placement (or group of placements) by the specified factors in X and Y axis with scaling origin point specified by the ptOrigin parameter X axis factor. E.g. value of 2 makes the width two times bigger.Y axis factor. E.g. value of 0.5 makes the height two times smaller.Scaling origin point. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Eplan.EplApi.DataModel.Placement</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~SetLogicalArea.html">SetLogicalArea</A></td><td class="i-member-description">Sets rectangular logical area for objects derived from SymbolReference. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~SmartLock.html">SmartLock</A></td><td class="i-member-description">Tries to lock current object. If object is <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html">Placement</a> - it's page will be locked as well; <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3D.html">Eplan.EplApi.DataModel.E3D.Placement3D</a> locks it's installation space; <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Function.html">Function</a> locks all it's connections and connection definition points; <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Page.html">Page</a> locks all placements from this page. Throws <a href="Eplan.EplApi.Baseu~Eplan.EplApi.Base.LockingException.html">Eplan.EplApi.Base.LockingException</a> on failure. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference~SwitchLocalPropertyPlacements.html">SwitchLocalPropertyPlacements</A></td><td class="i-member-description">Copies or removes all local ProperyPlacemnets and sets flag (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference.html">Eplan.EplApi.DataModel.SymbolReference</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject~ToStringIdentifier.html">ToStringIdentifier</A></td><td class="i-member-description">Returns this object as string identifier. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObject.html">Eplan.EplApi.DataModel.StorableObject</a></strong>)</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            
+            <a name="EventsBookmark"></a>
+            
+            
+            
+            <a name="OperatorsBookmark"></a>
+            									
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition_members.html">PotentialDefinition Members</a>
+<br/><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel_namespace.html">Eplan.EplApi.DataModel Namespace</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

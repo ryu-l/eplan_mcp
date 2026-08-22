@@ -1,0 +1,52 @@
+# PROJ_REVISION_LOG_USEREMAIL Property
+
+PROJ\_REVISION\_LOG\_USEREMAIL Property
+
+User: E-mail address (change tracking) # 10193.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue PROJ_REVISION_LOG_USEREMAIL {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ PROJ_REVISION_LOG_USEREMAIL {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 1000.
+
+Shows the e-mail address that was specified in the user settings.
+
+See Also
+
+#### Reference
+
+[ProjectPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList.html)
+  
+[ProjectPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~PROJ_REVISION_LOG_USEREMAIL.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~PROJ_REVISION_LOG_USEREMAIL())

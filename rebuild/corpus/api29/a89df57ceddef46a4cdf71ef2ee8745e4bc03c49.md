@@ -1,0 +1,43 @@
+# IsRightExisting Method
+
+IsRightExisting Method
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public bool IsRightExisting( 
+   string strRightname
+)
+```
+```
+
+```
+```
+public:
+bool IsRightExisting( 
+   String^ strRightname
+)
+```
+```
+
+#### Parameters
+
+*strRightname*
+
+See Also
+
+#### Reference
+
+[UserRights Class](Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.UserRights.html)
+  
+[UserRights Members](Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.UserRights_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.UserRights~IsRightExisting)

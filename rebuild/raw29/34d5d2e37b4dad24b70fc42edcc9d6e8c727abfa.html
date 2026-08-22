@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The &lt;instantiation&gt; element is used to instantiate objects on placeholders." /><title>instantiation</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refformui_r_instantiation.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1934"></a>
+            <MadCap:concept term="Referenz" /><a name="aanchor1935"></a>
+            <MadCap:concept term="Form-UI" /><a name="kanchor1336"></a>
+            <h2>instantiation</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The <span class="codetext">&lt;instantiation&gt;</span> element is used to instantiate objects on placeholders.</p>
+            <p>Five different representations of this element can be set by the type <span class="codetext">attribute</span>:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><b>link:</b> as a hyperlink with preceding image,</li>
+                <li class="Listitem_Normal" value="2"><b>button:</b> as a button with image,</li>
+                <li class="Listitem_Normal" value="3"><b>combo:</b> as a drop-down list box,</li>
+                <li class="Listitem_Normal" value="4"><b>combo link:</b> as a combination of  drop-down list box and hyperlink with preceding image,</li>
+                <li class="Listitem_Normal" value="5"><b>combo button:</b> as a combination of drop-down list box and button with image.</li>
+            </ul>
+            <p>The default image of the placeholder is replaced by the <span class="codetext">img</span> attribute (see also <a href="refformui_r_img.htm" class="MCXref xref" xrefformat="{para}">img</a>).</p>
+            <p>For a drop-down list box (type = combo) the inserting is performed directly after the selection.</p>
+            <p>Inserting explicitly is realized by the types <span class="codetext">combo link</span> and <span class="codetext">combo button</span>. For these types the hyperlink or the button has to be pressed after the selection within the drop-down list box.</p>
+            <p>In order to achieve a fluent operation, selection lists in finders, drop-down list boxes, etc. can be filled while opening a Form-UI. For this purpose the <span class="codetext">prefetch</span> attribute is specified with the value <span class="codetext">true</span>. This is available for all types  (link, button, combo, combo link and combo button) of the element <span class="codetext">&lt;instantiation&gt;</span>.</p>
+            <p>The default value of the <span class="codetext">prefetch</span> attribute is <span class="codetext">false</span>, in order not to fill all library components into the selection list, if a placeholder is declared for e.g. <span class="codetext">Engineering.Component</span>.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">If a filter allows to many components, this may lead to long loading periods.</p>
+            </div>
+            <p>If only one component can be determined, the finder dialog is not appearing, instead the component is inserted directly.</p>
+            <p>In case of a drop-down list box and if <span class="codetext">prefetch="true"</span> then the first component is automatically selected.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute name</th>
+                        <th>Usage</th>
+                        <th>Attribute values</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>alwaysShowDialog</td>
+                        <td>optional</td>
+                        <td>false<br />true</td>
+                        <td>false</td>
+                        <td>Displays a dialogue if an instance is to be created with a button or a hyperlink.<br />true = always displays the selection dialog<br />false= suppresses the selection dialog</td>
+                    </tr>
+                    <tr>
+                        <td>font</td>
+                        <td>optional</td>
+                        <td>Font name-style-size</td>
+                        <td>System font</td>
+                        <td>Font name, style, and size for displaying text</td>
+                    </tr>
+                    <tr>
+                        <td>hSizeMax</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>maximum width of the element<br />EEC = width in characters<br />Web application = width in pixels</td>
+                    </tr>
+                    <tr>
+                        <td>hSizeMaxPx</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>maximum width of the element<br />EEC = width in pixels<br />Web application = width in pixels</td>
+                    </tr>
+                    <tr>
+                        <td>img</td>
+                        <td>optional</td>
+                        <td>png, gif, jpg</td>
+                        <td />
+                        <td>assigns another image to the element</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Name of the new instance (name of the placeholder). If the Name is determined by the formula language, the origin of the formula equals the place of the new instance. If the attribute is not specified, the project component gets the name of the library component. If the name of a project component is already present, the new name is supplemented with a running serial number.</td>
+                    </tr>
+                    <tr>
+                        <td>prefetch</td>
+                        <td>optional</td>
+                        <td>true, false</td>
+                        <td>false</td>
+                        <td>true = selection lists are filled while opening the Form-UI<br />false = selection lists are filled while opening the list</td>
+                    </tr>
+                    <tr>
+                        <td>readonly</td>
+                        <td>optional</td>
+                        <td>true, false</td>
+                        <td />
+                        <td>true = placeholder is disabled<br />false = placeholder is enabled</td>
+                    </tr>
+                    <tr>
+                        <td>receiver</td>
+                        <td>required</td>
+                        <td />
+                        <td />
+                        <td>Formula to the object</td>
+                    </tr>
+                    <tr>
+                        <td>text</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>the text to display can be calculated using the formula language</td>
+                    </tr>
+                    <tr>
+                        <td>tooltip</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Text or Form-UI of the overlaying tooltip (see <a href="refformui_r_tooltip.htm" class="MCXref xref" xrefformat="{para}">tooltip</a>)</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>required</td>
+                        <td>button,<br />combo,<br />combo link,<br />combo button,<br />link</td>
+                        <td />
+                        <td>Representation type of the placeholder:<br />button = button<br />combo = drop-down list box<br />combo link = drop-down list box<br />combo button = button<br />link = text as a hyperlink</td>
+                    </tr>
+                    <tr>
+                        <td>visible</td>
+                        <td>optional</td>
+                        <td>true, false</td>
+                        <td>true</td>
+                        <td>true = placeholder is visible<br />false = placeholder is invisible</td>
+                    </tr>
+                    <tr>
+                        <td>visibleItemCount</td>
+                        <td>optional</td>
+                        <td />
+                        <td />
+                        <td>Number of visible elements</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Allowed sub-elements</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="refformui_r_tooltip.htm" class="MCXref xref" xrefformat="{para}">tooltip</a>
+                        </td>
+                        <td>0..1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="Bridgehead">type="link":</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownhotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;instantiation
+	type="link"
+	alwaysShowDialog="true"
+	receiver="mosWithPlaceholders.select(x|x.isPlaceholder).first"
+	name="='St'+(mos.indexOf(this)+1)+type.name" /&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Result:</p>
+                        <p>
+                            <img src="../Pictures/form-ui_instantiation1.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>On clicking the hyperlink, the following selection dialog is displayed:</p>
+            <p>
+                <img src="../Pictures/form-ui_instantiation_dialog.png" alt="" />
+            </p>
+            <p>The selection dialog is structured like a search dialog for library components. The library components found by the formula are listed in the table. If several library components are found, the one to be instanced must be marked. Next, how many project components are to be created in one step can be specified in the field Number of Project Components:.</p>
+            <p class="Bridgehead">type="link" with a different image and calculated text:</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownhotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;instantiation
+	type="link" 
+	text="=('add '+ mos.first.name.right(7))"
+	receiver="mosWithPlaceholders.select(x|x.isPlaceholder).first"
+	img="install\icon-collection\level4.png"
+	name="='St'+(mos.indexOf(this)+1)+type.name"/&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Result:</p>
+                        <p>
+                            <img src="../Pictures/form-ui_instantiation8.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Bridgehead">type="button". The selected component is instantly instantiated:</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownhotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;instantiation
+	type="button"
+	receiver="mosWithPlaceholders.select(x|x.isPlaceholder).first"
+	name="='St'+(mos.indexOf(this)+1)+type.name"/&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Result:</p>
+                        <p>
+                            <img src="../Pictures/form-ui_instantiation5.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Bridgehead">type="combo":</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownhotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;instantiation
+	type="combo"
+	receiver="mosWithPlaceholders.select(x|x.isPlaceholder).first"
+	name="='St'+(mos.indexOf(this)+1)+type.name"/&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Result:</p>
+                        <p>
+                            <img src="../Pictures/form-ui_instantiation2.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Bridgehead">type="combo link". The selected component is instantiated only after clicking the hyperlink:</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownhotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;instantiation
+	type="combo link"
+	receiver="mosWithPlaceholders.select(x|x.isPlaceholder).first"
+	name="='St'+(mos.indexOf(this)+1)+type.name"/&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Result:</p>
+                        <p>
+                            <img src="../Pictures/form-ui_instantiation3.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Bridgehead">type="combo button". The selected component is instantiated only after clicking the button:</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownhotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;instantiation
+	type="combo button"
+	receiver="mosWithPlaceholders.select(x|x.isPlaceholder).first"
+	name="='St'+(mos.indexOf(this)+1)+type.name"/&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Result:</p>
+                        <p>
+                            <img src="../Pictures/form-ui_instantiation4.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Bridgehead">type="combo button" with prefetch="true". The drop-down list box is instantly filled after opening the Form-UI:</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownhotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;instantiation
+	type="combo button"
+	prefetch="true"
+	receiver="mosWithPlaceholders.select(x|x.isPlaceholder).first"
+	name="='St'+(mos.indexOf(this)+1)+type.name"/&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Result:</p>
+                        <p>
+                            <img src="../Pictures/form-ui_instantiation6.png" alt="" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Slave nodes can be automatically inserted into the diagram in two ways." /><title>Inserting nodes automatically</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/eecgraph2d_k_insert_nodes_automatically.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1860"></a>
+            <MadCap:concept term="Basis" />
+            <h2>Inserting nodes automatically</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Slave nodes can be automatically inserted into the diagram in two ways.</p>
+            <ol>
+                <li value="1">Master nodes and corresponding slave nodes are instantiated in the project structure. Next, the master nodes are manually inserted into the diagram, causing the corresponding slave nodes to be automatically inserted as well.</li>
+                <li value="2">Slave nodes whose master nodes have already been inserted into the diagram are then instantiated in the project structure. When the diagram is opened, they are specified in accordance with the configuration and then placed at the appropriate master node.</li>
+            </ol>
+            <p>In order to distinguish automatically inserted slave nodes after the diagram has been opened, a special color can be set for their borders. The slave nodes retain this one-color designation until the diagram has been saved (<span class="gui">CTRL+S</span>).</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p>When master nodes are inserted manually, the salve nodes are inserted automatically. These slave nodes are displayed with a green border:</p><pre xml:space="preserve"><code class="language-markup"><a name="aanchor1861"></a><MadCap:concept term="Graph2D" />&lt;node id="Station" super="Komponente"<br /> valid="=isInstanceOf('Rohbau_Baukasten_V2.Mechatronik.RoboterStation')"<br /> slaveNodes="=mos('Rohbau_Baukasten_V2.Mechatronik.Roboter')"&gt;
+	&lt;figureImage figure="com.mind8.graph2d.figure.Image"&gt;
+		&lt;properties&gt;
+			&lt;property id="img"&gt;
+				&lt;read value="=type('Rohbau_Baukasten_V2.Diagramm_Konfiguration.<br /> 				Planungsdiagramm.Register').image(this)"/&gt;
+			&lt;/property&gt;
+			&lt;property id="highlightBoColor"&gt;
+				&lt;read value="0,255,0"/&gt;
+			&lt;/property&gt;
+		&lt;/properties&gt;
+	&lt;/figureImage&gt;
+	&lt;slaveNode node="Roboter" <span class="Bold">autoUpdated="false"</span> layout="outsideEdged"<br /> 	direction="=$diagramDirection" parent="=mc"&gt;
+		&lt;movement rotateWithMaster="NO" rotate="NO"/&gt;
+	&lt;/slaveNode&gt;
+&lt;/node&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p>Slave nodes are inserted automatically into the diagram subsequently. These slave nodes are displayed with a green border:</p><pre xml:space="preserve"><code class="language-markup">&lt;node id="Station" super="Komponente"<br /> valid="=isInstanceOf('Rohbau_Baukasten_V2.Mechatronik.RoboterStation')"<br /> slaveNodes="=mos('Rohbau_Baukasten_V2.Mechatronik.Roboter')"&gt;
+	&lt;figureImage figure="com.mind8.graph2d.figure.Image"&gt;
+		&lt;properties&gt;
+			&lt;property id="img"&gt;
+				&lt;read value="=type('Rohbau_Baukasten_V2.Diagramm_Konfiguration.<br /> 				Planungsdiagramm.Register').image(this)"/&gt;
+			&lt;/property&gt;
+			&lt;property id="highlightBoColor"&gt;
+				&lt;read value="0,255,0"/&gt;
+			&lt;/property&gt;
+		&lt;/properties&gt;
+	&lt;/figureImage&gt;
+	&lt;slaveNode node="Roboter" <span class="Bold">autoUpdated="true"</span> layout="outsideEdged"<br /> 	direction="=$diagramDirection" parent="=mc"&gt;
+		&lt;movement rotateWithMaster="NO" rotate="NO"/&gt;
+	&lt;/slaveNode&gt;
+&lt;/node&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

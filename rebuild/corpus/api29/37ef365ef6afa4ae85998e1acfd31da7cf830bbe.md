@@ -1,0 +1,52 @@
+# FUNCTION3D_TERMINALPOSITION_OPERATIONVEC_ZDIR Property
+
+FUNCTION3D\_TERMINALPOSITION\_OPERATIONVEC\_ZDIR Property
+
+Z vector: Tool # 36093.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue FUNCTION3D_TERMINALPOSITION_OPERATIONVEC_ZDIR {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ FUNCTION3D_TERMINALPOSITION_OPERATIONVEC_ZDIR {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.Double.
+
+Remarks
+
+This property is read-only. Property is indexed. Possible indexes are from 1 to 1000.
+
+The properties for the vector of the tool describe the position and the screwing direction of a terminal screw in an item with screwed connection. Entry for example "-1".
+
+See Also
+
+#### Reference
+
+[Placement3DPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList.html)
+  
+[Placement3DPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList_members.html)
+  
+[Overload List](topic1605.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNCTION3D_TERMINALPOSITION_OPERATIONVEC_ZDIR())

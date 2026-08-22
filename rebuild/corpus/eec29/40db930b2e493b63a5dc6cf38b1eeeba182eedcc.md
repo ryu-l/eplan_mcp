@@ -1,0 +1,18 @@
+# = for Boolean
+
+Equal operator.
+
+| **<Expression1> = <Expression2>** | | | |
+| --- | --- | --- | --- |
+| Expressions | [Boolean](glossary_o_boolean.htm) | Expression1 | Expression that returns a Boolean value. |
+| Boolean | Expression2 | Expression that returns a Boolean value. |
+| Return value | Boolean |  | |
+| Value table  | Expression1 | Expression2 | Result | | --- | --- | --- | | true | true | true | | true | false | false | | false | true | false | | false | false | true | | | | |
+
+![](../Pictures/Gui/ALL/example.png)[![Closed](../../Skins/Default/Stylesheets/Images/transparent.gif)Examples](javascript:void(0);)
+
+| Formula | Result |
+| --- | --- |
+| = true = false | false |
+| = true = null | null |
+| = false = false | true |

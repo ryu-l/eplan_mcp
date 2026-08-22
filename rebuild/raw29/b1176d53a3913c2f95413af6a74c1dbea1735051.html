@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Using Functions and Devices|Devices|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="On insertion of a device, EPLAN checks the data allocated to the part. The part contains various fields allowing graphical placement. This data is pri..." /><title>Procedure for Inserting Devices</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/devicelistgui_k_vorgehengeraeteeinfuegen.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2938"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor2939"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor3501"></a>
+            <h2>Procedure for Inserting Devices</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>On insertion of a device, EPLAN checks the data allocated to the <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a>. The part contains various fields allowing graphical placement. This data is prioritized in different ways:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The part contains a reference to a macro (symbol macro or window macro).</li>
+                <li class="Listitem_Normal" value="2">The part contains a device definition (<a href="Glossary_o_funktionsschablonen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function templates</a>).</li>
+                <li class="Listitem_Normal" value="3">The part contains a reference to a graphical macro and X / Y dimensions (only useful for part placement).</li>
+                <li class="Listitem_Normal" value="4">The part contains neither a device definition nor a macro.</li>
+            </ul>
+            <p>The macro has the highest priority, then the function templates. The graphical macro with dimensions is only used for panel layouts. </p>
+            <p>Depending on the copy mode, a DT is assigned to new <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a>. (You define the copy mode under the menu <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a> <span class="gui">Options &gt; Settings &gt; Projects &gt; "Project name" &gt; Devices &gt; Numbering (online)</span>.) </p>
+            <p>If a device is placed on a <span class="important">Panel layout</span> page type, then a new part placement (and not a <a href="Glossary_o_schaltzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">component</a>) is created.</p><a name="kanchor3502"></a>
+            <h3>Define the main function</h3>
+            <p>To allow the part to be transferred, a main function must be placed. If a device is placed that odes not contain a main function, then the first placed component automatically becomes the main function.</p>
+            <p>You cannot select multiple parts for placement.</p>
+            <h4>Macros</h4>
+            <p>If the macro has <span class="important">only one</span> main function, the part is carried over to it.</p>
+            <p>If there is <span class="important">no</span> main function in the macro, one of the components becomes the main function. EPLAN first checks which of the <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> included in the macro is the main function in the function definition. If one exists, then it becomes the main function. If only <a href="Glossary_o_nebenfunktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">auxiliary functions</a> exist, then the first graphical function becomes the main function.</p>
+            <p>If the macro has <span class="important">more than one</span> main function, the part is carried over to the first matching main function. This means that the part is assigned to the first main function in the macro that it can overlay correctly. The other <a href="Glossary_o_hauptfunktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">main functions</a> are not changed. If no matching main function is found, EPLAN first searches for a black box. If this does not exist, then the part is transferred to the first graphical main function.<br />Black boxes are therefore preferentially handled, since these usually represent the device or the module.</p>
+            <p>If the macro contains a main function that is already allocated to a part, then all of the parts are first completely removed, and the selected part is then transferred to the main function. In the process, all technical data contained in the part is carried over (technical characteristics, connection point designation, identifier).</p>
+            <h4>Function templates</h4>
+            <p>If the part contains function templates, on device insertion, EPLAN first offers the function representing a possible main function. Once the main function has been placed, then the remaining function templates are placed sequentially. The auxiliary functions are placed according to the sequence of the definitions (from the parts management). When the last function template of the selected part has been placed, the main function will be hanging once again on the cursor and you can place the device again if you wish.</p><a name="I_MakrosBeimGeraeteErzeugen"></a>
+            <h3>Taking account of macro variants when generating devices</h3>
+            <p>When generating a new device in the <a href="Glossary_o_navigatoren.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">navigators</a> (via the <span class="gui">New device</span> popup menu item), you can choose to use the functions from the macro entered on the part or from the function templates. This depends on the project setting <span class="gui">Consider macro when generating devices</span> (under the menu item <span class="gui">Options &gt; Settings &gt; Projects &gt; "Project name" &gt; Devices &gt; General</span>).</p>
+            <p>If the project setting is <span class="important">deactivated</span> (the default setting), an unplaced function is generated from the first main function that is entered in the <span class="important">function templates</span>. If the part contains only one macro, but no function templates, an unplaced function is generated from the first main function found in the macro.</p>
+            <p>If the project setting is <span class="important">activated</span>, <a href="Glossary_o_nicht_platziertefunktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">unplaced functions</a> are generated from the functions contained in the <span class="important">macro</span>. The exact behavior depends on whether function templates have been entered additionally for the part.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">If a macro is specified for a part but no function templates, unplaced functions are generated only from functions included in the first macro variant. (The search for the first macro variant begins with the representation type 'multi-line'.)</li>
+                <li class="Listitem_Normal" value="2">If function templates are entered for the part in addition to the macro, they are displayed in the navigators and overlaid with the matching functions from the macro <a href="Glossary_o_varianten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">variants</a>. If at least one function template matches a macro variant, then all other functions from this variant are also generated as unplaced functions.<br />Macro variants continue to be used in turn for as long as free function templates can be overlaid with them. If the functions in the current macro variant do not match the free function templates, the action is canceled. No further functions are generated from the remaining macro variants.</li>
+            </ul>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">A macro and function templates are entered for a part. Macro variants A, B and C are present in the macro. The <span class="gui">Consider macro when generating devices</span> project setting is activated.</p>
+                        <p class="Infoblock">On generation of the device the function templates are overlaid first with the functions from variant A. If no matching functions are found in macro variant B for the remaining function templates, the process is canceled. The functions contained in macro variant C are then disregarded.</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Taking account of macro variants when inserting devices</h3>
+            <p>If both a macro and function templates are entered at a part, functions contained in other macro variants of this macro can also be considered when you insert a device in the graphical editor (via the <span class="gui">Insert &gt; Device</span> menu items). A new project setting has been implemented for this: <span class="gui">Consider macro when generating devices</span>.</p>
+            <p>If the project setting is <span class="important">deactivated</span> (this is the default), the first macro variant matching the page type is offered when first inserting a device. Use <span class="gui">[Tab]</span> to browse through the macro variants and select the one you want. If the part contains no function templates, the functions of the currently selected macro variant are placed. <br />If the part contains function templates, the functions of the selected macro variant are placed in this case too. The other templates for which no matching function in the selected macro variant is found remain free.</p>
+            <p>If the project setting is <span class="important">activated</span> and the part contains function templates, the functions of the selected macro variant are placed. In addition, unplaced functions are generated from the other macro variants if at least one function template matches the macro variant. The function templates are overlaid with the matching functions from the macro variant, i.e. both the placed and the unplaced functions receive the data from the function templates. Macro variants continue to be used in turn for as long as free function templates can be overlaid with them. If the functions in the current macro variant do not match the free function templates, the action is canceled. No further functions are generated from the remaining macro variants.</p>
+            <p>After the macro has been placed, it hangs on the cursor again and can be placed once more. This generates a new device.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="devicelistgui_k_platzieren.htm">Inserting / Placing of Devices</a>
+            </p>
+            <p class="Link_Seealso"><a href="devicelistgui_k_loeschenkopieren.htm">Deletion and Copy Behavior of Devices</a>
+            </p>
+            <p class="Link_Seealso"><a href="xessettingsgui_d_betriebsmittelallgemein.htm">Dialog Settings: General (projects, devices)</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

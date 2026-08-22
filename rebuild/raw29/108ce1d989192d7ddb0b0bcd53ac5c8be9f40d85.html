@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="EPLAN Electric P8 project properties can be calculated in EEC and transferred to the EPLAN project to be created." /><title>Synchronization of project properties</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/eececad_k_synchronize_project_properties.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1132"></a>
+            <MadCap:concept term="Basis;EPLAN Electric P8" />
+            <h2>Synchronization of project properties</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>EPLAN Electric P8 project properties can be calculated in EEC and transferred to the EPLAN project to be created.</p>
+            <p class="Precondition">Transfer of project data from EEC to EPLAN Electric P8:</p>
+            <p>The properties of an EPLAN Electric P8 project can be configured in EEC and transferred at the time of generation. EPLAN-specific project properties have unique identifying numbers (ID) (for example 10230) as well as a name. To allow the EEC user access to all possible properties, while remaining independent of the EPLAN Electric P8 version used, EEC establishes the reference to the project properties via the ID.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">Project properties have been introduced in EPLAN Electric P8 as of Version 2.5 that dispose of an identifying name instead of an identifying number, for example <span class="codetext">[ESS] Report control &lt;ESS.Project.Reports&gt;</span>. These cannot be influenced by EEC by means of model variables!</p>
+            </div>
+            <p class="Precondition">Setting project properties from EEC:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">Display project property IDs in EPLAN Electric P8:</li>
+            </ul>
+            <p>To display the IDs of the project properties in EPLAN Electric P8, the following setting has to be carried out in EPLAN Electric P8: <span class="gui">Options &gt; Settings...</span> activate the switch <span class="gui">User &gt; Representation &gt; Interface: Display identifying numbers</span>.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">Determining project property IDs:</li>
+            </ul>
+            <p>Select the project and then select in the menu <span class="gui">Project &gt; Properties ...</span>. All properties whose value column is not grayed out can be written from EEC, for example 20919 ("order number").</p>
+            <p>Note: Some properties that cannot be edited in EPLAN Electric P8 can be set via EPLAN Electric P8 API.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">Generate a parameter object for project property in EEC:</li>
+            </ul>
+            <p>The project properties are mirrored in EEC by parameter objects whose names consists of two parts: The common prefix and a number, for example, <span class="codetext">PropId_20919</span>. <br />The prefix applies to the entire model and can be modified in EEC in the <span class="gui">Model &gt; Model variables &gt; ECAD &gt; EPLAN Electric P8 &gt; Prefix for EPLAN Electric P8 properties</span> menu.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">Assigning parameter objects to schematic diagram objects:</li>
+            </ul>
+            <p>Project properties are defined in EEC by assigning the parameter objects with the  name scheme mentioned above to the wiring diagram objects. During the generation the values are transferred to EPLAN Electric P8 automatically.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">Setting parameter values:</li>
+            </ul>
+            <p>There are two types of properties: normal and indexed properties. Normal properties contain the value in EEC as a string. Indexed properties are assigned data of the data type <span class="codetext">List</span> resp. <span class="codetext">Map</span>. The index always starts at 1. Prior to the access, the API checks whether the permissible range has been exceeded.</p>
+            <p>Examples of access:</p><pre xml:space="preserve">
+        <code class="language-markup">PropId_10150=List{Pair{1,'Initiale Version'},Pair{2,'Testdaten geÃ¤ndert'}}</code>
+      </pre><pre xml:space="preserve">
+        <code class="language-markup">PropId_10230='KL'</code>
+      </pre>
+            <p>An object of the <span class="codetext">Schematic</span> type can be saved only if a resource has been assigned or if the object is marked as "abstract". An abstract object is used to define a classification level in order to generate objects that are derived from an abstract object with all the properties of the latter automatically.</p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

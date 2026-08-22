@@ -1,0 +1,30 @@
+# DESIGNATION_USERDEFINED_LEADINGPARTS Property (PagePropertyList)
+
+DESIGNATION\_USERDEFINED\_LEADINGPARTS Property (PagePropertyList)
+
+User-defined structure (leading identifiers) # 1622.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [DESIGNATION\_USERDEFINED\_LEADINGPARTS(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PagePropertyList~DESIGNATION_USERDEFINED_LEADINGPARTS(Int32).html) | User-defined structure (leading identifiers) # 1622. |
+| [DESIGNATION\_USERDEFINED\_LEADINGPARTS](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PagePropertyList~DESIGNATION_USERDEFINED_LEADINGPARTS().html) | User-defined structure (leading identifiers) # 1622. |
+
+Remarks
+
+This property is read-only. Property is indexed. Possible indexes are from 1 to 10.
+
+See Also
+
+#### Reference
+
+[PagePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PagePropertyList.html)
+  
+[PagePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PagePropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PagePropertyList~DESIGNATION_USERDEFINED_LEADINGPARTS)

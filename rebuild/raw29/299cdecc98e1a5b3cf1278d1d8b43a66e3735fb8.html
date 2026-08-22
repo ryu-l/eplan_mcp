@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The management of structure identifiers in EPLAN Electric P8 (for example, &quot;Higher-level function&quot; [preceding sign &quot;=&quot;] and &quot;..." /><title>Structure identifier management in EPLAN&#160;Electric&#160;P8</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/eececad_k_structure_identifier_management_in_p8.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor2122"></a>
+            <MadCap:concept term="Basis;EPLAN Electric P8" />
+            <h2>Structure identifier management in EPLAN&#160;Electric&#160;P8</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The management of structure identifiers in EPLAN Electric P8 (for example, <span class="codetext">"Higher-level function" [preceding sign "="] </span>and <span class="codetext">"Mounting location" [preceding sign "+"]</span>) affects two important areas of the electro-technical documentation, which may also operate independently of each other.</p>
+            <ol>
+                <li value="1">The order of schematic pages in a project.</li>
+                <ul>
+                    <li class="Listitem_Normal" value="1">The order of the schematic pages becomes visible in the page navigator, and is also the output order for printing and export (PDF, DXF etc.).</li>
+                </ul>
+                <li value="2">The order of the schematic objects (devices, terminal strips, plugs, PLCs, cables, etc.) in a project.</li>
+                <ul>
+                    <li class="Listitem_Normal" value="1">The order of schematic objects influences the sequence in the navigators for devices, terminal strips, plugs, PLCs and cables.</li>
+                    <li class="Listitem_Normal" value="2">Another, and partially more important, effect of the order of the above schematic objects becomes visible in the logic evaluations of the schematics, e.g., the source and target of a cable in the cable layout.</li>
+                </ul>
+            </ol>
+            <p>Both the schematic pages and schematic objects can contain structure identifier independently of each other. Thus, it is possible to find structure identifiers in a schematic object for which there is no schematic page.</p>
+            <p>If a new schematic page or new schematic object is created in EPLAN Electric P8 (regardless of whether directly or via EEC), all new structure identifiers will be entered in the central structure identifier management. In the process, only new structure identifiers are created, and always, by default, added to the end of the list.</p>
+            <p>The management of structure identifiers in EPLAN Electric P8 is opened via the menu <span class="gui">Project data &gt; Structure identifier management...</span>.</p>
+            <p>The following table shows an example of structure identifier management (tab <span class="gui">List</span>):</p>
+            <table width="98%">
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <th>Row</th>
+                        <th>Complete structure identifier</th>
+                        <th>Structure description</th>
+                        <th>Original description</th>
+                        <th>Usage</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>&lt;Empty identifier&gt;</td>
+                        <td />
+                        <td>&lt;Empty identifier&gt;</td>
+                        <td>?</td>
+                        <td>
+                            <img src="../Pictures/Unlocked.png" alt="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>B</td>
+                        <td />
+                        <td />
+                        <td>No</td>
+                        <td>
+                            <img src="../Pictures/Unlocked.png" alt="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>A</td>
+                        <td />
+                        <td />
+                        <td>No</td>
+                        <td>
+                            <img src="../Pictures/Unlocked.png" alt="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>CA</td>
+                        <td />
+                        <td />
+                        <td>No</td>
+                        <td>
+                            <img src="../Pictures/Unlocked.png" alt="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>CA1</td>
+                        <td />
+                        <td />
+                        <td>No</td>
+                        <td>
+                            <img src="../Pictures/Unlocked.png" alt="" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The order of the entries in structure identifier management is the determining order both for the schematic pages and also for all other schematic objects where structure identifiers play a role.</p>
+            <p>Previously, structure identifiers could be moved from within EEC only via the schematic pages in EPLAN Electric P8. In the process the structure identifiers in accordance with the order of creation of the schematic pages in EEC (the order of the schematic pages in the ECAD structure of EEC project) were entered into the EPLAN Electric P8 structure identifier management.</p>
+            <p>
+                <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="174mm" height="132mm" viewBox="0 0 616.53595 467.7169" id="svg2" version="1.1" inkscape:version="0.92.0 r15299" sodipodi:docname="2010030201.svg">
+                    <defs id="defs4">
+                        <marker inkscape:stockid="TriangleOutM" orient="auto" refY="0" refX="0" id="TriangleOutM-7" style="overflow:visible" inkscape:isstock="true">
+                            <path inkscape:connector-curvature="0" id="path9155-2" d="M 5.77,0 -2.88,5 V -5 Z" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1" transform="scale(0.4)" />
+                        </marker>
+                        <marker inkscape:stockid="TriangleOutM" orient="auto" refY="0" refX="0" id="TriangleOutM-3" style="overflow:visible" inkscape:isstock="true">
+                            <path inkscape:connector-curvature="0" id="path9155-5" d="M 5.77,0 -2.88,5 V -5 Z" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1" transform="scale(0.4)" />
+                        </marker>
+                        <marker inkscape:stockid="TriangleOutM" orient="auto" refY="0" refX="0" id="TriangleOutM-4" style="overflow:visible" inkscape:isstock="true">
+                            <path inkscape:connector-curvature="0" id="path9155-7" d="M 5.77,0 -2.88,5 V -5 Z" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1" transform="scale(0.4)" />
+                        </marker>
+                        <marker inkscape:stockid="TriangleOutM" orient="auto" refY="0" refX="0" id="TriangleOutM-86" style="overflow:visible" inkscape:isstock="true">
+                            <path inkscape:connector-curvature="0" id="path9155-6" d="M 5.77,0 -2.88,5 V -5 Z" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1" transform="scale(0.4)" />
+                        </marker>
+                    </defs>
+                    <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="1.4142136" inkscape:cx="340.9322" inkscape:cy="263.16061" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="2400" inkscape:window-height="1434" inkscape:window-x="4791" inkscape:window-y="-9" inkscape:window-maximized="1" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" showguides="false" inkscape:guide-bbox="true">
+                        <sodipodi:guide position="154.03353,-322.39474" orientation="0,1" id="guide214481" inkscape:label="" inkscape:color="rgb(0,0,255)" inkscape:locked="false" />
+                        <sodipodi:guide position="418.25553,-203.0474" orientation="1,0" id="guide214483" inkscape:label="" inkscape:color="rgb(0,0,255)" inkscape:locked="false" />
+                    </sodipodi:namedview>
+                    <metadata id="metadata7">
+                        <rdf:RDF>
+                            <cc:Work rdf:about="">
+                                <dc:format>image/svg+xml</dc:format>
+                                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title>
+                            </cc:Work>
+                        </rdf:RDF>
+                    </metadata>
+                    <g inkscape:label="Ebene 1" inkscape:groupmode="layer" id="layer1" transform="translate(117.07404,-173.66852)" style="display:inline">
+                        <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.77165496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect9494" width="240.94505" height="226.77184" x="-117.07404" y="414.61356" />
+                        <flowRoot style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="flowRoot6947" xml:space="preserve" transform="matrix(1.2499999,0,0,1,866.18392,12.8572)">
+                            <flowRegion id="flowRegion6949">
+                                <rect style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle" y="-97.191391" x="-40.406101" height="1175.8175" width="1097.0256" id="rect6951" />
+                            </flowRegion>
+                            <flowPara id="flowPara6955" />
+                        </flowRoot>
+                        <flowRoot xml:space="preserve" id="flowRoot7066" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1">
+                            <flowRegion id="flowRegion7068">
+                                <rect id="rect7070" width="430.32498" height="57.578693" x="383.85797" y="741.23523" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle" />
+                            </flowRegion>
+                            <flowPara id="flowPara7074" />
+                        </flowRoot>
+                        <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffeeaa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99900031;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect21999" width="212.5986" height="184.25212" x="-102.90079" y="442.96011" />
+                        <rect style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-99-1" width="85.039436" height="21.259842" x="-67.467682" y="489.02328" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="-24.685518" y="504.3071" id="text4138-1-38">
+                            <tspan sodipodi:role="line" id="tspan4140-05-6" x="-24.685518" y="504.3071">ECAD</tspan>
+                        </text>
+                        <rect style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-1-0-6" width="99.212677" height="21.259842" x="-3.6881967" y="524.45618" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="46.180683" y="539.54779" id="text4138-4-6-1">
+                            <tspan sodipodi:role="line" id="tspan4140-0-7-9" x="46.180683" y="539.54779">WiringDiagram</tspan>
+                        </text>
+                        <rect style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-7-2-1" width="70.866203" height="21.259842" x="-3.6881967" y="559.8894" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="32.00745" y="573.88861" id="text4138-3-3-4">
+                            <tspan sodipodi:role="line" id="tspan4140-9-6-9" x="32.00745" y="573.88861">Page2</tspan>
+                        </text>
+                        <rect style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-9-2-84" width="70.866203" height="21.259842" x="-3.6881967" y="595.32275" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="31.748018" y="609.44403" id="text4138-8-7-2">
+                            <tspan sodipodi:role="line" id="tspan4140-4-3-3" x="31.748018" y="609.44403">Page1</tspan>
+                        </text>
+                        <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582689;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M -18.747173,535.08622 H -4.5739332" id="path7786-2-1-9-18" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m -18.304259,510.29491 v 96.10401" id="path7786-28-9-4-9-5-3" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582689;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M -18.747173,570.51946 H -4.5739332" id="path7786-2-1-9-18-2" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582689;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M -18.747173,605.9528 H -4.5739332" id="path7786-2-1-9-18-1" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <rect style="display:inline;opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.99900007;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-99-1-9" width="85.039436" height="21.259842" x="-67.467682" y="453.59018" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="-24.685522" y="468.87399" id="text4138-1-38-7">
+                            <tspan style="stroke-width:1px" sodipodi:role="line" id="tspan4140-05-6-5" x="-24.685522" y="468.87399">Mechatronic</tspan>
+                        </text>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582689;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m -88.72755,464.22008 h 21.259859" id="path7786-2-1-9-18-0" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582754;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m -88.28463,454.09058 v 46.00553" id="path7786-28-9-4-9-5-3-4" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582689;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m -88.72755,499.65318 h 21.259859" id="path7786-2-1-9-18-2-6" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <flowRoot xml:space="preserve" id="flowRoot11002" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666698px;line-height:25px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" transform="matrix(0.93750078,0,0,0.93750078,-117.15343,113.38581)">
+                            <flowRegion id="flowRegion11004">
+                                <rect id="rect11006" width="726.90576" height="605.99054" x="-48.790367" y="-11.678668" />
+                            </flowRegion>
+                            <flowPara id="flowPara11008" />
+                        </flowRoot>
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="3.0383835" y="434.4964" id="text4138-1-38-7-8">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-05-6-5-8" x="3.0383835" y="434.4964">EEC.</tspan>
+                        </text>
+                        <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.77165484;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect9494-5" width="240.94504" height="226.77182" x="-117.07404" y="173.66852" />
+                        <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffeeaa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99900025;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect21999-5" width="212.59859" height="184.25211" x="-102.90079" y="202.01508" />
+                        <rect style="display:inline;opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-99-1-3" width="85.039429" height="21.259842" x="-67.467682" y="248.07825" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="-24.685513" y="263.36206" id="text4138-1-38-0">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-05-6-3" x="-24.685513" y="263.36206">ECAD</tspan>
+                        </text>
+                        <rect style="display:inline;opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-1-0-6-8" width="99.212669" height="21.259842" x="-3.6882" y="283.51114" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="46.180676" y="298.60275" id="text4138-4-6-1-6">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-0-7-9-2" x="46.180676" y="298.60275">WiringDiagram</tspan>
+                        </text>
+                        <rect style="display:inline;opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-7-2-1-1" width="70.866196" height="21.259842" x="-3.6882" y="318.94437" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="32.007442" y="332.94354" id="text4138-3-3-4-8">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-9-6-9-4" x="32.007442" y="332.94354">Page1</tspan>
+                        </text>
+                        <rect style="display:inline;opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-9-2-84-7" width="70.866196" height="21.259842" x="-3.6882" y="354.37769" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="31.74802" y="368.49896" id="text4138-8-7-2-5">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-4-3-3-7" x="31.74802" y="368.49896">Page2</tspan>
+                        </text>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582689;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M -18.747172,294.14119 H -4.5739331" id="path7786-2-1-9-18-5" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m -18.30426,269.34988 v 96.10401" id="path7786-28-9-4-9-5-3-5" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582689;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M -18.747172,329.57443 H -4.5739331" id="path7786-2-1-9-18-2-0" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582689;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M -18.747172,365.00777 H -4.5739331" id="path7786-2-1-9-18-1-0" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <rect style="display:inline;opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-99-1-9-4" width="85.039429" height="21.259842" x="-67.467682" y="212.64514" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="-24.68552" y="227.92896" id="text4138-1-38-7-3">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-05-6-5-3" x="-24.68552" y="227.92896">Mechatronic</tspan>
+                        </text>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582689;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m -88.727547,223.27505 h 21.259858" id="path7786-2-1-9-18-0-6" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m -88.284626,213.14555 v 46.00553" id="path7786-28-9-4-9-5-3-4-1" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582689;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m -88.727547,258.70815 h 21.259858" id="path7786-2-1-9-18-2-6-3" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="3.0383778" y="193.55136" id="text4138-1-38-7-8-9">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-05-6-5-8-6" x="3.0383778" y="193.55136">EEC.</tspan>
+                        </text>
+                        <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.77165484;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect9494-9" width="191.33875" height="198.42535" x="308.12314" y="442.96005" />
+                        <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99900025;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect21999-4" width="159.44894" height="155.90564" x="322.29599" y="471.30664" />
+                        <rect style="display:inline;opacity:1;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:0.9992134;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99842675, 1.99842675;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-1-0-6-0" width="14.173239" height="14.17324" x="370.14203" y="580.03876" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="393.88702" y="571.43787" id="text4138-4-6-1-2">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-0-7-9-3" x="393.88702" y="571.43787">Plant1</tspan>
+                        </text>
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="418.61932" y="591.60535" id="text4138-3-3-4-5">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-9-6-9-7" x="418.61932" y="591.60535">Location1</tspan>
+                        </text>
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="429.48444" y="609.44409" id="text4138-8-7-2-6">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-4-3-3-1" x="429.48444" y="609.44409">1 Page 1</tspan>
+                        </text>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582754;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 377.22867,594.75287 v 11.64608" id="path7786-28-9-4-9-5-3-59" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 362.59775,587.12525 h 7.02627" id="path7786-2-1-9-18-2-1" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 376.7917,605.95283 h 7.50274" id="path7786-2-1-9-18-1-6" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="403.56058" y="462.84286" id="text4138-1-38-7-8-5">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-05-6-5-8-1" x="403.56058" y="462.84286">P8</tspan>
+                        </text>
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="215.92078" y="547.60175" id="text4138-1-38-7-6-8">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-05-6-5-0-3" x="215.92078" y="547.60175">=Plant2+Location2/1</tspan>
+                        </text>
+                        <path style="display: inline;fill: none;fill-rule: evenodd;stroke: #000000;stroke-width: 1.77165496;stroke-linecap: butt;stroke-linejoin: miter;stroke-miterlimit: 4;stroke-dasharray: none;stroke-opacity: 1;marker-end: url('#TriangleOutM-4');" d="M 71.311496,568.97514 363.8894,549.79348" id="path9008-8" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" />
+                        <path style="display: inline;fill: none;fill-rule: evenodd;stroke: #000000;stroke-width: 1.77165496;stroke-linecap: butt;stroke-linejoin: miter;stroke-miterlimit: 4;stroke-dasharray: none;stroke-opacity: 1;marker-end: url('#TriangleOutM-86');" d="m 73.077601,605.24239 292.068289,1.60048" id="path9008-3" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" />
+                        <rect style="display:inline;opacity:1;fill:#ffe6d5;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-7-2-1-3" width="14.173245" height="10.629959" x="384.31528" y="600.63745" />
+                        <rect style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-9-2-84-2" width="10.62993" height="7.0866199" x="386.08676" y="602.40955" />
+                        <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 391.40173,602.40922 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 388.21292,602.40922 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-6" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 394.23655,602.40922 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-8" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 388.21292,610.75151 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-1" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 391.40173,610.75151 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-3" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 394.23655,610.75151 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-39" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 386.07602,605.95283 c -1.24511,0 -1.24511,0 -1.24511,0" id="path11884-17" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 397.97057,605.95283 c -1.24511,0 -1.24511,0 -1.24511,0" id="path11884-2" inkscape:connector-curvature="0" />
+                        <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 373.68533,587.12525 c 7.08662,0 7.08662,0 7.08662,0" id="path11949" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 377.22864,590.66856 c 0,-7.08662 0,-7.08662 0,-7.08662" id="path11949-0" inkscape:connector-curvature="0" />
+                        <rect style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:0.9992134;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99842667, 1.99842667;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-1-0-6-0-7" width="14.173238" height="14.173239" x="355.96878" y="559.69708" />
+                        <g id="g12004" transform="translate(-60.476192,-98.076127)">
+                            <path inkscape:connector-curvature="0" id="path11949-2" d="m 419.98832,665.74567 c 7.08662,0 7.08662,0 7.08662,0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path inkscape:connector-curvature="0" id="path11949-0-2" d="m 419.98832,663.97401 c 7.08662,0 7.08662,0 7.08662,0" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        </g>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 363.05541,574.38908 v 13.17907" id="path7786-28-9-4-9-5-3-59-2" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <rect style="display:inline;opacity:1;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:0.9992134;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99842667, 1.99842667;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-1-0-6-0-9" width="14.173238" height="14.173239" x="370.14203" y="523.76831" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="393.88702" y="515.1673" id="text4138-4-6-1-2-8">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-0-7-9-3-9" x="393.88702" y="515.1673">Plant2</tspan>
+                        </text>
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="418.61929" y="535.33496" id="text4138-3-3-4-5-5">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-9-6-9-7-0" x="418.61929" y="535.33496">Location2</tspan>
+                        </text>
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="429.48444" y="553.17377" id="text4138-8-7-2-6-4">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-4-3-3-1-9" x="429.48444" y="553.17377">1 Page 2</tspan>
+                        </text>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 377.22867,538.48234 v 11.64608" id="path7786-28-9-4-9-5-3-59-7" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 362.59775,530.85472 h 7.02627" id="path7786-2-1-9-18-2-1-0" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 376.7917,549.6823 h 7.50274" id="path7786-2-1-9-18-1-6-1" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <rect style="display:inline;opacity:1;fill:#ffe6d5;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-7-2-1-3-6" width="14.173245" height="10.629959" x="384.31528" y="544.36694" />
+                        <rect style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-9-2-84-2-2" width="10.62993" height="7.0866199" x="386.08676" y="546.13904" />
+                        <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 391.40174,546.13871 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-31" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 388.21293,546.13871 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-6-4" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 394.23656,546.13871 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-8-2" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 388.21293,554.481 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-1-4" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 391.40174,554.481 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-3-0" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 394.23656,554.481 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-39-7" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 386.07603,549.68232 c -1.24511,0 -1.24511,0 -1.24511,0" id="path11884-17-7" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 397.97058,549.68232 c -1.24511,0 -1.24511,0 -1.24511,0" id="path11884-2-9" inkscape:connector-curvature="0" />
+                        <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 373.68535,530.85474 c 7.08662,0 7.08662,0 7.08662,0" id="path11949-7" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 377.22866,534.39805 c 0,-7.08662 0,-7.08662 0,-7.08662" id="path11949-0-3" inkscape:connector-curvature="0" />
+                        <rect style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:0.9992134;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99842667, 1.99842667;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-1-0-6-0-7-0" width="14.173238" height="14.173239" x="355.96881" y="503.42657" />
+                        <g id="g12004-9" transform="translate(-60.476179,-154.34664)">
+                            <path inkscape:connector-curvature="0" id="path11949-2-7" d="m 419.98832,665.74567 c 7.08662,0 7.08662,0 7.08662,0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path inkscape:connector-curvature="0" id="path11949-0-2-9" d="m 419.98832,663.97401 c 7.08662,0 7.08662,0 7.08662,0" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        </g>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 363.05541,518.11855 v 13.17907" id="path7786-28-9-4-9-5-3-59-2-7" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="411.59702" y="495.30823" id="text4138-4-6-1-5">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-0-7-9-6" x="411.59702" y="495.30823">WiringDiagram</tspan>
+                        </text>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582736;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 348.38256,510.5132 h 7.02627" id="path7786-2-1-9-18-2-1-0-9" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M 348.82547,498.69428 V 567.2266" id="path7786-28-9-4-9-5-3-59-2-7-6" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.8858273;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 348.38256,566.78371 h 7.08662" id="path7786-2-1-9-18-2-1-0-9-0" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <rect style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.9992134;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99842667, 1.99842667;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-1-0-6-0-7-0-0" width="14.173238" height="14.173239" x="341.73886" y="484.00397" />
+                        <g style="fill:#0000ff;fill-opacity:1;stroke:none" id="g12004-9-0" transform="translate(-74.706126,-173.76927)">
+                            <path inkscape:connector-curvature="0" id="path11949-2-7-1" d="m 419.98832,665.74567 c 7.08662,0 7.08662,0 7.08662,0" style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path inkscape:connector-curvature="0" id="path11949-0-2-9-1" d="m 419.98832,663.97401 c 7.08662,0 7.08662,0 7.08662,0" style="display:inline;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        </g>
+                        <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#00ffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99921334;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99842675, 1.99842675;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect12448" width="10.855202" height="4.4746637" x="343.39786" y="486.01514" />
+                        <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.77165473;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect9494-9-7" width="191.33875" height="198.42534" x="308.12314" y="202.015" />
+                        <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99900025;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect21999-4-9" width="159.44894" height="155.90562" x="322.29599" y="230.36159" />
+                        <rect style="display:inline;opacity:1;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:0.9992134;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99842667, 1.99842667;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-1-0-6-0-4" width="14.173238" height="14.173239" x="370.14203" y="339.09369" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="393.88702" y="330.49283" id="text4138-4-6-1-2-3">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-0-7-9-3-1" x="393.88702" y="330.49283">Plant2</tspan>
+                        </text>
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="418.61932" y="350.66031" id="text4138-3-3-4-5-57">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-9-6-9-7-3" x="418.61932" y="350.66031">Location2</tspan>
+                        </text>
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="429.48444" y="368.49902" id="text4138-8-7-2-6-9">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-4-3-3-1-4" x="429.48444" y="368.49902">1 Page 2</tspan>
+                        </text>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 377.22866,353.80781 v 11.64608" id="path7786-28-9-4-9-5-3-59-5" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 362.59774,346.1802 h 7.02627" id="path7786-2-1-9-18-2-1-5" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 376.79169,365.00777 h 7.50274" id="path7786-2-1-9-18-1-6-4" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="403.56058" y="221.89781" id="text4138-1-38-7-8-5-3">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-05-6-5-8-1-3" x="403.56058" y="221.89781">P8</tspan>
+                        </text>
+                        <rect style="display:inline;opacity:1;fill:#ffe6d5;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-7-2-1-3-7" width="14.173245" height="10.629959" x="384.31528" y="359.69238" />
+                        <rect style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-9-2-84-2-8" width="10.62993" height="7.0866199" x="386.08676" y="361.46448" />
+                        <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 391.40173,361.46418 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-5" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 388.21292,361.46418 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-6-44" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 394.23655,361.46418 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-8-20" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 388.21292,369.80647 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-1-1" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 391.40173,369.80647 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-3-8" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 394.23655,369.80647 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-39-75" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 386.07602,365.00779 c -1.24511,0 -1.24511,0 -1.24511,0" id="path11884-17-1" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 397.97057,365.00779 c -1.24511,0 -1.24511,0 -1.24511,0" id="path11884-2-6" inkscape:connector-curvature="0" />
+                        <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 373.68533,346.18022 c 7.08662,0 7.08662,0 7.08662,0" id="path11949-4" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 377.22864,349.72353 c 0,-7.08662 0,-7.08662 0,-7.08662" id="path11949-0-9" inkscape:connector-curvature="0" />
+                        <rect style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:0.9992134;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99842667, 1.99842667;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-1-0-6-0-7-8" width="14.173238" height="14.173239" x="355.96878" y="318.75204" />
+                        <g id="g12004-6" transform="translate(-60.476188,-339.02117)">
+                            <path inkscape:connector-curvature="0" id="path11949-2-4" d="m 419.98832,665.74567 c 7.08662,0 7.08662,0 7.08662,0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path inkscape:connector-curvature="0" id="path11949-0-2-93" d="m 419.98832,663.97401 c 7.08662,0 7.08662,0 7.08662,0" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        </g>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 363.0554,333.44402 v 13.17907" id="path7786-28-9-4-9-5-3-59-2-5" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <rect style="display:inline;opacity:1;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:0.9992134;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99842659, 1.99842659;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-1-0-6-0-9-1" width="14.173237" height="14.173238" x="370.14203" y="282.82327" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="393.88702" y="274.22226" id="text4138-4-6-1-2-8-4">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-0-7-9-3-9-6" x="393.88702" y="274.22226">Plant1</tspan>
+                        </text>
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="418.61929" y="294.38992" id="text4138-3-3-4-5-5-1">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-9-6-9-7-0-6" x="418.61929" y="294.38992">Location1</tspan>
+                        </text>
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="429.48444" y="312.22873" id="text4138-8-7-2-6-4-5">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-4-3-3-1-9-1" x="429.48444" y="312.22873">1 Page 1</tspan>
+                        </text>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 377.22866,297.53729 v 11.64607" id="path7786-28-9-4-9-5-3-59-7-6" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582736;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 362.59774,289.90966 h 7.02627" id="path7786-2-1-9-18-2-1-0-91" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582736;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 376.79169,308.73724 h 7.50274" id="path7786-2-1-9-18-1-6-1-4" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <rect style="display:inline;opacity:1;fill:#ffe6d5;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-7-2-1-3-6-3" width="14.173245" height="10.629959" x="384.31528" y="303.42188" />
+                        <rect style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.99900001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-9-2-84-2-2-1" width="10.62993" height="7.0866199" x="386.08676" y="305.19397" />
+                        <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 391.40174,305.19367 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-31-6" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 388.21293,305.19367 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-6-4-5" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 394.23656,305.19367 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-8-2-3" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 388.21293,313.53596 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-1-4-5" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 391.40174,313.53596 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-3-0-2" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 394.23656,313.53596 c 0,-1.24511 0,-1.24511 0,-1.24511" id="path11884-39-7-3" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 386.07603,308.73728 c -1.24511,0 -1.24511,0 -1.24511,0" id="path11884-17-7-3" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866197;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 397.97058,308.73728 c -1.24511,0 -1.24511,0 -1.24511,0" id="path11884-2-9-0" inkscape:connector-curvature="0" />
+                        <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 373.68535,289.9097 c 7.08662,0 7.08662,0 7.08662,0" id="path11949-7-9" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 377.22866,293.45301 c 0,-7.08662 0,-7.08662 0,-7.08662" id="path11949-0-3-9" inkscape:connector-curvature="0" />
+                        <rect style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:0.9992134;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99842667, 1.99842667;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-1-0-6-0-7-0-4" width="14.173238" height="14.173239" x="355.96881" y="262.48154" />
+                        <g id="g12004-9-1" transform="translate(-60.476178,-395.29168)">
+                            <path inkscape:connector-curvature="0" id="path11949-2-7-4" d="m 419.98832,665.74567 c 7.08662,0 7.08662,0 7.08662,0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path inkscape:connector-curvature="0" id="path11949-0-2-9-9" d="m 419.98832,663.97401 c 7.08662,0 7.08662,0 7.08662,0" style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        </g>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582736;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 363.0554,277.17349 v 13.17907" id="path7786-28-9-4-9-5-3-59-2-7-2" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="411.59702" y="254.36319" id="text4138-4-6-1-5-3">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-0-7-9-6-9" x="411.59702" y="254.36319">WiringDiagram</tspan>
+                        </text>
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.8858273;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 348.38255,269.56814 h 7.02627" id="path7786-2-1-9-18-2-1-0-9-5" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582736;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 348.82546,257.74922 v 68.53233" id="path7786-28-9-4-9-5-3-59-2-7-6-4" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <path style="display:inline;fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:0.88582724;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 348.38255,325.83865 h 7.08662" id="path7786-2-1-9-18-2-1-0-9-0-2" inkscape:connector-type="polyline" inkscape:connector-curvature="0" />
+                        <rect style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.9992134;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99842667, 1.99842667;stroke-dashoffset:0;stroke-opacity:1" id="rect4136-1-0-6-0-7-0-0-5" width="14.173238" height="14.173239" x="341.73886" y="243.05891" />
+                        <g style="fill:#0000ff;fill-opacity:1;stroke:none" id="g12004-9-0-7" transform="translate(-74.706128,-414.71431)">
+                            <path inkscape:connector-curvature="0" id="path11949-2-7-1-0" d="m 419.98832,665.74567 c 7.08662,0 7.08662,0 7.08662,0" style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.88582748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path inkscape:connector-curvature="0" id="path11949-0-2-9-1-8" d="m 419.98832,663.97401 c 7.08662,0 7.08662,0 7.08662,0" style="display:inline;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.88582742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        </g>
+                        <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#00ffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99921328;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99842667, 1.99842667;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect12448-8" width="10.855202" height="4.4746633" x="343.39786" y="245.0701" />
+                        <path style="display: inline;fill: none;fill-rule: evenodd;stroke: #000000;stroke-width: 1.77165496;stroke-linecap: butt;stroke-linejoin: miter;stroke-miterlimit: 4;stroke-dasharray: none;stroke-opacity: 1;marker-end: url('#TriangleOutM-7');" d="m 73.352685,364.81333 293.028575,3.96566" id="path9008-2" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" />
+                        <path style="display: inline;fill: none;fill-rule: evenodd;stroke: #000000;stroke-width: 1.77165496;stroke-linecap: butt;stroke-linejoin: miter;stroke-miterlimit: 4;stroke-dasharray: none;stroke-opacity: 1;marker-end: url('#TriangleOutM-3');" d="M 72.173159,329.82878 366.65885,309.20382" id="path9008-1" inkscape:connector-curvature="0" sodipodi:nodetypes="cc" />
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="215.92078" y="596.92493" id="text4138-1-38-7-6-8-7">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-05-6-5-0-3-3" x="215.92078" y="596.92493">=Plant1+Location1/1</tspan>
+                        </text>
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="215.92078" y="358.33099" id="text4138-1-38-7-6-8-2">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-05-6-5-0-3-5" x="215.92078" y="358.33099">=Plant2+Location2/1</tspan>
+                        </text>
+                        <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" x="215.92078" y="307.70596" id="text4138-1-38-7-6-8-6">
+                            <tspan style="stroke-width:0.99999994px" sodipodi:role="line" id="tspan4140-05-6-5-0-3-55" x="215.92078" y="307.70596">=Plant1+Location1/1</tspan>
+                        </text>
+                    </g>
+                </svg>
+            </p>
+            <p>In many cases is necessary for the identifier structure to have a different order in EPLAN Electric P8 than that created by default via the creation of schematic pages from EEC. Therefore the structure identifiers need to be manipulated independently of the creation of schematic pages and / or schematic objects.</p>
+            <p>Generally, there are two ways of manipulating structure identifiers:</p>
+            <ol>
+                <li value="1"><span class="important">Before</span> the schematic pages and / or schematic objects in a schematic are created.</li>
+            </ol>
+            <p>The structure identifiers (their order and any descriptions) are created first in an empty project. All schematic pages / schematic objects that are created in the schematic afterwards (and that contain existing structure identifiers) are sorted according to this order.</p>
+            <ol data-mc-continue="true">
+                <li value="2"><span class="important">After</span> the schematic pages and / or schematic objects in a schematic are created.</li>
+            </ol>
+            <p>Here, the order and, if appropriate, the description of the structure identifiers in a schematic in which pages and objects already exist is changed.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">In general all structure identifiers can be assigned to the devices in the EEC. Depending on the number of pages and objects in the schematic this can take longer.</p>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example for change of the structure identifier:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p><a href="glossary_o_structureidentifier.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Structure identifier</a> management before:</p>
+                        <table width="98%">
+                            <col />
+                            <col />
+                            <col />
+                            <col />
+                            <col />
+                            <col />
+                            <tbody>
+                                <tr>
+                                    <th>Row</th>
+                                    <th>Complete structure identifier</th>
+                                    <th>Structure description</th>
+                                    <th>Original description</th>
+                                    <th>Usage</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>&lt;Empty identifier&gt;</td>
+                                    <td />
+                                    <td>&lt;Empty identifier&gt;</td>
+                                    <td>?</td>
+                                    <td>
+                                        <img src="../Pictures/Unlocked.png" alt="" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>B</td>
+                                    <td />
+                                    <td />
+                                    <td>No</td>
+                                    <td>
+                                        <img src="../Pictures/Unlocked.png" alt="" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>A</td>
+                                    <td />
+                                    <td />
+                                    <td>No</td>
+                                    <td>
+                                        <img src="../Pictures/Unlocked.png" alt="" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Structure identifier management afterwards:</p>
+                        <table width="98%">
+                            <col />
+                            <col />
+                            <col />
+                            <col />
+                            <col />
+                            <col />
+                            <tbody>
+                                <tr>
+                                    <th>Row</th>
+                                    <th>Complete structure identifier</th>
+                                    <th>Structure description</th>
+                                    <th>Original description</th>
+                                    <th>Usage</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>&lt;Empty identifier&gt;</td>
+                                    <td />
+                                    <td>&lt;Empty identifier&gt;</td>
+                                    <td>?</td>
+                                    <td>
+                                        <img src="../Pictures/Unlocked.png" alt="" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>A</td>
+                                    <td>Higher-level function 1</td>
+                                    <td />
+                                    <td>No</td>
+                                    <td>
+                                        <img src="../Pictures/Unlocked.png" alt="" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>B</td>
+                                    <td>Higher-level function 2</td>
+                                    <td />
+                                    <td>No</td>
+                                    <td>
+                                        <img src="../Pictures/Unlocked.png" alt="" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <p class="Precondition">Changing the order of the structure identifiers before the schematic pages / schematic objects are created:</p>
+            <p>To change the order of the structure identifiers from within EEC before the schematic pages / schematic objects are generated, a corresponding model variable is available for each structure identifier:</p>
+            <table style="width: 100%;">
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <th><a href="glossary_o_parameter.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Parameter</a>
+                        </th>
+                        <th>Default name of the parameter</th>
+                    </tr>
+                    <tr>
+                        <td>Parameter Name For Equipment List</td>
+                        <td>SKAnlage</td>
+                    </tr>
+                    <tr>
+                        <td>Parameter Name For Equipment Number List</td>
+                        <td>SKAnlagennummer</td>
+                    </tr>
+                    <tr>
+                        <td>Parameter Name For Installation Site List</td>
+                        <td>SKAufstellungsort</td>
+                    </tr>
+                    <tr>
+                        <td>Parameter Name For User Defined Structure List</td>
+                        <td>SKBenutzerdefiniert</td>
+                    </tr>
+                    <tr>
+                        <td>Parameter Name For Document Type List</td>
+                        <td>SKDokumentenart</td>
+                    </tr>
+                    <tr>
+                        <td>Parameter Name For Location List</td>
+                        <td>SKEinbauort</td>
+                    </tr>
+                    <tr>
+                        <td>Parameter Name For Functional Assignment List</td>
+                        <td>SKFunktionaleZuordnung</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The output value is a list that consists either only of designations or pairs that are composed of a designation and a description.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example of a list:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre><code class="language-markup">=List{'Anlage1', 'Anlage2', 'Anlage3'}</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example for Map:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve">
+                <code class="language-markup">=List{Pair{'A', 'de_DE@Beschreibung A;en_US@Description A;'}, 
+	Pair{'B', 'de_DE@Beschreibung B;en_US@Description B;'}, 
+	Pair{'C', 'de_DE@Beschreibung C;en_US@Description C;'}}</code>
+              </pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>If the generation process adds further structure identifiers, they will be added to the existing ones in EPLAN Electric P8. If an order already exists for a structure identifier in structure identifier management, EEC will try to merge the two lists.</p>
+            <p>For example, if the order is already defined in the project template as <span class="codetext">âBâ, âCâ</span>, and EEC requests <span class="codetext">âAâ, âCâ</span>, these elements do not contradict each other in terms of the order, and after the generation process, this produces either the list with <span class="codetext">âAâ, âBâ, âCâ</span> or <span class="codetext">âBâ, âAâ, âCâ</span>, because the order between <span class="codetext">âAâ</span> and <span class="codetext">âBâ</span> has not been defined.</p>
+            <p class="Seealso">See also:</p>
+            <p class="Link_Seealso"><a href="https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/EPLAN_Help.htm#htm/devicetaggui_k_aufbauvonbm.htm">Structure of the device tag</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

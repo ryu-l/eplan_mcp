@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Maps is used for mapping of key-value pairs. Each key is contained in the map only once. Values may be included in any number in the map (except BidiM..." /><title>Map</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refformulas_r_map_methods.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1306"></a>
+            <MadCap:concept term="Referenz;Formelsprache" />
+            <h2>Map</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Maps is used for mapping of key-value pairs. Each key is contained in the map only once. Values may be included in any number in the map (except BidiMap). A use for maps is a dictionary (maps are therefore often referred to as dictionary). Here key is a word in the source language. Values are the terms in the target language or the target languages. Unlike lists of key-value pairs, the values can be efficiently accessed via the keys for a map. The position of the key in the map is determined by a so-called hash function. This ensures that the time required to access, is independent of the number of keys in the Map. For lists, however, the average access time is proportional to the number of objects in the list, as searching for keys must be performed by comparing the list entries with the key.</p>
+            <p>There are different map types:</p>
+            <ol>
+                <li value="1"><b>Map:</b> Key-value pairs with disorderly keys.</li>
+                <li value="2"><b>OrderedMap:</b> Key-value pairs with ordered keys. Order criterion is the order of inserting the keys into the map.</li>
+                <li value="3"><b>BidiMap:</b> BidiMaps realize a bi-directional access, i.e. it can be either accessed efficiently with the key on the values and with the value of the associated key. Unlike the other maps each value can be included in the map only once.</li>
+            </ol>
+            <p>It should be noted that the effort for the insertion of key-value pairs and the memory requirement of Map via OrderedMap to BidiMap increases. Therefore, OrderedMap and BidiMap should not generally be used, but only in justified cases.</p>
+            <p>A SortedMap is not available as this can be mapped by  <span class="codetext">&lt;map&gt;.keys.sortedBy(...)</span>.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="warning-note-example-tipCxSpMiddle">A short notation can be used to determine a value from a Map. The key is interpreted as a method that returns the value for this key. The following procedure is therefore possible:</p>
+                <p class="warning-note-example-tipCxSpMiddle"><span class="codetext">Map{Pair{'Hallo','hello'},Pair{'Welt','world'}}.Hallo</span> returns <span class="codetext">hello</span>.</p>
+                <p class="warning-note-example-tipCxSpLast">If the key is equal to an existing and usable name of a method (<span class="codetext">keys</span>, <span class="codetext">isEmpty</span>, <span class="codetext">notEmpty</span>, <span class="codetext">size</span>, <span class="codetext">values</span>) the method is used.</p>
+            </div>
+            <p class="Seealso">More:</p>
+            <p class="Link_Seealso"><a href="refformulas_r_map_pair_methods.htm"><a href="refformulas_r_map_pair_methods.htm" class="MCXref xref" xrefformat="{para}">Methods for Pair</a></a>
+            </p>
+            <p class="Link_Seealso"><a href="refformulas_r_map_map_methods.htm"><a href="refformulas_r_map_map_methods.htm" class="MCXref xref" xrefformat="{para}">Methods For Map</a></a>
+            </p>
+            <p class="Link_Seealso"><a href="refformulas_r_map_orderedmap_methods.htm"><a href="refformulas_r_map_orderedmap_methods.htm" class="MCXref xref" xrefformat="{para}">Methods For OrderedMap</a></a>
+            </p>
+            <p class="Link_Seealso"><a href="refformulas_r_map_bidimap_methods.htm"><a href="refformulas_r_map_bidimap_methods.htm" class="MCXref xref" xrefformat="{para}">Methods for BidiMap</a></a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

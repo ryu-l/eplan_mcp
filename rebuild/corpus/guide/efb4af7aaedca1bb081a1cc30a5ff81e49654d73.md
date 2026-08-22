@@ -1,0 +1,31 @@
+# Dialog Assignment "Index to graphic"
+
+[![Closed](../../Skins/Default/Stylesheets/Images/transparent.gif)Dialog call:](javascript:void(0);)
+
+You have opened a project. Tab Master data > Command group Plot frames / forms > Drop-down button Form > Open > Button [Open]. You have marked the form in the page navigator and opened the Form properties - <Form name> dialog via the popup menu item Properties. You have clicked [...] in the Value field for the Assignment: Index to graphic property.
+
+In this dialog, you control the index for which a particular graphic should be shown in the data area. This property is needed so that, for instance, a (predetermined) graphic can be displayed in the terminal diagram.
+
+The index here is the index of the placeholder in graphic 1 to 100. In the form properties, you can assign a symbol to every index. If you then place the Assignment: Index to graphic [n] property in the form, the symbol assigned to index n is always placed here.
+
+Overview of the main dialog elements:
+
+Symbol library:
+
+Once a symbol is selected, the corresponding symbol library is shown in this field.
+
+Symbol name:
+
+In this field, the symbol is entered whose graphic should be assigned to the index: Click [...] to open the Symbol selection dialog and select a symbol. Multiple selection is not possible here.
+
+![](../Pictures/Gui/ALL/note.png)Note:
+
+Take care that only the symbols of the stored symbol libraries are displayed. If you use a form in a project that does not contain the appropriate symbol library, then the components will be missing from the report!
+
+Popup menu:
+
+The popup menu provides - depending on the field type (e.g. date, integer, multilingual) - the following menu items that are, depending on the situation, available for influencing the table or editing the values in the fields. You can find an overview of these popup menu items in the section [Popup menu items](userinterface_m_kontextmenu.htm).
+
+See also
+
+[Defining General Graphics in Forms](formeditorgui_h_allggrafikeninformularendefinieren.htm)

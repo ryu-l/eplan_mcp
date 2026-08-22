@@ -1,0 +1,7 @@
+# ENI Host URL
+
+Path to model variable:
+
+Disciplines > PLC > CoDeSys > Code Generator
+
+Specify a string value. The value determines the URL of the ENI host (example for a host on a local PC: http://localhost:80).

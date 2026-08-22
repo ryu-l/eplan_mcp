@@ -1,0 +1,32 @@
+# ARTICLE_MAINTENANCE Property (ArticlePropertyList)
+
+ARTICLE\_MAINTENANCE Property (ArticlePropertyList)
+
+Lubrication / maintenance # 22141. This property isn't indexed.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [ARTICLE\_MAINTENANCE(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_MAINTENANCE(Int32).html) | Lubrication / maintenance # 22141. This property isn't indexed. |
+| [ARTICLE\_MAINTENANCE](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_MAINTENANCE().html) | Lubrication / maintenance # 22141. |
+
+Remarks
+
+Lubrication / maintenance information, e.g. the maintenance interval. Entry is limited to 16 characters.
+
+EPLAN reads article reference properties from function or if corresponding propoerty does not exists on function or is empty, then it is taken directly from the article. User needs to remember that setting values which removes property value for article reference property causes that they are read from article. Here is list of such values for each type: LONG - 0, STRING - empty string, BOOL - false, DOUBLE - 0.0 and for MULTILANGSTRING - empty multi lang string.
+
+See Also
+
+#### Reference
+
+[ArticlePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList.html)
+  
+[ArticlePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_MAINTENANCE)

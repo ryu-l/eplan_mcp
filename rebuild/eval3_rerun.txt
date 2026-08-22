@@ -1,0 +1,145 @@
+====================================================================================================
+三库大样本评测
+====================================================================================================
+
+[action] export project to EPJ format
+  线上2026      701ms top1=0.6763 'export' 返回5条 | 版本构成: api/2026:5
+  本地2026       91ms top1=0.7726 'Exporting Projects' 返回5条 | 版本构成: Plattform/2026:3, api/2026:1, other:1
+  本地2.9        65ms top1=0.7716 'Exporting Projects' 返回5条 | 版本构成: other:4, Plattform/2.9:1
+
+[action] gedRedraw
+  线上2026      590ms top1=0.6112 'gedRedraw' 返回5条 | 版本构成: api/2026:5
+  本地2026       56ms top1=0.7876 'gedRedraw' 返回5条 | 版本构成: api/2026:5
+  本地2.9        39ms top1=0.6177 'Drawing Circles, Arcs, and Ellipses' 返回5条 | 版本构成: Plattform/2.9:2, other:2, api/2.9:1
+
+[action] generate connections from the schematic
+  线上2026      471ms top1=0.5803 'ExportProductionWiring(Project,PWMachineTy' 返回5条 | 版本构成: api/2026:5
+  本地2026       76ms top1=0.7589 'Generating the current status of the schem' 返回5条 | 版本构成: Plattform/2026:3, eecpro/2026:1, other:1
+  本地2.9        36ms top1=0.7681 'Generating Unplaced Connections' 返回5条 | 版本构成: Plattform/2.9:3, other:1, eecpro/2.9:1
+
+[action] import device list from Excel
+  线上2026      471ms top1=0.6575 'ImportDeviceList(Project,String,String) Me' 返回5条 | 版本构成: api/2026:5
+  本地2026       36ms top1=0.7995 'Importing Device Data and Devices' 返回5条 | 版本构成: api/2026:3, other:1, Plattform/2026:1
+  本地2.9        28ms top1=0.8132 'Importing Device Data and Devices' 返回5条 | 版本构成: api/2.9:4, other:1
+
+[action] compress project
+  线上2026      591ms top1=0.6280 'CompressProject(String,String) Method' 返回5条 | 版本构成: api/2026:5
+  本地2026       70ms top1=0.7836 'P005064: Invalid connection (source / targ' 返回5条 | 版本构成: Plattform/2026:5
+  本地2.9        32ms top1=0.7573 'CompressProject(Project,String,String) Met' 返回5条 | 版本构成: api/2.9:4, other:1
+
+[api-exact] ReadProjectInfo method parameters
+  线上2026      510ms top1=0.7125 'ReadProjectInfo(String,String) Method' 返回5条 | 版本构成: api/2026:5
+  本地2026       49ms top1=0.7907 'ReadProjectInfo Method' 返回5条 | 版本构成: api/2026:4, Plattform/2026:1
+  本地2.9        30ms top1=0.8257 'ReadProjectInfo(Project,String) Method' 返回5条 | 版本构成: api/2.9:4, Plattform/2.9:1
+
+[api-exact] ConnectionDefPointProperties Property
+  线上2026      715ms top1=0.7081 'ConnectionDefPointProperties Property' 返回5条 | 版本构成: api/2026:5
+  本地2026       76ms top1=0.8581 'ConnectionDefPointProperties Property' 返回5条 | 版本构成: api/2026:5
+  本地2.9        42ms top1=0.8581 'ConnectionDefPointProperties Property' 返回5条 | 版本构成: api/2.9:5
+
+[api-exact] OpenProject overloads
+  线上2026      635ms top1=0.6563 'OpenProject(String,OpenMode) Method' 返回5条 | 版本构成: api/2026:5
+  本地2026       52ms top1=0.8165 'OpenProject Method' 返回5条 | 版本构成: api/2026:5
+  本地2.9        30ms top1=0.8165 'OpenProject Method' 返回5条 | 版本构成: api/2.9:5
+
+[api-exact] Layer Management class
+  线上2026      675ms top1=0.5737 'ReplaceLayer(StorableObject[],GraphicalLay' 返回5条 | 版本构成: api/2026:5
+  本地2026       58ms top1=0.7458 'Layers: Principle' 返回5条 | 版本构成: Plattform/2026:5
+  本地2.9        28ms top1=0.7509 'Extensions in Layer Management' 返回5条 | 版本构成: Plattform/2.9:4, other:1
+
+[api-exact] Terminal property
+  线上2026      495ms top1=0.6848 'FUNC_TERMINAL_HAS_LED Property' 返回5条 | 版本构成: api/2026:5
+  本地2026       64ms top1=0.8053 'FUNC_TERMINAL_FUNCTION Property' 返回5条 | 版本构成: api/2026:5
+  本地2.9        59ms top1=0.8053 'FUNC_TERMINAL_FUNCTION Property' 返回5条 | 版本构成: api/2.9:5
+
+[api-exact] FindAction method
+  线上2026      642ms top1=0.7235 'FindAction(String) Method' 返回5条 | 版本构成: api/2026:5
+  本地2026       49ms top1=0.8484 'FindAction Method' 返回5条 | 版本构成: api/2026:5
+  本地2.9        30ms top1=0.8484 'FindAction Method' 返回5条 | 版本构成: api/2.9:5
+
+[howto] how to correct project data in the project management
+  线上2026      711ms top1=0.6165 'CorrectProjectItems(Project,String) Method' 返回5条 | 版本构成: api/2026:5
+  本地2026       57ms top1=0.8064 'Cleaning up projects' 返回5条 | 版本构成: Plattform/2026:3, other:2
+  本地2.9        37ms top1=0.7967 'Project Correction' 返回5条 | 版本构成: other:3, Plattform/2.9:2
+
+[howto] generate terminal diagrams from the schematic
+  线上2026      675ms top1=0.5882 'Terminals(Project,TerminalsSequence,Termin' 返回5条 | 版本构成: api/2026:5
+  本地2026       52ms top1=0.7597 'Generating PLC Schematics' 返回5条 | 版本构成: Plattform/2026:4, other:1
+  本地2.9        34ms top1=0.7508 'Generating Connection Diagrams' 返回5条 | 版本构成: Plattform/2.9:4, other:1
+
+[howto] create a plot frame
+  线上2026      479ms top1=0.6117 'PlotFramePropertyList Constructor(PlotFram' 返回5条 | 版本构成: api/2026:5
+  本地2026       50ms top1=0.8150 'Creating Plot Frames' 返回5条 | 版本构成: other:4, Plattform/2026:1
+  本地2.9        34ms top1=0.7887 'Creating Plot Frames' 返回5条 | 版本构成: other:4, Plattform/2.9:1
+
+[howto] create page macros
+  线上2026      476ms top1=0.6443 'Create Method' 返回5条 | 版本构成: api/2026:5
+  本地2026       44ms top1=0.8554 'Creating Macros' 返回5条 | 版本构成: Plattform/2026:4, api/2026:1
+  本地2.9        25ms top1=0.8615 'Creating Macros' 返回5条 | 版本构成: Plattform/2.9:4, api/2.9:1
+
+[howto] navigate the 3D layout space
+  线上2026      500ms top1=0.5509 'InstallationSpace' 返回5条 | 版本构成: api/2026:5
+  本地2026       51ms top1=0.7748 'Managing Layout Space Views' 返回5条 | 版本构成: Plattform/2026:3, other:2
+  本地2.9        34ms top1=0.7818 'Changing the 3D Viewpoint of the Layout Sp' 返回5条 | 版本构成: Plattform/2.9:4, other:1
+
+[howto] edit the graphical layer table
+  线上2026      576ms top1=0.5968 'GraphicalLayerTable' 返回5条 | 版本构成: api/2026:5
+  本地2026       75ms top1=0.7395 'Editing Objects in Tables' 返回5条 | 版本构成: Plattform/2026:5
+  本地2.9        42ms top1=0.7250 'Editing Objects in Tables' 返回5条 | 版本构成: Plattform/2.9:4, other:1
+
+[version] XEsGetProjectPropertyAction parameters
+  线上2026      802ms top1=0.6973 'XEsGetProjectPropertyAction' 返回5条 | 版本构成: api/2026:5
+  本地2026      100ms top1=0.8549 'XEsGetProjectPropertyAction' 返回5条 | 版本构成: api/2026:3, Plattform/2026:2
+  本地2.9        48ms top1=0.8026 'XEsSetProjectPropertyAction' 返回5条 | 版本构成: Plattform/2.9:3, api/2.9:2
+
+[version] preplanning segments
+  线上2026      446ms top1=0.5730 'PrePlanningMacro Method' 返回5条 | 版本构成: api/2026:5
+  本地2026       53ms top1=0.7371 'Pre-planning: Procedure' 返回5条 | 版本构成: Plattform/2026:4, api/2026:1
+  本地2.9        32ms top1=0.7709 'Segments: Definition of term' 返回5条 | 版本构成: Plattform/2.9:3, other:1, api/2.9:1
+
+[version] save workspace action
+  线上2026      454ms top1=0.6923 'SaveWorkspaceAction' 返回5条 | 版本构成: api/2026:5
+  本地2026       52ms top1=0.8177 'Action: SaveWorkspaceAction' 返回5条 | 版本构成: Plattform/2026:4, api/2026:1
+  本地2.9        28ms top1=0.8177 'Action: SaveWorkspaceAction' 返回5条 | 版本构成: Plattform/2.9:4, api/2.9:1
+
+[version] API action list
+  线上2026      817ms top1=0.6383 'Actions' 返回5条 | 版本构成: api/2026:5
+  本地2026       41ms top1=0.7608 'Actions' 返回5条 | 版本构成: Plattform/2026:2, eecpro/2026:2, api/2026:1
+  本地2.9        31ms top1=0.7630 'Actions' 返回5条 | 版本构成: api/2.9:3, Plattform/2.9:1, eecpro/2.9:1
+
+[eec] creating a configuration by importing an XML file
+  线上2026      579ms top1=0.5750 'XSettingsImport' 返回5条 | 版本构成: api/2026:5
+  本地2026       52ms top1=0.8027 'Part 1 - Creating a configuration by impor' 返回5条 | 版本构成: eecpro/2026:4, Plattform/2026:1
+  本地2.9        30ms top1=0.8055 'Part 1 - Creating a configuration by impor' 返回5条 | 版本构成: eecpro/2.9:4, Plattform/2.9:1
+
+[eec] formula language abs function
+  线上2026      678ms top1=0.5353 'Properties.Function' 返回5条 | 版本构成: api/2026:5
+  本地2026       43ms top1=0.7561 'abs()' 返回5条 | 版本构成: eecpro/2026:3, Plattform/2026:2
+  本地2.9        31ms top1=0.7954 'abs()' 返回5条 | 版本构成: eecpro/2.9:5
+
+[eec] model variables administration
+  线上2026      492ms top1=0.5558 'ARTICLE_MEASURED_VARIABLE Property' 返回5条 | 版本构成: api/2026:5
+  本地2026       40ms top1=0.7881 'Model variables: Overview' 返回5条 | 版本构成: eecpro/2026:5
+  本地2.9        28ms top1=0.7719 'Model variable: Term definition' 返回5条 | 版本构成: eecpro/2.9:5
+
+[eec] EEC scripting reference
+  线上2026      657ms top1=0.5806 'AuxiliaryLinePropertyList' 返回5条 | 版本构成: api/2026:5
+  本地2026       42ms top1=0.7541 'Scripting methods: Overview' 返回5条 | 版本构成: eecpro/2026:4, api/2026:1
+  本地2.9        23ms top1=0.7316 'EEC' 返回5条 | 版本构成: eecpro/2.9:4, api/2.9:1
+
+[noise] python sort list by key
+  线上2026      538ms top1=0.5026 'GetList Method' 返回5条 | 版本构成: api/2026:5
+  本地2026       54ms top1=0.6495 'sort(List list, ComparatorClass c)' 返回5条 | 版本构成: eecpro/2026:4, other:1
+  本地2.9        35ms top1=0.5891 'Lexicographic sorting of strings with prop' 返回5条 | 版本构成: api/2.9:3, eecpro/2.9:1, Plattform/2.9:1
+
+[noise] export
+  线上2026      450ms top1=0.6053 'ExportProductionWiring' 返回5条 | 版本构成: api/2026:5
+  本地2026       61ms top1=0.7286 'ExportProductionWiring Method' 返回5条 | 版本构成: api/2026:4, Plattform/2026:1
+  本地2.9        34ms top1=0.7297 'ExportProductionWiring Method' 返回5条 | 版本构成: api/2.9:2, Plattform/2.9:2, other:1
+
+[noise] I have a very specific problem: when I place a device symbol onto a sc
+  线上2026      477ms top1=0.5798 'DeviceTagsWithPlcData(Project,String,Boole' 返回5条 | 版本构成: api/2026:5
+  本地2026       70ms top1=0.7830 'P004057: Several parts with the same or su' 返回5条 | 版本构成: Plattform/2026:3, other:2
+  本地2.9        38ms top1=0.7736 'Inserting New Devices Without a DT' 返回5条 | 版本构成: Plattform/2.9:5
+
+全量明细已存 rebuild/eval3_results.json

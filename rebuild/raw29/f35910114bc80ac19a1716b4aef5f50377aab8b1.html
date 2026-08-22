@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|EPLAN Preplanning|Data Transfer of EPLAN PPE Projects|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="In EPLAN PPE a hook-up is used for the graphical representation of a PCT loop element and of the accessories required for its mounting. In addition to..." /><title>Data Import of EPLAN PPE Projects: Hook-ups</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/planninggui_k_ppeuernahmemontageanord.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor3522"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor3523"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Preplanning" /><a name="kanchor4215"></a><a name="kanchor4216"></a>
+            <h2>Data Import of EPLAN PPE Projects: Hook-ups</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>In EPLAN PPE a hook-up is used for the graphical representation of a PCT loop element and of the <a href="Glossary_o_zubehoer.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">accessories</a> required for its mounting. In addition to graphical representation, a mounting-accessories list, that lists the materials to be used, can be created as a table view for this hook-up. These can, but do not have to, originate from the parts management.</p>
+            <p>During the data import of a PPE project, hook-ups are mapped as <span class="important">Assemblies</span>, so that one assembly with parts is created in the project for each hook-up. In the process the hook-up number and the designation of the hook-up become the "Part number" and the "Designation 1" of the assembly. If a <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> exists in the parts management, it is embedded. If no part exists, a part is only created in the project with the data from the hook-up. If necessary, synchronization with the parts management can be carried out afterwards.</p>
+            <p>The following happens during a synchronization with the parts management:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The <a href="Glossary_o_baugruppen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">assemblies</a> generated during the data transfer are classified in the product subgroup "Mechanics &gt; Hook-up &gt; General".<br />The possible item numbers and <a href="Glossary_o_varianten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">variants</a> of the mounting accessories from the hook-ups are entered automatically into the two columns <span class="gui">Item number</span> and <span class="gui">Supplementary text</span> in the <span class="gui">Assembly</span> tab of the parts management.</li>
+                <li class="Listitem_Normal" value="2">The individual parts of the assembly are inserted as "Component" parts in the product subgroup "Mechanics &gt; Hook-up &gt; Accessories".</li>
+            </ul>
+            <p>After the data import of a PPE project the converted hook-ups are stored at the <a href="Glossary_o_planungsobjekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">planning objects</a> (sensors, actuators, etc.) as assembly parts in the <span class="gui">Part</span> tab. The assembly parts are classified automatically into the tenth part line.</p>
+            <p>The hook-ups from PPE <a href="Glossary_o_projekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">projects</a> continue to exist as <a href="Glossary_o_grafikseiten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">graphical pages</a>. Property placements are replaced by fixed texts. The hook-up is thus frozen to the status of the data import. In order to link the data again with the hook-up, a report of the "Assembly/module overview" type either has to be created or be placed on an existing page.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="planninggui_k_pidumwandeln.htm">Data Transfer of EPLAN PPE Projects</a>
+            </p>
+            <p class="Link_Seealso"><a href="planninggui_k_start.htm">Pre-planning</a>
+            </p>
+            <p class="Link_Seealso"><a href="planninggui_k_prinzip.htm">Pre-planning: Principle</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

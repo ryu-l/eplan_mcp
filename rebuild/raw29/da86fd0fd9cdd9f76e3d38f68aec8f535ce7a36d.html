@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Editing Schematics|Symbols|Proceed as Follows">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="You can place a given symbol once or several times on schematic pages in the graphical editor, however you cannot select multiple different symbols fo..." /><title>Placing Symbols</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/xsbgui_h_symboleplatzieren.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor1199"></a>
+            <MadCap:concept term="Handlung" /><a name="aanchor1200"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor1449"></a><a name="kanchor1450"></a><a name="kanchor1451"></a><a name="kanchor1452"></a>
+            <h2>Placing Symbols</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>You can place a given symbol once or several times on schematic pages in the graphical editor, however you <span class="important">cannot</span> select multiple different <a href="Glossary_o_symbole.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">symbols</a> for a single placement operation.</p>
+            <p>A preview of the autoconnection <a href="Glossary_o_leitungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">lines</a> is shown in the graphical editor, which shows where a connection from one symbol to another symbol is possible. As an extra aid for placement, a line is also shown between the first placed symbol and the current cursor position. This allows you to place symbols along a line.</p>
+            <p>Insertion points and <a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a> pointing in the same direction may not lie on top of each other. If this occurs when inserting a symbol then an error message is displayed and the action is canceled. (Exceptions to this are symbols containing opposing connection points laid on top of each other at the same point, e.g. T-connectors.)</p>
+            <p class="Bridgehead">Precondition:</p>
+            <p>You have opened a project. You have opened a project page in the graphical editor.</p>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Select the following menu <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a>: <span class="gui">Insert &gt; Symbol</span></li>
+                <li class="Listitem_Step_By_Step" value="2">Select the desired symbol in the <span class="gui">Symbol selection</span> dialog.</li>
+                <li class="Listitem_Step_By_Step" value="3">For faster selection, click <span class="gui">[...]</span> in the <span class="gui">Filter</span> field if necessary, and then select the filter criteria or <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> new ones. </li>
+                <li class="Listitem_Step_By_Step" value="4">Or enter a character string in the <span class="gui">Direct entry</span> field in the <span class="important">list view</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The cursor jumps to the first symbol matching your entry as soon as you enter a single character, and selects it. </li>
+                <li class="Listitem_Step_By_Step" value="5">Select the popup menu item <span class="gui">Function-oriented</span> in the <span class="important">tree view</span> if the hierarchical display of the symbols should not be carried out according to the symbol library, but according to their functional <span class="gui">Category</span> (such as "Coils and contacts", "Signal <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a>", etc.).</li>
+                <li class="Listitem_Step_By_Step" value="6">In the <span class="important">list view</span> select the popup menu item <span class="gui">Configure representation</span> if you would like to change the display and / or the sequence of the symbol <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> in the list.</li>
+                <li class="Listitem_Step_By_Step" value="7">Click <span class="gui">[OK]</span>.</li>
+                <li class="Listitem_Step_By_Step" value="8">Place the symbol in the schematic.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> If you position the symbol above or below a connection element or another symbol, a preview of the autoconnection lines is displayed. After being placed the symbol is connected automatically with the other element in the schematic.</li>
+                <li class="Listitem_Step_By_Step" value="9">Specify the device-specific properties in the <span class="gui">Properties &lt;...&gt;</span> dialog.</li>
+                <li class="Listitem_Step_By_Step" value="10">Click <span class="gui">[OK]</span>.</li>
+            </ol>
+            <div class="tip">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/info.png" />Tip:</p>
+                <p class="Infoblock"><a name="kanchor1453"></a>If you want to determine the assignment of connection points, place the symbol and number the <a href="Glossary_o_anschlussbezeichnungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection point designations</a> consecutively. To do so, manually enter the connection point <a href="Glossary_o_bezeichnungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">designations</a> - separated by a paragraph mark each - in the first tab of the properties dialog in the <span class="gui">Connection point designation</span> field. Display in the graphical editor will then show the sequence of the function <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> according to the connection point logic.</p>
+            </div>
+            <h3>Multiply connecting symbols with other symbols in the schematic</h3>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Select the following menu items: <span class="gui">Insert &gt; Symbol</span></li>
+                <li class="Listitem_Step_By_Step" value="2">Select the desired symbol in the <span class="gui">Symbol selection</span> dialog.</li>
+                <li class="Listitem_Step_By_Step" value="3">Click <span class="gui">[OK]</span>.</li>
+                <li class="Listitem_Step_By_Step" value="4">Use the cursor to position the symbol above or below a connection element. Click the left mouse button and keep it pressed.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The autoconnect lines preview is displayed.</li>
+                <li class="Listitem_Step_By_Step" value="5">Move the cursor to the left or right in the schematic page while keeping the left mouse button pressed.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> A preview of the autoconnection lines is displayed for all positions where a connection to a symbol lying above or below the line is possible.</li>
+                <li class="Listitem_Step_By_Step" value="6">Release the left mouse button.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The symbols are placed and connected with the other symbols in the schematic. In this case, the <span class="gui">Properties &lt;...&gt;</span> dialog is <span class="important">not</span> opened and the <a href="Glossary_o_schaltzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">component</a> properties are taken from the default <a href="Glossary_o_einstellungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">settings</a> and the current numbering mode.</li>
+            </ol>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="xsbgui_d_symbolauswahl.htm">Dialog Symbol selection</a>
+            </p>
+            <p class="Link_Seealso"><a href="xsbgui_h_symbolplatzierungverhindern.htm">Preventing a New Placement of a Symbol</a>
+            </p>
+            <p class="Link_Seealso"><a href="gededitgui_h_anschlussbezanzeigen.htm">Connection Point Designations and Descriptions</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

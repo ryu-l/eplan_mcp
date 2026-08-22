@@ -1,0 +1,56 @@
+# FUNC_PLC_BUS_ADDRESS(Int32) Property
+
+FUNC\_PLC\_BUS\_ADDRESS(Int32) Property
+
+Physical network: Bus ID / item number # 20311. This property isn't indexed.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue FUNC_PLC_BUS_ADDRESS( 
+   int index
+) {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ FUNC_PLC_BUS_ADDRESS {
+   PropertyValue^ get(int index);
+   void set (int index, PropertyValue^ value);
+}
+```
+```
+
+#### Parameters
+
+*index*
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Bus ID of the bus port. Depending on the bus system, the value is a simple number, an IP address or a combination of letters and numbers. The property in the "Bus data" tab of the property dialog is entered at the single-line network / bus cable-connection points. Describes the address / position the bus master uses to manage a bus port. The property in the "PLC structure data" tab of the property dialog is entered at PLC boxes and describes which bus ID the PLC box has in the connected bus system.
+
+See Also
+
+#### Reference
+
+[Placement3DPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList.html)
+  
+[Placement3DPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_PLC_BUS_ADDRESS.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_PLC_BUS_ADDRESS(Int32))

@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Overviews|EPLAN Actions|Overview">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="author" content="bbe" />
+        <meta name="description" content="&#160;" /><title>Action: XGedStartInteractionAction</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/availableactions_o_xgedstartinteractionaction.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2502"></a>
+            <MadCap:concept term="EPLAN Plattform" /><a name="kanchor2965"></a>
+            <h2>Action: <notrans>XGedStartInteractionAction</notrans></h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <br />
+            <table>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><b style="font-weight: bold;">Parameter</b>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text"><b style="font-weight: bold;">Description</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text">
+                            <notrans>Name</notrans>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Name of the interaction to be started. Possible interactions are:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1"><a href="#XGedIaFormatDefPoints" class="selected">XGedIaFormatDefPoints</a>: Set the format of the connection graphic (connection definition point, potential definition point)</li>
+                            <li class="Tabelle-Text" value="2"><a href="#XGedIaFormatGraphic" class="selected">XGedIaFormatGraphic</a>: Set the format of the graphical elements</li>
+                            <li class="Tabelle-Text" value="3"><a href="#XGedIaFormatSymbol" class="selected">XGedIaFormatSymbol</a>: Set the format of the <a href="Glossary_o_schaltzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">component</a></li>
+                            <li class="Tabelle-Text" value="4"><a href="#XGedIaFormatText" class="selected">XGedIaFormatText</a>: Set the text format</li>
+                            <li class="Tabelle-Text" value="5"><a href="#XMIaInsertMacro" class="selected">XMIaInsertMacro</a>: Insert a macro into the current project.</li>
+                        </ul>
+                        <p class="Tabelle_Text" />
+                    </td>
+                </tr>
+            </table>
+            <p>In EPLAN you can <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> these interactions as <a href="configtoolbars_k_start.htm">actions on toolbar buttons</a>. The parameters for the above interactions are listed below.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><a name="12"></a> <img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The following values are to be set for certain texts: <span class="gui">Font size</span>: 10 mm, <span class="gui">Color</span>: Green, <span class="gui">Angle</span>: -90Â°. In addition, an alignment box with a width of 45 and a height of 20 mm is to be shown. A possible entry in the command line in the <span class="gui">Configure button</span> dialog may look like this:</p>
+                        <p class="Infoblock"><span class="codetext">XGedStartInteractionAction /Name:XGedIaFormatText /height:10mm /color:3 /justification:? /angle:-90 /setframeactive:1 /showframe:1 /framewidth:45mm /frameheight:20mm</span>
+                        </p>
+                        <p class="Infoblock">If a property should not be changed, then leave the corresponding question mark "?" on the command line alone. In the example, this is, for example, the <span class="gui">Alignment</span> property (Parameter: <span class="codetext">/justification:?</span>). Parameters that are not needed, such as <span class="codetext">/bold:?</span> can be deleted from the command line.</p>
+                    </div>
+                </div>
+            </div><a name="XGedIaFormatDefPoints"></a>
+            <h3>Parameters for the "XGedIaFormatDefPoints" interaction</h3>
+            <table>
+                <col style="width: 375px;" />
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Parameter</p>
+                    </th>
+                    <th colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Description</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Values</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/width:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Line thickness</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Numeric values in "mm" or in "In" (Inch). With the value "-16002", the "From layer" setting will be applied.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><span class="codetext">/color:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">(Text or line) <span class="gui">Color</span></p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The predefined values are:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = black</li>
+                            <li class="Tabelle-Text" value="2">1 = red</li>
+                            <li class="Tabelle-Text" value="3">2 = yellow</li>
+                            <li class="Tabelle-Text" value="4">3 = green</li>
+                            <li class="Tabelle-Text" value="5">4 = cyan</li>
+                            <li class="Tabelle-Text" value="6">5 = blue</li>
+                            <li class="Tabelle-Text" value="7">6 = magenta</li>
+                            <li class="Tabelle-Text" value="8">7 = black</li>
+                            <li class="Tabelle-Text" value="9">8 = white</li>
+                            <li class="Tabelle-Text" value="10">9 = light gray</li>
+                            <li class="Tabelle-Text" value="11">252 = dark gray</li>
+                            <li class="Tabelle-Text" value="12">253 = gray</li>
+                            <li class="Tabelle-Text" value="13">-16002 = from layer.</li>
+                        </ul>
+                        <p class="Tabelle_Text">However, other values can also be specified in the <a href="mf_d_farbauswahl.htm">Color selection</a> dialog. Values from 0 to 256 are possible. The values of the colors are displayed in the color selection Tooltip.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/type:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Line type</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = solid</li>
+                            <li class="Tabelle-Text" value="2">1 = dashed</li>
+                            <li class="Tabelle-Text" value="3">2 = dotted</li>
+                            <li class="Tabelle-Text" value="4">3 = dash-dot</li>
+                            <li class="Tabelle-Text" value="5">4 = dash-dot-dot</li>
+                            <li class="Tabelle-Text" value="6">5 = dash-2 short dashes</li>
+                            <li class="Tabelle-Text" value="7">26 = long dash-dot</li>
+                            <li class="Tabelle-Text" value="8">-16002 = from layer.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/patternlength:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Pattern length</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Numeric values in "mm" or in "In" (Inch). With the value "-16002", the "From layer" setting will be applied.</p>
+                    </td>
+                </tr>
+            </table><a name="XGedIaFormatGraphic"></a>
+            <h3>Parameters for the "XGedIaFormatGraphic" interaction</h3>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Parameter</p>
+                    </th>
+                    <th colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Description</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Values</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/width:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Line thickness</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Numeric values in "mm" or in "In" (Inch). With the value "-16002", the "From layer" setting will be applied.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><span class="codetext">/color:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">(Text or line) <span class="gui">Color</span></p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The predefined values are:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = black</li>
+                            <li class="Tabelle-Text" value="2">1 = red</li>
+                            <li class="Tabelle-Text" value="3">2 = yellow</li>
+                            <li class="Tabelle-Text" value="4">3 = green</li>
+                            <li class="Tabelle-Text" value="5">4 = cyan</li>
+                            <li class="Tabelle-Text" value="6">5 = blue</li>
+                            <li class="Tabelle-Text" value="7">6 = magenta</li>
+                            <li class="Tabelle-Text" value="8">7 = black</li>
+                            <li class="Tabelle-Text" value="9">8 = white</li>
+                            <li class="Tabelle-Text" value="10">9 = light gray</li>
+                            <li class="Tabelle-Text" value="11">252 = dark gray</li>
+                            <li class="Tabelle-Text" value="12">253 = gray</li>
+                            <li class="Tabelle-Text" value="13">-16002 = from layer.</li>
+                        </ul>
+                        <p class="Tabelle_Text">However, other values can also be specified in the <a href="mf_d_farbauswahl.htm">Color selection</a> dialog. Values from 0 to 256 are possible. The values of the colors are displayed in the color selection Tooltip.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/visible:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Invisible</span> (text or line invisible / visible)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = invisible</li>
+                            <li class="Tabelle-Text" value="2">1 = visible.</li>
+                            <li class="Tabelle-Text" value="3">2 = from layer.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/type:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Line type</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = solid</li>
+                            <li class="Tabelle-Text" value="2">1 = dashed</li>
+                            <li class="Tabelle-Text" value="3">2 = dotted</li>
+                            <li class="Tabelle-Text" value="4">3 = dash-dot</li>
+                            <li class="Tabelle-Text" value="5">4 = dash-dot-dot</li>
+                            <li class="Tabelle-Text" value="6">5 = dash-2 short dashes</li>
+                            <li class="Tabelle-Text" value="7">26 = long dash-dot</li>
+                            <li class="Tabelle-Text" value="8">-16002 = from layer.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/patternlength:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Pattern length</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Numeric values in "mm" or in "In" (Inch). With the value "-16002", the "From layer" setting will be applied.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/lineendstyle:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Line end style</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = round</li>
+                            <li class="Tabelle-Text" value="2">1 = rectangular</li>
+                            <li class="Tabelle-Text" value="3">2 = flat</li>
+                            <li class="Tabelle-Text" value="4">32 = from layer.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/filled:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Fill surface</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = graphical element is not filled</li>
+                            <li class="Tabelle-Text" value="2">1 = graphical element is filled.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/rounded:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Rounded</span> (only applies to rectangles)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = corners of the rectangle will not be rounded</li>
+                            <li class="Tabelle-Text" value="2">1 = corners of the rectangle will be rounded.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/radius:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Arc Radius</span> (only applies to rounded rectangles; fillet radius of the corners)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Numeric values in "mm" or in "In" (Inch)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/transparency:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Transparency</span> (specifies the transparency of a 3D object in the <a href="Glossary_o_bauraum.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">layout space</a>)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Numerical values from 0.0 to 1.0. A value of 1.0 results in complete transparency (100% transparency). As an alternative you can also enter the value 'bylayer'. This will apply the transparency level as set for the layer.</p>
+                    </td>
+                </tr>
+            </table><a name="XGedIaFormatSymbol"></a>
+            <h3>Parameters for the "XGedIaFormatSymbol" interaction</h3>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Parameter</p>
+                    </th>
+                    <th colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Description</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Values</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p><span class="codetext">/height:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Font size</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Numeric values in "mm" or in "In" (Inch). With the value "-16002", the "From layer" setting will be applied.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><span class="codetext">/color:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">(Text or line) <span class="gui">Color</span></p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The predefined values are:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = black</li>
+                            <li class="Tabelle-Text" value="2">1 = red</li>
+                            <li class="Tabelle-Text" value="3">2 = yellow</li>
+                            <li class="Tabelle-Text" value="4">3 = green</li>
+                            <li class="Tabelle-Text" value="5">4 = cyan</li>
+                            <li class="Tabelle-Text" value="6">5 = blue</li>
+                            <li class="Tabelle-Text" value="7">6 = magenta</li>
+                            <li class="Tabelle-Text" value="8">7 = black</li>
+                            <li class="Tabelle-Text" value="9">8 = white</li>
+                            <li class="Tabelle-Text" value="10">9 = light gray</li>
+                            <li class="Tabelle-Text" value="11">252 = dark gray</li>
+                            <li class="Tabelle-Text" value="12">253 = gray</li>
+                            <li class="Tabelle-Text" value="13">-16002 = from layer.</li>
+                        </ul>
+                        <p class="Tabelle_Text">However, other values can also be specified in the <a href="mf_d_farbauswahl.htm">Color selection</a> dialog. Values from 0 to 256 are possible. The values of the colors are displayed in the color selection Tooltip.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/justification:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">(Text) <span class="gui">Alignment</span></p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">1 = upper left</li>
+                            <li class="Tabelle-Text" value="2">2 = upper center</li>
+                            <li class="Tabelle-Text" value="3">3 = upper right</li>
+                            <li class="Tabelle-Text" value="4">4 = center left</li>
+                            <li class="Tabelle-Text" value="5">5 = middle centered</li>
+                            <li class="Tabelle-Text" value="6">6 = center right</li>
+                            <li class="Tabelle-Text" value="7">7 = bottom left</li>
+                            <li class="Tabelle-Text" value="8">8 = bottom centered</li>
+                            <li class="Tabelle-Text" value="9">9 = bottom right</li>
+                            <li class="Tabelle-Text" value="10">10 = basis left</li>
+                            <li class="Tabelle-Text" value="11">11 = basis center</li>
+                            <li class="Tabelle-Text" value="12">12 = basis right</li>
+                            <li class="Tabelle-Text" value="13">13 = special left<br /> (special alignment type for <a href="Glossary_o_pfad_funktionstexte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">path function texts</a> in DIN and USA <a href="Glossary_o_projekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">projects</a>)</li>
+                            <li class="Tabelle-Text" value="14">14 = special centered<br /> (should not be used for new projects; needed only for reasons of compatibility with EPLAN 5)</li>
+                            <li class="Tabelle-Text" value="15">15 = special right</li>
+                            <li class="Tabelle-Text" value="16">16 = JIC special left<br /> (special alignment types for path <a href="Glossary_o_funktionstexte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function texts</a> in JIC projects)</li>
+                            <li class="Tabelle-Text" value="17">17 = JIC special center <br /> (should not be used for new projects; needed only for reasons of compatibility with EPLAN 5)</li>
+                            <li class="Tabelle-Text" value="18">18 = JIC special right.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/angle:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Angle</span> to the X-axis by which the text should be rotated in the counter-clockwise direction.</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0</li>
+                            <li class="Tabelle-Text" value="2">45</li>
+                            <li class="Tabelle-Text" value="3">90</li>
+                            <li class="Tabelle-Text" value="4">135</li>
+                            <li class="Tabelle-Text" value="5">180</li>
+                            <li class="Tabelle-Text" value="6">-45</li>
+                            <li class="Tabelle-Text" value="7">-90</li>
+                            <li class="Tabelle-Text" value="8">-135.</li>
+                        </ul>
+                        <p class="Tabelle_Text">Angle specifications are always in degrees. The "Â°" character need not be specified, but may be.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/font:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Font</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The values for fonts 1-10 can be determined under the <span class="gui">Options &gt; Settings &gt; Company &gt; Graphical editing &gt; Fonts</span> menu path. The following values are possible:</p>
+                        <ul>
+                            <li class="Listitem_Single_Line" value="1">0 = Font 1 in the company <a href="Glossary_o_einstellungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">settings</a></li>
+                            <li class="Listitem_Single_Line" value="2">1 = Font 2 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="3">2 = Font 3 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="4">3 = Font 4 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="5">4 = Font 5 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="6">5 = Font 6 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="7">6 = Font 7 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="8">7 = Font 8 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="9">8 = Font 9 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="10">9 = Font 10 in the company settings.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/visible:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Invisible</span> (text or line invisible / visible)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = invisible</li>
+                            <li class="Tabelle-Text" value="2">1 = visible.</li>
+                            <li class="Tabelle-Text" value="3">2 = from layer.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/language:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Language</span> (as in the <span class="gui">Display</span> tab in the Property dialog)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">AllLanguagesColumn = All displayed languages (arrange horizontally)</li>
+                            <li class="Tabelle-Text" value="2">AllLanguagesRow = All displayed languages (arrange vertically)</li>
+                            <li class="Tabelle-Text" value="3">OneLanguageVariable = One language (variable)</li>
+                            <li class="Tabelle-Text" value="4">'de_DE', 'en_US', ... = Specify the language</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/bold:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Font style</span> / <span class="gui">Bold</span></p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = normal</li>
+                            <li class="Tabelle-Text" value="2">1 = bold.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p><span class="codetext">/italic:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Font style</span> / <span class="gui">Italic</span></p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = normal</li>
+                            <li class="Tabelle-Text" value="2">1 = italic.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p><span class="codetext">/underline:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Font style</span> / <span class="gui">Underlined</span></p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = normal</li>
+                            <li class="Tabelle-Text" value="2">1 = underlined.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><span class="codetext">/showtextbox:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Draw text box</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = don't show text box</li>
+                            <li class="Tabelle-Text" value="2">1 = show text box as rectangle</li>
+                            <li class="Tabelle-Text" value="3">2 = show text box as ellipse</li>
+                            <li class="Tabelle-Text" value="4">3 = from layer.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/sizefromsettings:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Size from project setting</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = switched off</li>
+                            <li class="Tabelle-Text" value="2">1 = switched on.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/leaderline:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Activate leader line</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = switched off</li>
+                            <li class="Tabelle-Text" value="2">1 = switched on.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/setframeactive:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Activate alignment box</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = deactivate settings for alignment box</li>
+                            <li class="Tabelle-Text" value="2">1 = activate settings for alignment box.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/showframe:?</span>
+                        </p>
+                        <p />
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Draw alignment box</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = don't show alignment box</li>
+                            <li class="Tabelle-Text" value="2">1 = show alignment box.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/framewidth:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Width</span> of the alignment box</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Numeric values in "mm" or in "In" (Inch)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/frameheight:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Height</span> of the alignment box</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Numeric values in "mm" or in "In" (Inch)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/adjustframe:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Fit</span> to alignment box</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">1 = don't fit</li>
+                            <li class="Tabelle-Text" value="2">16 = Text: Fixed width, never hyphenate words</li>
+                            <li class="Tabelle-Text" value="3">32 = Text: Fixed height, never hyphenate words</li>
+                            <li class="Tabelle-Text" value="4">64 = Hyphenate words</li>
+                            <li class="Tabelle-Text" value="5">80 = Text: Fixed width, hyphenate words</li>
+                            <li class="Tabelle-Text" value="6">128 = Remove breaks</li>
+                            <li class="Tabelle-Text" value="7">144 = Text: Fixed width, never hyphenate words, remove breaks</li>
+                            <li class="Tabelle-Text" value="8">208 = Text: Fixed width, hyphenate words, remove breaks.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/propertyId:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Identifier of a component property to be defined (= Property number).<br /><ul><li class="Tabelle-Text" value="1">If this parameter is used, all format modifications are only performed for the <a href="Glossary_o_eigenschaftstexte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">property texts</a> of the <span class="important">one</span> specified property of the component.</li><li class="Tabelle-Text" value="2">If this parameter is <span class="important">not</span> used, the format modifications are performed for the property texts of <span class="important">all</span> placed <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a>.</li></ul></p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">5-digit number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/propertyIndex:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The index, if the property has indices; usually 0</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/linespacing:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Row spacing</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Numeric values. The value "1" corresponds, e.g., to single row spacing, value "2" is double spacing, etc.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/paragraphspacing:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Paragraph spacing</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Numeric values in "mm" or in "In" (Inch)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/layer:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Layer</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Layer name (e.g. "EPLAN501")</p>
+                    </td>
+                </tr>
+            </table><a name="XGedIaFormatText"></a>
+            <h3>Parameters for the "XGedIaFormatText" interaction</h3>
+            <table>
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Parameter</p>
+                    </th>
+                    <th colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Description</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Values</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p><span class="codetext">/height:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Font size</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Numeric values in "mm" or in "In" (Inch). With the value "-16002", the "From layer" setting will be applied.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><span class="codetext">/color:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">(Text or line) <span class="gui">Color</span></p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The predefined values are:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = black</li>
+                            <li class="Tabelle-Text" value="2">1 = red</li>
+                            <li class="Tabelle-Text" value="3">2 = yellow</li>
+                            <li class="Tabelle-Text" value="4">3 = green</li>
+                            <li class="Tabelle-Text" value="5">4 = cyan</li>
+                            <li class="Tabelle-Text" value="6">5 = blue</li>
+                            <li class="Tabelle-Text" value="7">6 = magenta</li>
+                            <li class="Tabelle-Text" value="8">7 = black</li>
+                            <li class="Tabelle-Text" value="9">8 = white</li>
+                            <li class="Tabelle-Text" value="10">9 = light gray</li>
+                            <li class="Tabelle-Text" value="11">252 = dark gray</li>
+                            <li class="Tabelle-Text" value="12">253 = gray</li>
+                            <li class="Tabelle-Text" value="13">-16002 = from layer.</li>
+                        </ul>
+                        <p class="Tabelle_Text">However, other values can also be specified in the <a href="mf_d_farbauswahl.htm">Color selection</a> dialog. Values from 0 to 256 are possible. The values of the colors are displayed in the color selection Tooltip.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/justification:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">(Text) <span class="gui">Alignment</span></p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">1 = upper left</li>
+                            <li class="Tabelle-Text" value="2">2 = upper center</li>
+                            <li class="Tabelle-Text" value="3">3 = upper right</li>
+                            <li class="Tabelle-Text" value="4">4 = center left</li>
+                            <li class="Tabelle-Text" value="5">5 = middle centered</li>
+                            <li class="Tabelle-Text" value="6">6 = center right</li>
+                            <li class="Tabelle-Text" value="7">7 = bottom left</li>
+                            <li class="Tabelle-Text" value="8">8 = bottom centered</li>
+                            <li class="Tabelle-Text" value="9">9 = bottom right</li>
+                            <li class="Tabelle-Text" value="10">10 = basis left</li>
+                            <li class="Tabelle-Text" value="11">11 = basis center</li>
+                            <li class="Tabelle-Text" value="12">12 = basis right</li>
+                            <li class="Tabelle-Text" value="13">13 = special left<br /> (special alignment type for path function texts in DIN and USA projects)</li>
+                            <li class="Tabelle-Text" value="14">14 = special centered<br /> (should not be used for new projects; needed only for reasons of compatibility with EPLAN 5)</li>
+                            <li class="Tabelle-Text" value="15">15 = special right</li>
+                            <li class="Tabelle-Text" value="16">16 = JIC special left<br /> (special alignment types for path function texts in JIC projects)</li>
+                            <li class="Tabelle-Text" value="17">17 = JIC special center <br /> (should not be used for new projects; needed only for reasons of compatibility with EPLAN 5)</li>
+                            <li class="Tabelle-Text" value="18">18 = JIC special right.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/angle:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Angle</span> to the X-axis by which the text should be rotated in the counter-clockwise direction.</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0</li>
+                            <li class="Tabelle-Text" value="2">45</li>
+                            <li class="Tabelle-Text" value="3">90</li>
+                            <li class="Tabelle-Text" value="4">135</li>
+                            <li class="Tabelle-Text" value="5">180</li>
+                            <li class="Tabelle-Text" value="6">-45</li>
+                            <li class="Tabelle-Text" value="7">-90</li>
+                            <li class="Tabelle-Text" value="8">-135.</li>
+                        </ul>
+                        <p class="Tabelle_Text">Angle specifications are always in degrees. The "Â°" character need not be specified, but may be.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/font:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Font</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The values for fonts 1-10 can be determined under the <span class="gui">Options &gt; Settings &gt; Company &gt; Graphical editing &gt; Fonts</span> menu path. The following values are possible:</p>
+                        <ul>
+                            <li class="Listitem_Single_Line" value="1">0 = Font 1 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="2">1 = Font 2 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="3">2 = Font 3 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="4">3 = Font 4 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="5">4 = Font 5 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="6">5 = Font 6 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="7">6 = Font 7 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="8">7 = Font 8 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="9">8 = Font 9 in the company settings</li>
+                            <li class="Listitem_Single_Line" value="10">9 = Font 10 in the company settings.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/visible:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Invisible</span> (text or line invisible / visible)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = invisible</li>
+                            <li class="Tabelle-Text" value="2">1 = visible.</li>
+                            <li class="Tabelle-Text" value="3">2 = from layer.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/language:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Language</span> (as in the <span class="gui">Format</span> tab in the Properties dialog)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">AllLanguagesColumn = All displayed languages (arrange horizontally)</li>
+                            <li class="Tabelle-Text" value="2">AllLanguagesRow = All displayed languages (arrange vertically)</li>
+                            <li class="Tabelle-Text" value="3">OneLanguageVariable = One language (variable)</li>
+                            <li class="Tabelle-Text" value="4">'de_DE', 'en_US', ... = Specify the language</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/bold:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Font style</span> / <span class="gui">Bold</span></p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = normal</li>
+                            <li class="Tabelle-Text" value="2">1 = bold.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p><span class="codetext">/italic:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Font style</span> / <span class="gui">Italic</span></p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = normal</li>
+                            <li class="Tabelle-Text" value="2">1 = italic.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p><span class="codetext">/underline:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Font style</span> / <span class="gui">Underlined</span></p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = normal</li>
+                            <li class="Tabelle-Text" value="2">1 = underlined.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><span class="codetext">/showtextbox:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Draw text box</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = don't show text box</li>
+                            <li class="Tabelle-Text" value="2">1 = show text box as rectangle</li>
+                            <li class="Tabelle-Text" value="3">2 = show text box as ellipse</li>
+                            <li class="Tabelle-Text" value="4">3 = from layer.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/sizefromsettings:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Size from project setting</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = switched off</li>
+                            <li class="Tabelle-Text" value="2">1 = switched on.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/leaderline:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Activate leader line</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = switched off</li>
+                            <li class="Tabelle-Text" value="2">1 = switched on.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/setframeactive:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Activate alignment box</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = deactivate settings for alignment box</li>
+                            <li class="Tabelle-Text" value="2">1 = activate settings for alignment box.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/showframe:?</span>
+                        </p>
+                        <p />
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Draw alignment box</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = don't show alignment box</li>
+                            <li class="Tabelle-Text" value="2">1 = show alignment box.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/framewidth:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Width</span> of the alignment box</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Numeric values in "mm" or in "In" (Inch)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/frameheight:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Height</span> of the alignment box</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">Numeric values in "mm" or in "In" (Inch)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="codetext">/adjustframe:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Fit</span> to alignment box</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">1 = don't fit</li>
+                            <li class="Tabelle-Text" value="2">16 = Text: Fixed width, never hyphenate words</li>
+                            <li class="Tabelle-Text" value="3">32 = Text: Fixed height, never hyphenate words</li>
+                            <li class="Tabelle-Text" value="4">64 = Hyphenate words</li>
+                            <li class="Tabelle-Text" value="5">80 = Text: Fixed width, hyphenate words</li>
+                            <li class="Tabelle-Text" value="6">128 = Remove breaks</li>
+                            <li class="Tabelle-Text" value="7">144 = Text: Fixed width, never hyphenate words, remove breaks</li>
+                            <li class="Tabelle-Text" value="8">208 = Text: Fixed width, hyphenate words, remove breaks.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/donttranslate:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Do not translate automatically</span> (as in the <span class="gui">Text</span> tab in the Property dialog)</p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">1 = Text is not automatically translated.</li>
+                            <li class="Tabelle-Text" value="2">0 = Text is translated.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/linespacing:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Row spacing</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Numeric values. The value "1" corresponds, e.g., to single row spacing, value "2" is double spacing, etc.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="Tabelle_Text"><span class="codetext">/layer:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p class="Tabelle_Text"><span class="gui">Layer</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="Tabelle_Text">Layer name (e.g. "EPLAN501")</p>
+                    </td>
+                </tr>
+            </table><a name="XMIaInsertMacro"></a>
+            <h3>Parameters for the "XMIaInsertMacro" interaction</h3>
+            <table>
+                <tr>
+                    <th style="">
+                        <p class="Tabelle_Text">Parameter</p>
+                    </th>
+                    <th colspan="1" rowspan="1" style="">
+                        <p class="Tabelle_Text">Description</p>
+                    </th>
+                    <th style="">
+                        <p class="Tabelle_Text">Values</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1" style="">
+                        <p class="Tabelle_Text"><span class="codetext">/filename:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="">
+                        <p class="Tabelle_Text">Name of the macro to be inserted. If no value is specified for the parameter, a dialog for selecting <a href="Glossary_o_makros.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">macros</a> opens.</p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="">
+                        <p class="Tabelle_Text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="">
+                        <p><span class="codetext">/variant:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="">
+                        <p class="Tabelle_Text">Variant of the macro to be inserted&#160;</p>
+                    </td>
+                    <td style="">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">0 = variant A</li>
+                            <li class="Tabelle-Text" value="2">1 = variant B</li>
+                            <li class="Tabelle-Text" value="3">2 = variant C</li>
+                            <li class="Tabelle-Text" value="4">3 = variant D</li>
+                            <li class="Tabelle-Text" value="5">4 = variant E</li>
+                            <li class="Tabelle-Text" value="6">5 =&#160;variant F</li>
+                            <li class="Tabelle-Text" value="7">6 =&#160;variant G</li>
+                            <li class="Tabelle-Text" value="8">7 = variant H</li>
+                            <li class="Tabelle-Text" value="9">8&#160;= variant I</li>
+                            <li class="Tabelle-Text" value="10">9 = variant J</li>
+                            <li class="Tabelle-Text" value="11">10 = variant K</li>
+                            <li class="Tabelle-Text" value="12">11 = variant L</li>
+                            <li class="Tabelle-Text" value="13">12 = variant M</li>
+                            <li class="Tabelle-Text" value="14">13 = variant N</li>
+                            <li class="Tabelle-Text" value="15">14 = variant O</li>
+                            <li class="Tabelle-Text" value="16">15 = variant P.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="">
+                        <p class="Tabelle_Text"><span class="codetext">/RepresentationType:?</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="">
+                        <p class="Tabelle_Text">Representation type of the macro to be inserted </p>
+                    </td>
+                    <td style="">
+                        <p class="Tabelle_Text">The following values are possible:</p>
+                        <ul>
+                            <li class="Tabelle-Text" value="1">1 = Multi-line</li>
+                            <li class="Tabelle-Text" value="2">2 = Single-line</li>
+                            <li class="Tabelle-Text" value="3">3 = Pair cross-reference</li>
+                            <li class="Tabelle-Text" value="4">4 = Overview</li>
+                            <li class="Tabelle-Text" value="5">5 = Graphic</li>
+                            <li class="Tabelle-Text" value="6">6 =&#160;Panel layout</li>
+                            <li class="Tabelle-Text" value="7">7 =&#160;<a href="Glossary_o_ri_fliessbild.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">P&amp;I diagram</a></li>
+                            <li class="Tabelle-Text" value="8">8 = Multi-line Fluid</li>
+                            <li class="Tabelle-Text" value="9">9 = Topology</li>
+                            <li class="Tabelle-Text" value="10">10 = 3D mounting layout</li>
+                            <li class="Tabelle-Text" value="11">11 = Functional.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="configtoolbars_k_aktionenformatierungen.htm">Formatting Settings for Actions in Toolbars</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

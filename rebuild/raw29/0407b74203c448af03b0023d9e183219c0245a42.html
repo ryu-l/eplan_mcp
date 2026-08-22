@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="A discipline component of the type WiringDiagram also serves as root component for the Pro Panel discipline. A resource is only assigned to this disci..." /><title>Creating discipline components and parameters</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/tutpropanel_h_create_discipline_components_parameters.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor637"></a>
+            <MadCap:concept term="Tutorial;EPLAN Pro Panel" />
+            <h2>Creating discipline components and parameters</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>A discipline component of the type <span class="important">WiringDiagram</span> also serves as root component for the Pro Panel discipline. A resource is only assigned to this discipline component. All discipline components arranged below this have no resources but reference 3D graphics macros in the parts database.</p>
+            <p>Create the root component:</p>
+            <ol>
+                <li value="1">Select the <span class="important">ProPanel</span> unit.</li>
+                <li value="2">From the popup menu, select <span class="gui">New &gt; ECAD &gt; WiringDiagram</span>.</li>
+                <li value="3">Click <span class="gui">[Import...]</span>.</li>
+                <li value="4">Select the file <span class="codetext">EPLAN\Data\Vorlagen\IEC_bas001.zw9</span>.</li>
+                <li value="5">Save the editor using <span class="gui">[Ctrl]</span> + <span class="gui">[S]</span>.</li>
+            </ol>
+            <p>In this process, the <span class="important">Parameter</span> unit was created in addition (see <a href="admin_r_modelvar_ecad_parameterunit.htm" class="MCXref xref">ECAD Parameter Unit</a>). This contains the parameters <span class="important">Location</span>, <span class="important">Page_Number</span>, <span class="important">Plant</span>, <span class="important">Script</span>, and <span class="important">Sub_Page_Number</span>. The names of the parameters can be set under <span class="gui">Model &gt; Model Variables</span> (see <a href="admin_r_modelvariables.htm" class="MCXref xref">Model variables</a>).</p>
+            <p>
+                <img src="../Pictures/tutorial_pp_unitstruktur_stromlaufplan.png" alt="" />
+            </p>
+            <p>Create the following discipline components without resources:</p>
+            <ol>
+                <li value="1">Select the <span class="important">ProPanel</span> unit.</li>
+                <li value="2">From the popup menu, select <span class="gui">New &gt; ECAD &gt; ECAD3D &gt; Layout space</span>.</li>
+                <li value="3">Enter <span class="important">LayoutSpace</span> in the <span class="gui">Name</span> field.</li>
+                <li value="4">Save the editor using <span class="gui">[Ctrl]</span> + <span class="gui">[S]</span>.</li>
+            </ol>
+            <p>The following discipline components are also created without resources. To do so repeat Steps 1 to 4, with the following entries:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><span class="gui">New &gt; ECAD &gt; ECAD3D &gt; Enclosure</span>, Name <span class="important">Enclosure</span>, Superclass <span class="important">Enclosure</span> (enclosure that receives the additional components).</li>
+                <li class="Listitem_Normal" value="2"><span class="gui">New &gt; ECAD &gt; ECAD3D &gt; MountingPanel</span>, Name <span class="important">MountingPanel</span>, Superclass <span class="important">MountingPanel</span> (mounting panel in the enclosure).</li>
+                <li class="Listitem_Normal" value="3"><span class="gui">New &gt; ECAD &gt; ECAD3D &gt; Diagrams</span>, Name <span class="important">Diagrams</span>, Superclass <span class="important">Diagrams</span> (mounting surface, e.g. the front of the mounting panel).</li>
+                <li class="Listitem_Normal" value="4"><span class="gui">New &gt; ECAD &gt; ECAD3D &gt; WireDuct</span>, Name <span class="important">WireDuct</span>, Superclass <span class="important">WireDuct</span> (wire duct).</li>
+                <li class="Listitem_Normal" value="5"><span class="gui">New &gt; ECAD &gt; ECAD3D &gt; MountingRail</span>, Name <span class="important">MountingRail</span>, Superclass <span class="important">MountingRail</span> (mounting rail).</li>
+                <li class="Listitem_Normal" value="6"><span class="gui">New &gt; ECAD &gt; ECAD3D &gt; Device</span>, Name <span class="important">Device</span>, Superclass <span class="important">Device</span> (device, e.g. PLC, terminal clamps, etc.).</li>
+            </ul>
+            <p>The icons and the level configuration of the discipline components have already been specified by the <span class="important">ECAD3D</span> discipline. However, so that the components of the job definition can be properly arranged, the following parameters are required:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Meaning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coordinate</td>
+                        <td>Coordinate</td>
+                        <td>For specifying coordinates when positioning objects</td>
+                    </tr>
+                    <tr>
+                        <td>CoordinateMap</td>
+                        <td>CoordinateMap</td>
+                        <td>For specifying coordinates as a map when positioning objects<br />Syntax: <span class="codetext">Map{Pair{'</span><span class="codetext">x'</span><span class="codetext">,100},Pair{'y'</span><span class="codetext">,100}}</span></td>
+                    </tr>
+                    <tr>
+                        <td>DeviceTag</td>
+                        <td>DeviceTag</td>
+                        <td>Device tag</td>
+                    </tr>
+                    <tr>
+                        <td>Dimension</td>
+                        <td>Dimension</td>
+                        <td>For specifying the length, the angle of orientation or the surface area.<br />Syntax:<br /><span class="codetext">=List{Length</span><span class="codetext">}</span> or =<span class="codetext">List{Length,Angle}</span> or =<span class="codetext">List{Length,Width}</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="glossary_o_bmk.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">DT</a>_Code</td>
+                        <td><a href="glossary_o_string.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">String</a>
+                        </td>
+                        <td>Part of the device code (BMK)</td>
+                    </tr>
+                    <tr>
+                        <td>DT_Counter</td>
+                        <td>String</td>
+                        <td>Part of the device code (BMK)</td>
+                    </tr>
+                    <tr>
+                        <td>EPN</td>
+                        <td>PartNumber</td>
+                        <td><span class="Bold">E</span>PLAN <span class="Bold">P</span>art <span class="Bold">N</span>umber is the part number of a device from the EPLAN parts database</td>
+                    </tr>
+                    <tr>
+                        <td>Id</td>
+                        <td>Id</td>
+                        <td>Identification number that clearly identifies a mounting surface</td>
+                    </tr>
+                    <tr>
+                        <td>Mate</td>
+                        <td>Mate</td>
+                        <td>For positioning objects in relation to the mates of a parent object.<br />Syntax:<br /><span class="codetext">=List{'Source handle'</span><span class="codetext">,'Destination mounting point',Distance</span><span class="codetext">}</span> </td>
+                    </tr>
+                    <tr>
+                        <td>MateMap</td>
+                        <td>MateMap</td>
+                        <td>For positioning objects in relation to a MateMarker.<br />Syntax:<br /><span class="codetext">=Map{Pair{'src','C'},Pair{'dest','C'},Pair{'dx',0},Pair{'dy',0},Pair{'dz',0},Pair{'angle',0}}</span> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="glossary_o_plug.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Plug</a>
+                        </td>
+                        <td>Plug</td>
+                        <td>Components whose plug value corresponds to the socket value of a superordinate component can be installed there.</td>
+                    </tr>
+                    <tr>
+                        <td>Position</td>
+                        <td>String</td>
+                        <td>Attachment sequence: the higher the value, the further back the object is attached.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="glossary_o_socket.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Socket</a>
+                        </td>
+                        <td>Socket</td>
+                        <td>Superordinate components provide a socket value that determines which subordinate components may be installed there.</td>
+                    </tr>
+                    <tr>
+                        <td>Width</td>
+                        <td><a href="glossary_o_double.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Double</a>
+                        </td>
+                        <td>Width of a constructed object. This value can be obtained from the parts data.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>This parameter is created in accordance with the following schema:</p>
+            <p>
+                <img src="../Pictures/tutorial_pp_parameter_erstellen.png" alt="" />
+            </p>
+            <ol>
+                <li value="1">Select the <span class="important">Parameter</span> unit.</li>
+                <li value="2">From the popup menu, select <span class="gui">New &gt; Parameter</span>.</li>
+                <li value="3">In the <span class="gui">Name</span> field, enter the text <span class="important">Coordinate</span>.</li>
+                <li value="4">In the <span class="gui">Type</span> field, enter the text <span class="important">Coordinate</span>.</li>
+                <li value="5">Save the editor.</li>
+                <li value="6">Repeat steps 1 to 5 for each parameter that is listed in the above table.</li>
+            </ol>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

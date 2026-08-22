@@ -1,0 +1,50 @@
+# ARTICLEREF_TERMINALSORTCODE Property
+
+ARTICLEREF\_TERMINALSORTCODE Property
+
+Sorting of part on terminal strip # 40342.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue ARTICLEREF_TERMINALSORTCODE {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ ARTICLEREF_TERMINALSORTCODE {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Sort code for the order of the alignable accessories on the terminal strip. The value is assigned in accordance with the order of the accessory parts in the dialog Edit terminal strip.
+
+See Also
+
+#### Reference
+
+[ArticleReferencePropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList.html)
+  
+[ArticleReferencePropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList~ARTICLEREF_TERMINALSORTCODE.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList~ARTICLEREF_TERMINALSORTCODE())

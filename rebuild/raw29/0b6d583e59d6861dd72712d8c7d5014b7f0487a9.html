@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="For placeholders and extension points a selection formula can be specified (see the following figure), which determines during instantiation and / or ..." /><title>Selection formula</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/eecbase_k_variantmanagement_extensions_selection_formula.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1340"></a>
+            <MadCap:concept term="Basis" /><a name="kanchor918"></a><a name="kanchor919"></a><a name="kanchor920"></a><a name="kanchor921"></a>
+            <h2>Selection formula</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>For placeholders and extension points a selection formula can be specified (see the following figure), which determines during instantiation and / or updates which of the visible library components is to be instantiated. With manual configuration, the selection can be limited to a subset of the library components of the extension point.</p>
+            <p>
+                <img src="../Pictures/erweiterungspunkt_auswahlformel.png" alt="" />
+            </p>
+            <p>The following rules apply to the calculation of the selection formula:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The selection formula yields a <a href="glossary_o_boolean.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Boolean</a> value or an integer:<ul><li value="1"><span class="codetext">true</span> means that each possible component is instantiated exactly once and / or that the instance is retained.</li><li value="2"><span class="codetext">false</span> means that no component is instantiated and / or that the instance is deleted.</li><li value="3">An integer specifies the number of components to be instantiated that correspond to the specified type. If a type is specified from which multiple types can be derived, the number of components is instantiated from each derived type.</li></ul></li>
+            </ul>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Header">Manual updating of the extension points:</p>
+                <p class="Infoblock">If the number of components to be instantiated is larger than the specification for multiplicity allows, the instantiation is <span class="important">not</span> performed. A corresponding error message is output.</p>
+                <p class="Header">Updating the extension points during the creation of a project:</p>
+                <p class="Infoblock">If the number of components to be instantiated is larger than the specification for multiplicity allows, the instantiation is performed. It is recommended to check the model for validity by using the menu item <span class="gui">Model &gt; Validate model</span></p>
+            </div>
+            <ul>
+                <li class="Listitem_Normal" value="1">The formula is evaluated in the context of the component to be instantiated, meaning as if the instance were installed at the extension point. All parameters of the instance can be accessed, as well as, of course, the enclosing component (<span class="codetext">mc</span>). But it is not possible to access components contained in the instance (e.g., <span class="codetext">mos</span> or <span class="codetext">rmos</span> on the instance itself).</li>
+                <li class="Listitem_Normal" value="2">When the formula cache is enabled (<a href="refcommands_r_engineering_startformulacachecommand.htm" class="MCXref xref">Engineering.StartFormulaCacheCommand</a>), the result of the expressions used in the selection formula, <span class="codetext">rmos</span> and <span class="codetext">mos</span>, must not contain any objects inserted on extension points. If this cannot be avoided, the <a href="refcommands_r_engineering_updateextensionscommand.htm" class="MCXref xref">Engineering.UpdateExtensionsCommand</a> may have to be executed several times, or the formula cache has to be disabled (<a href="refcommands_r_engineering_stopformulacachecommand.htm" class="MCXref xref">Engineering.StopFormulaCacheCommand</a>).</li>
+                <li class="Listitem_Normal" value="3">Debugging:</li>
+            </ul>
+            <p>If the selection formula does not yield a Boolean value, or if a formula error occurs, this will be displayed after updating the extension points: The affected library components are instantiated, and â in analogy to the Disabler â the result of the selection formula for this project component is displayed on the parameter page. The result can be analyzed with the formula inspector.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">If the selection formula cannot determine a value, the placeholder and / or extension point will behave as if there is no selection formula.</p>
+            </div>
+            <p>The model variable <span class="gui">Maximum Number Of Classes To Check For Placeholder Selection Formula</span> defines a <span class="important">limit from which a warning will be issued</span>. The warning alerts the user that the evaluation of the selection formula will take up a longer period of time. This happens when many library components correspond to the type of the extension point (e.g., if <span class="codetext">Engineering.Component</span> is selected as the type). The selection formula must then be calculated for every possible library component.</p>
+            <p>
+                <img src="../Pictures/modellvariablen_maximale_anzahl_klassen.png" alt="" />
+            </p>
+            <div class="example">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/example.png" alt="" />Example:</p>
+                <p class="Infoblock">Selection formula:</p><pre xml:space="preserve"><code class="language-mlr">=mc.$SelectionConditionAndType.name.startsWith('A')</code></pre>
+                <p class="Infoblock">Here, instantiation is made dependent on a condition in the enclosing mechatronic component, combined with a class nomenclature.</p>
+            </div>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">When instantiating via Drag&#160;&amp;&#160;Drop, the selection formula for the placeholder or extension point is not calculated during the drag process, so that the instantiation cannot be excluded. If the instantiated component contains further extension points with selection formulas, these will be evaluated.</p>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

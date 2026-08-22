@@ -1,0 +1,30 @@
+# PLUGSTRIP_COUNTOFJOINED Property
+
+PLUGSTRIP\_COUNTOFJOINED Property
+
+Plugs: Number of pins (male and female pin) # 35212. This property isn't indexed.
+
+Overload List
+
+| Overload | Description |
+| --- | --- |
+| [PLUGSTRIP\_COUNTOFJOINED(Int32)](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.PlugStripPropertyList~PLUGSTRIP_COUNTOFJOINED(Int32).html) | Plugs: Number of pins (male and female pin) # 35212. This property isn't indexed. |
+| [PLUGSTRIP\_COUNTOFJOINED](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.PlugStripPropertyList~PLUGSTRIP_COUNTOFJOINED().html) | Plugs: Number of pins (male and female pin) # 35212. |
+
+Remarks
+
+Number of pins consisting of a male-female combination in plug.
+
+See Also
+
+#### Reference
+
+[PlugStripPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.PlugStripPropertyList.html)
+  
+[PlugStripPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.PlugStripPropertyList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.PlugStripPropertyList~PLUGSTRIP_COUNTOFJOINED)

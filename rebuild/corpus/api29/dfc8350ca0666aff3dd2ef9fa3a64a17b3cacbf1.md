@@ -1,0 +1,50 @@
+# PART_ADDRESS_STATE Property
+
+PART\_ADDRESS\_STATE Property
+
+Country # 22918.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public MDPropertyValue PART_ADDRESS_STATE {get; set;}
+```
+```
+
+```
+```
+public:
+property MDPropertyValue^ PART_ADDRESS_STATE {
+   MDPropertyValue^ get();
+   void set (    MDPropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Country of manufacturer/supplier or customer.
+
+See Also
+
+#### Reference
+
+[MDPartsDatabaseItemPropertyList Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList.html)
+  
+[MDPartsDatabaseItemPropertyList Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList~PART_ADDRESS_STATE.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList~PART_ADDRESS_STATE())

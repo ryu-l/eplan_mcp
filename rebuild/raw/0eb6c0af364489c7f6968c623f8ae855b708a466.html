@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic _Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Scripting">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="7:15:22 AM">
+        <meta name="BuildDate" content="Monday, April 27, 2026">
+        <meta id="productName" name="product" content="Eplan Engineering Configuration">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="de_en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="&#160;"><title>Scripting methods: Overview</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/Helpsystem_print.gif') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/CopyLink.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VXGSPHHC4V">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-VXGSPHHC4V', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="main_k_home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor253"></a>
+                                            <madcap:concept term="Referenz"></madcap:concept><a name="kanchor185"></a><a name="kanchor186"></a><a name="kanchor187"></a>
+                                            <h2>Scripting methods: Overview</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <table id="scriptingtable" class="display TF smallFont">
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Method</th>
+                                                        <th>Arguments</th>
+                                                        <th>Return type</th>
+                                                        <th>Area</th>
+                                                        <th>Usage</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_delete_iengineeringobject_eo.htm" class="MCXref xref" xrefformat="{paratext}">delete(IEngineeringObject eo)</a></span>
+                                                        </td>
+                                                        <td>IEngineeringObject eo</td>
+                                                        <td>void</td>
+                                                        <td>Engineering object</td>
+                                                        <td>Deletes an EO in the <span class="GlossaryPopup" href="glossary_o_unit.htm">Unit</span>-Of-Work.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_evaluate.htm" class="MCXref xref" xrefformat="{paratext}">evaluate(String formula)</a></span>
+                                                        </td>
+                                                        <td><span class="GlossaryPopup" href="glossary_o_string.htm">String</span> formula</td>
+                                                        <td>String</td>
+                                                        <td>Engineering object</td>
+                                                        <td>Calculates a formula for a mechatronic object.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getalllibrarynames.htm" class="MCXref xref" xrefformat="{paratext}">getAllLibraryNames()</a></span>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>List</td>
+                                                        <td>Project environment</td>
+                                                        <td>Determined for the names of all imported libraries</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getallmechatronictoplevelcomponents.htm" class="MCXref xref" xrefformat="{paratext}">getAllMechatronicTopLevelComponents(List libraryNames)</a></span>
+                                                        </td>
+                                                        <td>List libraryNames</td>
+                                                        <td>List</td>
+                                                        <td>Project environment</td>
+                                                        <td>Determines all mechatronic components of the highest level of the specified libraries</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getallprojectnames.htm" class="MCXref xref" xrefformat="{paratext}">getAllProjectNames()</a></span>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>List</td>
+                                                        <td>Project environment</td>
+                                                        <td>Determines all existing projects for the names</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_iutilapi_getglobalresourcepath.htm" class="MCXref xref" xrefformat="{paratext}">getGlobalResourcePath()</a></span>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>String</td>
+                                                        <td>Project environment</td>
+                                                        <td>Determine the path to the global resources</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getimportedlibrarynames.htm" class="MCXref xref" xrefformat="{paratext}">getImportedLibraryNames(String projectName)</a></span>
+                                                        </td>
+                                                        <td>String projectName</td>
+                                                        <td>List</td>
+                                                        <td>Project environment</td>
+                                                        <td>Determines all names of the directly imported libraries for the specified project name</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getoutputdirectory_1.htm" class="MCXref xref" xrefformat="{paratext}">getOutputDirectory(DisciplineObject discObject)</a></span>
+                                                        </td>
+                                                        <td>DisciplineObject discObject</td>
+                                                        <td>String</td>
+                                                        <td>Project environment</td>
+                                                        <td>Returns a string that contains the path to the output directory of the discipline in the workspace</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getoutputdirectory_2.htm" class="MCXref xref" xrefformat="{paratext}">getOutputDirectory(DisciplineObject discObject, boolean create)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>DisciplineObject discObject,</p>
+                                                            <p><span class="GlossaryPopup" href="glossary_o_boolean.htm">boolean</span> create</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>IFolder</p>
+                                                        </td>
+                                                        <td>Project environment</td>
+                                                        <td>Returns an org.eclipse.core.runtime.IFolder object as a result</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getoutputdirectory_3.htm" class="MCXref xref" xrefformat="{paratext}">getOutputDirectory(IProject project)</a></span>
+                                                        </td>
+                                                        <td>IProject project</td>
+                                                        <td>String</td>
+                                                        <td>Project environment</td>
+                                                        <td>Returns a string that contains the path to the output directory in the workspace</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getoutputdirectory_4.htm" class="MCXref xref" xrefformat="{paratext}">getOutputDirectory(IProject project, boolean create)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>IProject project,</p>
+                                                            <p>boolean create</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>IContainer</p>
+                                                        </td>
+                                                        <td>Project environment</td>
+                                                        <td>Returns an org.eclipse.core.resources.IContainer object as a result</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getoutputdirectoryforproject.htm" class="MCXref xref" xrefformat="{paratext}">getOutputDirectoryForProject(Object project, Boolean createFolder)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>Object project,</p>
+                                                            <p>Boolean createFolder</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>String</p>
+                                                        </td>
+                                                        <td>Project environment</td>
+                                                        <td>Determines the output folder for the created files for the specified project. If no folder exists, it can be created if required</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getoutputdirectoryforprojectname.htm" class="MCXref xref" xrefformat="{paratext}">getOutputDirectoryForProjectName(String projectName, Boolean createFolder)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>String projectName,</p>
+                                                            <p>Boolean createFolder</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>String</p>
+                                                        </td>
+                                                        <td>Project environment</td>
+                                                        <td>Determines the output folder for the created files for the specified project name</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getplaceholdernames_1.htm" class="MCXref xref" xrefformat="{paratext}">getPlaceholderNames</a></span>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>List</td>
+                                                        <td><span class="GlossaryPopup" href="glossary_o_placeholder.htm">Placeholder</span> / <span class="GlossaryPopup" href="glossary_o_extension.htm">extension point</span></td>
+                                                        <td>Returns a list of names of all placeholders in this mechatronic <span class="GlossaryPopup" href="glossary_o_component.htm">component</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getplaceholdernames_2.htm" class="MCXref xref" xrefformat="{paratext}">getPlaceholderNames(String absoluteTypeName)</a></span>
+                                                        </td>
+                                                        <td>String absoluteTypeName</td>
+                                                        <td>List</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Returns a list of names of all placeholders in this mechatronic component, where classes of the specified type can be placed</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getplaceholdernames_3.htm" class="MCXref xref" xrefformat="{paratext}">getPlaceholderNames(TypeClass type)</a></span>
+                                                        </td>
+                                                        <td>TypeClass type</td>
+                                                        <td>List</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Provides a list of all placeholders of a project component for the specified type</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getplaceholderobjects_2.htm" class="MCXref xref" xrefformat="{paratext}">getPlaceholderObjects(Placeholder placeholder)</a></span>
+                                                        </td>
+                                                        <td>Placeholder placeholder</td>
+                                                        <td>List</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Returns a list of all objects that are placed on the placeholder <span class="codetext">placeholder</span> of a mechatronic project component</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getplaceholderobjects_1.htm" class="MCXref xref" xrefformat="{paratext}">getPlaceholderObjects(String placeholderName)</a></span>
+                                                        </td>
+                                                        <td>String placeholderName</td>
+                                                        <td>List</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Returns a list of all objects, which are placed on the placeholder with the name <span class="codetext">placeholderName</span> in this mechatronic component</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getplaceholders_1.htm" class="MCXref xref" xrefformat="{paratext}">getPlaceholders()</a></span>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>List</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Returns a list of names of all placeholders in the mechatronic project component</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getplaceholders_2.htm" class="MCXref xref" xrefformat="{paratext}">getPlaceholders(String absoluteTypeName)</a></span>
+                                                        </td>
+                                                        <td>String absoluteTypeName</td>
+                                                        <td>List</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Returns a list of all placeholders in this mechatronic component where classes of the specified type can be placed</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getplaceholders_3.htm" class="MCXref xref" xrefformat="{paratext}">getPlaceholders(TypeClass type)</a></span>
+                                                        </td>
+                                                        <td>TypeClass type</td>
+                                                        <td>List</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Returns a list of all placeholders in this mechatronic component where classes of the specified type can be placed</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_getproperty.htm" class="MCXref xref" xrefformat="{paratext}">getProperty(String property)</a></span>
+                                                        </td>
+                                                        <td>String property</td>
+                                                        <td>String</td>
+                                                        <td>Project environment</td>
+                                                        <td>Returns the entry for an EEC runtime option in the initialization file.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_instantiate_4.htm" class="MCXref xref" xrefformat="{paratext}">instantiate(instantiationTarget, MechatronicObjectClass classToInstantiate, String instanceName, boolean instantiateExtensions, IMechatronicInstantiationContext context)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>instantiationTarget,</p>
+                                                            <p>MechatronicObjectClass classToInstantiate,</p>
+                                                            <p>String instanceName,</p>
+                                                            <p>boolean instantiateExtensions,</p>
+                                                            <p>IMechatronicInstantiationContext context</p>
+                                                        </td>
+                                                        <td>Component</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Instantiates a component that corresponds to the type <span class="codetext">classToInstantiate</span> with the given <span class="codetext">instanceName</span> on the placeholder specified with instantiationTarget. The Boolean argument <span class="codetext">instantiateExtensions</span> specifies whether objects are instantiated on contained extension points. A reusable context is applied to accelerate multiple instantiations in the same script.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_instantiate_3.htm" class="MCXref xref" xrefformat="{paratext}">instantiate(instantiationTarget, MechatronicObjectClass classToInstantiate, String instanceName, boolean instantiateExtensions, Placeholder placeholder)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>instantiationTarget,</p>
+                                                            <p>MechatronicObjectClass classToInstantiate,</p>
+                                                            <p>String instanceName,</p>
+                                                            <p>boolean instantiateExtensions,</p>
+                                                            <p>Placeholder placeholder</p>
+                                                        </td>
+                                                        <td>Component</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Instantiates a component that corresponds to the type <span class="codetext">classToInstantiate</span> with the given <span class="codetext">instanceName</span> on the placeholder identified by <span class="codetext">placeholder</span> at the specified <span class="codetext">instantiationTarget</span>.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_instantiate_2.htm" class="MCXref xref" xrefformat="{paratext}">instantiate(instantiationTarget, MechatronicObjectClass classToInstantiate, String instanceName, boolean instantiateExtensions, String placeholderName)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>instantiationTarget,</p>
+                                                            <p>MechatronicObjectClass classToInstantiate,</p>
+                                                            <p>String instanceName,</p>
+                                                            <p>boolean instantiateExtensions,</p>
+                                                            <p>String placeholderName</p>
+                                                        </td>
+                                                        <td>Component</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>
+                                                            <p>Instantiates a component that corresponds to the type <span class="codetext">classToInstantiate</span> with the given <span class="codetext">instanceName</span> on the placeholder identified by <span class="codetext">placeholderName</span> at the specified <span class="codetext">instantiationTarget</span>.</p>
+                                                            <p>The Boolean argument <span class="codetext">instantiateExtensions</span> specifies whether objects are instantiated on contained extension points.</p>
+                                                            <p>The instantiation takes place on the first from the rear fitting placeholder or extension point.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_instantiate_5.htm" class="MCXref xref" xrefformat="{paratext}">instantiate(instantiationTarget, MechatronicObjectClass classToInstantiate, String instanceName, boolean instantiateExtensions, String placeholderName, IMechatronicInstantiationContext context)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>instantiationTarget,</p>
+                                                            <p>MechatronicObjectClass classToInstantiate,</p>
+                                                            <p>String instanceName,</p>
+                                                            <p>boolean instantiateExtensions,</p>
+                                                            <p>String placeholderName,</p>
+                                                            <p>IMechatronicInstantiationContext context</p>
+                                                        </td>
+                                                        <td>Component</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>
+                                                            <p>Instantiates a component that corresponds to the type <span class="codetext">classToInstantiate</span> with the given <span class="codetext">instanceName</span> on the placeholder identified by <span class="codetext">placeholderName</span> at the specified <span class="codetext">instantiationTarget</span>.</p>
+                                                            <p>A reusable context is applied to accelerate multiple instantiations in the same script.</p>
+                                                            <p>The Boolean argument <span class="codetext">instantiateExtensions</span> specifies whether objects are instantiated on contained extension points.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_instantiate_1.htm" class="MCXref xref" xrefformat="{paratext}">instantiate(ITopInstantiationTarget instantiationTarget, MechatronicObjectClass classToInstantiate, String instanceName, boolean instantiateExtensions)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>ITopInstantiationTarget instantiationTarget,</p>
+                                                            <p>MechatronicObjectClass classToInstantiate,</p>
+                                                            <p>String instanceName,</p>
+                                                            <p>boolean instantiateExtensions</p>
+                                                        </td>
+                                                        <td>Component</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>
+                                                            <p>Instantiates a component that corresponds to the type <span class="codetext">classToInstantiate</span> with the given <span class="codetext">instanceName</span> at the specified <span class="codetext">instantiationTarget</span>.</p>
+                                                            <p>The Boolean argument <span class="codetext">instantiateExtensions</span> specifies whether objects are instantiated on contained extension points.</p>
+                                                            <p>The instantiation takes place on the first from the rear fitting placeholder or extension point.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_isextension.htm" class="MCXref xref" xrefformat="{paratext}">isExtension()</a></span>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Boolean</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Returns <span class="codetext">true</span> if the <span class="GlossaryPopup" href="glossary_o_placeholderobject.htm">placeholder object</span> is an extension point.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_isextensionplaced.htm" class="MCXref xref" xrefformat="{paratext}">isExtensionPlaced()</a></span>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Boolean</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Returns <span class="codetext">true</span> if the instance is mounted on an extension point.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_isplaceholderplaced.htm" class="MCXref xref" xrefformat="{paratext}">isPlaceholderPlaced()</a></span>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Boolean</td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Returns <span class="codetext">true</span> if the instance is mounted on a placeholder or an extension point.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_perform.htm" class="MCXref xref" xrefformat="{paratext}">perform(String MethodName, Arguments)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>MethodName,</p>
+                                                            <p>Arguments</p>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>
+                                                            <p></p>
+                                                        </td>
+                                                        <td>Calls up a scripting method of another engineering object within a script.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_removeextensions.htm" class="MCXref xref" xrefformat="{paratext}">removeExtensions(Object obj)</a></span>
+                                                        </td>
+                                                        <td>Object obj</td>
+                                                        <td></td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Deletes all instances placed on extension points under the specified object.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_reorderplaceholderobjects_1.htm" class="MCXref xref" xrefformat="{paratext}">reorderPlaceholderObjects(Placeholder placeholder, int srcIndex, int count, int dstIndex)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>Placeholder placeholder,</p>
+                                                            <p>int srcIndex,</p>
+                                                            <p>int count,</p>
+                                                            <p>int dstIndex</p>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Reorganizes instances on the placeholder <span class="codetext">placeholder</span> in a way that <span class="codetext">count</span> instances of index <span class="codetext">srcIndex</span> are moved to <span class="codetext">dstIndex</span>.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_reorderplaceholderobjects_2.htm" class="MCXref xref" xrefformat="{paratext}">reorderPlaceholderObjects(String placeholderName, int srcIndex, int count, int dstIndex)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>String placeholderName,</p>
+                                                            <p>int srcIndex,</p>
+                                                            <p>int count,</p>
+                                                            <p>int dstIndex</p>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Reorganizes instances on the placeholder <span class="codetext">placeholderName</span> in a way that <span class="codetext">count</span> instances of index <span class="codetext">srcIndex</span> are moved to <span class="codetext">dstIndex</span>.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_saveactiveeditor.htm" class="MCXref xref" xrefformat="{paratext}">saveActiveEditor()</a></span>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>Editor</td>
+                                                        <td>Saves the current changes in the active editor.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_savechanges.htm" class="MCXref xref" xrefformat="{paratext}">saveChanges()</a></span>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>void</td>
+                                                        <td>Unit Of Work</td>
+                                                        <td>Stores the changes on <span class="codetext">IEngineeringObjects</span> which are contained in a <span class="codetext">IUnitOfWork</span>.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_setprettyvalue.htm" class="MCXref xref" xrefformat="{paratext}">setPrettyValue(String formula)</a></span>
+                                                        </td>
+                                                        <td>String formula</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>Sets the result of a formula as the <span class="GlossaryPopup" href="Glossary_o_parameter.htm">parameter</span> value.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_setvalue.htm" class="MCXref xref" xrefformat="{paratext}">setValue(String string)</a></span>
+                                                        </td>
+                                                        <td>String string</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>Sets any string as a parameter value.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_lexikographical_sorting_of_strings.htm" class="MCXref xref" xrefformat="{paratext}">sort(List list, ComparatorClass c)</a></span>
+                                                        </td>
+                                                        <td>List list, ComparatorClass c</td>
+                                                        <td>List</td>
+                                                        <td></td>
+                                                        <td>Sorts the alphanumeric strings of an array or list in lexigraphic order.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_sortplaceholderobjects_1.htm" class="MCXref xref" xrefformat="{paratext}">sortPlaceholderObjects(String placeholder, String sortedByFormula)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>String placeholder,</p>
+                                                            <p>String sortedByFormula</p>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Sorts the instances on the placeholder <span class="codetext">placeholder</span> according to the result of the <span class="codetext">sortedByFormula</span>.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_sortplaceholderobjects_2.htm" class="MCXref xref" xrefformat="{paratext}">sortPlaceholderObjects(String placeholderName, String sortedByFormula)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>String placeholderName,</p>
+                                                            <p>String sortedByFormula</p>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Sorts the instances on the placeholder named <span class="codetext">placeholderName</span> according to the result of the <span class="codetext">sortedByFormula</span>.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_updateextensions_1.htm" class="MCXref xref" xrefformat="{paratext}">updateExtensions(Object obj)</a></span>
+                                                        </td>
+                                                        <td>Object obj</td>
+                                                        <td></td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Updates all extension points under the specified object.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_updateextensions_2.htm" class="MCXref xref" xrefformat="{paratext}">updateExtensions(Object obj, IMechatronicInstantiationContext context)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>Object obj,</p>
+                                                            <p>IMechatronicInstantiationContext context</p>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Updates all extension points under the specified object.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_updateextensionsonelevelonly_1.htm" class="MCXref xref" xrefformat="{paratext}">updateExtensionsOneLevelOnly(Object obj)</a></span>
+                                                        </td>
+                                                        <td>Object obj</td>
+                                                        <td></td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Updates all extension points under the specified object, but not within existing or new child objects.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="codetext"><a href="refscripting_r_updateextensionsonelevelonly_2.htm" class="MCXref xref" xrefformat="{paratext}">updateExtensionsOneLevelOnly(Object obj, IMechatronicInstantiationContext context)</a></span>
+                                                        </td>
+                                                        <td>
+                                                            <p>Object obj,</p>
+                                                            <p>IMechatronicInstantiationContext context</p>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>Placeholder / extension point</td>
+                                                        <td>Updates all extension points under the specified object, but not within existing or new child objects.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <script>/* <![CDATA[ */$(function(){
+				requirejs(['../Resources/Stylesheets/tablefilter/tablefilter'],
+				function(mod) {
+				var TableFilter = mod.TableFilter;
+				var tfConfig = {
+				base_path: '../Resources/Stylesheets/tablefilter/',
+				col_0: 'select',
+				col_1: 'select',
+				col_2: 'select',
+				col_3: 'select',
+				col_4: 'input',
+				col_5: 'select',
+				col_6: 'input',
+				alternate_rows: true,
+				rows_counter: {
+				text: 'DatensÃ¤tze: '
+				},
+				btn_reset: true,
+				btn_reset_text: "Zeige alles",
+				loader: true,
+				status_bar: false,
+				exec_delay: 250,
+				filters_row_index: 1,
+				mark_active_columns: true,
+				help_instructions: false,
+				loader_text: "Daten werden gefiltert",
+				fixed_headers: true,
+				highlight_keywords: true,
+				col_widths: [
+				'30%',
+				'20%',
+				'10%',
+				'10%',
+				'10%',
+				'10%',
+				'10%'
+				],
+				extensions:[{ name: 'sort' }]
+				};
+				var tf = new TableFilter(
+				document.getElementById('scriptingtable'),
+				tfConfig
+				);
+				tf.init();
+				});
+			});/* ]]> */</script>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

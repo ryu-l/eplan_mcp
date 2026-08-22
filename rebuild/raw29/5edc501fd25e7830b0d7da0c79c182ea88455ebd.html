@@ -1,0 +1,371 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Verifications</title>
+    <meta name="Title" content="Verifications"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n162","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="You can use an EPLAN API add-in to add new verifications. EPLAN will use them in the same way as already existing internal verifications. " />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="9859f359-8d57-43e1-b9af-e12251ae0319"/>
+    <meta name="Microsoft.Help.TocParent" content="83e0aa48-04c2-4e59-982a-0bee5fa917cb"/>
+    <meta name="Microsoft.Help.TocOrder" content="2"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="EServices.html">API Electrotechnical services</a>
+ / Verifications</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Verifications</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>You can use an EPLAN API add-in to add new verifications. EPLAN will use them in the same way as already existing internal verifications.&nbsp;</p>
+
+<p>For a new verification the add-in has to implement the interface IVerification.&nbsp;</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">class</span> NewVerification : Eplan.EplApi.EServices.Verification
+{
+    <span style="COLOR: #0000ff">private</span> <span style="COLOR: #0000ff">int</span> m_iMessageId = 30;
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// Default constructor.
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> NewVerification()
+    {
+    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// In this function, the test logic will implement. 
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="oObject1"&gt;</span><span style="COLOR: #008000">
+    /// This object is tested.  One can be certain that here only
+    /// function objects of the desired category arrive
+    /// </span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> <span style="COLOR: #0000ff">void</span> Execute(Eplan.EplApi.DataModel.StorableObject oObject1)
+    {
+        DoErrorMessage(oObject1, oObject1.Project, <span style="COLOR: #800000">"Verification dynamic text"</span>);
+    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// This function is called after end of all verifications run.
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> <span style="COLOR: #0000ff">void</span> OnEndInspection()
+    {
+        <span style="COLOR: #008000">// TODO:  Add NewVerification.OnEndInspection implementation
+</span>    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// Registration function of the verification.
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="strName"&gt;</span><span style="COLOR: #008000">
+    /// Under this name, the new verification registered  in the system.
+    /// </span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="iOrdinal"&gt;</span><span style="COLOR: #008000">
+    /// Overload priority. 
+    /// </span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> <span style="COLOR: #0000ff">void</span> OnRegister(<span style="COLOR: #0000ff">ref</span> <span style="COLOR: #0000ff">string</span> strName, <span style="COLOR: #0000ff">ref</span> <span style="COLOR: #0000ff">int</span> iOrdinal)
+    {
+        strName = <span style="COLOR: #800000">"NewVerification"</span>;
+        iOrdinal = 30;
+        <span style="COLOR: #0000ff">this</span>.VerificationPermission = IVerification.Permission.OnlineOfflinePermitted;
+        <span style="COLOR: #0000ff">this</span>.VerificationState = IVerification.VerificationState.OnlineOfflineState;
+    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// This function is called before start of all verifications run.
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="bOnline"&gt;</span><span style="COLOR: #008000">
+    /// true: online verification
+    /// false: offline verification
+    /// </span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> <span style="COLOR: #0000ff">void</span> OnStartInspection(<span style="COLOR: #0000ff">bool</span> bOnline)
+    {
+        <span style="COLOR: #008000">// TODO:  Add NewVerification.OnStartInspection implementation
+</span>    }
+
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// This function must deliver the accompanying message text. 
+    /// A test has always exactly an accompanying message text. 
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;returns&gt;</span><span style="COLOR: #008000">Der Meldungstext</span><span style="COLOR: #808080">&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> <span style="COLOR: #0000ff">string</span> GetMessageText()
+    {
+        <span style="COLOR: #0000ff">return</span> <span style="COLOR: #800000">"Verification static text . %1!s!"</span>;
+    }
+    <span style="COLOR: #008000">///</span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    ///This function is called if to a message the aid text is supposed to be indicated. 
+    ///It lies in the responsibility of the Implementation of the function to call
+    ///the suitable aid system in the correct language.
+    ///In the simplest case, for example only a simple dialog can be called. 
+    ///</span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> <span style="COLOR: #0000ff">void</span> DoHelp()
+    {
+        <span style="COLOR: #008000">// TODO:  NewVerification.DoHelp implementation
+</span>    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// This function is called of the system if the message of this test
+    ///  is supposed to be registered in the system. 
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="strCreator"&gt;</span><span style="COLOR: #008000">Creator of the message</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="eRegion"&gt;</span><span style="COLOR: #008000">Message region</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="iMessageId"&gt;</span><span style="COLOR: #008000">Number of the message</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="eClassification"&gt;</span><span style="COLOR: #008000">Default classification.  </span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="iOrdinal"&gt;</span><span style="COLOR: #008000">Overload priority.</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">override</span> <span style="COLOR: #0000ff">void</span> OnRegister(<span style="COLOR: #0000ff">ref</span> String strCreator, <span style="COLOR: #0000ff">ref</span> Eplan.EplApi.EServices.IMessage.Region eRegion, <span style="COLOR: #0000ff">ref</span> <span style="COLOR: #0000ff">int</span> iMessageId, <span style="COLOR: #0000ff">ref</span> Eplan.EplApi.EServices.IMessage.Classification eClassification, <span style="COLOR: #0000ff">ref</span> <span style="COLOR: #0000ff">int</span> iOrdinal)
+    {
+        strCreator = <span style="COLOR: #800000">"Author"</span>;
+        eRegion = IMessage.Region.Externals;
+        iMessageId = m_iMessageId;
+        eClassification = IMessage.Classification.Error;
+        iOrdinal = 20;
+    }
+}
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <div>
+        <pre>
+ 
+</pre>
+        <pre>
+ 
+</pre>
+    </div>
+</div>
+
+<p>In order to make creating a verification easier, the EPLAN API has some base classes, which provide a few service functions.&nbsp;</p>
+
+<p>These base classes are:</p>
+
+<ul>
+    <li>FunctionVerification</li>
+
+    <li>PotentialVerification</li>
+
+    <li>InterruptionPointVerification</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>In your add-in you just let your verification class inherit from one of these base classes and implement the necessary interface functions. For outputting messages, then different variations of the AddMessage() function are available. Additionally, the classes contain some functions to find cross-referenced objects.&nbsp;</p>
+
+<p>If you want to implement a verification that verifies something concerning potentials then you implement a new verification derived from PotentialVerification. In the Execute function of your new verification you can use the function GetAllPotentialsWithSameName() to get the potential from the verification cache. It makes no sense to call this function in other context than in verification Execute().&nbsp;</p>
+
+<p>All registered verifications will be called from the system by using "Check project...". If you want to execute only your verification, then you have to configure the settings for the check (create new scheme, disable other verifications ("Type of check": No))&nbsp;</p>
+
+<p>Please take into account that in comparison to 1.9 version, verifications that inherit from Verification class need to have 'override' keyword in base methods' definitions. This is required since API extension was migrated to C++/CLI .&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>How to start a verification&nbsp;</h3>
+
+<p>Verifications can be invoked from API or GUI in 3 modes:&nbsp;</p>
+
+<ul>
+    <li>&nbsp;Online mode . This is called when a change was done and UndoStep was disposed:&nbsp;</li>
+</ul>
+
+<div>
+    <div>
+        <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>C#</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <pre>
+<span style="COLOR: #0000ff">using</span> (UndoStep oUndo = <span style="COLOR: #0000ff">new</span> UndoManager().CreateUndoStep())
+{
+oFunction.Location = <span style="COLOR: #0000ff">new</span> PointD(oFunction.Location.X + 10.0, oFunction.Location.Y + 10.0);
+}
+</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <pre>
+
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;Prevent errors mode (restrictive mode). This is similar to Online mode, but in case DoErrorMessage() is called, the last UndoStep is undone automatically, so that the last changes are reverted. For 'Prevent errors mode' you should set the following options in OnRegister of the verification:</p>
+
+<div>
+    <div>
+        <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>C#</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <pre>
+<span style="COLOR: #0000ff">this</span>.VerificationPermission = IVerification.Permission.RestrictivePermitted;
+<span style="COLOR: #0000ff">this</span>.VerificationState = IVerification.VerificationState.RestrictiveState;
+</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <pre>
+
+</pre>
+    </div>
+</div>
+
+<ul>
+    <li>Offline mode. This can be done by :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <ul>
+            <li>'check' action</li>
+
+            <li>Check class (VerifyProject, VerifyPages methods</li>
+
+            <li>"Check project" dialog</li>
+        </ul>
+    </li>
+</ul>
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-see-also-sub-heading">Reference</h4><div class="i-see-also-link">
+<a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Verification.html">Verification Class</a></div>
+<div class="i-see-also-link">
+<a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.IVerification.html">IVerification Interface</a></div>
+
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Verifications">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

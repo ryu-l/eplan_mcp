@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Using Graphical Editing|2D Panel Layout|Proceed as Follows">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="When placing items on the mounting panel, a distinction is made between single placement, multiple placement, and the placement of locked areas. For t..." /><title>Placing Items on the Mounting Panel</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/panellayoutgui_h_bauteileplatzieren.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor3303"></a>
+            <MadCap:concept term="Handlung" /><a name="aanchor3304"></a>
+            <MadCap:concept term="EPLAN Plattform" /><a name="kanchor3937"></a><a name="kanchor3938"></a><a name="kanchor3939"></a>
+            <h2>Placing Items on the Mounting Panel</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>When <a href="Glossary_o_auflegen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">placing</a> <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a> on the mounting panel, a distinction is made between single placement, multiple placement, and the placement of locked areas. For this the installation spacing for every item / device must be stored in the parts data to where the device walls are not <span class="important">on top of each other</span>, but rather <span class="important">next to each other</span>. For multiple placements, the clearances are automatically accounted for, otherwise the single placement and multiple placement interactions are identical.</p>
+            <p class="Bridgehead">Preconditions:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">You have opened a project.</li>
+                <li class="Listitem_Normal" value="2">You have opened the <span class="gui">2D panel layout - &lt;Project name&gt;</span> dialog. </li>
+                <li class="Listitem_Normal" value="3">You are in the graphical editor on a "Panel layout" page.</li>
+                <li class="Listitem_Normal" value="4">You have added a mounting panel.</li>
+                <li class="Listitem_Normal" value="5">The <span class="gui">List</span> display type contains parts with the "Unplaced" <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> status (<span class="gui">Number of units / quantity (unplaced)</span> property).</li>
+                <li class="Listitem_Normal" value="6">In the dialog <span class="gui">Settings: 2D panel layout</span> (<span class="gui">Popup menu &gt; Settings</span>) you have selected <span class="important">none</span> of the <span class="gui">Manual input &lt;...&gt;</span> options.</li>
+            </ul>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Select the items in the <span class="gui">list</span> tab that have not yet been placed. (Multiple selection is possible.)</li>
+                <li class="Listitem_Step_By_Step" value="2">Select <span class="gui">Popup menu &gt; Place on mounting panel</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The first part placement hangs on the cursor.</li>
+                <li class="Listitem_Step_By_Step" value="3">Position the part placement on the mounting panel with a mouse click.</li>
+                <li class="Listitem_Step_By_Step" value="4">Proceed in this way for all additional <a href="Glossary_o_artikelplatzierungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part placements</a> selected in the tree.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The <span class="gui">Number of units / quantity (unplaced)</span> property of the newly placed parts is reduced correspondingly. In <span class="important">tree view</span>, the parts are integrated into the mounting panel's hierarchy level, and the check mark shows that the parts have been placed.</li>
+            </ol>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Notes:</p>
+                <ul>
+                    <li class="Listitem_Normal" value="1">If you are placing unplaced parts on a <span class="important">terminal strip</span> then, provided that no parts have yet been placed on this terminal strip, a prompt appears, asking you to decide whether the complete terminal strip should be placed. If you answer <span class="gui">[Yes]</span> to this prompt, you can then place the complete terminal strip, and all the terminals on the strip will be identified as placed by a green tick in the tree in the <a href="Glossary_o_schaltschrankaufbau.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">panel layout</a> navigator. The terminal widths stored in the parts management module are added together to determine the dimensions of the terminal strip on the mounting panel. The maximum height stored for the terminal parts is used as the height of the new part placement. <br />If you answer <span class="gui">[No]</span> to the prompt, you can then place the terminals individually.</li>
+                    <li class="Listitem_Normal" value="2">Even if you do not move the cursor during placement, the <a href="Glossary_o_symbole.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">symbols</a> will be placed from left to right. If a symbol extends over the edge of the mounting panel, an error message will inform you of this.</li>
+                    <li class="Listitem_Normal" value="3">If you have selected one of the options <span class="gui">Manual input &lt;...&gt;</span> in the <span class="gui">Settings: 2D panel layout</span> dialog (<span class="gui">Popup menu &gt; Settings</span>), you must first specify its dimensions in the <span class="gui">Extension and distance</span> dialog prior to placing the device.</li>
+                </ul>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="panellayoutgui_h_sperrflaechenzeichnen.htm">Defining Locked Areas</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

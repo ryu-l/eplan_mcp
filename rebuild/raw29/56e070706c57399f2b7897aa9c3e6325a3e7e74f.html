@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|EPLAN Fluid|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="EPLAN Fluid allows checking of the schematic documentation of your fluid projects from a purely fluid power point of view, to find inconsistencies and..." /><title>Fluid Power-specific Project Checks</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/ftechnic_k_prueflaeufe.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor3076"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor3077"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Fluid" /><a name="kanchor3662"></a><a name="kanchor3663"></a>
+            <h2>Fluid Power-specific Project Checks</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>EPLAN Fluid allows checking of the schematic documentation of your fluid <a href="Glossary_o_projekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">projects</a> from a purely <a href="Glossary_o_fluidtechnik.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">fluid power</a> point of view, to find inconsistencies and/or logical errors in the schematic and thus avoid faulty <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a>.</p>
+            <p>The message management module includes the separate <a href="messages_o_024Fluidpower.htm">"Fluid power" message class</a> with the class number <span class="important">024</span> for this purpose.</p>
+            <p>Properties are checked with regard to their connection point logic, the trade and the subtrade.</p><a name="kanchor3664"></a><a name="kanchor3665"></a>
+            <h3>Checking of the connection dimension of connections</h3>
+            <p>Two further <a href="Glossary_o_prueflaeufe.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">check runs</a> with which the connection dimensions of fluid power <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> can be checked in the "Connections" message class with the class number 005:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1"><a href="messages_p_005086.htm">P005086: Different connection dimension '&lt;x&gt;' / '&lt;y&gt;'</a>
+                </li>
+                <li class="Listitem_Normal" value="2"><a href="messages_p_005087.htm">P005087: Direct connection: Different connection dimension '&lt;x&gt;' / '&lt;y&gt;'</a>
+                </li>
+            </ul>
+            <p>The first check run is used to determine whether the connection dimensions at the two ends of <span class="important">fluid power connections</span> or <span class="important">hose lines</span> match the connection dimensions of the <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> connected to the source and target ends. </p>
+            <p>The second check run checks the connection dimensions of <span class="important">direct connections</span>. These are connections to which the "Direct connection" function definition has been assigned. (Such connections are used, for example in the <a href="Glossary_o_pneumatik.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">pneumatics</a> in a fluid power schematic for connections that run between a valve and a silencer.) During this check the values of the connection dimensions at the functions connected to the source and target ends are compared directly with each other.</p>
+            <p>In the case of an error the following information is output in the placeholders &lt;x&gt; and &lt;y&gt; of both messages:</p>
+            <table style="width: 98%;">
+                <col />
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <th>
+                            <p class="Tabelle_Heading">Check project </p>
+                        </th>
+                        <th>
+                            <p class="Tabelle_Heading">Placeholder</p>
+                        </th>
+                        <th>
+                            <p class="Tabelle_Heading">Information</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>P005086</p>
+                        </td>
+                        <td>
+                            <p>&lt;x&gt;<br /><br />&lt;y&gt;</p>
+                        </td>
+                        <td>
+                            <p>Source- or target-end <a href="Glossary_o_anschlussmass.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection dimension</a> of the connection or hose line<br /><br />Connection dimension of the connected source or target function</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>P005087</p>
+                        </td>
+                        <td>
+                            <p>&lt;x&gt;<br /><br />&lt;y&gt;</p>
+                        </td>
+                        <td>
+                            <p class="Tabelle_Text">Connection dimension of the source function<br /><br />Connection dimension of the target function</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The check runs obtain the values of the connection dimensions from the following <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a>:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><span class="gui">Connection dimension (all)</span> (<a href="Glossary_o_id.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ID</a> 20375): <br />This property is available to you at "normal" <span class="important">functions</span>. If the function disposes of several <a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a>, the respective connection dimensions of the connection points have to be separated by paragraph marks ("Â¶").</li>
+                <li class="Listitem_Normal" value="2"><span class="gui">Connection dimension source</span> (ID 31096) / <span class="gui">Connection dimension target</span> (ID 31097): <br />These properties are available to you at <span class="important">connection definition points</span>.</li>
+                <li class="Listitem_Normal" value="3"><span class="gui">Connection dimension source</span> (ID 20378) / <span class="gui">Connection dimension target</span> (ID 20379): <br />These properties are available to you at <span class="important">conduits / lines</span>. Both properties are relevant when you design connections by means of <a href="Glossary_o_schlauchleitungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">hose lines</a>.</li>
+            </ul>
+            <h4>Connection dimension in the parts management</h4>
+            <p>Manual entry of the connection dimension in the properties of <a href="Glossary_o_verbindungsdefinitionspunkte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection definition points</a>, <a href="Glossary_o_pakete.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">conduits</a> / <a href="Glossary_o_leitungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">lines</a> or "normal" functions is not required if you have stored the data about the connection dimension at the corresponding parts in the parts management. In this case the data for the connection dimension are transferred from the <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> to the respective function / connection at a part or device selection. The following points must be taken into consideration with regard to entering the connection dimension in the parts management:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><span class="important">Parts for functions:</span> The connection dimension is defined via the <a href="Glossary_o_funktionsschablonen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function templates</a> at "normal" parts such as <a href="Glossary_o_filter.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">filters</a>, valves, cylinders, etc. The value for the connection dimension therefore has to be entered in the parts management in the <span class="gui">Connection dimension</span> table column in the <span class="gui">Function templates</span> tab. EPLAN Fluid transfers the value to the <span class="gui">Connection dimension (all)</span> property of the function after the part or device selection. </li>
+                <li class="Listitem_Normal" value="2"><span class="important">Connection parts:</span> The connection dimension has to be entered in the <span class="gui">External diameter</span> field of the <span class="gui">Connection data</span> tab for parts of the <span class="gui">Fluid power connections</span> product group such as hoses or pipes. After the device or part selection the external diameter of the <span class="important">first</span> part selected is transferred both to the <span class="gui">Connection dimension source</span> property and the <span class="gui">Connection dimension target</span> property of the connection definition point. The external diameter is relevant, for example, at the selection of pneumatic hose parts that are planned for push-in fittings. The transfer of the external diameter to the previously named properties of the connection definition point is only possible if the function definition "Pipe", "Hose" or "Process engineering" is assigned to it.</li>
+                <li class="Listitem_Normal" value="3"><span class="important">Hose line parts:</span> Hose line parts are managed in the <span class="gui">Lines / conduits</span> product group. The source- and target-end connection dimension for the hose line part has to be stored in the <span class="gui">Lines / conduits</span> tab. The <span class="gui">Connection dimension source</span> and <span class="gui">Connection dimension target</span> fields are available there. During a device or part selection the values from the two fields are transferred to the properties of the same name, <span class="gui">Connection dimension source</span> and <span class="gui">Connection dimension target</span>, of the hose line in the schematic.</li>
+            </ul>
+            <h4>Connection dimension and hose line configurator</h4>
+            <p>In addition to the possibility of using series-production hose line parts, you can also define hose lines in EPLAN Fluid by using the hose line configurator (<a href="fluidhoseconfiggui_k_start.htm">EPLAN Fluid Hose Configurator</a>). For each configured hose line the program generates four individual parts at the conduit / line. These are assigned to the fitting left, the fitting right, the <a href="Glossary_o_hydraulik.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">hydraulics</a> hose and the complete hose line. </p>
+            <p>The connection dimension is stored in the parts management at the left-hand and right-hand fitting that you have to select when configuring a hose line. To this purpose you first branch into the tree view of the parts management to the <span class="gui">Accessories</span> product group of the fluid power parts. For the respective fittings you bring the <span class="gui">Function templates</span> tab to the front, select the <span class="gui">Fitting / screw connection, 2 connection points</span> function definition in Row 1 of the table and assign the desired value of the connection dimension in the column with the same name.</p>
+            <p>When defining the hose line the hose line configurator transfers the respective connection dimensions to the <span class="gui">Connection dimension source</span> and <span class="gui">Connection dimension target</span> properties of the hose line in the schematic.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Notes:</p>
+                <ul>
+                    <li class="Listitem_Normal" value="1">The <span class="gui">Fitting / screw connection, 2 connection points</span> function definition is located in the dialog <span class="gui">Function definitions</span>, in the <span class="gui">Fluid power &gt; Connection splicer / line connector, accessories &gt; Fitting / screw connection</span> branch of the tree structure.</li>
+                    <li class="Listitem_Normal" value="2">If you have subsequently modified one or both of the used fittings in the parts management, you have to update the <a href="Glossary_o_typencode.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">type code</a> in the hose line configurator so that the modification in the connection dimension also becomes effective in the schematic.</li>
+                </ul>
+            </div>
+            <h4>Correct specification of the connection dimension</h4>
+            <p> The two check runs for the connection dimension check that the entered values are the same. You must therefore ensure that the upper-case / lower case usage is the same when assigning the connection dimension to connections and functions. Blanks are ignored during checking. An exception is formed by blanks between digits of thread dimensions that are specified in the <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> of a mixed fraction. These blanks are combined internally into a blank for the check.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The following figure shows the same section of a pneumatic scheme with connection dimensions three times:</p>
+                        <p class="Infoblock"> In the left-hand schematic section the connection dimensions are entered without blanks at the functions and at the connection definition point (hose) and in the middle schematic section with blanks. Both entry versions are permissible. </p>
+                        <p class="Infoblock">In the right-hand schematic section the "G" in the <span class="gui">Connection dimension source</span> property at the connection definition point "1" is entered as a lower-case character, in the <span class="gui">Connection dimension (all)</span> property at the "P1.1" function by contrast as an upper-case character. The differing characters are evaluated as an error during the connection dimension check and result in the message P006086 "Different connection dimension 'g3/4' / 'G3/4' ". being output.</p>
+                        <p class="Infoblock">
+                            <img src="../Pictures/Visualisation/ALL/ftechnic_connection_dimension_av.png" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="msgmanagementgui_k_start.htm">EPLAN Message Management</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

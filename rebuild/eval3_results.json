@@ -1,0 +1,2746 @@
+{
+ "action||export project to EPJ format": {
+  "线上2026": {
+   "latency": 0.7011070251464844,
+   "results": [
+    {
+     "title": "export",
+     "score": 0.6763
+    },
+    {
+     "title": "export",
+     "score": 0.6592
+    },
+    {
+     "title": "PXFProject(Project,String,Boolean,Boolean) Method",
+     "score": 0.6541
+    },
+    {
+     "title": "ProjectToJT(Project,String) Method",
+     "score": 0.6487
+    },
+    {
+     "title": "Export",
+     "score": 0.6474
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/export.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/export.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export~PXFProject(Project,String,Boolean,Boolean).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export3D~ProjectToJT(Project,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.09087800979614258,
+   "results": [
+    {
+     "title": "Exporting Projects",
+     "score": 0.7726
+    },
+    {
+     "title": "Action: export",
+     "score": 0.7707
+    },
+    {
+     "title": "Importing Projects",
+     "score": 0.7564
+    },
+    {
+     "title": "PXFProject(Project,String,Boolean,Boolean) Method",
+     "score": 0.7547
+    },
+    {
+     "title": "Dialog Export Eplan Smart Production",
+     "score": 0.7519
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/projects_h_exportieren.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/availableactions_o_export.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/projects_h_importieren.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export~PXFProject(Project,String,Boolean,Boolean).html",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/edaexportgui_d_smartproductioncollection.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.06536388397216797,
+   "results": [
+    {
+     "title": "Exporting Projects",
+     "score": 0.7716
+    },
+    {
+     "title": "Action: export",
+     "score": 0.762
+    },
+    {
+     "title": "PDF File Export",
+     "score": 0.7473
+    },
+    {
+     "title": "Importing Projects",
+     "score": 0.7391
+    },
+    {
+     "title": "Publishing Projects",
+     "score": 0.738
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/projects_h_exportieren.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/availableactions_o_export.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/pdfexportgui_k_start.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/projects_h_importieren.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/projects_h_veroeffentlichen.htm"
+   ]
+  }
+ },
+ "action||gedRedraw": {
+  "线上2026": {
+   "latency": 0.589648962020874,
+   "results": [
+    {
+     "title": "gedRedraw",
+     "score": 0.6112
+    },
+    {
+     "title": "CreateRoundedRectangle(Project,Double,Double,Double) Method",
+     "score": 0.4911
+    },
+    {
+     "title": "RedrawGed Method",
+     "score": 0.4824
+    },
+    {
+     "title": "CreateRoundedRectangle(Project,Double,Double,Double) Method",
+     "score": 0.4804
+    },
+    {
+     "title": "CreateChamferedRectangle(Project,Double,Double,Double,List<Placement3D>) Method",
+     "score": 0.4774
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/gedRedraw.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Drilling~CreateRoundedRectangle(Project,Double,Double,Double).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Edit~RedrawGed.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Drilling~CreateRoundedRectangle(Project,Double,Double,Double).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/topic474.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.05614495277404785,
+   "results": [
+    {
+     "title": "gedRedraw",
+     "score": 0.7876
+    },
+    {
+     "title": "PropertyPlacementPropertyList Class",
+     "score": 0.586
+    },
+    {
+     "title": "ContextPropertyPlacementPropertyList Class",
+     "score": 0.5834
+    },
+    {
+     "title": "ContextPropertyPlacement3DPropertyList Class",
+     "score": 0.5834
+    },
+    {
+     "title": "PathTextPropertyList Class",
+     "score": 0.5834
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/gedRedraw.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.PropertyPlacementPropertyList.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ContextPropertyPlacementPropertyList.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.ContextPropertyPlacement3DPropertyList.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.PathTextPropertyList.html"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.03892397880554199,
+   "results": [
+    {
+     "title": "Drawing Circles, Arcs, and Ellipses",
+     "score": 0.6177
+    },
+    {
+     "title": "Drawing Lines and Rectangles",
+     "score": 0.6132
+    },
+    {
+     "title": "CreateRoundedRectangle Method",
+     "score": 0.5654
+    },
+    {
+     "title": "Creating GRAFCET diagrams",
+     "score": 0.5653
+    },
+    {
+     "title": "Creating Functional Diagrams",
+     "score": 0.5637
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/gededitgui_h_kreisezeichnen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/gededitgui_h_linienzeichnen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Drilling~CreateRoundedRectangle.html",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/functionaldiagramgui_h_grafcetdiagerstellen.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/functionaldiagramgui_h_funktionsdiagerstellen.htm"
+   ]
+  }
+ },
+ "action||generate connections from the schematic": {
+  "线上2026": {
+   "latency": 0.47092723846435547,
+   "results": [
+    {
+     "title": "ExportProductionWiring(Project,PWMachineType,String,String,String,Language,Boolean) Method",
+     "score": 0.5803
+    },
+    {
+     "title": "InterconnectDevices(ArrayList,ArrayList) Method",
+     "score": 0.5793
+    },
+    {
+     "title": "Connections(Project,Boolean) Method",
+     "score": 0.5785
+    },
+    {
+     "title": "generate",
+     "score": 0.575
+    },
+    {
+     "title": "Connections(Project,Boolean) Method",
+     "score": 0.5709
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/topic1323.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ConnectionService~InterconnectDevices(ArrayList,ArrayList).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Generate~Connections(Project,Boolean).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/generate.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Generate~Connections(Project,Boolean).html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.07608795166015625,
+   "results": [
+    {
+     "title": "Generating the current status of the schematic",
+     "score": 0.7589
+    },
+    {
+     "title": "Generating Unplaced Connections",
+     "score": 0.7556
+    },
+    {
+     "title": "Generating Connection Diagrams",
+     "score": 0.7467
+    },
+    {
+     "title": "Connections: Operation",
+     "score": 0.7433
+    },
+    {
+     "title": "Generating PLC Schematics",
+     "score": 0.7397
+    }
+   ],
+   "urls": [
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/tutp8_h_test3_generate_current_schematics.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/planningconnections_h_createconnections.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/panellayoutgui_h_verbindungsdiagramme.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/connectionbrowsergui_k_arbeitsweiseverbindungen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/plcgui_h_spsschaltplanerzeugen.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.03643369674682617,
+   "results": [
+    {
+     "title": "Generating Unplaced Connections",
+     "score": 0.7681
+    },
+    {
+     "title": "Generating Connection Diagrams",
+     "score": 0.751
+    },
+    {
+     "title": "Connections: Operation",
+     "score": 0.7441
+    },
+    {
+     "title": "Test 2 - Generate the current state of the ListOfComponents",
+     "score": 0.7362
+    },
+    {
+     "title": "Predefining Connection Properties",
+     "score": 0.7319
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/planningconnections_h_createconnections.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/panellayoutgui_h_verbindungsdiagramme.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/connectionbrowsergui_k_arbeitsweiseverbindungen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/tutp8_h_test2_generate_current_schematics.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/connectionbrowsergui_h_verbindungseigenschaftendefinieren.htm"
+   ]
+  }
+ },
+ "action||import device list from Excel": {
+  "线上2026": {
+   "latency": 0.4711480140686035,
+   "results": [
+    {
+     "title": "ImportDeviceList(Project,String,String) Method",
+     "score": 0.6575
+    },
+    {
+     "title": "ImportDeviceList(String,String,String) Method",
+     "score": 0.6481
+    },
+    {
+     "title": "ImportDeviceList(Project,String,Format) Method",
+     "score": 0.6398
+    },
+    {
+     "title": "ImportDevicesExcel Method",
+     "score": 0.6359
+    },
+    {
+     "title": "ImportDevicesExcel Method",
+     "score": 0.6281
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~ImportDeviceList(Project,String,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~ImportDeviceList(String,String,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~ImportDeviceList(Project,String,Format).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~ImportDevicesExcel.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~ImportDevicesExcel.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.0362248420715332,
+   "results": [
+    {
+     "title": "Importing Device Data and Devices",
+     "score": 0.7995
+    },
+    {
+     "title": "ImportDeviceList(String,String,Format) Method",
+     "score": 0.7418
+    },
+    {
+     "title": "Importing Externally Edited Properties",
+     "score": 0.7404
+    },
+    {
+     "title": "ImportDevicesExcel Method",
+     "score": 0.7399
+    },
+    {
+     "title": "ImportDeviceList(String,String,String) Method",
+     "score": 0.7382
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/projectprocessinggui_h_betriebsmittelimportieren.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~ImportDeviceList(String,String,Format).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/pxfinterface_h_datenimportieren.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~ImportDevicesExcel.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~ImportDeviceList(String,String,String).html"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.027782678604125977,
+   "results": [
+    {
+     "title": "Importing Device Data and Devices",
+     "score": 0.8132
+    },
+    {
+     "title": "ImportDeviceList(String,String,Format) Method",
+     "score": 0.7418
+    },
+    {
+     "title": "ImportDevicesExcel Method",
+     "score": 0.7399
+    },
+    {
+     "title": "ImportDeviceList(String,String,String) Method",
+     "score": 0.7382
+    },
+    {
+     "title": "ImportDeviceList(Project,String,Format) Method",
+     "score": 0.7327
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/projectprocessinggui_h_betriebsmittelimportieren.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~ImportDeviceList(String,String,Format).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~ImportDevicesExcel.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~ImportDeviceList(String,String,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~ImportDeviceList(Project,String,Format).html"
+   ]
+  }
+ },
+ "action||compress project": {
+  "线上2026": {
+   "latency": 0.5911831855773926,
+   "results": [
+    {
+     "title": "CompressProject(String,String) Method",
+     "score": 0.628
+    },
+    {
+     "title": "CompressProject(Project,String) Method",
+     "score": 0.6276
+    },
+    {
+     "title": "compress",
+     "score": 0.6151
+    },
+    {
+     "title": "CompressProject(Project,String) Method",
+     "score": 0.6123
+    },
+    {
+     "title": "CompressProject(String,String) Method",
+     "score": 0.599
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~CompressProject(String,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~CompressProject(Project,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/compress.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~CompressProject(Project,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~CompressProject(String,String).html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.06959414482116699,
+   "results": [
+    {
+     "title": "P005064: Invalid connection (source / target connection point does not exist)",
+     "score": 0.7836
+    },
+    {
+     "title": "P022017: The project contains excessive field length values in the database: <x>",
+     "score": 0.7805
+    },
+    {
+     "title": "P013056: The part with part number '<x>' and variant '<y>' does not exist in the database",
+     "score": 0.7698
+    },
+    {
+     "title": "P005017: Target and / or source does not exist",
+     "score": 0.7593
+    },
+    {
+     "title": "Compressing the Project",
+     "score": 0.7465
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/messages_p_005064.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/messages_p_022017.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/messages_p_013056.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/messages_p_005017.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/projectcleangui_k_start.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.03162193298339844,
+   "results": [
+    {
+     "title": "CompressProject(Project,String,String) Method",
+     "score": 0.7573
+    },
+    {
+     "title": "CompressProject(String,String,String) Method",
+     "score": 0.7501
+    },
+    {
+     "title": "CompressProject(Project,String) Method",
+     "score": 0.7465
+    },
+    {
+     "title": "Compressing the Project",
+     "score": 0.7446
+    },
+    {
+     "title": "CompressProject(String,String) Method",
+     "score": 0.741
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~CompressProject(Project,String,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~CompressProject(String,String,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~CompressProject(Project,String).html",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/projectcleangui_k_start.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~CompressProject(String,String).html"
+   ]
+  }
+ },
+ "api-exact||ReadProjectInfo method parameters": {
+  "线上2026": {
+   "latency": 0.509998083114624,
+   "results": [
+    {
+     "title": "ReadProjectInfo(String,String) Method",
+     "score": 0.7125
+    },
+    {
+     "title": "ReadProjectInfo(Project,String) Method",
+     "score": 0.7103
+    },
+    {
+     "title": "ReadProjectInfo(String,String) Method",
+     "score": 0.6986
+    },
+    {
+     "title": "ReadProjectInfo(Project,String) Method",
+     "score": 0.6975
+    },
+    {
+     "title": "ReadProjectInfo Method",
+     "score": 0.6718
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~ReadProjectInfo(String,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~ReadProjectInfo(Project,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~ReadProjectInfo(String,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~ReadProjectInfo(Project,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~ReadProjectInfo.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.04930281639099121,
+   "results": [
+    {
+     "title": "ReadProjectInfo Method",
+     "score": 0.7907
+    },
+    {
+     "title": "Action: projectmanagement",
+     "score": 0.7647
+    },
+    {
+     "title": "ImportData(Project,String,String,String,Boolean,PlanningSegment,Boolean,Boolean,Boolean) Method",
+     "score": 0.7564
+    },
+    {
+     "title": "Eplan.EplApi.OnPostOpenProject",
+     "score": 0.7531
+    },
+    {
+     "title": "ImportData(Project,String,String,String,Boolean,PlanningSegment,Boolean,Boolean,Boolean,Boolean,Boolean) Method",
+     "score": 0.7502
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~ReadProjectInfo.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/availableactions_o_projectmanagement.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/topic1405.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.OnPostOpenProject.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/topic1404.html"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.02973794937133789,
+   "results": [
+    {
+     "title": "ReadProjectInfo(Project,String) Method",
+     "score": 0.8257
+    },
+    {
+     "title": "ReadProjectInfo(String,String) Method",
+     "score": 0.824
+    },
+    {
+     "title": "Action: projectmanagement",
+     "score": 0.7766
+    },
+    {
+     "title": "Eplan.EplApi.OnPostOpenProject",
+     "score": 0.7657
+    },
+    {
+     "title": "ImportData(Project,String,String,String,Boolean,PlanningSegment,Boolean,Boolean,Boolean) Method",
+     "score": 0.7564
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~ReadProjectInfo(Project,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~ReadProjectInfo(String,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/availableactions_o_projectmanagement.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.OnPostOpenProject.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/topic2751.html"
+   ]
+  }
+ },
+ "api-exact||ConnectionDefPointProperties Property": {
+  "线上2026": {
+   "latency": 0.7154278755187988,
+   "results": [
+    {
+     "title": "ConnectionDefPointProperties Property",
+     "score": 0.7081
+    },
+    {
+     "title": "ConnectionDefPointProperties Property",
+     "score": 0.6986
+    },
+    {
+     "title": "ConnectionDefPoints Property",
+     "score": 0.6771
+    },
+    {
+     "title": "Properties",
+     "score": 0.6766
+    },
+    {
+     "title": "ConnectionDefPoints Property",
+     "score": 0.6676
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ConnectionDefPointProperties.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ConnectionDefPointProperties.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ConnectionDefPoints.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionPointPosition_properties.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ConnectionDefPoints.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.07578086853027344,
+   "results": [
+    {
+     "title": "ConnectionDefPointProperties Property",
+     "score": 0.8581
+    },
+    {
+     "title": "ConnectionDefPoints Property",
+     "score": 0.816
+    },
+    {
+     "title": "AsConnectionDefinitionPoint Property",
+     "score": 0.8064
+    },
+    {
+     "title": "AsConnectionPointsInfo Property",
+     "score": 0.8018
+    },
+    {
+     "title": "ConnectionDefinitionPointPropertyList Class",
+     "score": 0.79
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ConnectionDefPointProperties.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ConnectionDefPoints.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~AsConnectionDefinitionPoint.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~AsConnectionPointsInfo.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ConnectionDefinitionPointPropertyList.html"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.042243003845214844,
+   "results": [
+    {
+     "title": "ConnectionDefPointProperties Property",
+     "score": 0.8581
+    },
+    {
+     "title": "ConnectionDefPoints Property",
+     "score": 0.816
+    },
+    {
+     "title": "AsConnectionDefinitionPoint Property",
+     "score": 0.8064
+    },
+    {
+     "title": "AsConnectionPointsInfo Property",
+     "score": 0.8018
+    },
+    {
+     "title": "ARTICLE_CONNECTIONDESIGNATION(Int32) Property",
+     "score": 0.7904
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ConnectionDefPointProperties.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Connection~ConnectionDefPoints.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~AsConnectionDefinitionPoint.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.AnyPropertyId~AsConnectionPointsInfo.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticlePropertyList~ARTICLE_CONNECTIONDESIGNATION(Int32).html"
+   ]
+  }
+ },
+ "api-exact||OpenProject overloads": {
+  "线上2026": {
+   "latency": 0.6354742050170898,
+   "results": [
+    {
+     "title": "OpenProject(String,OpenMode) Method",
+     "score": 0.6563
+    },
+    {
+     "title": "OpenProject(String,OpenMode,Boolean) Method",
+     "score": 0.6559
+    },
+    {
+     "title": "OpenProject(String,OpenMode,Boolean) Method",
+     "score": 0.6466
+    },
+    {
+     "title": "OpenProject(String) Method",
+     "score": 0.6428
+    },
+    {
+     "title": "OpenProject(String,OpenMode) Method",
+     "score": 0.64
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectManager~OpenProject(String,OpenMode).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectManager~OpenProject(String,OpenMode,Boolean).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectManager~OpenProject(String,OpenMode,Boolean).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectManager~OpenProject(String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectManager~OpenProject(String,OpenMode).html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.051680803298950195,
+   "results": [
+    {
+     "title": "OpenProject Method",
+     "score": 0.8165
+    },
+    {
+     "title": "ProjectOpenException Constructor",
+     "score": 0.7564
+    },
+    {
+     "title": "ProjectManager Class",
+     "score": 0.7552
+    },
+    {
+     "title": "PROJ_PROJECTBEGIN Property",
+     "score": 0.7511
+    },
+    {
+     "title": "OpenProject(String,OpenMode,Boolean) Method",
+     "score": 0.7413
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectManager~OpenProject.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectOpenException~_ctor.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectManager.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectPropertyList~PROJ_PROJECTBEGIN.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectManager~OpenProject(String,OpenMode,Boolean).html"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.030222177505493164,
+   "results": [
+    {
+     "title": "OpenProject Method",
+     "score": 0.8165
+    },
+    {
+     "title": "ProjectOpenException Constructor",
+     "score": 0.7564
+    },
+    {
+     "title": "ProjectManager Class",
+     "score": 0.7466
+    },
+    {
+     "title": "OpenProject(String,OpenMode,Boolean) Method",
+     "score": 0.7413
+    },
+    {
+     "title": "OpenProjects Property",
+     "score": 0.738
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectManager~OpenProject.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectOpenException~_ctor.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectManager.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectManager~OpenProject(String,OpenMode,Boolean).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ProjectManager~OpenProjects.html"
+   ]
+  }
+ },
+ "api-exact||Layer Management class": {
+  "线上2026": {
+   "latency": 0.6749951839447021,
+   "results": [
+    {
+     "title": "ReplaceLayer(StorableObject[],GraphicalLayer,GraphicalLayer) Method",
+     "score": 0.5737
+    },
+    {
+     "title": "ReassignLayer Method",
+     "score": 0.5699
+    },
+    {
+     "title": "MergeLayers Method",
+     "score": 0.5673
+    },
+    {
+     "title": "Methods",
+     "score": 0.5596
+    },
+    {
+     "title": "Methods",
+     "score": 0.5551
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/topic708.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.GraphicalLayerTable~ReassignLayer.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.GraphicalLayerTable~MergeLayers.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.GraphicalLayerTable_methods.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.PlaceHolder_methods.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.058402061462402344,
+   "results": [
+    {
+     "title": "Layers: Principle",
+     "score": 0.7458
+    },
+    {
+     "title": "Dialog Layer management - <Project name>",
+     "score": 0.743
+    },
+    {
+     "title": "Finding Layers",
+     "score": 0.7252
+    },
+    {
+     "title": "Layer Management",
+     "score": 0.7209
+    },
+    {
+     "title": "Exporting and Importing the Layer Management Configuration",
+     "score": 0.7193
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/layermanager_k_prinzip.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/layermanager_d_ebenenverwaltung.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/layermanager_h_ebenensuchen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/layermanager_k_start.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/layermanager_h_ebenenkonfigurationexportieren.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.028239965438842773,
+   "results": [
+    {
+     "title": "Extensions in Layer Management",
+     "score": 0.7509
+    },
+    {
+     "title": "Dialog Layer management - <Project name>",
+     "score": 0.7483
+    },
+    {
+     "title": "Layers: Principle",
+     "score": 0.7395
+    },
+    {
+     "title": "Working with Layers",
+     "score": 0.7315
+    },
+    {
+     "title": "Layer Management",
+     "score": 0.7211
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/news_p_ebenenverwaltung_erweiterungen_233970.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/layermanager_d_ebenenverwaltung.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/layermanager_k_prinzip.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/layermanager_h_ebenenbearbeiten.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/layermanager_k_start.htm"
+   ]
+  }
+ },
+ "api-exact||Terminal property": {
+  "线上2026": {
+   "latency": 0.4947378635406494,
+   "results": [
+    {
+     "title": "FUNC_TERMINAL_HAS_LED Property",
+     "score": 0.6848
+    },
+    {
+     "title": "FUNC_TERMINAL_HAS_LED Property",
+     "score": 0.6813
+    },
+    {
+     "title": "IsMainTerminal Property",
+     "score": 0.6795
+    },
+    {
+     "title": "FUNC_TERMINAL_SECONDARY Property",
+     "score": 0.6747
+    },
+    {
+     "title": "FUNC_TERMINAL_CANHAVESAMENAME Property",
+     "score": 0.6734
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_TERMINAL_HAS_LED().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_TERMINAL_HAS_LED().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Terminal~IsMainTerminal.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_TERMINAL_SECONDARY().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_TERMINAL_CANHAVESAMENAME().html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.06409811973571777,
+   "results": [
+    {
+     "title": "FUNC_TERMINAL_FUNCTION Property",
+     "score": 0.8053
+    },
+    {
+     "title": "FUNC_TERMINAL_FUNCTION Property",
+     "score": 0.8053
+    },
+    {
+     "title": "FUNC_TERMINAL_MAIN Property",
+     "score": 0.799
+    },
+    {
+     "title": "FUNC_TERMINAL_MAIN Property",
+     "score": 0.799
+    },
+    {
+     "title": "FUNC_TERMINAL_FORM Property",
+     "score": 0.792
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_TERMINAL_FUNCTION().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_TERMINAL_FUNCTION().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_TERMINAL_MAIN().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_TERMINAL_MAIN().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_TERMINAL_FORM().html"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.05870699882507324,
+   "results": [
+    {
+     "title": "FUNC_TERMINAL_FUNCTION Property",
+     "score": 0.8053
+    },
+    {
+     "title": "FUNC_TERMINAL_FUNCTION(Int32) Property",
+     "score": 0.8053
+    },
+    {
+     "title": "FUNC_TERMINAL_FUNCTION(Int32) Property",
+     "score": 0.8053
+    },
+    {
+     "title": "FUNC_TERMINAL_FUNCTION Property",
+     "score": 0.8053
+    },
+    {
+     "title": "FUNC_TERMINAL_MAIN(Int32) Property",
+     "score": 0.7825
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_TERMINAL_FUNCTION().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_TERMINAL_FUNCTION(Int32).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_TERMINAL_FUNCTION(Int32).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_TERMINAL_FUNCTION().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_TERMINAL_MAIN(Int32).html"
+   ]
+  }
+ },
+ "api-exact||FindAction method": {
+  "线上2026": {
+   "latency": 0.6417911052703857,
+   "results": [
+    {
+     "title": "FindAction(String) Method",
+     "score": 0.7235
+    },
+    {
+     "title": "FindAction(String) Method",
+     "score": 0.7197
+    },
+    {
+     "title": "FindAction(String) Method",
+     "score": 0.714
+    },
+    {
+     "title": "FindAction(String,Boolean) Method",
+     "score": 0.7116
+    },
+    {
+     "title": "FindAction(String,Boolean) Method",
+     "score": 0.7101
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindAction(String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindAction(String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindAction(String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindAction(String,Boolean).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindAction(String,Boolean).html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.049072980880737305,
+   "results": [
+    {
+     "title": "FindAction Method",
+     "score": 0.8484
+    },
+    {
+     "title": "FindAction(String) Method",
+     "score": 0.8333
+    },
+    {
+     "title": "FindAction(String,Boolean) Method",
+     "score": 0.8127
+    },
+    {
+     "title": "FindBaseAction Method",
+     "score": 0.7889
+    },
+    {
+     "title": "FindBaseActionFromFunctionAction Method",
+     "score": 0.7859
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindAction(String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindAction(String,Boolean).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindBaseAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindBaseActionFromFunctionAction.html"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.029987812042236328,
+   "results": [
+    {
+     "title": "FindAction Method",
+     "score": 0.8484
+    },
+    {
+     "title": "FindAction(String) Method",
+     "score": 0.8333
+    },
+    {
+     "title": "FindAction(String,Boolean) Method",
+     "score": 0.8127
+    },
+    {
+     "title": "FindBaseAction Method",
+     "score": 0.7889
+    },
+    {
+     "title": "FindBaseActionFromFunctionAction Method",
+     "score": 0.7859
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindAction(String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindAction(String,Boolean).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindBaseAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.ActionManager~FindBaseActionFromFunctionAction.html"
+   ]
+  }
+ },
+ "howto||how to correct project data in the project management": {
+  "线上2026": {
+   "latency": 0.7111082077026367,
+   "results": [
+    {
+     "title": "CorrectProjectItems(Project,String) Method",
+     "score": 0.6165
+    },
+    {
+     "title": "CorrectProjectItems Method",
+     "score": 0.6094
+    },
+    {
+     "title": "CorrectProjectItems(Project,String) Method",
+     "score": 0.6018
+    },
+    {
+     "title": "ProjectManagement",
+     "score": 0.6007
+    },
+    {
+     "title": "Properties.Project",
+     "score": 0.5961
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~CorrectProjectItems(Project,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~CorrectProjectItems.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement~CorrectProjectItems(Project,String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ProjectManagement.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Project.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.05655789375305176,
+   "results": [
+    {
+     "title": "Cleaning up projects",
+     "score": 0.8064
+    },
+    {
+     "title": "Reorganizing Projects",
+     "score": 0.7642
+    },
+    {
+     "title": "Finding and Storing Missing Project Master Data, Updating Projects",
+     "score": 0.7429
+    },
+    {
+     "title": "Finding and Storing Missing Project Master Data, Updating Projects",
+     "score": 0.7373
+    },
+    {
+     "title": "Compressible Project Data",
+     "score": 0.7365
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/projectcorrectiongui_k_start.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/projects_h_projektreorganisieren.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/xmasterdatasettingsgui_h_stammdatenprojektvervollstaendigen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/xmasterdatasettingsgui_h_stammdatenprojektvervollstaendigen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/projectcleangui_k_komprimierungsdaten.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.037010908126831055,
+   "results": [
+    {
+     "title": "Project Correction",
+     "score": 0.7967
+    },
+    {
+     "title": "Reorganizing Projects",
+     "score": 0.7647
+    },
+    {
+     "title": "Completion of the PLC Data Moved Into Project Correction",
+     "score": 0.743
+    },
+    {
+     "title": "Dialog Project management",
+     "score": 0.7409
+    },
+    {
+     "title": "Finding and Storing Missing Project Master Data, Updating Projects",
+     "score": 0.7361
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/projectcorrectiongui_k_start.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/projects_h_projektreorganisieren.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/news_p_sps_projektkorrigieren_244271.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/prjmanagementgui_d_projektverwaltung.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/xmasterdatasettingsgui_h_stammdatenprojektvervollstaendigen.htm"
+   ]
+  }
+ },
+ "howto||generate terminal diagrams from the schematic": {
+  "线上2026": {
+   "latency": 0.6750290393829346,
+   "results": [
+    {
+     "title": "Terminals(Project,TerminalsSequence,TerminalsPotential,TerminalsPotential,TerminalsPotential,MultipleTerminals,TerminalsWithAlphabeticalCharacters,String,Int32,Int32,String,String,Boolean,Boolean) Method",
+     "score": 0.5882
+    },
+    {
+     "title": "Terminals(Project,TerminalsSequence,TerminalsPotential,TerminalsPotential,TerminalsPotential,MultipleTerminals,TerminalsWithAlphabeticalCharacters,String,Int32,Int32,String,String,Boolean,Boolean,Boolean,Boolean) Method",
+     "score": 0.5879
+    },
+    {
+     "title": "CablePropertyListComplete",
+     "score": 0.5851
+    },
+    {
+     "title": "InstallationSpacePropertyList",
+     "score": 0.5757
+    },
+    {
+     "title": "Function3DPropertyList",
+     "score": 0.5748
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/topic1445.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/topic1443.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.CablePropertyListComplete.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.InstallationSpacePropertyList.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Function3DPropertyList.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.05200695991516113,
+   "results": [
+    {
+     "title": "Generating PLC Schematics",
+     "score": 0.7597
+    },
+    {
+     "title": "Generating Connection Diagrams",
+     "score": 0.7532
+    },
+    {
+     "title": "Creating and Editing Terminal Strips",
+     "score": 0.7455
+    },
+    {
+     "title": "Generating and Editing Terminals",
+     "score": 0.736
+    },
+    {
+     "title": "Defining Multi-level Terminals",
+     "score": 0.7322
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/plcgui_h_spsschaltplanerzeugen.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/panellayoutgui_h_verbindungsdiagramme.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/terminalgui_h_klemmenleistenerstlbearb.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/terminalgui_h_klemmenerstlbearb.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/terminalgui_h_mehrstockklemmenarbeit.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.03405427932739258,
+   "results": [
+    {
+     "title": "Generating Connection Diagrams",
+     "score": 0.7508
+    },
+    {
+     "title": "Creating and Editing Terminal Strips",
+     "score": 0.7474
+    },
+    {
+     "title": "Generating and Editing Terminals",
+     "score": 0.7379
+    },
+    {
+     "title": "Generating PLC Schematics",
+     "score": 0.7373
+    },
+    {
+     "title": "Generating and Editing Terminals",
+     "score": 0.736
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/panellayoutgui_h_verbindungsdiagramme.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/terminalgui_h_klemmenleistenerstlbearb.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/terminalgui_h_klemmenerstlbearb.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/plcgui_h_spsschaltplanerzeugen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/terminalgui_h_klemmenerstlbearb.htm"
+   ]
+  }
+ },
+ "howto||create a plot frame": {
+  "线上2026": {
+   "latency": 0.47883105278015137,
+   "results": [
+    {
+     "title": "PlotFramePropertyList Constructor(PlotFrame)",
+     "score": 0.6117
+    },
+    {
+     "title": "PlotFramePropertyList Constructor(PlotFrame)",
+     "score": 0.5876
+    },
+    {
+     "title": "PlotFrame",
+     "score": 0.5835
+    },
+    {
+     "title": "FRAME_IMPORTERROR Property",
+     "score": 0.5814
+    },
+    {
+     "title": "PlotFrame",
+     "score": 0.5757
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PlotFramePropertyList~_ctor(PlotFrame).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PlotFramePropertyList~_ctor(PlotFrame).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PlotFrame.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PlotFramePropertyList~FRAME_IMPORTERROR(Int32).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PlotFrame.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.05013704299926758,
+   "results": [
+    {
+     "title": "Creating Plot Frames",
+     "score": 0.815
+    },
+    {
+     "title": "Copying Plot Frames",
+     "score": 0.8015
+    },
+    {
+     "title": "Editing Plot Frame Properties",
+     "score": 0.7496
+    },
+    {
+     "title": "Inserting and Editing Special Text",
+     "score": 0.7309
+    },
+    {
+     "title": "Defining the Plot Frame and Path Numbering",
+     "score": 0.724
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/formeditorgui_h_normblaettererzeugen.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/formeditorgui_h_normblaetterkopieren.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/formeditorgui_h_normblatteigenschaftenbearbeiten.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/formeditorgui_h_sondertexteeinfuegen.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/projects_h_normblattpfad.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.034490108489990234,
+   "results": [
+    {
+     "title": "Creating Plot Frames",
+     "score": 0.7887
+    },
+    {
+     "title": "Copying Plot Frames",
+     "score": 0.7855
+    },
+    {
+     "title": "Editing Plot Frame Properties",
+     "score": 0.7405
+    },
+    {
+     "title": "Defining the Plot Frame and Path Numbering",
+     "score": 0.7234
+    },
+    {
+     "title": "Inserting and Editing Special Text",
+     "score": 0.7145
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/formeditorgui_h_normblaettererzeugen.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/formeditorgui_h_normblaetterkopieren.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/formeditorgui_h_normblatteigenschaftenbearbeiten.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/projects_h_normblattpfad.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/formeditorgui_h_sondertexteeinfuegen.htm"
+   ]
+  }
+ },
+ "howto||create page macros": {
+  "线上2026": {
+   "latency": 0.4755370616912842,
+   "results": [
+    {
+     "title": "Create Method",
+     "score": 0.6443
+    },
+    {
+     "title": "PAGE_MACRO Property",
+     "score": 0.6377
+    },
+    {
+     "title": "Create Method",
+     "score": 0.6358
+    },
+    {
+     "title": "PageMacro(String,Page,Project,Boolean,NumerationMode) Method",
+     "score": 0.6269
+    },
+    {
+     "title": "PageMacro(PageMacro,Project,Boolean[],NumerationMode) Method",
+     "score": 0.6235
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PageMacro~Create.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PagePropertyList~PAGE_MACRO().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PageMacro~Create.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Insert~PageMacro(String,Page,Project,Boolean,NumerationMode).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Insert~PageMacro(PageMacro,Project,Boolean[],NumerationMode).html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.04407191276550293,
+   "results": [
+    {
+     "title": "Creating Macros",
+     "score": 0.8554
+    },
+    {
+     "title": "Generating Macros from a Macro Project",
+     "score": 0.8376
+    },
+    {
+     "title": "Inserting Macros",
+     "score": 0.8242
+    },
+    {
+     "title": "Create Method (PageMacro)",
+     "score": 0.8165
+    },
+    {
+     "title": "Drag & Drop",
+     "score": 0.799
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/macrosgui_h_makroserzeugen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/macrosgui_h_makrosausmakroprojekt.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/macrosgui_h_makrosauswaehlen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PageMacro~Create.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/userinterface_k_dragdropfunktionen.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.025057077407836914,
+   "results": [
+    {
+     "title": "Creating Macros",
+     "score": 0.8615
+    },
+    {
+     "title": "Generating Macros from a Macro Project",
+     "score": 0.8291
+    },
+    {
+     "title": "Create Method (PageMacro)",
+     "score": 0.8165
+    },
+    {
+     "title": "Inserting Macros",
+     "score": 0.8094
+    },
+    {
+     "title": "Creating Macros",
+     "score": 0.7907
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/macrosgui_h_makroserzeugen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/macrosgui_h_makrosausmakroprojekt.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PageMacro~Create.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/macrosgui_h_makrosauswaehlen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/macrosgui_h_makroserzeugen.htm"
+   ]
+  }
+ },
+ "howto||navigate the 3D layout space": {
+  "线上2026": {
+   "latency": 0.5001070499420166,
+   "results": [
+    {
+     "title": "InstallationSpace",
+     "score": 0.5509
+    },
+    {
+     "title": "Properties",
+     "score": 0.5461
+    },
+    {
+     "title": "Properties",
+     "score": 0.5437
+    },
+    {
+     "title": "export3d",
+     "score": 0.543
+    },
+    {
+     "title": "Edit3D",
+     "score": 0.5427
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.InstallationSpace.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PlanePropertyList_properties.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Connection3DPropertyList_properties.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/export3d.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Edit3D.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.05062103271484375,
+   "results": [
+    {
+     "title": "Managing Layout Space Views",
+     "score": 0.7748
+    },
+    {
+     "title": "Changing the 3D View of the Layout Space",
+     "score": 0.7724
+    },
+    {
+     "title": "Changing the 3D View of the Layout Space",
+     "score": 0.7701
+    },
+    {
+     "title": "3D Mounting Layout: Principle",
+     "score": 0.7694
+    },
+    {
+     "title": "Generating 3D Views of the Layout Space with the Navigation Cube",
+     "score": 0.7684
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/cabinetgui_h_bauraumansichtenverwalten.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/cabinetgui_h_bauraumansichten.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/cabinetgui_h_bauraumansichten.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/cabinetgui_k_prinzip.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/cabinetgui_h_navigationswuerfelsteuern.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.034493207931518555,
+   "results": [
+    {
+     "title": "Changing the 3D Viewpoint of the Layout Space by Means of Shortcut Keys",
+     "score": 0.7818
+    },
+    {
+     "title": "Layout space: Definition of term",
+     "score": 0.7772
+    },
+    {
+     "title": "3D Mounting Layout: Principle",
+     "score": 0.7694
+    },
+    {
+     "title": "3D Mounting Layout with EPLAN Pro Panel",
+     "score": 0.7657
+    },
+    {
+     "title": "Changing the 3D View of the Layout Space",
+     "score": 0.7566
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/news_p_propanel_blickpunkt_tastenkombinationen_226871.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/Glossary_o_bauraum.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/cabinetgui_k_prinzip.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/cabinetgui_k_start.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/cabinetgui_h_bauraumansichten.htm"
+   ]
+  }
+ },
+ "howto||edit the graphical layer table": {
+  "线上2026": {
+   "latency": 0.5756690502166748,
+   "results": [
+    {
+     "title": "GraphicalLayerTable",
+     "score": 0.5968
+    },
+    {
+     "title": "ReplaceLayer(StorableObject[],GraphicalLayer,GraphicalLayer) Method",
+     "score": 0.5891
+    },
+    {
+     "title": "GraphicalLayer",
+     "score": 0.5861
+    },
+    {
+     "title": "ReplaceLayer(StorableObject[],GraphicalLayer) Method",
+     "score": 0.5843
+    },
+    {
+     "title": "graphicallayertable",
+     "score": 0.5801
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.GraphicalLayerTable.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/topic708.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.GraphicalLayer.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/topic707.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/graphicallayertable.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.07541871070861816,
+   "results": [
+    {
+     "title": "Editing Objects in Tables",
+     "score": 0.7395
+    },
+    {
+     "title": "Dialog Edit in table - <Project name>",
+     "score": 0.737
+    },
+    {
+     "title": "Defining and Editing Background Images",
+     "score": 0.7176
+    },
+    {
+     "title": "Action: GraphicalLayerTable",
+     "score": 0.716
+    },
+    {
+     "title": "Tab Layers",
+     "score": 0.7132
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/functiondatagridgui_h_tabellarischbearbeiten.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/functiondatagridgui_d_tabellarischbearbeiten.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/gededitgui_h_hintergrundbearbeiten.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/availableactions_o_GraphicalLayerTable.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/xdxfgui_r_ebenen.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.04158616065979004,
+   "results": [
+    {
+     "title": "Editing Objects in Tables",
+     "score": 0.725
+    },
+    {
+     "title": "Dialog Project options - <Project name>",
+     "score": 0.7137
+    },
+    {
+     "title": "Defining and Editing Background Images",
+     "score": 0.7132
+    },
+    {
+     "title": "Dialog Layer management - <Project name>",
+     "score": 0.7091
+    },
+    {
+     "title": "Dialog Edit in table - <Project name>",
+     "score": 0.7056
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/functiondatagridgui_h_tabellarischbearbeiten.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/projectoptionsgui_d_optionsnavigator.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/gededitgui_h_hintergrundbearbeiten.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/layermanager_d_ebenenverwaltung.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/functiondatagridgui_d_tabellarischbearbeiten.htm"
+   ]
+  }
+ },
+ "version||XEsGetProjectPropertyAction parameters": {
+  "线上2026": {
+   "latency": 0.8021833896636963,
+   "results": [
+    {
+     "title": "XEsGetProjectPropertyAction",
+     "score": 0.6973
+    },
+    {
+     "title": "XEsSetProjectPropertyAction",
+     "score": 0.6875
+    },
+    {
+     "title": "XEsGetPropertyAction",
+     "score": 0.6613
+    },
+    {
+     "title": "CreateFromProjectProperties Method",
+     "score": 0.6457
+    },
+    {
+     "title": "GetProjectPropertyEntry Method",
+     "score": 0.6387
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/XEsGetProjectPropertyAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/XEsSetProjectPropertyAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/XEsGetPropertyAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ContextPropertyPlacement~CreateFromProjectProperties.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.IPlaceHolder~GetProjectPropertyEntry.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.10019493103027344,
+   "results": [
+    {
+     "title": "XEsGetProjectPropertyAction",
+     "score": 0.8549
+    },
+    {
+     "title": "Action: XEsGetProjectPropertyAction",
+     "score": 0.8285
+    },
+    {
+     "title": "XEsSetProjectPropertyAction",
+     "score": 0.8108
+    },
+    {
+     "title": "XEsGetPropertyAction",
+     "score": 0.8039
+    },
+    {
+     "title": "Action: XEsSetProjectPropertyAction",
+     "score": 0.8005
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/XEsGetProjectPropertyAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/availableactions_o_xesgetprojectpropertyaction.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/XEsSetProjectPropertyAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/XEsGetPropertyAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/availableactions_o_xessetprojectpropertyaction.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.04767298698425293,
+   "results": [
+    {
+     "title": "XEsSetProjectPropertyAction",
+     "score": 0.8026
+    },
+    {
+     "title": "Action: XEsSetProjectPropertyAction",
+     "score": 0.7924
+    },
+    {
+     "title": "XEsUserPropertiesImportAction",
+     "score": 0.7652
+    },
+    {
+     "title": "EPLAN Actions: Overview",
+     "score": 0.7648
+    },
+    {
+     "title": "Action: XEsUserPropertiesImportAction",
+     "score": 0.7606
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XEsSetProjectPropertyAction",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/availableactions_o_xessetprojectpropertyaction.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XEsUserPropertiesImportAction",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/availableactions_o_eplanaktionen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/availableactions_o_xesuserpropertiesimportaction.htm"
+   ]
+  }
+ },
+ "version||preplanning segments": {
+  "线上2026": {
+   "latency": 0.44590115547180176,
+   "results": [
+    {
+     "title": "PrePlanningMacro Method",
+     "score": 0.573
+    },
+    {
+     "title": "MoveDown(PlanningSegment) Method",
+     "score": 0.5708
+    },
+    {
+     "title": "PrePlanningService",
+     "score": 0.5623
+    },
+    {
+     "title": "MoveDown(ICollection<PlanningSegment>) Method",
+     "score": 0.5601
+    },
+    {
+     "title": "PrePlanningMacro",
+     "score": 0.5571
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Insert~PrePlanningMacro.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.PrePlanningService~MoveDown(PlanningSegment).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.PrePlanningService.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.PrePlanningService~MoveDown(ICollection{PlanningSegment}).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MasterData.PrePlanningMacro.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.052849769592285156,
+   "results": [
+    {
+     "title": "Pre-planning: Procedure",
+     "score": 0.7371
+    },
+    {
+     "title": "PrePlanningMacro Method",
+     "score": 0.7341
+    },
+    {
+     "title": "Segment Templates",
+     "score": 0.726
+    },
+    {
+     "title": "Eplan Properties",
+     "score": 0.7197
+    },
+    {
+     "title": "Eplan Properties",
+     "score": 0.7182
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/planninggui_k_vorgehensweise.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Insert~PrePlanningMacro.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/planninggui_k_segmentvorlagen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/properties_o_main.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/properties_o_main.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.032340049743652344,
+   "results": [
+    {
+     "title": "Segments: Definition of term",
+     "score": 0.7709
+    },
+    {
+     "title": "Structure segments: Definition of term",
+     "score": 0.7588
+    },
+    {
+     "title": "Further Optimizations for the EPLAN Platform and Its Products",
+     "score": 0.754
+    },
+    {
+     "title": "Segment definitions: Definition of term",
+     "score": 0.7387
+    },
+    {
+     "title": "PrePlanningMacro Method",
+     "score": 0.7341
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/Glossary_o_segmente.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/Glossary_o_struktursegmente.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/news_p_benutzeroberflaeche_optimierungen_239173.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/Glossary_o_segmentdefinitionen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Insert~PrePlanningMacro.html"
+   ]
+  }
+ },
+ "version||save workspace action": {
+  "线上2026": {
+   "latency": 0.4544486999511719,
+   "results": [
+    {
+     "title": "SaveWorkspaceAction",
+     "score": 0.6923
+    },
+    {
+     "title": "Actions",
+     "score": 0.6277
+    },
+    {
+     "title": "CleanWorkspaceAction",
+     "score": 0.6007
+    },
+    {
+     "title": "OpenWorkspaceAction",
+     "score": 0.5746
+    },
+    {
+     "title": "export3d",
+     "score": 0.5537
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/SaveWorkspaceAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/API",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/CleanWorkspaceAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/OpenWorkspaceAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/export3d.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.051532745361328125,
+   "results": [
+    {
+     "title": "Action: SaveWorkspaceAction",
+     "score": 0.8177
+    },
+    {
+     "title": "SaveWorkspaceAction",
+     "score": 0.8093
+    },
+    {
+     "title": "Working with Workspaces",
+     "score": 0.7467
+    },
+    {
+     "title": "Action: CleanWorkspaceAction",
+     "score": 0.7358
+    },
+    {
+     "title": "Action: OpenWorkspaceAction",
+     "score": 0.7266
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/availableactions_o_xsvsaveworkspaceaction.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/SaveWorkspaceAction.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/modaldialogs_h_mitarbeitsbereichenarbeiten.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/availableactions_o_xsvcleanworkspaceaction.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/availableactions_o_xsvopenworkspaceaction.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.027714014053344727,
+   "results": [
+    {
+     "title": "Action: SaveWorkspaceAction",
+     "score": 0.8177
+    },
+    {
+     "title": "SaveWorkspaceAction",
+     "score": 0.8126
+    },
+    {
+     "title": "Working with Workspaces",
+     "score": 0.7302
+    },
+    {
+     "title": "Action: OpenWorkspaceAction",
+     "score": 0.7266
+    },
+    {
+     "title": "Working with Workspaces",
+     "score": 0.705
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/availableactions_o_xsvsaveworkspaceaction.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/SaveWorkspaceAction",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/modaldialogs_h_mitarbeitsbereichenarbeiten.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/availableactions_o_xsvopenworkspaceaction.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/modaldialogs_h_mitarbeitsbereichenarbeiten.htm"
+   ]
+  }
+ },
+ "version||API action list": {
+  "线上2026": {
+   "latency": 0.8174407482147217,
+   "results": [
+    {
+     "title": "Actions",
+     "score": 0.6383
+    },
+    {
+     "title": "Actions",
+     "score": 0.636
+    },
+    {
+     "title": "Action",
+     "score": 0.631
+    },
+    {
+     "title": "Action",
+     "score": 0.6302
+    },
+    {
+     "title": "Actions",
+     "score": 0.6288
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/API",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/API",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.Action.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.Action.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/API"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.04104804992675781,
+   "results": [
+    {
+     "title": "Actions",
+     "score": 0.7608
+    },
+    {
+     "title": "Action: ExecuteScript",
+     "score": 0.7111
+    },
+    {
+     "title": "Action: devicelist",
+     "score": 0.6988
+    },
+    {
+     "title": "action",
+     "score": 0.6888
+    },
+    {
+     "title": "Save Form-UI",
+     "score": 0.6876
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/API",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/availableactions_o_executescript.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/availableactions_o_devicelist.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/refgraph2d_r_action.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/refformui_r_save_ui.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.030623912811279297,
+   "results": [
+    {
+     "title": "Actions",
+     "score": 0.763
+    },
+    {
+     "title": "API Parts Management Extension",
+     "score": 0.713
+    },
+    {
+     "title": "Action: ExecuteScript",
+     "score": 0.7122
+    },
+    {
+     "title": "Calling actions",
+     "score": 0.7039
+    },
+    {
+     "title": "Actions",
+     "score": 0.7015
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PartsManagementExtension.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/availableactions_o_executescript.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/CallingActions.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/refformui_r_actions.htm"
+   ]
+  }
+ },
+ "eec||creating a configuration by importing an XML file": {
+  "线上2026": {
+   "latency": 0.5794758796691895,
+   "results": [
+    {
+     "title": "XSettingsImport",
+     "score": 0.575
+    },
+    {
+     "title": "Import Method",
+     "score": 0.568
+    },
+    {
+     "title": "ImportScheme Method",
+     "score": 0.5639
+    },
+    {
+     "title": "Import Method",
+     "score": 0.5507
+    },
+    {
+     "title": "Methods",
+     "score": 0.5441
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/XSettingsImport.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.IXMLProcessor~Import.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.Baseu~Eplan.EplApi.Base.SchemeSetting~ImportScheme.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.GraphicalLayerTable~Import.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.PartsService_methods.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.05225515365600586,
+   "results": [
+    {
+     "title": "Part 1 - Creating a configuration by importing a file",
+     "score": 0.8027
+    },
+    {
+     "title": "Creating a configuration by importing an XML file",
+     "score": 0.7891
+    },
+    {
+     "title": "Task: Creating a configuration by importing",
+     "score": 0.7692
+    },
+    {
+     "title": "Action: XSettingsImport",
+     "score": 0.7575
+    },
+    {
+     "title": "EPLAN Engineering Configuration",
+     "score": 0.7369
+    }
+   ],
+   "urls": [
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/tutimp_h_t1_create_project.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/tutimp_h_t1_create_project_xml.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/tutimp_h_task_import_project.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/availableactions_o_xsettingsimport.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/main_k_introduction.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.029539108276367188,
+   "results": [
+    {
+     "title": "Part 1 - Creating a configuration by importing a file",
+     "score": 0.8055
+    },
+    {
+     "title": "Creating a configuration by importing an XML file",
+     "score": 0.7715
+    },
+    {
+     "title": "Action: XSettingsImport",
+     "score": 0.755
+    },
+    {
+     "title": "Task: Creating a configuration by importing",
+     "score": 0.7542
+    },
+    {
+     "title": "Creating a configuration by importing an IMX file",
+     "score": 0.7401
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/tutimp_h_t1_create_project.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/tutimp_h_t1_create_project_xml.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/availableactions_o_xsettingsimport.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/tutimp_h_task_import_project.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/tutimp_h_t1_create_project_imx.htm"
+   ]
+  }
+ },
+ "eec||formula language abs function": {
+  "线上2026": {
+   "latency": 0.6778807640075684,
+   "results": [
+    {
+     "title": "Properties.Function",
+     "score": 0.5353
+    },
+    {
+     "title": "Cable",
+     "score": 0.5338
+    },
+    {
+     "title": "Properties.Function",
+     "score": 0.528
+    },
+    {
+     "title": "Function",
+     "score": 0.5252
+    },
+    {
+     "title": "Properties.FunctionBase",
+     "score": 0.5236
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Function.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.Cable.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Function.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Function.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+FunctionBase.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.043324947357177734,
+   "results": [
+    {
+     "title": "abs()",
+     "score": 0.7561
+    },
+    {
+     "title": "Dialog Format: Calculation",
+     "score": 0.6842
+    },
+    {
+     "title": "Basic types",
+     "score": 0.6768
+    },
+    {
+     "title": "Inserting formulas into the parameters of installed components",
+     "score": 0.672
+    },
+    {
+     "title": "Dialog Format: Calculation",
+     "score": 0.6713
+    }
+   ],
+   "urls": [
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/refformulas_r_numbers_abs.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/eservicesgui_d_formatberechnung.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/refformulas_r_basic_types.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/tutstep7_h_task3_insert_formulas.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/eservicesgui_d_formatberechnung.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.03070521354675293,
+   "results": [
+    {
+     "title": "abs()",
+     "score": 0.7954
+    },
+    {
+     "title": "Basic types",
+     "score": 0.6773
+    },
+    {
+     "title": "Inserting formulas into the parameters of installed components",
+     "score": 0.6702
+    },
+    {
+     "title": "= for Boolean",
+     "score": 0.6624
+    },
+    {
+     "title": "asBoolean()",
+     "score": 0.6614
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/refformulas_r_numbers_abs.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/refformulas_r_basic_types.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/tutstep7_h_task3_insert_formulas.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/refformulas_r_boolean_equal.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/refformulas_r_conversion_asboolean.htm"
+   ]
+  }
+ },
+ "eec||model variables administration": {
+  "线上2026": {
+   "latency": 0.4920220375061035,
+   "results": [
+    {
+     "title": "ARTICLE_MEASURED_VARIABLE Property",
+     "score": 0.5558
+    },
+    {
+     "title": "MDPartsDatabaseItemPropertyList",
+     "score": 0.5494
+    },
+    {
+     "title": "ARTICLE_MEASURED_VARIABLE Property",
+     "score": 0.5488
+    },
+    {
+     "title": "ARTICLE_MEASURED_VARIABLE Property",
+     "score": 0.547
+    },
+    {
+     "title": "AddVariable Method",
+     "score": 0.5465
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ArticleReferencePropertyList~ARTICLE_MEASURED_VARIABLE().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.MergedArticleReferencePropertyList~ARTICLE_MEASURED_VARIABLE().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList~ARTICLE_MEASURED_VARIABLE().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Graphics.PlaceHolder~AddVariable.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.04008293151855469,
+   "results": [
+    {
+     "title": "Model variables: Overview",
+     "score": 0.7881
+    },
+    {
+     "title": "Menu Model",
+     "score": 0.7711
+    },
+    {
+     "title": "Model variables",
+     "score": 0.7637
+    },
+    {
+     "title": "Model variables",
+     "score": 0.7531
+    },
+    {
+     "title": "Set model variables in EEC",
+     "score": 0.7455
+    }
+   ],
+   "urls": [
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/admin_o_overview.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/eecbase_k_menus_model.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/admin_r_modelvariables.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/eecoffice_k_word_config_modelvariables.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/eececad_k_preparation_steps_modelvariables.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.028074026107788086,
+   "results": [
+    {
+     "title": "Model variable: Term definition",
+     "score": 0.7719
+    },
+    {
+     "title": "Model variables",
+     "score": 0.767
+    },
+    {
+     "title": "Model variables",
+     "score": 0.7652
+    },
+    {
+     "title": "Menu Model",
+     "score": 0.7611
+    },
+    {
+     "title": "Configuring model variables",
+     "score": 0.7433
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/glossary_o_modelvariable.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/admin_r_modelvariables.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/eecoffice_k_word_config_modelvariables.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/eecbase_k_menus_model.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/tutstep7_h_task1_preparation_modelvariables.htm"
+   ]
+  }
+ },
+ "eec||EEC scripting reference": {
+  "线上2026": {
+   "latency": 0.6572229862213135,
+   "results": [
+    {
+     "title": "AuxiliaryLinePropertyList",
+     "score": 0.5806
+    },
+    {
+     "title": "Methods",
+     "score": 0.5764
+    },
+    {
+     "title": "PlugStripPropertyList",
+     "score": 0.5764
+    },
+    {
+     "title": "FUNC_ARTICLE_ACTIVE_POWER Property",
+     "score": 0.5752
+    },
+    {
+     "title": "FunctionPropertyList",
+     "score": 0.5703
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.AuxiliaryLinePropertyList.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.CopperBundlePropertyList_methods.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.PlugStripPropertyList.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3DPropertyList~FUNC_ARTICLE_ACTIVE_POWER(Int32).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.041658878326416016,
+   "results": [
+    {
+     "title": "Scripting methods: Overview",
+     "score": 0.7541
+    },
+    {
+     "title": "LicenseOptions Enumeration",
+     "score": 0.7497
+    },
+    {
+     "title": "getAllLibraryNames()",
+     "score": 0.7357
+    },
+    {
+     "title": "getAllMechatronicTopLevelComponents(List libraryNames)",
+     "score": 0.7321
+    },
+    {
+     "title": "getAllProjectNames()",
+     "score": 0.7294
+    }
+   ],
+   "urls": [
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/refscripting_o_overview.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.LicenseOptions.html",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/refscripting_r_getalllibrarynames.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/refscripting_r_getallmechatronictoplevelcomponents.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/refscripting_r_getallprojectnames.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.023272037506103516,
+   "results": [
+    {
+     "title": "EEC",
+     "score": 0.7316
+    },
+    {
+     "title": "Changing a Job definition to import key-value pairs",
+     "score": 0.7278
+    },
+    {
+     "title": "LicenseOptions Enumeration",
+     "score": 0.7193
+    },
+    {
+     "title": "BASIC",
+     "score": 0.7191
+    },
+    {
+     "title": "com.mind8.script.debug.modus.enable",
+     "score": 0.7157
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/eec_k_eec.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/tutjobs_h_jobdef5.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.LicenseOptions.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/eecbase_k_base.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/admin_r_vmargs_enable.htm"
+   ]
+  }
+ },
+ "noise||python sort list by key": {
+  "线上2026": {
+   "latency": 0.538456916809082,
+   "results": [
+    {
+     "title": "GetList Method",
+     "score": 0.5026
+    },
+    {
+     "title": "CablePropertyList",
+     "score": 0.5005
+    },
+    {
+     "title": "SegmentPropertyList",
+     "score": 0.4982
+    },
+    {
+     "title": "MDPartsDatabaseItemPropertyList",
+     "score": 0.4947
+    },
+    {
+     "title": "PlugStripPropertyListComplete",
+     "score": 0.4925
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.Baseu~Eplan.EplApi.Base.ContextParameterBlock~GetList.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.CablePropertyList.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Topology.SegmentPropertyList.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartsDatabaseItemPropertyList.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.EObjects.PlugStripPropertyListComplete.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.053681135177612305,
+   "results": [
+    {
+     "title": "sort(List list, ComparatorClass c)",
+     "score": 0.6495
+    },
+    {
+     "title": "asList()",
+     "score": 0.5895
+    },
+    {
+     "title": "at(Integer i)",
+     "score": 0.5895
+    },
+    {
+     "title": "values()",
+     "score": 0.586
+    },
+    {
+     "title": "Influencing Table Displays",
+     "score": 0.5783
+    }
+   ],
+   "urls": [
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/refscripting_r_lexikographical_sorting_of_strings.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/refformulas_r_collections_aslist.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/refformulas_r_list_at.htm",
+    "https://eplan.help/en-US/infoportal/Content/EECPro/2026/Content/htm/refformulas_r_map_values.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/userinterface_h_anzeigesortierreihenfolgefestlegen.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.03472614288330078,
+   "results": [
+    {
+     "title": "Lexicographic sorting of strings with proper treatment of numbers",
+     "score": 0.5891
+    },
+    {
+     "title": "FunctionPropertyList Class",
+     "score": 0.5821
+    },
+    {
+     "title": "FUNC_TERMINALSORTCODE Property (FunctionPropertyList)",
+     "score": 0.5817
+    },
+    {
+     "title": "Affecting Table Displays",
+     "score": 0.5783
+    },
+    {
+     "title": "FUNC_TERMINALSORTCODE_GRAPHIC Property (FunctionPropertyList)",
+     "score": 0.578
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/EECPro/2.9/Content/htm/refscripting_r_lexikographical_sorting_of_strings.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_TERMINALSORTCODE.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/userinterface_h_anzeigesortierreihenfolgefestlegen.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.FunctionPropertyList~FUNC_TERMINALSORTCODE_GRAPHIC.html"
+   ]
+  }
+ },
+ "noise||export": {
+  "线上2026": {
+   "latency": 0.45012688636779785,
+   "results": [
+    {
+     "title": "ExportProductionWiring",
+     "score": 0.6053
+    },
+    {
+     "title": "ExportProductionWiring(Project,Connection[],PWMachineType,String,String,String,Language,Boolean) Method",
+     "score": 0.5957
+    },
+    {
+     "title": "ExportData(Project,String,String,String,String,Boolean,String,Boolean,Boolean,Boolean,Boolean) Method",
+     "score": 0.5736
+    },
+    {
+     "title": "export",
+     "score": 0.5732
+    },
+    {
+     "title": "export",
+     "score": 0.5707
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/ExportProductionWiring.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/topic1322.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/topic1397.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/export.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/export.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.06073307991027832,
+   "results": [
+    {
+     "title": "ExportProductionWiring Method",
+     "score": 0.7286
+    },
+    {
+     "title": "ExportProductionWiring",
+     "score": 0.7263
+    },
+    {
+     "title": "Export(String) Method",
+     "score": 0.7221
+    },
+    {
+     "title": "Settings: Import and Export",
+     "score": 0.7192
+    },
+    {
+     "title": "Export(String[],String) Method",
+     "score": 0.7176
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ConnectionService~ExportProductionWiring.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/ExportProductionWiring.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference+PropertyPlacementsSchemasList~Export(String).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/settingsmastergui_k_import_export.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReference+PropertyPlacementsSchemasList~Export(String[],String).html"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.034137725830078125,
+   "results": [
+    {
+     "title": "ExportProductionWiring Method",
+     "score": 0.7297
+    },
+    {
+     "title": "ExportProductionWiring",
+     "score": 0.7255
+    },
+    {
+     "title": "Settings: Import and Export",
+     "score": 0.7169
+    },
+    {
+     "title": "Exporting Parts Data",
+     "score": 0.7161
+    },
+    {
+     "title": "Exporting Parts Data",
+     "score": 0.7144
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ConnectionService~ExportProductionWiring.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ExportProductionWiring",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2.9/content/htm/settingsmastergui_k_import_export.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/partsmanagementgui_h_artikelexportieren.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/partsmanagementgui_h_artikelexportieren.htm"
+   ]
+  }
+ },
+ "noise||I have a very specific problem: when I place a device symbol onto a schematic page and the part number is empty, is there an automatic way to fill it from the parts database for all pages at once": {
+  "线上2026": {
+   "latency": 0.47745203971862793,
+   "results": [
+    {
+     "title": "DeviceTagsWithPlcData(Project,String,Boolean,DeviceTagsWithPLCOverwrition) Method",
+     "score": 0.5798
+    },
+    {
+     "title": "CreateDevice(String,String,Page,PointD) Method",
+     "score": 0.5784
+    },
+    {
+     "title": "Properties.Article",
+     "score": 0.5762
+    },
+    {
+     "title": "DEVICELISTENTRY_RESERVE Property",
+     "score": 0.5733
+    },
+    {
+     "title": "Properties.Article",
+     "score": 0.5724
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/topic1435.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DeviceService~CreateDevice(String,String,Page,PointD).html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Article.html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.DeviceListEntryPropertyList~DEVICELISTENTRY_RESERVE().html",
+    "https://www.eplan.help/en-us/Infoportal/Content/api/2026/Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Properties+Article.html"
+   ]
+  },
+  "本地2026": {
+   "latency": 0.07004094123840332,
+   "results": [
+    {
+     "title": "P004057: Several parts with the same or suitable device identification '<x>' found. A different part possibly has to be assigned to the function '<y>'",
+     "score": 0.783
+    },
+    {
+     "title": "Inserting New Devices Without a DT",
+     "score": 0.7749
+    },
+    {
+     "title": "P007013: Part '<x>' is stored, but the variant '<y>' is not. There is the variant '<z>'",
+     "score": 0.7668
+    },
+    {
+     "title": "Dialog Bill of materials - <Project name>",
+     "score": 0.7633
+    },
+    {
+     "title": "P026016: Device exists on the mounting surface without representation in the schematic",
+     "score": 0.7623
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/messages_p_004057.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/numerationgui_h_ohnebmk.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2026/Content/htm/messages_p_007013.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/partslistgui_d_artikelstueckliste.htm",
+    "https://www.eplan.help/en-us/infoportal/content/plattform/2026/content/htm/messages_p_026016.htm"
+   ]
+  },
+  "本地2.9": {
+   "latency": 0.03768515586853027,
+   "results": [
+    {
+     "title": "Inserting New Devices Without a DT",
+     "score": 0.7736
+    },
+    {
+     "title": "P007016: The device has duplicate function templates",
+     "score": 0.7723
+    },
+    {
+     "title": "P026016: Device exists on the mounting surface without representation in the schematic",
+     "score": 0.761
+    },
+    {
+     "title": "Editing a Device List",
+     "score": 0.7608
+    },
+    {
+     "title": "Inserting Devices",
+     "score": 0.76
+    }
+   ],
+   "urls": [
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/numerationgui_h_ohnebmk.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007016.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026016.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/devicelistgui_h_geraetelistebearbeiten.htm",
+    "https://www.eplan.help/en-us/Infoportal/Content/Plattform/2.9/Content/htm/devicelistgui_h_geraeteeinfuegen.htm"
+   ]
+  }
+ }
+}

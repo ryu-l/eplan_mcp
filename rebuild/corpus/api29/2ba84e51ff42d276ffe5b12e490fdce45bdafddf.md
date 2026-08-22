@@ -1,0 +1,40 @@
+# FunctionSortSchemaData Property
+
+FunctionSortSchemaData Property
+
+Data of function sort schema.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public string FunctionSortSchemaData {get; set;}
+```
+```
+
+```
+```
+public:
+property String^ FunctionSortSchemaData {
+   String^ get();
+   void set (    String^ value);
+}
+```
+```
+
+See Also
+
+#### Reference
+
+[ReportBlock Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ReportBlock.html)
+  
+[ReportBlock Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ReportBlock_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ReportBlock~FunctionSortSchemaData)

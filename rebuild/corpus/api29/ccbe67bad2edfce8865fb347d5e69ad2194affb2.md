@@ -1,0 +1,54 @@
+# DeepUnGroup(Boolean) Method
+
+DeepUnGroup(Boolean) Method
+
+Remove all [Placement](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html)s only from a group and it's sub groups. If true method will remove also SubGroups.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public void DeepUnGroup( 
+   bool bRemoveSubGroups
+)
+```
+```
+
+```
+```
+public:
+void DeepUnGroup( 
+   bool bRemoveSubGroups
+)
+```
+```
+
+#### Parameters
+
+*bRemoveSubGroups*
+:   If true method will remove also SubGroups.
+
+Remarks
+
+This method doesn't make sense for class "SymbolVariant" and "DimensionGroup". It always throws [ForbiddenOperationException](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.ForbiddenOperationException.html) for class "SymbolVariant" and "DimensionGroup".
+
+See Also
+
+#### Reference
+
+[Group Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Group.html)
+  
+[Group Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Group_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Group~DeepUnGroup.html)
+  
+[Placement Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Placement.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Group~DeepUnGroup(Boolean))

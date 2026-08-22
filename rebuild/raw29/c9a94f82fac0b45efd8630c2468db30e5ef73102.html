@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Working with Connections|Cables|Proceed as Follows">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="You can manually change the assignment of cable connections to the connections of the cable part in the Edit cable dialog. This dialog displays the fu..." /><title>Manually Assigning Cable Connections</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/cablegui_h_adernzuordnen.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2825"></a>
+            <MadCap:concept term="Handlung;EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor3340"></a><a name="kanchor3341"></a>
+            <h2>Manually Assigning Cable Connections</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>You can manually change the assignment of <a href="Glossary_o_kabelverbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable connections</a> to the <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> of the <a href="Glossary_o_kabelartikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable part</a> in the <span class="gui">Edit cable</span> dialog. This dialog displays the <a href="Glossary_o_funktionsschablonen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function templates</a> existing in the <a href="Glossary_o_kabel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable</a> <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a>, the cable connections of the cable defined in the project, as well as their assignment. In order to display function templates in the <span class="gui">Edit cables</span> dialog, the selected cable must have a part assigned to it.</p>
+            <p>A placed or unplaced cable connection superimposes the function template (i.e., the connection of the cable part) if it has the same identifying <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a>. In this case, the name of the shield is taken into consideration first. If no suitable connection with shield is found for a function template with shield, this template is assigned a connection without shield (as long as the remaining identifying properties match). The <a href="Glossary_o_abschirmungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">shields</a> thus do not necessarily have to be drawn into the schematic.</p>
+            <p>The assignment of cable connections to function templates is done by moving and exchanging the connections in the right side of the dialog. The order of the function templates on the left side of the dialog always remains the same.</p><a name="kanchor3342"></a><a name="kanchor3343"></a><a name="I_VerbindungenVerschieben"></a>
+            <h3>Assign free function templates to connections</h3>
+            <p>Connections can only be moved to free function templates. Other connections are not changed when doing so. </p>
+            <p>PE / PEN and SH potential type connections cannot be moved to function templates with other potential types; nor can they be moved to another shield. Connections without shields, however, can be assigned to a function template with shielding.</p>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Select the <span class="gui">Project data &gt; Cables &gt; Navigator</span> menu <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a>.</li>
+                <li class="Listitem_Step_By_Step" value="2">In the <span class="gui">Cables - &lt;Project name&gt;</span> dialog, select a cable definition, a (placed) cable connection, or a shield.</li>
+                <li class="Listitem_Step_By_Step" value="3">Select the <span class="gui">Edit</span> popup menu item.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" />  All connections to the associated cable are displayed in the <span class="gui">Edit cable</span> dialog.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The function templates of the assigned cable part are displayed in the left side of the dialog.</li>
+            </ol>
+            <ol start="3" style="list-style: decimal;list-style-type: decimal;">
+                <li class="Listitem_Step_By_Step" value="3">In the <span class="gui">Connections</span> table select a connection and move it using the arrow buttons to the position where there is a free function template.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The connection accepts the data from the function template.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The data at the <a href="Glossary_o_verbindungsdefinitionspunkte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection definition points</a> are correspondingly updated. Existing data are overwritten. New data are only written to the connection definition points if these are not yet entered at the associated cable definition line / shield.</li>
+            </ol>
+            <div class="tip">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/info.png" />Tip:</p>
+                <p class="Infoblock">To open the <span class="gui">Edit cable</span> dialog, you can also select a cable definition line, a shield, or a connection definition point in the graphical editor and select the menu item <span class="gui">Project data &gt; Cables &gt;Edit</span>.</p>
+            </div><a name="kanchor3344"></a><a name="kanchor3345"></a><a name="I_VerbindungenTauschen"></a>
+            <h3>Exchanging connections</h3>
+            <p>Connections can only be exchanged if the potential type matches. PE /PEN and SH connections can be exchanged amongst themselves but not with other connections. Nor can connections in different shields be exchanged.</p>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Select the <span class="gui">Project data &gt; Cables &gt; Navigator</span> menu items.</li>
+                <li class="Listitem_Step_By_Step" value="2">In the <span class="gui">Cables - &lt;Project name&gt;</span> dialog, select a cable definition, a (placed) cable connection, or a shield.</li>
+                <li class="Listitem_Step_By_Step" value="3">Select the <span class="gui">Edit</span> popup menu item.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> All connections of the associated cable are displayed in the <span class="gui">Edit cable</span> dialog.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The function templates of the assigned cable part are displayed in the left side of the dialog.</li>
+            </ol>
+            <ol start="3" style="list-style: decimal;list-style-type: decimal;">
+                <li class="Listitem_Step_By_Step" value="3">Select two connections in the <span class="gui">Connections</span> table and click <img src="../Pictures/Gui/ALL/all_arrowswap_as.png" /> (Exchange).<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The rows are exchanged in the table.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The values of the <span class="gui">Pair index</span>, <span class="gui">Color / number</span>, and <span class="gui">Cross-section / diameter</span> properties are exchanged on the connection definition points.</li>
+            </ol>
+            <div class="tip">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/info.png" />Tip:</p>
+                <p class="Infoblock">To open the <span class="gui">Edit cable</span> dialog, you can also select a cable definition line, a shield, or a connection definition point in the graphical editor and select the menu item <span class="gui">Project data &gt; Cables &gt;Edit</span>.</p>
+            </div>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">If you exchange two shields in the <span class="gui">Edit cable</span> dialog, it has an indirect effect on the shielded cable connections. If the shield name of the shielded cable connections changes, they will no longer match their function templates. The changes resulting from this are displayed immediately.</p>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="cablegui_d_kabel.htm">Dialog Edit cable</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

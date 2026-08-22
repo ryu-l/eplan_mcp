@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Generating Reports and Outputting Labeling|Reports|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The reporting of data from a schematic project (known as a &quot;source project&quot;) can take place in a project that is currently open, known as th..." /><title>Reports from Source Projects</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/formgeneratorgui_k_quellprojekt.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor1144"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor1145"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8;EPLAN Fluid;EPLAN Preplanning;EPLAN Pro Panel" /><a name="kanchor1369"></a><a name="kanchor1370"></a>
+            <h2>Reports from Source Projects</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The reporting of data from a schematic project (known as a "source project") can take place in a project that is currently open, known as the "report project". You specify the source project from which the data originates in the templates for the report project.<br />For any subsequent <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a>, the source project is opened for reading in the background for the duration of the report, the data is read and the reports are generated in the report project. In the meantime another user can continue working in the source project. This approach also allows you to update the reports in the report project. </p>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Source project in the reports</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>There are several ways to enter a source project in the report templates.</p>
+                    <ul>
+                        <li class="Listitem_Normal" value="1">Create new templates in the <span class="gui">Reports - &lt;Project name&gt;</span> dialog by clicking the <img src="../Pictures/Gui/ALL/all_new_as.png" /> (New) button on the <span class="gui">Templates</span> tab. In the <span class="gui">Select report</span> dialog that opens, you can use the <span class="gui">Source project</span> field for entering the data source. Click <span class="gui">[...]</span> to open a selection dialog for selecting the required source project.</li>
+                        <li class="Listitem_Normal" value="2">For an existing template, the <span class="gui">Templates</span> tab contains the <span class="gui">Source project</span> property. To enter a source project here, click in the relevant field in the <span class="gui">Value</span> column and then click <span class="gui">[...]</span> to switch to a project selection dialog.</li>
+                    </ul>
+                    <p>The project names are now displayed at the top level of the reports and templates tree structure in the <span class="gui">Reports - &lt;Project name&gt;</span> dialog. If a source project has been entered for a template, the template is listed under this project's name. The name of the current project is always at the top.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Source project in the page properties</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>The page <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> contains the property <span class="gui">Report: Source project</span> (<a href="Glossary_o_id.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ID</a> 11067) so that you can see for a generated report page from which project the data for the report originates. The name of the source project is entered automatically when the report is generated.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Provisional report projects</a></h3></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>One possible use is the creation of provisional <a href="Glossary_o_auswertungsprojekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">report projects</a> for daily use. This method reports on a provisional status of a schematic project. To do so, first select the schematic project which is to serve as the source project in the page navigator. Then <a href="Glossary_o_erzeugen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">generate</a> the report project (e.g. via the <span class="gui">Utilities &gt; Reports &gt; Generate report project</span> menu <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a>). The header data of the selected project will then be copied and a report project without pages is generated. The correct source project is already entered in the report templates of the new report project. Subsequently, the reports are generated.</p>
+                    <p>Since the provisional reporting takes place in the report project, the schematic project is not blocked to prevent further editing. The current version and the official reports continue to remain in the schematic project.</p>
+                    <div class="note">
+                        <p class="Infoblock_Heading">
+                            <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                        <p class="Infoblock">If there already is a source project in the report templates of the selected project, this entry will be retained when generating the report project. This may be of interest if a source project is simultaneously a report project (if, e.g., the table of contents of the report project is to be displayed in the source project).</p>
+                    </div>
+                    <p>In the <span class="gui">Generate report project</span> dialog, you can also select an already existing project. This way, an existing report project can be overwritten. After having confirmed the subsequent prompt for confirmation with <span class="gui">[Yes]</span>, the "old" report project will be replaced.</p>
+                    <h4>Individual templates as basis for report projects</h4>
+                    <p>In the reports it is also possible to generate a report project on the basis of selected report templates. The <span class="gui">Reports - &lt;Project name&gt;</span> dialog offers the <span class="gui">Generate report project</span> popup menu item in the <span class="gui">Templates</span> tab to this purpose. The report project generated via the subsequent <span class="gui">Generate report project</span> dialog contains only the templates that were selected in the source project, as well as the header data of the source project.</p>
+                </div>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="formgeneratorgui_k_start.htm">Reports</a>
+            </p>
+            <p class="Link_Seealso"><a href="formgeneratorgui_h_inanderesprojekt.htm">Outputting Reports in Other Projects</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

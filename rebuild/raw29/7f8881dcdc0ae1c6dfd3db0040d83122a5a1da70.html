@@ -1,0 +1,366 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Transactions</title>
+    <meta name="Title" content="Transactions"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n92","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="Term &quot;transaction&quot; means set of operations that make up a unit of work on EPLAN project database. They can be executed all together or none. Such grouping assures data integrity and consistency even in case of system failure. For example : " />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="00c71e1d-4ab5-4fec-b789-d5141a28ed3b"/>
+    <meta name="Microsoft.Help.TocParent" content="0d3ad3ee-158d-4f4e-ac44-69b81813a790"/>
+    <meta name="Microsoft.Help.TocOrder" content="7"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_DataModel.html">API DataModel</a>
+ / Transactions</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Transactions</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>Term "transaction" means set of operations that make up a unit of work on EPLAN project database. They can be executed all together or none. Such grouping assures data integrity and consistency even in case of system failure. For example :&nbsp;</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">using</span> (Transaction oTransaction = <span style="COLOR: #0000ff">new</span> TransactionManager().CreateTransaction())
+{
+     oFunction1.Name = <span style="COLOR: #800000">"=+-NewTestFunctionName_1"</span>;
+     oFunction2.Name = <span style="COLOR: #800000">"=+-NewTestFunctionName_2"</span>;
+     oTransaction.Commit();
+}
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>So in case when execution of the code is broken off before Commit() was called, properties "Name" remain unchanged.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Nesting API transactions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+
+<p>It is also possible to nest transactions in API. For example :&nbsp;</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+oFunction.Name = <span style="COLOR: #800000">"oFunction0"</span>;
+<span style="COLOR: #0000ff">using</span> (Transaction oTransaction1 = <span style="COLOR: #0000ff">new</span> TransactionManager().CreateTransaction())
+{
+     <span style="COLOR: #0000ff">using</span>(Transaction oTransaction2 = <span style="COLOR: #0000ff">new</span> TransactionManager().CreateTransaction())
+     {
+          oFunction.Name = <span style="COLOR: #800000">"Function2"</span>;
+          oTransaction2.Commit();
+     }
+     Console.Writeline(oFunction.Name) <span style="COLOR: #008000">//will be "oFunction2" returned,
+</span>     oFunction.Name = <span style="COLOR: #800000">"Function1"</span>;
+     Console.Writeline(oFunction.Name) <span style="COLOR: #008000">//will be "oFunction1" returned,
+</span>}
+Console.Writeline(oFunction.Name) <span style="COLOR: #008000">//will be "oFunction0" returned, because outer transaction oTransaction1 wasn't committed</span>
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;</p>
+
+<p>In this case an inner transaction is treated as one of operations of the outer transaction.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Internal EPLAN and API transactions</h3>
+
+<p>We distinguish two types of transaction:</p>
+
+<ul>
+    <li>API transactions - they are opened explicitly or implicitly from API. Explicit open is done by creating Transaction object from TransactionManager :</li>
+</ul>
+
+<div>
+    <div>
+        <div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+            <table class="i-syntax-table">
+                <tbody>
+                    <tr>
+                        <th>C#</th>
+
+                        <th>
+                            <div class="i-copy-code-wrapper">
+                                <span class="i-copy-code">Copy Code</span>
+                            </div>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="i-code" colspan="2">
+                            <pre>
+Transaction oTransaction = <span style="COLOR: #0000ff">new</span> TransactionManager().CreateTransaction();
+</pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <pre>
+
+  
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;Implicit open is done by creating the same Transaction object by some EPLAN operations, (like creating new objects, changing a property) in a way that is invisible for API user</p>
+
+<ul>
+    <li>EPLAN internal transactions&nbsp;- they are started inside of EPLAN framework, so are opened and closed implicitly</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>Using API transactions and internal ones in the same time can bring problems. So please consider following rules to unique them:</p>
+
+<ul>
+    <li>API transaction within an internal transaction.</li>
+</ul>
+
+<p><img title="" border="0" alt="" src="Transaction_API_in_internal.jpg" /></p>
+
+<p>API transaction may always be opened within internal transaction. API developer has a possibility to check whether an API transaction is open using following property :&nbsp;</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+  TransactionManager::IsTransactionRunning
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;</p>
+
+<p>A commit of API transaction leads to no change in the database and is saved in the database only with the termination of internal transaction. Abort in API transaction breaks off no internal transaction, but throws an exception, because an internal transaction is running and cannot be broken off.</p>
+
+<ul>
+    <li>An internal transaction within API transaction</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="Transaction_internal_in_API.jpg" /></p>
+
+<p>An internal transaction may be always opened within a API transaction. The API developer has the possibility to check each time whether an internal transaction is open using following property:&nbsp;</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+TransactionManager::IsEplanTransactionRunning
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <div>
+        <pre>
+  
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>If an internal transaction is to be opened, the API transaction becomes committed. If an internal transaction is again closed (Abort or Commit), then the API transaction will be started again. API transaction class has also property which gives information whether an internal transaction was opened and closed within the API one :&nbsp;</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+Transaction::IsImplicitEplanTransactionCommited
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;</p>
+
+<div>
+    &nbsp;
+</div>
+            <a name="seealsobookmark"></a>
+            
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Transactions">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

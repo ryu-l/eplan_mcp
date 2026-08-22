@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|EPLAN Pro Panel|Thermal Design of Switch Gears|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Calculation of the total power dissipation is effected on the basis of the following calculation basis and methods:" /><title>Calculation of the Total Power Dissipation of Switch Gears: Principle</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/cabinetgui_k_verlustleistungprinzip.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2106"></a>
+            <MadCap:concept term="Grundlagen;EPLAN Plattform;EPLAN Pro Panel" /><a name="kanchor2503"></a><a name="kanchor2504"></a>
+            <h2>Calculation of the Total Power Dissipation of Switch Gears: Principle</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Calculation of the total power dissipation is effected on the basis of the following calculation basis and methods:</p>
+            <h3>Thermal design</h3>
+            <p>The basis for the power dissipation calculation is the definition of general conditions per project or per enclosure, with the following factors being considered in <span class="important">Rittal Therm</span>:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">Installation situation</li>
+                <li class="Listitem_Single_Line" value="2">Air-conditioning field</li>
+                <li class="Listitem_Single_Line" value="3">Voltage</li>
+                <li class="Listitem_Single_Line" value="4">Frequency.</li>
+            </ul>
+            <p>The following factors are furthermore required for the "Thermal design" in EPLAN:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1">Air-conditioning field</li>
+                <li class="Listitem_Single_Line" value="2">Total power dissipation</li>
+                <li class="Listitem_Single_Line" value="3">Simultaneity factor</li>
+                <li class="Listitem_Single_Line" value="4">Maximum permitted power dissipation of the components</li>
+                <li class="Listitem_Single_Line" value="5">Rated current (rails).</li>
+            </ul>
+            <p>All the factors for the definition of the general conditions are <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> of the parts or of the <a href="Glossary_o_artikelplatzierungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part placements</a> whose values the user has to specify correctly in the project planning.</p>
+            <h3>Calculation of the power dissipation of devices and busbars</h3>
+            <p>Specific <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> properties are evaluated for the calculation of the power dissipation of the individual <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a> and <a href="Glossary_o_sammelschienen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">busbars</a>. The part properties are managed in the EPLAN parts management. These are specifications by the <a href="Glossary_o_schaltzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">component</a> manufacturer and data that are created and maintained by the user. EPLAN Software &amp; Service does not accept any liability for the correctness of these specifications.</p>
+            <p class="Bridgehead">Devices</p>
+            <p>The power dissipation of a device is calculated in accordance with the formula:</p>
+            <p><span class="important">Actual power dissipation of the device = Power loss x Simultaneity factor</span>
+            </p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The <span class="important">power dissipation</span> of a device is read from the <span class="gui">Max. power dissipation</span> part property.</li>
+                <li class="Listitem_Normal" value="2"><a name="Gleichzeitigkeitsfaktor"></a>The <span class="important">simultaneity factor</span> (default value = 0) is set via the <span class="gui">Thermal design: Simultaneity factor</span> project property as a factor for the project. It is an estimated value that takes into consideration the fact all the devices are never switched on simultaneously at full power in a plant. A deviating <a href="Glossary_o_gleichzeitigkeitsfaktor.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">simultaneity factor</a> can be set at each device. The simultaneity factor is stored at the <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> in the <span class="gui">Thermal design: Simultaneity factor (automatic)</span> property.</li>
+            </ul>
+            <p>The result of the calculation is stored in the <span class="gui">Thermal design: Device power dissipation</span> property.</p>
+            <p class="Bridgehead">Busbars</p>
+            <p>The following part properties located on the <span class="gui">Busbar</span> tab are evaluated for the calculation of the busbar power dissipation:</p>
+            <ul>
+                <li class="Listitem_Single_Line" value="1"><span class="gui">Rail cross-section</span> in mmÂ²</li>
+                <li class="Listitem_Single_Line" value="2"><span class="gui">Rail material</span> (copper / aluminum / other material)</li>
+                <li class="Listitem_Single_Line" value="3"><span class="gui">Specific electrical conductivity at +20 Â°C</span>
+                </li>
+                <li class="Listitem_Single_Line" value="4"><span class="gui">Temperature coefficient</span>.</li>
+            </ul>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" /> Notes:</p>
+                <ul>
+                    <li class="Listitem_Normal" value="1">The temperature coefficient applies for a temperature of 20 Â°C.</li>
+                    <li class="Listitem_Normal" value="2">The busbar power dissipation is calculated for a mean rail temperature of 65 Â°C.</li>
+                </ul>
+            </div>
+            <p>The following factors are required for the calculation of the busbar power dissipation in Watt [W]:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><span class="important">Busbar operating current</span> in Ampere [A] (from the <span class="gui">Thermal design: Busbar operating current</span> part property)</li>
+                <li class="Listitem_Normal" value="2"><span class="important">Busbar resistance</span> in Ohm [â¦] for one meter of busbar at +65 Â°C busbar temperature. Is calculated automatically from the part properties <span class="gui">Rail cross-section</span>, <span class="gui">Specific electrical conductivity at +20 Â°C</span>  and <span class="gui">Temperature coefficient</span>, as well as the temperature difference <span class="codetext">ÎÎ¸</span> [K] = 45K.<br /><br />Calculation formula: <br /><br /><img src="../Pictures/Visualisation/ALL/cabinetgui_formularesistance_as.png" /><br /><br />Formula <a href="Glossary_o_symbole.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">symbols</a>:<br /><br /><span class="codetext">A</span> = Rail cross-section in [mmÂ²]<br /><span class="codetext">Ï</span> = Specific electrical conductivity in [MS/m] (= MegaSiemens per meter) or [m/(â¦ x mmÂ²)]<br /><span class="codetext">Î±</span> = Temperature coefficient in [1/K]</li>
+                <li class="Listitem_Normal" value="3"><span class="important">Rail length</span> in meter [m] (from the part reference property <span class="gui">Subset / length in unit of project</span>).<br /><br /></li>
+            </ul>
+            <p>The busbar power dissipation is calculated with the following formula and entered in the <span class="gui">Thermal design: Device power dissipation</span> property:</p>
+            <p>
+                <img src="../Pictures/Visualisation/ALL/cabinetgui_formulatotaldissipation_as.png" />
+            </p>
+            <p>Formula symbols:</p>
+            <p><span class="codetext">IÂ²</span> = Busbar operating current in [A]<br /><span class="codetext">R<sub>(+65Â°C)</sub></span> = Busbar resistance in [â¦]<br /><span class="codetext">l</span> = Rail length in [m]</p>
+            <h3>Total power dissipation</h3>
+            <p>The power dissipations of the installed devices and those of the busbar system are used for each air-conditioning field when the total power dissipation is calculated. The result of the calculation of the total power dissipation is entered in the <span class="gui">Thermal design: Total power dissipation for air-conditioning field [n]</span> project property, with "n" being the number of the air-conditioning field.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="cabinetgui_k_verlustleistung.htm">Calculation of the Total Power Dissipation of Switch Gears</a>
+            </p>
+            <p class="Link_Seealso"><a href="cabinetgui_h_verlustleistungberechnen.htm">Calculating the Total Power Dissipation of Switch Gears </a>
+            </p>
+            <p class="Link_Seealso"><a href="cabinetgui_d_verlustleistungberechnen.htm">Dialog Calculate power dissipation</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

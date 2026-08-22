@@ -1,0 +1,40 @@
+# X Property (MDPartLockedMountingAreaPosition)
+
+X Property (MDPartLockedMountingAreaPosition)
+
+X position of the locked mounting area
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public double X {get; set;}
+```
+```
+
+```
+```
+public:
+property double X {
+   double get();
+   void set (    double value);
+}
+```
+```
+
+See Also
+
+#### Reference
+
+[MDPartLockedMountingAreaPosition Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartLockedMountingAreaPosition.html)
+  
+[MDPartLockedMountingAreaPosition Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartLockedMountingAreaPosition_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDPartLockedMountingAreaPosition~X)

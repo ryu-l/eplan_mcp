@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Editing Terminals and Plugs|Terminals|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Terminal strips are managed via the terminal strip definition. The terminal strip definition identifies the terminal strip and contains all the releva..." /><title>Managing Terminal Strips</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/terminalgui_k_verwaltungleisten.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor170"></a>
+            <MadCap:concept term="Grundlagen;EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor198"></a><a name="kanchor199"></a>
+            <h2>Managing Terminal Strips</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Terminal strips are managed via the <span class="important">terminal strip definition</span>. The terminal strip definition identifies the terminal strip and contains all the relevant data for the terminal strip as well as the terminal strip <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> information.</p>
+            <p>To copy a terminal strip definition it must be placed on a page. You can also <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> a terminal strip definition as an unplaced function. Use the "normal" DT numbering to number terminal strips.</p>
+            <h3>Reports</h3>
+            <p>For each terminal strip you can specify a <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> in the terminal strip definition that will be used when outputting this terminal strip in terminal diagrams and terminal <a href="Glossary_o_anschlussplaene.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection diagrams</a>. Individual terminal strips can be hidden when outputting terminal plans.</p><a name="kanchor200"></a>
+            <h3>Terminal strip structure</h3>
+            <p>The terminal parts of the terminals lined up on the terminal strip can be stored at the individual terminals. To do this, the terminals in question must have been defined as <a href="Glossary_o_hauptklemmen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">main terminals</a>. In this case, the terminal strip is divided into "independent areas", with each main terminal defining an independent area.</p>
+            <p>You specify <a href="Glossary_o_geraetedefinitionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">device definitions</a>, i.e the structure of the individual terminals, in parts management. To do this, enter the <a href="Glossary_o_funktionsschablonen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function templates</a> for the main terminal and the auxiliary terminals at the terminal parts. The function template for the main terminal should be at the top.</p>
+            <h4>Terminal strip structure as in previous versions</h4>
+            <p>If the entire terminal strip is defined via the terminal strip definition alone - as in the versions before EPLAN 2.0 - the terminal strip must consist of just <span class="important">one</span> independent area. The terminal strip structure is then defined via a device definition which is saved in the terminal strip definition.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">This procedure is only supported by the program for compatibility reasons. We recommend that parts should be managed at the main terminals.</p>
+                <p class="Infoblock">However, a terminal strip structure by means of a device definition can only be defined if the terminal strip does not contain any main terminals or the property <span class="gui">Do not use main terminals</span> has been selected for the terminal strip.</p>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="terminalgui_k_hauptklemmen.htm">Using Main Terminals</a>
+            </p>
+            <p class="Link_Seealso"><a href="terminalgui_k_mehrstockklemmen.htm">Multi-level Terminals</a>
+            </p>
+            <p class="Link_Seealso"><a href="terminalgui_h_klemmenleistenerstlbearb.htm">Creating and Editing Terminal Strips</a>
+            </p>
+            <p class="Link_Seealso"><a href="terminalgui_h_funktionsschabloneerzeugen.htm">Defining Terminal Strip Structure</a>
+            </p>
+            <p class="Link_Seealso"><a href="terminalgui_h_leistenzubehoererstlloesch.htm">Displaying, Adding or Deleting Alignable Accessories</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

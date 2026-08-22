@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Editing PLC Information|PLC Address Formats|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="A PLC address is usually composed of several address elements. However, the structure of PLC addresses can vary with the type of PLC. Digital and anal..." /><title>Address Formats</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/plcprocessorgui_k_adressformate.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2243"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor2244"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" />
+            <h2>Address Formats</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>A PLC address is usually composed of several address elements. However, the structure of <a href="Glossary_o_sps_adressen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC addresses</a> can vary with the type of PLC. Digital and analog input and output addresses are also differently constructed in many cases.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><span class="important">Addressing digital inputs and outputs</span>: Digital input and output addresses are usually constructed from a letter (for input or output), a byte address and a bit address. In addition to bit and byte addresses, there are also higher-order addresses such as WORD and DWORD addresses (for <a href="Glossary_o_sps_karten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC cards</a>, PLC <a href="Glossary_o_module.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">modules</a> etc.).</li>
+                <li class="Listitem_Normal" value="2"><span class="important">Addressing analog inputs and outputs</span>: With analog inputs and outputs, often only the byte address and the higher-order address element are specified and the bit address is omitted. Addressing of analog inputs and outputs is done using bytes, words or double-words. You can recognize this at a particular position in the address (i.e. the code) or the data type. In accordance with this, the analog addresses are incremented in steps of 1, 2, or 4. These can occur mixed in a PLC. You can define the size of the addressing range based on the data type. If you specify the data type of a PLC address, then the defined addressing range is automatically accounted for when addressing.</li>
+            </ul>
+            <p>When addressing, the first level (as viewed from the rear) begins with the starting value and is incremented until the end value is reached. A carried value is then created for the address element. The end value is disregarded in the last level since the carried value can no longer be displayed.</p><a name="kanchor2663"></a><a name="I_AufbauAdressenebenen"></a>
+            <h3>Structure of the format elements</h3>
+            <p>Every address element of a PLC address is represented using a format element of type "Counter". Separators between the counters show the borders of the address elements. Areas with fixed numbers of positions within the address format can be placed after each other without a <a href="Glossary_o_trennzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">separator</a>.</p>
+            <p>You can include the configuration data of the PLC box and the channel designation in the format. When addressing, the suggestion for the start address then contains this information. When addressing several cards, the value for every new card is obtained from the card data; when addressing a single card the counting proceeds from the start address.</p>
+            <p>A format element for a counter is built in the following manner:</p>
+            <p>[C&lt;number system, start value, end value, number of digits, configuration value from property&gt;]</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <notrans>
+                            <p class="Infoblock">[C&lt;d,1,127,0,G&gt;].[C&lt;o,0,7,0,O&gt;]</p>
+                        </notrans>
+                        <p class="Infoblock">Here, "C" is the symbol for a counter.</p>
+                        <p class="Infoblock">The byte address is built according to the decimal number system and has the start value "1" and the end value "127". The number of digits is "0" (i.e. not limited). The start address of the PLC card is specified as the configuration value, i.e., the value in the <span class="gui">Start address of PLC card</span> property is used as the start value for addressing.</p>
+                        <p class="Infoblock">The bit address is built according to the octal number system and has the start value "0" and the end value "7". The number of digits is "0" (i.e. unlimited), and no configuration value is specified (an entry of "O").</p>
+                    </div>
+                </div>
+            </div>
+            <p>The number system and the configuration value are each specified by an identifier:</p>
+            <table>
+                <tr>
+                    <th>
+                        <p>Number system identifier</p>
+                    </th>
+                    <th>
+                        <p>Example</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>d = decimal</p>
+                    </td>
+                    <td>
+                        <notrans>
+                            <p>0,1,2,3....9, 10,11....19, 20....</p>
+                        </notrans>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>o = octal</p>
+                    </td>
+                    <td>
+                        <notrans>
+                            <p>0,1,2,3....7, 10,11....17, 20....</p>
+                        </notrans>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>h = hexadecimal</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <notrans>
+                            <p>0,1,2,3....9, a,b,c,d,e,f, 10,11....19, 1a,1b,1c,1d,1e,1f, 20....</p>
+                        </notrans>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>
+                        <p>Configuration value identifier</p>
+                    </th>
+                    <th>
+                        <p>Property</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>
+                            <p>O</p>
+                        </notrans>
+                    </td>
+                    <td>
+                        <p>No configuration value</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>
+                            <p>N</p>
+                        </notrans>
+                    </td>
+                    <td>
+                        <p>Station <a href="Glossary_o_id.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ID</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>
+                            <p>R</p>
+                        </notrans>
+                    </td>
+                    <td>
+                        <p>PLC card is placed on <a href="Glossary_o_baugruppentraeger.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">rack</a> ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>
+                            <p>M</p>
+                        </notrans>
+                    </td>
+                    <td>
+                        <p>Position (slot / module)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>
+                            <p>G</p>
+                        </notrans>
+                    </td>
+                    <td>
+                        <p>Start address of PLC card</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>C</p>
+                    </td>
+                    <td>
+                        <p>CPU: Name</p>
+                    </td>
+                </tr>
+            </table>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">Assuming you have defined the following address format:</p>
+                        <notrans>
+                            <p class="Infoblock">[C&lt;d,0,100,0,O&gt;]//[C&lt;h,1,f,3,O&gt;].[C&lt;d,1,8,2,O&gt;]</p>
+                        </notrans>
+                        <p class="Infoblock">This results in (e.g.) the creation of the following addresses of the <a href="Glossary_o_sps_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC connection points</a> with the identifier "E" (inputs):</p>
+                        <notrans>
+                            <p class="Infoblock"><span class="codetext">E0//001.01</span>
+                                <br /><span class="codetext">E0//001.02</span>
+                                <br />...</p>
+                            <p class="Infoblock"><span class="codetext">E0//001.08</span>
+                                <br /><span class="codetext">E0//002.01</span>
+                                <br />...</p>
+                            <p class="Infoblock"><span class="codetext">E100//00f.08</span>
+                                <br /><span class="codetext">E101//001.01</span>
+                            </p>
+                        </notrans>
+                    </div>
+                </div>
+            </div>
+            <p>If the address format contains more than one address element then, during automatic addressing, "PLC box oriented" addressing is performed, i.e., the addresses within the box will always begin with the starting value of the first level. With only one address element, simple sequential addressing is performed.</p><a name="I_Konfigurationswert"></a>
+            <h3>Address with configuration value</h3>
+            <p>If a configuration value is used in the address format, and the cards to be addressed have a valid and standardized configuration value, then the addresses are consolidated â even across multiple cards. The counter is incremented sequentially, starting from the configuration value (e.g. <span class="codetext">25</span>). When the end value is reached (e.g. <span class="codetext">25.7</span>), the start value specified by the configuration value is increased by one, and addressing continues (new addresses, e.g. <span class="codetext">26.0</span> ... <span class="codetext">26.7</span>, etc.).</p>
+            <p>If there is no configuration value in the address format, the start address specified in the <span class="gui">Readdress PLC connection points</span> dialog is used for addressing purposes. In this case the addresses are not consolidated, and the counter restarts with each new card (new addresses, e.g. <span class="codetext">25.0</span>, <span class="codetext">25.1</span>, <span class="codetext">26.0</span>, <span class="codetext">26.1</span>, etc.).</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">The addresses will not be consolidated if the cards to be addressed do not have a standard configuration value, or have one that is blank or invalid. If the configuration value is blank or invalid, the start address from the <span class="gui">Readdress PLC connection points</span> dialog, or the most recently used address, will be used for addressing purposes.</p>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">In the schematic you have added (by copying, for example) three PLC cards with the following addresses:<br />Card 1, 2 and 3: <span class="codetext">25.0</span>, <span class="codetext">25.1</span>, <span class="codetext">25.2</span>, <span class="codetext">25.3</span></p>
+                        <p class="Infoblock">Use the "Start address of PLC card" configuration value in the address format. The value of the property with the same name is "25" for all three PLC cards. The bit address is built according to the octal number system and has the start value "0" and the end value "7".</p>
+                        <p class="Infoblock">After addressing the cards have the following addresses:<br />Card 1: <span class="codetext">25.0</span>, <span class="codetext">25.1</span>, <span class="codetext">25.2</span>, <span class="codetext">25.3</span><br />Card 2: <span class="codetext">25.4</span>, <span class="codetext">25.5</span>, <span class="codetext">25.6</span>, <span class="codetext">25.7</span><br />Card 3: <span class="codetext">26.0</span>, <span class="codetext">26.1</span>, <span class="codetext">26.2</span>, <span class="codetext">26.3</span></p>
+                        <p class="Infoblock">The bit address for card 2 has reached its maximum value of "7", so the byte address for card 3 is incremented by one, and the bit address restarts from "0".<br /></p>
+                    </div>
+                </div>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="plcprocessorgui_h_adressenformateeinstellen.htm">Defining Address Formats</a>
+            </p>
+            <p class="Link_Seealso"><a href="plcprocessorgui_d_formatspsadresse.htm">Dialog Format of PLC address</a>
+            </p>
+            <p class="Link_Seealso"><a href="plcgui_k_start.htm">PLC</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

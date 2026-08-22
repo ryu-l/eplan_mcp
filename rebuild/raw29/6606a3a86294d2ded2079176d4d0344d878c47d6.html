@@ -1,0 +1,377 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>XMLProcessor</title>
+    <meta name="Title" content="XMLProcessor"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n190","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="The XMLProcessor interface
+
+In general EPLAN uses XML as its interchange format. Furthermore EPLAN is required to support various other export/import formats. It is not practicable to consider all possible such formats. " />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="a1c63a41-57db-47b6-9132-d641c8d8150f"/>
+    <meta name="Microsoft.Help.TocParent" content="336e53eb-a15a-49ac-8013-c36cd5cf745f"/>
+    <meta name="Microsoft.Help.TocOrder" content="12"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="API_Other.html">API Miscellaneous</a>
+ / XMLProcessor</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">XMLProcessor</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <h3>The XMLProcessor interface</h3>
+
+<p>In general EPLAN uses XML as its interchange format. Furthermore EPLAN is required to support various other export/import formats. It is not practicable to consider all possible such formats.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Solution</h3>
+
+<p>EPLAN carries on exporting / importing its XML format. Additionally, conversion modules can be added to EPLAN, which convert the created XML files into other import / export formats.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Import of different formats:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="to_EPLAN.gif" />&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Export of different formats:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><img title="" border="0" alt="" src="from_EPLAN.gif" />&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>The following work flow is used:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Import:</p>
+
+<ul>
+    <li>Starting the import. selecting the import format XYZ</li>
+
+    <li>converting XYZ to XML through the conversion module</li>
+
+    <li>importing the XML file</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>Export:</p>
+
+<ul>
+    <li>Starting the exports. selecting the export format XYZ</li>
+
+    <li>exporting the XML file</li>
+
+    <li>converting XML to XYZ through the conversion module</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3>Interface</h3>
+
+<p>API conversion modules can be created by implementing the interface IXMLProcessor. Though not all formats will be read as well as written, it makes sense to treat the import as well as the export in one interface.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>The following example shows the usage of the interface, with only the export implemented:</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">class</span> MySimpleXMLConverter : Eplan.EplApi.ApplicationFramework.IXMLProcessor
+{
+    <span style="COLOR: #0000ff">public</span> MySimpleXMLConverter()
+    {
+        <span style="COLOR: #008000">//
+        // TODO: Add constructor logic here
+        //
+</span>    }
+    <span style="COLOR: #0000ff">string</span> m_sError = <span style="COLOR: #0000ff">string</span>.Empty;
+    Options m_optionsXMLProcessor = <span style="COLOR: #0000ff">new</span> Options();
+    <span style="COLOR: #0000ff">#region</span> IXMLProcessor Members
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    ///Returns a settings dialog for this processor.
+    ///Dialog is only created, but not displayed!
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    ///</span><span style="COLOR: #808080">&lt;returns&gt;</span><span style="COLOR: #008000">Interface of the created dialog.</span><span style="COLOR: #808080">&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> Eplan.EplApi.ApplicationFramework.IOptions GetOption()
+    {
+        <span style="COLOR: #0000ff">return</span> m_optionsXMLProcessor;
+    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// Returns the name of the converter, as it will appear in the selection list.
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    ///</span><span style="COLOR: #808080">&lt;returns&gt;</span><span style="COLOR: #008000">Name of converter, is shown in selection list.</span><span style="COLOR: #808080">&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">string</span> GetName()
+    {
+        String strName = <span style="COLOR: #800000">"SimpleXMLProcessor"</span>;
+        strName += <span style="COLOR: #800000">" ("</span>;
+        strName += GetFileFilter();
+        strName += <span style="COLOR: #800000">")"</span>;
+        <span style="COLOR: #0000ff">return</span> strName;
+    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    ///Returns an error message if an error occurred during export/import.
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    ///</span><span style="COLOR: #808080">&lt;returns&gt;</span><span style="COLOR: #008000">Error message</span><span style="COLOR: #808080">&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">string</span> GetErrorMessage()
+    {
+        <span style="COLOR: #008000">// TODO:  Add XMLProcessor.getErrorMessage implementation
+</span>        <span style="COLOR: #0000ff">return</span> m_sError;
+    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// Is called after import has been completed.
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    ///</span><span style="COLOR: #808080">&lt;returns&gt;</span><span style="COLOR: #008000">If true, an Information dialog box is displayed.</span><span style="COLOR: #808080">&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">bool</span> PostImport()
+    {
+        <span style="COLOR: #008000">// TODO:  Add XMLProcessor.postImport implementation
+</span>        <span style="COLOR: #0000ff">return</span> <span style="COLOR: #0000ff">false</span>;
+    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// Is called after export has been completed.
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    ///</span><span style="COLOR: #808080">&lt;returns&gt;</span><span style="COLOR: #008000">If true, an Information dialog box is displayed.</span><span style="COLOR: #808080">&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">bool</span> PostExport()
+    {
+        <span style="COLOR: #008000">// TODO:  Add XMLProcessor.postExport implementation
+</span>        <span style="COLOR: #0000ff">return</span> <span style="COLOR: #0000ff">false</span>;
+    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// Indicates whether the converter provides an export option.
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="oContext"&gt;</span><span style="COLOR: #008000">Context with parameters</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="bSupportsProgress"&gt;</span><span style="COLOR: #008000">Indicates whether the converter supports a progress bar.</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    ///</span><span style="COLOR: #808080">&lt;returns&gt;</span><span style="COLOR: #008000">true: export is possible; false: export is not possible</span><span style="COLOR: #808080">&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">bool</span> CanExport(Eplan.EplApi.Base.Context oContext, <span style="COLOR: #0000ff">ref</span> <span style="COLOR: #0000ff">bool</span> bSupportsProgress)
+    {
+        bSupportsProgress = <span style="COLOR: #0000ff">false</span>;
+        <span style="COLOR: #0000ff">return</span> <span style="COLOR: #0000ff">true</span>;
+    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// Converts the XML file to a special file.
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="strXmlFile"&gt;</span><span style="COLOR: #008000">Input file</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="strOutputFile"&gt;</span><span style="COLOR: #008000">Output file</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="oContext"&gt;</span><span style="COLOR: #008000">Context with parameters</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;returns&gt;</span><span style="COLOR: #008000"> Returns true if successful.</span><span style="COLOR: #808080">&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">bool</span> Export(<span style="COLOR: #0000ff">string</span> strXmlFile, <span style="COLOR: #0000ff">string</span> strOutputFile, Eplan.EplApi.Base.Context oContext)
+    {
+        <span style="COLOR: #0000ff">bool</span> bRet = <span style="COLOR: #0000ff">false</span>;
+        <span style="COLOR: #0000ff">try</span>
+        {
+            <span style="COLOR: #008000">// short example for a simple export conversion
+</span>            System.Xml.XmlTextReader xRead = <span style="COLOR: #0000ff">new</span> System.Xml.XmlTextReader(strXmlFile);
+            System.IO.StreamWriter swOut = <span style="COLOR: #0000ff">new</span> System.IO.StreamWriter(strOutputFile);
+            xRead.WhitespaceHandling = System.Xml.WhitespaceHandling.None;
+            <span style="COLOR: #0000ff">string</span> sFirstLang = <span style="COLOR: #0000ff">string</span>.Empty;
+            <span style="COLOR: #0000ff">while</span> (xRead.Read())
+            {
+                <span style="COLOR: #0000ff">if</span> ((xRead.XmlLang.CompareTo(String.Empty) != 0) &amp;&amp; (xRead.Value.CompareTo(String.Empty) != 0))
+                {
+                    <span style="COLOR: #0000ff">if</span> (sFirstLang.CompareTo(String.Empty) == 0) sFirstLang = xRead.XmlLang;
+                    <span style="COLOR: #0000ff">if</span> (xRead.XmlLang.CompareTo(sFirstLang) == 0) swOut.WriteLine();
+                    swOut.Write(xRead.XmlLang + <span style="COLOR: #800000">":"</span> + xRead.Value + <span style="COLOR: #800000">";"</span>);
+                }
+            }
+            swOut.Close();
+            xRead.Close();
+            bRet = <span style="COLOR: #0000ff">true</span>;
+        }
+        <span style="COLOR: #0000ff">catch</span> (Exception e)
+        {
+            m_sError = <span style="COLOR: #0000ff">string</span>.Format(<span style="COLOR: #800000">"Exception: {0}"</span>, e.ToString());
+        }
+
+        <span style="COLOR: #0000ff">return</span> bRet;
+    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    ///Returns the filter string for the file selection box.
+    /// e.g. "Access *.mdb|*.mdb"
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    ///</span><span style="COLOR: #808080">&lt;returns&gt;</span><span style="COLOR: #008000">Filter string</span><span style="COLOR: #808080">&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">string</span> GetFileFilter()
+    {
+        <span style="COLOR: #0000ff">string</span> strFilter = <span style="COLOR: #800000">"*.*"</span>;
+        <span style="COLOR: #0000ff">return</span> strFilter;
+    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// Indicates whether the converter can convert external formats to XML.
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="oContext"&gt;</span><span style="COLOR: #008000">Context with parameters</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="bSupportsProgress"&gt;</span><span style="COLOR: #008000">Indicates whether the converter supports a progress bar.</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    ///</span><span style="COLOR: #808080">&lt;returns&gt;</span><span style="COLOR: #008000">true: conversion is possible; false: conversion is not possible</span><span style="COLOR: #808080">&lt;/returns&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">bool</span> CanImport(Eplan.EplApi.Base.Context oContext, <span style="COLOR: #0000ff">ref</span> <span style="COLOR: #0000ff">bool</span> bSupportsProgress)
+    {
+        bSupportsProgress = <span style="COLOR: #0000ff">false</span>;
+        <span style="COLOR: #0000ff">return</span> <span style="COLOR: #0000ff">false</span>;
+    }
+    <span style="COLOR: #008000">/// </span><span style="COLOR: #808080">&lt;summary&gt;</span><span style="COLOR: #008000">
+    /// Conversion from sImportFile to sXmlFile.
+    /// sXmlFile might be passed as "". In this case, the converter must set a file name.
+    /// EContext may point to an EProgress object to support a progress bar.
+    /// Returns true if successful.
+    /// </span><span style="COLOR: #808080">&lt;/summary&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="strInputFile"&gt;</span><span style="COLOR: #008000">Input file</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="strXmlFile"&gt;</span><span style="COLOR: #008000">Output file</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+    /// </span><span style="COLOR: #808080">&lt;param name="oContext"&gt;</span><span style="COLOR: #008000">Context with parameters</span><span style="COLOR: #808080">&lt;/param&gt;</span><span style="COLOR: #008000">
+</span>    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">bool</span> Import(<span style="COLOR: #0000ff">string</span> strInputFile, <span style="COLOR: #0000ff">string</span> strXmlFile, Eplan.EplApi.Base.Context oContext)
+    {
+        <span style="COLOR: #008000">// TODO:  Add XMLProcessor.import implementation
+</span>        <span style="COLOR: #0000ff">return</span> <span style="COLOR: #0000ff">false</span>;
+    }
+}
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div>
+    Registering a conversion module
+</div>
+
+<p>Each conversion module needs to register itself with EPLAN so it will be available during import or export. Because a conversion is only meant for a special task, the scope of functions of the converter needs to be set during registering. This is done via the IInterface interface as it is shown at the end of the above example.&nbsp;</p>
+
+<p>The property InterfaceName returns the interface name followed by the interface category. The category specifies, in which export dialog the new processor will be shown. You can find the available interface categories in the list of available XML processors under Eplan.EplApi.ApplicationFramework.XMLConverter and Eplan.EplApi.ApplicationFramework.XMLConverterCategories.</p><a name="53656520416C736F"></a>
+
+<div>
+    &nbsp;&nbsp;&nbsp;
+</div>
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-see-also-sub-heading">API XML Converters</h4><div class="i-see-also-link">
+<a href="API XML Converters.html">XML Converters</a></div>
+
+<h4 class="i-see-also-sub-heading">Reference</h4><div class="i-see-also-link">
+<a href="Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.IXMLProcessor.html">IXMLProcessor Interface</a></div>
+
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: XMLProcessor">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

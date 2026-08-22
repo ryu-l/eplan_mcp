@@ -1,0 +1,4007 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Overviews|XML Export / Import (EPLAN Parts Management)|Overview">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="&#160;" /><title>XML Export / Import: Tags and Associated Attributes</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/xmlexport_o_tags.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor2829"></a>
+            <MadCap:concept term="EPLAN Plattform" />
+            <h2>XML Export / Import: Tags and Associated Attributes</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The following tables list the tags used for export and import, their attributes, and additional information. Here, the <span class="important">data types</span> in the "Type" column have the following meanings:</p>
+            <p class="bridgehead">Bool</p>
+            <p>"0" or "&#160;" mean "no", "false", or "off", "1" means "yes", "true", or "on".</p>
+            <p class="bridgehead">Integer / Long</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">"", "0", "1", "2", or "-5"</p>
+                    </div>
+                </div>
+            </div>
+            <p>"" means the same as "0".</p>
+            <p><a name="kanchor3352"></a>For attributes of a selection list, only certain values may be used which can be selected in parts management. An overview of the valid values can be found in the section <a href="xmlexport_o_sellists.htm">Overview of Selection Lists</a>.</p>
+            <p class="bridgehead">Double / Currency</p>
+            <p>The decimal <a href="Glossary_o_trennzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">separator</a> is the period.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">"1.99" or "2.5"</p>
+                    </div>
+                </div>
+            </div>
+            <p>"" means the same as "0".</p>
+            <p class="bridgehead">Text / memo</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">"This is a text" or "".</p>
+                    </div>
+                </div>
+            </div>
+            <p class="bridgehead">Multilingual text</p>
+            <p>Language parts in a multilingual text are defined starting with the language code and ending with a semicolon. Between the language code and the text there must be an "@".</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">
+                            <notrans>de_DE@SchÃ¼tz; en_US@Contactor;nl_NL@Relais;</notrans>
+                        </p>
+                    </div>
+                </div>
+            </div><a name="partsmanagement"></a>
+            <h3>
+                <notrans>&lt;partsmanagement&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>length-unit</notrans>
+                    </td>
+                    <td>Unit of length</td>
+                    <td>Unit in which lengths are imported, for instance "mm" or "inch". Optional, default "mm".</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>type</notrans>
+                    </td>
+                    <td>Type</td>
+                    <td>Type of parts management. Currently the only supported value is "EPLAN.PartsManagement". Optional.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>build</notrans>
+                    </td>
+                    <td>Build number</td>
+                    <td>Build number at the time of export. Optional.</td>
+                </tr>
+            </table><a name="part"></a>
+            <h3>
+                <notrans>&lt;part&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PARTTYPE</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Type</td>
+                    <td>This attribute must be set to the value "1" ("Component"), "4" ("Assembly") or "5" ("Module")!</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PARTNR</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Part number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_IS_ACCESSORY</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Accessories</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CERTIFICATE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Certification: General</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CERTIFICATE_CE</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Certification: CE</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CERTIFICATE_UL</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Certification: UL</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CERTIFICATE_VDE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Certification: VDE</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CERTIFICATE_ATEX</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Certification: ATEX identifier</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_REF_CONSTRUCTION_NAME</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Drilling pattern</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CRAFT_COOLING</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Trade: Cooling</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CRAFT_ELECTRICAL</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Trade: Electrical engineering</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CRAFT_FLUID</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Fluid power trade</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CRAFT_HYDRAULICS</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Trade: Hydraulics</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CRAFT_LUBRICATION</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Trade: Lubrication</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CRAFT_MECHANICS</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Trade: Mechanics</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CRAFT_PNEUMATICS</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Trade: Pneumatics</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CRAFT_COOLINGLUBRICANT</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Trade <a href="Glossary_o_kuehlschmiermittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cooling lubricant</a></td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CRAFT_GASTECHNOLOGY</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Trade <a href="Glossary_o_gastechnik.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">gas engineering</a></td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CRAFT_FLUID_UNDEFINED</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Trade  <a href="Glossary_o_fluidtechnik.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">fluid power</a> (undefined)</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CRAFT_PROCESS</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Process engineering trade</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_CREATE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Creation date</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_DEPTH</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Depth</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_DISCONTINUED</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Discontinued <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a></td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SPACING_FRONT</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Mounting clearance Depth: Front</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SPACING_REAR</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Mounting clearance Depth: Rear</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_DESCR1</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Designation 1</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_DESCR2</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Designation 2</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_DESCR3</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Designation 3</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_DISCOUNT</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Discount</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_ECABINET_MACRO</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Texture</td>
+                    <td>Example: <notrans_i>"C:\texture.jpg"</notrans_i> or <br /><notrans_i>"$(MD_IMAGES)\texture.jpg"</notrans_i></td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_ERPNR</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>ERP no.</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_1</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 1</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_2</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 2</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_3</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 3</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_4</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 4</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_5</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 5</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_6</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 6</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_7</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 7</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_8</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 8</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_9</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 9</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>P_ARTICLE_EXTERNAL_DOCUMENT_10</td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 10</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_11</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 11</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_12</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 12</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_13</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 13</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_14</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 14</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_15</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 15</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_16</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 16</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_17</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 17</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_18</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 18</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_DOCUMENT_19</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 19</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>P_ARTICLE_EXTERNAL_DOCUMENT_20</td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>External document 20</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_EXTERNAL_PLACEMENT</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>External placement</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_FUNCTIONGROUP</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Function group</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_IDENTCODE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>20 characters</td>
+                    <td>Barcode number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_IDENTTYPE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>20 characters</td>
+                    <td>Barcode type</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_MACRO</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Graphical macro (incl. directory)</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_GROUPNUMBER</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>10 characters</td>
+                    <td>Group number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_GROUPSYMBOLMACRO</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Macro</td>
+                    <td>Example: <notrans_i>"C:\macro.ema"</notrans_i> or <br /><notrans_i>"$(MD_MACROS)\Macro.ema"</notrans_i></td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_HEIGHT</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Height</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SPACING_ABOVE</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Mounting clearance Height: Above</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SPACING_BELOW</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Mounting clearance Height: Below</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_LASTCHANGE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Last change</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_LIFETIME</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>16 characters</td>
+                    <td>Service time</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_MAINTENANCE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>16 characters</td>
+                    <td>Lubrication / maintenance</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_MANUFACTURER</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Manufacturer</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_MOUNTINGSITE</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#P_ARTICLE_MOUNTINGSITE">Mounting surface</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_MOUNTINGSPACE</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Space requirement</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_NOTE</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Description</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_ORDERNR</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Order number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PACKAGINGPRICE_1</notrans>
+                    </td>
+                    <td>Currency</td>
+                    <td>8 bytes</td>
+                    <td>Purchase price 1/packaging</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PACKAGINGPRICE_2</notrans>
+                    </td>
+                    <td>Currency</td>
+                    <td>8 bytes</td>
+                    <td>Purchase price 2/packaging</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PACKAGINGQUANTITY</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Quantity/packaging</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PICTUREFILE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Image file</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PIECETYPE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>10 characters</td>
+                    <td>Part group</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PRICEUNIT</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Price unit</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PRODUCTTOPGROUP</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#P_ARTICLE_PRODUCTTOPGROUP">Generic product group</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PRODUCTGROUP</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#P_ARTICLE_PRODUCTGROUP">Product group</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PRODUCTSUBGROUP</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#P_ARTICLE_PRODUCTSUBGROUP">Product subgroup</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PURCHASEPRICE_1</notrans>
+                    </td>
+                    <td>Currency</td>
+                    <td>8 bytes</td>
+                    <td>Purchase price 1/price unit</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_PURCHASEPRICE_2</notrans>
+                    </td>
+                    <td>Currency</td>
+                    <td>8 bytes</td>
+                    <td>Purchase price 2/price unit</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_QUANTITYUNIT</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Quantity unit</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_REF_TERMINAL_OFFSET_X</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Offset in X direction (connection point pattern)</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_REF_TERMINAL_OFFSET_Y</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Offset in Y direction (connection point pattern)</td>
+                    <td />
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_REPORT_IDENTIFIER</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>20 characters</td>
+                    <td>Identifier for <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a></td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_REPORT_SYMBOL</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Symbol for reports</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SALESPRICE_1</notrans>
+                    </td>
+                    <td>Currency</td>
+                    <td>8 bytes</td>
+                    <td>Sales price 1</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SALESPRICE_2</notrans>
+                    </td>
+                    <td>Currency</td>
+                    <td>8 bytes</td>
+                    <td>Sales price 2</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SNAPHEIGHT</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Clip-on height</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SNAPHEIGHTMIDDLEOFFSET</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Center mismatch</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_INSTALLATION_DEPTH</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Mounting depth</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SPARE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>16 characters</td>
+                    <td>Spare part</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_STRESS</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>16 characters</td>
+                    <td>Stress</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SUBCRAFT_ELECTRICAL</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Subtrade "Electrical engineering"</td>
+                    <td>Multilingual; if you yourself have produced a subtrade under a trade, this is output in the <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> P_ARTICLE_SUBCRAFT_&lt;Trade&gt;-1="??_??@&lt;Subtrade name&gt;;" (so e.g. P_ARTICLE_SUBCRAFT_ELECTRICAL-1="??_??@test;" for the first subtrade under "Electrical engineering" with the name "test"). As the <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> are indexed, the index is output with a "minus".</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SUBCRAFT_MECHANICS</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Subtrade "Mechanics"</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SUBCRAFT_HYDRAULICS</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Subtrade "Hydraulics"</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SUBCRAFT_PNEUMATICS</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Subtrade "Pneumatics"</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SUBCRAFT_LUBRICATION</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Subtrade "Lubrication"</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SUBCRAFT_COOLING</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Subtrade "Cooling"</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SUBCRAFT_PROCESS</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Subtrade "Process engineering"</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SUPPLIER</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Supplier</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_REF_TERMINAL_NAME</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Connection point designation (<a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a>)</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_TERMINALSIZE_DESTINATION</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Connection dimension target</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_TERMINALSIZE_SOURCE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Connection dimension source</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_TYPENR</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Type number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_UNIQUEID</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Unique part <a href="Glossary_o_id.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ID</a></td>
+                    <td>
+                        <p>Derives from Data Portal.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_USAGE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>16 characters</td>
+                    <td>Procurement</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_WEAR</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>16 characters</td>
+                    <td>Wearing part</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_WEIGHT</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Weight</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_WIDTH</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Width</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SPACING_LEFT</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Mounting clearance Width: Left</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SPACING_RIGHT</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Mounting clearance Width: Right</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_3DMACRO</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Graphical macro</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table>
+            <p>The following additional attributes are for mechanical parts:</p>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_HINGEPOSITION</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#P_ARTICLE_HINGEPOSITION">Door: hinge</a>
+                    </td>
+                    <td>Properties; Selection list</td>
+                </tr>
+            </table><a name="variant"></a>
+            <h3>
+                <notrans>&lt;variant&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_VARIANT</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>3 characters</td>
+                    <td>Variant</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_ASSEMBLY_POS_PLACE_SPREADED</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Distributed placement of assembly</td>
+                    <td>Assembly</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CONNECTIONDESIGNATION</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Connection point designation</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SYMBOLFILE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Symbol library</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_SYMBOLNUMBER</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Symbol number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_CHARACTERISTICS</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>60 characters</td>
+                    <td>Technical characteristics</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_WIRECROSSSECTION_UNIT</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#P_ARTICLE_WIRECROSSSECTION_UNIT">Unit for connection cross-section / diameter</a>
+                    </td>
+                    <td>Properties; Selection list</td>
+                </tr>
+            </table><a name="functiontemplate"></a>
+            <h3>
+                <notrans>&lt;functiontemplate&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>functiondefcategory</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Category (function data)</td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>functiondefgroup</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Group (function data)</td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>functiondefid</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Function definition (function data)</td>
+                    <td>Selection list; the attributes "functiondefcategory", "functiondefgroup", and "functiondefid" together make up a <span class="important">function definition</span> (see also <a href="xmlexport_o_funcdef.htm">Overview of Function Definitions</a>).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>additionaldescription</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0</td>
+                    <td>Description (function data)</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>characteristics</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>60 characters</td>
+                    <td>Technical characteristics</td>
+                    <td>The meaning of this attribute depends on the type of part: <span class="gui"><br />Product group</span> "General": "Technical characteristics"<span class="gui"><br />Product group</span> "Cables": "Potential type" (<a href="xmlexport_o_sellists.htm#characteristics">Selection list</a>)<span class="gui"><br />Product group</span> "Relays, contactors": "Technical characteristics"<span class="gui"><br />Product group</span> "Plugs": is not used<span class="gui"><br />Product group</span> "Terminals": is not used<span class="gui"><br />Product group</span> "PLC": is not used</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>connectioncrosssection</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Connection point cross-section / diameter</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>connectionDesignation</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Connection point <a href="Glossary_o_bezeichnungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">designations</a></td>
+                    <td>The meaning of this attribute depends on the type of part: <span class="gui"><br />Product group</span> "General": "Connection point designations"<span class="gui"><br />Product group</span> "Cables": "Connection color / number"<span class="gui"><br />Product group</span> "Relays, contactors": "Connection point designations"<span class="gui"><br />Product group</span> "Plugs": "Connection point designations"<span class="gui"><br />Product group</span> "Terminals": "Connection point designations"<span class="gui"><br />Product group</span> "PLC": "Connection point designations"<br />A line break is used as a separator!</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>connectiondescription</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Connection point descriptions</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>connectiondimension</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Connection dimension</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>description</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Terminal / pin description</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>hasled</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Terminal with LED</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>hasplugadapter</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Terminal with plug-in adapter</td>
+                    <td>Only available for <a href="Glossary_o_funktionsschablonen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function templates</a> of terminals.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>idx1</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Index 1</td>
+                    <td>The meaning of this attribute depends on the type of part: <span class="gui"><br />Product group</span> "General": is not used<span class="gui"><br />Product group</span> "Cables": "Shielded by"<span class="gui"><br />Product group</span> "Relays, contactors": "Contact / coil index"<span class="gui"><br />Product group</span> "Plugs": is not used<span class="gui"><br />Product group</span> "Terminals": "Level"<span class="gui"><br />Product group</span> "PLC": "Channel designation"</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>idx2</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Index 2</td>
+                    <td>The meaning of this attribute depends on the type of part: <span class="gui"><br />Product group</span> "General": is not used<span class="gui"><br />Product group</span> "Cables": "Pair index"<span class="gui"><br />Product group</span> "Relays, contactors": is not used<span class="gui"><br />Product group</span> "Plugs": is not used<span class="gui"><br />Product group</span> "Terminals": is not used<span class="gui"><br />Product group</span> "PLC": is not used</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>intrinsicsafety</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Intrinsically safe</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>nesteddevicetag</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Subordinate DT</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pipeclass</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>20 characters</td>
+                    <td>Pipe class</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>plcbussystem</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#plcbussystem">Bus system</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>safetyrelevant</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Safety function</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>symbol</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Symbol</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>Symbolmacro</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Symbol macro</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>terminalfunction</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#terminalfunction">Terminal category</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>terminallabeltype</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>20 characters</td>
+                    <td>Labeling type</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>terminalNr</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Terminal number</td>
+                    <td>The meaning of this attribute depends on the type of part: <span class="gui"><br />Product group</span> "General": is not used<span class="gui"><br />Product group</span> "Cables": "Connection cross-section / diameter"<span class="gui"><br />Product group</span> "Relays, contactors": is not used<span class="gui"><br />Product group</span> "Plugs": "Terminal / pin designation"<span class="gui"><br />Product group</span> "Terminals": "Terminal / pin designation"<span class="gui"><br />Product group</span> "PLC": "Plug designation"</td>
+                </tr>
+            </table><a name="freeproperty"></a>
+            <h3>
+                <notrans>&lt;freeproperty&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>No more than 200 allowed!</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_FREE_DATA_DESCRIPTION</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Free properties: Description</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_FREE_DATA_UNIT</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Free properties: Unit</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_ARTICLE_FREE_DATA_VALUE</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Free properties: Value</td>
+                    <td>Multilingual</td>
+                </tr>
+            </table><a name="blockingSurfacePosition"></a>
+            <h3>
+                <notrans>&lt;blockingSurfacePosition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>frontside</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Front</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>height</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Height</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>type</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#type">Type</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>width</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Width</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>xpos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>X position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>ypos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Y position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="doorPosition"></a>
+            <h3>
+                <notrans>&lt;doorPosition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>partnr</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Part number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>variant</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>3 characters</td>
+                    <td>Variant</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>xpos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>X position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>ypos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Y position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>zpos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Z position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="mountingPanelPosition"></a>
+            <h3>
+                <notrans>&lt;mountingPanelPosition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>angle</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Angle</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>location</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#location">Mounting location</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>partnr</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Part number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>variant</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>3 characters</td>
+                    <td>Variant</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>xpos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>X position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>ypos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Y position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>zpos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Z position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="supportBarPosition"></a>
+            <h3>
+                <notrans>&lt;supportBarPosition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>length</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Length</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>partnr</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Part number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>variant</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>3 characters</td>
+                    <td>Variant</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>xpos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>X position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>ypos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Y position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>zpos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Z position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="assemblyposition"></a>
+            <h3>
+                <notrans>&lt;assemblyposition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>count</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Quantity</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>partnr</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Part number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>variant</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>3 characters</td>
+                    <td>Variant</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>posnr</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Item number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>additionaltext</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Supplementary text</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="moduleposition"></a>
+            <h3>
+                <notrans>&lt;moduleposition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>count</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Quantity</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>devicetag</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>DT</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>moduleid</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>16 characters</td>
+                    <td>DT ID</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>partnr</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Part number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>variant</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>3 characters</td>
+                    <td>Variant</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="attributeposition"></a>
+            <h3>
+                <notrans>&lt;attributeposition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>val</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>80 characters</td>
+                    <td>Value</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="accessoryposition"></a>
+            <h3>
+                <notrans>&lt;accessoryposition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>necessary</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Required</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>partnr</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Part number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>variant</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>3 characters</td>
+                    <td>Variant</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>parttype</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Record type</td>
+                    <td>Selection list; only "Component" and "Accessory list" are supported!</td>
+                </tr>
+                <tr>
+                    <td>placement</td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Accessory placement</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="accessorylist"></a>
+            <h3>
+                <notrans>&lt;accessorylist&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>class</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Type</td>
+                    <td>Only the value 13 is supported!</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ACCESSORYLIST_CREATE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Creation date</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ACCESSORYLIST_DESCRIPTION</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Description</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ACCESSORYLIST_LASTCHANGE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Last change</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ACCESSORYLIST_NAME</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Name</td>
+                    <td>
+                        <p>
+                            <p />
+                        </p>
+                    </td>
+                </tr>
+            </table><a name="accessorylistposition"></a>
+            <h3>
+                <notrans>&lt;accessorylistposition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>partnr</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Part number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>variant</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>3 characters</td>
+                    <td>Variant</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>placement</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Accessory placement</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="accessoryplacement"></a>
+            <h3>
+                <notrans>&lt;accessoryplacement&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>class</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Type</td>
+                    <td>Only the value 14 is supported!</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ACCESSORYPLACEMENT_CREATE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Creation date</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ACCESSORYPLACEMENT_DESCRIPTION</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Description</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ACCESSORYPLACEMENT_LASTCHANGE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Last change</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ACCESSORYPLACEMENT_NAME</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Name</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="accessoryplacementposition"></a>
+            <h3>
+                <notrans>&lt;accessoryplacementposition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>name</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Installation variant</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>referencepoint</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Base point</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>rotation</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Rotation</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>xspacing</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Offset in X-direction</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>yspacing</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Offset in Y-direction</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>zspacing</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Offset in Z-direction</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>movable</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Can be moved</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="construction"></a>
+            <h3>
+                <notrans>&lt;construction&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>class</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Type</td>
+                    <td>Only the value 6 is supported!</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_CONSTRUCTION_CREATE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Creation date</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_CONSTRUCTION_DESCRIPTION</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Description</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_CONSTRUCTION_LASTCHANGE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Last change</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_CONSTRUCTION_NAME</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Name</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="constructionPosition"></a>
+            <h3>
+                <notrans>&lt;constructionPosition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>name</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Name</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>offsetx</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Offset in X-direction</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>offsety</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Offset in Y-direction</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="drillingPosition"></a>
+            <h3>
+                <notrans>&lt;drillingPosition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>angle</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Angle</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>dimension1</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>1st dimension</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>dimension2</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>2nd dimension</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>dimension3</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>3rd dimension</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>drillnthhole</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td>Drill every n-th hole</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>outlinename</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Outline name</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>spacingend</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>End spacing</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>spacingrepeat</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Repetitive spacing</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>subtype</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#subtype">Subtype</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>type</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#drilltype">Drill type</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>xpos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>X position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>ypos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Y position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>fabricatealways</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Always make</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="terminal"></a>
+            <h3>
+                <notrans>&lt;terminal&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>class</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Type</td>
+                    <td>Only the value 7 is supported!</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_TERMINAL_ADDITIONALLENGTHDEFAULT</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Additional length</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_TERMINAL_CREATE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Creation date</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_TERMINAL_DESCRIPTION</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Description</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_TERMINAL_DIRECTION</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#P_PART_TERMINAL_DIRECTION">Routing direction</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_TERMINAL_LASTCHANGE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Last change</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_TERMINAL_NAME</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Name</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_TERMINAL_TYPEDEFAULT</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#P_PART_TERMINAL_TYPEDEFAULT">Wire termination processing (EPLAN Cabinet)</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_TERMINAL_TERMINALSIZE_DEFAULT</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>20 characters</td>
+                    <td>Connection dimension</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_TERMINAL_TYPEOFTERMINAL_DEFAULT</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#P_PART_TERMINAL_TYPEOFTERMINAL_DEFAULT">Connection category</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+            </table><a name="terminalPosition"></a>
+            <h3>
+                <notrans>&lt;terminalPosition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>additionallength</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Additional length</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>devicetag</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>255 characters</td>
+                    <td>Plug designation</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>direction</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#direction">Routing direction</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>level</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Level</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>maxcrosssection</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Max. cross-section / diameter</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>maxwirecount</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td>Max. number of <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a></td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>mincrosssection</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Min. cross-section / diameter</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>maxcrosssectionawg</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>20 characters</td>
+                    <td>Max. AWG</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>mincrosssectionawg</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>20 characters</td>
+                    <td>Min. AWG</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>name</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>20 characters</td>
+                    <td>Connection point designation</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>targetinfo</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Internal / External index</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>terminalsize</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>20 characters</td>
+                    <td>Connection dimension</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>twinsleeve</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Dual sleeve prescribed</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>typeofterminal</notrans>
+                    </td>
+                    <td>Long</td>
+                    <td>4 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#P_PART_TERMINAL_TYPEOFTERMINAL_DEFAULT">Connection category</a>
+                    </td>
+                    <td>Selection list</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>xpos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>X position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>ypos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Y position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>zpos</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Z position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>xdir</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>X vector</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>ydir</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Y vector</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>zdir</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>Z vector</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="safetyRelatedValuePosition"></a>
+            <h3>
+                <notrans>&lt;safetyRelatedValuePosition&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pos</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>posid</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td>Position ID</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>hierarchy1</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0</td>
+                    <td>Level 1 (text in tree structure)</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>hierarchy2</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0</td>
+                    <td>Level 2 (text in tree structure)</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>hierarchy3</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0</td>
+                    <td>Level 3 (text in tree structure)</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>hierarchy4</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0</td>
+                    <td>Level 4 (text in tree structure)</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>hierarchy5</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0</td>
+                    <td>Level 5 (text in tree structure)</td>
+                    <td>Multilingual</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>input</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Input (collect)</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>logic</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Logic (Generate report)</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>output</notrans>
+                    </td>
+                    <td>Bool</td>
+                    <td>1 bytes</td>
+                    <td>Output (React)</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pl</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>
+                        <notrans>PL</notrans>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>silcl</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>
+                        <notrans>SIL CL</notrans>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>pfhd</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>
+                        <notrans>PFHD</notrans>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>tmt1</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>
+                        <notrans>TMT1</notrans>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>mttfd</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>
+                        <notrans>MTTFD</notrans>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>lamdad</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>
+                        <notrans>Lambda-d</notrans>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>mttf</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>
+                        <notrans>MTTF</notrans>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>mtbf</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>
+                        <notrans>MTBF</notrans>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>rdf</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>
+                        <notrans>RDF</notrans>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>b10</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>
+                        <notrans>B10</notrans>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>b10d</notrans>
+                    </td>
+                    <td>Double</td>
+                    <td>8 bytes</td>
+                    <td>
+                        <notrans>B10 D</notrans>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table><a name="address"></a>
+            <h3>
+                <notrans>&lt;address&gt;</notrans>
+            </h3>
+            <table style="x-border-left: 1px table-solid;x-border-top: 1px table-solid;x-border-right: 1px table-solid;x-border-bottom: 1px table-solid;border-collapse: separate;" border="1">
+                <tr>
+                    <th>
+                        <p class="Tabelle_Text">Attribute</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Type</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Length</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Field name</p>
+                    </th>
+                    <th>
+                        <p class="Tabelle_Text">Remark</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>class</notrans>
+                    </td>
+                    <td>Integer</td>
+                    <td>2 bytes</td>
+                    <td><a href="xmlexport_o_sellists.htm#class">Type</a>
+                    </td>
+                    <td>Selection list; only "Customer" and "Manufacturer / supplier" are supported!</td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_EMAIL</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>70 characters</td>
+                    <td>E-mail</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_FAX</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Fax</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_LASTCHANGE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Last change</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_LONGNAME</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>70 characters</td>
+                    <td>Full name</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_NAME1</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Name 1</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_NAME2</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Name 2</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_NAME3</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>40 characters</td>
+                    <td>Name 3</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_NOTE</notrans>
+                    </td>
+                    <td>Memo</td>
+                    <td>0 characters</td>
+                    <td>Description</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_NUMBER</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Customer number</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_PHONE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>50 characters</td>
+                    <td>Phone</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_POBOX</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>P.O. box</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_SHORTNAME</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Short name</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_STATE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Country</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_STREET</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>100 characters</td>
+                    <td>Street</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_TITLE</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Title</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_TOWN</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>100 characters</td>
+                    <td>City</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_ZIPPOBOX</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Zip code / P.O. box</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <notrans>P_PART_ADDRESS_ZIPTOWN</notrans>
+                    </td>
+                    <td>Text</td>
+                    <td>30 characters</td>
+                    <td>Zip code / City</td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

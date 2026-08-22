@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.stepbystep" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|EPLAN Fluid|Proceed as Follows">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Piping and / or tubing lists can be reported and output using the standard settings for connection properties or the connection definition points set ..." /><title>Reporting and Outputting Piping and Tubing Lists</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/ftechnic_h_verrohrungsliste_auswerten_ausgeben.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor3227"></a>
+            <MadCap:concept term="Handlung" /><a name="aanchor3228"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Fluid" /><a name="kanchor3848"></a><a name="kanchor3849"></a><a name="kanchor3850"></a><a name="kanchor3851"></a>
+            <h2>Reporting and Outputting Piping and Tubing Lists</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Piping and / or tubing lists can be reported and output using the standard <a href="Glossary_o_einstellungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">settings</a> for connection <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> or the <a href="Glossary_o_verbindungsdefinitionspunkte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection definition points</a> set for the function definition. The section below describes how you can evaluate such a list using the default settings and output it as a project page. All pipe and tube <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> of a <a href="Glossary_o_fluidtechnik.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">fluid power</a> project are shown together in this list. </p>
+            <p class="Bridgehead">Preconditions:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">You have opened a project.</li>
+                <li class="Listitem_Normal" value="2"> The project contains one or more fluid schematic pages with <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a> of the <a href="Glossary_o_gewerke.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">trades</a> "Hydraulics" and "Pneumatics".</li>
+                <li class="Listitem_Normal" value="3">Connections exist between the devices of the respective trade.</li>
+                <li class="Listitem_Normal" value="4">You have access to connection list <a href="Glossary_o_formulare.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">forms</a>. (Select <span class="gui">Utilities &gt; Reports &gt; Generate</span>, then <span class="gui">[Settings] &gt; Output to pages</span>. A <a href="Glossary_o_verlauf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">form</a> entry for the report type "Connection list" must be present, e.g. <span class="codetext">F27_FT004</span>.)</li>
+            </ul>
+            <ul>
+                <li class="Listitem_Normal" value="1">The <span class="important">connection point type</span> "Fluid" is set at the function <a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a> of all fluid power components. (This connection point type is automatically assigned during insertion of fluid power <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a>. To check this, call up the <span class="gui">Properties &lt;...&gt;</span> dialog for the respective function, bring the <span class="gui">Symbol / function data</span> tab to the foreground, and click <span class="gui">[Logic]</span>.)</li>
+                <li class="Listitem_Normal" value="2">For all connections in the "Hydraulics" trade you have set the function definition "Pipe" as the default setting, and for all connections in the "Pneumatics" trade, you have set the function definition "Tube" as the default setting. (<span class="gui">Options &gt; Settings &gt; Projects &gt; "Project name" &gt; Connections &gt; Properties</span>, <span class="gui">Hydraulics, Pneumatics</span> tabs.) </li>
+                <li class="Listitem_Normal" value="3">You have defined a cross-section or diameter as the default settings for all fluid connections in the "Hydraulics" and "Pneumatics" trades. In addition, you have defined lengths for all hydraulic and pneumatic connections. (<span class="gui">Options &gt; Settings &gt; Projects &gt; "Project name" &gt; Connections &gt; Properties</span>, <span class="gui">Hydraulics, Pneumatics</span> tabs.)</li>
+            </ul>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Select the project in the page navigator.</li>
+                <li class="Listitem_Step_By_Step" value="2">Select the menu item <span class="gui">Utilities &gt; Reports &gt; Generate</span>.</li>
+                <li class="Listitem_Step_By_Step" value="3">Bring the <span class="gui">Reports</span> tab in the <span class="gui">Reports &lt;Project name&gt;</span> dialog to the front.</li>
+                <li class="Listitem_Step_By_Step" value="4">Select the <span class="gui">[New]</span> popup menu item in the tree view.</li>
+                <li class="Listitem_Step_By_Step" value="5">In the <span class="gui">Select report</span> dialog, select your project in the <span class="gui">Source project</span> field (if not already defined) and select the "Connection list" type from the <span class="gui">Select report type</span> list.</li>
+                <li class="Listitem_Step_By_Step" value="6">Click <span class="gui">[OK]</span>.</li>
+                <li class="Listitem_Step_By_Step" value="7">In the <span class="gui">Settings - Connection list</span> dialog, next to the <span class="gui">Filter </span>drop-down list, click <span class="gui">[...]</span> to <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> a new filter scheme. </li>
+                <li class="Listitem_Step_By_Step" value="8">In the <span class="gui">Filter</span> dialog, click <img src="../Pictures/Gui/ALL/all_new_as.png" /> (New). </li>
+                <li class="Listitem_Step_By_Step" value="9">Enter a scheme name in the dialog <span class="gui">New scheme</span>, for example "Pipes + tubes", and a meaningful description.</li>
+                <li class="Listitem_Step_By_Step" value="10">In the <span class="gui">Filter</span> dialog, click <img src="../Pictures/Gui/ALL/all_new_as.png" /> (New) to the right above the table to define the first filter criterion.</li>
+                <li class="Listitem_Step_By_Step" value="11">Mark the "Connection: Function definition" entry in the <span class="gui">Criteria selection</span> dialog.</li>
+                <li class="Listitem_Step_By_Step" value="12">Click <span class="gui">[...]</span> in the first table cell of the filter dialog below the <span class="gui">Value</span> column to select a value for the "Function definition" criterion.<br /></li>
+                <li class="Listitem_Step_By_Step" value="13">Follow the branch "General &gt; General special functions &gt; Connection &gt; Connection definition" in the tree view of the <span class="gui">Function definitions</span> dialog and select the connection definition "Pipe".</li>
+                <li class="Listitem_Step_By_Step" value="14">Specify a second filter criterion in the second table row in the dialog <span class="gui">Filter</span>. Select the "OR" entry.</li>
+                <li class="Listitem_Step_By_Step" value="15">Create a final filter criterion "Function definition" with the value "Tube" in the third table row.</li>
+                <li class="Listitem_Step_By_Step" value="16">Click <span class="gui">[OK]</span>.<br /></li>
+                <li class="Listitem_Step_By_Step" value="17">Select the "Trade" entry as the sorting criterion in the dialog <span class="gui">Settings - connection list</span>.</li>
+                <li class="Listitem_Step_By_Step" value="18">Click <span class="gui">[OK]</span>.<br /></li>
+                <li class="Listitem_Step_By_Step" value="19">In this dialog, you specify how the connection list is to be sorted into the existing page structure of your project. Enter the desired values into the <span class="gui">Higher-level function number</span>, <span class="gui">Page name</span>, and <span class="gui">Suppl. field: Sheet no.</span> fields.</li>
+                <li class="Listitem_Step_By_Step" value="20">Click <span class="gui">[OK]</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The report begins. When this is finished, the pages are output to the project. The generated connection list contains all tubing and piping connections of your project, with the connections being listed sorted by tubes and pipes .</li>
+            </ol>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p>The following preconditions have to be fulfilled if you wish to report and output a pipe / tube list using the connection definition points placed via the function definition:</p>
+                <ul>
+                    <li class="Listitem_Normal" value="1">Connection definition points have to be placed on the fluid power connections.</li>
+                    <li class="Listitem_Normal" value="2">The following properties have to be defined for each of the connection definition points:<br /><br />- <span class="gui">Cross-section / diameter</span><br />- <span class="gui">Connection designation</span><br />- <span class="gui">Function definition</span> "Pipe" for the "Hydraulics" trade, and "Hose" for the "Pneumatics" trade<br />- <span class="gui">Connection: Length with unit</span>.</li>
+                </ul>
+            </div>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="ftechnic_k_verbindungen.htm">EPLAN Fluid: Connections</a>
+            </p>
+            <p class="Link_Seealso"><a href="ftechnic_k_auswertungen.htm">EPLAN Fluid: Reports</a>
+            </p>
+            <p class="Link_Seealso"><a href="ftechnic_k_verrohrungs_verschlauchungslisten.htm">Reporting Piping and Tubing Lists</a>
+            </p>
+            <p class="Link_Seealso"><a href="formgeneratorgui_d_struktur.htm">Dialog &lt;Report type&gt;</a>
+            </p>
+            <p class="Link_Seealso"><a href="formgeneratorgui_d_auswertfestlegen.htm">Dialog Select report</a>
+            </p>
+            <p class="Link_Seealso"><a href="formgeneratorgui_d_grafikausgabe.htm">Dialog Settings - &lt;Report type&gt;</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

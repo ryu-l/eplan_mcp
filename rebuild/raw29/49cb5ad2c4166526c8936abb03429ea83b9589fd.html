@@ -1,0 +1,253 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>BundleConnections(Project,Int32,Int32,Int32,Double,List&lt;String&gt;,Boolean,Boolean,Boolean) Method</title>
+    <meta name="Title" content=""/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n42696","initialNodeContainer":"c541","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ConnectionService3D~BundleConnections(Project,Int32,Int32,Int32,Double,List{String},Boolean,Boolean,Boolean)"/>
+    <meta name="Description" content="Bundle connections of project." />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ConnectionService3D~BundleConnections"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.HEServices.ConnectionService3D.BundleConnections(Eplan.EplApi.DataModel.Project,System.Int32,System.Int32,System.Int32,System.Double,System.Collections.Generic.List{System.String},System.Boolean,System.Boolean,System.Boolean)"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices_namespace.html">Eplan.EplApi.HEServices Namespace</a>
+ / <a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ConnectionService3D.html">ConnectionService3D Class</a>
+ / <a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ConnectionService3D~BundleConnections.html">BundleConnections Method</a>
+ / BundleConnections(Project,Int32,Int32,Int32,Double,List&lt;String&gt;,Boolean,Boolean,Boolean) Method</div></div>
+
+    
+    
+<div id="pProjectPopupContent" class="i-popup-content">
+Project, which connections will be bundled
+</div>
+<div id="nStartValuePopupContent" class="i-popup-content">
+Start value for bundle numbers
+</div>
+<div id="nStepWithPopupContent" class="i-popup-content">
+Step with for bundle numbers
+</div>
+<div id="nNumWiresInBundleMaxPopupContent" class="i-popup-content">
+Maximum number of wires per bundle
+</div>
+<div id="dSubXSectionInBundlePopupContent" class="i-popup-content">
+Maximum summary cross-section in a bundle
+</div>
+<div id="arrBundlingSchemasPopupContent" class="i-popup-content">
+List of bundling schemes
+</div>
+<div id="bPreferChainsPopupContent" class="i-popup-content">
+If true daisy chanins (Net) will be prefered in bundle.
+</div>
+<div id="bDoCompleteProjectPopupContent" class="i-popup-content">
+Apply for entire project
+</div>
+<div id="bShowPreviewPopupContent" class="i-popup-content">
+Show preview
+</div>
+
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">BundleConnections(Project,Int32,Int32,Int32,Double,List&lt;String&gt;,Boolean,Boolean,Boolean) Method</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">Bundle connections of project.</div>
+            
+            
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">void</span> BundleConnections( 
+   <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Project.html">Project</a> <i><a class="i-popup-link" id="pProjectPopupLink" data-popup-contentsource="#pProjectPopupContent" data-popup-showevent="click mouseenter">pProject</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemInt32ClassTopic','System.Int32')">int</a> <i><a class="i-popup-link" id="nStartValuePopupLink" data-popup-contentsource="#nStartValuePopupContent" data-popup-showevent="click mouseenter">nStartValue</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemInt32ClassTopic','System.Int32')">int</a> <i><a class="i-popup-link" id="nStepWithPopupLink" data-popup-contentsource="#nStepWithPopupContent" data-popup-showevent="click mouseenter">nStepWith</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemInt32ClassTopic','System.Int32')">int</a> <i><a class="i-popup-link" id="nNumWiresInBundleMaxPopupLink" data-popup-contentsource="#nNumWiresInBundleMaxPopupContent" data-popup-showevent="click mouseenter">nNumWiresInBundleMax</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemDoubleClassTopic','System.Double')">double</a> <i><a class="i-popup-link" id="dSubXSectionInBundlePopupLink" data-popup-contentsource="#dSubXSectionInBundlePopupContent" data-popup-showevent="click mouseenter">dSubXSectionInBundle</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemCollectionsGenericList`1ClassTopic','System.Collections.Generic.List`1')">List&lt;string&gt;</a> <i><a class="i-popup-link" id="arrBundlingSchemasPopupLink" data-popup-contentsource="#arrBundlingSchemasPopupContent" data-popup-showevent="click mouseenter">arrBundlingSchemas</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bPreferChainsPopupLink" data-popup-contentsource="#bPreferChainsPopupContent" data-popup-showevent="click mouseenter">bPreferChains</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bDoCompleteProjectPopupLink" data-popup-contentsource="#bDoCompleteProjectPopupContent" data-popup-showevent="click mouseenter">bDoCompleteProject</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bShowPreviewPopupLink" data-popup-contentsource="#bShowPreviewPopupContent" data-popup-showevent="click mouseenter">bShowPreview</a></i>
+)</pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre><span style="color: #0000FF; ">public</span>:
+<span style="color: #0000FF; ">void</span> BundleConnections( 
+   <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Project.html">Project^</a> <i><a class="i-popup-link" id="pProjectPopupLink" data-popup-contentsource="#pProjectPopupContent" data-popup-showevent="click mouseenter">pProject</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemInt32ClassTopic','System.Int32')">int</a> <i><a class="i-popup-link" id="nStartValuePopupLink" data-popup-contentsource="#nStartValuePopupContent" data-popup-showevent="click mouseenter">nStartValue</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemInt32ClassTopic','System.Int32')">int</a> <i><a class="i-popup-link" id="nStepWithPopupLink" data-popup-contentsource="#nStepWithPopupContent" data-popup-showevent="click mouseenter">nStepWith</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemInt32ClassTopic','System.Int32')">int</a> <i><a class="i-popup-link" id="nNumWiresInBundleMaxPopupLink" data-popup-contentsource="#nNumWiresInBundleMaxPopupContent" data-popup-showevent="click mouseenter">nNumWiresInBundleMax</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemDoubleClassTopic','System.Double')">double</a> <i><a class="i-popup-link" id="dSubXSectionInBundlePopupLink" data-popup-contentsource="#dSubXSectionInBundlePopupContent" data-popup-showevent="click mouseenter">dSubXSectionInBundle</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemCollectionsGenericList`1ClassTopic','System.Collections.Generic.List`1')">List&lt;String^&gt;^</a> <i><a class="i-popup-link" id="arrBundlingSchemasPopupLink" data-popup-contentsource="#arrBundlingSchemasPopupContent" data-popup-showevent="click mouseenter">arrBundlingSchemas</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bPreferChainsPopupLink" data-popup-contentsource="#bPreferChainsPopupContent" data-popup-showevent="click mouseenter">bPreferChains</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bDoCompleteProjectPopupLink" data-popup-contentsource="#bDoCompleteProjectPopupContent" data-popup-showevent="click mouseenter">bDoCompleteProject</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bShowPreviewPopupLink" data-popup-contentsource="#bShowPreviewPopupContent" data-popup-showevent="click mouseenter">bShowPreview</a></i>
+) </pre></pre>
+            </div>
+        
+
+            </div>
+        
+            <h4 class=dxh4>Parameters</h4><dl><dt><I>pProject</I></dt>
+<dd>Project, which connections will be bundled</dd><dt><I>nStartValue</I></dt>
+<dd>Start value for bundle numbers</dd><dt><I>nStepWith</I></dt>
+<dd>Step with for bundle numbers</dd><dt><I>nNumWiresInBundleMax</I></dt>
+<dd>Maximum number of wires per bundle</dd><dt><I>dSubXSectionInBundle</I></dt>
+<dd>Maximum summary cross-section in a bundle</dd><dt><I>arrBundlingSchemas</I></dt>
+<dd>List of bundling schemes</dd><dt><I>bPreferChains</I></dt>
+<dd>If true daisy chanins (Net) will be prefered in bundle.</dd><dt><I>bDoCompleteProject</I></dt>
+<dd>Apply for entire project</dd><dt><I>bShowPreview</I></dt>
+<dd>Show preview</dd></dl>
+            
+            </div>
+            <div class="i-section-heading" id="i-exceptions-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Exceptions</span></div><div id="i-exceptions-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>Exception</th><th>Description</th></tr>
+<tr><td class=i-link><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemArgumentNullExceptionClassTopic','System.ArgumentNullException')">System.ArgumentNullException</a></td><td class="i-description">Thrown when neccessary argument is <code originaltag="c">null</code>.</td></tr>
+<tr><td class=i-link><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemApplicationExceptionClassTopic','System.ApplicationException')">System.ApplicationException</a></td><td class="i-description">The System::Int32ernal System::Int32erface used for export could not be created.</td></tr>
+<tr><td class=i-link><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemUnauthorizedAccessExceptionClassTopic','System.UnauthorizedAccessException')">System.UnauthorizedAccessException</a></td><td class="i-description">No user rights to create files on the file system.</td></tr>
+</table></div>
+            
+            
+            
+            <a name="exampleBookmark"></a>
+            
+            
+            
+            
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ConnectionService3D.html">ConnectionService3D Class</a>
+<br/><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ConnectionService3D_members.html">ConnectionService3D Members</a>
+<br/><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ConnectionService3D~BundleConnections.html">Overload List</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.ConnectionService3D~BundleConnections(Project,Int32,Int32,Int32,Double,List{String},Boolean,Boolean,Boolean)">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

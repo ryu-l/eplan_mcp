@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Nodes are also arranged in nested order within a diagram in accordance with the hierarchy of the mechatronic structure. For example, in the planning d..." /><title>Nested nodes</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/eecgraph2d_k_nodes_nested.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor852"></a>
+            <MadCap:concept term="Basis" />
+            <h2>Nested nodes</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Nodes are also arranged in nested order within a diagram in accordance with the hierarchy of the mechatronic structure. For example, in the planning diagram for the âBodyshell workâ model, roller conveyors and robots can only be positioned within a safety circuit. To this end, a list of all subordinate nodes is defined in the configuration of the superordinate node by means of the <span class="codetext">acceptedChildren</span> attribute.</p>
+            <p class="Precondition">Sample code for a nested structure:</p>
+            <p>This example illustrates the nesting of a safety circuit and robots in the planning diagram for the âBodyshell workâ demo model. The relevant parts of the code are in boldface. Every node that corresponds to the configuration of <span class="codetext">Function</span> and <span class="codetext">LabelAsSlave</span> is permitted as a subordinate node of <span class="codetext">SafetyCircuit</span>. In this example, the node for robots is configured as a <span class="codetext">Function</span> and is therefore a permitted sub-element of <span class="codetext">SafetyCircuit</span>.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownhotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example code:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup"><a name="aanchor853"></a><MadCap:concept term="Graph2D" />&lt;node id="Schutzkreis" super="Komponente" valid="=isInstanceEO() and
+	isInstanceOf('Rohbau_Architektur.Ebenenkomponenten.Schutzkreis')"
+	acceptedChildren="Funktion LabelAsSlave"&gt;
+	&lt;figurePolygon figure="com.mind8.graph2d.figure.container.Polygon"&gt;
+		&lt;properties&gt;
+			&lt;property id="bColor"&gt;
+				&lt;read value="255,255,255"/&gt;
+            &lt;/property&gt;
+			&lt;property id="boLineStyle"&gt;
+				&lt;read value="1"/&gt;
+            &lt;/property&gt;
+            &lt;property id="showLabel"&gt;
+				&lt;read value="true"/&gt;
+            &lt;/property&gt;
+            &lt;property id="boColor"&gt;
+				&lt;read value="62,12,144"/&gt;
+            &lt;/property&gt;
+            &lt;property id="boWidth"&gt;
+				&lt;read value="4"/&gt;
+            &lt;/property&gt;
+            &lt;property id="bendpointsCount"&gt;
+				&lt;read value="4"/&gt;
+            &lt;/property&gt;
+            &lt;property id="bendpointsModifiable"&gt;
+				&lt;read value="true"/&gt;
+			&lt;/property&gt;
+		&lt;/properties&gt;
+	&lt;/figurePolygon&gt;
+	&lt;property id="text"&gt;
+		&lt;read value="=$Bezeichnung"/&gt;
+		&lt;write key="value" receiver="=getParameter('Bezeichnung')"/&gt;
+	&lt;/property&gt;
+&lt;/node&gt;
+&lt;node id="Roboter"
+	super="Funktion"
+	valid="=isInstanceOf('Rohbau_Baukasten.
+	Mechatronik.Roboter')"&gt;
+	&lt;property id="img"&gt;
+		&lt;read value="=type('Rohbau_Baukasten.Diagramm_Konfiguration.
+		Planungs_Diagramm.Register').image(this)"/&gt;
+	&lt;/property&gt;
+&lt;/node&gt;</code></pre>
+                            <p class="Bridgehead">Result:</p>
+                            <p>
+                                <img src="../Pictures/graph2d_verschachtelung.png" alt="" />
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

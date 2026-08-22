@@ -1,0 +1,43 @@
+# NumberOfRecords Property (PlaceHolder3D)
+
+NumberOfRecords Property (PlaceHolder3D)
+
+Count of records.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public virtual int NumberOfRecords {get;}
+```
+```
+
+```
+```
+public:
+virtual property int NumberOfRecords {
+   int get();
+}
+```
+```
+
+#### Property Value
+
+Count of records.
+
+See Also
+
+#### Reference
+
+[PlaceHolder3D Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PlaceHolder3D.html)
+  
+[PlaceHolder3D Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PlaceHolder3D_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PlaceHolder3D~NumberOfRecords)

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.concept" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="One or more structure identifiers that already exist in the full DT were entered manually in the Displayed DT field in the dialog Properties &lt;......" /><title>P017011: Displayed DT contains structure identifiers that are not required</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/messages_p_017011.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <notrans>
+            <div class="nscr" id="nscr"><a name="aanchor1787"></a>
+                <MadCap:concept term="Messages" /><a name="kanchor2123"></a><a name="kanchor2124"></a><a name="P017011"></a>
+                <h2>P017011: Displayed DT contains structure identifiers that are not required</h2>
+            </div>
+        </notrans>
+        <div class="mainbody" id="mainbody">
+            <h3>Cause</h3>
+            <p>One or more <a href="Glossary_o_strukturkennzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">structure identifiers</a> that already exist in the full DT were entered manually in the <span class="gui">Displayed DT</span> field in the dialog <span class="gui">Properties &lt;...&gt;</span> of a function, a structure box or a black box or an interruption point.</p>
+            <p>In the case of schematics with <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a> that are placed very closely, manually placed structure identifiers that are already contained in the full DT can rapidly impair the readability of schematics. This check run allows you to determine superfluous structure identifiers and thus keep order in the project.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><a name="I_Beispiel"></a> <img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:
+</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">In your project you use a page structure with the <a href="Glossary_o_kennzeichnungsbloecke.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">identifier blocks</a> "Higher-level function" and "Mounting location". You have assigned the structure identifier "ANL" with the <a href="Glossary_o_vorzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">preceding sign</a> "=" to the "Higher-level function" identifier block, the "structure identifier "EBO" with the preceding sign "+" to the "Mounting location identifier block.</p>
+                        <p class="Infoblock"> On the first page with the full page name "=ANL+EBO/1" you place, for example a signal lamp and open the dialog <span class="gui">Properties &lt;...&gt;</span> of the <a href="Glossary_o_schaltzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">component</a>.. The "-H1" entry is displayed in the <span class="gui">Displayed DT</span> field. In addition to the displayed DT, the <span class="gui">Full DT</span> also contains the structure identifiers of the page because EPLAN always imports the page structure that you defined while creating the project for the devices. The page structure is placed in front of the displayed DT. Therefore the entry in the full DT of the signal lamp is "=ANL+EBO-H1".</p>
+                        <p class="Infoblock">You now add the string "+EBO" manually to the identifier "-H1" in the <span class="gui">Displayed DT</span> so that the displayed DT of the signal lamp is "+EBO-H1". This addition does not have any effect on the full DT since EPLAN recognizes the duplicate entry and reduces it automatically to one entry. So that the full DT remains unchanged. However, in the schematic a longer DT, namely "+EBO-H1", is displayed at the component.</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Solution</h3>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1">Locate the function in the schematic using the <span class="gui">Go to (graphic)</span> functionality from the popup menu in the <span class="gui">Message management</span> dialog.</li>
+                <li class="Listitem_Step_By_Step" value="2">Call the dialog <span class="gui">Properties &lt;...&gt;</span> of the component and compare the entries in the <span class="gui">Displayed DT</span> and <span class="gui">Full DT</span> property fields.</li>
+                <li class="Listitem_Step_By_Step" value="3">Delete all the superfluous structure identifiers in the <span class="gui">Displayed DT</span>, i.e. all the structure identifiers that are already contained in the <span class="gui">Full DT</span> field.</li>
+                <li class="Listitem_Step_By_Step" value="4">Then start a new check run.</li>
+            </ol>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

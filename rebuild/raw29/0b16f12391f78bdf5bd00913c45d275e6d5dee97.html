@@ -1,0 +1,302 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Messages</title>
+    <meta name="Title" content="Messages"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n160","initialNodeContainer":"c0","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <meta name="Description" content="As API developer, you can add new electrotechnical messages to EPLAN and to write them to the message management. " />
+    
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+    <script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="e4e03f08-2045-4804-8269-11c1d43db157"/>
+    <meta name="Microsoft.Help.TocParent" content="83e0aa48-04c2-4e59-982a-0bee5fa917cb"/>
+    <meta name="Microsoft.Help.TocOrder" content="1"/>
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="index.html">EPLAN API</a>
+ / <a href="API_UserGuide.html">User Guide</a>
+ / <a href="EServices.html">API Electrotechnical services</a>
+ / Messages</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Messages</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <p>As API developer, you can add new electrotechnical messages to EPLAN and to write them to the message management.&nbsp;</p>
+
+<p>In order to create a new message, add a class to your project, which implements the interface IMessage.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>The IEplMessage interface declares 3 functions:</p>
+
+<ol>
+    <li value="1">The parameters of the function OnRegister() define the properties of the message and how it is registered in EPLAN.</li>
+
+    <li value="2">The function GetMessageText() returns -- on request of EPLAN -- the message text, which is displayed in dialogs.</li>
+
+    <li value="3">The function DoHelp() is called by the system, if EPLAN request help about the message.</li>
+</ol>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+<span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">class</span> Message: Eplan.EplApi.EServices.IMessage
+{
+    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">void</span> OnRegister( <span style="COLOR: #0000ff">ref</span> IMessage.Region eRegionId, <span style="COLOR: #0000ff">ref</span> <span style="COLOR: #0000ff">int</span> iMessageId,
+      <span style="COLOR: #0000ff">ref</span> IMessage.Classification eClassification, <span style="COLOR: #0000ff">ref</span> <span style="COLOR: #0000ff">int</span> iOrdinal)
+    {
+        eRegionId = IMessage.Region.Externals;
+        iMessageId = 25;
+        eClassification = IMessage.Classification.Error; iOrdinal = 20;
+        <span style="COLOR: #0000ff">return</span>;
+    }
+    <span style="COLOR: #0000ff">public</span> System.String GetMessageText()
+    {
+        <span style="COLOR: #008000">// TODO: Provide text from resource in active GUI language
+</span>        <span style="COLOR: #0000ff">return</span> <span style="COLOR: #800000">"Message text for %1!s! from Eplan.EplAddIn.Demo.Messages"</span>;
+    }
+    <span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">void</span> DoHelp()
+    {
+        <span style="COLOR: #0000ff">new</span> Decider().Decide(EnumDecisionType.eOkDecision, <span style="COLOR: #800000">"DoHelp was called!"</span>, <span style="COLOR: #800000">"Eplan.EplAddIn.Demo.Messages"</span>, EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
+        <span style="COLOR: #008000">// TODO: activate help for this message
+</span>    }
+}
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+<span style="COLOR: #0000ff">Public</span> <span style="COLOR: #0000ff">Class</span> Message
+   <span style="COLOR: #0000ff">Implements</span> Eplan.EplApi.EServices.IMessage
+   <span style="COLOR: #0000ff">Public</span> <span style="COLOR: #0000ff">Sub</span> OnRegister(<span style="COLOR: #0000ff">ByRef</span> eRegionId <span style="COLOR: #0000ff">As</span> IMessage.Region, <span style="COLOR: #0000ff">ByRef</span> iMessageId <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">Integer</span>, _
+                          <span style="COLOR: #0000ff">ByRef</span> eClassification <span style="COLOR: #0000ff">As</span> IMessage.Classification, <span style="COLOR: #0000ff">ByRef</span> iOrdinal <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">Integer</span>) _
+                          <span style="COLOR: #0000ff">Implements</span> Eplan.EplApi.EServices.IMessage.OnRegister
+      eRegionId = IMessage.Region.Externals
+      iMessageId = 25
+      eClassification = IMessage.Classification.Error
+      iOrdinal = 20
+      <span style="COLOR: #0000ff">Return</span>
+   <span style="COLOR: #0000ff">End Sub</span> <span style="COLOR: #008000">'OnRegister
+</span>
+   <span style="COLOR: #0000ff">Public</span> <span style="COLOR: #0000ff">Function</span> GetMessageText() <span style="COLOR: #0000ff">As</span> System.String <span style="COLOR: #0000ff">Implements</span> Eplan.EplApi.EServices.IMessage.GetMessageText
+      <span style="COLOR: #008000">' TODO: Provide text from resource in active GUI language
+</span>      <span style="COLOR: #0000ff">Return</span> <span style="COLOR: #800000">"Message text for %1!s! from Eplan.EplAddIn.Demo.Messages"</span>
+   <span style="COLOR: #0000ff">End Function</span> <span style="COLOR: #008000">'GetMessageText
+</span>
+   <span style="COLOR: #0000ff">Public</span> <span style="COLOR: #0000ff">Sub</span> DoHelp() Eplan.EplApi.EServices.IMessage.DoHelp
+      <span style="COLOR: #0000ff">Dim</span> dec <span style="COLOR: #0000ff">As</span> Decider = <span style="COLOR: #0000ff">New</span> Decider
+      dec.Decide(EnumDecisionType.eOkDecision, <span style="COLOR: #800000">"DoHelp was called!"</span>, <span style="COLOR: #800000">"Eplan.EplAddIn.Demo.Messages"</span>, EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)
+   <span style="COLOR: #0000ff">End Sub</span> <span style="COLOR: #008000">'DoHelp ' TODO: activate help for this message
+</span><span style="COLOR: #0000ff">End Class</span> <span style="COLOR: #008000">'Message</span>
+</pre>
+    </div>
+</div>
+
+<p>A registered message can be written to the message database with help of the MessageManager class.&nbsp;</p>
+
+<div class="i-tab-container i-tab-container-widget">
+    <ul role="tablist">
+        <li class="i-filtered-content-CS"><a href="#i-tab-content-CS">C#</a></li>
+
+        <li class="i-filtered-content-VB"><a href="#i-tab-content-VB">VB</a></li>
+    </ul>
+
+    <div id="i-tab-content-CS" class="i-code i-filtered-content-CS">
+        <pre>
+Eplan.EplApi.EServices.MessageManager oMessageMgr = <span style="COLOR: #0000ff">new</span> Eplan.EplApi.EServices.MessageManager();
+Eplan.EplApi.DataModel.ProjectManager oPM= <span style="COLOR: #0000ff">new</span> Eplan.EplApi.DataModel.ProjectManager();
+Eplan.EplApi.DataModel.Project oProject= oPM.CurrentProject;
+<span style="COLOR: #0000ff">if</span> (oProject != <span style="COLOR: #0000ff">null</span>)
+{
+    Eplan.EplApi.DataModel.Page[] arrPages = oProject.Pages;
+    Eplan.EplApi.DataModel.Function[] arrFunction= arrPages[5].Functions;
+    Eplan.EplApi.DataModel.StorableObject oObject1= arrFunction[0];
+    Eplan.EplApi.DataModel.StorableObject oObject2= arrFunction[1];
+    oMessageMgr.AddMessage( oProject, Eplan.EplApi.EServices.IMessage.Region.Externals, 25,
+     <span style="COLOR: #800000">"XYZ"</span>, oObject1, <span style="COLOR: #0000ff">false</span>, oObject2, <span style="COLOR: #800000">"Additional Text"</span>);
+}
+</pre>
+    </div>
+
+    <div id="i-tab-content-VB" class="i-code i-filtered-content-VB">
+        <pre>
+<span style="COLOR: #0000ff">Dim</span> oMessageMgr <span style="COLOR: #0000ff">As</span> <span style="COLOR: #0000ff">New</span> Eplan.EplApi.EServices.MessageManager()
+<span style="COLOR: #0000ff">Dim</span> oPM <span style="COLOR: #0000ff">As</span> Eplan.EplApi.DataModel.ProjectManager = <span style="COLOR: #0000ff">New</span> Eplan.EplApi.DataModel.ProjectManager()
+<span style="COLOR: #0000ff">Dim</span> oProject <span style="COLOR: #0000ff">As</span> Eplan.EplApi.DataModel.Project = oPM.CurrentProject
+<span style="COLOR: #0000ff">If</span> <span style="COLOR: #0000ff">Not</span> (oProject <span style="COLOR: #0000ff">Is</span> <span style="COLOR: #0000ff">Nothing</span>) <span style="COLOR: #0000ff">Then</span>
+   <span style="COLOR: #0000ff">Dim</span> arrPages <span style="COLOR: #0000ff">As</span> Eplan.EplApi.DataModel.Page() = oProject.Pages
+   <span style="COLOR: #0000ff">Dim</span> arrFunction <span style="COLOR: #0000ff">As</span> Eplan.EplApi.DataModel.Function() = arrPages(5).Functions
+   <span style="COLOR: #0000ff">Dim</span> oObject1 <span style="COLOR: #0000ff">As</span> Eplan.EplApi.DataModel.StorableObject = arrFunction(0)
+   <span style="COLOR: #0000ff">Dim</span> oObject2 <span style="COLOR: #0000ff">As</span> Eplan.EplApi.DataModel.StorableObject = arrFunction(1)
+   oMessageMgr.AddMessage(oProject, Eplan.EplApi.EServices.IMessage.Region.Externals, 25, <span style="COLOR: #800000">"XYZ"</span>, oObject1, <span style="COLOR: #0000ff">False</span>, oObject2, <span style="COLOR: #800000">"Additional Text"</span>)
+<span style="COLOR: #0000ff">End</span> <span style="COLOR: #0000ff">If</span>
+</pre>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
+<h3>Overriding text of an existing message&nbsp;</h3>
+
+<p>It is <strong>not</strong> possible to change an existing verification by overriding it via API (by setting the same name and a higher Ordinal number). You can however override an existing message and by this change the standard message text to your own text. You need to implement a message with the dame number and region, but use a higher iOrdinal, e.g. 50. Other properties of the message are not influenced.&nbsp;</p>
+
+<p>The following example shows, how to override the existing 007005 "Device without main function." message:&nbsp;</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>C#</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #008000">///
+/// This function returns the message text.
+/// One verification needs always exactly one message text.
+///
+</span><span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">string</span> GetMessageText()
+{
+   <span style="COLOR: #0000ff">return</span> <span style="COLOR: #800000">"This device has absolutely no main function!!!!"</span>;
+}
+
+<span style="COLOR: #008000">///
+/// This is the registration function of the message belonging to the verification.
+/// Parameters:
+/// message region
+/// message number
+/// classification: error, message, or info.
+/// overload priority
+</span><span style="COLOR: #0000ff">public</span> <span style="COLOR: #0000ff">void</span> OnRegister(<span style="COLOR: #0000ff">ref</span> String strCreator, <span style="COLOR: #0000ff">ref</span> Eplan.EplApi.EServices.IMessage.Region eRegion, <span style="COLOR: #0000ff">ref</span> <span style="COLOR: #0000ff">int</span> iMessageId, <span style="COLOR: #0000ff">ref</span> Eplan.EplApi.EServices.IMessage.Classification eClassification, <span style="COLOR: #0000ff">ref</span> <span style="COLOR: #0000ff">int</span> iOrdinal)
+{
+   strCreator = <span style="COLOR: #800000">"de.Eplan.Demo"</span>;
+   eRegion = IMessage.Region.Devices;
+   iMessageId = 5;
+   eClassification = IMessage.Classification.Error;
+   iOrdinal = 50; <span style="COLOR: #008000">// higher than 20
+</span>}
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-see-also-sub-heading">Reference</h4><div class="i-see-also-link">
+<a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Message.html">Message Class</a></div>
+<div class="i-see-also-link">
+<a href="Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.IMessage.html">IMessage Interface</a></div>
+
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Messages">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

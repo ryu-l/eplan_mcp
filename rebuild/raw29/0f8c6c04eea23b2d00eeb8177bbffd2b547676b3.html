@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.concept" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Editing PLC Information|PLC|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="PLC data exchange is possible for different PLC manufacturers in AutomationML format. This is a manufacturer-neutral XML-based data format (Automation..." /><title>PLC Data Exchange in AutomationML Format</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/plcgui_k_amlbusdatenaustausch.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor976"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor977"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8" /><a name="kanchor1100"></a><a name="kanchor1101"></a><a name="kanchor1102"></a>
+            <h2>PLC Data Exchange in AutomationML Format</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>PLC <a href="Glossary_o_datenaustausch.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">data exchange</a> is possible for different PLC manufacturers in AutomationML format. This is a manufacturer-neutral XML-based data format (Automation Markup Language).</p>
+            <fieldset data-mc-conditions="Conditions.New">
+                <p>To this purpose the corresponding entries in the list of the possible <a href="Glossary_o_formate.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">formats</a> are available to you in the dialogs for the export and import of PLC data - depending on the selected PLC configuration program. Certain aspects have to be taken into consideration for the export in the AutomationML format:</p>
+            </fieldset>
+            <fieldset data-mc-conditions="Conditions.New">
+                <ul>
+                    <li class="Listitem_Normal" value="1">Each object is identified in AutomationML by a <span class="important">GUID (Globally Unique Identifier) that is unique worldwide</span>. This GUID is assigned automatically during the export, in as far as no GUID was specified, and should normally not be changed manually. Exporting in AutomationML format is therefore ony possible from editable <a href="Glossary_o_projekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">projects</a>.<br />An AutomationML GUID has the format "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", with "x" standing for one of the characters "0 1 2 3 4 5 6 7 8 9 a b c d e f A B C D E F".</li>
+                    <li class="Listitem_Normal" value="2">Own GUIDs are also assigned to the <span class="important"><a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a></span> of <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a>. Connection points are exported as <notrans_i><span class="codetext">ExternalInterface</span></notrans_i>.</li>
+                    <li class="Listitem_Normal" value="3"><span class="important">Accessory parts</span> can be output optionally in the export file and have own GUIDs assigned to them. This is, for example, necessary in order to exchange <a href="Glossary_o_zubehoer.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">accessories</a> with the TIA Selection Tool. All parts that are entered at the positions 2 to 50 on the <span class="gui">Parts</span> tab in the <a href="Glossary_o_eigenschaftendialog.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">property dialog</a> of a main function are considered to be accessories. A PLC type designation must be entered for these parts in the parts management to allow export of the accessory parts. The GUID for accessory parts is assigned automatically during exporting and is saved in the <span class="gui">AutomationML GUID (accessories)</span> property.<br />When an accessory <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> at the main function is deleted, the associated GUID is selected. The GUID is retained when an accessory part is edited (for example new part selection, device selection or changing of the sequence on the <span class="gui">Parts</span> tab).</li>
+                    <li class="Listitem_Normal" value="4">You can use the compressing function of projects to remove AutomationML GUIDs that are no longer required from a project (for example in a copy of the project). To do this activate the check box <span class="gui">AutomationML GUIDs</span> in the dialog <span class="gui">Settings: Compression</span> in the hierarchy level <span class="gui">Remove <a href="Glossary_o_projektdaten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">project data</a></span>.</li>
+                    <li class="Listitem_Normal" value="5">During the export all those <a href="Glossary_o_betriebsmittel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">devices</a> are taken into consideration that have at least one bus port. This means that <a href="Glossary_o_geraetekaesten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">black boxes</a>, motors and other devices can be exported in addition to <a href="Glossary_o_sps_kaesten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC boxes</a>.</li>
+                    <li class="Listitem_Normal" value="6">During the export of Ethernet-based bus systems you can specify whether the <span class="important">port-specific interconnection</span> of the <a href="Glossary_o_sps_busanschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">bus ports</a> is to be output in the export file. If you work with flexible cabling, you can deactivate the output of the port-specific interconnection in order to avoid re-working.</li>
+                    <li class="Listitem_Normal" value="7">The names of the <span class="important"><a href="Glossary_o_module.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">modules</a></span> within a <a href="Glossary_o_baugruppentraeger.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">rack</a> have to be unique for the export in AutomationML format. In this case the object description is not exported as the name, but rather the <span class="gui">PLC card name</span> property. If the PLC card name is empty, the object description is exported and - to make it unique - a consecutive item number is attached (Description_1, Description_2, etc.). If no object description is available, a unique PLC card name is generated. The PLC card names generated during the export are saved in the property <span class="gui">PLC card name</span> (<a href="Glossary_o_id.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ID</a> 20437).</li>
+                    <li class="Listitem_Normal" value="8">In addition to the <a href="Glossary_o_funktionstexte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">function texts</a> of the <a href="Glossary_o_sps_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">PLC connection points</a> the <span class="important">function texts of the PLC boxes</span> are also exported and imported (<span class="gui">Function text (automatic)</span> property). The function texts are exported and imported in all existing languages. The language set in the dialog <span class="gui">Export PLC data</span> or <span class="gui">Import PLC data</span> is the main language in the exchange file and is stored there for the respective PLC object as the value (<notrans_i><span class="codetext">Value</span></notrans_i>). All the further languages as additional attributes.</li>
+                    <li class="Listitem_Normal" value="9">During export in AutomationML format <a href="plcgui_k_spsanschluesse.htm#I_EinstellbareSpsAnschluesse">adjustable PLC connection points</a> are converted into normal I/O connection points (depending on the setting for the type of signal in the connection point logic). During import such connection points are converted back into adjustable PLC connection points if a suitable part is found which has a function template with the function definition "PLC connection point, multi-function".</li>
+                    <li class="Listitem_Normal" value="10">During the import of an AutomationML file, empty or missing DT elements do not overwrite filled DT elements in EPLAN.</li>
+                    <li class="Listitem_Normal" value="11">When importing an AutomationML file, devices and PLC connection points that are available in the project but not in the import file, are tagged with the <span class="gui">Marked for deletion</span> property in EPLAN. This is the case for PLC connection points if the symbolic address in the import file is empty, but the <span class="gui">Symbolic address (automatic)</span> property is filled at the associated PLC connection point in EPLAN. The existing symbolic address remains. You can find and check these PLC <a href="Glossary_o_objekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">objects</a> via the check run 004029.</li>
+                    <li class="Listitem_Normal" value="12">Free <a href="Glossary_o_symbolischeadressen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">symbolic addresses</a> (which are not assigned to any PLC connection point) can be exported and imported in AutomationML format via the PLC data exchange. After the import of an AutomationML file, the free symbolic addresses existing there are available in EPLAN and can be used from the assignment list.</li>
+                </ul>
+            </fieldset>
+            <fieldset data-mc-conditions="Conditions.New">
+                <h3>Settings for different bus systems</h3>
+                <p>The following table provides an overview of the <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> relevant for the PLC data exchange in the AutomationML format. Which properties at the bus ports must be filled (x) or are optional (o) depends on the bus system being used.</p>
+                <table style="width: 99%;">
+                    <col />
+                    <col style="width: 48px;" />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="Tabelle_Heading">Property</p>
+                            </td>
+                            <td>
+                                <p class="Tabelle_Heading">ID</p>
+                            </td>
+                            <td colspan="5" style="text-align: center;">
+                                <p class="Tabelle_Heading" style="text-align: center;">Bus system</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 9pt;">
+                                <p class="Tabelle_Heading" />
+                            </td>
+                            <td style="font-size: 9pt;">
+                                <p class="Tabelle_Heading" />
+                            </td>
+                            <td style="text-align: center;font-size: 9pt;">
+                                <p class="Tabelle_Heading">Ethernet-based</p>
+                            </td>
+                            <td style="text-align: center;font-size: 9pt;">
+                                <p class="Tabelle_Heading">
+                                    <notrans_i>Profibus DP</notrans_i>
+                                </p>
+                            </td>
+                            <td style="text-align: center;font-size: 9pt;">
+                                <p class="Tabelle_Heading">
+                                    <notrans_i>ASI</notrans_i>
+                                </p>
+                            </td>
+                            <td style="text-align: center;font-size: 9pt;">
+                                <p class="Tabelle_Heading">
+                                    <notrans_i>DRIVE CLiQ</notrans_i>
+                                    <br />
+                                    <notrans_i>PortToPort</notrans_i>
+                                    <br />
+                                    <notrans_i>ET-Connection</notrans_i>
+                                    <br />Local-Bus: Extension</p>
+                            </td>
+                            <td style="text-align: center;font-size: 9pt;">
+                                <p class="Tabelle_Heading">All other</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="gui">Configuration project</span>
+                            </td>
+                            <td>20161</td>
+                            <td style="text-align: center;">o<sup>*1</sup></td>
+                            <td style="text-align: center;">o<sup>*1</sup></td>
+                            <td style="text-align: center;">o<sup>*1</sup></td>
+                            <td style="text-align: center;">o<sup>*1</sup></td>
+                            <td style="text-align: center;">o<sup>*1</sup></td>
+                        </tr>
+                        <tr>
+                            <td><span class="gui">Bus system</span>
+                            </td>
+                            <td>20308</td>
+                            <td style="text-align: center;">x</td>
+                            <td style="text-align: center;">x</td>
+                            <td style="text-align: center;">x</td>
+                            <td style="text-align: center;">x</td>
+                            <td style="text-align: center;">x</td>
+                        </tr>
+                        <tr>
+                            <td><span class="gui">Plug designation</span>
+                            </td>
+                            <td>20406</td>
+                            <td style="text-align: center;">x</td>
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                        </tr>
+                        <tr>
+                            <td><span class="gui">Bus interface: Name</span>
+                            </td>
+                            <td>20447</td>
+                            <td style="text-align: center;">x</td>
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                        </tr>
+                        <tr>
+                            <td><span class="gui">Bus interface: Main bus port</span>
+                            </td>
+                            <td>20448</td>
+                            <td style="text-align: center;">o</td>
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                        </tr>
+                        <tr>
+                            <td><span class="gui">Physical network: Name</span>
+                            </td>
+                            <td>20413</td>
+                            <td style="text-align: center;">o</td>
+                            <td style="text-align: center;">o</td>
+                            <td style="text-align: center;">o</td>
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;">o</td>
+                        </tr>
+                        <tr>
+                            <td><span class="gui">Physical network: Bus ID / item number</span>
+                            </td>
+                            <td>20311</td>
+                            <td style="text-align: center;">o</td>
+                            <td style="text-align: center;">o</td>
+                            <td style="text-align: center;">o</td>
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;">o</td>
+                        </tr>
+                        <tr>
+                            <td><span class="gui">Physical network: Bus ID / item number 2</span>
+                            </td>
+                            <td>20386</td>
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;">o<sup>*2</sup></td>
+                            <td style="text-align: center;" />
+                        </tr>
+                        <tr>
+                            <td><span class="gui">Subnet mask</span>
+                            </td>
+                            <td>20446</td>
+                            <td style="text-align: center;">o</td>
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                        </tr>
+                        <tr>
+                            <td><span class="gui">Logical network: Name</span>
+                            </td>
+                            <td>20414</td>
+                            <td style="text-align: center;">o</td>
+                            <td style="text-align: center;">o</td>
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                        </tr>
+                        <tr>
+                            <td><span class="gui">Logical network: Bus port is master</span>
+                            </td>
+                            <td>20310</td>
+                            <td style="text-align: center;">o</td>
+                            <td style="text-align: center;">o</td>
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                        </tr>
+                        <tr>
+                            <td><span class="gui">Ignore missing bus ID</span>
+                            </td>
+                            <td>20412</td>
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;" />
+                            <td style="text-align: center;">o<sup>*3</sup></td>
+                            <td style="text-align: center;" />
+                        </tr>
+                    </tbody>
+                </table>
+                <p>*1: Only required if the value deviates from that of the associated PLC box.</p>
+                <p>*2: Can be filled if it is an ASI dual device.</p>
+                <p>*3: Can be activated to ignore bus ports that do not require a bus address during the execution of the 004037 error checking.</p>
+                <p>Non-identified fields are not required for the PLC data exchange. If the optional fields (o) are left empty, the import to the PLC configuration program is possible but post-processing is required.</p>
+            </fieldset>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="plcgui_k_prinzip.htm">Structure of PLCs</a>
+            </p>
+            <p class="Link_Seealso"><a href="plcgui_k_austauschbuskonfig.htm">Data Exchange of PLC Configuration Files</a>
+            </p>
+            <p class="Link_Seealso"><a href="plcgui_d_optionsaml.htm">Dialog Settings: AutomationML export</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

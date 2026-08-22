@@ -1,0 +1,42 @@
+# SetSynchronizationMode Method
+
+SetSynchronizationMode Method
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+void SetSynchronizationMode( 
+   _SynchronizationMode nMode
+)
+```
+```
+
+```
+```
+void SetSynchronizationMode( 
+   _SynchronizationMode nMode
+)
+```
+```
+
+#### Parameters
+
+*nMode*
+
+See Also
+
+#### Reference
+
+[IRemotingSynchronizer Interface](Eplan.EplApi.AFu~Eplan.EplApi.RemoteServer.IRemotingSynchronizer.html)
+  
+[IRemotingSynchronizer Members](Eplan.EplApi.AFu~Eplan.EplApi.RemoteServer.IRemotingSynchronizer_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.AFu~Eplan.EplApi.RemoteServer.IRemotingSynchronizer~SetSynchronizationMode)

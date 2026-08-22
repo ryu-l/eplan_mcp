@@ -1,0 +1,821 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>Unit Enumeration</title>
+    <meta name="Title" content="Unit Enumeration"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n1654","initialNodeContainer":"c40","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.Baseu~Eplan.EplApi.Base.Unit"/>
+    <meta name="Description" content="A unit. Every unit enum starts with the group name." />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.Baseu~Eplan.EplApi.Base_namespace"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit"/><meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Amount_ofSubstance_kmol"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Amount_ofSubstance_mmol"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Amount_ofSubstance_Mmol"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Amount_ofSubstance_mol"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Amount_ofSubstance_umol"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_a"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_cm2"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_cm2_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_cmil"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_dm2"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_dm2_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_ft2"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_ha"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_In2"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_kcmil"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_km2"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_km2_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_m2"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_m2_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_MCM"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_mm2"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_mm2_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_qmm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_sq_mile"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_um2"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Area_yd2"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Conductivity_MS_m"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Conductivity_S_cm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Conductivity_S_in"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Conductivity_S_m"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_A"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_A_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_A_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_kA"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_kA_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_kA_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_mA"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_MA"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_mA_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_MA_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_mA_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_MA_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_uA"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_uA_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Current_uA_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.EMPTY"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Filesize_b"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Filesize_GB"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Filesize_KB"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Filesize_MB"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Filesize_TB"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Freuqency_GHz"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Freuqency_Hz"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Freuqency_kHz"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Freuqency_MHz"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_cm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_cm_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_cm_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_DefaultGridSize"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_dm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_dm_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_dm_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_feet"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_foot"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_ft"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_in"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_inch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_Inch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_km"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_km_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_km_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_m"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_m_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_m_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_Meter"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_mil"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_mile"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_mm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_mm_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_mm_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_Project_cable"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_Project_cooling"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_Project_electric"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_Project_hydraulic"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_Project_lubrication"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_Project_pneumatic"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_Project_process"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_um"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_um_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_um_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_User_length"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_yard"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_yd"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_zoll"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Length_Zoll"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Luminosity_cd"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Luminosity_kcd"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Luminosity_mcd"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Luminosity_Mcd"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Luminosity_ucd"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Mass_per_Volume_g_m3"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Mass_per_Volume_kg_m3"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Mass_per_Volume_mg_m3"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_btu_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_btu_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_btu_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_GW"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_hp"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_kj_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_kj_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_kj_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_kW"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_mW"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_MW"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_PS"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_uW"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Power_W"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Pressure_bar"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Pressure_hPa"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Pressure_kPa"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Pressure_mbar"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Pressure_millibar"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Pressure_mPa"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Pressure_MPa"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Pressure_Pa"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Pressure_psi"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Pressure_Torr"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Pressure_uPa"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Quantity_pc"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Quantity_pc_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Quantity_Stck"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Quantity_Stueck"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Radius_grad"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Radius_rad"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Resistor_GOhm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Resistor_kOhm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Resistor_mOhm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Resistor_MOhm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Resistor_Ohm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Resistor_Siemens"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Resistor_uOhm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.RotationalSpeed_pm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.RotationalSpeed_ps"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.RotationalSpeed_rpm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.RotationalSpeed_rps"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.RotationalSpeed_upm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.RotationalSpeed_ups"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Temperature_C"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Temperature_F"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Temperature_K"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Temperature_Ra"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Temperature_Re"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.TemperatureCoefficient_1_K"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_d"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_d_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_d_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_h_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_h_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_min_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_min_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_ms"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_ms_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_ms_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_s_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_s_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_us"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_us_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Time_us_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.TransmissionRate_bps"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.TransmissionRate_Gbps"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.TransmissionRate_kbps"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.TransmissionRate_Mbps"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.TransmissionRate_Tbps"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_kV"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_kV_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_kV_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_mV"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_MV"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_mV_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_MV_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_mV_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_MV_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_uV"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_uV_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_uV_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_V"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_V_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Voltage_V_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_cl"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_cm3"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_dl"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_dm3"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_ft3"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_gal"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_hl"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_in3"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_l"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_l_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_l_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_m3"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_m3_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_m3_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_ml"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_mm3"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_oz_vol"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_pt"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_qm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Volume_yd3"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_cl_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_cl_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_cl_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_cm3_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_cm3_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_cm3_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_dl_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_dl_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_dl_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_dm3_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_dm3_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_dm3_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_ft3_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_ft3_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_ft3_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_gal_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_gal_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_gal_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_hl_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_hl_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_hl_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_in3_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_in3_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_in3_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_l_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_l_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_l_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_m3_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_m3_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_m3_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_ml_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_ml_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_ml_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_mm3_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_mm3_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_mm3_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_oz_vol_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_oz_vol_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_oz_vol_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_pt_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_pt_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_pt_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_yd3_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_yd3_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.VolumeStream_yd3_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_carat"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_dz"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_g"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_g_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_g_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_kg"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_kg_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_kg_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_lb"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_lbs"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_mg"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_mg_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_mg_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_oz"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_per_Length_g_km"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_per_Length_g_m"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_per_Length_g_mm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_per_Length_kg_km"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_per_Length_kg_m"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_per_Length_lb_ft"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_per_Length_lb_in"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_per_Length_lb_yd"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_per_Length_oz_ft"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_per_Length_oz_in"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_per_Length_oz_yd"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_pfund"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_t"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_t_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_t_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_tnsh"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_ug"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_ug_ch"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_ug_ru"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_User_weight"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Weight_ztr"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_kg_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_kg_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_kg_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_lb_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_lb_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_lb_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_oz_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_oz_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_oz_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_t_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_t_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_t_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_tn_sh_h"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_tn_sh_min"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.WeightStream_tn_sh_s"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_Cal"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_GJ"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_J"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_kJ"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_kWh"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_kWmin"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_kWs"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_mJ"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_MJ"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_Nm"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_uJ"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_Wh"/>
+<meta name="Microsoft.Help.F1" content="Eplan.EplApi.Base.Unit.Work_Ws"/>
+
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.Baseu~Eplan.EplApi.Base_namespace.html">Eplan.EplApi.Base Namespace</a>
+ / Unit Enumeration</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                
+                    <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">Unit Enumeration</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">A unit. Every unit enum starts with the group name.</div>
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">enum</span> Unit : <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemEnumClassTopic','System.Enum')">System.Enum</a> </pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">enum</span> <span style="color: #0000FF; ">class</span> Unit : <span style="color: #0000FF; ">public</span> <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemEnumClassTopic','System.Enum')">System.Enum</a> </pre></pre>
+            </div>
+        
+
+            </div>
+        </div>
+            
+            <div class="i-section-heading" id="i-enummembers-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Members</span></div><div id="i-enummembers-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>Member</th><th>Value</th><th>Description</th></tr>
+<tr><td class=MemberNameCell><strong>Amount_ofSubstance_kmol</strong></td><td class="i-enum-value">3075</td><td class="i-description">kmol (kilomole)</td></tr>
+<tr><td class=MemberNameCell><strong>Amount_ofSubstance_mmol</strong></td><td class="i-enum-value">3073</td><td class="i-description">mmol (millimole)</td></tr>
+<tr><td class=MemberNameCell><strong>Amount_ofSubstance_Mmol</strong></td><td class="i-enum-value">3076</td><td class="i-description">Mmol (megamole)</td></tr>
+<tr><td class=MemberNameCell><strong>Amount_ofSubstance_mol</strong></td><td class="i-enum-value">3074</td><td class="i-description">mol (mole)</td></tr>
+<tr><td class=MemberNameCell><strong>Amount_ofSubstance_umol</strong></td><td class="i-enum-value">3072</td><td class="i-description">Âµmol (micromole)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_a</strong></td><td class="i-enum-value">3588</td><td class="i-description">a (Ar == 100 square meters)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_cm2</strong></td><td class="i-enum-value">3585</td><td class="i-description">cmÂ² (square centimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_cm2_ru</strong></td><td class="i-enum-value">3599</td><td class="i-description">ÑÐ¼Â² (square centimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_cmil</strong></td><td class="i-enum-value">3597</td><td class="i-description">cmil (circular mil)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_dm2</strong></td><td class="i-enum-value">3586</td><td class="i-description">dmÂ² (square decimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_dm2_ru</strong></td><td class="i-enum-value">3600</td><td class="i-description">Ð´Ð¼Â² (square decimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_ft2</strong></td><td class="i-enum-value">3592</td><td class="i-description">ftÂ² (square foot)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_ha</strong></td><td class="i-enum-value">3589</td><td class="i-description">ha (hectare == 10000 square meters)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_In2</strong></td><td class="i-enum-value">3591</td><td class="i-description">InÂ² (square inch)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_kcmil</strong></td><td class="i-enum-value">3596</td><td class="i-description">kcmil (kilo circular mil)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_km2</strong></td><td class="i-enum-value">3590</td><td class="i-description">kmÂ² (square kilometer)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_km2_ru</strong></td><td class="i-enum-value">3602</td><td class="i-description">ÐºÐ¼Â² (square kilometer)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_m2</strong></td><td class="i-enum-value">3587</td><td class="i-description">mÂ² (square meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_m2_ru</strong></td><td class="i-enum-value">3601</td><td class="i-description">Ð¼Â² (square meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_MCM</strong></td><td class="i-enum-value">3595</td><td class="i-description">MCM (thousand circular mils)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_mm2</strong></td><td class="i-enum-value">3584</td><td class="i-description">mmÂ² (square millimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_mm2_ru</strong></td><td class="i-enum-value">3598</td><td class="i-description">Ð¼Ð¼Â²^ (square millimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_qmm</strong></td><td class="i-enum-value">3594</td><td class="i-description">qmm (square millimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_sq_mile</strong></td><td class="i-enum-value">3603</td><td class="i-description">mileÂ² (square mile)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_um2</strong></td><td class="i-enum-value">3604</td><td class="i-description">ÂµmÂ² (square micrometer)</td></tr>
+<tr><td class=MemberNameCell><strong>Area_yd2</strong></td><td class="i-enum-value">3593</td><td class="i-description">ydÂ² (square yard)</td></tr>
+<tr><td class=MemberNameCell><strong>Conductivity_MS_m</strong></td><td class="i-enum-value">5891</td><td class="i-description">MS/m (Megasiemens per meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Conductivity_S_cm</strong></td><td class="i-enum-value">5889</td><td class="i-description">S/cm (Siemens per centimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Conductivity_S_in</strong></td><td class="i-enum-value">5890</td><td class="i-description">S/in (Siemens per inch)</td></tr>
+<tr><td class=MemberNameCell><strong>Conductivity_S_m</strong></td><td class="i-enum-value">5888</td><td class="i-description">S/m (Siemens per meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Current_A</strong></td><td class="i-enum-value">1286</td><td class="i-description">A (Ampere)</td></tr>
+<tr><td class=MemberNameCell><strong>Current_A_ch</strong></td><td class="i-enum-value">1287</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Current_A_ru</strong></td><td class="i-enum-value">1288</td><td class="i-description">Ð (ampere)</td></tr>
+<tr><td class=MemberNameCell><strong>Current_kA</strong></td><td class="i-enum-value">1289</td><td class="i-description">kA (kiloampere)</td></tr>
+<tr><td class=MemberNameCell><strong>Current_kA_ch</strong></td><td class="i-enum-value">1290</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Current_kA_ru</strong></td><td class="i-enum-value">1291</td><td class="i-description">ÐºÐ (kiloampere)</td></tr>
+<tr><td class=MemberNameCell><strong>Current_mA</strong></td><td class="i-enum-value">1283</td><td class="i-description">mA (milliampere)</td></tr>
+<tr><td class=MemberNameCell><strong>Current_MA</strong></td><td class="i-enum-value">1292</td><td class="i-description">MA (mega ampere)</td></tr>
+<tr><td class=MemberNameCell><strong>Current_mA_ch</strong></td><td class="i-enum-value">1284</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Current_MA_ch</strong></td><td class="i-enum-value">1293</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Current_mA_ru</strong></td><td class="i-enum-value">1285</td><td class="i-description">Ð¼Ð (milliampere)</td></tr>
+<tr><td class=MemberNameCell><strong>Current_MA_ru</strong></td><td class="i-enum-value">1294</td><td class="i-description">ÐÐ (megaampere)</td></tr>
+<tr><td class=MemberNameCell><strong>Current_uA</strong></td><td class="i-enum-value">1280</td><td class="i-description">ÂµA (microampere)</td></tr>
+<tr><td class=MemberNameCell><strong>Current_uA_ch</strong></td><td class="i-enum-value">1281</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Current_uA_ru</strong></td><td class="i-enum-value">1282</td><td class="i-description">Ð¼ÐºÐ (microampere)</td></tr>
+<tr><td class=MemberNameCell><strong>EMPTY</strong></td><td class="i-enum-value">0</td><td class="i-description">no unit</td></tr>
+<tr><td class=MemberNameCell><strong>Filesize_b</strong></td><td class="i-enum-value">5120</td><td class="i-description">Byte (Byte)</td></tr>
+<tr><td class=MemberNameCell><strong>Filesize_GB</strong></td><td class="i-enum-value">5123</td><td class="i-description">GB (gigabyte)</td></tr>
+<tr><td class=MemberNameCell><strong>Filesize_KB</strong></td><td class="i-enum-value">5121</td><td class="i-description">KB (kilobyte)</td></tr>
+<tr><td class=MemberNameCell><strong>Filesize_MB</strong></td><td class="i-enum-value">5122</td><td class="i-description">MB (megabyte)</td></tr>
+<tr><td class=MemberNameCell><strong>Filesize_TB</strong></td><td class="i-enum-value">5124</td><td class="i-description">TB (terabyte)</td></tr>
+<tr><td class=MemberNameCell><strong>Freuqency_GHz</strong></td><td class="i-enum-value">1027</td><td class="i-description">Ghz (gigahertz)</td></tr>
+<tr><td class=MemberNameCell><strong>Freuqency_Hz</strong></td><td class="i-enum-value">1024</td><td class="i-description">Hz (hertz == 1/s)</td></tr>
+<tr><td class=MemberNameCell><strong>Freuqency_kHz</strong></td><td class="i-enum-value">1025</td><td class="i-description">kHz (kilohertz)</td></tr>
+<tr><td class=MemberNameCell><strong>Freuqency_MHz</strong></td><td class="i-enum-value">1026</td><td class="i-description">MHz (megahertz)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_cm</strong></td><td class="i-enum-value">262</td><td class="i-description">cm (centimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_cm_ch</strong></td><td class="i-enum-value">263</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Length_cm_ru</strong></td><td class="i-enum-value">264</td><td class="i-description">ÑÐ¼ (centimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_DefaultGridSize</strong></td><td class="i-enum-value">284</td><td class="i-description">default grid size</td></tr>
+<tr><td class=MemberNameCell><strong>Length_dm</strong></td><td class="i-enum-value">265</td><td class="i-description">dm (decimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_dm_ch</strong></td><td class="i-enum-value">266</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Length_dm_ru</strong></td><td class="i-enum-value">267</td><td class="i-description">Ð´Ð¼ (decimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_feet</strong></td><td class="i-enum-value">280</td><td class="i-description">feet (foot/feet)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_foot</strong></td><td class="i-enum-value">281</td><td class="i-description">foot (foot/feet)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_ft</strong></td><td class="i-enum-value">279</td><td class="i-description">ft (foot/feet)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_in</strong></td><td class="i-enum-value">275</td><td class="i-description">in (inch)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_inch</strong></td><td class="i-enum-value">277</td><td class="i-description">'inch' (inch)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_Inch</strong></td><td class="i-enum-value">276</td><td class="i-description">Inch' (inch)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_km</strong></td><td class="i-enum-value">272</td><td class="i-description">km (kilometer)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_km_ch</strong></td><td class="i-enum-value">273</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Length_km_ru</strong></td><td class="i-enum-value">274</td><td class="i-description">ÐºÐ¼ (kilometer)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_m</strong></td><td class="i-enum-value">268</td><td class="i-description">m (meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_m_ch</strong></td><td class="i-enum-value">270</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Length_m_ru</strong></td><td class="i-enum-value">271</td><td class="i-description">Ð¼ (meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_Meter</strong></td><td class="i-enum-value">269</td><td class="i-description">Meter (meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_mil</strong></td><td class="i-enum-value">294</td><td class="i-description">mil (mil == 1/1000 inch)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_mile</strong></td><td class="i-enum-value">295</td><td class="i-description">mile (mile)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_mm</strong></td><td class="i-enum-value">259</td><td class="i-description">mm (millimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_mm_ch</strong></td><td class="i-enum-value">260</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Length_mm_ru</strong></td><td class="i-enum-value">261</td><td class="i-description">Ð¼Ð¼ (millimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_Project_cable</strong></td><td class="i-enum-value">286</td><td class="i-description">default length unit for conductors from the project settings</td></tr>
+<tr><td class=MemberNameCell><strong>Length_Project_cooling</strong></td><td class="i-enum-value">290</td><td class="i-description">default length unit for coolant lines from the project settings</td></tr>
+<tr><td class=MemberNameCell><strong>Length_Project_electric</strong></td><td class="i-enum-value">287</td><td class="i-description">default length unit for wires from the project settings</td></tr>
+<tr><td class=MemberNameCell><strong>Length_Project_hydraulic</strong></td><td class="i-enum-value">288</td><td class="i-description">default length unit for hydraulic lines from the project settings</td></tr>
+<tr><td class=MemberNameCell><strong>Length_Project_lubrication</strong></td><td class="i-enum-value">291</td><td class="i-description">default length unit for lubrication lines from the project settings</td></tr>
+<tr><td class=MemberNameCell><strong>Length_Project_pneumatic</strong></td><td class="i-enum-value">289</td><td class="i-description">default length unit for pneumatic lines from the project settings</td></tr>
+<tr><td class=MemberNameCell><strong>Length_Project_process</strong></td><td class="i-enum-value">292</td><td class="i-description">default length unit for process engineering from the project settings</td></tr>
+<tr><td class=MemberNameCell><strong>Length_um</strong></td><td class="i-enum-value">256</td><td class="i-description">Âµm (micrometer)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_um_ch</strong></td><td class="i-enum-value">257</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Length_um_ru</strong></td><td class="i-enum-value">258</td><td class="i-description">Ð¼ÐºÐ¼ (micrometer)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_User_length</strong></td><td class="i-enum-value">285</td><td class="i-description">user defined length unit</td></tr>
+<tr><td class=MemberNameCell><strong>Length_yard</strong></td><td class="i-enum-value">283</td><td class="i-description">yard (yard)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_yd</strong></td><td class="i-enum-value">282</td><td class="i-description">yd (yard)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_zoll</strong></td><td class="i-enum-value">278</td><td class="i-description">" (inch)</td></tr>
+<tr><td class=MemberNameCell><strong>Length_Zoll</strong></td><td class="i-enum-value">293</td><td class="i-description">Zoll (inch)</td></tr>
+<tr><td class=MemberNameCell><strong>Luminosity_cd</strong></td><td class="i-enum-value">3330</td><td class="i-description">cd (candela)</td></tr>
+<tr><td class=MemberNameCell><strong>Luminosity_kcd</strong></td><td class="i-enum-value">3331</td><td class="i-description">kcd (kilocandela)</td></tr>
+<tr><td class=MemberNameCell><strong>Luminosity_mcd</strong></td><td class="i-enum-value">3329</td><td class="i-description">mcd (millicandela)</td></tr>
+<tr><td class=MemberNameCell><strong>Luminosity_Mcd</strong></td><td class="i-enum-value">3332</td><td class="i-description">Mcd (megacandela)</td></tr>
+<tr><td class=MemberNameCell><strong>Luminosity_ucd</strong></td><td class="i-enum-value">3328</td><td class="i-description">Âµcd (microcandela)</td></tr>
+<tr><td class=MemberNameCell><strong>Mass_per_Volume_g_m3</strong></td><td class="i-enum-value">6657</td><td class="i-description">g/mÂ³ (grams per volume)</td></tr>
+<tr><td class=MemberNameCell><strong>Mass_per_Volume_kg_m3</strong></td><td class="i-enum-value">6656</td><td class="i-description">kg/mÂ³ (kilograms per volume)</td></tr>
+<tr><td class=MemberNameCell><strong>Mass_per_Volume_mg_m3</strong></td><td class="i-enum-value">6658</td><td class="i-description">mg/mÂ³ (milligrams per volume)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_btu_h</strong></td><td class="i-enum-value">2059</td><td class="i-description">BTU/h (British thermal unit per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_btu_min</strong></td><td class="i-enum-value">2060</td><td class="i-description">BTU/min (British thermal unit per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_btu_s</strong></td><td class="i-enum-value">2061</td><td class="i-description">BTU/s (British thermal unit per second)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_GW</strong></td><td class="i-enum-value">2053</td><td class="i-description">GW (gigawatt)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_hp</strong></td><td class="i-enum-value">2054</td><td class="i-description">hp (horsepower)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_kj_h</strong></td><td class="i-enum-value">2056</td><td class="i-description">kJ/h (kilojoules per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_kj_min</strong></td><td class="i-enum-value">2057</td><td class="i-description">kJ/min (kilojoules per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_kj_s</strong></td><td class="i-enum-value">2058</td><td class="i-description">kJ/s (kilojoules per second)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_kW</strong></td><td class="i-enum-value">2051</td><td class="i-description">kW (kilowatt)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_mW</strong></td><td class="i-enum-value">2049</td><td class="i-description">mW (milliwatt)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_MW</strong></td><td class="i-enum-value">2052</td><td class="i-description">MW (megawatt)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_PS</strong></td><td class="i-enum-value">2055</td><td class="i-description">PS (pferdestÃ¤rke)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_uW</strong></td><td class="i-enum-value">2048</td><td class="i-description">ÂµW (microwatt)</td></tr>
+<tr><td class=MemberNameCell><strong>Power_W</strong></td><td class="i-enum-value">2050</td><td class="i-description">W (watt)</td></tr>
+<tr><td class=MemberNameCell><strong>Pressure_bar</strong></td><td class="i-enum-value">2567</td><td class="i-description">bar (bar)</td></tr>
+<tr><td class=MemberNameCell><strong>Pressure_hPa</strong></td><td class="i-enum-value">2563</td><td class="i-description">hPa (hectopascal)</td></tr>
+<tr><td class=MemberNameCell><strong>Pressure_kPa</strong></td><td class="i-enum-value">2564</td><td class="i-description">kPa (kilaopascal)</td></tr>
+<tr><td class=MemberNameCell><strong>Pressure_mbar</strong></td><td class="i-enum-value">2565</td><td class="i-description">mbar (millibar)</td></tr>
+<tr><td class=MemberNameCell><strong>Pressure_millibar</strong></td><td class="i-enum-value">2566</td><td class="i-description">Millibar (millibar)</td></tr>
+<tr><td class=MemberNameCell><strong>Pressure_mPa</strong></td><td class="i-enum-value">2561</td><td class="i-description">mPa (millipascal)</td></tr>
+<tr><td class=MemberNameCell><strong>Pressure_MPa</strong></td><td class="i-enum-value">2570</td><td class="i-description">MPa (megapascal)</td></tr>
+<tr><td class=MemberNameCell><strong>Pressure_Pa</strong></td><td class="i-enum-value">2562</td><td class="i-description">Pa (pascal)</td></tr>
+<tr><td class=MemberNameCell><strong>Pressure_psi</strong></td><td class="i-enum-value">2569</td><td class="i-description">psi (pounds per square inch)</td></tr>
+<tr><td class=MemberNameCell><strong>Pressure_Torr</strong></td><td class="i-enum-value">2568</td><td class="i-description">Torr (Torr)</td></tr>
+<tr><td class=MemberNameCell><strong>Pressure_uPa</strong></td><td class="i-enum-value">2560</td><td class="i-description">ÂµPa (micropascal)</td></tr>
+<tr><td class=MemberNameCell><strong>Quantity_pc</strong></td><td class="i-enum-value">5634</td><td class="i-description">quantity (pc)</td></tr>
+<tr><td class=MemberNameCell><strong>Quantity_pc_ru</strong></td><td class="i-enum-value">5635</td><td class="i-description">quantity (ÑÑ)</td></tr>
+<tr><td class=MemberNameCell><strong>Quantity_Stck</strong></td><td class="i-enum-value">5633</td><td class="i-description">quantity (Stck)</td></tr>
+<tr><td class=MemberNameCell><strong>Quantity_Stueck</strong></td><td class="i-enum-value">5632</td><td class="i-description">quantity (StÃ¼ck)</td></tr>
+<tr><td class=MemberNameCell><strong>Radius_grad</strong></td><td class="i-enum-value">4096</td><td class="i-description">Â° (degree)</td></tr>
+<tr><td class=MemberNameCell><strong>Radius_rad</strong></td><td class="i-enum-value">4097</td><td class="i-description">rad (radiants)</td></tr>
+<tr><td class=MemberNameCell><strong>Resistor_GOhm</strong></td><td class="i-enum-value">1797</td><td class="i-description">Gâ¦ (giga-ohm)</td></tr>
+<tr><td class=MemberNameCell><strong>Resistor_kOhm</strong></td><td class="i-enum-value">1795</td><td class="i-description">kâ¦ (kilo-ohm)</td></tr>
+<tr><td class=MemberNameCell><strong>Resistor_mOhm</strong></td><td class="i-enum-value">1793</td><td class="i-description">mâ¦ (milli-ohm)</td></tr>
+<tr><td class=MemberNameCell><strong>Resistor_MOhm</strong></td><td class="i-enum-value">1796</td><td class="i-description">Mâ¦ (mega-ohm)</td></tr>
+<tr><td class=MemberNameCell><strong>Resistor_Ohm</strong></td><td class="i-enum-value">1794</td><td class="i-description">â¦ (ohm)</td></tr>
+<tr><td class=MemberNameCell><strong>Resistor_Siemens</strong></td><td class="i-enum-value">1798</td><td class="i-description">S (Siemens == 1/â¦)</td></tr>
+<tr><td class=MemberNameCell><strong>Resistor_uOhm</strong></td><td class="i-enum-value">1792</td><td class="i-description">Âµâ¦ (micro-ohm)</td></tr>
+<tr><td class=MemberNameCell><strong>RotationalSpeed_pm</strong></td><td class="i-enum-value">6404</td><td class="i-description">/min (revolutions per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>RotationalSpeed_ps</strong></td><td class="i-enum-value">6405</td><td class="i-description">/s (revolutions per second)</td></tr>
+<tr><td class=MemberNameCell><strong>RotationalSpeed_rpm</strong></td><td class="i-enum-value">6402</td><td class="i-description">rpm (revolutions per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>RotationalSpeed_rps</strong></td><td class="i-enum-value">6403</td><td class="i-description">rps (revolutions per second)</td></tr>
+<tr><td class=MemberNameCell><strong>RotationalSpeed_upm</strong></td><td class="i-enum-value">6400</td><td class="i-description">U/min (revolutions per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>RotationalSpeed_ups</strong></td><td class="i-enum-value">6401</td><td class="i-description">U/sek (revolutions per second)</td></tr>
+<tr><td class=MemberNameCell><strong>Temperature_C</strong></td><td class="i-enum-value">2305</td><td class="i-description">Â°C (centigrade)</td></tr>
+<tr><td class=MemberNameCell><strong>Temperature_F</strong></td><td class="i-enum-value">2308</td><td class="i-description">Â°F (Fahrenheit)</td></tr>
+<tr><td class=MemberNameCell><strong>Temperature_K</strong></td><td class="i-enum-value">2304</td><td class="i-description">K (Kelvin)</td></tr>
+<tr><td class=MemberNameCell><strong>Temperature_Ra</strong></td><td class="i-enum-value">2306</td><td class="i-description">Â°Ra (Rankine)</td></tr>
+<tr><td class=MemberNameCell><strong>Temperature_Re</strong></td><td class="i-enum-value">2307</td><td class="i-description">Â°RÃ© (RÃ©aumur)</td></tr>
+<tr><td class=MemberNameCell><strong>TemperatureCoefficient_1_K</strong></td><td class="i-enum-value">6144</td><td class="i-description">1/K (1/Kelvin)</td></tr>
+<tr><td class=MemberNameCell><strong>Time_d</strong></td><td class="i-enum-value">783</td><td class="i-description">d (day)</td></tr>
+<tr><td class=MemberNameCell><strong>Time_d_ch</strong></td><td class="i-enum-value">784</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Time_d_ru</strong></td><td class="i-enum-value">785</td><td class="i-description">Ð´Ð½ (day)</td></tr>
+<tr><td class=MemberNameCell><strong>Time_h</strong></td><td class="i-enum-value">780</td><td class="i-description">h (hour)</td></tr>
+<tr><td class=MemberNameCell><strong>Time_h_ch</strong></td><td class="i-enum-value">781</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Time_h_ru</strong></td><td class="i-enum-value">782</td><td class="i-description">Ñ (hour)</td></tr>
+<tr><td class=MemberNameCell><strong>Time_min</strong></td><td class="i-enum-value">777</td><td class="i-description">min (minute)</td></tr>
+<tr><td class=MemberNameCell><strong>Time_min_ch</strong></td><td class="i-enum-value">778</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Time_min_ru</strong></td><td class="i-enum-value">779</td><td class="i-description">Ð¼Ð¸Ð½ (minute)</td></tr>
+<tr><td class=MemberNameCell><strong>Time_ms</strong></td><td class="i-enum-value">771</td><td class="i-description">ms (millisecond)</td></tr>
+<tr><td class=MemberNameCell><strong>Time_ms_ch</strong></td><td class="i-enum-value">772</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Time_ms_ru</strong></td><td class="i-enum-value">773</td><td class="i-description">Ð¼Ñ (millisecond)</td></tr>
+<tr><td class=MemberNameCell><strong>Time_s</strong></td><td class="i-enum-value">774</td><td class="i-description">s (second)</td></tr>
+<tr><td class=MemberNameCell><strong>Time_s_ch</strong></td><td class="i-enum-value">775</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Time_s_ru</strong></td><td class="i-enum-value">776</td><td class="i-description">Ñ (second)</td></tr>
+<tr><td class=MemberNameCell><strong>Time_us</strong></td><td class="i-enum-value">768</td><td class="i-description">Âµs (microsecond)</td></tr>
+<tr><td class=MemberNameCell><strong>Time_us_ch</strong></td><td class="i-enum-value">769</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Time_us_ru</strong></td><td class="i-enum-value">770</td><td class="i-description">Ð¼ÐºÑ (microsecond)</td></tr>
+<tr><td class=MemberNameCell><strong>TransmissionRate_bps</strong></td><td class="i-enum-value">5376</td><td class="i-description">bps (bytes per second)</td></tr>
+<tr><td class=MemberNameCell><strong>TransmissionRate_Gbps</strong></td><td class="i-enum-value">5379</td><td class="i-description">Gbps (gigabytes per second)</td></tr>
+<tr><td class=MemberNameCell><strong>TransmissionRate_kbps</strong></td><td class="i-enum-value">5377</td><td class="i-description">Kbps (kilobytes per second)</td></tr>
+<tr><td class=MemberNameCell><strong>TransmissionRate_Mbps</strong></td><td class="i-enum-value">5378</td><td class="i-description">Mbps (megabytes per second)</td></tr>
+<tr><td class=MemberNameCell><strong>TransmissionRate_Tbps</strong></td><td class="i-enum-value">5380</td><td class="i-description">Tbps (terabytes per second)</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_kV</strong></td><td class="i-enum-value">1545</td><td class="i-description">kV (kilovolt)</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_kV_ch</strong></td><td class="i-enum-value">1546</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_kV_ru</strong></td><td class="i-enum-value">1547</td><td class="i-description">ÐºÐ (kilovolt)</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_mV</strong></td><td class="i-enum-value">1539</td><td class="i-description">mV (millivolt)</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_MV</strong></td><td class="i-enum-value">1548</td><td class="i-description">MV (megavolt)</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_mV_ch</strong></td><td class="i-enum-value">1540</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_MV_ch</strong></td><td class="i-enum-value">1549</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_mV_ru</strong></td><td class="i-enum-value">1541</td><td class="i-description">Ð¼ÐºÐ (millivolt)</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_MV_ru</strong></td><td class="i-enum-value">1550</td><td class="i-description">ÐÐ (megavolt)</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_uV</strong></td><td class="i-enum-value">1536</td><td class="i-description">ÂµV (microvolt)</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_uV_ch</strong></td><td class="i-enum-value">1537</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_uV_ru</strong></td><td class="i-enum-value">1538</td><td class="i-description">Ð¼ÐºÐ (microvolt)</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_V</strong></td><td class="i-enum-value">1542</td><td class="i-description">V (volt)</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_V_ch</strong></td><td class="i-enum-value">1543</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Voltage_V_ru</strong></td><td class="i-enum-value">1544</td><td class="i-description">Ð (volt)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_cl</strong></td><td class="i-enum-value">3851</td><td class="i-description">cl (centiliter)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_cm3</strong></td><td class="i-enum-value">3850</td><td class="i-description">cmÂ³ (cubic centimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_dl</strong></td><td class="i-enum-value">3852</td><td class="i-description">dl (deciliter)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_dm3</strong></td><td class="i-enum-value">3853</td><td class="i-description">dmÂ³ (cubic decimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_ft3</strong></td><td class="i-enum-value">3855</td><td class="i-description">ftÂ³ (cubic foot)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_gal</strong></td><td class="i-enum-value">3859</td><td class="i-description">gal (gallon)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_hl</strong></td><td class="i-enum-value">3844</td><td class="i-description">hl (hecto liter)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_in3</strong></td><td class="i-enum-value">3854</td><td class="i-description">inÂ³ (cubic inch)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_l</strong></td><td class="i-enum-value">3841</td><td class="i-description">l (liter)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_l_ch</strong></td><td class="i-enum-value">3842</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_l_ru</strong></td><td class="i-enum-value">3843</td><td class="i-description">Ð» (liter)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_m3</strong></td><td class="i-enum-value">3845</td><td class="i-description">mÂ³ (cubic meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_m3_ch</strong></td><td class="i-enum-value">3846</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_m3_ru</strong></td><td class="i-enum-value">3847</td><td class="i-description">Ð¼Â³ (cubic meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_ml</strong></td><td class="i-enum-value">3840</td><td class="i-description">ml (milliliter)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_mm3</strong></td><td class="i-enum-value">3849</td><td class="i-description">mmÂ³ (cubic millimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_oz_vol</strong></td><td class="i-enum-value">3857</td><td class="i-description">fl.oz (fluid ounce)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_pt</strong></td><td class="i-enum-value">3858</td><td class="i-description">pt (pint)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_qm</strong></td><td class="i-enum-value">3848</td><td class="i-description">qm (cubic meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Volume_yd3</strong></td><td class="i-enum-value">3856</td><td class="i-description">ydÂ³ (cubic yard)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_cl_h</strong></td><td class="i-enum-value">4620</td><td class="i-description">cl/h (centiliters per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_cl_min</strong></td><td class="i-enum-value">4621</td><td class="i-description">cl/min (centiliters per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_cl_s</strong></td><td class="i-enum-value">4622</td><td class="i-description">cl/s (centiliters per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_cm3_h</strong></td><td class="i-enum-value">4617</td><td class="i-description">cmÂ³/h (cubic centimeters per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_cm3_min</strong></td><td class="i-enum-value">4618</td><td class="i-description">cmÂ³/min (cubic centimeters per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_cm3_s</strong></td><td class="i-enum-value">4619</td><td class="i-description">cmÂ³/s (cubic centimeters per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_dl_h</strong></td><td class="i-enum-value">4623</td><td class="i-description">dl/h (deciliters per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_dl_min</strong></td><td class="i-enum-value">4624</td><td class="i-description">dl/min (deciliters per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_dl_s</strong></td><td class="i-enum-value">4625</td><td class="i-description">dl/s (deciliters per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_dm3_h</strong></td><td class="i-enum-value">4626</td><td class="i-description">dmÂ³/h (cubic centimeters per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_dm3_min</strong></td><td class="i-enum-value">4627</td><td class="i-description">dmÂ³/min (cubic centimeters per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_dm3_s</strong></td><td class="i-enum-value">4628</td><td class="i-description">dmÂ³/s (cubic centimeters per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_ft3_h</strong></td><td class="i-enum-value">4638</td><td class="i-description">ftÂ³/h (cubic feet per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_ft3_min</strong></td><td class="i-enum-value">4639</td><td class="i-description">ftÂ³/min (cubic feet per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_ft3_s</strong></td><td class="i-enum-value">4640</td><td class="i-description">ftÂ³/s (cubic feet per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_gal_h</strong></td><td class="i-enum-value">4650</td><td class="i-description">gal/h (gallons per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_gal_min</strong></td><td class="i-enum-value">4651</td><td class="i-description">gal/min (gallons per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_gal_s</strong></td><td class="i-enum-value">4652</td><td class="i-description">gal/s (gallons per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_hl_h</strong></td><td class="i-enum-value">4629</td><td class="i-description">hl/h (hectoliters per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_hl_min</strong></td><td class="i-enum-value">4630</td><td class="i-description">hl/min (hectoliters per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_hl_s</strong></td><td class="i-enum-value">4631</td><td class="i-description">hl/s (hectoliters per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_in3_h</strong></td><td class="i-enum-value">4635</td><td class="i-description">inÂ³/h (cubic inches per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_in3_min</strong></td><td class="i-enum-value">4636</td><td class="i-description">inÂ³/min (cubic inches per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_in3_s</strong></td><td class="i-enum-value">4637</td><td class="i-description">inÂ³/s (cubic inches per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_l_h</strong></td><td class="i-enum-value">4608</td><td class="i-description">l/h (liters per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_l_min</strong></td><td class="i-enum-value">4609</td><td class="i-description">l/min (liters per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_l_s</strong></td><td class="i-enum-value">4610</td><td class="i-description">l/s (liters per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_m3_h</strong></td><td class="i-enum-value">4632</td><td class="i-description">mÂ³/h (cubic meters per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_m3_min</strong></td><td class="i-enum-value">4633</td><td class="i-description">mÂ³/min (cubic meters per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_m3_s</strong></td><td class="i-enum-value">4634</td><td class="i-description">mÂ³/s (cubic meters per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_ml_h</strong></td><td class="i-enum-value">4614</td><td class="i-description">ml/h (milliliters per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_ml_min</strong></td><td class="i-enum-value">4615</td><td class="i-description">ml/min (milliliters per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_ml_s</strong></td><td class="i-enum-value">4616</td><td class="i-description">ml/s (milliliters per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_mm3_h</strong></td><td class="i-enum-value">4611</td><td class="i-description">mmÂ³/h (cubic millimeters per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_mm3_min</strong></td><td class="i-enum-value">4612</td><td class="i-description">mmÂ³/min (cubic millimeters per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_mm3_s</strong></td><td class="i-enum-value">4613</td><td class="i-description">mmÂ³/s (cubic millimeters per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_oz_vol_h</strong></td><td class="i-enum-value">4644</td><td class="i-description">fl.oz/h (fluid ounces per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_oz_vol_min</strong></td><td class="i-enum-value">4645</td><td class="i-description">fl.oz/min(fluid ounces per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_oz_vol_s</strong></td><td class="i-enum-value">4646</td><td class="i-description">fl.oz/s (fluid ounces per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_pt_h</strong></td><td class="i-enum-value">4647</td><td class="i-description">pt/h (pints per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_pt_min</strong></td><td class="i-enum-value">4648</td><td class="i-description">pt/min (pints per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_pt_s</strong></td><td class="i-enum-value">4649</td><td class="i-description">pt/s (pints per second)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_yd3_h</strong></td><td class="i-enum-value">4641</td><td class="i-description">ydÂ³/h (cubic yards per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_yd3_min</strong></td><td class="i-enum-value">4642</td><td class="i-description">ydÂ³/min (cubic yards per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>VolumeStream_yd3_s</strong></td><td class="i-enum-value">4643</td><td class="i-description">ydÂ³/s (cubic yards per second)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_carat</strong></td><td class="i-enum-value">533</td><td class="i-description">Karat (carat)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_dz</strong></td><td class="i-enum-value">526</td><td class="i-description">dz (Doppelzentner, 2 centners == 100 kilograms)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_g</strong></td><td class="i-enum-value">518</td><td class="i-description">g (grams)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_g_ch</strong></td><td class="i-enum-value">519</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_g_ru</strong></td><td class="i-enum-value">520</td><td class="i-description">Ð³ (gram)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_kg</strong></td><td class="i-enum-value">522</td><td class="i-description">kg (kilogram)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_kg_ch</strong></td><td class="i-enum-value">523</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_kg_ru</strong></td><td class="i-enum-value">524</td><td class="i-description">ÐºÐ³ (kilogram)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_lb</strong></td><td class="i-enum-value">531</td><td class="i-description">lb (pound-mass)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_lbs</strong></td><td class="i-enum-value">532</td><td class="i-description">lbs (pounds)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_mg</strong></td><td class="i-enum-value">515</td><td class="i-description">mg (milligram)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_mg_ch</strong></td><td class="i-enum-value">516</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_mg_ru</strong></td><td class="i-enum-value">517</td><td class="i-description">Ð¼Ð³ (milligram)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_oz</strong></td><td class="i-enum-value">530</td><td class="i-description">oz (ounce)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_per_Length_g_km</strong></td><td class="i-enum-value">4352</td><td class="i-description">g/km (grams per kilometer)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_per_Length_g_m</strong></td><td class="i-enum-value">4353</td><td class="i-description">g/m (grams per meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_per_Length_g_mm</strong></td><td class="i-enum-value">4354</td><td class="i-description">g/mm (grams per millimeter)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_per_Length_kg_km</strong></td><td class="i-enum-value">4362</td><td class="i-description">kg/km (kilograms per kilometer)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_per_Length_kg_m</strong></td><td class="i-enum-value">4355</td><td class="i-description">kg/m (kilograms per meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_per_Length_lb_ft</strong></td><td class="i-enum-value">4357</td><td class="i-description">lb/ft (pounds per foot)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_per_Length_lb_in</strong></td><td class="i-enum-value">4356</td><td class="i-description">lb/in (pounds per inch)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_per_Length_lb_yd</strong></td><td class="i-enum-value">4358</td><td class="i-description">lb/yd (pounds per yard)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_per_Length_oz_ft</strong></td><td class="i-enum-value">4360</td><td class="i-description">oz/ft (ounces per foot)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_per_Length_oz_in</strong></td><td class="i-enum-value">4359</td><td class="i-description">oz/in (ounces per inch)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_per_Length_oz_yd</strong></td><td class="i-enum-value">4361</td><td class="i-description">oz/yd (ounces per yard)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_pfund</strong></td><td class="i-enum-value">521</td><td class="i-description">Pfund (pound)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_t</strong></td><td class="i-enum-value">527</td><td class="i-description">t (metric ton)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_t_ch</strong></td><td class="i-enum-value">528</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_t_ru</strong></td><td class="i-enum-value">529</td><td class="i-description">Ñ (metric ton)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_tnsh</strong></td><td class="i-enum-value">535</td><td class="i-description">tn.sh (Short ton)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_ug</strong></td><td class="i-enum-value">512</td><td class="i-description">Âµg (microgram)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_ug_ch</strong></td><td class="i-enum-value">513</td><td class="i-description">&nbsp;</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_ug_ru</strong></td><td class="i-enum-value">514</td><td class="i-description">Ð¼ÐºÐ³ (microgram)</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_User_weight</strong></td><td class="i-enum-value">534</td><td class="i-description">user defined weight unit</td></tr>
+<tr><td class=MemberNameCell><strong>Weight_ztr</strong></td><td class="i-enum-value">525</td><td class="i-description">ztr (centner == 50 kilograms)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_kg_h</strong></td><td class="i-enum-value">4864</td><td class="i-description">kg/h (kilograms per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_kg_min</strong></td><td class="i-enum-value">4865</td><td class="i-description">kg/min (kilograms per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_kg_s</strong></td><td class="i-enum-value">4866</td><td class="i-description">kg/s (kilograms per second)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_lb_h</strong></td><td class="i-enum-value">4873</td><td class="i-description">lb/h (pounds per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_lb_min</strong></td><td class="i-enum-value">4874</td><td class="i-description">lb/min (pounds per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_lb_s</strong></td><td class="i-enum-value">4875</td><td class="i-description">lb/s (pounds per second)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_oz_h</strong></td><td class="i-enum-value">4876</td><td class="i-description">oz/h (ounces per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_oz_min</strong></td><td class="i-enum-value">4877</td><td class="i-description">oz/min (ounces per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_oz_s</strong></td><td class="i-enum-value">4878</td><td class="i-description">oz/s (ounces per second)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_t_h</strong></td><td class="i-enum-value">4867</td><td class="i-description">t/h (metric tons per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_t_min</strong></td><td class="i-enum-value">4868</td><td class="i-description">t/min (metric tons per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_t_s</strong></td><td class="i-enum-value">4869</td><td class="i-description">t/s (metric tons per second)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_tn_sh_h</strong></td><td class="i-enum-value">4870</td><td class="i-description">tn.sh/h (short tons per hour)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_tn_sh_min</strong></td><td class="i-enum-value">4871</td><td class="i-description">tn.sh/min (short tons per minute)</td></tr>
+<tr><td class=MemberNameCell><strong>WeightStream_tn_sh_s</strong></td><td class="i-enum-value">4872</td><td class="i-description">tn.sh/s (short tons per second)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_Cal</strong></td><td class="i-enum-value">2822</td><td class="i-description">Cal (calories)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_GJ</strong></td><td class="i-enum-value">2821</td><td class="i-description">GJ (gigajoule)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_J</strong></td><td class="i-enum-value">2818</td><td class="i-description">J (joule)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_kJ</strong></td><td class="i-enum-value">2819</td><td class="i-description">kJ (kilojoule)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_kWh</strong></td><td class="i-enum-value">2828</td><td class="i-description">kWh (kilowatt hour)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_kWmin</strong></td><td class="i-enum-value">2827</td><td class="i-description">kWmin (kilowatt minute)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_kWs</strong></td><td class="i-enum-value">2825</td><td class="i-description">kW (kilowatt second)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_mJ</strong></td><td class="i-enum-value">2817</td><td class="i-description">mJ (millijoule)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_MJ</strong></td><td class="i-enum-value">2820</td><td class="i-description">MJ (megajoule)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_Nm</strong></td><td class="i-enum-value">2823</td><td class="i-description">Nm (Newton meter)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_uJ</strong></td><td class="i-enum-value">2816</td><td class="i-description">ÂµJ (microjoule)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_Wh</strong></td><td class="i-enum-value">2826</td><td class="i-description">Wh (watt hour)</td></tr>
+<tr><td class=MemberNameCell><strong>Work_Ws</strong></td><td class="i-enum-value">2824</td><td class="i-description">Ws (watt second)</td></tr>
+</table></div>
+            
+            <a name="exampleBookmark"></a>
+            
+            
+            
+            
+            <div class="i-section-heading" id="i-inheritance-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Inheritance Hierarchy</span></div><div id="i-inheritance-section-content" class="i-section-content"><P><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemObjectClassTopic','System.Object')">System.Object</a><BR />&nbsp;&nbsp;&nbsp;<a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemValueTypeClassTopic','System.ValueType')">System.ValueType</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemEnumClassTopic','System.Enum')">System.Enum</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<STRONG>Eplan.EplApi.Base.Unit</STRONG><BR /></P></div>
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.Baseu~Eplan.EplApi.Base_namespace.html">Eplan.EplApi.Base Namespace</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.Baseu~Eplan.EplApi.Base.Unit">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

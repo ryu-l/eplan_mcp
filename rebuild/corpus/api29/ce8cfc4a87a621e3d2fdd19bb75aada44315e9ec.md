@@ -1,0 +1,41 @@
+# XMExportConnectionsAction
+
+XMExportConnectionsAction
+
+```
+ Action name = XMExportConnectionsAction
+
+ Action class to export connections of a project.
+```
+
+  
+
+| Parameter | Description |
+| --- | --- |
+| DatabaseId | ```  The databaseId of one project (optional).  If not entered, the ProjectName parameter is used. ``` |
+| ProjectName | ```  The full path of project(optional).  When project specified by ProjectName is not open,this action opens it and closes automatically.  If not entered, the selected project is used when the action is called from GUI (like from a script or button bar). ``` |
+| CompleteProject | ```  All connections of the project are exported, not only the selected ones (0= No, 1= Yes). ``` |
+| ConfigScheme | ```  Configuration scheme (optional).  Default value: Most recently used configuration scheme. ``` |
+| Language | ```  Language (e.g., en_US). ``` |
+| Destination | ```  Target file where the export results are saved.  The following formats are supported: txt, xls, xml. Format must be set according to the extension that is in CONFIGSCHEME ``` |
+| ExecutionMode | ```  0: Export,  1: Export and Edit,  2: Edit and return ``` |
+| ImmediateImport | ``` After edit no question appears to import the data (optional, 0= No, 1= Yes).  Default value: 0  This only applies to ExecutionMode= 2. ``` |
+
+Remarks
+
+```
+ This action is provided for backward compatibility. Please use the action
+ XMActionDCCommonExport instead
+```
+
+Example
+
+```
+ XMExportConnectionsAction /ConfigScheme:config_scheme /CompleteProject:1  /Language:en_US /Destination:c:\\temp\\Connection.xls /ExecutionMode:0
+```
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: XMExportConnectionsAction )

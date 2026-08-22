@@ -1,0 +1,43 @@
+# Add Method (MDSymbol.MDPropertyPlacementsSchemasList)
+
+Add Method (MDSymbol.MDPropertyPlacementsSchemasList)
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public MDSymbol.MDPropertyPlacementsSchema Add( 
+   MultiLangString name
+)
+```
+```
+
+```
+```
+public:
+MDSymbol.MDPropertyPlacementsSchema^ Add( 
+   MultiLangString^ name
+)
+```
+```
+
+#### Parameters
+
+*name*
+
+See Also
+
+#### Reference
+
+[MDSymbol.MDPropertyPlacementsSchemasList Class](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbol+MDPropertyPlacementsSchemasList.html)
+  
+[MDSymbol.MDPropertyPlacementsSchemasList Members](Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbol+MDPropertyPlacementsSchemasList_members.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.MasterDatau~Eplan.EplApi.MasterData.MDSymbol+MDPropertyPlacementsSchemasList~Add)

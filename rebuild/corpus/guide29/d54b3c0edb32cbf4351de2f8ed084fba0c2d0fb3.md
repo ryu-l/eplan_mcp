@@ -1,0 +1,64 @@
+# Multi-level Terminals
+
+Multi-level terminals consist of multiple terminal [levels](Glossary_o_etagen.htm) arranged on top of one another. In order to manage multi-level terminals in EPLAN, each terminal has level information. A multi-level terminal can be made up of a number of different [functions](Glossary_o_funktionen.htm). Each level may have its own saddle jumper connection point, or certain levels may have saddle jumper [connection points](Glossary_o_anschluesse.htm), or there may be levels with only one connection point. The potential type can be set for every level.
+
+In EPLAN, multi-level terminals are displayed with "normal" terminal [symbols](Glossary_o_symbole.htm). Terminals inserted into the schematic are [part](Glossary_o_artikel.htm) of a multi-level terminal if they carry the same DT, they directly follow one another in the sorting order, and if they have ever increasing or decreasing values for the level. In the case of ascending order the lowest level in the terminal housing is level number "1". In addition, all the terminals of a multi-level terminal have the same [device position](terminalgui_k_verwaltung.htm#Klemmeng).
+
+### Definition of main terminals
+
+You can define the terminal with the lowest or highest level as the main terminal which will then contain the parts data. If you define the highest level of a multi-level terminal as the main terminal, the order of the [function templates](Glossary_o_funktionsschablonen.htm) entered at the part is automatically reversed during part selection. An additional part variant is not required.
+
+To be more precise, the function templates with increasing or decreasing level numbers are moved into the appropriate order during part selection. The order of the function templates is determined as follows:
+
+- If the main terminal is level "1", then the levels are sorted in ascending order. The function templates of the associated part are moved into ascending order.
+- If the main terminal is level > 1, the levels are sorted downwards. The function templates of the associated part are moved into descending order.
+
+Multi-level terminals with a part number and multiple function templates can be created in parts management. The multi-level terminal placed in the schematic then consists of a main terminal (with the part number and function templates) and several secondary terminal functions. The main terminal should normally be assigned to the first function template; if this is not the case, this is reported via a check run.
+
+A multi-level terminal is therefore an independent device. This means that device selection is possible for multi-level terminals, and they can be inserted as [devices](Glossary_o_betriebsmittel.htm).
+
+### Numbering
+
+Using the Terminal strips: Allow same designations within multi-level terminals property, you define whether a terminal designation may occur several times within a single multi-level terminal. In other words, several levels may have the same terminal designation. If the property is deactivated, the terminal designation must be unique for each level.
+
+This property affects the numbering of terminals via the Number terminals dialog, provided that you number the terminals according to the "Numeric" scheme. If the property is activated, all terminals of a multi-level terminal are given the same terminal designation during numbering. If you number using the "Page-based" sequence, the graphically first terminal will determine the terminal designation for the other terminals.
+
+If not the entire terminal strip is numbered, but only highlighted terminals, only the multi-level terminals will be numbered that are contained in the selection completely. Partially selected multi-level terminals are given the terminal designation of the first terminal (according to the sequence in the terminal navigator) of the multi-level terminal.
+
+If you number the terminals according to the "Device definition" or "Initiators" [schemes](Glossary_o_schemata.htm), the Terminal strips: Allow same designations within multi-level terminals property will not affect the numbering.
+
+The setting "Keep alphabetical elements" (in the Terminals with alphabetical characters field in the Number terminals dialog) is given priority over the Terminal strips: Allow same designations within multi-level terminals property.
+
+![](../Pictures/Gui/ALL/example.png)[![Closed](../../Skins/Default/Stylesheets/Images/transparent.gif)Example:](javascript:void(0);)
+
+A multi-level terminal with three levels is numbered. In this case, the Terminal strips: Allow same designations within multi-level terminals property is activated, and the numbering setting "Keep alphabetical elements" is selected.
+
+| Designation before numbering | Designation after numbering |
+| --- | --- |
+| 3, 4+, 5- | 1, 1+, 1- |
+
+### Potential terminals
+
+Potential terminals are used to distribute a potential. They are usually multi-level terminals in which the levels are connected with one another and which can be assigned to any potential. However, the levels of the [potential terminals](Glossary_o_potenzialklemmen.htm) are not planned in EPLAN. A potential terminal consists of just one terminal function or function template with n connection points and the level "0".
+
+To represent potential terminals, you should use terminals with three to eight connection points. Special terminal symbols are available for these.
+
+Connection point [designations](Glossary_o_bezeichnungen.htm) must be entered at potential terminals (normally a, b, c, d, ...) so that they can be output in [reports](Glossary_o_auswertungen.htm) and the precise connecting point of a target is recognizable.
+
+![](../Pictures/Gui/ALL/example.png)[![Closed](../../Skins/Default/Stylesheets/Images/transparent.gif)Example:](javascript:void(0);)
+
+On a schematic page you have placed three potential terminals, each with four connection points and two saddle jumper connection points, and assigned them to terminal strip -X1. (The symbols with [symbol numbers](Glossary_o_symbolnummern.htm) 1425 // X4\_B\_1 and 1426 // X4\_B\_2 have been inserted here.)
+
+![](../Pictures/Gui/ALL/terminalgui_multipot_as.png)
+
+The connection points of terminal strip -X1 will be output in the terminal diagram. In the terminal diagram, column A shows the [terminal designations](Glossary_o_klemmenbezeichnungen.htm) (in the middle of the column). The external connection points are shown to their left and the internal connection points to their right, in both cases with their [connection point designations](Glossary_o_anschlussbezeichnungen.htm). Column B shows the saddle jumpers.
+
+![](../Pictures/Gui/ALL/terminalgui_multipotreport_as.png)
+
+See also
+
+[Terminals](terminalgui_k_start.htm)
+
+[Managing Terminals](terminalgui_k_verwaltung.htm)
+
+[Defining Multi-level Terminals](terminalgui_h_mehrstockklemmenarbeit.htm)

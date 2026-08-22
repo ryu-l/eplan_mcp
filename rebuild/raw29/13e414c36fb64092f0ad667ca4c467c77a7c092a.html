@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The new MediaSource system library allows the flexible referencing of images through the image register." /><title>Image register and image register extension</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/eecbase_k_mediasource_image_register.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor1930"></a>
+            <MadCap:concept term="Basis" />
+            <h2>Image register and image register extension</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The new <span class="important">MediaSource</span> system library allows the flexible referencing of images through the image register.</p>
+            <p>The image register is the allocation of components to an image object each for the library component and the project component (see the following figure). This property is implemented in all places where objects are given a graphical representation. The assignment for an image object of the project components is optional. If no image object is specified, the register will use the same image objects for library and project components.</p>
+            <p>
+                <img src="../Pictures/2009031801.svg" alt="" />
+            </p>
+            <p>An example of the use of image registers is the placing of objects in diagrams. By assigning the object class to a certain image (and the configuration of the diagram in order to use the image register), all elements of the same type can be assigned to a uniform image. This assignment can also be modified centrally in the image register, which then applies to all diagrams that use this image register.</p>
+            <p>In order to access the assignment table of an image register, several methods have been added to the formula language. Like image objects, the image register, too, offers the methods âimageâ and âdisabledImageâ. But while a parameter is not needed for an image object, a key object must be specified for the image register. Then, the register searches the assignment table for an entry for the class of the key object and / or the key object itself, if it is already a class object. If the register does not find an assignment, it will look for one for the supertype of the class. This will be repeated until no further supertype is available or an image has been found. If no image is found for the top supertype either, the method will return &lt;&lt;null&gt;&gt;.</p>
+            <p>If an assignment is found, the register will distinguish between two cases: the key object originates from the class level, or it comes from the instance level. If the former is true, the register loads the image of the assigned image object for the class level. If the key object comes from the instance level, the register will check whether the assignment found provides an image for the project component. If this is true, the image of the image object assigned there will be loaded. Otherwise, the image object of the library component will be used.</p>
+            <p class="Precondition">Problem:</p>
+            <p>Since the image registers are in libraries, it may happen with more complex models that a change to an image register is not possible, not desired or not useful. Perhaps, individual images cannot be assigned unambiguously, which would render a central image register impossible. If this affects only part of the images, the constant component of the images assigned would have to be entered and managed several times.</p>
+            <p class="Precondition">Solution:</p>
+            <p>Using image register extensions, it is possible to extend the assignment table of registers dynamically (see the following figure).</p>
+            <p>
+                <img src="../Pictures/2009040203.svg" alt="" />
+            </p>
+            <p>To extend a register, create a new image register extension. The extension allows for the same assignment of classes to image objects as the image register. The register to be extended is selected in the editor for the extension. This way, all entries in the assignment table of the register extension are assigned to those of the register. The extension becomes noticeable in the evaluation of an image request for a class.</p>
+            <p>Now, the evaluation does not merely search the image register, but checks the assignment tables of the register extensions first. If the search of extensions finds an image, that image will be used. If none of the extensions defines an image, the search is run on the image register itself. This order creates the possibility of overwriting the assignments of the image register by means of extensions.</p>
+            <p>This functionality is fully within the image register. Even when register extensions are used, all requests are directed to the register. The image register searches for existing extensions automatically. A further distinction in the formulas is not necessary.</p>
+            <p>With more complex models, it may happen that a register is extended by several register extensions. These extensions may be located in different libraries. If a project is searched for an assignment, the register must not search each individual extension. The project may possibly not import every library that contains an extension for the register. From the point of view of the project, therefore, the request must be handled as if the non-visible extensions did not exist.</p>
+            <p>The key object serves as orientation for the register in this context. The register checks which libraries are visible from the key object. All extensions that are in libraries outside of this view will be ignored for the request.</p>
+            <p>Depending on the origin of the key object, the view becomes too limited. If the key object comes from a modular system library, register extensions will not be visible from the project library. In such cases, an extended image and / or disabledImage method can be used. This will adopt two parameters. The first parameter is a âcontext objectâ; the second parameter, the already known key object. If the key originates in an imported library, a context object can be transferred to determine the extensions in visible libraries.</p>
+            <p class="Precondition">Special case:</p>
+            <p>If there are several extensions eligible for assignment in the search of extensions, the import order in the context library / context project is used. If two extensions are located in the same library and define different images for the same object, the entry used will be selected randomly. The extensions in the library are stored in the data model in an unsorted order. Such an unclear assignment does not trigger an error in the model validation, but may cause behavior that is not immediately comprehensible in terms of the runtime.</p>
+            <p>
+                <img src="../Pictures/2009040204.svg" alt="" />
+            </p>
+            <p class="Precondition">Creating a new image register:</p>
+            <p>To insert a new image register in the library, select in the context menu <span class="gui">New &gt; Media sources &gt; Image register</span>.</p>
+            <p>The new image register is created without data at first. On the <span class="gui">Image assignment</span> page of the editor (see the following figure), the user selects for an object type (1) the images for the library component (2) and the project component (3):</p>
+            <p>
+                <img src="../Pictures/medienquellen_neu_bildregister.png" alt="" />
+            </p>
+            <p class="Precondition">Creating a new image register extension:</p>
+            <p>An image register can be extended via an image register extension. To implement a new image register extension, select in the context menu <span class="gui">New &gt; Media sources &gt; Image register extension</span>.</p>
+            <p>On the <span class="gui">Attributes</span> page, select the image register to be extended:</p>
+            <p>
+                <img src="../Pictures/medienquellen_neu_bildregistererweiterung_1.png" alt="" />
+            </p>
+            <p>On the <span class="gui">Image assignment</span> page, the user then selects for an object type (1) the images for the library component (2) and the project component (3).</p>
+            <p>
+                <img src="../Pictures/medienquellen_neu_bildregistererweiterung_2.png" alt="" />
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

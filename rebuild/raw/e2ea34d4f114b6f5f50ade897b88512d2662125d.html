@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic _Skins_HTML5_SideNavigationSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head id="head">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="robots" content="all">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="">
+        <meta name="BuildTime" content="7:15:22 AM">
+        <meta name="BuildDate" content="Monday, April 27, 2026">
+        <meta id="productName" name="product" content="Eplan Engineering Configuration">
+        <meta id="helptype" name="type" content="sidenav">
+        <meta id="switchlang" name="scope" content="de_en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="The CSV file ParameterMap.csv is imported by means of an action in order to fill the ParameterMap parameter with key-value pairs in the existing confi..."><title>Importing a CSV file via an action</title>
+<!-- OneTrust Cookie Einwilligungshinweis Anfang -->
+	<script type="text/javascript" src="https://cdn.cookielaw.org/consent/50b0d50a-48a2-4e78-bd05-990706c0917d/OtAutoBlock.js"></script>
+	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="50b0d50a-48a2-4e78-bd05-990706c0917d"></script>
+	<script type="text/javascript">
+		function OptanonWrapper() { }
+	</script>
+<!-- OneTrust-Cookie-Einwilligungshinweis Ende -->
+        <!-- Load favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="../Resources/images/favicon.ico"> 
+        <!-- Load JavaScript files -->
+        <!-- Load stylesheets -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet">
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_SideNavStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_IEpopup.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_autocomplete.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_PopupStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TileStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_TopicToolBar.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_FooterStyles.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/StylesForHomePage.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_languageselection.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/eplan_svgtooltips.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/themify-icons.css" rel="stylesheet">
+        <link href="../Resources/Stylesheets/prism.css" rel="stylesheet">
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/Helpsystem_print.gif') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.copy-url-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/CopyLink.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/js/eplan.lib.min.js">
+        </script>
+        <script src="../Resources/js/eplan.iealert.min.js">
+        </script>
+        <script src="../Resources/js/jquery.easy-autocomplete.min.js">
+        </script>
+        <script src="../Resources/js/prism.js">
+        </script>
+        <script src="../../Skins/Default/Scripts/TopicToolbar.js">
+        </script>
+    <!-- Global Site Tag (gtag.js) for Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VXGSPHHC4V">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-VXGSPHHC4V', { cookie_flags: 'secure;samesite=none' });
+	</script>
+<!-- Google Analytics END -->
+	</head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-left is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-device-width: 1024px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="main_k_home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="5" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search">
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="toolbarcontainer" class="sticky-toolbar-container">
+                                        <div class="topicToolbar-wrapper">
+                                            <div class="topicToolbar-innerwrapper">
+                                                <div class="side-content">
+                                                    <div class="clearfix">
+                                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                            <div class="button-group-container-left">
+                                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic">
+                                                                </button>
+                                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic">
+                                                                </button>
+                                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all">
+                                                                </button>
+                                                                <button class="button needs-pie print-button" title="Print">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print">
+                                                                </button>
+                                                                <div class="button-separator">
+                                                                </div>
+                                                                <button class="button needs-pie copy-url-button" onclick="copyurl();">
+                                                                    <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="copy url">
+                                                                </button>
+                                                            </div>
+                                                            <div class="button-group-container-right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="topicToolbar-content">
+                                                    <p class="small"> This functionality is only available for certain module packages. <a href="license.htm">Info / Copyright</a></p>
+                                                    <div class="nocontent">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentcontainer" class="content-container">
+                                        <div class="nscr" id="nscr"><a name="aanchor1077"></a>
+                                            <madcap:concept term="Tutorial"></madcap:concept><a name="kanchor879"></a>
+                                            <h2>Importing a CSV file via an action</h2>
+                                        </div>
+                                        <div class="mainbody" id="mainbody">
+                                            <p class="Bridgehead">Requirements:</p>
+                                            <ul>
+                                                <li value="1">The preparatory steps on the file level have been carried out.</li>
+                                                <li value="2">EEC is started.</li>
+                                                <li value="3">In addition to the system libraries, the <span class="gui">Library catalog</span> contains the architecture <span class="important">T_Mechatronic_Architecture</span> and the <span class="GlossaryPopup" href="glossary_o_baukasten.htm">modular system</span> <span class="important">T_Mechatronic_ModularSystem</span>.</li>
+                                                <li value="4">The <b>Feeder</b> project contains the <span class="gui">Project catalog</span>.</li>
+                                                <li class="Listitem_Normal" value="5">Section <a href="tutimp_h_t1_create_project_imx.htm" class="MCXref xref" xrefformat="{paratext}">Creating a configuration by importing an IMX file</a> is carried out.</li>
+                                            </ul>
+                                            <p>The CSV file <span class="codetext">ParameterMap.csv</span> is imported by means of an action in order to fill the <span class="important">ParameterMap</span> <span class="GlossaryPopup" href="Glossary_o_parameter.htm">parameter</span> with key-value pairs in the existing configuration. To this purpose the template file <span class="codetext">Template_CSV.imx</span> and the scheme file <span class="codetext">KeyValue.xsl</span> are required.</p>
+                                            <p>With the same action the CSV file <span class="codetext">Parameter.csv</span> is imported in order to set the values of the parameters <span class="important">ParameterBoolean</span>, <span class="important">ParameterInteger</span>, <span class="important">ParameterDouble</span> and <span class="important">ParamterString</span>. To this purpose the template file <span class="codetext">Template_CSV.imx</span> and the scheme file <span class="codetext">ParameterWithType.xsl</span> are required.</p>
+                                            <div class="example">
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Contents of the ParameterMap.csv</a></h3></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>
+                                                            <img src="../Pictures/tutimp_t3_csv2.png" alt="">
+                                                        </p>
+                                                        <p>
+                                                            <p class="Bridgehead">Description of the CSV file:</p>
+                                                            <p>The CSV file consists of 9 rows and 3 columns.</p>
+                                                            <p>The columns do not have any headers.</p>
+                                                            <p>An area for header data is introduced via the data to be evaluated with a cell that contains the text <span class="important">Header</span>. The header data end in the row that contains a cell with the text <span class="important">LineEndHeader</span>.</p>
+                                                            <p>The data to be evaluated are distributed across 3 columns:</p>
+                                                            <p>A = Name of the parameter</p>
+                                                            <p>B = Value of the parameter</p>
+                                                            <p>C = Type of the parameter</p>
+                                                            <p>These specifications are converted internally into a fragment in IMX format by means of the XSL file <span class="codetext">KeyValue.xsl</span>. The fragment is inserted into the template file <span class="codetext">Template_CSV.imx</span> instead of the <span class="codetext">&lt;importFragment/&gt;</span> tag.</p>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="example">
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Contents of the Template_CSV.imx</a></h3></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p><pre xml:space="preserve" class="language-markup"><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;imx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" version="1.0"&gt;
+	&lt;project name="Feeder" save="true"&gt;
+		&lt;libraries&gt;
+			&lt;add type="String" value="T_Mechatronic_ModularSystem"/&gt;
+		&lt;/libraries&gt;
+		&lt;mo name="Feeder" typeClass="T_Mechatronic_ModularSystem.Mechatronic.Stations.Feeder" &gt;
+			&lt;importFragment/&gt;
+		&lt;/mo&gt;
+	&lt;/project&gt;
+&lt;/imx&gt;</code></pre>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="example">
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Contents of the Parameters.csv</a></h3></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>
+                                                            <img src="../Pictures/tutimp_t3_csv.png" alt="">
+                                                        </p>
+                                                        <p>
+                                                            <p class="Bridgehead">Description of the CSV file:</p>
+                                                            <p>The CSV file consists of 8 rows and 3 columns.</p>
+                                                            <p>The columns do not have any headers.</p>
+                                                            <p>An area for header data is introduced via the data to be evaluated with a cell that contains the "Header" text. The header data end in the row that contains a cell with the "LineEndHeader" text.</p>
+                                                            <p>The data to be evaluated are distributed across 3 columns:</p>
+                                                            <p>A = Name of the parameter</p>
+                                                            <p>B = Value of the parameter</p>
+                                                            <p>C = Type of the parameter</p>
+                                                            <p>These specifications are converted internally into a fragment in IMX format by means of the XSL file <span class="codetext">Parameter.xsl</span>. The fragment is inserted into the template file <span class="codetext">Template_CSV.imx</span> instead of the <span class="codetext">&lt;importFragment/&gt;</span> tag.</p>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>To execute an action a link is inserted in a Form-UI of the <span class="important">Feeder</span> <span class="GlossaryPopup" href="glossary_o_component.htm">component</span>. The action starts the <span class="important">Engineering.ImportCsvCommand</span> <span class="GlossaryPopup" href="glossary_o_command.htm">command</span>.</p>
+                                            <p class="Bridgehead">Create a unit for actions:</p>
+                                            <ol>
+                                                <li value="1">Mark the <span class="important">T_Mechatronic_ModularSystem</span> library in the <span class="gui">Library catalog</span>.</li>
+                                                <li value="2">Select <span class="gui">New &gt; Unit</span> in the shortcut menu.</li>
+                                                <li value="3">Enter <span class="important">Actions</span> in the <span class="gui">Name</span> field.</li>
+                                            </ol>
+                                            <p class="Bridgehead">Create the action <span class="important">ImportCsvAction</span>:</p>
+                                            <ol>
+                                                <li value="1">Mark the <span class="important">Actions</span> <span class="GlossaryPopup" href="glossary_o_unit.htm">unit</span> in the <span class="important">T_Mechatronic_ModularSystem</span> library in the <span class="gui">Library catalog</span>.</li>
+                                                <li value="2">Select <span class="gui">New &gt; Object...</span> from the popup menu.</li>
+                                                <li value="3">Select <span class="gui">Object &gt; Action</span>.</li>
+                                                <li value="4">Confirm with <span class="gui">[Finish]</span>.</li>
+                                                <li value="5">Enter <span class="important">ImportCsvAction</span> in the <span class="gui">Name</span> field.</li>
+                                                <li value="6">Open the <span class="gui">Methods</span> editor.</li>
+                                                <li value="7">Click the symbol <img src="../Pictures/Gui/ALL/new.png" alt=""> (<span class="gui">Add method</span>).</li>
+                                                <li value="8">Add <span class="important">run</span> in the <span class="gui">Name</span> field.</li>
+                                                <li value="9">If applicable, mark the <span class="gui">Class method</span> option.</li>
+                                                <li value="10">If applicable, select the language <span class="gui">Sequence</span>.</li>
+                                                <li value="11">Click the symbol <img src="../Pictures/Gui/ALL/new.png" alt=""> (<span class="gui">Add Single Argument</span>).</li>
+                                                <li value="12">Enter the name <span class="important">xslt</span> for the new argument.</li>
+                                                <li value="13">Specify the <span class="important">Engineering String</span> type for the new argument.</li>
+                                                <li value="14">Repeat Steps 11 and 13 with the following specifications:<br></li>
+                                                <table style="width: 100%;">
+                                                    <col>
+                                                    <col>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Type</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>template</td>
+                                                            <td>Engineering.<span class="GlossaryPopup" href="glossary_o_string.htm">String</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>project</td>
+                                                            <td>Engineering.Object</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>csv</td>
+                                                            <td>Engineering.String</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>delimiter</td>
+                                                            <td>Engineering.String</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <li value="15">Click the symbol <img src="../Pictures/Gui/ALL/new.png" alt=""> (<span class="gui">Add called method</span>).</li>
+                                                <li value="16">Select <span class="gui">Object &gt; Command &gt; FrameworkCommand &gt; ImportCSVCommand</span>.</li>
+                                                <li value="17">In the <span class="gui">Matching methods</span> list select the method with the arguments <span class="important">String pathToXslt, String pathtoTemplate, Object projectOrMo, String pathToCsv, String delimiter</span>.</li>
+                                                <li value="18">Confirm with <span class="gui">[Finish]</span>.</li>
+                                            </ol>
+                                            <p>The result should have this appearance:</p>
+                                            <p>
+                                                <img src="../Pictures/tutimp_t4_importcsvaction.png" class="max" alt="">
+                                            </p>
+                                            <p class="Bridgehead">Create a Form-UI for the Feeder component:</p>
+                                            <ol>
+                                                <li value="1">Open the <span class="important">Feeder</span> component in the <span class="important">T_Mechatronic_ModularSystem</span> library in the <span class="gui">Library catalog</span>.</li>
+                                                <li value="2">Open the <span class="gui">UI configuration</span> editor.</li>
+                                                <li value="3">If required, open the <span class="gui">Source</span> tab.</li>
+                                                <li value="4">Enter the following UI configuration.</li>
+                                                <div class="example">
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open">Contents of the UI configuration</a></h3></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p><pre xml:space="preserve" class="language-markup"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;uis xmlns="http://www.mind8.com/FormUI"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+	&lt;form title="Import" id="import"&gt;
+		&lt;action type="link" name="T_Mechatronic_ModularSystem.Actions.ImportCsvAction"
+			arguments="=List{
+			'install\\importschemas\\KeyValue.xsl',
+			'resources\\Import\\IMX\\Template_CSV.imx',
+			'resources\\Import\\CSV\\ParameterMap.csv',
+			';',
+			this}"&gt;
+			Import CSV Data as key-value pairs
+		&lt;/action&gt;
+		
+		&lt;action type="link" name="T_Mechatronic_ModularSystem.Actions.ImportCsvAction"
+			arguments="=List{
+			'resources\\Import\\XSL\\ParameterWithType.xsl',
+			'resources\\Import\\IMX\\Template_CSV.imx',
+			'resources\\Import\\CSV\\Parameter.csv',
+			';',
+			this}"&gt;
+			Import CSV Data as single parameter values
+		&lt;/action&gt;
+	&lt;/form&gt;
+&lt;/uis&gt;</code></pre>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ol>
+                                            <p class="Bridgehead">Execute the action "Import CSV Data as key-value pairs" in Form-UI:</p>
+                                            <p>The created Form-UI is available directly after saving in the <span class="important">Feeder</span> project component under the name <span class="gui">Import</span>.</p>
+                                            <ol>
+                                                <li value="1">Open the <span class="important">Feeder</span> component in the <span class="gui">Project catalog</span>.</li>
+                                                <li value="2">Open the <span class="gui">Import</span> editor.</li>
+                                                <li value="3">Click the link <span class="important">Import CSV Data as key-value pairs</span>.</li>
+                                            </ol>
+                                            <p class="Bridgehead">Result:</p>
+                                            <p>The result can be checked directly in the <span class="important">Feeder</span> project component.</p>
+                                            <ol>
+                                                <li value="1">Open the <span class="gui">Parameter</span> editor.</li>
+                                            </ol>
+                                            <p>
+                                                <img src="../Pictures/tutimp_t3_csv_result3.png" class="max" alt="">
+                                            </p>
+                                            <p>The <span class="gui">Value</span> column shows that the values from the columns <span class="gui">A</span> and <span class="gui">B</span> of the CSV file have been written as a key-value pair in the <span class="important">ParameterMap</span> parameter.</p>
+                                            <p class="Bridgehead">Execute the action "Import CSV data as single parameter values" in Form-UI:</p>
+                                            <ol>
+                                                <li value="1">Open the <span class="gui">Import</span> editor.</li>
+                                                <li value="2">Click the link <span class="important">Import CSV data as single parameter values</span>.</li>
+                                            </ol>
+                                            <p class="Bridgehead">Result:</p>
+                                            <p>The result can be checked directly in the <span class="important">Feeder</span> project component.</p>
+                                            <ol>
+                                                <li value="1">Open the <span class="gui">Parameter</span> editor.</li>
+                                            </ol>
+                                            <p>
+                                                <img src="../Pictures/tutimp_t4_action_result2.png" class="max" alt="">
+                                            </p>
+                                            <p>The <span class="gui">Value</span> column shows that all the values from the CSV file have been imported with their own types.</p>
+                                        </div>
+                                    </div>
+                                    <script>/* <![CDATA[ */$(function(){
+			$('#contentcontainer').prependTo($('.body-container'));
+			$('#toolbarcontainer').prependTo($('.body-container'));
+		});
+		/* ]]> */</script>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

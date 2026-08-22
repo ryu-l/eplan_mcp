@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|EPLAN Pro Panel|3D Mounting Layout|Proceed as Follows|Editing the Device Logic">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Mounting grids are assigned to individual areas of a 3D part placement, and during the placement of other components are displayed on these areas. Thu..." /><title>Defining and Using a Mounting Grid</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/cabinetgui_h_montagerasterdefinieren.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor3397"></a>
+            <MadCap:concept term="Handlung" /><a name="aanchor3398"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Pro Panel" /><a name="kanchor4072"></a><a name="kanchor4073"></a>
+            <h2>Defining and Using a Mounting Grid</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Mounting grids are assigned to individual areas of a 3D <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> placement, and during the placement of other components are displayed on these areas. Thus, placement is only possible on the intersections of the <a href="Glossary_o_raster.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">grid</a> <a href="Glossary_o_leitungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">lines</a>. Using the <a href="Glossary_o_montageraster.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">mounting grid</a>, it is possible to represent a manufacturer and type-specific hole pattern, for example, on enclosure profiles, within which screw <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> are set during the mounting. The <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> of the placed mounting grid can be modified subsequently.</p>
+            <p class="Bridgehead">Preconditions:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">You have opened a project.</li>
+                <li class="Listitem_Normal" value="2">The <a href="Glossary_o_bauraum.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">layout space</a> navigator is open and a layout space is open.</li>
+                <li class="Listitem_Normal" value="3">The layout space contains imported 3D bodies which are to be saved as an enclosure or accessory part.</li>
+            </ul>
+            <fieldset data-mc-conditions="Conditions.New">
+                <ol>
+                    <li class="Listitem_Step_By_Step" value="1">Select the <span class="gui">Edit &gt; Device logic &gt; Mounting grid</span> menu <a href="Glossary_o_bauteile.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">items</a>.</li>
+                    <li class="Listitem_Step_By_Step" value="2">In the <span class="gui">Mounting grid</span> dialog enter suitable values for the grid increments and grid rows in the X and Y direction.</li>
+                    <li class="Listitem_Step_By_Step" value="3">Click <span class="gui">[OK]</span>.</li>
+                    <li class="Listitem_Step_By_Step" value="4">Move the cursor over the surfaces of the 3D geometry.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The surface beneath the cursor is highlighted in color.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The point of origin of the surface to which the grid points defined in the <span class="gui">Mounting grid</span> dialog refer is displayed in a coordinate system.<br /><br /><img src="../Pictures/Visualisation/ALL/cabinetgui_mountinggrid_select_as.png" /></li>
+                    <li class="Listitem_Step_By_Step" value="5">Click the desired surface.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The mounting grid is displayed at the cursor as freely movable.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> On the clicked surface, snap points are displayed and handles are displayed on the mounting grid to be placed.</li>
+                    <li class="Listitem_Step_By_Step" value="6">If necessary, switch the handle during the placement with key <span class="gui">[A]</span> or use the popup menu <span class="gui">Placement options</span> to determine via the dialog of the same name a handle as well as an <a href="Glossary_o_offset.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">offset</a> for the selected handle to the cursor position.</li>
+                    <li class="Listitem_Step_By_Step" value="7">Place the mounting grid by clicking at the desired position on the selected surface.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The mounting grid is saved at the part placement and is displayed in the layout space on the selected surface. The function remains active, and you can put mounting grids on additional surfaces.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> Small cross lines are displayed for single-row mounting grids.<br /><br /><img src="../Pictures/Visualisation/ALL/cabinetgui_mountinggrid_as.png" /></li>
+                    <li class="Listitem_Step_By_Step" value="8">End the action via the <span class="gui">Cancel action</span> popup menu item or via the <span class="gui">[Esc]</span> button.</li>
+                    <li class="Listitem_Step_By_Step" value="9">Double-click the placed mounting grid and in the first tab of the <span class="gui">Properties: Mounting grid</span> dialog store a speaking name and a description.</li>
+                    <li class="Listitem_Step_By_Step" value="10">If you want to subsequently change the grid increment and/or the number of grid columns in X and Y direction, enter the desired value into the <span class="gui">Format</span> tab of the dialog.</li>
+                    <li class="Listitem_Step_By_Step" value="11">Click <span class="gui">[OK]</span>.</li>
+                </ol>
+            </fieldset>
+            <fieldset data-mc-conditions="Conditions.New">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><h3><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Using mounting grids</a></h3></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p>To use a mounting grid defined on a mounting surface or on a profile when <a href="Glossary_o_auflegen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">placing</a> an item, the snap to mounting grid function can be activated and deactivated during the placement procedure via the popup menu.</p>
+                        <p class="Bridgehead">Precondition:</p>
+                        <p>A mounting grid was defined on a mounting surface or on a profile.</p>
+                        <ol>
+                            <li class="Listitem_Step_By_Step" value="1">During the item placement select the popup menu item <span class="gui">Snap to mounting grid</span>.<br /><br /><img src="../Pictures/Gui/ALL/arrow.png" /> The item can be placed preferably on the intersections of the lines of the mounting grid.</li>
+                            <li class="Listitem_Step_By_Step" value="2">If instead of using the mounting grid you want to place freely again on the complete mounting surface, select the popup menu item <span class="gui">Snap to mounting surface</span>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </fieldset>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="ged3dmateeditorgui_d_montageraster.htm">Dialog Mounting grid</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

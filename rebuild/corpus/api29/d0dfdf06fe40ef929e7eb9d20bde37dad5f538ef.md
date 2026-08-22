@@ -1,0 +1,70 @@
+# CreateDisplayList(String,String,Int32,Project) Method
+
+CreateDisplayList(String,String,Int32,Project) Method
+
+Creates a display list for a macro. A display list is a set of graphical placements to be drawn. Removes the representation of previously displayed objects when creating a new list.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public void CreateDisplayList( 
+   string strMacroFile,
+   string strConverter,
+   int nVariant,
+   Project pProject
+)
+```
+```
+
+```
+```
+public:
+void CreateDisplayList( 
+   String^ strMacroFile,
+   String^ strConverter,
+   int nVariant,
+   Project^ pProject
+)
+```
+```
+
+#### Parameters
+
+*strMacroFile*
+:   Full file name of a window macro.
+
+*strConverter*
+:   Name of a file converter. Parameter may be empty. A file converter can be used to convert a file into a temporary macro file. After converting, the content of the temp. macro file will be used to create a display list. This is reserved for future enhancements. Today, it is not possible to write an own converter by API.
+
+*nVariant*
+
+*pProject*
+:   Project which provides display properties.
+
+Exceptions
+
+| Exception | Description |
+| --- | --- |
+| **ArgumentException** | Thrown in case of invalid parameters. |
+| **ArgumentNullException** | A null reference is passed to a parameter. |
+| **BaseException** | An error occurred, when creating the display list. |
+
+See Also
+
+#### Reference
+
+[DrawingService Class](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService.html)
+  
+[DrawingService Members](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService_members.html)
+  
+[Overload List](Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~CreateDisplayList.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.DrawingService~CreateDisplayList(String,String,Int32,Project))

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Managing Project Data|Layer Management|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="All elements are allocated to different layers in EPLAN. This affects simple graphical elements as well as symbol graphics, autoconnecting lines, prop..." /><title>Layers: Principle</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/layermanager_k_prinzip.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor485"></a>
+            <MadCap:concept term="Grundlagen" /><a name="aanchor486"></a>
+            <MadCap:concept term="EPLAN Plattform;EPLAN Electric P8;EPLAN Fluid" /><a name="kanchor542"></a>
+            <h2>Layers: Principle</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>All elements are allocated to different <a href="Glossary_o_ebenen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">layers</a> in EPLAN. This affects simple graphical elements as well as symbol graphics, <a href="Glossary_o_autoconnecting.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">autoconnecting</a> <a href="Glossary_o_leitungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">lines</a>, property placements, special text and other text elements. In the layer management, <a href="Glossary_o_einstellungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">settings</a> can be made for each layer defining whether it is to be displayed and/or printed, whether the text on this layer should be surrounded by a border, and whether the elements assigned to this layer can be edited.</p>
+            <p>In EPLAN, there are two ways of hiding particular elements from being displayed on the screen or from being printed: By identifying a layer or by identifying an element as visible or invisible. The <span class="gui">Invisible</span> drop-down list provides the <img src="../Pictures/Gui/ALL/all_colorfromlayer_as.png" /> (From layer), "Yes" and "No" options for the element concerned. Note that if an element is identified as visible or invisible, this will overwrite the setting for the layer!</p>
+            <p>The appropriate settings allow you to make the invisible elements visible or printable again (<span class="gui">Options &gt; Settings &gt; User &gt; Graphical editing &gt; 2D</span>). To make it possible to recognize which visible elements are actually "invisible", a special color setting is available for invisible elements.</p><a name="kanchor543"></a><a name="I_EbenenNamen"></a>
+            <h3>Layer names and descriptions</h3>
+            <p>Layers have a layer name and a layer description. The layer name must be unique, as it identifies a layer in EPLAN. The names and descriptions of the standard EPLAN layers cannot be changed.</p>
+            <p>The tree view is created from the layer description. Points within the layer description are treated as substructures and <a href="Glossary_o_erstellen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">create</a> a sub-level in the tree. The uppermost nodes in the tree structure have standard names: "Graphic", "Symbol graphic", "Property placement", "Special texts" and "3D graphic".</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><a name="I_Beispiel1"></a> <img src="../Pictures/Gui/ALL/example.png" /> <a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">You create a layer for your own graphics with the name <span class="codetext">Layer 1</span> and the description <span class="codetext">MyLayers.MyGraphic</span>. In the tree below the pre-defined nodes, the new node <span class="codetext">MyLayers</span> is shown. Below it are the nodes <span class="codetext">MyGraphic</span> with the new layer <span class="codetext">Layer 1</span>.</p>
+                    </div>
+                </div>
+            </div><a name="I_EbenenVerwaltung"></a>
+            <h3>Layer management</h3>
+            <p>Layers are managed on a project basis, i.e. the <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> of a layer are taken from the current project. If several graphical <a href="Glossary_o_editoren.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">editors</a> are open, this can mean that (e.g.) Layer 1 is visible in graphical editor 1 (Project 1), and invisible in graphical editor 2 (Project 2) .</p>
+            <p>Appropriate layers are predefined in EPLAN for graphical elements, symbol graphics, text, etc. Each individual element (e.g. a particular piece of text) can be allocated to a particular layer on the project pages using the properties dialog. The display and printing of all layers is freely configurable.</p>
+            <p>Layers are identified internally via their <a href="Glossary_o_id.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ID</a> number. The layer ID numbers can be used when allocating layers via <a href="Glossary_o_platzhalterobjekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">placeholder objects</a>, for example. With the standard layers, the ID number is <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> of the layer name. For example, the layer <span class="codetext">EPLAN100, Graphic.General</span> has the ID number <span class="codetext">100</span>. ID numbers from 1000 upwards are assigned to <a href="Glossary_o_benutzerdefiniert.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">user-defined</a> layers. The ID number of a user-defined layer can be determined by exporting the layer configuration and searching the configuration file for the value of the entry "A1426" for the layer concerned, e.g. <span class="codetext">A1426="1000"</span>.</p><a name="kanchor544"></a><a name="I_EbenenDXF"></a>
+            <h3>DXF / DWG export and import</h3>
+            <p>For <a href="Glossary_o_dxf_dwg_export.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">DXF / DWG export</a> of pages, only the names of the layers are exported and not the layer descriptions.</p>
+            <p>If during <a href="Glossary_o_dxf.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">DXF</a> / <a href="Glossary_o_dwg.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">DWG</a> import the layers in the DXF / DWG files are recognized as EPLAN standard layers, then these standard layers are allocated to the imported layers and thus EPLAN's own description text is restored. If a layer is not recognized on import, then the layer is newly generated in the layer management for the specific project.</p>
+            <p>The <span class="gui">Layers</span> tab in the DXF / DWG settings is available (<span class="gui">Options &gt; Settings &gt; User &gt; Interfaces &gt; DXF / DWG export and import</span>) for supporting layer comparisons when exporting and importing. Here you can allocate the standard EPLAN layers as well as the user-defined project layers according to the appropriate CAD names. In this way, when exporting, you can (e.g.) replace the names of the EPLAN standard layers in the DXF / DWG files with the layer names used in AutoCAD.</p><a name="I_EbenenSchaltzeichen"></a>
+            <h3>Treatment of components</h3>
+            <p>A <a href="Glossary_o_schaltzeichen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">component</a> usually consists of a symbol (composed of graphical elements) and a set of property placements (text elements) that label the symbol. Since the components references in the schematic do not have their own layer, it cannot be hidden or revealed as a whole.</p>
+            <p>The individual graphical elements composing a symbol are located on one layer as a standard. This is the<span class="codetext"> EPLAN300</span> layer for general symbol graphics. It is however possible that the graphical elements can be spread over different layers. In this way you can use different colors, line types, and line thicknesses in a single symbol. The individual elements can be changed, hidden and revealed over the entire project using the layer management.</p>
+            <p>For a few special elements (such as <a href="Glossary_o_geraetekaesten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">black boxes</a>, <a href="Glossary_o_strukturkaesten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">structure boxes</a>, <a href="Glossary_o_abschirmungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">shields</a>, <a href="Glossary_o_kabeldefinitionslinien.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable definition lines</a>, cross-section definitions, etc.), only a graphical element is used instead of a symbol. Each graphical element can be revealed or hidden using the appropriate layer (e.g. <span class="codetext">EPLAN305; Symbol graphic.Black boxes</span>) in the layer management. Additionally, text elements such as function or special text can be revealed or hidden via the layer management.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="layermanager_k_start.htm">Layer Management</a>
+            </p>
+            <p class="Link_Seealso"><a href="layermanager_h_ebenenbearbeiten.htm">Working with Layers</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.concept" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Working with Connections|Net-based Connections|Basics">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Net-based connections enable a schematic to be created without having to define immediately how the connections are arranged. This means that nets con..." /><title>Net-Based Connections: Principle</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/netbasedwires_k_prinzip.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor1575"></a>
+            <MadCap:concept term="Grundlagen;EPLAN Plattform;EPLAN Electric P8" />
+            <h2>Net-Based Connections: Principle</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Net-based <a href="Glossary_o_verbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connections</a> enable a schematic to be created without having to define immediately how the connections are arranged. This means that <a href="Glossary_o_netze.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">nets</a> containing a large number of connections can be defined within a project. The connection sequence within a net will â assuming <a href="Glossary_o_verbindungssymbole.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection symbols</a> without target specification are used â not be determined by the connection <a href="Glossary_o_symbole.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">symbols</a> in the schematic, but must be defined later in the <a href="Glossary_o_eigenschaftendialog.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">property dialog</a> for the relevant net definition point.</p><a name="I_DefinitionNetzbasierteVerbindungen"></a>
+            <h3>Defining net-based connections</h3>
+            <p>Net-based connections are defined using a net definition point. Which <a href="Glossary_o_anschluesse.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection points</a> of the net are connected to each other is stored in the net definition point. The connection points are identified by a connection point <a href="Glossary_o_id.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">ID</a> that is unique within the net. The IDs are automatically assigned but can be changed manually. These IDs are also copied when a net is copied, so the connections stored in the net definition point are retained.</p>
+            <p>The connections stored in the net definition point will not be visible immediately in the Connections navigator. Connections are not generated from the information contained in the net definition point until the connections are updated. These connections will then be displayed in the Connection navigator.</p>
+            <p>If you have a "Net Based Wiring" license, the <span class="gui">Specify targets</span> check box will be displayed in the property dialog of connection symbols with branching options (T-nodes, jumpers, double junctions). If this check box is <span class="important">deactivated</span>, the target order for the relevant connection symbol will not be evaluated and the connection symbol will be shown as a point. In this case the connections are not automatically generated and have to be specified manually.</p>
+            <p>If the <span class="gui">Specify targets</span> check box is activated, EPLAN automatically generates the connections.</p><a name="kanchor1895"></a><a name="kanchor1896"></a><a name="I_NetzverbindendeFunktionen"></a>
+            <h3>Net-connecting functions</h3>
+            <p>A net is terminated by a function that has either potential isolation, signal isolation, or net isolation. Most <a href="Glossary_o_funktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">functions</a> have net isolation as standard. The <span class="gui">Net-connecting</span> property enables you to specify that the net is to be continued to this function. Potential connection points are always net-connecting.</p>
+            <h4>Terminals and pins in nets</h4>
+            <p>It may sometimes be necessary to continue a net via a terminal or a pin. In this case the connections on the two terminal/pin connection points must be <a href="Glossary_o_artikel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">part</a> of the same net. This is achieved by assigning the <span class="gui">Net-connecting</span> property to the terminal or pin.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">If the <span class="gui">Net-connecting</span> property is assigned to the terminal <span class="codetext">-X100</span>, the lamps <span class="codetext">-H10</span> and <span class="codetext">-H20</span> will be part of the same net and can be connected to each other using a net-based connection.</p>
+                        <p class="Infoblock">
+                            <img src="../Pictures/Visualisation/ALL/netbasedwires_terminals_av.png" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h3>Cable definitions</h3>
+            <p>Connections can then only be defined as <a href="Glossary_o_kabelverbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable connections</a> via a <a href="Glossary_o_kabel.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">cable</a> definition line if the connection does not contain any connection symbols for which target specification is disabled.</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example:</a></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock">The only connection that can be defined as a cable connection using the cable definition line <span class="codetext">-W2</span> is the one between <span class="codetext">-X1:3</span> and <span class="codetext">-X1:4</span>. The connection under the cable definition line <span class="codetext">-W1</span> will not be recognized as a cable connection even if the connection between <span class="codetext">X1:2</span> and <span class="codetext">X1:1</span> is defined in the net definition point.</p>
+                        <p class="Infoblock">
+                            <img src="../Pictures/Visualisation/ALL/netbasedwires_cable_av.png" />
+                        </p>
+                    </div>
+                </div>
+            </div><a name="kanchor1897"></a><a name="I_AuswertungNetzbasierteVerbindungen"></a>
+            <h3>Net-based connection reports</h3>
+            <p>Net-based connections can be output in <a href="Glossary_o_auswertungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">reports</a> sorted by nets and <a href="Glossary_o_verbindungsketten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">daisy chains</a>. The following <a href="Glossary_o_eigenschaften.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">properties</a> can be used for this purpose:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1"><span class="gui">Net index</span>: Identifies the net in the case of <a href="Glossary_o_netzbasierteverbindungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">net-based connections</a>.</li>
+                <li class="Listitem_Normal" value="2"><span class="gui">Daisy chain index</span>: Identifies the daisy chain within a net in the case of net-based connections.</li>
+                <li class="Listitem_Normal" value="3"><span class="gui">Connection index</span>: Identifies the connections within a daisy chain in the case of net-based connections.</li>
+            </ul>
+            <p>The <span class="gui">Type of administration</span> property can be used as a filter criterion in reports so that only connections with the value "net-based" are output.</p>
+            <p class="Seealso">See also</p>
+            <p class="Link_Seealso"><a href="netbasedwires_k_start.htm">Net-based Connections</a>
+            </p>
+            <p class="Link_Seealso"><a href="netbasedwires_k_netzbearbeiten.htm">Editing Nets</a>
+            </p>
+            <p class="Link_Seealso"><a href="netbasedwires_h_ndpzeichnen.htm">Inserting Net Definition Points</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

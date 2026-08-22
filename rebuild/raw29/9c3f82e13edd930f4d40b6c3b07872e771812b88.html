@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The upgrade of the model to extension points is targeted towards experienced users who are already familiar with the basic functions." /><title>Upgrading mechatronic model to extension points</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/tutp8_h_expert.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor329"></a>
+            <MadCap:concept term="Tutorial;EPLAN Electric P8" />
+            <h2>Upgrading mechatronic model to extension points</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The upgrade of the model to extension points is targeted towards experienced users who are already familiar with the basic functions.</p>
+            <p>The currently structured model serves as the starting point. If the model has not been elaborated, the <span class="codetext">P8.eox</span> sample file has to be imported and the EEX user settings and model variables as well as the P8 settings have to be adapted.</p>
+            <p>The concept of extension points is based on the idea that only such components are installed on an extension point that import an interface by the same name and that are visible for the project. Those discipline components are visible whose libraries have been imported into the project. The number of components to be inserted is specified separately for each extension point or is controlled by formulas. The insertion of components is triggered by updating the extension points.</p>
+            <p>The model is upgraded to extension points by means of the following steps:</p>
+            <p class="Link_Seealso"><a href="tutp8_h_expert_delete_project.htm" class="MCXref xref" xrefformat="{para}">Deleting a project</a>
+            </p>
+            <p class="Link_Seealso"><a href="tutp8_h_expert_extend_architecture.htm" class="MCXref xref" xrefformat="{para}">Expanding the architecture</a>
+            </p>
+            <p class="Link_Seealso"><a href="tutp8_h_expert_create_interface_lib.htm" class="MCXref xref" xrefformat="{para}">Creating a library for interfaces</a>
+            </p>
+            <p class="Link_Seealso"><a href="tutp8_h_expert_import_interface_lib_to_mech.htm" class="MCXref xref" xrefformat="{para}">Importing a library for interfaces in a modular system</a>
+            </p>
+            <p class="Link_Seealso"><a href="tutp8_h_expert_extent_mech_by_extensionpoints.htm" class="MCXref xref" xrefformat="{para}">Installing extension points into mechatronic components</a>
+            </p>
+            <p class="Link_Seealso"><a href="tutp8_h_expert_create_discipline_lib.htm" class="MCXref xref" xrefformat="{para}">Creating a library for the discipline ECAD P8</a>
+            </p>
+            <p class="Link_Seealso"><a href="tutp8_h_expert_encapsulate_discipline_comps.htm" class="MCXref xref" xrefformat="{para}">Enclosing discipline components in mechatronic components</a>
+            </p>
+            <p class="Link_Seealso"><a href="tutp8_h_expert_correct_formulas.htm" class="MCXref xref" xrefformat="{para}">Modifying formulas</a>
+            </p>
+            <p class="Link_Seealso"><a href="tutp8_h_expert_create_action_for_import_of_discipline.htm" class="MCXref xref" xrefformat="{para}">Creating actions for the import of the discipline library into the modular system</a>
+            </p>
+            <p class="Link_Seealso"><a href="tutp8_h_expert_test.htm" class="MCXref xref" xrefformat="{para}">Testing upgrade</a>
+            </p>
+            <p class="Seealso">See also:</p>
+            <p class="Link_Seealso"><a href="concept_k_extension_point_concept.htm" class="MCXref xref" xrefformat="{para}">Extension point concept</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Thus far, only discipline components with an abstract and a concrete derivation have been assigned parameters and parameter values." /><title>Using values for plugs and sockets</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/tutpropanel_h_set_plug_socket_values.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor304"></a>
+            <MadCap:concept term="Tutorial;EPLAN Pro Panel" />
+            <h2>Using values for plugs and sockets</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>Thus far, only discipline components with an abstract and a concrete derivation have been assigned parameters and parameter values.</p>
+            <p>There are still no parameters or parameter values for the following discipline components, which are also installed in the <span class="important">Feeder</span> station.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">WiringDiagram</li>
+                <li class="Listitem_Normal" value="2">LayoutSpace</li>
+                <li class="Listitem_Normal" value="3">MountingPanel</li>
+                <li class="Listitem_Normal" value="4">Plane</li>
+            </ul>
+            <p>We begin by assigning parameters to the discipline components:</p>
+            <ol>
+                <li value="1">Open the <span class="important">WiringDiagram</span> component in the <span class="important">ProPanel</span> unit.</li>
+                <li value="2">Open the <span class="gui">Parameter</span> editor.</li>
+                <li value="3">Drag the <span class="important">Socket</span> parameter from the <span class="important">Parameter</span> unit in the editor.</li>
+                <li value="4">Repeat steps 1 to 3 for the <span class="important">LayoutSpace</span> component and the <span class="important">Plug</span> and <span class="important">Socket</span> parameters.</li>
+                <li value="5">Repeat steps 1 to 3 for the <span class="important">MountingPanel</span> and <span class="important">Plane</span> components and the <span class="important">Id</span>, <span class="important">Plug</span> and <span class="important">Socket</span>parameters.</li>
+                <li value="6">The next step is to assign values to the parameters.</li>
+                <li value="7">Open the <span class="important">Feeder</span> component.</li>
+            </ol>
+            <p>
+                <img src="../Pictures/tutorial_pp_plug_socket_angeben.png" alt="" />
+            </p>
+            <ol data-mc-continue="true">
+                <li value="8">Select the installed <span class="important">WiringDiagram</span> component.</li>
+                <li value="9">For the <span class="important">Socket</span> parameter, enter the value <span class="important">LayoutSpace</span>.</li>
+                <li value="10">Repeat steps 8 and 9 for the following components with the parameter values from the following table:</li>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><a href="glossary_o_component.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Component</a>
+                            </th>
+                            <th><a href="glossary_o_parameter.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Parameter</a>
+                            </th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">LayoutSpace</td>
+                            <td><a href="glossary_o_plug.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Plug</a>
+                            </td>
+                            <td>LayoutSpace</td>
+                        </tr>
+                        <tr>
+                            <td><a href="glossary_o_socket.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Socket</a>
+                            </td>
+                            <td>Enclosure</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">AE1050_500</td>
+                            <td>Plug</td>
+                            <td>Enclosure</td>
+                        </tr>
+                        <tr>
+                            <td>Socket</td>
+                            <td>EnclosureMounted</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">MountingPanel</td>
+                            <td>Plug</td>
+                            <td>EnclosureMounted</td>
+                        </tr>
+                        <tr>
+                            <td>Socket</td>
+                            <td>MP_Plane</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Plane</td>
+                            <td>Plug</td>
+                            <td>MP_Plane</td>
+                        </tr>
+                        <tr>
+                            <td>Socket</td>
+                            <td>PlaneMounted</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ol>
+            <p>The hierarchy of Pro Panel components can be recognized by the values for <span class="important">Plug</span> and <span class="important">Socket</span>.</p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

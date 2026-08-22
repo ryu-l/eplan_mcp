@@ -1,0 +1,58 @@
+# DMPLAOBJECT_DOCUMENTS_URL(Int32) Property
+
+DMPLAOBJECT\_DOCUMENTS\_URL(Int32) Property
+
+Documents: File / hyperlink # 44068.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue DMPLAOBJECT_DOCUMENTS_URL( 
+   int index
+) {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ DMPLAOBJECT_DOCUMENTS_URL {
+   PropertyValue^ get(int index);
+   void set (int index, PropertyValue^ value);
+}
+```
+```
+
+#### Parameters
+
+*index*
+
+#### Property Value
+
+Returns property value of type System.String.
+
+Remarks
+
+Property is indexed. Possible indexes are from 1 to 20.
+
+File name or hyperlink of an external document. Any external documents can be stored at a planning object or structure segment. You can output these documents in the reports as hyperlinks.
+
+See Also
+
+#### Reference
+
+[PlanningSegmentPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList.html)
+  
+[PlanningSegmentPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList~DMPLAOBJECT_DOCUMENTS_URL.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning.PlanningSegmentPropertyList~DMPLAOBJECT_DOCUMENTS_URL(Int32))

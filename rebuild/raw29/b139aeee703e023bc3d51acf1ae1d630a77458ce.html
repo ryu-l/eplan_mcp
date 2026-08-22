@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="EPLAN Help|Managing Master Data|Master Data|Proceed as Follows">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="expires" content="14400" />
+        <meta name="BuildTime" content="5:24:49 AM" />
+        <meta name="BuildDate" content="Wednesday, July 28, 2021" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The master data (e.g. a symbol library) is not referenced, but rather stored in the project, i.e. copied into the project. The storage of the master d..." /><title>Synchronizing Master Data
+</title>
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../CSS/reload.js">
+        </script>
+        <script src="../CSS/init_analytics_msg.js">
+        </script>
+        <script src="../CSS/bc.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/xmasterdatasettingsgui_h_stammdatenabgleichen.htm">Open topic with navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header data-mc-conditions="Primary.OnlineOnly">
+            <p class="Small">This functionality is only available for certain module packages. <a href="license_k_start.htm">Info / Copyright</a></p>
+        </header>
+        <div class="nscr" id="nscr"><a name="aanchor855"></a>
+            <MadCap:concept term="Handlung;EPLAN Plattform;EPLAN Electric P8;EPLAN Fluid;EPLAN Preplanning;EPLAN Pro Panel" />
+            <h2><a name="kanchor964"></a><a name="kanchor965"></a>Synchronizing Master Data</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The <a href="Glossary_o_stammdaten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">master data</a> (e.g. a symbol library) is not referenced, but rather stored in the project, i.e. copied into the project. The storage of the master data being used thus occurs within the <span class="important">Project</span>. Depending on the project <a href="Glossary_o_einstellungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">settings</a> specified under <span class="gui">Options &gt; Settings &gt; Projects &gt; "Project name" &gt; Management &gt; General</span>, <span class="gui">Options &gt; Settings &gt; Projects &gt; "Project name" &gt; Management &gt; Symbol libraries</span>, and <span class="gui">Options &gt; Settings &gt; Projects &gt; "Project name" &gt; Reports &gt; Display / output</span> you can, if necessary, manually start the synchronization of <a href="Glossary_o_projektstammdaten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">project master data</a> with the system-specific data.</p>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">The master data comparison is not case-sensitive with regard to file names. The file name <span class="codetext">ABC.XYZ</span> is identical to <span class="codetext">abc.xyz</span>.</p>
+            </div>
+            <h3>Synchronize individual master data objects</h3>
+            <p class="Bridgehead">Preconditions:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">You have opened the project whose master data is to be synchronized.</li>
+                <li class="Listitem_Normal" value="2">You have <span class="important">no</span> editor open for working on master data (Plot frame editor, Form editor, etc.).</li>
+            </ul>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1"><span class="gui">Utilities &gt; Master data &gt; Synchronize current project</span>
+                </li>
+                <li class="Listitem_Step_By_Step" value="2">In the <span class="gui">Synchronize master data - &lt;project name&gt;</span> dialog click the column heading in the tables in order to sort the data alphanumerically in either ascending or descending order by column. For example, if you click the column <span class="gui">Type</span>, all entries will be sorted and displayed according to the <span class="important">Master data type</span>. </li>
+                <li class="Listitem_Step_By_Step" value="3">In the <span class="gui">Project master data</span> list select the master data <a href="Glossary_o_objekte.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">objects</a> that you would like to transfer to the <a href="Glossary_o_systemstammdaten.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">system master data</a>. (Multiple selection is possible.)</li>
+                <li class="Listitem_Step_By_Step" value="4">Click <img src="../Pictures/Gui/ALL/all_arrowright_as.png" />.</li>
+                <li class="Listitem_Step_By_Step" value="5">In the <span class="gui">System master data</span> list select the master data objects that you would like to transfer to the project master data. (Multiple selection is possible.)</li>
+                <li class="Listitem_Step_By_Step" value="6">Click <img src="../Pictures/Gui/ALL/all_arrowleft_as.png" />.</li>
+                <li class="Listitem_Step_By_Step" value="7">Click <span class="gui">[Close]</span>.</li>
+            </ol>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Note:</p>
+                <p class="Infoblock">In both <a href="Glossary_o_aktionen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">actions</a>, EPLAN informs you in a message window as to how many project / system master data files were updated and, if the project / system master data were identical, in which a message is also generated.</p>
+            </div>
+            <h3>Globally synchronize master data</h3>
+            <p class="Bridgehead">Preconditions:</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">You have opened the project whose master data is to be synchronized.</li>
+                <li class="Listitem_Normal" value="2">You have <span class="important">no</span> editor open for working on master data (Plot frame editor, Form editor, etc.).</li>
+            </ul>
+            <ol>
+                <li class="Listitem_Step_By_Step" value="1"><span class="gui">Utilities &gt; Master data &gt; Synchronize current project</span>
+                </li>
+                <li class="Listitem_Step_By_Step" value="2">In the <span class="gui">Synchronize master data - &lt;project name&gt;</span> dialog select <span class="gui">[Update] &gt; Project</span> in order to globally replace all outdated project master data with newer system master data.</li>
+                <li class="Listitem_Step_By_Step" value="3">Select <span class="gui">[Update] &gt; System</span> to globally replace all outdated system master data with newer project master data.</li>
+                <li class="Listitem_Step_By_Step" value="4">Click <span class="gui">[Close]</span>.</li>
+            </ol>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" />Notes:</p>
+                <ul>
+                    <li class="Listitem_Normal" value="1">In both actions, EPLAN informs you in a message window as to how many project / system master data files were updated and, if the project / system master data were identical, in which a message is also generated.</li>
+                    <li class="Listitem_Normal" value="2">When updating <span class="important">Symbol libraries</span> the files in question are checked for compatibility (e.g., regarding <a href="Glossary_o_anschlussbezeichnungen.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">connection point designations</a>). If they are not compatible, the process will be interrupted with a prompt.</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <script>/* <![CDATA[ */
+				$(document).ready(function () {
+				reset();
+				});
+			/* ]]> */</script>
+        </footer>
+    </body>
+</html>

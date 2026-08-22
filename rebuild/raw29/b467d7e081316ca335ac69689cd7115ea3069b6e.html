@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="EPLAN_Help.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <meta name="robots" content="all" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="" />
+        <meta name="BuildTime" content="9:23:03 AM" />
+        <meta name="BuildDate" content="Thursday, July 29, 2021" />
+        <meta id="helptype" name="type" content="tripane" />
+        <meta id="switchlang" name="scope" content="de_en" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The tag &lt;jobdefinition&gt; is the top-level element. All other tags are contained within this element." /><title>jobdefinition</title>
+        <link rel="shortcut icon" href="../Resources/css/favicon.png" />
+        <!-- Google Tag Manager -->
+        <script>/* <![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PPVHVCG');/* ]]>*/</script>
+        <!-- End Google Tag Manager -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../CSS/epltecdoc.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script src="../js/eplan.init_analytics_msg.js">
+        </script>
+        <script src="../js/prism.js">
+        </script>
+        <script src="../js/reload.js">
+        </script>
+        <script src="../js/eplan.switchlang.js">
+        </script>
+        <script src="../js/jquery.easy-autocomplete.js">
+        </script>
+        <script src="../js/jquery.ddslick.js">
+        </script>
+        <script src="../js/jquery.version.ddslick.js">
+        </script>
+        <script src="../js/eplan.loadhelpsystemstrings.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../EPLAN_Help.htm#htm/refjobserver_r_jobdefinition.htm">Open topic with navigation</a>
+        </p>
+        <header id="header" data-mc-conditions="Primary.OnlineOnly">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPVHVCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        </header>
+        <info>
+            <p class="Small">This functionality is only available for certain module packages.
+</p>
+        </info>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="6" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div class="nscr" id="nscr"><a name="aanchor796"></a>
+            <MadCap:concept term="Referenz" /><a name="kanchor552"></a>
+            <h2>jobdefinition</h2>
+        </div>
+        <div class="mainbody" id="mainbody">
+            <p>The tag <span class="codetext">&lt;jobdefinition&gt;</span> is the top-level element. All other tags are contained within this element.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Usage</th>
+                        <th>Values</th>
+                        <th>Default value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>failedMailRecipients</td>
+                        <td>optional</td>
+                        <td><![CDATA[  ]]><span class="codetext">&lt;mail address&gt;,&lt;mail address&gt;</span></td>
+                        <td />
+                        <td>In the event of an error, e-mails are sent to these addresses. Additional addresses should be separated by commas.</td>
+                    </tr>
+                    <tr>
+                        <td>globalMutex</td>
+                        <td>optional</td>
+                        <td><![CDATA[  ]]><span class="codetext">&lt;mutex name&gt;</span></td>
+                        <td />
+                        <td>Name of a globalMutex. This type of <a href="glossary_o_mutex.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">Mutex</a> prevents the parallel execution of Jobs with a globalMutex of the same name across all Workers.</td>
+                    </tr>
+                    <tr>
+                        <td>model</td>
+                        <td>required</td>
+                        <td><span class="codetext">&lt;path to eox file&gt;</span>
+                        </td>
+                        <td />
+                        <td>
+                            <p><a href="glossary_o_unc.htm" class="MCTopicPopup MCTopicPopupHotSpot MCTopicHotSpot_ MCTopicHotSpot_Popup #text #textPopup">UNC path</a> to <span class="codetext">EOX</span> or <span class="codetext">EECX</span> file of the basic model. A relative path specification is possible if a path is specified for the repository folder in the user specifications or the initialization file. If this specification is missing, the path to the JMX file is used instead.</p>
+                            <p>The path to the model can also be specified with a formula as <span class="codetext">=trigger.filePath</span>. Then a search is carried out for an EON or EECX file in the incomingFolder. A corresponding filter has to be set for this purpose.</p>
+                            <p>If a webTrigger is specified with the formula <span class="codetext">=trigger.params.&lt;model parameter&gt;</span>, the path to the EON or EECX file has to be specified as a parameter in the Web call.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>required</td>
+                        <td><span class="codetext"> &lt;job name&gt;</span>
+                        </td>
+                        <td />
+                        <td>Name of the job. If the name is defined by means of a formula, the name with the extension <span class="codetext">trigger.fileName</span> can be dynamically combined into a name including job file name.</td>
+                    </tr>
+                    <tr>
+                        <td>successMailRecipients</td>
+                        <td>optional</td>
+                        <td><![CDATA[  ]]><span class="codetext"> &lt;mail address&gt;,&lt;mail address&gt;</span></td>
+                        <td />
+                        <td>In the event of success, e-mails are sent to these addresses. Additional addresses should be separated by commas.</td>
+                    </tr>
+                    <tr>
+                        <td>workerMutex</td>
+                        <td>optional</td>
+                        <td><span class="codetext"> &lt;mutex name&gt;</span>
+                        </td>
+                        <td />
+                        <td>Name of a workerMutex. This type of Mutex prevents the parallel execution of Jobs with a workerMutex of the same name on the same Worker.</td>
+                    </tr>
+                    <tr>
+                        <td>xmlns:xi</td>
+                        <td>required if not specified in the &lt;xi:include&gt; tag</td>
+                        <td><span class="codetext"> http://www.w3.org/2001/XInclude</span>
+                        </td>
+                        <td />
+                        <td>Namespace extension to facilitate use of <span class="codetext">xi:include</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Allowed sub-elements</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="refjobserver_r_filetrigger.htm" class="MCXref xref">fileTrigger</a><![CDATA[  ]]></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refjobserver_r_webservicetrigger.htm" class="MCXref xref">webserviceTrigger</a>
+                        </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refjobserver_r_actions.htm" class="MCXref xref">actions</a><![CDATA[  ]]></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="refjobserver_r_custom.htm" class="MCXref xref">custom</a>
+                        </td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note">
+                <p class="Infoblock_Heading">
+                    <img src="../Pictures/Gui/ALL/note.png" alt="" />Note:</p>
+                <p class="Infoblock">In the event of success or failure, e-mails can be sent to predetermined addresses. This is only possible when the <span class="gui">send e-mails in the event of success</span> check box or the <span class="gui">send e-mails in the event of an error</span> check box is selected and values that are valid for the SMTP server have been entered.</p>
+            </div>
+            <p class="Precondition">Job designation:</p>
+            <p><a name="aanchor797"></a>
+                <MadCap:concept term="Job Server" />The job name actually combines the value of the <span class="codetext">Name</span> attribute with the time stamp (Local Time of the Job Server), e.g. "_140805_1544_01000", where the 1000 represents the number of milliseconds that have elapsed since the previous minute. This ensures that each job name is unique.</p>
+            <p>In this case (see the above definition) the list of jobs (e.g. as sub-folders containing job results, definition, UMC logs) would appear as follows:</p>
+            <p>File_Werk1_140805_1544_00012</p>
+            <p>File_Werk1_140805_1546_56435</p>
+            <p>File_Werk2_140805_1546_03455</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Job definition with model in EOX format:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.1"?&gt;
+&lt;jobdefinition name="='test'+ trigger.fileName" model="models\model.eox" xmlns:xi="http://www.w3.org/2001/XInclude"&gt;
+	&lt;fileTrigger&gt;
+		&lt;failedFolder value="failed" /&gt;
+		&lt;incomingFolder value="input" /&gt;
+		&lt;outputFolder value="output" /&gt;
+		&lt;filter value="*.px" /&gt;
+	&lt;/fileTrigger&gt;
+	&lt;custom&gt;
+		&lt;jobStatusHtml value="html/my_status_page.html" /&gt;
+	&lt;/custom&gt;
+	&lt;actions&gt;
+		&lt;action name="T_Mechatronic_ModularSystem.Action.ImportPXAction" arguments="List{trigger.filePath}" /&gt;
+		&lt;action name="Engineering.ExportPXCommand" arguments="List{'TestProj',trigger.additionalResultsDir + 'proj.px',true}" /&gt;
+		&lt;action name="T_Mechatronic_ModularSystem.Action.SendMailOnEndCommand" arguments="List{trigger.outputFolder,trigger.failedFolder,trigger.jobName}" /&gt;
+	&lt;/actions&gt;
+&lt;/jobdefinition&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>Example of a Job definition that specifies the storage location for the basic model via fileTrigger:</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Job definition with dynamic specification of the basic model via fileTrigger:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.1"?&gt;
+&lt;jobdefinition name="='test'+ trigger.fileName" model="=trigger.filePath" xmlns:xi="http://www.w3.org/2001/XInclude"&gt;
+	&lt;fileTrigger&gt;
+		&lt;failedFolder value="failed" /&gt;
+		&lt;incomingFolder value="input" /&gt;
+		&lt;outputFolder value="output" /&gt;
+		&lt;filter value="*.eox" /&gt;
+	&lt;/fileTrigger&gt;
+	&lt;actions&gt;
+		&lt;action name="UtilLib.Do"/&gt;
+	&lt;/actions&gt;
+&lt;/jobdefinition&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Description:</p>
+                        <p>The attribute <span class="codetext">model="=trigger.filePath"</span> in the tag <span class="codetext">&lt;jobdefinition&gt;</span> does not specify a model file directly. Rather, this has to be located in the file that is specified with the tag <span class="codetext">&lt;incomingFolder&gt;</span>. The file type is specified with the tag <span class="codetext">&lt;filter&gt;</span>. In this case a search for an EON file is carried out.</p>
+                    </div>
+                </div>
+            </div>
+            <p>Example of a Job definition that specifies the storage location for the basic model via webserviceTrigger:</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Job definition with dynamic specification of the basic model via webserviceTrigger:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.1"?&gt;
+&lt;jobdefinition name="='test'+ trigger.fileName" model="=trigger.params.model" xmlns:xi="http://www.w3.org/2001/XInclude"&gt;
+	&lt;webserviceTrigger&gt;
+		&lt;failedFolder value="failed" /&gt;
+		&lt;outputFolder value="output" /&gt;
+	&lt;/webserviceTrigger&gt;
+	&lt;actions&gt;
+		&lt;action name="UtilLib.Do"/&gt;
+	&lt;/actions&gt;
+&lt;/jobdefinition&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Description:</p>
+                        <p>The attribute <span class="codetext">model="=trigger.params.model"</span> in the tag <span class="codetext">&lt;jobdefinition&gt;</span> does not specify a model file directly. Rather, this is passed as the parameter <span class="codetext">model</span> via Web call.</p>
+                        <p>Example of a call:</p><pre xml:space="preserve"><code class="language-markup">http://localhost:8787/jobs/request/jobdef_web?model=K:\JobServer\input\feeder.eox</code></pre>
+                    </div>
+                </div>
+            </div>
+            <p>Example of a Job definition with webserviceTrigger in order to name Jobs differently depending on the call:</p>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Job definition with dynamic specification of the Job name via webserviceTrigger:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.1"?&gt;
+&lt;jobdefinition name="='Conveyor_'
++	if((trigger.params.belt).size&gt;0).ifEmptyNullOrError(false)
+					then 'Belt_' + trigger.params.belt + '_'
+					else ''
+					endif
++	if((trigger.params.roller).size&gt;0).ifEmptyNullOrError(false)
+					then 'Roller_' + trigger.params.roller + '_'
+					else ''
+					endif
++	if((trigger.params.chain).size&gt;0).ifEmptyNullOrError(false)
+					then 'Chain_' + trigger.params.chain + '_'
+					else ''
+					endif"
+	continueOnError="false" 
+	model="WebShop.eecx" 
+	xmlns:xi="http://www.w3.org/2001/XInclude"&gt;
+	&lt;webserviceTrigger&gt;
+		&lt;failedFolder value="failed" /&gt;
+		&lt;outputFolder value="output" /&gt;
+	&lt;/webserviceTrigger&gt;
+	&lt;actions&gt;
+		&lt;action name="JobServerActions.WebShopCall"
+		arguments="List{trigger.params, 
+				trigger.jobName, 
+				trigger.outputFolder, 
+				trigger.failedFolder}"/&gt;
+	&lt;/actions&gt;
+&lt;/jobdefinition&gt;</code></pre>
+                        </p>
+                        <p class="Bridgehead">Description:</p>
+                        <p>The Job name is displayed in the Job list depending on the transferred parameter.</p>
+                        <p>To this purpose a query with conditions that compiles the Job name differently from fragments s inserted in the <span class="codetext">&lt;jobdefinition&gt;</span> tag.</p>
+                        <p>Possible variants are:</p>
+                        <ul>
+                            <li value="1"><span class="codetext">Conveyor_Belt_&lt;Job-ID&gt;_POS_&lt;Position&gt;_&lt;Time stamp&gt;</span>
+                            </li>
+                            <li value="2"><span class="codetext">Conveyor_Roller_&lt;Job-ID&gt;_POS_&lt;Position&gt;_&lt;Time stamp&gt;</span>
+                            </li>
+                            <li value="3"><span class="codetext">Conveyor_Chain_&lt;Job-ID&gt;_POS_&lt;Position&gt;_&lt;Time stamp&gt;</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="Bridgehead">Exclude parallel execution of Jobs</p>
+            <p>If the <span class="gui">Maximum number of parallel Jobs</span> is set to a value greater than 1 in the preferences, several Jobs can be executed parallel. However, for specific Jobs, parallel execution cannot be allowed and it must be possible to exclude it.</p>
+            <p>Mutual exclusion is generally abbreviated as <span class="important">Mutex</span>. The parallel execution of Jobs can be excluded in two levels through the attributes <span class="important">workerMutex</span> and <span class="important">globalMutex</span>.</p>
+            <ul>
+                <li class="Listitem_Normal" value="1">The <span class="important">workerMutex</span> ensures that Jobs for the same Job definition are not executed parallel on one Worker. The workerMutex is always to be used when mutual resources of a Worker may not be used parallel, for example P8. This causes these Jobs to be executed sequentially. Jobs for Job definitions without workerMutex or other workerMutex continue to be executed parallel.</li>
+                <li class="Listitem_Normal" value="2">The definition of a <span class="important">globalMutex</span> ensures that a Job for the same Job definition is not executed parallel across <span class="important">all the Workers</span>. The globalMutex is always to be used when mutual resources for all the Workers may not be used parallel, for example at writing database accesses. This causes these Jobs to be executed sequentially. Jobs for Job definitions without globalMutex or other globalMutex continue to be executed parallel.</li>
+            </ul>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Job definition with workerMutex:</a> </p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.1"?&gt;
+&lt;jobdefinition name="Generate_P8" workerMutex="P8" model="model.eox" xmlns:xi="http://www.w3.org/2001/XInclude"&gt;
+	&lt;webserviceTrigger&gt;
+		&lt;outputFolder value="\output" /&gt;
+	&lt;/webserviceTrigger&gt;
+	&lt;actions&gt;
+		...
+	&lt;/actions&gt;
+&lt;/jobdefinition&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><p class="Infoblock_Heading"><img src="../Pictures/Gui/ALL/example.png" alt="" /><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Job definition with globalMutex:</a><![CDATA[  ]]></p></span>
+                    <div class="MCDropDownBody dropDownBody">
+                        <p class="Infoblock"><pre xml:space="preserve"><code class="language-markup">&lt;?xml version="1.1"?&gt;
+&lt;jobdefinition name="WriteToDb" globalMutex="DB" model="models\model.eox" xmlns:xi="http://www.w3.org/2001/XInclude"&gt;
+	&lt;fileTrigger&gt;
+		&lt;failedFolder value="failed" /&gt;
+		&lt;incomingFolder value="input" /&gt;
+		&lt;outputFolder value="output" /&gt;
+		&lt;filter value="*.px" /&gt;
+	&lt;/fileTrigger&gt;
+	&lt;actions&gt;
+		...
+	&lt;/actions&gt;
+&lt;/jobdefinition&gt;</code></pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="Seealso">See also:</p>
+            <p><a href="https://de.wikipedia.org/wiki/Mutex">https://en.wikipedia.org/wiki/Mutual_exclusion</a>
+            </p>
+        </div>
+        <footer>
+            <div id="analytics_msg" data-mc-conditions="Primary.OnlineOnly">
+                <p id="msg">We would like to learn from you. In order to improve the help system continuously, we are documenting your behavior with Google Analytics (<a href="helpsystem_hinweise_optout.htm">Additional Information &amp; Opt-out</a>).</p>
+                <p id="msg">
+                    <button type="button" class="standard" onclick="ausblenden(),localStorage.setItem('faded_out','yes')" id="fade_out">Hide message</button>
+                </p>
+            </div>
+            <script type="text/javascript">/* <![CDATA[ */
+				init();
+			/* ]]> */</script>
+            <!--
+			<script>
+				$(document).ready(function () {
+				reset();
+				});
+			</script>
+			-->
+        </footer>
+    </body>
+</html>

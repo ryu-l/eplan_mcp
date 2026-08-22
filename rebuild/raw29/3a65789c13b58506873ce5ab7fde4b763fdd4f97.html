@@ -1,0 +1,256 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>PdfPages(String,String,String[],String,DegreeOfColor,Boolean,String,Boolean) Method</title>
+    <meta name="Title" content=""/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n43081","initialNodeContainer":"c548","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export~PdfPages(String,String,String[],String,DegreeOfColor,Boolean,String,Boolean)"/>
+    <meta name="Description" content="Exports pages of one project as PDF file." />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export~PdfPages"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.HEServices.Export.PdfPages(System.String,System.String,System.String[],System.String,Eplan.EplApi.HEServices.Export.DegreeOfColor,System.Boolean,System.String,System.Boolean)"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices_namespace.html">Eplan.EplApi.HEServices Namespace</a>
+ / <a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export.html">Export Class</a>
+ / <a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export~PdfPages.html">PdfPages Method</a>
+ / PdfPages(String,String,String[],String,DegreeOfColor,Boolean,String,Boolean) Method</div></div>
+
+    
+    
+<div id="strFullLinkFileNamePopupContent" class="i-popup-content">
+Name of project with full path, from which a pages will be exported.
+</div>
+<div id="strSchemaPopupContent" class="i-popup-content">
+The name of the settings schema. If no name is given, last used will be used. The Schemas are located in "USER.PDFExportGUI.SCHEMAS".
+</div>
+<div id="arrayPageNamesPopupContent" class="i-popup-content">
+Array of page names, which will be export. ArrayList should contain only Pages of one project.
+</div>
+<div id="strPdfExportFileNamePopupContent" class="i-popup-content">
+Name of the PDF \file to be generated. If left blank, the output file name will be determined by the settings in the schema. If a path name is given, it will override the directory setting in the schema. If the directory does not exist, it will be created. If the user does not have the necessary rights to access the file system, an exception will be thrown. If you set a \file name without the extension ".pfd", the extension will be added.
+</div>
+<div id="colorPopupContent" class="i-popup-content">
+Determines the color setting of the PDF file. "BlackAndWhite" will make all elements including bitmaps black on a white background. "GreyLevel" will use shades of grey for every item. Color will use the full colors.
+</div>
+<div id="bExportModelPopupContent" class="i-popup-content">
+3D models will be exported as well as the pages. This requires a separate license for 3D.
+</div>
+<div id="strLanguagePopupContent" class="i-popup-content">
+Language of exported pages
+</div>
+<div id="bUsePrintMarginsPopupContent" class="i-popup-content">
+Use print margins. Parameter overrides setting in scheme.
+</div>
+
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">PdfPages(String,String,String[],String,DegreeOfColor,Boolean,String,Boolean) Method</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">Exports pages of one project as PDF file.</div>
+            
+            
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre><span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">void</span> PdfPages( 
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">string</a> <i><a class="i-popup-link" id="strFullLinkFileNamePopupLink" data-popup-contentsource="#strFullLinkFileNamePopupContent" data-popup-showevent="click mouseenter">strFullLinkFileName</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">string</a> <i><a class="i-popup-link" id="strSchemaPopupLink" data-popup-contentsource="#strSchemaPopupContent" data-popup-showevent="click mouseenter">strSchema</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">string</a>[] <i><a class="i-popup-link" id="arrayPageNamesPopupLink" data-popup-contentsource="#arrayPageNamesPopupContent" data-popup-showevent="click mouseenter">arrayPageNames</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">string</a> <i><a class="i-popup-link" id="strPdfExportFileNamePopupLink" data-popup-contentsource="#strPdfExportFileNamePopupContent" data-popup-showevent="click mouseenter">strPdfExportFileName</a></i>,
+   <a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export+DegreeOfColor.html">Export.DegreeOfColor</a> <i><a class="i-popup-link" id="colorPopupLink" data-popup-contentsource="#colorPopupContent" data-popup-showevent="click mouseenter">color</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bExportModelPopupLink" data-popup-contentsource="#bExportModelPopupContent" data-popup-showevent="click mouseenter">bExportModel</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">string</a> <i><a class="i-popup-link" id="strLanguagePopupLink" data-popup-contentsource="#strLanguagePopupContent" data-popup-showevent="click mouseenter">strLanguage</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bUsePrintMarginsPopupLink" data-popup-contentsource="#bUsePrintMarginsPopupContent" data-popup-showevent="click mouseenter">bUsePrintMargins</a></i>
+)</pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre><span style="color: #0000FF; ">public</span>:
+<span style="color: #0000FF; ">void</span> PdfPages( 
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">String^</a> <i><a class="i-popup-link" id="strFullLinkFileNamePopupLink" data-popup-contentsource="#strFullLinkFileNamePopupContent" data-popup-showevent="click mouseenter">strFullLinkFileName</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">String^</a> <i><a class="i-popup-link" id="strSchemaPopupLink" data-popup-contentsource="#strSchemaPopupContent" data-popup-showevent="click mouseenter">strSchema</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">array&lt;String^&gt;^</a> <i><a class="i-popup-link" id="arrayPageNamesPopupLink" data-popup-contentsource="#arrayPageNamesPopupContent" data-popup-showevent="click mouseenter">arrayPageNames</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">String^</a> <i><a class="i-popup-link" id="strPdfExportFileNamePopupLink" data-popup-contentsource="#strPdfExportFileNamePopupContent" data-popup-showevent="click mouseenter">strPdfExportFileName</a></i>,
+   <a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export+DegreeOfColor.html">Export.DegreeOfColor</a> <i><a class="i-popup-link" id="colorPopupLink" data-popup-contentsource="#colorPopupContent" data-popup-showevent="click mouseenter">color</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bExportModelPopupLink" data-popup-contentsource="#bExportModelPopupContent" data-popup-showevent="click mouseenter">bExportModel</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemStringClassTopic','System.String')">String^</a> <i><a class="i-popup-link" id="strLanguagePopupLink" data-popup-contentsource="#strLanguagePopupContent" data-popup-showevent="click mouseenter">strLanguage</a></i>,
+   <a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemBooleanClassTopic','System.Boolean')">bool</a> <i><a class="i-popup-link" id="bUsePrintMarginsPopupLink" data-popup-contentsource="#bUsePrintMarginsPopupContent" data-popup-showevent="click mouseenter">bUsePrintMargins</a></i>
+) </pre></pre>
+            </div>
+        
+
+            </div>
+        
+            <h4 class=dxh4>Parameters</h4><dl><dt><I>strFullLinkFileName</I></dt>
+<dd>Name of project with full path, from which a pages will be exported.</dd><dt><I>strSchema</I></dt>
+<dd>The name of the settings schema. If no name is given, last used will be used. The Schemas are located in "USER.PDFExportGUI.SCHEMAS".</dd><dt><I>arrayPageNames</I></dt>
+<dd>Array of page names, which will be export. ArrayList should contain only Pages of one project.</dd><dt><I>strPdfExportFileName</I></dt>
+<dd>Name of the PDF \file to be generated. If left blank, the output file name will be determined by the settings in the schema. If a path name is given, it will override the directory setting in the schema. If the directory does not exist, it will be created. If the user does not have the necessary rights to access the file system, an exception will be thrown. If you set a \file name without the extension ".pfd", the extension will be added.</dd><dt><I>color</I></dt>
+<dd>Determines the color setting of the PDF file. "BlackAndWhite" will make all elements including bitmaps black on a white background. "GreyLevel" will use shades of grey for every item. Color will use the full colors.</dd><dt><I>bExportModel</I></dt>
+<dd>3D models will be exported as well as the pages. This requires a separate license for 3D.</dd><dt><I>strLanguage</I></dt>
+<dd>Language of exported pages</dd><dt><I>bUsePrintMargins</I></dt>
+<dd>Use print margins. Parameter overrides setting in scheme.</dd></dl>
+            
+            </div>
+            <div class="i-section-heading" id="i-exceptions-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Exceptions</span></div><div id="i-exceptions-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>Exception</th><th>Description</th></tr>
+<tr><td class=i-link><strong>ArgumentException</strong></td><td class="i-description">Thrown in case of invalid arguments.</td></tr>
+<tr><td class=i-link><strong>ArgumentNullException</strong></td><td class="i-description">Thrown if null was passed to a parameter</td></tr>
+<tr><td class=i-link><strong>ArgumentOutOfRangeException</strong></td><td class="i-description">Thrown if an invalid value was passed to a parameter, e.g.
+                                              dZoomLevel is out of range.</td></tr>
+<tr><td class=i-link><strong>UnauthorizedAccessException</strong></td><td class="i-description">No user rights to create files on the
+                                              \file system.</td></tr>
+<tr><td class=i-link><strong>ApplicationException</strong></td><td class="i-description">The internal interface for image export
+                                       could not be created. </td></tr>
+<tr><td class=i-link><strong>BaseException</strong></td><td class="i-description">Errors occurred during export or when project has no pages to export. See the
+                                exception message for details.</td></tr>
+<tr><td class=i-link><strong>InvalidScheme</strong></td><td class="i-description">Thrown if an invalid schema is given</td></tr>
+<tr><td class=i-link><strong>InvalidOperationException</strong></td><td class="i-description">Thrown when <code originaltag="c">strLanguage</code> is not available in project translation.</td></tr>
+</table></div>
+            
+            
+            
+            <a name="exampleBookmark"></a>
+            
+            
+            
+            
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export.html">Export Class</a>
+<br/><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export_members.html">Export Members</a>
+<br/><a href="Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export~PdfPages.html">Overload List</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.HEServicesu~Eplan.EplApi.HEServices.Export~PdfPages(String,String,String[],String,DegreeOfColor,Boolean,String,Boolean)">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

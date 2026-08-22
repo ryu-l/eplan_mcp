@@ -1,0 +1,46 @@
+# FUNC_SYMBOL Property
+
+FUNC\_SYMBOL Property
+
+Symbol # 20575.
+
+Syntax
+
+- [C#](#i-syntax-CS)
+- [C++/CLI](#i-syntax-CPP2005)
+
+```
+```
+public PropertyValue FUNC_SYMBOL {get; set;}
+```
+```
+
+```
+```
+public:
+property PropertyValue^ FUNC_SYMBOL {
+   PropertyValue^ get();
+   void set (    PropertyValue^ value);
+}
+```
+```
+
+#### Property Value
+
+Returns property value of type System.String.
+
+See Also
+
+#### Reference
+
+[PotentialDefinitionPropertyList Class](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList.html)
+  
+[PotentialDefinitionPropertyList Members](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList_members.html)
+  
+[Overload List](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_SYMBOL.html)
+
+---
+
+EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.
+
+[Send Feedback](mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_SYMBOL())

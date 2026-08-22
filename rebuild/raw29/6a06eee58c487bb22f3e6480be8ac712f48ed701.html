@@ -1,0 +1,322 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    
+    <title>PotentialDefinitionPropertyList Class</title>
+    <meta name="Title" content="PotentialDefinitionPropertyList Class"/>
+    
+    <script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script>
+    <script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link>
+    <script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{isHideBodyDuringLoadDisabled:true,dynamictoc:{isEnabled:true},inthistopic:{isSupported:true},dynamicstyles:{isDynamicWordWrapEnabled:true}}},{settings:{"dynamictoc":{"initialNodeId":"n21944","initialNodeContainer":"c72","isResizable":true},"inthistopic":{"isEnabled":true},"currentLocale":"-","isFrameless":true,"navigationKind":"inpage","versions":{"locale":{"currentId":"-"}}}});</script>
+    <link rel="stylesheet" type="text/css" href="template/packages/light/css/dynamic-toc.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/default/jquery-plugins.css"></link>
+    <link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link>
+    <script src="template/packages/plugins-dotnet/script/default/jquery-plugins.min.js" type="text/javascript"></script>
+    <script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script>
+    
+    <meta name="Microsoft.Help.Id" content="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList"/>
+    <meta name="Description" content="This class represents collection of properties of PotentialDefinition class. Please check also base classes for other properties which are available for PotentialDefinition objects: SymbolReferencePropertyList, PlacementPropertyList, StorableObjectPr" />
+    <meta name="Microsoft.Help.TocParent" content="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel_namespace"/>
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.F1" content="Eplan.EplApi.DataModel.PotentialDefinitionPropertyList"/>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link>
+    <style>#i-header-container { background-color: #A1A1A1 }
+#i-header-container { color: #000000 }
+.i-is-new .i-page-title-text::after, ul#i-dt-root li.i-is-new>a::after { content: "New" }
+</style>
+    
+    
+    
+    
+  <meta name="description" content="Eplan Api Help">
+  <meta name="keywords" content="api, eplan, eplan api, user guide, datamodel, electrotechnical services, actions, events, development, framework" >
+  <meta name="author" content="Eplan Interfaces Team">
+
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+
+    <div id="i-header-container">
+        <div id="i-header-content" class="i-header-content i-content-width-container">
+            <a href="index.html"><img class="logoimage" src="images/EPLAN_Logo_black.png" border="0"></img></a>
+            <div class="i-project-title">API Help</div>
+            <div class="i-search-container">
+                <form action="websearch.html">
+                <input id="i-search" name="query"/>
+                <input type="submit" id="i-search-button" value=""/>
+                </form>
+            </div>
+            <a id="i-index-button" href="webindex.html"></a>
+        </div>
+    </div>
+    
+    <div class="i-content-width-container"><div class="i-busy-overlay"></div></div>
+
+    <div id="i-breadcrumbs-outer-container" class="i-content-width-container"><div class="i-breadcrumbs-container">
+<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel_namespace.html">Eplan.EplApi.DataModel Namespace</a>
+ / PotentialDefinitionPropertyList Class</div></div>
+
+    
+
+    <div id="i-actions-outer-container" class="i-content-width-container">
+        <div id="i-actions-container">
+            <div id="i-actions-content" class="i-fixed-to-top">
+                <a class="i-page-link" href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList_members.html">Members</a>
+                    <a class="i-page-link" href="#ExampleBookmark">Example</a><!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all">Collapse All</label>
+                <label class="i-expand-all" style="display: none;">Expand All</label>
+            </span><!-- Spacing --> <span class="i-language-filter i-popup-link" data-popup-contentsource="#i-language-options" data-popup-title='Language Filter'>
+                <label class="i-language-filter-all">
+                    Language Filter: All
+                </label>
+                <label class="i-language-filter-multiple" style="display: none;">
+                    Language Filter: Multiple
+                </label>
+                <label class="i-language-filter-vball" style="display: none;">
+                    Language Filter: Visual Basic
+                </label>				
+                
+<label class="i-CS-label" style="display: none;">Language Filter: C#</label>
+<label class="i-CPP2005-label" style="display: none;">Language Filter: C++/CLI</label>
+
+            </span>
+            <div class="i-popup-content" id="i-language-options">
+                
+<input data-languagename="CS" id="i-CS-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CS"/>
+<label class="i-language-filter" for="i-CS-language-checkbox">
+C#
+</label>
+<br /><input data-languagename="CPP2005" id="i-CPP2005-language-checkbox" type="checkbox" class="i-toggle-language-checkbox" checked="true" data-toggleclass="i-filtered-content-CPP2005"/>
+<label class="i-language-filter" for="i-CPP2005-language-checkbox">
+C++/CLI
+</label>
+
+            </div>
+                <div class="i-in-this-topic-container">
+                    <span class="i-action-group-heading">In This Topic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-toc-outer-container" class="i-content-width-container">
+        <div id="i-toc-container">
+            <div id="i-toc-content" class="i-fixed-to-top">
+                <div class="i-toc-content-scroll-container">
+                    <div id="i-dynamic-toc-container"><ul id="i-dt-root"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="i-body-content-container" class="i-content-width-container">
+        <div id="i-body-content" class="i-body-content">
+            <div class="i-page-title"><div class="i-page-title-text">PotentialDefinitionPropertyList Class</div></div>
+            <div class="i-in-this-topic-container">
+                <span class="i-action-group-heading">In This Topic</span>
+            </div>
+            <div class="i-description-content">This class represents collection of properties of <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition.html">PotentialDefinition</a> class. Please check also base classes for other properties which are available for <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition.html">PotentialDefinition</a> objects: <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">SymbolReferencePropertyList</a>, <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList.html">PlacementPropertyList</a>, <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObjectPropertyList.html">StorableObjectPropertyList</a></div>
+            
+            <div class="i-section-heading" id="i-inheritance-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Inheritance Hierarchy</span></div><div id="i-inheritance-section-content" class="i-section-content"><P><a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemObjectClassTopic','System.Object')">System.Object</a><BR />&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList.html">Eplan.EplApi.DataModel.UniversalPropertyList</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObjectPropertyList.html">Eplan.EplApi.DataModel.StorableObjectPropertyList</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList.html">Eplan.EplApi.DataModel.PlacementPropertyList</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">Eplan.EplApi.DataModel.SymbolReferencePropertyList</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<STRONG>Eplan.EplApi.DataModel.PotentialDefinitionPropertyList</STRONG><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.NetDefinitionPointPropertyList.html">Eplan.EplApi.DataModel.NetDefinitionPointPropertyList</a><BR />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PipingDefinitionPropertyList.html">Eplan.EplApi.DataModel.PipingDefinitionPropertyList</a><BR /></P></div>			
+            <div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content">
+            <div class="i-tab-container i-tab-container">
+            <ul>
+            
+            <li class="i-filtered-content-CS"><a href="#i-syntax-CS">C#</a></li>
+        
+
+            <li class="i-filtered-content-CPP2005"><a href="#i-syntax-CPP2005">C++/CLI</a></li>
+        
+
+            </ul>
+            
+            <div id="i-syntax-CS" class="i-code i-filtered-content-CS">
+            <pre><pre>[<a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemReflectionDefaultMemberAttributeClassTopic','System.Reflection.DefaultMemberAttribute')">DefaultMember</a>(<span style="color: #800000; ">&quot;Property&quot;</span>)]
+<span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">class</span> PotentialDefinitionPropertyList : <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">SymbolReferencePropertyList</a> </pre></pre>
+            </div>
+        
+
+            <div id="i-syntax-CPP2005" class="i-code i-filtered-content-CPP2005">
+            <pre><pre>[<a href="#" onclick="javascript:navigateToHelp2Keyword('frlrfSystemReflectionDefaultMemberAttributeClassTopic','System.Reflection.DefaultMemberAttribute')">DefaultMember</a>(<span style="color: #800000; ">&quot;Property&quot;</span>)]
+<span style="color: #0000FF; ">public</span> <span style="color: #0000FF; ">ref</span> <span style="color: #0000FF; ">class</span> PotentialDefinitionPropertyList : <span style="color: #0000FF; ">public</span> <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">SymbolReferencePropertyList</a> </pre></pre>
+            </div>
+        
+
+            </div>
+        </div>
+            
+            
+            
+            <div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content">It uses operator[] in order to access its elements (stored properties).
+
+<p>Property list is a container for property values and just like them can be <code originaltag="c">online</code> or <code originaltag="c">offline</code>. If property list is <code originaltag="c">online</code> it means that is associated with properties of some StorableObject or other property list. In this case if any property is added, changed or removed from property list the result is also visible in related objects. Whether property list is online or offline is being determine in time of it's creation and can not be changed.</p></div>
+            <a name="exampleBookmark"></a>
+            <div class="i-section-heading" id="i-example-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Example</span></div><div id="i-example-section-content" class="i-section-content">Example shows usage of online an offline property list:
+             
+<div class="i-tab-container">
+    <ul>
+        <li class="i-filtered-content-cs">
+			<a href="#i-tab-content-efe4d9ac-5c9f-4021-b061-bd809d203ee9">C#</a>
+		</li>
+
+    </ul>
+	<div id="i-tab-content-efe4d9ac-5c9f-4021-b061-bd809d203ee9" class="i-code i-filtered-content-cs">
+		<pre><span style="color: #008000; ">//creation of online property list
+</span>FunctionPropertyList oPropertyListOnline1 = oFunction.Properties;
+oPropertyListOnline1.FUNC_COMMENT = <span style="color: #800000; ">&quot;Comment&quot;</span>;
+<span style="color: #008000; ">//now oFunction.Properties.FUNC_COMMENT is equal &quot;Comment&quot;
+</span>
+FunctionPropertyList oPropertyLineOnline2 = <span style="color: #0000FF; ">new</span> FunctionPropertyList(oFunction);
+oPropertyLineOnline2.FUNC_COMMENT = <span style="color: #800000; ">&quot;Test&quot;</span>;
+<span style="color: #008000; ">//now oFunction.Properties.FUNC_COMMENT is equal &quot;Test&quot;
+</span>
+<span style="color: #008000; ">//creation of offline property list
+</span>FunctionPropertyList oPropertyLineOffline = <span style="color: #0000FF; ">new</span> FunctionPropertyList();
+oPropertyLineOffline.FUNC_COMMENT = <span style="color: #800000; ">&quot;Test comment&quot;</span>;
+oFunction.Properties.FUNC_COMMENT = oPropertyLineOffline.FUNC_COMMENT;
+oPropertyLineOffline.FUNC_COMMENT = <span style="color: #800000; ">&quot;Offline comment&quot;</span>;
+<span style="color: #008000; ">//now oPropertyLineOffline.FUNC_COMMENT is equal &quot;Test comment&quot;
+</span>
+</pre>
+	</div>
+	
+</div>
+</div>
+            
+            
+            <a name="ConstructorsBookmark"></a>
+            <div class="i-section-heading" id="i-publicConstructors-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Constructors</span></div><div id="i-publicConstructors-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Constructor" src="template/packages/core-dotnet/images/publicConstructor.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~_ctor.html">PotentialDefinitionPropertyList Constructor</A></td><td class="i-member-description">Overloaded.&nbsp; &nbsp;</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="FieldsBookmark"></a>
+            
+            
+            
+            <a name="PropertiesBookmark"></a>
+            <div class="i-section-heading" id="i-publicProperties-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Properties</span></div><div id="i-publicProperties-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_ACL_COLOR.html">CONNECTION_ACL_COLOR</A></td><td class="i-member-description">Overloaded.&nbsp;Autoconnecting line: Color # 31005. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_ACL_FACTOR.html">CONNECTION_ACL_FACTOR</A></td><td class="i-member-description">Overloaded.&nbsp;Autoconnecting line: Pattern length # 31018. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_ACL_LAYER.html">CONNECTION_ACL_LAYER</A></td><td class="i-member-description">Overloaded.&nbsp;Autoconnecting line: Layer # 31017. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_ACL_STYLE.html">CONNECTION_ACL_STYLE</A></td><td class="i-member-description">Overloaded.&nbsp;Autoconnecting line: Line type # 31015. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_ACL_WIDTH.html">CONNECTION_ACL_WIDTH</A></td><td class="i-member-description">Overloaded.&nbsp;Autoconnecting line: Line thickness # 31016. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="topic956.html">CONNECTION_ALTERNATE_WIRECROSSSECTION</A></td><td class="i-member-description">Overloaded.&nbsp;Alternative connection cross-section / diameter # 31025. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="topic959.html">CONNECTION_ALTERNATE_WIRECROSSSECTION_UNIT</A></td><td class="i-member-description">Overloaded.&nbsp;Unit for alternative connection cross-section / diameter # 31065. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_DESCRIPTION.html">CONNECTION_DESCRIPTION</A></td><td class="i-member-description">Overloaded.&nbsp;Connection description # 31009. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_DESIGNATION.html">CONNECTION_DESIGNATION</A></td><td class="i-member-description">Overloaded.&nbsp;Connection designation # 31011. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_GROUPING.html">CONNECTION_GROUPING</A></td><td class="i-member-description">Overloaded.&nbsp;Grouping # 31069. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_MLWIRENUMBER.html">CONNECTION_MLWIRENUMBER</A></td><td class="i-member-description">Overloaded.&nbsp;Connection: Color (multilingual) # 31061. This property isn't indexed, and is read-only. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="topic962.html">CONNECTION_SLEEVECROSSSECTION_DESTINATION</A></td><td class="i-member-description">Overloaded.&nbsp;Target: Sleeve cross-section # 31054. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="topic965.html">CONNECTION_SLEEVECROSSSECTION_SOURCE</A></td><td class="i-member-description">Overloaded.&nbsp;Source: Sleeve cross-section # 31053. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="topic968.html">CONNECTION_STRIPPINGLENGTH_DESIGNATION</A></td><td class="i-member-description">Overloaded.&nbsp;Target: Stripping length # 31056. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_STRIPPINGLENGTH_SOURCE.html">CONNECTION_STRIPPINGLENGTH_SOURCE</A></td><td class="i-member-description">Overloaded.&nbsp;Source: Stripping length # 31055. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="topic972.html">CONNECTION_TYPEOFENDSTOP_DESTINATION</A></td><td class="i-member-description">Overloaded.&nbsp;Wire termination processing target # 31052. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_TYPEOFENDSTOP_SOURCE.html">CONNECTION_TYPEOFENDSTOP_SOURCE</A></td><td class="i-member-description">Overloaded.&nbsp;Wire termination processing source # 31051. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_WIRECROSSSECTION.html">CONNECTION_WIRECROSSSECTION</A></td><td class="i-member-description">Overloaded.&nbsp;Connection: Cross-section / diameter # 31002. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_WIRECROSSSECTION_UNIT.html">CONNECTION_WIRECROSSSECTION_UNIT</A></td><td class="i-member-description">Overloaded.&nbsp;Unit for connection cross-section / diameter # 31059. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="topic977.html">CONNECTION_WIRECROSSSECTION_WITH_UNIT</A></td><td class="i-member-description">Overloaded.&nbsp;Connection: Cross-section / diameter with unit # 31007. This property isn't indexed, and is read-only. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_WIRELENGTH.html">CONNECTION_WIRELENGTH</A></td><td class="i-member-description">Overloaded.&nbsp;Connection: Length with unit # 31003. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_WIRELENGTH_FULL.html">CONNECTION_WIRELENGTH_FULL</A></td><td class="i-member-description">Overloaded.&nbsp;Connection: Length (full) # 31090. This property isn't indexed, and is read-only. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_WIRELENGTH_UNIT.html">CONNECTION_WIRELENGTH_UNIT</A></td><td class="i-member-description">Overloaded.&nbsp;Connection: Unit of length # 31001. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_WIRELENGTH_VALUE.html">CONNECTION_WIRELENGTH_VALUE</A></td><td class="i-member-description">Overloaded.&nbsp;Connection: Length # 31000. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_WIRENUMBER.html">CONNECTION_WIRENUMBER</A></td><td class="i-member-description">Overloaded.&nbsp;Connection color / number # 31004. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~CONNECTION_WIRETYPE.html">CONNECTION_WIRETYPE</A></td><td class="i-member-description">Overloaded.&nbsp;Connection: Type designation # 31048. This property isn't indexed. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList~ExistingIds.html">ExistingIds</A></td><td class="i-member-description">Returns array of property ids. Returns array of AnyPropertyId objects. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList.html">Eplan.EplApi.DataModel.UniversalPropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList~ExistingValues.html">ExistingValues</A></td><td class="i-member-description">Returns array of PropertyValue objects. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList.html">Eplan.EplApi.DataModel.UniversalPropertyList</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_BLOCK_FORMAT.html">FUNC_BLOCK_FORMAT</A></td><td class="i-member-description">Overloaded.&nbsp;Block property: Format # 20202. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_BLOCK_VALUE.html">FUNC_BLOCK_VALUE</A></td><td class="i-member-description">Overloaded.&nbsp;Block property # 20201. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_COMMENT.html">FUNC_COMMENT</A></td><td class="i-member-description">Overloaded.&nbsp;Remark # 20045. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_GRAVINGTEXT.html">FUNC_GRAVINGTEXT</A></td><td class="i-member-description">Overloaded.&nbsp;Engraving text # 20025. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_SUPPLEMENTARYFIELD.html">FUNC_SUPPLEMENTARYFIELD</A></td><td class="i-member-description">Overloaded.&nbsp;Supplementary field # 20901. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_SYMB_DESC.html">FUNC_SYMB_DESC</A></td><td class="i-member-description">Overloaded.&nbsp;Symbol description (function) # 20114. This property isn't indexed, and is read-only. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_SYMB_NAME.html">FUNC_SYMB_NAME</A></td><td class="i-member-description">Overloaded.&nbsp;Symbol name # 20112. This property isn't indexed, and is read-only. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_SYMB_NUMBER.html">FUNC_SYMB_NUMBER</A></td><td class="i-member-description">Overloaded.&nbsp;Symbol number # 20168. This property isn't indexed, and is read-only. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_SYMB_VARIANT.html">FUNC_SYMB_VARIANT</A></td><td class="i-member-description">Overloaded.&nbsp;Symbol variant # 20113. This property isn't indexed, and is read-only. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_SYMBLIB_NAME.html">FUNC_SYMBLIB_NAME</A></td><td class="i-member-description">Overloaded.&nbsp;Symbol library # 20111. This property isn't indexed, and is read-only. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNC_SYMBOL.html">FUNC_SYMBOL</A></td><td class="i-member-description">Overloaded.&nbsp;Symbol # 20575. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNCTION_NETBASEDWIRING_ID.html">FUNCTION_NETBASEDWIRING_ID</A></td><td class="i-member-description">Overloaded.&nbsp;ID for net-based connections # 20218. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~FUNCTION_NETBASEDWIRING_IDS.html">FUNCTION_NETBASEDWIRING_IDS</A></td><td class="i-member-description">Overloaded.&nbsp;IDs for net-based connections # 20219. This property isn't indexed. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList~INSTANCE_ACTIVE_PROPERTYSET.html">INSTANCE_ACTIVE_PROPERTYSET</A></td><td class="i-member-description">Overloaded.&nbsp;Property arrangement # 19307. This property isn't indexed. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">Eplan.EplApi.DataModel.SymbolReferencePropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList~INSTANCE_FULLPLACEMENTLOCATION.html">INSTANCE_FULLPLACEMENTLOCATION</A></td><td class="i-member-description">Overloaded.&nbsp;Placement # 19007. This property isn't indexed, and is read-only. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">Eplan.EplApi.DataModel.SymbolReferencePropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList~INSTANCE_PAGEFULLNAME.html">INSTANCE_PAGEFULLNAME</A></td><td class="i-member-description">Overloaded.&nbsp;Page name (full) # 19023. This property isn't indexed, and is read-only. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">Eplan.EplApi.DataModel.SymbolReferencePropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList~INSTANCE_PAGENAME.html">INSTANCE_PAGENAME</A></td><td class="i-member-description">Overloaded.&nbsp;Page name # 19022. This property isn't indexed, and is read-only. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">Eplan.EplApi.DataModel.SymbolReferencePropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList~INSTANCE_PAGETYPE.html">INSTANCE_PAGETYPE</A></td><td class="i-member-description">Overloaded.&nbsp;Page type # 19020. This property isn't indexed, and is read-only. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">Eplan.EplApi.DataModel.SymbolReferencePropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList~INSTANCE_PATHID.html">INSTANCE_PATHID</A></td><td class="i-member-description">Overloaded.&nbsp;Column number # 19005. This property isn't indexed, and is read-only. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">Eplan.EplApi.DataModel.SymbolReferencePropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList~INSTANCE_POSID.html">INSTANCE_POSID</A></td><td class="i-member-description">Overloaded.&nbsp;Row number # 19006. This property isn't indexed, and is read-only. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">Eplan.EplApi.DataModel.SymbolReferencePropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList~INSTANCE_REVISION_LOG_DATE.html">INSTANCE_REVISION_LOG_DATE</A></td><td class="i-member-description">Overloaded.&nbsp;Modification date (change tracking) # 19032. This property isn't indexed. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList.html">Eplan.EplApi.DataModel.PlacementPropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList~INSTANCE_REVISION_LOG_MARKER.html">INSTANCE_REVISION_LOG_MARKER</A></td><td class="i-member-description">Overloaded.&nbsp;Revision marker (change tracking) # 19030. This property isn't indexed. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList.html">Eplan.EplApi.DataModel.PlacementPropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList~INSTANCE_REVISION_LOG_MARKER_FORMAT.html">INSTANCE_REVISION_LOG_MARKER_FORMAT</A></td><td class="i-member-description">Overloaded.&nbsp;Revision marker format (change tracking) # 19031. This property isn't indexed. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList.html">Eplan.EplApi.DataModel.PlacementPropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList~INSTANCE_REVISION_LOG_TIME.html">INSTANCE_REVISION_LOG_TIME</A></td><td class="i-member-description">Overloaded.&nbsp;Modification time (change tracking) # 19034. This property isn't indexed, and is read-only. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList.html">Eplan.EplApi.DataModel.PlacementPropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList~INSTANCE_REVISION_LOG_USER.html">INSTANCE_REVISION_LOG_USER</A></td><td class="i-member-description">Overloaded.&nbsp;Creator (change tracking) # 19033. This property isn't indexed. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList.html">Eplan.EplApi.DataModel.PlacementPropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList~INSTANCE_REVISIONID.html">INSTANCE_REVISIONID</A></td><td class="i-member-description">Overloaded.&nbsp;Revision change marker (from property comparison) # 10153. This property isn't indexed. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList.html">Eplan.EplApi.DataModel.PlacementPropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList~INSTANCE_REVISIONMARKER.html">INSTANCE_REVISIONMARKER</A></td><td class="i-member-description">Overloaded.&nbsp;Revision marker (from property comparison) # 10152. This property isn't indexed. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList.html">Eplan.EplApi.DataModel.PlacementPropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList~INSTANCE_TYPE.html">INSTANCE_TYPE</A></td><td class="i-member-description">Overloaded.&nbsp;Representation type / report type # 19021. This property isn't indexed, and is read-only. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">Eplan.EplApi.DataModel.SymbolReferencePropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList~INSTANCE_USER_DEFINED_PROPERTYSET.html">INSTANCE_USER_DEFINED_PROPERTYSET</A></td><td class="i-member-description">Overloaded.&nbsp;User-defined property arrangement: Name # 19008. This property isn't indexed. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">Eplan.EplApi.DataModel.SymbolReferencePropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList~INSTANCE_XCOORD.html">INSTANCE_XCOORD</A></td><td class="i-member-description">Overloaded.&nbsp;X coordinate # 19002. This property isn't indexed, and is read-only. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">Eplan.EplApi.DataModel.SymbolReferencePropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList~INSTANCE_YCOORD.html">INSTANCE_YCOORD</A></td><td class="i-member-description">Overloaded.&nbsp;Y coordinate # 19003. This property isn't indexed, and is read-only. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">Eplan.EplApi.DataModel.SymbolReferencePropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList~Parent.html">Parent</A></td><td class="i-member-description">StorableObject to which this property list is connected. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList.html">Eplan.EplApi.DataModel.UniversalPropertyList</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~POTENTIAL_FREQUENCE.html">POTENTIAL_FREQUENCE</A></td><td class="i-member-description">Overloaded.&nbsp;Frequency # 33004. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~POTENTIAL_NAME.html">POTENTIAL_NAME</A></td><td class="i-member-description">Overloaded.&nbsp;Name of potential # 33000. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~POTENTIAL_NETNAME.html">POTENTIAL_NETNAME</A></td><td class="i-member-description">Overloaded.&nbsp;Net name # 33007. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~POTENTIAL_PARENT.html">POTENTIAL_PARENT</A></td><td class="i-member-description">Overloaded.&nbsp;Superior potential # 33001. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~POTENTIAL_SIGNAL.html">POTENTIAL_SIGNAL</A></td><td class="i-member-description">Overloaded.&nbsp;Signal name # 33006. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~POTENTIAL_TYPE.html">POTENTIAL_TYPE</A></td><td class="i-member-description">Overloaded.&nbsp;Potential type # 31006. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~POTENTIAL_VALID_POTENTIALS.html">POTENTIAL_VALID_POTENTIALS</A></td><td class="i-member-description">Overloaded.&nbsp;Possible counter potentials # 33005. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~POTENTIAL_VALUE.html">POTENTIAL_VALUE</A></td><td class="i-member-description">Overloaded.&nbsp;Potential value # 33003. This property isn't indexed. &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~Property.html">Property</A></td><td class="i-member-description">Overloaded.&nbsp;Method used by operator[] in order to access indexed properties. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObjectPropertyList~PROPUSER_DBOBJECTID.html">PROPUSER_DBOBJECTID</A></td><td class="i-member-description">Overloaded.&nbsp;Object identification # 2000. This property isn't indexed, and is read-only. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.StorableObjectPropertyList.html">Eplan.EplApi.DataModel.StorableObjectPropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Property" src="template/packages/core-dotnet/images/publicProperty.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList~WRITEPROTECTED_AUTOMATIC.html">WRITEPROTECTED_AUTOMATIC</A></td><td class="i-member-description">Overloaded.&nbsp;Change protection (hierarchical) # 3015. This property isn't indexed, and is read-only. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PlacementPropertyList.html">Eplan.EplApi.DataModel.PlacementPropertyList</a></strong>)</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            <a name="MethodsBookmark"></a>
+            <div class="i-section-heading" id="i-publicMethods-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Methods</span></div><div id="i-publicMethods-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList~CopyTo.html">CopyTo</A></td><td class="i-member-description">Overloaded.&nbsp;Copies properties to other property list. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList.html">Eplan.EplApi.DataModel.UniversalPropertyList</a></strong>)</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList~Dispose().html">Dispose()</A></td><td class="i-member-description">Destructor for deterministic finalization of PotentialDefinitionPropertyList object. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList.html">Eplan.EplApi.DataModel.UniversalPropertyList</a></strong>)</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList~Exists.html">Exists</A></td><td class="i-member-description">Overloaded.&nbsp;Checks property existence for used obiect. &nbsp;</td></tr>
+<tr class="i-inherited-member"><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList~getPropList.html">getPropList</A></td><td class="i-member-description">Internal method. (Inherited from <a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.UniversalPropertyList.html">Eplan.EplApi.DataModel.UniversalPropertyList</a></strong>)</td></tr>
+</table><a href="#top">Top</a></div>
+            
+            
+            
+            <a name="EventsBookmark"></a>
+            
+            
+            
+            <a name="OperatorsBookmark"></a>
+            									
+            <a name="seealsobookmark"></a>
+            <div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList_members.html">PotentialDefinitionPropertyList Members</a>
+<br/><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel_namespace.html">Eplan.EplApi.DataModel Namespace</a>
+<br/><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinition.html">PotentialDefinition Class</a>
+<br/><a href="Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.SymbolReferencePropertyList.html">SymbolReferencePropertyList Class</a>
+</p>
+</div>
+            
+            <div id="i-footer-content" class="i-footer-content">
+                
+<p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>EPLAN API , 21.05.2020, Â© by EPLAN Software and Service GmbH and Co. KG. All rights reserved.</p>
+<a href="mailto:Support-API@eplan.de?subject=Documentation Feedback: Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.PotentialDefinitionPropertyList">Send Feedback</a>
+            </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript">
+        $(function () {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>
